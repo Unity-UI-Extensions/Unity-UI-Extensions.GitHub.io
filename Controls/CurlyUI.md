@@ -1,0 +1,99 @@
+# Curly UI
+
+==============
+
+A UI Effect that will make your UI Curly
+
+![](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/CurlyUIExample.jpg)
+
+---------
+
+## Contents
+
+> 1 [Overview](#markdown-header-overview)
+
+> 2 [Properties](#markdown-header-properties)
+
+> 3 [Usage](#markdown-header-usage)
+
+> 4 [Video Demo](#markdown-header-video-demo)
+
+> 5 [See also](#markdown-header-see-also)
+
+> 6 [Credits and Donation](#markdown-header-credits-and-donation)
+
+> 7 [External links](#markdown-header-external-links)
+
+---------
+
+## Overview
+
+Curly UI is a set of effect extensions that can alter the RectTransform of your UI Images / Text or RawGraphic's
+
+![](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/CurlyUIInspector.jpg)
+
+Once added to either an Image, Text or RawGraphic, you will be presented with some bezier handles to manipulate the curves of your UI component, these help define how you want to curve your UI.
+
+---------
+
+## Properties
+
+The properties of the Curly controls (CUI Image, Text, Graphic) are as follows:
+
+Property | Description
+--------- | --------------
+*Is Curved*|Apply the curve affect to the atached element
+*Is Lock with Ratio*|Lock curves to the native object ratios
+*Resolution*|Complexity of the underlying mesh, increases draw complexity for quality
+*UI Graphic*|Graphic element being altered with the curve
+*Ref CUI Graphic*|tbc
+*Ref Curves*|Collection of CUI Bezier curves to apply to the graphic
+*Curves Position Ratios*|Bezier control points for each reference curve (Ref Curves)
+*Fit Bezier Curves to rect transform (button)*|Reset Bezier points to native Rect Transform positions
+*Reference CUI component for curves (button)*|Reset Bezier points to "Ref CUI Graphic" Rect Transform positions
+*Corner Ratio*|Bezier offset for the curve corners
+*Use native corner ratio (button)*|Reset corner ratio to native Rect Transform positions
+||
+
+---------
+
+## Usage
+
+Simply add any of the CUI Game Components to an Image/Text/Rawimage object using "*UI / Effects / Extensions / CUI**" in the "*Component*" menu, or the "*Add Component*" button in the inspector.
+
+* CUI Image -> Image
+* CUI Text -> Text
+* CUI Graphic -> RawImage
+
+Once added, you can then manipulate the curves for the RectTransform using the bezier handles aded in the editor.
+
+> *Note* 
+> You should be able to manipulate / animate the bezier contol points through code, however, this has not been tested as yet.
+
+---------
+
+## Video Demo
+
+*Click to play*
+
+[![Curly UI Demo](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/CurlyUIDemo.jpg)](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/CurlyUIDemo.mp4 "Curly UI Demo")
+
+---------
+
+## See also
+
+* [Curved Text](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/CurvedText)
+* [Cylinder Text](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/CylinderText)
+* [Curved Layout](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/CurvedLayout)
+
+---------
+
+## Credits and Donation
+
+Credit [Titinious](https://github.com/Titinious)
+
+---------
+
+## External links
+
+Sourced from - [https://github.com/Titinious/CurlyUI](https://github.com/Titinious/CurlyUI)

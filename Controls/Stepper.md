@@ -1,0 +1,90 @@
+# Stepper
+
+==============
+
+A stepper control, like those found in iOS. It's basically two buttons side by side, and can step its numeric value up and down.
+
+![](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/StepperExample.png)
+
+---------
+
+## Contents
+
+> 1 [Overview](#markdown-header-overview)
+
+> 2 [Properties](#markdown-header-properties)
+
+> 3 [Usage](#markdown-header-usage)
+
+> 4 [Video Demo](#markdown-header-video-demo)
+
+> 5 [See also](#markdown-header-see-also)
+
+> 6 [Credits and Donation](#markdown-header-credits-and-donation)
+
+> 7 [External links](#markdown-header-external-links)
+
+---------
+
+## Overview
+
+The Stepper Control creates an increment / decrement style control with + and - buttons which alter the controls value.
+
+![](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/StepperInspector.jpg)
+
+It exposes a value property where you can also set a min and maximum number for that value when changed through the control.  Additionally you can also specify the "step" which denotes how much the control increments / decrements with each press, as well as an option to loop the value around from top to bottom, etc.
+
+Like the [Segmented Control](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/SegmentedControl), you can also specify a Separator image attached to a GO to place between the buttons.
+
+> *NOTE* You can only have two child buttons attached to the Stepper, one each for the + and - actions.  Adding more will generate an error.
+
+---------
+
+## Properties
+
+The properties of the Stepper Control control are as follows:
+
+Property | Description
+--------- | --------------
+*Value*|The current value of the Stepper control
+*Minimum*|The minimum value for the Stepper
+*Maximum*|The maximum value for the Stepper
+*Step*|The number to increment / decrement the control with when the buttons are clicked
+*Wrap*|Does the value of the stepper wrap around when the max/min is reached
+*Separator*|A graphic based UI GO, which will serve as the image that separates each button. *Note, you should disable the GO used for the separator or use a prefab to avoid dirtying the scene.
+*On Value Changed* (event) |The Event fired when the handle within the value of the control is changed
+||
+
+---------
+
+## Usage
+
+Simply add the default Stepper to the scene using "*UI / Extensions / Stepper*" in the Editor "*GameObject*" menu.
+
+It is also available as a Game Component menu in "*UI / Extensions / Stepper*". However, you will need to manually add the two child selectable controls (e.g. A UI Button or other control implementing the "Selectable" interface).
+
+---------
+
+## Video Demo
+
+*Click to play*
+
+[![Stepper Demo](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/StepperDemo.jpg)](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/StepperDemo.mp4 "Stepper Demo")
+
+---------
+
+## See also
+
+* [Segmented Control](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/SegmentedControl)
+
+---------
+
+## Credits and Donation
+
+Credit [David Gileadi](https://bitbucket.org/david_gileadi/)
+
+---------
+
+## External links
+
+Sourced from - [https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/pull-requests/11/segmented-control/diff](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/pull-requests/11/segmented-control/diff)

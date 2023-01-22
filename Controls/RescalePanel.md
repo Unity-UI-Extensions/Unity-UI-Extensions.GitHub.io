@@ -1,4 +1,4 @@
-# Scroller
+# RescalePanel
 
 <!-- Description-->
 

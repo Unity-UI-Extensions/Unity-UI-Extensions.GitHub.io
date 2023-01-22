@@ -1,4 +1,4 @@
-# Scroller
+# ResizePanel
 
 <!-- Description-->
 

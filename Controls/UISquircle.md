@@ -1,4 +1,4 @@
-# Scroller
+# UISquircle
 
 <!-- Description-->
 

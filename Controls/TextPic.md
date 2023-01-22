@@ -1,26 +1,28 @@
 # TextPic
 
-==============
-
 Inline images  and hyperlinks for text
+
+<!--![](Images/ Game Image.jpg)-->
 
 ---------
 
 ## Contents
 
-> 1 [Overview](#markdown-header-overview)
-
-> 2 [Properties](#markdown-header-properties)
-
-> 3 [Usage](#markdown-header-usage)
-
-> 4 [Video Demo](#markdown-header-video-demo)
-
-> 5 [See also](#markdown-header-see-also)
-
-> 6 [Credits and Donation](#markdown-header-credits-and-donation)
-
-> 7 [External links](#markdown-header-external-links)
+> 1 [Overview](#overview)
+>
+> 2 [Properties](#properties)
+>
+> 3 [Methods](#methods)
+>
+> 4 [Usage](#usage)
+>
+> 5 [Video Demo](#video-demo)
+>
+> 6 [See also](#see-also)
+>
+> 7 [Credits and Donation](#credits-and-donation)
+>
+> 8 [External links](#external-links)
 
 ---------
 
@@ -28,7 +30,7 @@ Inline images  and hyperlinks for text
 
 Provides a html interpreter to add inline images in Text.  HTML code is similar to that used for Unity's native Rich Text HTML
 
-![](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/TextPicInspector.jpg)
+![](Images/TextPicInspector.jpg)
 
 ---------
 
@@ -37,7 +39,7 @@ Provides a html interpreter to add inline images in Text.  HTML code is similar 
 The properties of the TextPic control are as follows:
 
 Property | Description
---------- | --------------
+|-|-|
 *Image Offset*|Global Image offset
 *Image Scaling Factor*|Global scaling factor for all images (they default to match the font size)
 *Hyperlink Color*|Override the default color for Hyperlinks
@@ -46,9 +48,8 @@ Property | Description
 |*Sprite*|The sprite to replace text with in the text
 |*Offset*|individual offset (as opposed to the Global Image Offset) for this sprite
 |*Scale*|individual scale (as opposed to the Global Image Scale Factor) for this sprite
-||
 
-*Inherited from Text*
+### Inherited from Text
 
 * Character
 * Paragraph
@@ -78,7 +79,7 @@ Additionally, if you want configure hyperlink highlighting colours, simply add a
 
 *Click to play*
 
-[![TextPicDemo](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/TextPicDemo.jpg)](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/TextPicDemo.mp4 "TextPicDemo Demo")
+[![TextPicDemo](Images/TextPicDemo.jpg)](Images/TextPicDemo.mp4 "TextPicDemo Demo")
 
 ---------
 

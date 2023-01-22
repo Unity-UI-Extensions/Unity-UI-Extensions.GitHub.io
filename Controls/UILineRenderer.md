@@ -1,28 +1,28 @@
 # UILineRenderer
 
-==============
-
 Graphic control for drawing lines in the UI System
+
+<!--![](Images/ Game Image.jpg)-->
 
 ---------
 
 ## Contents
 
-> 1 [Overview](#markdown-header-overview)
-
-> 2 [Properties](#markdown-header-properties)
-
-> 3 [Methods](#markdown-header-methods)
-
-> 4 [Usage](#markdown-header-usage)
-
-> 5 [Demo](#markdown-header-demo)
-
-> 6 [See also](#markdown-header-see-also)
-
-> 7 [Credits and Donation](#markdown-header-credits-and-donation)
-
-> 8 [External links](#markdown-header-external-links)
+> 1 [Overview](#overview)
+>
+> 2 [Properties](#properties)
+>
+> 3 [Methods](#methods)
+>
+> 4 [Usage](#usage)
+>
+> 5 [Video Demo](#video-demo)
+>
+> 6 [See also](#see-also)
+>
+> 7 [Credits and Donation](#credits-and-donation)
+>
+> 8 [External links](#external-links)
 
 ---------
 
@@ -30,9 +30,9 @@ Graphic control for drawing lines in the UI System
 
 The UI Line Renderer allows you to draw distinct Line primitives between a collection of points on a Canvas.
 
-![](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/UILineRendererInspector.jpg)
+![](Images/UILineRendererInspector.jpg)
 
-Settings can be set either in the inspector or via script programatically.
+Settings can be set either in the inspector or via script programmatically.
 
 ---------
 
@@ -41,7 +41,7 @@ Settings can be set either in the inspector or via script programatically.
 The properties of the Horizontal Scroll Snap control are as follows:
 
 Property | Description
---------- | --------------
+|-|-|
 *Points*|Array of points to draw the line between (Min 2).
 *Line Thickness*|The thickness of the drawn line.
 *Use Margins*|Apply margin values to control, shrinking the drawable space within the Rect Transform.
@@ -52,18 +52,18 @@ Property | Description
 *Line Joins*|Determines whether joins are curved (Bevel) or hard edges (Miter)
 *Bezier Mode*|Draws bezier curves between groups of 4 lines. Several modes are available with increasing quality but require more calculations
 *Bezier Segments Per Curve*|Allows you to set how many segments make up the Bezier curve, more points equal a smoother curve more more lines to draw.
-||
 
-*Inherited from Primitive Base*
+### Inherited from Primitive Base
+
 Property | Description
---------- | --------------
+|-|-|
 *ResolutionMode*|Method for improving the resolution of a line, By Segment (Resoluton applied independently between points) or for the entire line (resolution distributed across the entire line)
 *Resolution*|How many new points to automatically add between the Points list provided (note, will not draw if total points in a line exceeds 64k Vertices, Unity limit)
 *Use Native Size*|Set's the UV drawing and resolution of the Line to use the native image size automatically
 
 > Resolution options not 100% compatible with the Bezier functions of the Line Renderer. Best to test for the intended result. Simply because they both do the same thing for different reasons.
 
-*Inherited from Maskable Graphic*
+### Inherited from Maskable Graphic
 
 * Material
 * Color
@@ -76,11 +76,10 @@ Property | Description
 ## Methods
 
 Method | Arguments | Description
---- | --- | ---
+|-|-|-|
 *GetPosition*|Index (int), SegmentIndex (int)|Get the Vector2 position of a line index
 *GetPositionBySegment*|Index (int), SegmentIndex (int)|Get the Vector2 position of a line within a specific segment
 *GetClosestPoint*|Starting Position (Vector2), End Position (Vector2), Desired Point (Vector2)|Get the closest point between two given Vector2s from a given Vector2 point
-||
 
 ---------
 
@@ -128,8 +127,8 @@ Line Render also now has improved Sprite support, including sprite slicing.  The
 
 ## See also
 
-* [UILineTextureRenderer](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/UILineTextureRenderer)
-* [UILineConnector](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/UILineConnector)
+* [UILineTextureRenderer](/Controls.md/UILineTextureRenderer)
+* [UILineConnector](/Controls.md/UILineConnector)
 
 ---------
 

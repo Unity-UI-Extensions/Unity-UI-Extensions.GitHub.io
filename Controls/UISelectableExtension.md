@@ -1,25 +1,28 @@
 # UISelectableExtension
-==============
 
 Refactor of original UI Button control, can now add Press/Release and Hold events to any Selectable control
+
+<!--![](Images/ Game Image.jpg)-->
 
 ---------
 
 ## Contents
 
-> 1 [Overview](#markdown-header-overview)
-
-> 2 [Properties](#markdown-header-properties)
-
-> 3 [Usage](#markdown-header-usage)
-
-> 4 [Video Demo](#markdown-header-video-demo)
-
-> 5 [See also](#markdown-header-see-also)
-
-> 6 [Credits and Donation](#markdown-header-credits-and-donation)
-
-> 7 [External links](#markdown-header-external-links)
+> 1 [Overview](#overview)
+>
+> 2 [Properties](#properties)
+>
+> 3 [Methods](#methods)
+>
+> 4 [Usage](#usage)
+>
+> 5 [Video Demo](#video-demo)
+>
+> 6 [See also](#see-also)
+>
+> 7 [Credits and Donation](#credits-and-donation)
+>
+> 8 [External links](#external-links)
 
 ---------
 
@@ -27,7 +30,7 @@ Refactor of original UI Button control, can now add Press/Release and Hold event
 
 The Selectable Extension adds three events to any Selectable component for Press, Release and Hold.
 
-![](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/SelectableExtensionInspector.jpg)
+![](Images/SelectableExtensionInspector.jpg)
 
 ---------
 
@@ -36,11 +39,10 @@ The Selectable Extension adds three events to any Selectable component for Press
 The properties of the Box Slider control are as follows:
 
 Property | Description
---------- | --------------
+|-|-|
 *On Button Press* (event) |The Event fired when the selectable is clicked
 *On Button Release* (event) |The Event fired when the selectable is released from a click
 *On Button Held* (event) |The Event fired when the selectable is being held (mouse / touch down)
-||
 
 ---------
 
@@ -56,7 +58,7 @@ It is also available as a Game Component menu in "*UI / Extensions / UI Selectab
 
 *Click to play*
 
-[![Non Drawing Graphic Demo](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/NonDrawingGraphicDemo.jpg)](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/NonDrawingGraphicDemo.mp4 "Non Drawing Graphic Demo")
+[![Non Drawing Graphic Demo](Images/NonDrawingGraphicDemo.jpg)](Images/NonDrawingGraphicDemo.mp4 "Non Drawing Graphic Demo")
 
 > Shows adding the Selectable Extension to a Non Drawing Graphic GameObject
 
@@ -64,7 +66,7 @@ It is also available as a Game Component menu in "*UI / Extensions / UI Selectab
 
 ## See also
 
-* [Non Drawing Graphic](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/NonDrawingGraphic)
+* [Non Drawing Graphic](/Controls.md/NonDrawingGraphic)
 
 ---------
 

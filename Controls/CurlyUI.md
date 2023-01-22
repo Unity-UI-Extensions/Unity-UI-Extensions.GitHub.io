@@ -1,28 +1,28 @@
 # Curly UI
 
-==============
-
 A UI Effect that will make your UI Curly
 
-![](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/CurlyUIExample.jpg)
+![Curly UI Example](Images/CurlyUIExample.jpg)
 
 ---------
 
 ## Contents
 
-> 1 [Overview](#markdown-header-overview)
-
-> 2 [Properties](#markdown-header-properties)
-
-> 3 [Usage](#markdown-header-usage)
-
-> 4 [Video Demo](#markdown-header-video-demo)
-
-> 5 [See also](#markdown-header-see-also)
-
-> 6 [Credits and Donation](#markdown-header-credits-and-donation)
-
-> 7 [External links](#markdown-header-external-links)
+> 1 [Overview](#overview)
+>
+> 2 [Properties](#properties)
+>
+> 3 [Methods](#methods)
+>
+> 4 [Usage](#usage)
+>
+> 5 [Video Demo](#video-demo)
+>
+> 6 [See also](#see-also)
+>
+> 7 [Credits and Donation](#credits-and-donation)
+>
+> 8 [External links](#external-links)
 
 ---------
 
@@ -30,7 +30,7 @@ A UI Effect that will make your UI Curly
 
 Curly UI is a set of effect extensions that can alter the RectTransform of your UI Images / Text or RawGraphic's
 
-![](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/CurlyUIInspector.jpg)
+![](Images/CurlyUIInspector.jpg)
 
 Once added to either an Image, Text or RawGraphic, you will be presented with some bezier handles to manipulate the curves of your UI component, these help define how you want to curve your UI.
 
@@ -41,7 +41,7 @@ Once added to either an Image, Text or RawGraphic, you will be presented with so
 The properties of the Curly controls (CUI Image, Text, Graphic) are as follows:
 
 Property | Description
---------- | --------------
+|-|-|
 *Is Curved*|Apply the curve affect to the atached element
 *Is Lock with Ratio*|Lock curves to the native object ratios
 *Resolution*|Complexity of the underlying mesh, increases draw complexity for quality
@@ -53,7 +53,6 @@ Property | Description
 *Reference CUI component for curves (button)*|Reset Bezier points to "Ref CUI Graphic" Rect Transform positions
 *Corner Ratio*|Bezier offset for the curve corners
 *Use native corner ratio (button)*|Reset corner ratio to native Rect Transform positions
-||
 
 ---------
 
@@ -76,15 +75,15 @@ Once added, you can then manipulate the curves for the RectTransform using the b
 
 *Click to play*
 
-[![Curly UI Demo](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/CurlyUIDemo.jpg)](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/CurlyUIDemo.mp4 "Curly UI Demo")
+[![Curly UI Demo](Images/CurlyUIDemo.jpg)](Images/CurlyUIDemo.mp4 "Curly UI Demo")
 
 ---------
 
 ## See also
 
-* [Curved Text](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/CurvedText)
-* [Cylinder Text](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/CylinderText)
-* [Curved Layout](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/CurvedLayout)
+* [Curved Text](/Controls.md/CurvedText)
+* [Cylinder Text](/Controls.md/CylinderText)
+* [Curved Layout](/Controls.md/CurvedLayout)
 
 ---------
 

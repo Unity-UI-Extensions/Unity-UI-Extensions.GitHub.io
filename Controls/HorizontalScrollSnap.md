@@ -1,26 +1,28 @@
 # Horizontal Scroll Snap
 
-==============
-
 A paged scroll rect that can work in steps / pages, includes button support.  Now also supports infinite scrolling.
+
+<!--![](Images/ Game Image.jpg)-->
 
 ---------
 
 ## Contents
 
-> 1 [Overview](#markdown-header-overview)
-
-> 2 [Properties](#markdown-header-properties)
-
-> 3 [Usage](#markdown-header-usage)
-
-> 4 [Video Demo](#markdown-header-video-demo)
-
-> 5 [See also](#markdown-header-see-also)
-
-> 6 [Credits and Donation](#markdown-header-credits-and-donation)
-
-> 7 [External links](#markdown-header-external-links)
+> 1 [Overview](#overview)
+>
+> 2 [Properties](#properties)
+>
+> 3 [Methods](#methods)
+>
+> 4 [Usage](#usage)
+>
+> 5 [Video Demo](#video-demo)
+>
+> 6 [See also](#see-also)
+>
+> 7 [Credits and Donation](#credits-and-donation)
+>
+> 8 [External links](#external-links)
 
 ---------
 
@@ -29,7 +31,7 @@ A paged scroll rect that can work in steps / pages, includes button support.  No
 A scroll snap style control which is focused on a horizontal layout, enabling a paged view of child elements.
 Pages can be moved by keys, swipes or via the use of buttons.
 
-![](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/HSSInspector.jpg)
+![](Images/HSSInspector.jpg)
 
 Implements its own infinite scrolling method and additional events for when pages change.
 
@@ -42,7 +44,7 @@ As of Update 1.6, now also supports Scrollbars, *Note* Can only use the Horizont
 The properties of the Horizontal Scroll Snap control are as follows:
 
 Property | Description
---------- | --------------
+|-|-|
 *Starting Screen*|The child page that should be displayed on start. Bound to the limits of either the scene child objects or the "Child Objects" array.
 *Page Step*|The distance between pages based on the current width of the control.  Higher value equals more spacing.
 *Pagination*|The GameObject with a Toggle group that controls toggles active state. Recommended one toggle per-page.
@@ -61,14 +63,12 @@ Property | Description
 ***On Selection Change Start*** (event) |The Event fired when the user starts changing the page via swipe or mouse
 ***On Selection Page Changed*** (event) |The Event fired when the current page changes, either via swipe, mouse, Next/Prev Buttons
 ***On Selection Change End*** (event) |The Event fired when the page settles after being changed by swipe or mouse
-||
 
-Additional properties available in code:
+### Additional properties available in code
 
 Property | Return Type | Description
----|---|---
+|-|-|-|
 CurrentPage|int|The current snapped page, or selected page as the user swipes
-|||
 
 ---------
 
@@ -112,15 +112,15 @@ The main Vertical / Horizontal demo
 
 A simple walk-through setting up the Scroll Snap with a perspective view
 
-[![Scroll Snap Perspective View Demo](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/ScrollSnapPerspectiveDemo.jpg)](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/ScrollSnapPerspectiveDemo.mp4 "Scroll Snap Perspective View Demo")
+[![Scroll Snap Perspective View Demo](Images/ScrollSnapPerspectiveDemo.jpg)](Images/ScrollSnapPerspectiveDemo.mp4 "Scroll Snap Perspective View Demo")
 
 ---------
 
 ## See also
 
-* [ContentScrollSnapHorizontal](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/ContentScrollSnapHorizontal)
-* [VerticalScrollSnap](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/VerticalScrollSnap)
-* [ScrollSnap](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/ScrollSnap)
+* [ContentScrollSnapHorizontal](/Controls.md/ContentScrollSnapHorizontal)
+* [VerticalScrollSnap](/Controls.md/VerticalScrollSnap)
+* [ScrollSnap](/Controls.md/ScrollSnap)
 
 ---------
 

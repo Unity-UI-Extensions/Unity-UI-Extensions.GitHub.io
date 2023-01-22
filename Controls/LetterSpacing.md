@@ -1,26 +1,28 @@
 # LetterSpacing
 
-==============
-
 Allows finer control of text spacing
+
+<!--![](Images/ Game Image.jpg)-->
 
 ---------
 
 ## Contents
 
-> 1 [Overview](#markdown-header-overview)
-
-> 2 [Properties](#markdown-header-properties)
-
-> 3 [Usage](#markdown-header-usage)
-
-> 4 [Video Demo](#markdown-header-video-demo)
-
-> 5 [See also](#markdown-header-see-also)
-
-> 6 [Credits and Donation](#markdown-header-credits-and-donation)
-
-> 7 [External links](#markdown-header-external-links)
+> 1 [Overview](#overview)
+>
+> 2 [Properties](#properties)
+>
+> 3 [Methods](#methods)
+>
+> 4 [Usage](#usage)
+>
+> 5 [Video Demo](#video-demo)
+>
+> 6 [See also](#see-also)
+>
+> 7 [Credits and Donation](#credits-and-donation)
+>
+> 8 [External links](#external-links)
 
 ---------
 
@@ -28,7 +30,7 @@ Allows finer control of text spacing
 
 Allows finer control of text spacing
 
-![](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/LetterSpacingInspector.jpg)
+![](Images/LetterSpacingInspector.jpg)
 
 ---------
 
@@ -37,9 +39,8 @@ Allows finer control of text spacing
 The properties of the Letter Spacing component are as follows:
 
 Property | Description
---------- | --------------
+|-|-|
 *Spacing*|The spacing distance between characters
-||
 
 ---------
 
@@ -54,16 +55,16 @@ Add Component -> UI -> Effects -> Extensions -> Letter Spacing
 
 *Click to play*
 
-[![Letter Spacing Demo](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/LetterSpacingDemo.jpg)](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/LetterSpacingDemo.mp4 "Letter Spacing Demo")
+[![Letter Spacing Demo](Images/LetterSpacingDemo.jpg)](Images/LetterSpacingDemo.mp4 "Letter Spacing Demo")
 
 
 ---------
 
 ## See also
 
-[Curved Text](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/CurvedText)
-[Cylinder Text](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/CylinderText)
-[Mono Spacing](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/MonoSpacing)
+[Curved Text](/Controls.md/CurvedText)
+[Cylinder Text](/Controls.md/CylinderText)
+[Mono Spacing](/Controls.md/MonoSpacing)
 
 ---------
 

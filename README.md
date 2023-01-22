@@ -16,7 +16,8 @@ Chat live with the [Unity UI Extensions community on Gitter](https://gitter.im/U
 
 [![UI Extensions Live Chat](https://photos.angel.co/startups/i/368944-d81438d134dc6c5567ffaab69861cb34-medium_jpg.jpg?buster=1404125976)](https://gitter.im/Unity-UI-Extensions/Lobby)
 
-> Considering migrating chat to either Discord or the GitHub Discussions panel, 
+> Considering migrating chat to either Discord or the [GitHub Discussions panel](https://github.com/Unity-UI-Extensions/com.unity.uiextensions/discussions/419)
+
 -----
 
 ## [Intro](GettingStarted.md)
@@ -31,7 +32,7 @@ For more info, here's a little introduction video for the project:
 
 ## Release 2019.5 - (v2.2.7)  - Accelerated Deployment <- current release>
 
-> New 2.3 release coming very soon...
+> New 2.3 release coming very soon for 2023...
 
 We have expanded where you can download the UnityPackage asset and widened the options to contribute to the project.
 
@@ -42,7 +43,7 @@ The recommended way to add the Unity UI Extensions project to your solution is t
 
 ### Asset package downloads (and contribution links)
 
-| [![Download from Itch.IO](https://bytebucket.org/UnityUIExtensions/unity-ui-extensions/wiki/SiteImages/itchio.png)](https://unityuiextensions.itch.io/uiextensions2-0 "Download from Itch.IO") | [![Download from Itch.IO](SiteImages/unionassets.png)](https://unionassets.com/unity-ui-extensions "Download from Union Assets") | [![Download from Itch.IO](SiteImages/patreon.jpg)](https://www.patreon.com/UnityUIExtensions "Support Unity UI Extensions on Patreon & download")|
+| [![Download from Itch.IO](/SiteImages/itchio.png)](https://unityuiextensions.itch.io/uiextensions2-0 "Download from Itch.IO") | [![Download from Itch.IO](SiteImages/unionassets.png)](https://unionassets.com/unity-ui-extensions "Download from Union Assets") | [![Download from Itch.IO](SiteImages/patreon.jpg)](https://www.patreon.com/UnityUIExtensions "Support Unity UI Extensions on Patreon & download")|
 | :--- | :--- | :--- |
 | [Grab from Itchio](https://unityuiextensions.itch.io/uiextensions2-0) | [Obtain via Union Assets](https://unionassets.com/unity-ui-extensions) |[Support through Patreon](https://www.patreon.com/UnityUIExtensions) |
 
@@ -65,7 +66,8 @@ Either clone / download this repository to your machine and then copy the script
 
 -----
 
-## [Release Notes](ReleaseNotes/RELEASENOTES.md):
+## [Release Notes](ReleaseNotes/RELEASENOTES.md)
+
 For the recent and full change history of the project, please review the change history in the release notes.
 Good for catching up on what's new.
 
@@ -91,38 +93,33 @@ Accordion|ColorPicker|Selection Box|UI Flippable|ComboBox
 AutoComplete ComboBox|DropDown List|BoundToolTip|UIWindowBase|UI Knob
 TextPic|Input Focus|Box Slider|Cooldown Button|Segmented Control
 Stepper|Range Slider|Radial Slider|MultiTouch Scroll Rect|
-||||
 
 [Primitives](Controls.md#primitives)|||||
 ------|------|------|------|------|
 UILineRenderer|UILineTextureRenderer|UICircle|DiamondGraph|UICornerCut
 UIPolygon||||
-||||
 
 [Layouts](Controls.md#layouts)|||||
 ------|------|------|------|------|
 Horizontal Scroll Snap|Vertical Scroll Snap|Flow Layout Group|Radial Layout|Tile Size Fitter
 Scroll Snap (alt implementation)|Reorderable List|UI Vertical Scroller|Curved Layout|Table Layout
 FancyScrollView|Card UI|Scroll Position Controller|Content Scroll Snap Horizontal|
-||||
 
-[Effects](Controls.md#effect_components)|||||
+[Effects](Controls.md#effect-components)|||||
 ------|------|------|------|------|
 Best Fit Outline|Curved Text|Gradient|Gradient2|Letter Spacing
 NicerOutline|RaycastMask|UIFlippable|UIImageCrop|SoftAlphaMask
 CylinderText|UIParticleSystem|CurlyUI|Shine Effect|Shader Effects
-||||
 
-[Additional Components](Controls.md#additional_components)|||||
+[Additional Components](Controls.md#additional-components)|||||
 ------|------|------|------|------|
 ReturnKeyTrigger|TabNavigation|uGUITools|ScrollRectTweener|ScrollRectLinker
 ScrollRectEx|UI_InfiniteScroll|UI_ScrollRectOcclusion|UIScrollToSelection|UISelectableExtension
 switchToRectTransform|ScrollConflictManager|CLFZ2 (Encryption)|DragCorrector|PPIViewer
 UI_TweenScale|UI_MagneticInfiniteScroll|UI_ScrollRectOcclusion|NonDrawingGraphic|
 UILineConnector|UIHighlightable|Menu Manager|Pagination Manager|
-||||
 
-*More to come*
+### More to come
 
 -----
 
@@ -132,9 +129,8 @@ If you wish to further support the Unity UI Extensions project itself, then you 
 
 All funds go to support the project, no matter the amount. **Donations in code are also extremely welcome**
 
-| | |
-|---|---|
 | [![Donate via PayPal](https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-150px.png)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=89L8T9N6BR7LJ "Donating via Paypal") | [![Buy us a Coffee](https://uploads-ssl.webflow.com/5c14e387dab576fe667689cf/5cbed8a4ae2b88347c06c923_BuyMeACoffee_blue-p-500.png)](https://ko-fi.com/uiextensions "Buy us a Coffee") |
+|---|---|
 
 > (PayPal account not required and you can remain anonymous if you wish)
 
@@ -144,11 +140,11 @@ All funds go to support the project, no matter the amount. **Donations in code a
 
 For more information about the project, please see the following pages:
 
-* [Downloads](Downloads.md)
-* [Getting Started](GettingStarted.md)
-* [UPM Installation Instructions](UPMInstallation.md)
-* [Controls detailed list](Controls.md)
-* [Further Information](FurtherInfo.md)
-* [Contribution Guidelines](ContributionGuidelines.md)
-* [See who's contributing](Contributors.md)
-* [About](About.md)
+- [Downloads](Downloads.md)
+- [Getting Started](GettingStarted.md)
+- [UPM Installation Instructions](UPMInstallation.md)
+- [Controls detailed list](Controls.md)
+- [Further Information](FurtherInfo.md)
+- [Contribution Guidelines](ContributionGuidelines.md)
+- [See who's contributing](Contributors.md)
+- [About](About.md)

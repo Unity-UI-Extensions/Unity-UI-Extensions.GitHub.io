@@ -1,28 +1,28 @@
 # UI Grid Renderer
 
-==============
-
 A primitive line drawing control that draws a Grid within a RectTransform space
 
-![](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/UIGridRendererSample.jpg)
+![UI Grid Renderer Example](Images/UIGridRendererSample.jpg)
 
 ---------
 
 ## Contents
 
-> 1 [Overview](#markdown-header-overview)
-
-> 2 [Properties](#markdown-header-properties)
-
-> 3 [Usage](#markdown-header-usage)
-
-> 4 [Video Demo](#markdown-header-video-demo)
-
-> 5 [See also](#markdown-header-see-also)
-
-> 6 [Credits and Donation](#markdown-header-credits-and-donation)
-
-> 7 [External links](#markdown-header-external-links)
+> 1 [Overview](#overview)
+>
+> 2 [Properties](#properties)
+>
+> 3 [Methods](#methods)
+>
+> 4 [Usage](#usage)
+>
+> 5 [Video Demo](#video-demo)
+>
+> 6 [See also](#see-also)
+>
+> 7 [Credits and Donation](#credits-and-donation)
+>
+> 8 [External links](#external-links)
 
 ---------
 
@@ -31,7 +31,7 @@ A primitive line drawing control that draws a Grid within a RectTransform space
 The Grid Renderer control draws a box area with a defined Grid inside, allowing control of the columns and rows within.
 This control extend the base UI Line Renderer control and inherits some of it's features, not all of which are useful for a grid.
 
-![](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/UIGridRendererInspector.jpg.jpg)
+![](Images/UIGridRendererInspector.jpg.jpg)
 
 The main configuration is the GridColumns and GridRows to determine how many cells there are.  
 
@@ -45,7 +45,7 @@ The main configuration is the GridColumns and GridRows to determine how many cel
 The properties of the Box Slider control are as follows:
 
 Property | Description
---------- | --------------
+|-|-|
 *Points*|Array of points to draw the line between (Min 2).  *Read only for GridRenderer as it controls this*
 *Line Thickness*|The thickness of the drawn line.
 *Use Margins*|Apply margin values to control, shrinking the drawable space within the Rect Transform.
@@ -58,9 +58,8 @@ Property | Description
 *Bezier Segments Per Curve*|Allows you to set how many segments make up the Bezier curve, more points equal a smoother curve more more lines to draw.
 *Grid Columns*|Defines the number of columns within the Grid
 *Grid Rows*|Defines the number of rows within the Grid
-||
 
-*Inherited from Maskable Graphic*
+### Inherited from Maskable Graphic
 
 * Material
 * Color
@@ -83,14 +82,14 @@ It is also available as a Game Component menu in "*UI / Extensions / Primitives 
 
 *Click to play*
 
-[![Box Slider Demo](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/UIGridRendererDemo.jpg)](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/UIGridRendererDemo.mp4 "Box Slider Demo")
+[![Box Slider Demo](Images/UIGridRendererDemo.jpg)](Images/UIGridRendererDemo.mp4 "Box Slider Demo")
 
 ---------
 
 ## See also
 
-* [UILineRenderer](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/UILineRenderer)
-* [UILineTextureRenderer](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/UILineTextureRenderer)
+* [UILineRenderer](/Controls.md/UILineRenderer)
+* [UILineTextureRenderer](/Controls.md/UILineTextureRenderer)
 
 ---------
 

@@ -1,26 +1,28 @@
 # SelectionBox
 
-==============
-
 An RTS style selection box control
+
+<!--![](Images/ Game Image.jpg)-->
 
 ---------
 
 ## Contents
 
-> 1 [Overview](#markdown-header-overview)
-
-> 2 [Properties](#markdown-header-properties)
-
-> 3 [Usage](#markdown-header-usage)
-
-> 4 [Video Demo](#markdown-header-video-demo)
-
-> 5 [See also](#markdown-header-see-also)
-
-> 6 [Credits and Donation](#markdown-header-credits-and-donation)
-
-> 7 [External links](#markdown-header-external-links)
+> 1 [Overview](#overview)
+>
+> 2 [Properties](#properties)
+>
+> 3 [Methods](#methods)
+>
+> 4 [Usage](#usage)
+>
+> 5 [Video Demo](#video-demo)
+>
+> 6 [See also](#see-also)
+>
+> 7 [Credits and Donation](#credits-and-donation)
+>
+> 8 [External links](#external-links)
 
 ---------
 
@@ -28,7 +30,7 @@ An RTS style selection box control
 
 A selection box control to enable selecting 2D and 3D content within a Canvas / selectable area
 
-![Selection Box Inspector](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/SelectionBoxInspector.jpg)
+![Selection Box Inspector](Images/SelectionBoxInspector.jpg)
 
 ---------
 
@@ -37,11 +39,10 @@ A selection box control to enable selecting 2D and 3D content within a Canvas / 
 The properties of the Selectable Scalar control are as follows:
 
 Property | Description
---------- | --------------
+|-|-|
 *Color*|The color to apply to the selectable.
 *Art*|The texture to draw as the background to the selectable area.
 *Selection Mask*|The Rect Transform for the area that allows items to be selectable, restricts object being selected.
-||
 
 ---------
 
@@ -56,7 +57,7 @@ Additionally, you can customize the graphic used for the "Selection Box" that is
 
 ## Video Demo
 
-![Selection Box Demo](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/SelectionBoxDemo.gif)
+![Selection Box Demo](Images/SelectionBoxDemo.gif)
 
 ---------
 

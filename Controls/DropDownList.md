@@ -1,26 +1,28 @@
 # DropDownList
 
-==============
-
 A basic drop down list with text and image support
+
+<!--![](Images/ Game Image.jpg)-->
 
 ---------
 
 ## Contents
 
-> 1 [Overview](#markdown-header-overview)
+> 1 [Overview](#overview)
 >
-> 2 [Properties](#markdown-header-properties)
+> 2 [Properties](#properties)
 >
-> 3 [Usage](#markdown-header-usage)
+> 3 [Methods](#methods)
 >
-> 4 [Video Demo](#markdown-header-video-demo)
+> 4 [Usage](#usage)
 >
-> 5 [See also](#markdown-header-see-also)
+> 5 [Video Demo](#video-demo)
 >
-> 6 [Credits and Donation](#markdown-header-credits-and-donation)
+> 6 [See also](#see-also)
 >
-> 7 [External links](#markdown-header-external-links)
+> 7 [Credits and Donation](#credits-and-donation)
+>
+> 8 [External links](#external-links)
 
 ---------
 
@@ -28,7 +30,7 @@ A basic drop down list with text and image support
 
 A more advanced Combobox control with additional support for images and other items in the selection pane
 
-![Drop Down List Inspector](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/DropDownListInspector.jpg)
+![Drop Down List Inspector](Images/DropDownListInspector.jpg)
 
 ---------
 
@@ -37,7 +39,7 @@ A more advanced Combobox control with additional support for images and other it
 The properties of the Box Slider control are as follows:
 
 Property | Description
---------- | --------------
+|-|-|
 *Disabled Text Color*|Color of the Autocomplete field when the control is disabled
 *Available Options*|Array of child options options for the dropdown/selection. Each child is configured within the array below:
 -*Caption*|Text for the Child item
@@ -48,7 +50,6 @@ Property | Description
 *Items To Display*|Number of child items to display when opened. *Note default 0 shows NO items.
 *Select First Item On Start*|Should the first item be auto selected on start
 *On Selection Changed* (event) |The Event fired when the user selects an option or loses focus
-||
 
 > When managing the control programmatically, make sure you use the following functions to manage the ComboBox contents. **Do NOT update the 'AvailableOptions' list directly**
 
@@ -57,7 +58,7 @@ Property | Description
 ## Methods
 
 Method | Arguments | Description
---- | --- | ---
+|-|-|-|
 *AddItem*|DropDownListItem|Adds a new item to the drop down list and rebuilds the display
 *AddItem*|String|Adds a new item to the drop down list and rebuilds the display
 *AddItem*|Sprite|Adds a new item to the drop down list and rebuilds the display
@@ -66,7 +67,6 @@ Method | Arguments | Description
 *RemoveItem*|Sprite|Removes an item from the drop down list and rebuilds the display
 *RefreshItems*|Array of supported items (DropDownListItem, String or Sprite)|Clears the current list and rebuilds a new list with the provided items
 ResetItems|None|Clears all current options
-||
 
 ---------
 
@@ -87,8 +87,8 @@ Then simply add drop down elements to the Items property.  Additionally, Images 
 
 ## See also
 
-[ComboBox](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/ComboBox)
-[AutoCompleteComboBox](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/AutoCompleteComboBox)
+[ComboBox](/Controls.md/ComboBox)
+[AutoCompleteComboBox](/Controls.md/AutoCompleteComboBox)
 
 ---------
 

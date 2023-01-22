@@ -1,28 +1,28 @@
 # Range Slider
 
-==============
-
 A UI Slider control with a min (low) and max (high) value
 
-![](Images/RangeSliderExample.jpg)
+![Range Slider Example](Images/RangeSliderExample.jpg)
 
 ---------
 
 ## Contents
 
-> 1 [Overview](#markdown-header-overview)
-
-> 2 [Properties](#markdown-header-properties)
-
-> 3 [Usage](#markdown-header-usage)
-
-> 4 [Video Demo](#markdown-header-video-demo)
-
-> 5 [See also](#markdown-header-see-also)
-
-> 6 [Credits and Donation](#markdown-header-credits-and-donation)
-
-> 7 [External links](#markdown-header-external-links)
+> 1 [Overview](#overview)
+>
+> 2 [Properties](#properties)
+>
+> 3 [Methods](#methods)
+>
+> 4 [Usage](#usage)
+>
+> 5 [Video Demo](#video-demo)
+>
+> 6 [See also](#see-also)
+>
+> 7 [Credits and Donation](#credits-and-donation)
+>
+> 8 [External links](#external-links)
 
 ---------
 
@@ -39,7 +39,7 @@ A Ui control which allows you to have two slider values in a single control
 The properties of the Range Slider control are as follows:
 
 Property | Description
---------- | --------------
+|-|-|
 *Low Handle Rect*|The RectTransform of the Low value handle graphic
 *High Handle Rect*|The RectTransform of the High value handle graphic
 *Fill Rect*|RectTramsform of the fill for the slider (between min and max)
@@ -47,7 +47,6 @@ Property | Description
 *Max Value*|The maximum / higher value for the control
 *Whole Numbers*|Should the control use whole or precision numbers
 *On Value Changed* (event) |The Event fires when the range is changed
-||
 
 ---------
 

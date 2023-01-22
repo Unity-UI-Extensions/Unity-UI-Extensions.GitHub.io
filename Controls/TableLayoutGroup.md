@@ -1,26 +1,28 @@
 # TableLayoutGroup
 
-==============
-
 A table layout system supporting customizable column and row sizes / layout
+
+<!--![](Images/ Game Image.jpg)-->
 
 ---------
 
 ## Contents
 
-> 1 [Overview](#markdown-header-overview)
-
-> 2 [Properties](#markdown-header-properties)
-
-> 3 [Usage](#markdown-header-usage)
-
-> 4 [Video Demo](#markdown-header-video-demo)
-
-> 5 [See also](#markdown-header-see-also)
-
-> 6 [Credits and Donation](#markdown-header-credits-and-donation)
-
-> 7 [External links](#markdown-header-external-links)
+> 1 [Overview](#overview)
+>
+> 2 [Properties](#properties)
+>
+> 3 [Methods](#methods)
+>
+> 4 [Usage](#usage)
+>
+> 5 [Video Demo](#video-demo)
+>
+> 6 [See also](#see-also)
+>
+> 7 [Credits and Donation](#credits-and-donation)
+>
+> 8 [External links](#external-links)
 
 ---------
 
@@ -29,9 +31,9 @@ A table layout system supporting customizable column and row sizes / layout
 The table layout group allows the layout of child items in to the style of a table.  You can specify how many columns should be supported as well as the size of columns and rows.
 Additionally, you can specify padding between the columns and rows.
 
-![](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/TableLayoutGroup.jpg)
+![](Images/TableLayoutGroup.jpg)
 
-![](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/TableLayoutGroupInspector.jpg)
+![](Images/TableLayoutGroupInspector.jpg)
 
 If you wish you can override the fixed row height to allow child elements to set their height.
 
@@ -44,16 +46,15 @@ This control differs to the built in Unity Grid layout, which can only arrange i
 The properties of the Box Slider control are as follows:
 
 Property | Description
---------- | --------------
+|-|-|
 *Start Corner*|The corner to start adding children from
 *Column Widths*|An array of floats to denote the width of each column. Content sized to fit
 *Minimum Row Height*|The minimum height of child items in a row
 *Flexible Row Height*|Are flexible row heights allowed, or should they be fixed to the minimum
 *Column Spacing*|The amount of space between each column
 *Row Spacing*|The amount of space between each row
-||
 
-*Inherited from built-in layoutGroup*
+### Inherited from built-in layoutGroup
 
 * Padding (sets the padding inside the RectTransform before drawing children)
 * Child Alignment
@@ -70,16 +71,16 @@ Create an Empty GO on a Canvas and add the **Table Layout Group** component obje
 
 *Click to play*
 
-[![Table Layout Group Demo](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/TableLayoutGroupDemo.jpg)](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/TableLayoutGroupDemo.mp4 "Table Layout Group Demo")
+[![Table Layout Group Demo](Images/TableLayoutGroupDemo.jpg)](Images/TableLayoutGroupDemo.mp4 "Table Layout Group Demo")
 
 ---------
 
 ## See also
 
 * Unity (built-in) Grid Layout
-* [Curved Layout](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/CurvedLayout)
-* [Flow Layout Group](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/FlowLayoutGroup)
-* [Radial Layout](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/RadialLayout)
+* [Curved Layout](/Controls.md/CurvedLayout)
+* [Flow Layout Group](/Controls.md/FlowLayoutGroup)
+* [Radial Layout](/Controls.md/RadialLayout)
 
 ---------
 

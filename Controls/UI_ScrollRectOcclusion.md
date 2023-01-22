@@ -1,26 +1,28 @@
 # UI_ScrollRectOcclusion
 
-==============
-
 Disables the objects outside of the scrollrect viewport. Useful for scrolls with lots of content
+
+<!--![](Images/ Game Image.jpg)-->
 
 ---------
 
 ## Contents
 
-> 1 [Overview](#markdown-header-overview)
-
-> 2 [Properties](#markdown-header-properties)
-
-> 3 [Usage](#markdown-header-usage)
-
-> 4 [Video Demo](#markdown-header-video-demo)
-
-> 5 [See also](#markdown-header-see-also)
-
-> 6 [Credits and Donation](#markdown-header-credits-and-donation)
-
-> 7 [External links](#markdown-header-external-links)
+> 1 [Overview](#overview)
+>
+> 2 [Properties](#properties)
+>
+> 3 [Methods](#methods)
+>
+> 4 [Usage](#usage)
+>
+> 5 [Video Demo](#video-demo)
+>
+> 6 [See also](#see-also)
+>
+> 7 [Credits and Donation](#credits-and-donation)
+>
+> 8 [External links](#external-links)
 
 ---------
 
@@ -28,7 +30,7 @@ Disables the objects outside of the scrollrect viewport. Useful for scrolls with
 
 The Scroll Rect occlusion script enables and disables Content child items that are outside the visible area of the Scroll Rect.
 
-![](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/ScrollRectOcclusionInspector.jpg)
+![](Images/ScrollRectOcclusionInspector.jpg)
 
 It allows you determine whether it starts on awake or via code.
 
@@ -39,9 +41,8 @@ It allows you determine whether it starts on awake or via code.
 The properties of the Scroll Rect Occlusion component are as follows:
 
 Property | Description
---------- | --------------
+|-|-|
 *Init By User*|Should this occlude automatically or only on request.
-||
 
 ---------
 
@@ -63,10 +64,10 @@ It is also available as a Game Component menu in "*UI / Extensions / UI ScrollRe
 
 ## See also
 
-* [Scroll Rect Infinite](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/UI_InfiniteScroll)
-* [Scroll Rect Tweener](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/ScrollRectTweener)
-* [Scroll Rect Linker](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/ScrollRectLinker)
-* [Scroll Rect Conflict Manager](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/ScrollConflictManager)
+* [Scroll Rect Infinite](/Controls.md/UI_InfiniteScroll)
+* [Scroll Rect Tweener](/Controls.md/ScrollRectTweener)
+* [Scroll Rect Linker](/Controls.md/ScrollRectLinker)
+* [Scroll Rect Conflict Manager](/Controls.md/ScrollConflictManager)
 
 ---------
 

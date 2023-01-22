@@ -1,26 +1,28 @@
 # UIFlippable
 
-==============
-
 A Graphic altering tool which can flip a graphic either Horizontally / Vertically or both.
+
+<!--![](Images/ Game Image.jpg)-->
 
 ---------
 
 ## Contents
 
-> 1 [Overview](#markdown-header-overview)
-
-> 2 [Properties](#markdown-header-properties)
-
-> 3 [Usage](#markdown-header-usage)
-
-> 4 [Video Demo](#markdown-header-video-demo)
-
-> 5 [See also](#markdown-header-see-also)
-
-> 6 [Credits and Donation](#markdown-header-credits-and-donation)
-
-> 7 [External links](#markdown-header-external-links)
+> 1 [Overview](#overview)
+>
+> 2 [Properties](#properties)
+>
+> 3 [Methods](#methods)
+>
+> 4 [Usage](#usage)
+>
+> 5 [Video Demo](#video-demo)
+>
+> 6 [See also](#see-also)
+>
+> 7 [Credits and Donation](#credits-and-donation)
+>
+> 8 [External links](#external-links)
 
 ---------
 
@@ -28,7 +30,7 @@ A Graphic altering tool which can flip a graphic either Horizontally / Verticall
 
 The Flippable effect allows you to flip a graphic either on the Horizontal axis, vertical axis or both through this simple component..
 
-![](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/UIFlippableInspector.jpg)
+![](Images/UIFlippableInspector.jpg)
 
 *Note* when used with other graphical effects, this component must be ordered the highest, else Unity will report an error. (see usage)
 
@@ -39,10 +41,9 @@ The Flippable effect allows you to flip a graphic either on the Horizontal axis,
 The properties of the UI Flippable component are as follows:
 
 Property | Description
---------- | --------------
+|-|-|
 *Horizontal*|Flip the graphic horizontally
 *Vertical*|Flip the graphic vertically
-||
 
 ---------
 
@@ -61,7 +62,7 @@ Available as a Game Component menu in "*UI / Effects / Extensions / Flippable*".
 
 *Click to play*
 
-[![UIFlippable Demo](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/UIFlippableDemo.jpg)](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/UIFlippableDemo.mp4 "UIFlippable Demo")
+[![UIFlippable Demo](Images/UIFlippableDemo.jpg)](Images/UIFlippableDemo.mp4 "UIFlippable Demo")
 
 ---------
 

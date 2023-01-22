@@ -1,28 +1,28 @@
 # Fancy Scroll View
 
-==============
-
 A very fancy Scroll view component, with an extensible event system
 
-![](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/FancyScrollViewExample.jpg)
+![Fancy Scroll View Example](Images/FancyScrollViewExample.jpg)
 
 ---------
 
 ## Contents
 
-> 1 [Overview](#markdown-header-overview)
-
-> 2 [Properties](#markdown-header-properties)
-
-> 3 [Usage](#markdown-header-usage)
-
-> 4 [Video Demo](#markdown-header-video-demo)
-
-> 5 [See also](#markdown-header-see-also)
-
-> 6 [Credits and Donation](#markdown-header-credits-and-donation)
-
-> 7 [External links](#markdown-header-external-links)
+> 1 [Overview](#overview)
+>
+> 2 [Properties](#properties)
+>
+> 3 [Methods](#methods)
+>
+> 4 [Usage](#usage)
+>
+> 5 [Video Demo](#video-demo)
+>
+> 6 [See also](#see-also)
+>
+> 7 [Credits and Donation](#credits-and-donation)
+>
+> 8 [External links](#external-links)
 
 ---------
 
@@ -30,7 +30,7 @@ A very fancy Scroll view component, with an extensible event system
 
 Fancy Scroll View is a programmatic way to build a scroll view component with several extensible features.
 
-![](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/FancyScrollViewInspector.jpg)
+![](Images/FancyScrollViewInspector.jpg)
 
 The control is made up of several Key Components:
 
@@ -52,7 +52,7 @@ Implementation of this control is almost entirely programmatic, with several exa
 The properties of the Scroll Position Controller are as follows:
 
 Property | Description
---------- | --------------
+|-|-|
 *ViewPort*|Restricted bounds of the Scroll View Position controller
 *Direction of Recognize*|Direction of movement, Horizontal or Vertical
 *Movement Type*|Complexity of the underlying mesh, increases draw complexity for quality
@@ -66,17 +66,15 @@ Property | Description
     *Duration*|Bezier offset for the curve corners
 *Data Count*|Reset corner ratio to native Rect Transform positions
 *On Value Changed* (event) |The Event fired when the handle within the box slider is changed
-||
 
 The properties of the ScrollView template (FancyScrollView class) are as follows:
 
 Property | Description
---------- | --------------
+|-|-|
 *Cell Interval*|Apply the curve affect to the attached element
 *Cell Offset*|Lock curves to the native object ratios
 *Loop*|Complexity of the underlying mesh, increases draw complexity for quality
 *Cell Base*|Graphic element being altered with the curve
-||
 
 ---------
 
@@ -164,7 +162,7 @@ For example
 All that is left then is to intialise the ScrollView with your data and let it run.
 
 > *For additional help*
-> See the [documentation provided by the Developer in the Examples section](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/src/98648acf6aedddb1aa363ca2052e33fe629e2969/Examples/FancyScrollView/README.md).  Note however, it's not in English currently and needs translating.
+> See the [documentation provided by the Developer in the original repository](https://github.com/setchi/FancyScrollView).  Note however, it is not in English currently and needs translating.
 
 ---------
 
@@ -172,25 +170,15 @@ All that is left then is to intialise the ScrollView with your data and let it r
 
 *Click to play*
 
-Popup Demo
-
-![Infinate Scroll Demo](https://bytebucket.org/UnityUIExtensions/unity-ui-extensions/raw/98648acf6aedddb1aa363ca2052e33fe629e2969/Examples/FancyScrollView/Document/screencast2.gif)
-
-Animation Demo
-
-![Infinate Scroll Demo](https://bytebucket.org/UnityUIExtensions/unity-ui-extensions/raw/98648acf6aedddb1aa363ca2052e33fe629e2969/Examples/FancyScrollView/Document/screencast3.gif)
-
-Infinite Scroll Demo
-
-![Infinate Scroll Demo](https://bytebucket.org/UnityUIExtensions/unity-ui-extensions/raw/98648acf6aedddb1aa363ca2052e33fe629e2969/Examples/FancyScrollView/Document/screencast1.gif)
+<img src="https://user-images.githubusercontent.com/8326814/69004520-d2b36b80-0957-11ea-8277-06bfd3e8f033.gif" width="320"><img src="https://user-images.githubusercontent.com/8326814/70638335-0b571400-1c7c-11ea-8701-a0d1ae0cb7e3.gif" width="320"><img src="https://user-images.githubusercontent.com/8326814/59548448-a3549900-8f8a-11e9-9a27-b04f1410a7b5.gif" width="320"><img src="https://user-images.githubusercontent.com/8326814/59548462-b8c9c300-8f8a-11e9-8985-5f1c2e610309.gif" width="320"><img src="https://user-images.githubusercontent.com/8326814/59550410-7f528100-8fa5-11e9-8f1b-41e59b645571.gif" width="320"><img src="https://user-images.githubusercontent.com/8326814/59550411-7f528100-8fa5-11e9-8bfb-bd42da47f7a0.gif" width="320">
 
 ---------
 
 ## See also
 
-* [HorizontalScrollSnap](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/HorizontalScrollSnap)
-* [VerticalScrollSnap](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/VerticalScrollSnap)
-* [ScrollSnap](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/ScrollSnap)
+* [HorizontalScrollSnap](/Controls.md/HorizontalScrollSnap)
+* [VerticalScrollSnap](/Controls.md/VerticalScrollSnap)
+* [ScrollSnap](/Controls.md/ScrollSnap)
 
 ---------
 

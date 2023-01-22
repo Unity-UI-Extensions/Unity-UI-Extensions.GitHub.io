@@ -1,28 +1,28 @@
 # Pagination Manager
 
-==============
-
 A management script to attach to the Horizontal or Vertical Scroll snaps to enable automatic click navigation.
 
-![](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/PaginationManagerDemo.jpg)
+![Pagination Example](Images/PaginationManagerDemo.jpg)
 
 ---------
 
 ## Contents
 
-> 1 [Overview](#markdown-header-overview)
-
-> 2 [Properties](#markdown-header-properties)
-
-> 3 [Usage](#markdown-header-usage)
-
-> 4 [Video Demo](#markdown-header-video-demo)
-
-> 5 [See also](#markdown-header-see-also)
-
-> 6 [Credits and Donation](#markdown-header-credits-and-donation)
-
-> 7 [External links](#markdown-header-external-links)
+> 1 [Overview](#overview)
+>
+> 2 [Properties](#properties)
+>
+> 3 [Methods](#methods)
+>
+> 4 [Usage](#usage)
+>
+> 5 [Video Demo](#video-demo)
+>
+> 6 [See also](#see-also)
+>
+> 7 [Credits and Donation](#credits-and-donation)
+>
+> 8 [External links](#external-links)
 
 ---------
 
@@ -30,7 +30,7 @@ A management script to attach to the Horizontal or Vertical Scroll snaps to enab
 
 The Pagination Manager enables automatic click navigation for the Pagination features of the Horizontal and Vertical Scroll Snap controls.
 
-![](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/PaginationManagerInspector.jpg)
+![](Images/PaginationManagerInspector.jpg)
 
 The control extends the base Unity ToggleGroup functionality by interlinking the Scroll Snap's functionality with the ToggleEvents automatically.
 
@@ -43,11 +43,10 @@ The control extends the base Unity ToggleGroup functionality by interlinking the
 The properties of the Box Slider control are as follows:
 
 Property | Description
---------- | --------------
+|-|-|
 *Scroll Snap*|The Horizontal or Vertical Scroll Snap control this Pagination is assocated with (overrides base Pagination capability)
-||
 
-*Inherited from ToggleGroup*
+### Inherited from ToggleGroup
 
 * Allow Switch Off (non-functional)
 

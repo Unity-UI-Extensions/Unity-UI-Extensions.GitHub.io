@@ -1,28 +1,28 @@
 # Gradient2
 
-==============
-
 Apply vertex colours in a gradient on any UI object
 
-![](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/Gradient2Example.jpg)
+![Gradient 2 Example](Images/Gradient2Example.jpg)
 
 ---------
 
 ## Contents
 
-> 1 [Overview](#markdown-header-overview)
-
-> 2 [Properties](#markdown-header-properties)
-
-> 3 [Usage](#markdown-header-usage)
-
-> 4 [Video Demo](#markdown-header-video-demo)
-
-> 5 [See also](#markdown-header-see-also)
-
-> 6 [Credits and Donation](#markdown-header-credits-and-donation)
-
-> 7 [External links](#markdown-header-external-links)
+> 1 [Overview](#overview)
+>
+> 2 [Properties](#properties)
+>
+> 3 [Methods](#methods)
+>
+> 4 [Usage](#usage)
+>
+> 5 [Video Demo](#video-demo)
+>
+> 6 [See also](#see-also)
+>
+> 7 [Credits and Donation](#credits-and-donation)
+>
+> 8 [External links](#external-links)
 
 ---------
 
@@ -30,7 +30,7 @@ Apply vertex colours in a gradient on any UI object
 
 Apply vertex colours in a gradient on any graphic UI object
 
-![](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/Gradient2Inspector.jpg)
+![](Images/Gradient2Inspector.jpg)
 
 ---------
 
@@ -39,14 +39,13 @@ Apply vertex colours in a gradient on any graphic UI object
 The properties of the Gradient2 control are as follows:
 
 Property | Description
---------- | --------------
+|-|-|
 *Gradient Type*|The Type of Gradient to be used: Horizontal / Vertical / Radial (inside to outside) / Diamond
 *Blend Mode*|How should the gradient apply: Override / Add / Multiply
 *Modify Vertices*|Change the vertices of the image to apply the gradient
 *OffSet*|How much of the gradient should be applied, allows for grading in the gradient (all inception like)
 *Zoom*|Zoom in to the effect Gradient at the specified offset
 *Effect Gradient*|A gradient scale using the Unity Gradient tool which allows setting of multiple gradients
-||
 
 ---------
 
@@ -65,13 +64,13 @@ Add Component -> UI -> Extensions -> Effects -> Gradient2
 
 *Click to play*
 
-[![Gradient 2 Demo](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/Gradient2Demo.jpg)](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/Gradient2Demo.mp4 "Gradient 2 Demo")
+[![Gradient 2 Demo](Images/Gradient2Demo.jpg)](Images/Gradient2Demo.mp4 "Gradient 2 Demo")
 
 ---------
 
 ## See also
 
-* [Gradient](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Gradient)
+* [Gradient](/Controls.md/Gradient)
 
 ---------
 

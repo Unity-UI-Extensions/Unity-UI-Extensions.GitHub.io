@@ -1,77 +1,101 @@
 # UIScrollToSelectionXY
 
-==============
+<!-- Description-->
 
-"Highlight"
+<!--![](Images/ Game Image.jpg)-->
 
 ---------
 
 ## Contents
 
-> 1 [Overview](#markdown-header-overview)
-
-> 2 [Properties](#markdown-header-properties)
-
-> 3 [Usage](#markdown-header-usage)
-
-> 4 [Video Demo](#markdown-header-video-demo)
-
-> 5 [See also](#markdown-header-see-also)
-
-> 6 [Credits and Donation](#markdown-header-credits-and-donation)
-
-> 7 [External links](#markdown-header-external-links)
+> 1 [Overview](#overview)
+>
+> 2 [Properties](#properties)
+>
+> 3 [Methods](#methods)
+>
+> 4 [Usage](#usage)
+>
+> 5 [Video Demo](#video-demo)
+>
+> 6 [See also](#see-also)
+>
+> 7 [Credits and Donation](#credits-and-donation)
+>
+> 8 [External links](#external-links)
 
 ---------
 
 ## Overview
 
-"Detailed overview of the control"
+A <!-- Control--> .
 
-![UI ScrollToSelectionXY Inspector](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/UIScrollToSelectionXYInspector.jpg)
+![](Images/<!-- Inspector Image-->.jpg)
 
 ---------
 
 ## Properties
 
-The properties of the Box Slider control are as follows:
+The properties of the Vertical Scroll Snap control are as follows:
 
 Property | Description
---------- | --------------
-*Scroll Direction*|Direction in which the Scroll Container will be moved. Horizontal, Vertical or Both (grid)
-*Scroll Speed*|The speed at which an item will be scrolled to once clicked
-*Cancel Scroll on Input*|Should the control stop scrolling when a key is pressed
-*Cancel Scroll Keycodes*|List of Keys used to specify when the control should cancel scrolling, if enabled
-||
+|-|-|
+*<!-- Property-->*|<!-- Property-->
+
+Additional properties available in code:
+
+Property | Return Type | Description
+|-|-|-|
+|<!-- Property-->|<!-- Type-->|<!-- Description-->|
+
+---------
+
+## Methods
+
+Method | Arguments | Description
+|-|-|-|
+|<!-- Method-->|<!-- Type-->|<!-- Description-->|
 
 ---------
 
 ## Usage
 
-"Walk through how to use the control plus any tips for usage"
+Use as follows:
+
+* "Add Component -> Layout -> Extensions -> <!-- Control-->*"
+
+Or alternatively, add the default layout for the control using:
+
+* "*GameObject -> UI -> Extensions -> <!-- Control-->*"
+
+This will give you a <!-- Control--> setup with the script.
 
 ---------
 
 ## Video Demo
 
-"Link to demo video or animated Gifs"
+Video
+
+<!-- Video
+
+[![View Intro Video](http://img.youtube.com/vi/LnKy3_ymEXs/0.jpg)](http://www.youtube.com/watch?v=LnKy3_ymEXs "HSS/VSS walk-through video")
+
+/-->
 
 ---------
 
 ## See also
 
-"List other controls that are useful or alternatives"
+* Also <!-- See Also/-->
 
 ---------
 
 ## Credits and Donation
 
-"Name of the creator / contributors for the script, including any donation links"
+<!-- Credits/-->
 
 ---------
 
 ## External links
 
-"List of links for the control, e.g. Source, other info"
-
----------
+[Sourced from]()

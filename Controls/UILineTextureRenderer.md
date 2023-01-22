@@ -1,65 +1,101 @@
-#UILineTextureRenderer
-==============
+# UILineTextureRenderer
 
+<!-- Description-->
 
+<!--![](Images/ Game Image.jpg)-->
 
-"Highlight"
-
-
-
-Contents
 ---------
-> 1 [Overview](#markdown-header-overview)
 
-> 2 [Usage](#markdown-header-usage)
+## Contents
 
-> 3 [Video Demo](#markdown-header-video-demo)
-
-> 4 [See also](#markdown-header-see-also)
-
-> 5 [Credits and Donation](#markdown-header-credits-and-donation)
-
-> 6 [External links](#markdown-header-external-links)
+> 1 [Overview](#overview)
+>
+> 2 [Properties](#properties)
+>
+> 3 [Methods](#methods)
+>
+> 4 [Usage](#usage)
+>
+> 5 [Video Demo](#video-demo)
+>
+> 6 [See also](#see-also)
+>
+> 7 [Credits and Donation](#credits-and-donation)
+>
+> 8 [External links](#external-links)
 
 ---------
 
 ## Overview
 
-"Detailed overview of the control"
+A <!-- Control--> .
 
+![](Images/<!-- Inspector Image-->.jpg)
+
+---------
+
+## Properties
+
+The properties of the Vertical Scroll Snap control are as follows:
+
+Property | Description
+|-|-|
+*<!-- Property-->*|<!-- Property-->
+
+Additional properties available in code:
+
+Property | Return Type | Description
+|-|-|-|
+|<!-- Property-->|<!-- Type-->|<!-- Description-->|
+
+---------
+
+## Methods
+
+Method | Arguments | Description
+|-|-|-|
+|<!-- Method-->|<!-- Type-->|<!-- Description-->|
 
 ---------
 
 ## Usage
 
-"Walk through how to use the control plus any tips for usage"
+Use as follows:
 
+* "Add Component -> Layout -> Extensions -> <!-- Control-->*"
+
+Or alternatively, add the default layout for the control using:
+
+* "*GameObject -> UI -> Extensions -> <!-- Control-->*"
+
+This will give you a <!-- Control--> setup with the script.
 
 ---------
 
 ## Video Demo
 
-"Link to demo video or animated Gifs"
+Video
 
+<!-- Video
+
+[![View Intro Video](http://img.youtube.com/vi/LnKy3_ymEXs/0.jpg)](http://www.youtube.com/watch?v=LnKy3_ymEXs "HSS/VSS walk-through video")
+
+/-->
 
 ---------
 
 ## See also
 
-"List other controls that are useful or alternatives"
-
+* Also <!-- See Also/-->
 
 ---------
 
 ## Credits and Donation
 
-"Name of the creator / contributors for the script, including any donation links"
+<!-- Credits/-->
 
 ---------
 
 ## External links
 
-"List of links for the control, e.g. Source, other info"
-
----------
-
+[Sourced from]()

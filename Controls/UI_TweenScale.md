@@ -1,28 +1,28 @@
 # UI_TweenScale
 
-==============
-
 Dynamic scaling of text or image (including button) based on curves
+
+<!--![](Images/ Game Image.jpg)-->
 
 ---------
 
 ## Contents
 
-> 1 [Overview](#markdown-header-overview)
-
-> 2 [Properties](#markdown-header-properties)
-
-> 3 [Methods](#markdown-header-methods)
-
-> 4 [Usage](#markdown-header-usage)
-
-> 5 [Demo](#markdown-header-demo)
-
-> 6 [See also](#markdown-header-see-also)
-
-> 7 [Credits and Donation](#markdown-header-credits-and-donation)
-
-> 8 [External links](#markdown-header-external-links)
+> 1 [Overview](#overview)
+>
+> 2 [Properties](#properties)
+>
+> 3 [Methods](#methods)
+>
+> 4 [Usage](#usage)
+>
+> 5 [Video Demo](#video-demo)
+>
+> 6 [See also](#see-also)
+>
+> 7 [Credits and Donation](#credits-and-donation)
+>
+> 8 [External links](#external-links)
 
 ---------
 
@@ -30,7 +30,7 @@ Dynamic scaling of text or image (including button) based on curves
 
 A simplified control for adding programmatic scaling animation to any UI component, including buttons.
 
-![](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/UITweenScaleInspector.jpg)
+![](Images/UITweenScaleInspector.jpg)
 
 > Notes
 >
@@ -45,24 +45,22 @@ A simplified control for adding programmatic scaling animation to any UI compone
 The properties of the UI TweenScale control are as follows:
 
 Property | Description
---------- | --------------
+|-|-|
 *AnimCurve*|Animation curve for scale (if isUniform set to false, will apply only to X scale)
 *Speed*|Animation speed
 *IsLoop*|Animation will play infinitely (in order to make it work set your animation curve to loop)
 *PlayAtAwake*|Starts automatically with script becoming active. Otherwise you need to call Play() method.
 *IsUniform*|If false animCurve will modify object X scale and animCurveY - Y scale.
 *AnimCurveY*|Y Animation curve for non-uniform scale
-||
 
 ---------
 
 ## Methods
 
 Method | Arguments | Description
---- | --- | ---
+|-|-|-|
 *Play*|N/A|Start the animation
 *ResetTween*|N/A|Stop and reset the animation
-||
 
 ---------
 
@@ -76,7 +74,7 @@ Simply add the component to an existing RectTransform and configure the desired 
 
 ## Video Demo
 
-![](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/UITweenScaleDemo.gif)
+![](Images/UITweenScaleDemo.gif)
 
 ---------
 

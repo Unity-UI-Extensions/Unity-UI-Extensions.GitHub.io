@@ -1,26 +1,28 @@
 # TileSizeFitter
 
-==============
-
 A fitter layout that will shrink / expand content by tiles
+
+<!--![](Images/ Game Image.jpg)-->
 
 ---------
 
 ## Contents
 
-> 1 [Overview](#markdown-header-overview)
-
-> 2 [Properties](#markdown-header-properties)
-
-> 3 [Usage](#markdown-header-usage)
-
-> 4 [Video Demo](#markdown-header-video-demo)
-
-> 5 [See also](#markdown-header-see-also)
-
-> 6 [Credits and Donation](#markdown-header-credits-and-donation)
-
-> 7 [External links](#markdown-header-external-links)
+> 1 [Overview](#overview)
+>
+> 2 [Properties](#properties)
+>
+> 3 [Methods](#methods)
+>
+> 4 [Usage](#usage)
+>
+> 5 [Video Demo](#video-demo)
+>
+> 6 [See also](#see-also)
+>
+> 7 [Credits and Donation](#credits-and-donation)
+>
+> 8 [External links](#external-links)
 
 ---------
 
@@ -28,7 +30,7 @@ A fitter layout that will shrink / expand content by tiles
 
 The Tile Size Fitter will automatically rescale an image within a RectTransform according to the defined Size and border settings.
 
-![](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/TileSizeFitterInspector.jpg)
+![](Images/TileSizeFitterInspector.jpg)
 
 ---------
 
@@ -37,10 +39,9 @@ The Tile Size Fitter will automatically rescale an image within a RectTransform 
 The properties of the TileSizeFitter control are as follows:
 
 Property | Description
---------- | --------------
+|-|-|
 *Border*|The border spacing around the image
 *Tile Size*|The boundaries at which the selected image will resize
-||
 
 ---------
 

@@ -1,24 +1,28 @@
 # ScrollSnap
 
-==============
-
 An alternate scroll snap control supporting both Horizontal and Vertial layous in one control
+
+<!--![](Images/ Game Image.jpg)-->
 
 ---------
 
 ## Contents
 
-> 1 [Overview](#markdown-header-overview)
-
-> 2 [Usage](#markdown-header-usage)
-
-> 3 [Video Demo](#markdown-header-video-demo)
-
-> 4 [See also](#markdown-header-see-also)
-
-> 5 [Credits and Donation](#markdown-header-credits-and-donation)
-
-> 6 [External links](#markdown-header-external-links)
+> 1 [Overview](#overview)
+>
+> 2 [Properties](#properties)
+>
+> 3 [Methods](#methods)
+>
+> 4 [Usage](#usage)
+>
+> 5 [Video Demo](#video-demo)
+>
+> 6 [See also](#see-also)
+>
+> 7 [Credits and Donation](#credits-and-donation)
+>
+> 8 [External links](#external-links)
 
 ---------
 
@@ -53,9 +57,9 @@ Or alternatively, add one of the default layouts for the control using:
 
 ## See also
 
-* [ContentScrollSnapHorizontal](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/ContentScrollSnapHorizontal)
-* [HorizontalScrollSnap](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/HorizontalScrollSnap)
-* [VerticalScrollSnap](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/VerticalScrollSnap)
+* [ContentScrollSnapHorizontal](/Controls.md/ContentScrollSnapHorizontal)
+* [HorizontalScrollSnap](/Controls.md/HorizontalScrollSnap)
+* [VerticalScrollSnap](/Controls.md/VerticalScrollSnap)
 
 ---------
 

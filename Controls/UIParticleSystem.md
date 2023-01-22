@@ -1,28 +1,28 @@
 # UIParticleSystem
 
-==============
-
 A particle system control to render the native Unity 3D particle system in UI Space
 
-![](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/UIParticleSystemExample.jpg)
-
-## Contents
+![UI Particle System Example](Images/UIParticleSystemExample.jpg)
 
 ---------
 
-> 1 [Overview](#markdown-header-overview)
+## Contents
 
-> 2 [Properties](#markdown-header-properties)
-
-> 3 [Usage](#markdown-header-usage)
-
-> 4 [Video Demo](#markdown-header-video-demo)
-
-> 5 [See also](#markdown-header-see-also)
-
-> 6 [Credits and Donation](#markdown-header-credits-and-donation)
-
-> 7 [External links](#markdown-header-external-links)
+> 1 [Overview](#overview)
+>
+> 2 [Properties](#properties)
+>
+> 3 [Methods](#methods)
+>
+> 4 [Usage](#usage)
+>
+> 5 [Video Demo](#video-demo)
+>
+> 6 [See also](#see-also)
+>
+> 7 [Credits and Donation](#credits-and-donation)
+>
+> 8 [External links](#external-links)
 
 ---------
 
@@ -30,7 +30,7 @@ A particle system control to render the native Unity 3D particle system in UI Sp
 
 The default Unity 3D Particle system doesn't generally work in the UI space.  It's possible to arrange the particle system between layers or fiddle around with WorldSpace canvases but the control isn't in your UI.  With this control, it takes the rendered output of a 3D Particle system and regenerates it in UI space (the actual rendering of the Particle system is disabled so that it doesn't cause a performance impact)
 
-![](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/UIParticleSystemInspector.jpg)
+![](Images/UIParticleSystemInspector.jpg)
 
 > *NOTE* The control does not yet support Trail Particles currently
 
@@ -42,13 +42,12 @@ The properties of the UI Particle System control are as follows:
 **Requires Particle System**
 
 Property | Description
---------- | --------------
+|-|-|
 *Material*|Particle render material - *Note* several shaders have been provided in the Shaders folder, all called UI.. (also in UI Extensions / Particles / ... in the shader browser)
 *Color*|The color tint of the particles
 *Fixed Time*|Should the particles render in fixed or game time
-||
 
-*Inherited from MaskableGraphic*
+### Inherited from MaskableGraphic
 
 * Raycast Target
 * On Cull State Changed* (event)
@@ -58,11 +57,10 @@ Property | Description
 ## Methods
 
 Method | Arguments | Description
---- | --- | ---
+|-|-|-|
 *StartParticleEmission*|None|Starts the particle system if currently stopped
 *StopParticleEmission*|None|Stops the particle system and clears the particle cache. Destroys current particles in scene from the emitter
 *PauseParticleEmission*|None|Pauses the particle system emission, existing particles continue to travel
-||
 
 ---------
 
@@ -82,7 +80,7 @@ Alternatively, add a new Empty Game Object to a canvas, add the particle system 
 
 *Click to play*
 
-[![UI Particle System Demo](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/UIParticleSystemDemo.jpg)](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/UIParticleSystemDemo.mp4 "UI Particle System Demo")
+[![UI Particle System Demo](Images/UIParticleSystemDemo.jpg)](Images/UIParticleSystemDemo.mp4 "UI Particle System Demo")
 
 ---------
 

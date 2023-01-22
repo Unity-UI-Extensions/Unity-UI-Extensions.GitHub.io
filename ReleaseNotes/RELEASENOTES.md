@@ -112,9 +112,9 @@ Examples now have their own package, this simplifies their use and deployment. E
 
 No new issues in this release, but check the issues list for things we are currently working on:
 
-* [UI Extensions Issue log](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/issues?status=new&status=open)
+* [UI Extensions Issue log](https://github.com/Unity-UI-Extensions/com.unity.uiextensions/issues)
 
-## [Installation Instructions](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/GettingStarted)
+## [Installation Instructions](/GettingStarted.md)
 
 As of Unity 2019, there are now two paths for getting access to the Unity UI Extensions project:
 
@@ -231,7 +231,7 @@ This is only a point release and we are still working hard on the next full upda
 
 No new issues in this release, but check the issues list for things we are currently working on:
 
-* [UI Extensions Issue log](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/issues?status=new&status=open)
+* [UI Extensions Issue log](https://github.com/Unity-UI-Extensions/com.unity.uiextensions/issues)
 
 ## Upgrade Notes
 
@@ -420,7 +420,7 @@ Few minor fixes and a couple of additional scripts.  Predominately created the n
 
 =======================
 
-### [How do I get set up?](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/GettingStarted)
+### [How do I get set up?](/GettingStarted.md)
 
 As of Unity 2019, there are now two paths for getting access to the Unity UI Extensions project:
 
@@ -433,9 +433,9 @@ Alternatively, you can also use the pre-compiled Unity packages if you wish, how
 The pre-compiled Unity assets are the only solution for Unity 2018 or earlier due to the changes in the Unity UI framework in Unity made for 2019.
 Either clone / download this repository to your machine and then copy the scripts in, or use the pre-packaged .UnityPackage for your version of Unity and import it as a custom package in to your project.
 
-### [Contribution guidelines](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/ContributionGuidelines)
+### [Contribution guidelines](/ContributionGuidelines.md)
 
-Got a script you want added? Then just fork the bitbucket repository and submit a PR.  All contributions accepted (including fixes)
+Got a script you want added? Then just fork the [GitHub repository](https://github.com/Unity-UI-Extensions/com.unity.uiextensions.git) and submit a PR.  All contributions accepted (including fixes)
 
 Just ensure:
 
@@ -443,21 +443,21 @@ Just ensure:
 * The script uses the **Unity.UI.Extensions** namespace so they do not affect any other developments
 * (optional) Add Component and Editor options where possible (editor options are in the Editor\UIExtensionsMenuOptions.cs file)
 
-### [License](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/License)
+### [License](/License.md)
 
-All scripts conform to the BSD3 license and are free to use / distribute.  See the [LICENSE](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/License) file for more information 
+All scripts conform to the BSD3 license and are free to use / distribute.  See the [LICENSE](/License.md) file for more information 
 
-### [Like what you see?](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/FurtherInfo)
+### [Like what you see?](/FurtherInfo.md)
 
 All these scripts were put together for my latest book Unity3D UI Essentials
 Check out the [page on my blog](http://bit.ly/Unity3DUIEssentials) for more details and learn all about the inner workings of the new Unity UI System.
 
-### [The downloads](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Downloads)
+### [The downloads](/Downloads.md)
 
 As this repo was created to support my new Unity UI Title ["Unity 3D UI Essentials"](http://bit.ly/Unity3DUIEssentials), in the downloads section you will find two custom assets (SpaceShip-DemoScene-Start.unitypackage and RollABallSample-Start.unitypackage).  These are just here as starter scenes for doing UI tasks in the book.
 
 I will add more sample scenes for the UI examples in this repository and detail them above over time.
 
-### [Previous Releases](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Downloads)
+### [Previous Releases](/Downloads.md)
 
-Please see the [full downloads list](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Downloads) for all previous releases and their corresponding download links.
+Please see the [full downloads list](/Downloads.md) for all previous releases and their corresponding download links.

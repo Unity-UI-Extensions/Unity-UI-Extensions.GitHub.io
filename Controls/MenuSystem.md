@@ -1,28 +1,28 @@
 # Unite Menu System
 
-==============
-
 The example Menu system demonstrated at Unite Europe 2017, refactored and updated as a generic reusable system.
 
-![](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/MenuExample.jpg)
+![Menu Example](Images/MenuExample.jpg)
 
 ---------
 
 ## Contents
 
-> 1 [Overview](#markdown-header-overview)
-
-> 2 [Properties](#markdown-header-properties)
-
-> 3 [Usage](#markdown-header-usage)
-
-> 4 [Video Demo](#markdown-header-video-demo)
-
-> 5 [See also](#markdown-header-see-also)
-
-> 6 [Credits and Donation](#markdown-header-credits-and-donation)
-
-> 7 [External links](#markdown-header-external-links)
+> 1 [Overview](#overview)
+>
+> 2 [Properties](#properties)
+>
+> 3 [Methods](#methods)
+>
+> 4 [Usage](#usage)
+>
+> 5 [Video Demo](#video-demo)
+>
+> 6 [See also](#see-also)
+>
+> 7 [Credits and Donation](#credits-and-donation)
+>
+> 8 [External links](#external-links)
 
 ---------
 
@@ -33,7 +33,7 @@ At Unite 2017, a team demonstrated an easy to use approach to build an extendabl
 
 This has been updated / refactored in to a reusable feature with a little work based on a set of generic components, at it's Core is the "Menu Manager" which manages all menus and a set of implementation templates for building the Menu's in your game.
 
-![](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/MenuInspector.jpg)
+![](Images/MenuInspector.jpg)
 
 Once the manager has been added to your starting / master scene, it will control the flow between all "screens" in your project.
 It is still quite basic at the moment and only loads/displays each screen UI canvas, so there is room for improvement.
@@ -45,10 +45,9 @@ It is still quite basic at the moment and only loads/displays each screen UI can
 The properties of the Menu Manager are as follows:
 
 Property | Description
---------- | --------------
+|-|-|
 *Menu Screens*|Collection of Menu prefabs for each menu in the game
 *Start Screen*|The initial menu screen the Menu Manager will load when the game is launched
-||
 
 ---------
 
@@ -74,7 +73,7 @@ In the "Examples" Folder, there is a full working implementation to based your o
 
 *Click to play*
 
-[![menu System Demo](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/MenuDemo.jpg)](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/MenuDemo.mp4 "Menu System Demo")
+[![menu System Demo](Images/MenuDemo.jpg)](Images/MenuDemo.mp4 "Menu System Demo")
 
 ---------
 

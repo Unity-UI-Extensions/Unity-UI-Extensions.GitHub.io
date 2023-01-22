@@ -1,7 +1,5 @@
 # Card UI
 
-==============
-
 A range of controls to provide a Card based interface, this includes several capabilties and features to manipulate the cards based on requirements, including:
 
 * 2D Expanding cards
@@ -9,21 +7,27 @@ A range of controls to provide a Card based interface, this includes several cap
 * 2D card stacks
 * 3D Expanding cards and Superelipses
 
+<!--![](Images/ Game Image.jpg)-->
+
 ---------
 
 ## Contents
 
-> 1 [Overview](#markdown-header-overview)
-
-> 2 [Usage](#markdown-header-usage)
-
-> 3 [Video Demo](#markdown-header-video-demo)
-
-> 4 [See also](#markdown-header-see-also)
-
-> 5 [Credits and Donation](#markdown-header-credits-and-donation)
-
-> 6 [External links](#markdown-header-external-links)
+> 1 [Overview](#overview)
+>
+> 2 [Properties](#properties)
+>
+> 3 [Methods](#methods)
+>
+> 4 [Usage](#usage)
+>
+> 5 [Video Demo](#video-demo)
+>
+> 6 [See also](#see-also)
+>
+> 7 [Credits and Donation](#credits-and-donation)
+>
+> 8 [External links](#external-links)
 
 ---------
 
@@ -33,11 +37,11 @@ The range of Card UI controls give you several options for creating card like UI
 
 |2D Card Expanding|2D Popup Cards
 |---|---|
-|![2D Card Expanding Inspector](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/CardUI2DExpandingInspector.jpg)|![2D Popup Cards Inspector](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/CardUI2DPopupInspector.jpg)
+|![2D Card Expanding Inspector](Images/CardUI2DExpandingInspector.jpg)|![2D Popup Cards Inspector](Images/CardUI2DPopupInspector.jpg)
 
 |2D Stacked Cards|3D Expanding Cards
 |---|---|
-|![2D Stacked Cards Inspector](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/CardUI2DStackInspector.jpg)|![3D Expanding Cards Inspector](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/CardUI3DExpandingInspector.jpg)
+|![2D Stacked Cards Inspector](Images/CardUI2DStackInspector.jpg)|![3D Expanding Cards Inspector](Images/CardUI3DExpandingInspector.jpg)
 
 ---------
 
@@ -49,7 +53,7 @@ For best demonstrations in the use and setup of the Card UI controls, checkout t
 
 ## Video Demo
 
-![](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/CardUIDemo.gif)
+![](Images/CardUIDemo.gif)
 
 ---------
 

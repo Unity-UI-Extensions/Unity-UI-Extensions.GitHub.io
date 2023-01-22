@@ -1,28 +1,28 @@
 # UI_Knob
 
-==============
-
 A simple knob radial control which operates like any other Knob you might find on a stereo or dial.
+
+<!--![](Images/ Game Image.jpg)-->
 
 ---------
 
 ## Contents
 
-> 1 [Overview](#markdown-header-overview)
-
-> 2 [Properties](#markdown-header-properties)
-
-> 3 [Methods](#markdown-header-methods)
-
-> 4 [Usage](#markdown-header-usage)
-
-> 5 [Video Demo](#markdown-header-video-demo)
-
-> 6 [See also](#markdown-header-see-also)
-
-> 7 [Credits and Donation](#markdown-header-credits-and-donation)
-
-> 8 [External links](#markdown-header-external-links)
+> 1 [Overview](#overview)
+>
+> 2 [Properties](#properties)
+>
+> 3 [Methods](#methods)
+>
+> 4 [Usage](#usage)
+>
+> 5 [Video Demo](#video-demo)
+>
+> 6 [See also](#see-also)
+>
+> 7 [Credits and Donation](#credits-and-donation)
+>
+> 8 [External links](#external-links)
 
 ---------
 
@@ -37,7 +37,7 @@ A powerful Knob style control, complete with a multitude of options, such as:
 * Controlled through mouse or touch
 * Supports multiple rotations to complete range (how many rotations make the max value)
 
-![UI Knob Inspector](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/UIKnobInspector.jpg)
+![UI Knob Inspector](Images/UIKnobInspector.jpg)
 
 ---------
 
@@ -46,7 +46,7 @@ A powerful Knob style control, complete with a multitude of options, such as:
 The properties of the Scroll Rect Infinite component are as follows:
 
 Property | Description
---------- | --------------
+|-|-|
 *Direction*|Direction of rotation CW - clockwise, CCW - counterClockwise.
 *Max Value*|Max value of the knob, maximum RAW output value knob can reach, overrides snap step, IF set to 0 or higher than loops, max value will be set by loops.
 *Loops*|SHow many rotations knob can do, if higher than max value, the latter will limit max value.
@@ -55,10 +55,9 @@ Property | Description
 *Snap Steps Per Loop*|Number of positions to snap.
 *Parent Touch Mask*|Parent touch area to extend the touch radius.
 *Mask Background*|Default background color of the touch mask. Defaults as transparent.
-||
 
 
-*Inherited from Selectable*
+### Inherited from Selectable
 
 * Interactable
 * Transition
@@ -69,9 +68,8 @@ Property | Description
 ## Methods
 
 Method | Arguments | Description
---- | --- | ---
+|-|-|-|
 *SetKnobValue*|Angle (between 0 & 1), Loop number|Rotates the Knob control to the selected value and loop
-||
 
 ---------
 
@@ -82,7 +80,7 @@ GameObject -> UI -> Extensions -> UI_Knob
 
 Then apply any images / backgrounds or highlights you need for effect.
 
-There is also a Unity event for when the value changes that you can hook your scripts in to.  See the  [Demo Video](#markdown-header-video-demo) for more details.
+There is also a Unity event for when the value changes that you can hook your scripts in to.  See the  [Demo Video](#video-demo) for more details.
 
 ---------
 

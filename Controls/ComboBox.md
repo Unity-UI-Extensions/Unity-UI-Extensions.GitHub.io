@@ -1,26 +1,28 @@
 # ComboBox
 
-==============
-
 A fixed combobox implementation for text
+
+<!--![](Images/ Game Image.jpg)-->
 
 ## Contents
 
 ---------
 
-> 1 [Overview](#markdown-header-overview)
+> 1 [Overview](#overview)
 >
-> 2 [Properties](#markdown-header-properties)
+> 2 [Properties](#properties)
 >
-> 3 [Usage](#markdown-header-usage)
+> 3 [Methods](#methods)
 >
-> 4 [Video Demo](#markdown-header-video-demo)
+> 4 [Usage](#usage)
 >
-> 5 [See also](#markdown-header-see-also)
+> 5 [Video Demo](#video-demo)
 >
-> 6 [Credits and Donation](#markdown-header-credits-and-donation)
+> 6 [See also](#see-also)
 >
-> 7 [External links](#markdown-header-external-links)
+> 7 [Credits and Donation](#credits-and-donation)
+>
+> 8 [External links](#external-links)
 
 ---------
 
@@ -29,7 +31,7 @@ A fixed combobox implementation for text
 Standard combobox style control with support for multiple textual child items.
 Similar to the new built in Unity Dropdown control
 
-![ComboBox inspector](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/ComboBoxInspector.jpg)
+![ComboBox inspector](Images/ComboBoxInspector.jpg)
 
 ---------
 
@@ -38,26 +40,24 @@ Similar to the new built in Unity Dropdown control
 The properties of the Box Slider control are as follows:
 
 Property | Description
---------- | --------------
+|-|-|
 *Available Options*|Array of text based options for the dropdown/selection
 *Scroll Bar Width*|The width of the scrollbar when displayed
 *Items To Display*|Number of child items to display when opened. *Note default 0 shows NO items.
 *Sort Items*|Should the items in the combo box be sorted
 *On Selection Changed* (event) |The Event fired when the user selects an option or loses focus
-||
 
 ---------
 
 ## Methods
 
 Method | Arguments | Description
---- | --- | ---
+|-|-|-|
 AddItem|String|Adds a single item to the list
 RemoveItem|String|Removes a single item from the list
 SetAvailableOptions|List of String|Clears the current options and replaces with new list (array or List)
 SetAvailableOptions|Array of String|Clears the current options and replaces with new list (array or List)
 ResetItems|None|Clears all current options
-||
 
 ---------
 
@@ -78,8 +78,8 @@ Then simply add child elements to the Items property.
 
 ## See also
 
-[DropDownList](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/DropDownList)
-[AutoCompleteComboBox](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/AutoCompleteComboBox)
+[DropDownList](/Controls.md/DropDownList)
+[AutoCompleteComboBox](/Controls.md/AutoCompleteComboBox)
 
 ---------
 

@@ -1,28 +1,28 @@
 # Radial Slider
 
-==============
-
 A radial slider which fills in a circular pattern
 
-![](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/RadialSliderExample.jpg)
+![Radial Slider Example](Images/RadialSliderExample.jpg)
 
 ---------
 
 ## Contents
 
-> 1 [Overview](#markdown-header-overview)
-
-> 2 [Properties](#markdown-header-properties)
-
-> 3 [Usage](#markdown-header-usage)
-
-> 4 [Video Demo](#markdown-header-video-demo)
-
-> 5 [See also](#markdown-header-see-also)
-
-> 6 [Credits and Donation](#markdown-header-credits-and-donation)
-
-> 7 [External links](#markdown-header-external-links)
+> 1 [Overview](#overview)
+>
+> 2 [Properties](#properties)
+>
+> 3 [Methods](#methods)
+>
+> 4 [Usage](#usage)
+>
+> 5 [Video Demo](#video-demo)
+>
+> 6 [See also](#see-also)
+>
+> 7 [Credits and Donation](#credits-and-donation)
+>
+> 8 [External links](#external-links)
 
 ---------
 
@@ -30,7 +30,7 @@ A radial slider which fills in a circular pattern
 
 The Radial Slider is a graphical fill control utilizing Unity's native Image fill capabilities.
 
-![](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/RadialSliderInspector.jpg)
+![](Images/RadialSliderInspector.jpg)
 
 It allows you to define a color range for the slider in a circular pattern beginning from the Left hand side (rotate the control for other starting points.)
 It also has built in Lerping capability and can be used to:
@@ -48,14 +48,13 @@ It also has built in Lerping capability and can be used to:
 The properties of the Radial Slider control are as follows:
 
 Property | Description
---------- | --------------
+|-|-|
 *Start Color*|The Gradient color for the beginning of the radius.
 *End Color*|The Gradient color for the end of the radius.
 *Lerp To Target*|Should the control jump to it's intended position or Lerp. *Note, Dragging is only supported when this is off
 *Lerp Curve*|Use a standard Lerp or a gradient curve using the Unity native Curve control.
 *On Value Changed* (event) |The Event fired when the value of the slider is changed, outputs an Integer value
 *On Value Changed* (event) |The Event fired when the value of the slider is changed, outputs an Text value
-||
 
 ---------
 
@@ -71,7 +70,7 @@ It is also available as a Game Component menu in "*UI / Extensions / Radial Slid
 
 *Click to play*
 
-[![Radial Slider Demo](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/RadialSliderDemo.jpg)](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/RadialSliderDemo.mp4 "Radial Slider Demo")
+[![Radial Slider Demo](Images/RadialSliderDemo.jpg)](Images/RadialSliderDemo.mp4 "Radial Slider Demo")
 
 ---------
 

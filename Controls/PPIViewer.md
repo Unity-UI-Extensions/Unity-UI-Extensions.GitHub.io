@@ -1,24 +1,28 @@
 # PPIViewer
 
-==============
+Simple script to attach to a text component to display the current DPI/PPI
 
-Simple script to attach to a text component to display the currnet DPI/PPI
+<!--![](Images/ Game Image.jpg)-->
 
 ---------
 
 ## Contents
 
-> 1 [Overview](#markdown-header-overview)
-
-> 2 [Usage](#markdown-header-usage)
-
-> 3 [Video Demo](#markdown-header-video-demo)
-
-> 4 [See also](#markdown-header-see-also)
-
-> 5 [Credits and Donation](#markdown-header-credits-and-donation)
-
-> 6 [External links](#markdown-header-external-links)
+> 1 [Overview](#overview)
+>
+> 2 [Properties](#properties)
+>
+> 3 [Methods](#methods)
+>
+> 4 [Usage](#usage)
+>
+> 5 [Video Demo](#video-demo)
+>
+> 6 [See also](#see-also)
+>
+> 7 [Credits and Donation](#credits-and-donation)
+>
+> 8 [External links](#external-links)
 
 ---------
 

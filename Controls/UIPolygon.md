@@ -1,24 +1,28 @@
 # UIPolygon
 
-==============
-
 Graphic control for drawing custom polygons in the UI System
+
+<!--![](Images/ Game Image.jpg)-->
 
 ---------
 
 ## Contents
 
-> 1 [Overview](#markdown-header-overview)
-
-> 2 [Usage](#markdown-header-usage)
-
-> 3 [Video Demo](#markdown-header-video-demo)
-
-> 4 [See also](#markdown-header-see-also)
-
-> 5 [Credits and Donation](#markdown-header-credits-and-donation)
-
-> 6 [External links](#markdown-header-external-links)
+> 1 [Overview](#overview)
+>
+> 2 [Properties](#properties)
+>
+> 3 [Methods](#methods)
+>
+> 4 [Usage](#usage)
+>
+> 5 [Video Demo](#video-demo)
+>
+> 6 [See also](#see-also)
+>
+> 7 [Credits and Donation](#credits-and-donation)
+>
+> 8 [External links](#external-links)
 
 ---------
 
@@ -26,7 +30,7 @@ Graphic control for drawing custom polygons in the UI System
 
 Advanced polygon control with support for multiple vertices which can be manipulated to control the look and feel of the primitive
 
-![UI Polygon Inspector](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/UIPolygonInspector.jpg)
+![UI Polygon Inspector](Images/UIPolygonInspector.jpg)
 
 ---------
 
@@ -40,13 +44,13 @@ Add the primitive control to your scene using:
 
 ## Video Demo
 
-![UI Polygon Inspector](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/UIPolygonDemo.gif)
+![UI Polygon Inspector](Images/UIPolygonDemo.gif)
 
 ---------
 
 ## See also
 
-[DiamondGraph](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/DiamondGraph)
+[DiamondGraph](/Controls.md/DiamondGraph)
 
 ---------
 

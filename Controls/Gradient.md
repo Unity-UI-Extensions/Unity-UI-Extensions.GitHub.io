@@ -1,26 +1,28 @@
 # Gradient
 
-==============
-
 Apply vertex colours in a gradient on any UI object
+
+<!--![](Images/ Game Image.jpg)-->
 
 ---------
 
 ## Contents
 
-> 1 [Overview](#markdown-header-overview)
-
-> 2 [Properties](#markdown-header-properties)
-
-> 3 [Usage](#markdown-header-usage)
-
-> 4 [Video Demo](#markdown-header-video-demo)
-
-> 5 [See also](#markdown-header-see-also)
-
-> 6 [Credits and Donation](#markdown-header-credits-and-donation)
-
-> 7 [External links](#markdown-header-external-links)
+> 1 [Overview](#overview)
+>
+> 2 [Properties](#properties)
+>
+> 3 [Methods](#methods)
+>
+> 4 [Usage](#usage)
+>
+> 5 [Video Demo](#video-demo)
+>
+> 6 [See also](#see-also)
+>
+> 7 [Credits and Donation](#credits-and-donation)
+>
+> 8 [External links](#external-links)
 
 ---------
 
@@ -28,7 +30,7 @@ Apply vertex colours in a gradient on any UI object
 
 Apply vertex colours in a gradient on any graphic UI object
 
-![](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/GradientInspector.jpg)
+![](Images/GradientInspector.jpg)
 
 ---------
 
@@ -37,13 +39,12 @@ Apply vertex colours in a gradient on any graphic UI object
 The properties of the Box Slider control are as follows:
 
 Property | Description
---------- | --------------
+|-|-|
 *Gradient Mode*|Should the gradient work in Local or Global coordinate space
 *Gradient Dir*|The direction of the gradient: Horizontal / Vertical / Diagonal left to right / diagonally right to left
 *Override all color*|Should the control use or ignore the alpha of the original image for the effect
 *Vertex 1*|First gradient color
 *Vertex 2*|Second gradient color
-||
 
 ---------
 
@@ -58,13 +59,13 @@ Add Component -> UI -> Extensions -> Effects -> Gradient
 
 *Click to play*
 
-[![Gradient Demo](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/GradientDemo.jpg)](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/GradientDemo.mp4 "Gradient Demo")
+[![Gradient Demo](Images/GradientDemo.jpg)](Images/GradientDemo.mp4 "Gradient Demo")
 
 ---------
 
 ## See also
 
-* [Gradient2](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Gradient2)
+* [Gradient2](/Controls.md/Gradient2)
 
 ---------
 

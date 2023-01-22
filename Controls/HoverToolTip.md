@@ -1,24 +1,28 @@
 # HoverToolTip
 
-==============
+A basic Tooltip implementation
 
-An basic Tooltip implementation
+<!--![](Images/ Game Image.jpg)-->
 
 ---------
 
 ## Contents
 
-> 1 [Overview](#markdown-header-overview)
-
-> 2 [Usage](#markdown-header-usage)
-
-> 3 [Video Demo](#markdown-header-video-demo)
-
-> 4 [See also](#markdown-header-see-also)
-
-> 5 [Credits and Donation](#markdown-header-credits-and-donation)
-
-> 6 [External links](#markdown-header-external-links)
+> 1 [Overview](#overview)
+>
+> 2 [Properties](#properties)
+>
+> 3 [Methods](#methods)
+>
+> 4 [Usage](#usage)
+>
+> 5 [Video Demo](#video-demo)
+>
+> 6 [See also](#see-also)
+>
+> 7 [Credits and Donation](#credits-and-donation)
+>
+> 8 [External links](#external-links)
 
 ---------
 
@@ -43,8 +47,8 @@ GameObject -> UI -> Extensions -> HoverToolTip
 
 ## See also
 
-[ToolTip](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/ToolTip)
-[BoundToolTip](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/BoundToolTip)
+[ToolTip](/Controls.md/ToolTip)
+[BoundToolTip](/Controls.md/BoundToolTip)
 
 ---------
 

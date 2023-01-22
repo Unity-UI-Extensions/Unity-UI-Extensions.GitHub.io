@@ -1,26 +1,28 @@
 # Box Slider
 
-==============
-
 A slider which supports both X and Y values within a box
+
+<!--![](Images/ Game Image.jpg)-->
 
 ---------
 
 ## Contents
 
-> 1 [Overview](#markdown-header-overview)
-
-> 2 [Properties](#markdown-header-properties)
-
-> 3 [Usage](#markdown-header-usage)
-
-> 4 [Video Demo](#markdown-header-video-demo)
-
-> 5 [See also](#markdown-header-see-also)
-
-> 6 [Credits and Donation](#markdown-header-credits-and-donation)
-
-> 7 [External links](#markdown-header-external-links)
+> 1 [Overview](#overview)
+>
+> 2 [Properties](#properties)
+>
+> 3 [Methods](#methods)
+>
+> 4 [Usage](#usage)
+>
+> 5 [Video Demo](#video-demo)
+>
+> 6 [See also](#see-also)
+>
+> 7 [Credits and Donation](#credits-and-donation)
+>
+> 8 [External links](#external-links)
 
 ---------
 
@@ -29,7 +31,7 @@ A slider which supports both X and Y values within a box
 The Box Slider (like the Unity Slider controls), allows you to set a value using a handle within the RectTransform of the control.
 However, it supports both the X and Y axis within the area.
 
-![Box Slider Inspector](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/BoxSliderInspector.jpg)
+![Box Slider Inspector](Images/BoxSliderInspector.jpg)
 
 It allows you to set a minimum and maximum value for the axis as well as separate X and Y value selectors.
 
@@ -42,7 +44,7 @@ Like the Slider, it also includes an OnValueChanged event which updates as the h
 The properties of the Box Slider control are as follows:
 
 Property | Description
---------- | --------------
+|-|-|
 *Handle Rect*|The Rect Transform of the child handle, position used to derive values for control
 *Min Value*|The minimum value for the sliders
 *Max Value*|The maximum value for the sliders
@@ -50,9 +52,8 @@ Property | Description
 *Value X*|The X value of the slider
 *Value Y*|The Y value of the slider
 *On Value Changed* (event) |The Event fired when the handle within the box slider is changed
-||
 
-*Inherited from Slider*
+### Inherited from Slider
 
 * Interactable
 * Transition
@@ -70,9 +71,9 @@ It is also available as a Game Component menu in "*UI / Extensions / Box Slider*
 
 ## Video Demo
 
-*Click to play*
+### Click to play
 
-[![Box Slider Demo](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/BoxSliderDemo.jpg)](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/BoxSliderDemo.mp4 "Box Slider Demo")
+[![Box Slider Demo](Images/BoxSliderDemo.jpg)](Images/BoxSliderDemo.mp4 "Box Slider Demo")
 
 ---------
 

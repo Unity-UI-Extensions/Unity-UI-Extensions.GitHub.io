@@ -1,28 +1,28 @@
 # ToolTip
 
-==============
-
 An basic Tooltip implementation
+
+<!--![](Images/ Game Image.jpg)-->
 
 ---------
 
 ## Contents
 
-> 1 [Overview](#markdown-header-overview)
-
-> 2 [Properties](#markdown-header-properties)
-
-> 3 [Methods](#markdown-header-methods)
-
-> 4 [Usage](#markdown-header-usage)
-
-> 5 [Video Demo](#markdown-header-video-demo)
-
-> 6 [See also](#markdown-header-see-also)
-
-> 7 [Credits and Donation](#markdown-header-credits-and-donation)
-
-> 8 [External links](#markdown-header-external-links)
+> 1 [Overview](#overview)
+>
+> 2 [Properties](#properties)
+>
+> 3 [Methods](#methods)
+>
+> 4 [Usage](#usage)
+>
+> 5 [Video Demo](#video-demo)
+>
+> 6 [See also](#see-also)
+>
+> 7 [Credits and Donation](#credits-and-donation)
+>
+> 8 [External links](#external-links)
 
 ---------
 
@@ -30,7 +30,7 @@ An basic Tooltip implementation
 
 A tooltip implementation which allows the user to hover over a RectTransform to activate it.
 
-![](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/TooltipInspector.jpg)
+![](Images/TooltipInspector.jpg)
 
 ---------
 
@@ -39,21 +39,20 @@ A tooltip implementation which allows the user to hover over a RectTransform to 
 The properties of the Tooltip control are as follows:
 
 Property | Description
---------- | --------------
+|-|-|
 *Canvas*|The canvas used by the tooltip as positioning and scaling reference. Should usually be the root Canvas of the hierarchy this component is in.
 *TooltipTriggersCanForceCanvasUpdate*|Sets if tooltip triggers will run ForceUpdateCanvases and refresh the tooltip's layout group, (if any) when hovered, in order to prevent momentousness misplacement sometimes caused by ContentSizeFitters.
 *Y Shift*|Offset positioning of the Tooltip on the Y axis
 *X Shift*|Offset positioning of the Tooltip on the X axis
 ||
 Instance|Programmatically find the single instance of the ToolTip definition in the scene
-||
 
 ---------
 
 ## Methods
 
 Method | Arguments | Description
---- | --- | ---
+|-|-|-|
 *SetTooltip*|Text (string)|Activates the Tooltip in its current location
 *SetTooltip*|Text (string), Position (Vector3), RefreshCanvasBeforeGetSize (bool)|Activates the Tooltip at the specified location. Optionally, force a canvas refresh before presenting.
 *HideTooltip*|N/A|Hides the Tooltip
@@ -61,7 +60,6 @@ Method | Arguments | Description
 *ContextualTooltipUpdate*|RefreshCanvasBeforeGetSize (bool)|Runs the appropriate tooltip placement method, according to the parent canvas's render mode.
 *OnScreenSpaceCamera*|RefreshCanvasBeforeGetSize (bool)|Forces drawing the tooltip based on a ScreenSpace Canvas
 *OnScreenSpaceOverlay*|RefreshCanvasBeforeGetSize (bool)|Forces drawing the tooltip based on a ScreenSpace Overlay Canvas
-||
 
 ---------
 
@@ -84,8 +82,8 @@ N/A
 
 ## See also
 
-* [HoverToolTip](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/HoverToolTip)
-* [BoundToolTip](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/BoundToolTip)
+* [HoverToolTip](/Controls.md/HoverToolTip)
+* [BoundToolTip](/Controls.md/BoundToolTip)
 
 ---------
 

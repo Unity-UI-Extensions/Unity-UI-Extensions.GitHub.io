@@ -1,26 +1,28 @@
 # CooldownButton
 
-==============
-
 A selectable extension to provide a "cooldown" capability, preventing the button from being usable until a specified amount of time has passed.
+
+<!--![](Images/ Game Image.jpg)-->
 
 ---------
 
 ## Contents
 
-> 1 [Overview](#markdown-header-overview)
-
-> 2 [Properties](#markdown-header-properties)
-
-> 3 [Usage](#markdown-header-usage)
-
-> 4 [Video Demo](#markdown-header-video-demo)
-
-> 5 [See also](#markdown-header-see-also)
-
-> 6 [Credits and Donation](#markdown-header-credits-and-donation)
-
-> 7 [External links](#markdown-header-external-links)
+> 1 [Overview](#overview)
+>
+> 2 [Properties](#properties)
+>
+> 3 [Methods](#methods)
+>
+> 4 [Usage](#usage)
+>
+> 5 [Video Demo](#video-demo)
+>
+> 6 [See also](#see-also)
+>
+> 7 [Credits and Donation](#credits-and-donation)
+>
+> 8 [External links](#external-links)
 
 ---------
 
@@ -28,7 +30,7 @@ A selectable extension to provide a "cooldown" capability, preventing the button
 
 In several games, a power-up or cooldown logic is required when clicking on a button, this control enables that behaviour in a single reusable script.
 
-![](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/CooldownInspector.jpg)
+![](Images/CooldownInspector.jpg)
 
 This can be attached to any control implementing "Selectable" behaviour, such as:
 
@@ -47,7 +49,7 @@ Lastly, the control also has "extra" click detection allowing further feedback i
 The properties of the UILineConnector control are as follows:
 
 Property | Description
---------- | --------------
+|-|-|
 *Cooldown Timeout*|The amount of time the cooldown takes effect. Defaults to seconds
 *Cooldown Speed*|The speed at which the cooldown expires.
 *Cooldown Active*|(Read only)Is the Cooldown active (can be stopped with the CancelCooldown method)
@@ -59,7 +61,6 @@ Property | Description
 *On Cooldown Start* (event) |The Event fires when the user clicks on the control and starts the cooldown
 *On Button Click during Cooldown* (event) |The Event fires when the user clicks on the control while it is cooling down
 *On Cooldown Finish* (event) |The Event fires when the cooldown time has finished
-||
 
 ---------
 
@@ -73,15 +74,15 @@ The CooldownButton control is available as a Game Component menu in "*UI / Exten
 
 *Click to play*
 
-[![UI Line Connector Demo](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/CooldownDemo.jpg)](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/CooldownDemo.mp4 "UI Line Connector Demo")
+[![UI Line Connector Demo](Images/CooldownDemo.jpg)](Images/CooldownDemo.mp4 "UI Line Connector Demo")
 
 ---------
 
 ## See also
 
 * Unity Button (built-in)
-* [Non Drawing Graphic](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/NonDrawingGraphic)
-* [Selectable Extension](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/UISelectableExtension)
+* [Non Drawing Graphic](/Controls.md/NonDrawingGraphic)
+* [Selectable Extension](/Controls.md/UISelectableExtension)
 
 ---------
 

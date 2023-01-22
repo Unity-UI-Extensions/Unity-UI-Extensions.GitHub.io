@@ -1,65 +1,101 @@
-#VRCursor
-==============
+# VRCursor
 
+<!-- Description-->
 
+<!--![](Images/ Game Image.jpg)-->
 
-"Highlight"
-
-
-
-Contents
 ---------
-> 1 [Overview](#markdown-header-overview)
 
-> 2 [Usage](#markdown-header-usage)
+## Contents
 
-> 3 [Video Demo](#markdown-header-video-demo)
+> 1 [Overview](#overview)
+>
+> 2 [Properties](#properties)
+>
+> 3 [Methods](#methods)
+>
+> 4 [Usage](#usage)
+>
+> 5 [Video Demo](#video-demo)
+>
+> 6 [See also](#see-also)
+>
+> 7 [Credits and Donation](#credits-and-donation)
+>
+> 8 [External links](#external-links)
 
-> 4 [See also](#markdown-header-see-also)
+---------
 
-> 5 [Credits and Donation](#markdown-header-credits-and-donation)
+## Overview
 
-> 6 [External links](#markdown-header-external-links)
+A <!-- Control--> .
 
----------------------
+![](Images/<!-- Inspector Image-->.jpg)
 
-# Overview
+---------
 
-"Detailed overview of the control"
+## Properties
 
+The properties of the Vertical Scroll Snap control are as follows:
 
----------------------
+Property | Description
+|-|-|
+*<!-- Property-->*|<!-- Property-->
 
-# Usage
+Additional properties available in code:
 
-"Walk through how to use the control plus any tips for usage"
+Property | Return Type | Description
+|-|-|-|
+|<!-- Property-->|<!-- Type-->|<!-- Description-->|
 
+---------
 
----------------------
+## Methods
 
-# Video Demo
+Method | Arguments | Description
+|-|-|-|
+|<!-- Method-->|<!-- Type-->|<!-- Description-->|
 
-"Link to demo video or animated Gifs"
+---------
 
+## Usage
 
----------------------
+Use as follows:
 
-# See also
+* "Add Component -> Layout -> Extensions -> <!-- Control-->*"
 
-"List other controls that are useful or alternatives"
+Or alternatively, add the default layout for the control using:
 
+* "*GameObject -> UI -> Extensions -> <!-- Control-->*"
 
----------------------
+This will give you a <!-- Control--> setup with the script.
 
-# Credits and Donation
+---------
 
-"Name of the creator / contributors for the script, including any donation links"
+## Video Demo
 
----------------------
+Video
 
-# External links
+<!-- Video
 
-"List of links for the control, e.g. Source, other info"
+[![View Intro Video](http://img.youtube.com/vi/LnKy3_ymEXs/0.jpg)](http://www.youtube.com/watch?v=LnKy3_ymEXs "HSS/VSS walk-through video")
 
----------------------
+/-->
 
+---------
+
+## See also
+
+* Also <!-- See Also/-->
+
+---------
+
+## Credits and Donation
+
+<!-- Credits/-->
+
+---------
+
+## External links
+
+[Sourced from]()

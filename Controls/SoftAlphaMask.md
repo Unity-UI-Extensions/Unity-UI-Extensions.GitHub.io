@@ -1,26 +1,28 @@
 # SoftAlphaMask
 
-==============
-
 Shader based mask able to clip images using an alpha mask
+
+<!--![](Images/ Game Image.jpg)-->
 
 ---------
 
 ## Contents
 
-> 1 [Overview](#markdown-header-overview)
-
-> 2 [Properties](#markdown-header-properties)
-
-> 3 [Usage](#markdown-header-usage)
-
-> 4 [Video Demo](#markdown-header-video-demo)
-
-> 5 [See also](#markdown-header-see-also)
-
-> 6 [Credits and Donation](#markdown-header-credits-and-donation)
-
-> 7 [External links](#markdown-header-external-links)
+> 1 [Overview](#overview)
+>
+> 2 [Properties](#properties)
+>
+> 3 [Methods](#methods)
+>
+> 4 [Usage](#usage)
+>
+> 5 [Video Demo](#video-demo)
+>
+> 6 [See also](#see-also)
+>
+> 7 [Credits and Donation](#credits-and-donation)
+>
+> 8 [External links](#external-links)
 
 ---------
 
@@ -28,7 +30,7 @@ Shader based mask able to clip images using an alpha mask
 
 Where most Alpha Mask effects built into the Unity UI system work on hard transparencies, the Soft Alpha Mask is able to work with alpha mask gradients and includes animation features to enable a smooth transition.
 
-![Soft Alpha Mask Inspector](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/SoftAplhaMaskInspector.jpg)
+![Soft Alpha Mask Inspector](Images/SoftAplhaMaskInspector.jpg)
 
 ---------
 
@@ -37,14 +39,13 @@ Where most Alpha Mask effects built into the Unity UI system work on hard transp
 The properties of the Selectable Scalar control are as follows:
 
 Property | Description
---------- | --------------
+|-|-|
 *Mask Area*|The area that is to be used as the container.
 *Alpha Mask*|Texture to be used to do the soft alpha.
 *Cut Off*|At what point to apply the alpha min range 0-1.
 *Hard Blend*|Implement a hard blend based on the Cutoff.
 *Flip Alpha Mask*|Flip the masks alpha value.
 *Don't clip Mask Scaling Rect*|If a different Mask Scaling Rect is given, and this value is true, the area around the mask will not be clipped.
-||
 
 ---------
 ## Usage
@@ -57,7 +58,7 @@ There is also a Text version of the Soft Alpha Mask to work with Text Objects.
 
 ## Video Demo
 
-![Soft Alpha Mask Demo](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/SoftAlphaMaskDemo.gif)
+![Soft Alpha Mask Demo](Images/SoftAlphaMaskDemo.gif)
 
 ---------
 

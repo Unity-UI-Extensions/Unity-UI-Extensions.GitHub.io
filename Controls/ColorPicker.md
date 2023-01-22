@@ -1,28 +1,30 @@
 # Color Picker
 
-==============
-
-A generated control using the new [Box Slider](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/BoxSlider) control and several sliders with helpers.
+A generated control using the new [Box Slider](BoxSlider.md) control and several sliders with helpers.
 
 Creates a Color Picker style control to generate color values within a Unity Project. Handles color sampling with a cursor as well as saving/loading presets.
+
+<!--![](Images/ Game Image.jpg)-->
 
 ---------
 
 ## Contents
 
-> 1 [Overview](#markdown-header-overview)
-
-> 2 [Properties](#markdown-header-properties)
-
-> 3 [Usage](#markdown-header-usage)
-
-> 4 [Video Demo](#markdown-header-video-demo)
-
-> 5 [See also](#markdown-header-see-also)
-
-> 6 [Credits and Donation](#markdown-header-credits-and-donation)
-
-> 7 [External links](#markdown-header-external-links)
+> 1 [Overview](#overview)
+>
+> 2 [Properties](#properties)
+>
+> 3 [Methods](#methods)
+>
+> 4 [Usage](#usage)
+>
+> 5 [Video Demo](#video-demo)
+>
+> 6 [See also](#see-also)
+>
+> 7 [Credits and Donation](#credits-and-donation)
+>
+> 8 [External links](#external-links)
 
 ---------
 
@@ -30,9 +32,9 @@ Creates a Color Picker style control to generate color values within a Unity Pro
 
 A generated Color Picker UI with prefab for use in Unity. Includes an optional Color Sampler to pick colors from the screen.
 
-![](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/ColorPicker.jpg)
+![](Images/ColorPicker.jpg)
 
-![](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/ColorPickerInspector.jpg)
+![](Images/ColorPickerInspector.jpg)
 
 ### Color Picker control
 
@@ -44,7 +46,7 @@ Like the other Unity UI controls, it includes an OnValueChanged event which outp
 
 Captures the screen when it is enabled, then provides a cursor with which the user can select colors from the screen. 
 
-![](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/ColorPickerPresets.jpg)
+![](Images/ColorPickerPresets.jpg)
 
 ### Color Picker Presets
 
@@ -59,7 +61,7 @@ Manages saving/loading presets to a JSON file or player prefs.
 Example found on the *Picker 2.0* prefab.
 
 Property | Description
---------- | --------------
+|-|-|
 *Sampler* (button) |The cursor's button component.
 *Sampler Outline* (outline) |The outline of the cursor to make it easier to see what's being sampled.
 *On Color Selected* (event) |Callback for when the cursor is clicked on a color. This should connect to the ColorPickerControl.CurrentColor at minimum.
@@ -70,7 +72,7 @@ Example found on the *Picker 2.0* prefab.
 The properties of the Box Slider control are as follows:
 
 Property | Description
---------- | --------------
+|-|-|
 *On Value Changed* (event) |The Event fired when the color within the picker is changed
 *HSV sliders on* (bool) |Shows / hides the HSV sliders in te UI prefab.
 *HSV Sliders* (GameObject array) |Contains references to the components that are part of the HSV sliders display.
@@ -83,7 +85,7 @@ Property | Description
 Example found on the *Picker 2.0 / Presets* prefab.
 
 Property | Description
---------- | --------------
+|-|-|
 *Picker* (ColorPickerControl)| Reference to the color picker control.
 *Preset Prefab* (GameObject)| UI component for displaying the preset(s).
 *Max Presets* (int)| The max number of presets allowed (to control the UI size).
@@ -134,7 +136,7 @@ The ColorPickerPresets and ColorSampler are all set up in the prefab without nee
 
 *Click to play*
 
-[![Box Slider Demo](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/ColorPickerDemo.jpg)](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/ColorPickerDemo.mp4 "Box Slider Demo")
+[![Box Slider Demo](Images/ColorPickerDemo.jpg)](Images/ColorPickerDemo.mp4 "Box Slider Demo")
 
 ---------
 

@@ -1,24 +1,28 @@
 # Accordion
 
-==============
-
 An Accordion style control with animated segments.
+
+<!--![](Images/ Game Image.jpg)-->
 
 ---------
 
 ## Contents
 
-> 1 [Overview](#markdown-header-overview)
-
-> 2 [Usage](#markdown-header-usage)
-
-> 3 [Video Demo](#markdown-header-video-demo)
-
-> 4 [See also](#markdown-header-see-also)
-
-> 5 [Credits and Donation](#markdown-header-credits-and-donation)
-
-> 6 [External links](#markdown-header-external-links)
+> 1 [Overview](#overview)
+>
+> 2 [Properties](#properties)
+>
+> 3 [Methods](#methods)
+>
+> 4 [Usage](#usage)
+>
+> 5 [Video Demo](#video-demo)
+>
+> 6 [See also](#see-also)
+>
+> 7 [Credits and Donation](#credits-and-donation)
+>
+> 8 [External links](#external-links)
 
 ---------
 
@@ -33,7 +37,7 @@ A menu style control with pop-out sub elements like a hover bar.
 > Add the accordion control to your scene using:
 >
 > GameObject -> UI -> Extensions -> Accordion Group
-
+>
 > Additional child elements can be added using:
 >
 > GameObject -> UI -> Extensions -> Accordion Element
@@ -47,21 +51,21 @@ To get started with your first accordion, simply follow these steps:
 - Add a **Vertical Layout Group** to your new **Accordion Element** and enabling **Control Child Size** width and height to **True**.  
 Ensure you only set **Child Force Expand** Width to **True** (*Expand Height should be False*):
 
-![Accordion Element setup](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/Accordion-Layout.png)
+![Accordion Element setup](Images/Accordion-Layout.png)
 
 - Design your Accordion element with a **Header** and **Content**, for example, two child **Text** objects as shown below:
 
-![Accordion Element Header](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/Accordion-Element.png)
+![Accordion Element Header](Images/Accordion-Element.png)
 
 - Add a **Layout Element** to your **Header** and set the **Min Height** to the same as the size used in the **Accordion Element**:
 
-![Accordion Header Content](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/Accordion-Header.png)
+![Accordion Header Content](Images/Accordion-Header.png)
 
 Feel free to duplicate and update your Accordion Elements to fill up your group.
 
 The Group can be set to Expand Instantly or use a Tween function to animate the entrance of each Accordion Element child text by setting the **Transition** on the group as shown below.
 
-![Accordion Group Transition](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/Accordion-Settings.png)
+![Accordion Group Transition](Images/Accordion-Settings.png)
 
 > Currently the control is only designed for Vertical Transition of vertically stacked items.  For additional layouts, please log an issue on the site with your requirements.
 

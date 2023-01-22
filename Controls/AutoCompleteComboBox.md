@@ -1,26 +1,28 @@
 # AutoComplete ComboBox
 
-==============
-
 A text combobox with autocomplete selection
+
+<!--![](Images/ Game Image.jpg)-->
 
 ---------
 
 ## Contents
 
-> 1 [Overview](#markdown-header-overview)
+> 1 [Overview](#overview)
 >
-> 2 [Properties](#markdown-header-properties)
+> 2 [Properties](#properties)
 >
-> 3 [Usage](#markdown-header-usage)
+> 3 [Methods](#methods)
 >
-> 4 [Video Demo](#markdown-header-video-demo)
+> 4 [Usage](#usage)
 >
-> 5 [See also](#markdown-header-see-also)
+> 5 [Video Demo](#video-demo)
 >
-> 6 [Credits and Donation](#markdown-header-credits-and-donation)
+> 6 [See also](#see-also)
 >
-> 7 [External links](#markdown-header-external-links)
+> 7 [Credits and Donation](#credits-and-donation)
+>
+> 8 [External links](#external-links)
 
 ---------
 
@@ -28,7 +30,7 @@ A text combobox with autocomplete selection
 
 A specialised text field that allows a vocabulary to be added to guide or restrict entry.
 
-![AutocompleteComboBox inspector](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/AutoCompleteComboBoxInspector.jpg)
+![AutocompleteComboBox inspector](Images/AutoCompleteComboBoxInspector.jpg)
 
 ---------
 
@@ -37,7 +39,7 @@ A specialised text field that allows a vocabulary to be added to guide or restri
 The properties of the Box Slider control are as follows:
 
 Property | Description
---------- | --------------
+|-|-|
 *Disabled Text Color*|Color of the Autocomplete field when the control is disabled
 *Available Options*|Array of text based options for the dropdown/selection
 *Scroll Bar Width*|The width of the scrollbar when displayed
@@ -52,7 +54,6 @@ Property | Description
 *On Selection Text Changed* (event) |The Event fired when the the user is typing
 *On Selection Validity Changed* (event) |The Event fired when the the text the user enters matches a selection
 *On Selection Changed* (event) |The Event fired when the user selects an option or loses focus
-||
 
 > When managing the control programmatically, make sure you use the following functions to manage the ComboBox contents. **Do NOT update the 'AvailableOptions' list directly**
 
@@ -61,13 +62,12 @@ Property | Description
 ## Methods
 
 Method | Arguments | Description
---- | --- | ---
+|-|-|-|
 AddItem|String|Adds a single item to the list
 RemoveItem|String|Removes a single item from the list
 SetAvailableOptions|List of String|Clears the current options and replaces with new list (array or List)
 SetAvailableOptions|Array of String|Clears the current options and replaces with new list (array or List)
 ResetItems|None|Clears all current options
-||
 
 ---------
 
@@ -86,8 +86,8 @@ GameObject -> UI -> Extensions -> AutoCompleteComboBox
 
 ## See also
 
-[ComboBox](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/ComboBox)
-[DropDownList](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/DropDownList)
+[ComboBox](/Controls.md/ComboBox)
+[DropDownList](/Controls.md/DropDownList)
 
 ---------
 

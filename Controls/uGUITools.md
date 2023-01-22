@@ -1,20 +1,28 @@
 # uGUITools
 
-==============
-
 A collection of functions to assist with managing anchors on RectTransforms
+
+<!--![](Images/ Game Image.jpg)-->
 
 ---------
 
 ## Contents
 
-> 1 [Overview](#markdown-header-overview)
-
-> 2 [Usage](#markdown-header-usage)
-
-> 3 [Credits and Donation](#markdown-header-credits-and-donation)
-
-> 4 [External links](#markdown-header-external-links)
+> 1 [Overview](#overview)
+>
+> 2 [Properties](#properties)
+>
+> 3 [Methods](#methods)
+>
+> 4 [Usage](#usage)
+>
+> 5 [Video Demo](#video-demo)
+>
+> 6 [See also](#see-also)
+>
+> 7 [Credits and Donation](#credits-and-donation)
+>
+> 8 [External links](#external-links)
 
 ---------
 
@@ -22,7 +30,7 @@ A collection of functions to assist with managing anchors on RectTransforms
 
 A useful set of tools to manipulate RectTransforms to its Anchors, or Adjusts the Anchors to the selected RectTransform.
 
-![](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/uGUIToolsMenu.jpg)
+![](Images/uGUIToolsMenu.jpg)
 
 ---------
 

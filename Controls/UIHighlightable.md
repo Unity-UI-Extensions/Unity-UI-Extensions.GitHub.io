@@ -1,26 +1,28 @@
 # UI Highlightable
 
-==============
-
 A custom component to enable RectTransform highlighting without the Unity UI Selectable control.  Useful if you want to extend your own controls.
+
+<!--![](Images/ Game Image.jpg)-->
 
 ---------
 
 ## Contents
 
-> 1 [Overview](#markdown-header-overview)
-
-> 2 [Properties](#markdown-header-properties)
-
-> 3 [Usage](#markdown-header-usage)
-
-> 4 [Video Demo](#markdown-header-video-demo)
-
-> 5 [See also](#markdown-header-see-also)
-
-> 6 [Credits and Donation](#markdown-header-credits-and-donation)
-
-> 7 [External links](#markdown-header-external-links)
+> 1 [Overview](#overview)
+>
+> 2 [Properties](#properties)
+>
+> 3 [Methods](#methods)
+>
+> 4 [Usage](#usage)
+>
+> 5 [Video Demo](#video-demo)
+>
+> 6 [See also](#see-also)
+>
+> 7 [Credits and Donation](#credits-and-donation)
+>
+> 8 [External links](#external-links)
 
 ---------
 
@@ -29,7 +31,7 @@ A custom component to enable RectTransform highlighting without the Unity UI Sel
 The UI selectable added highlighting behavior to a RectTransform without needing a Selectable component. The selectable control by default, has certain behaviors like click-sticking (where the control is clicked and remains in the highlighted state until something else is clicked) which may not be desirable.
 This control offers more control and some additional behaviour, such as "Click to hold" which leaves a RectTransform in the clicked state until it is clicked again (like a toggle)
 
-![](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/UIHighlightableInspector.jpg)
+![](Images/UIHighlightableInspector.jpg)
 
 The control also supports a disabled state but has no control over child Rect Transforms, so an event was added to allow you to perform additional actions when the the RectTransform is rendered inactive.
 
@@ -40,7 +42,7 @@ The control also supports a disabled state but has no control over child Rect Tr
 The properties of the UI Highlightable control are as follows:
 
 Property | Description
---------- | --------------
+|-|-|
 *Interactable*|Does the control react to highlighted events?  Defaults to the Disabled color.
 *Click to Hold*|When clicked, does the control stay in the Pressed Color or return to the highlighted color (default, pressed color only use when clicked or held)
 *Normal Color*|The default color of the RectTransform when not being interacted with
@@ -48,9 +50,8 @@ Property | Description
 *Pressed Color*|The color of the RectTransform when clicked or held
 *Disabled Color*|The color of the RectTransform when it is non-interactable (see *Interactable*)
 *On Interactable Changed* (event) |The Event fired when the the control enters and leaves the Interactable State, passes the current state when fired.
-||
 
-*Implements the Image control on the RectTransform*
+### Implements the Image control on the RectTransform
 
 ---------
 
@@ -66,13 +67,13 @@ Simply add the UI Highlightable component to a RectTransform using the Component
 
 *Click to play*
 
-[![UIHighlighter Demo](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/UIHighlighterDemo.jpg)](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/UIHighlighterDemo.mp4 "UIHighlighter Demo")
+[![UIHighlighter Demo](Images/UIHighlighterDemo.jpg)](Images/UIHighlighterDemo.mp4 "UIHighlighter Demo")
 
 ---------
 
 ## See also
 
-* [UI Selectable](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/UISelectableExtension)
+* [UI Selectable](/Controls.md/UISelectableExtension)
 
 ---------
 

@@ -1,26 +1,28 @@
 # Non-Drawing Graphic
 
-==============
-
 A graphic component with zero draw calls, useful (when paired with a click script or the Selectable Extension) for invisible buttons or hit test blockers.
+
+<!--![](Images/ Game Image.jpg)-->
 
 ---------
 
 ## Contents
 
-> 1 [Overview](#markdown-header-overview)
-
-> 2 [Properties](#markdown-header-properties)
-
-> 3 [Usage](#markdown-header-usage)
-
-> 4 [Video Demo](#markdown-header-video-demo)
-
-> 5 [See also](#markdown-header-see-also)
-
-> 6 [Credits and Donation](#markdown-header-credits-and-donation)
-
-> 7 [External links](#markdown-header-external-links)
+> 1 [Overview](#overview)
+>
+> 2 [Properties](#properties)
+>
+> 3 [Methods](#methods)
+>
+> 4 [Usage](#usage)
+>
+> 5 [Video Demo](#video-demo)
+>
+> 6 [See also](#see-also)
+>
+> 7 [Credits and Donation](#credits-and-donation)
+>
+> 8 [External links](#external-links)
 
 ---------
 
@@ -28,11 +30,11 @@ A graphic component with zero draw calls, useful (when paired with a click scrip
 
 The Non Drawing Graphic component allows you to add a graphic hit testable area with zero draw calls.  The Raycast hit test can also be enabled or disabled (instead of using a CanvasGroup)
 
-![](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/NonDrawingGraphicInspector.jpg)
+![](Images/NonDrawingGraphicInspector.jpg)
 
 It is also very useful when paired with the Selectable Extension to add Click, Release and Hold capabilities.
 
-![](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/NonDrawingGraphicInspectorClickable.jpg)
+![](Images/NonDrawingGraphicInspectorClickable.jpg)
 
 ---------
 
@@ -41,9 +43,8 @@ It is also very useful when paired with the Selectable Extension to add Click, R
 The properties of the Non Drawing Graphic component are as follows:
 
 Property | Description
---------- | --------------
+|-|-|
 *Raycast Target*|Should this GO block raycasts or not.  Changeable in code or editor.
-||
 
 ---------
 
@@ -64,13 +65,13 @@ These will be added to the asset in the next update.
 
 *Click to play*
 
-[![Non Drawing Graphic Demo](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/NonDrawingGraphicDemo.jpg)](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/NonDrawingGraphicDemo.mp4 "Non Drawing Graphic Demo")
+[![Non Drawing Graphic Demo](Images/NonDrawingGraphicDemo.jpg)](Images/NonDrawingGraphicDemo.mp4 "Non Drawing Graphic Demo")
 
 ---------
 
 ## See also
 
-* [Selectable Extension](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/UISelectableExtension)
+* [Selectable Extension](/Controls.md/UISelectableExtension)
 (to add the extended click behaviour to this component)
 
 ---------

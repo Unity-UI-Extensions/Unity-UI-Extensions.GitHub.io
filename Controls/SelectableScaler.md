@@ -1,26 +1,28 @@
 # Selectable Scalar
 
-==============
-
 A simple tween scaler to affect Rect Transform scale on other controls.
+
+<!--![](Images/ Game Image.jpg)-->
 
 ---------
 
 ## Contents
 
-> 1 [Overview](#markdown-header-overview)
-
-> 2 [Properties](#markdown-header-properties)
-
-> 3 [Usage](#markdown-header-usage)
-
-> 4 [Video Demo](#markdown-header-video-demo)
-
-> 5 [See also](#markdown-header-see-also)
-
-> 6 [Credits and Donation](#markdown-header-credits-and-donation)
-
-> 7 [External links](#markdown-header-external-links)
+> 1 [Overview](#overview)
+>
+> 2 [Properties](#properties)
+>
+> 3 [Methods](#methods)
+>
+> 4 [Usage](#usage)
+>
+> 5 [Video Demo](#video-demo)
+>
+> 6 [See also](#see-also)
+>
+> 7 [Credits and Donation](#credits-and-donation)
+>
+> 8 [External links](#external-links)
 
 ---------
 
@@ -28,7 +30,7 @@ A simple tween scaler to affect Rect Transform scale on other controls.
 
 A simple Tween enhancement that scales another RectTransform according to a preset curve.
 
-![](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/SelectableScalarInspector.jpg)
+![](Images/SelectableScalarInspector.jpg)
 
 ---------
 
@@ -37,11 +39,10 @@ A simple Tween enhancement that scales another RectTransform according to a pres
 The properties of the Selectable Scalar control are as follows:
 
 Property | Description
---------- | --------------
+|-|-|
 *Anim Curve*|The curve that will be used to scale the Rect Transform in and out.
 *Speed*|The speed at which the animation will take effect.
 *Target*|The target for the animation.
-||
 
 ---------
 
@@ -60,13 +61,13 @@ Or alternatively, add the component to the control using:
 
 *Click to play*
 
-[![Selectable Scalar Demo](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/SelectableScalarDemo.jpg)](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/SelectableScalarDemo.mp4 "Selectable Scalar Demo")
+[![Selectable Scalar Demo](Images/SelectableScalarDemo.jpg)](Images/SelectableScalarDemo.mp4 "Selectable Scalar Demo")
 
 ---------
 
 ## See also
 
-* [UI_TweenScale](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/UI_TweenScale)
+* [UI_TweenScale](/Controls.md/UI_TweenScale)
 
 ---------
 

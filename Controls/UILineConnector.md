@@ -1,26 +1,28 @@
 # UILineConnector
 
-==============
-
 A Line Renderer helper used to draw a chain between multiple gameObjects, like a node connector
+
+<!--![](Images/ Game Image.jpg)-->
 
 ---------
 
 ## Contents
 
-> 1 [Overview](#markdown-header-overview)
-
-> 2 [Properties](#markdown-header-properties)
-
-> 3 [Usage](#markdown-header-usage)
-
-> 4 [Video Demo](#markdown-header-video-demo)
-
-> 5 [See also](#markdown-header-see-also)
-
-> 6 [Credits and Donation](#markdown-header-credits-and-donation)
-
-> 7 [External links](#markdown-header-external-links)
+> 1 [Overview](#overview)
+>
+> 2 [Properties](#properties)
+>
+> 3 [Methods](#methods)
+>
+> 4 [Usage](#usage)
+>
+> 5 [Video Demo](#video-demo)
+>
+> 6 [See also](#see-also)
+>
+> 7 [Credits and Donation](#credits-and-donation)
+>
+> 8 [External links](#external-links)
 
 ---------
 
@@ -28,13 +30,13 @@ A Line Renderer helper used to draw a chain between multiple gameObjects, like a
 
 The UI Line Connector, allows you Override the Line Renderer control to build a line connecting the selected GameObjects.
 
-![](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/UILineConnectorInspector.jpg)
+![](Images/UILineConnectorInspector.jpg)
 
 This produces a Node connector style effect between the provided UI GameObjects.
 
-![](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/UILineConnectorSample.jpg)
+![](Images/UILineConnectorSample.jpg)
 
-> Depends on the [UI Line Renderer](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/UILineRenderer) component
+> Depends on the [UI Line Renderer](/Controls.md/UILineRenderer) component
 
 *Note*
 The Lines depend on the Pivot's of the Main Canvas, Line Renderer and the Selected GameObjects.  Adjust as required.
@@ -45,17 +47,16 @@ The Lines depend on the Pivot's of the Main Canvas, Line Renderer and the Select
 The properties of the UILineConnector control are as follows:
 
 Property | Description
---------- | --------------
+|-|-|
 *Transforms*|The List of GameObjects to connect lines between
-||
 
-*Requires Line Renderer*
+### Requires Line Renderer Component
 
 ---------
 
 ## Usage
 
-The UILineConnector is available as a Game Component menu in "*UI / Extensions / UI Line Connector*". This will also add the [UI Line Renderer](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/UILineRenderer) component by default
+The UILineConnector is available as a Game Component menu in "*UI / Extensions / UI Line Connector*". This will also add the [UI Line Renderer](/Controls.md/UILineRenderer) component by default
 
 ---------
 
@@ -63,13 +64,13 @@ The UILineConnector is available as a Game Component menu in "*UI / Extensions /
 
 *Click to play*
 
-[![UI Line Connector Demo](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/UILineConnectorDemo.jpg)](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/UILineConnectorDemo.mp4 "UI Line Connector Demo")
+[![UI Line Connector Demo](Images/UILineConnectorDemo.jpg)](Images/UILineConnectorDemo.mp4 "UI Line Connector Demo")
 
 ---------
 
 ## See also
 
-* [UILineRenderer](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/UILineRenderer)
+* [UILineRenderer](/Controls.md/UILineRenderer)
 
 ---------
 

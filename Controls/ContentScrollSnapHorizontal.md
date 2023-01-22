@@ -1,26 +1,28 @@
 # Content ScrollSnap Horizontal
 
-==============
-
 A list scroll rect that snaps onto the items in its content, includes button & pagination support (optional).
+
+<!--![](Images/ Game Image.jpg)-->
 
 ---------
 
 Contents
 
-> 1 [Overview](#markdown-header-overview)
-
-> 2 [Properties](#markdown-header-properties)
-
-> 3 [Methods](#markdown-header-methods)
-
-> 4 [Usage](#markdown-header-usage)
-
-> 5 [Demo](#markdown-header-demo)
-
-> 6 [See also](#markdown-header-see-also)
-
-> 7 [Credits and Donation](#markdown-header-credits-and-donation)
+> 1 [Overview](#overview)
+>
+> 2 [Properties](#properties)
+>
+> 3 [Methods](#methods)
+>
+> 4 [Usage](#usage)
+>
+> 5 [Video Demo](#video-demo)
+>
+> 6 [See also](#see-also)
+>
+> 7 [Credits and Donation](#credits-and-donation)
+>
+> 8 [External links](#external-links)
 
 ---------
 
@@ -33,7 +35,7 @@ Pages can be moved by swipes or via the use of buttons.
 A scroll snap style control which is focused on a horizontal layout, enabling a paged view of child elements.
 Pages can be moved by keys, swipes or via the use of buttons.
 
-![](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/ContentScrollSnapHorizontalInspector.jpg)
+![](Images/ContentScrollSnapHorizontalInspector.jpg)
 
 Implements additional events for when the scroll snap starts moving, when the current item changes, when an item is found to snap to, and when
 the scroll snap has finished snapping.
@@ -45,8 +47,7 @@ the scroll snap has finished snapping.
 The properties of the Horizontal Scroll Snap control are as follows:
 
 Property | Description
---------- | --------------
-
+|-|-|
 *Ignore Inactive Items*|When enabled the scroll snap ignores inactive items, when disabled the scroll snap will snap to inactive items.
 *Start Info*|All information about where the scroll snap should start when it is enabled, and how it should get there.
 *Index Type*|A property of Start Info which describes whether the Index is associated with the child at that index, or the position at that index. A higher Index where the Index Type is Position Index means it will be further to the right.
@@ -63,16 +64,14 @@ Property | Description
 *Current Item Change* (event)|The Event fired when the current (closest) item changes, either via swipe, or Next/Prev Buttons.
 *Found Item To Snap To* (event)|The Event fired when the scroll snap decides what item it is going to snap to, either when the scroll rect's velocity falls below the Snapping Velocity Threshold, or when Next/Prev buttons are pushed.
 *Snapped To Item* (event)|The Event fired when the scroll snap settles after being changed by swipe, or Next/Prev Buttons.
-||
 
 ---------
 
 ## Methods
 
 Method | Arguments | Description
---- | --- | ---
+|-|-|-|
 *SetNewItems*|newItems (List of Transform Items)|Replaces the content with a  new list of items. Content should have a layout control or the new items should be prefabs with positions/anchors already defined.
-||
 
 ---------
 
@@ -91,15 +90,15 @@ This will give you a standard Scroll Rect setup with the script and a few exampl
 
 ## Demo
 
-![](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/ContentScrollSnapHorizontalDemo.gif)
+![](Images/ContentScrollSnapHorizontalDemo.gif)
 
 ---------
 
 ## See also
 
-* [HorizontalScrollSnap](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/HorizontalScrollSnap)
-* [VerticalScrollSnap](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/VerticalScrollSnap)
-* [ScrollSnap](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/ScrollSnap)
+* [HorizontalScrollSnap](/Controls.md/HorizontalScrollSnap)
+* [VerticalScrollSnap](/Controls.md/VerticalScrollSnap)
+* [ScrollSnap](/Controls.md/ScrollSnap)
 
 ---------
 

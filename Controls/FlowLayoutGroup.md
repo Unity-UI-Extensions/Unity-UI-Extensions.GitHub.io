@@ -1,24 +1,28 @@
 # FlowLayoutGroup
 
-==============
-
 A more rugged grid style layout group
+
+<!--![](Images/ Game Image.jpg)-->
 
 ---------
 
 ## Contents
 
-> 1 [Overview](#markdown-header-overview)
-
-> 2 [Usage](#markdown-header-usage)
-
-> 3 [Video Demo](#markdown-header-video-demo)
-
-> 4 [See also](#markdown-header-see-also)
-
-> 5 [Credits and Donation](#markdown-header-credits-and-donation)
-
-> 6 [External links](#markdown-header-external-links)
+> 1 [Overview](#overview)
+>
+> 2 [Properties](#properties)
+>
+> 3 [Methods](#methods)
+>
+> 4 [Usage](#usage)
+>
+> 5 [Video Demo](#video-demo)
+>
+> 6 [See also](#see-also)
+>
+> 7 [Credits and Donation](#credits-and-donation)
+>
+> 8 [External links](#external-links)
 
 ---------
 
@@ -26,7 +30,7 @@ A more rugged grid style layout group
 
 A more rugged grid style layout group
 
-![](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/Images/TableLayoutGroupInspector.jpg)
+![](Images/TableLayoutGroupInspector.jpg)
 
 ---------
 
@@ -34,8 +38,8 @@ A more rugged grid style layout group
 
 The properties of the Box Slider control are as follows:
 
-Property | Description 
---------- | -------------- 
+Property | Description
+|-|-|
 *Handle Rect*|The Rect Transform of the child handle, position used to derive values for control
 *Min Value*|The minimum value for the sliders
 *Max Value*|The maximum value for the sliders
@@ -43,9 +47,8 @@ Property | Description
 *Value X*|The X value of the slider
 *Value Y*|The Y value of the slider
 *On Value Changed* (event) |The Event fired when the handle within the box slider is changed
-||
 
-*Inherited from Slider*
+## Inherited from Slider
 
 * Interactable
 * Transition
@@ -68,9 +71,9 @@ Add Component -> Layout -> Extensions -> Flow Layout Group
 
 ## See also
 
-* [Curved Layout Group](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/CurvedLayout)
-* [Radial Layout Group](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/RadialLayout)
-* [Table Layout Group](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls/TableLayoutGroup)
+* [Curved Layout Group](/Controls.md/CurvedLayout)
+* [Radial Layout Group](/Controls.md/RadialLayout)
+* [Table Layout Group](/Controls.md/TableLayoutGroup)
 
 ---------
 

@@ -1,67 +1,66 @@
-#GamePadInputModule
-==============
-
-
+# GamePadInputModule
 
 Stripped down SIM Input module for just gamepad/keybord input
 
+<!--![](Images/ Game Image.jpg)-->
 
-
-Contents
 ---------
-> 1 [Overview](#markdown-header-overview)
 
-> 2 [Usage](#markdown-header-usage)
+## Contents
 
-> 3 [Video Demo](#markdown-header-video-demo)
+> 1 [Overview](#overview)
+>
+> 2 [Properties](#properties)
+>
+> 3 [Methods](#methods)
+>
+> 4 [Usage](#usage)
+>
+> 5 [Video Demo](#video-demo)
+>
+> 6 [See also](#see-also)
+>
+> 7 [Credits and Donation](#credits-and-donation)
+>
+> 8 [External links](#external-links)
 
-> 4 [See also](#markdown-header-see-also)
+---------
 
-> 5 [Credits and Donation](#markdown-header-credits-and-donation)
-
-> 6 [External links](#markdown-header-external-links)
-
----------------------
-
-# Overview
+## Overview
 
 Focused input module for just gamepads as opposed to the standard Standalone Input Module
 
 *NOTE, not compatible with the StandaloneInputModule, so please remove / disable this before adding this component
 
+---------
 
----------------------
-
-# Usage
+## Usage
 
 To enable the Gamepad Input Module, simply add the component to the EventSystem using:
 Add Component -> UI -> Extensions -> GamePadInputModule
 
+---------
 
-
----------------------
-
-# Video Demo
+## Video Demo
 
 "Link to demo video or animated Gifs"
 
+---------
 
----------------------
-
-# See also
+## See also
 
 N/A
 
----------------------
+---------
 
-# Credits and Donation
+## Credits and Donation
 
 SimonDarksideJ
 
----------------------
+---------
 
-# External links
+## External links
 
 N/A
----------------------
 
+---------

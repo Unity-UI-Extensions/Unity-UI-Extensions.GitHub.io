@@ -1,91 +1,91 @@
-# This repository is being migrated to GitHub
-
-The new home for this repository is:
-
-> ## https://github.com/Unity-UI-Extensions/com.unity.uiextensions
-
-BitBucket is just not what it used to be (workable)
+# Unity-UI-Extensions - Home
 
 ## Welcome
 
 Welcome to the Unity UI Extensions Wiki page.  This site documents all the current controls provided by the Unity UI Extensions project, their use and tips and tricks
 
-If you have a suggestion to update these docs? Then either submit a PR yourself, or log an issue / proposal in the [issues](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/issues?status=new&status=open) section.
+If you have a suggestion to update these docs? Then either submit a PR yourself, or log an issue / proposal in the [issues](https://github.com/Unity-UI-Extensions/com.unity.uiextensions/issues) section.
 
 -----
 
 You can follow the UI Extensions team for updates and news on:
 
-## [Twitter](https://twitter.com/search?q=%23uiextensions) / [Facebook](https://www.facebook.com/UnityUIExtensions/) / [YouTube](https://www.youtube.com/channel/UCG3gZOkmL-2rmZat4ufv28Q)
+## [Twitter - #unityuiextensions](https://twitter.com/search?q=%23unityuiextensions) / [Facebook](https://www.facebook.com/UnityUIExtensions/) / [YouTube](https://www.youtube.com/@UnityUIExtensions)
 
 Chat live with the [Unity UI Extensions community on Gitter](https://gitter.im/Unity-UI-Extensions/Lobby) here:
 
 [![UI Extensions Live Chat](https://photos.angel.co/startups/i/368944-d81438d134dc6c5567ffaab69861cb34-medium_jpg.jpg?buster=1404125976)](https://gitter.im/Unity-UI-Extensions/Lobby)
+
+> Considering migrating chat to either Discord or the GitHub Discussions panel, 
 -----
 
-## [Intro](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/GettingStarted)
+## [Intro](GettingStarted.md)
 
 For more info, here's a little introduction video for the project:
+
+> Seriously needs refreshing for the new world order 🤣
 
 [![View Intro Video](http://img.youtube.com/vi/njoIeE4akq0/0.jpg)](http://www.youtube.com/watch?v=njoIeE4akq0 "Unity UI Extensions intro video")
 
 -----
 
-## Release 2019.5 - (v2.3)  - Accelerated Deployment
+## Release 2019.5 - (v2.2.7)  - Accelerated Deployment <- current release>
+
+> New 2.3 release coming very soon...
 
 We have expanded where you can download the UnityPackage asset and widened the options to contribute to the project.
 
-[Unity 2019 or higher](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/UPMInstallation)
-The recommended way to add the Unity UI Extensions project to your solution is to use the Unity package Manager. Simply use the [Unity Package Manager](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/UPMInstallation) to reference the project and install it.
+[Unity 2019 or higher](UPMInstallation.md)
+The recommended way to add the Unity UI Extensions project to your solution is to use the Unity package Manager. Simply use the [Unity Package Manager](UPMInstallation) to reference the project and install it.
 
 > I will still stress however, ***contribution is optional***. **The assets / code will always remain FREE**
 
 ### Asset package downloads (and contribution links)
 
-| [![Download from Itch.IO](https://bytebucket.org/UnityUIExtensions/unity-ui-extensions/wiki/SiteImages/itchio.png)](https://unityuiextensions.itch.io/uiextensions2-0 "Download from Itch.IO") | [![Download from Itch.IO](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/SiteImages/unionassets.png)](https://unionassets.com/unity-ui-extensions "Download from Union Assets") | [![Download from Itch.IO](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/SiteImages/patreon.jpg)](https://www.patreon.com/UnityUIExtensions "Support Unity UI Extensions on Patreon & download")|
+| [![Download from Itch.IO](https://bytebucket.org/UnityUIExtensions/unity-ui-extensions/wiki/SiteImages/itchio.png)](https://unityuiextensions.itch.io/uiextensions2-0 "Download from Itch.IO") | [![Download from Itch.IO](SiteImages/unionassets.png)](https://unionassets.com/unity-ui-extensions "Download from Union Assets") | [![Download from Itch.IO](SiteImages/patreon.jpg)](https://www.patreon.com/UnityUIExtensions "Support Unity UI Extensions on Patreon & download")|
 | :--- | :--- | :--- |
 | [Grab from Itchio](https://unityuiextensions.itch.io/uiextensions2-0) | [Obtain via Union Assets](https://unionassets.com/unity-ui-extensions) |[Support through Patreon](https://www.patreon.com/UnityUIExtensions) |
 
-For direct access to the assets and view all previous releases, visit the [release archive](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Downloads)
+For direct access to the assets and view all previous releases, visit the [release archive](Downloads)
 
 -----
 
-## [Installation Instructions](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/GettingStarted)
+## [Installation Instructions](GettingStarted.md)
 
 As of Unity 2019, there are now two paths for getting access to the Unity UI Extensions project:
 
-- [Unity 2019 or higher](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/UPMInstallation)
-The recommended way to add the Unity UI Extensions project to your solution is to use the Unity package Manager. Simply use the [Unity Package Manager](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/UPMInstallation) to reference the project and install it.
+- [Unity 2019 or higher](UPMInstallation.md)
+The recommended way to add the Unity UI Extensions project to your solution is to use the Unity package Manager. Simply use the [Unity Package Manager](UPMInstallation) to reference the project and install it.
 
-Alternatively, you can also use the [pre-compiled Unity packages](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Downloads) if you wish, however, UPM offers full versioning support to allow you to switch versions as you wish.
+Alternatively, you can also use the [pre-compiled Unity packages](Downloads.md) if you wish, however, UPM offers full versioning support to allow you to switch versions as you wish.
 
-- [Unity 2018 or lower](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Downloads)
-The [pre-compiled Unity assets](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Downloads) are the only solution for Unity 2018 or earlier due to the changes in the Unity UI framework in Unity made for 2019.
+- [Unity 2018 or lower](Downloads.md)
+The [pre-compiled Unity assets](Downloads.md) are the only solution for Unity 2018 or earlier due to the changes in the Unity UI framework in Unity made for 2019.
 Either clone / download this repository to your machine and then copy the scripts in, or use the pre-packaged .UnityPackage for your version of Unity and import it as a custom package in to your project.
 
 -----
 
-## [Release Notes](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/ReleaseNotes/RELEASENOTES):
+## [Release Notes](ReleaseNotes/RELEASENOTES.md):
 For the recent and full change history of the project, please review the change history in the release notes.
 Good for catching up on what's new.
 
-> [Release Notes](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/ReleaseNotes/RELEASENOTES)
+> [Release Notes](ReleaseNotes/RELEASENOTES.md)
 
 -----
 
-## [Controls and extensions listed in this project](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls)
+## [Controls and extensions listed in this project](Controls.md)
 
 There are over 70+ extension controls / effect and other utilities in the project which are listed on the following page:
 
 > ### [Check out the control demos on our Tumblr page](https://unityuiextensions.tumblr.com/)
 
-| [![UI Line Renderer](https://bytebucket.org/UnityUIExtensions/unity-ui-extensions/wiki/SiteImages/LineRenderer.gif)](https://www.tumblr.com/blog/unityuiextensions "UI Line Renderer") | [![UI Knob](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/SiteImages/UIKnob.gif)](https://www.tumblr.com/blog/unityuiextensions "UI Knob")   | [![ScrollSnap](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/SiteImages/ScrollSnap.gif)](https://www.tumblr.com/blog/unityuiextensions "Scroll Snap")|
+| [![UI Line Renderer](./SiteImages/LineRenderer.gif)](https://www.tumblr.com/blog/unityuiextensions "UI Line Renderer") | [![UI Knob](./SiteImages/UIKnob.gif)](https://www.tumblr.com/blog/unityuiextensions "UI Knob")   | [![ScrollSnap](./SiteImages/ScrollSnap.gif)](https://www.tumblr.com/blog/unityuiextensions "Scroll Snap")|
 | :--- | :--- | :--- |
 | [UI Line Renderer](https://www.tumblr.com/blog/unityuiextensions) | [UI Knob](https://www.tumblr.com/blog/unityuiextensions) |[Scroll Snap](https://www.tumblr.com/blog/unityuiextensions) |
 
-## [UI Extensions controls list](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls)
+## [UI Extensions controls list](Controls.md)
 
-[Controls](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls#markdown-header-controls)|||||
+[Controls](Controls.md#controls)|||||
 ------|------|------|------|------|
 Accordion|ColorPicker|Selection Box|UI Flippable|ComboBox
 AutoComplete ComboBox|DropDown List|BoundToolTip|UIWindowBase|UI Knob
@@ -93,27 +93,27 @@ TextPic|Input Focus|Box Slider|Cooldown Button|Segmented Control
 Stepper|Range Slider|Radial Slider|MultiTouch Scroll Rect|
 ||||
 
-[Primitives](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls#markdown-header-primitives)|||||
+[Primitives](Controls.md#primitives)|||||
 ------|------|------|------|------|
 UILineRenderer|UILineTextureRenderer|UICircle|DiamondGraph|UICornerCut
 UIPolygon||||
 ||||
 
-[Layouts](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls#markdown-header-layouts)|||||
+[Layouts](Controls.md#layouts)|||||
 ------|------|------|------|------|
 Horizontal Scroll Snap|Vertical Scroll Snap|Flow Layout Group|Radial Layout|Tile Size Fitter
 Scroll Snap (alt implementation)|Reorderable List|UI Vertical Scroller|Curved Layout|Table Layout
 FancyScrollView|Card UI|Scroll Position Controller|Content Scroll Snap Horizontal|
 ||||
 
-[Effects](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls#markdown-header-effect_components)|||||
+[Effects](Controls.md#effect_components)|||||
 ------|------|------|------|------|
 Best Fit Outline|Curved Text|Gradient|Gradient2|Letter Spacing
 NicerOutline|RaycastMask|UIFlippable|UIImageCrop|SoftAlphaMask
 CylinderText|UIParticleSystem|CurlyUI|Shine Effect|Shader Effects
 ||||
 
-[Additional Components](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls#markdown-header-additional_components)|||||
+[Additional Components](Controls.md#additional_components)|||||
 ------|------|------|------|------|
 ReturnKeyTrigger|TabNavigation|uGUITools|ScrollRectTweener|ScrollRectLinker
 ScrollRectEx|UI_InfiniteScroll|UI_ScrollRectOcclusion|UIScrollToSelection|UISelectableExtension
@@ -144,11 +144,11 @@ All funds go to support the project, no matter the amount. **Donations in code a
 
 For more information about the project, please see the following pages:
 
-* [Downloads](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Downloads)
-* [Getting Started](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/GettingStarted)
-* [UPM Installation Instructions](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/UPMInstallation)
-* [Controls detailed list](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Controls)
-* [Further Information](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/FurtherInfo)
-* [Contribution Guidelines](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/ContributionGuidelines)
-* [See who's contributing](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/Contributors)
-* [About](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/wiki/About)
+* [Downloads](Downloads.md)
+* [Getting Started](GettingStarted.md)
+* [UPM Installation Instructions](UPMInstallation.md)
+* [Controls detailed list](Controls.md)
+* [Further Information](FurtherInfo.md)
+* [Contribution Guidelines](ContributionGuidelines.md)
+* [See who's contributing](Contributors.md)
+* [About](About.md)

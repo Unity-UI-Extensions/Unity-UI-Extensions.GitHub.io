@@ -88,38 +88,43 @@ There are over 70+ extension controls / effect and other utilities in the projec
 ## [UI Extensions controls list](Controls.md)
 
 [Controls](Controls.md#controls)
+
 |Accordion|ColorPicker|Selection Box|UI Flippable|ComboBox|
 |-|-|-|-|-|
 |AutoComplete ComboBox|DropDown List|BoundToolTip|UIWindowBase|UI Knob|
 |TextPic|Input Focus|Box Slider|Cooldown Button|Segmented Control|
-|Stepper|Range Slider|Radial Slider|MultiTouch Scroll Rect|
-|MinMax SLider|||||
+|Stepper|Range Slider|Radial Slider|MultiTouch Scroll Rect|MinMax SLider|
 
 [Primitives](Controls.md#primitives)
+
 |UILineRenderer|UILineTextureRenderer|UICircle|DiamondGraph|UICornerCut|
 |-|-|-|-|-|
-|UIPolygon|UISquircle|||
+|UIPolygon|UISquircle||||
 
 [Layouts](Controls.md#layouts)
-|Horizontal Scroll Snap|Vertical Scroll Snap|Flow Layout Group|Radial Layout|Tile Size Fitter
+
+|Horizontal Scroll Snap|Vertical Scroll Snap|Flow Layout Group|Radial Layout|Tile Size Fitter|
 |-|-|-|-|-|
-|Scroll Snap (alt implementation)|Reorderable List|UI Vertical Scroller|Curved Layout|Table Layout
-|FancyScrollView|Card UI|Scroll Position Controller (obsolete)|Content Scroll Snap Horizontal|
-|ResizePanel|RescalePanel|RescaleDragPanel|Scroller||
+|Scroll Snap (alt implementation)|Reorderable List|UI Vertical Scroller|Curved Layout|Table Layout|
+|FancyScrollView|Card UI|Scroll Position Controller (obsolete)|Content Scroll Snap Horizontal|Scroller|
+|ResizePanel|RescalePanel|RescaleDragPanel|||
 
 [Effects](Controls.md#effect-components)
+
 |Best Fit Outline|Curved Text|Gradient|Gradient2|Letter Spacing|
 |-|-|-|-|-|
 |NicerOutline|RaycastMask|UIFlippable|UIImageCrop|SoftAlphaMask|
 |CylinderText|UIParticleSystem|CurlyUI|Shine Effect|Shader Effects|
 
 [Additional Components](Controls.md#additional-components)
+
 |ReturnKeyTrigger|TabNavigation|uGUITools|ScrollRectTweener|ScrollRectLinker|
 |-|-|-|-|-|
 |ScrollRectEx|UI_InfiniteScroll|UI_ScrollRectOcclusion|UIScrollToSelection|UISelectableExtension|
 |switchToRectTransform|ScrollConflictManager|CLFZ2 (Encryption)|DragCorrector|PPIViewer|
 |UI_TweenScale|UI_MagneticInfiniteScroll|UI_ScrollRectOcclusion|NonDrawingGraphic|
-|UILineConnector|UIHighlightable|Menu Manager|Pagination Manager|
+|UILineConnector|
+|UIHighlightable|Menu Manager|Pagination Manager|||
 
 ### More to come
 
@@ -131,8 +136,9 @@ If you wish to further support the Unity UI Extensions project itself, then you 
 
 All funds go to support the project, no matter the amount. **Donations in code are also extremely welcome**
 
-| [![Donate via PayPal](https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-150px.png)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=89L8T9N6BR7LJ "Donating via Paypal") | [![Buy us a Coffee](https://uploads-ssl.webflow.com/5c14e387dab576fe667689cf/5cbed8a4ae2b88347c06c923_BuyMeACoffee_blue-p-500.png)](https://ko-fi.com/uiextensions "Buy us a Coffee") |
-|---|---|
+|[![Donate via PayPal](https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-150px.png)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=89L8T9N6BR7LJ "Donating via Paypal")|[![Buy us a Coffee](https://uploads-ssl.webflow.com/5c14e387dab576fe667689cf/5cbed8a4ae2b88347c06c923_BuyMeACoffee_blue-p-500.png)](https://ko-fi.com/uiextensions "Buy us a Coffee")|
+|-|-|
+|||
 
 > (PayPal account not required and you can remain anonymous if you wish)
 

@@ -73,11 +73,11 @@ Simply add the default Scroll Rect Infinite component to a Scroll Rect using "*U
 
 ## See also
 
-* [Magnetic infinite Scroll](/Controls.md/UI_MagneticInfiniteScroll)
-* [Scroll Rect Occlusion](/Controls.md/UI_ScrollRectOcclusion)
-* [Scroll Rect Tweener](/Controls.md/ScrollRectTweener)
-* [Scroll Rect Linker](/Controls.md/ScrollRectLinker)
-* [Scroll Rect Conflict Manager](/Controls.md/ScrollConflictManager)
+* [Magnetic infinite Scroll](/Controls/UI_MagneticInfiniteScroll.md)
+* [Scroll Rect Occlusion](/Controls/UI_ScrollRectOcclusion.md)
+* [Scroll Rect Tweener](/Controls/ScrollRectTweener.md)
+* [Scroll Rect Linker](/Controls/ScrollRectLinker.md)
+* [Scroll Rect Conflict Manager](/Controls/ScrollConflictManager.md)
 
 ---------
 

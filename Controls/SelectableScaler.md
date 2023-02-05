@@ -67,7 +67,7 @@ Or alternatively, add the component to the control using:
 
 ## See also
 
-* [UI_TweenScale](/Controls.md/UI_TweenScale)
+* [UI_TweenScale](/Controls/UI_TweenScale.md)
 
 ---------
 

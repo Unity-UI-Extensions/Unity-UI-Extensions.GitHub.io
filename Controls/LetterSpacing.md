@@ -62,9 +62,9 @@ Add Component -> UI -> Effects -> Extensions -> Letter Spacing
 
 ## See also
 
-[Curved Text](/Controls.md/CurvedText)
-[Cylinder Text](/Controls.md/CylinderText)
-[Mono Spacing](/Controls.md/MonoSpacing)
+[Curved Text](/Controls/CurvedText.md)
+[Cylinder Text](/Controls/CylinderText.md)
+[Mono Spacing](/Controls/MonoSpacing.md)
 
 ---------
 

@@ -81,9 +81,9 @@ Once added, you can then manipulate the curves for the RectTransform using the b
 
 ## See also
 
-* [Curved Text](/Controls.md/CurvedText)
-* [Cylinder Text](/Controls.md/CylinderText)
-* [Curved Layout](/Controls.md/CurvedLayout)
+* [Curved Text](/Controls/CurvedText.md)
+* [Cylinder Text](/Controls/CylinderText.md)
+* [Curved Layout](/Controls/CurvedLayout.md)
 
 ---------
 

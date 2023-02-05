@@ -96,9 +96,9 @@ This will give you a standard Scroll Rect setup with the script and a few exampl
 
 ## See also
 
-* [HorizontalScrollSnap](/Controls.md/HorizontalScrollSnap)
-* [VerticalScrollSnap](/Controls.md/VerticalScrollSnap)
-* [ScrollSnap](/Controls.md/ScrollSnap)
+* [HorizontalScrollSnap](/Controls/HorizontalScrollSnap.md)
+* [VerticalScrollSnap](/Controls/VerticalScrollSnap.md)
+* [ScrollSnap](/Controls/ScrollSnap.md)
 
 ---------
 

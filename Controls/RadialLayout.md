@@ -47,8 +47,8 @@ Add Component -> Layout -> Extensions -> Radial Layout
 
 ## See also
 
-[CurvedLayout](/Controls.md/CurvedLayout)
-[FlowLayoutGroup](/Controls.md/FlowLayoutGroup)
+[CurvedLayout](/Controls/CurvedLayout.md)
+[FlowLayoutGroup](/Controls/FlowLayoutGroup.md)
 
 ---------
 

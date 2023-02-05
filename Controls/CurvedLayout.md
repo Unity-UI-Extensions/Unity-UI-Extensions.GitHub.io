@@ -57,9 +57,9 @@ tbc
 
 ## See also
 
-* [Radial Layout Group](/Controls.md/RadialLayout)
-* [Table Layout Group](/Controls.md/TableLayoutGroup)
-* [Flow Layout Group](/Controls.md/FlowLayoutGroup)
+* [Radial Layout Group](/Controls/RadialLayout.md)
+* [Table Layout Group](/Controls/TableLayoutGroup.md)
+* [Flow Layout Group](/Controls/FlowLayoutGroup.md)
 
 ---------
 

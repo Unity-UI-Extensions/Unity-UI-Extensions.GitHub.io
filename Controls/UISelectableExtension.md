@@ -66,7 +66,7 @@ It is also available as a Game Component menu in "*UI / Extensions / UI Selectab
 
 ## See also
 
-* [Non Drawing Graphic](/Controls.md/NonDrawingGraphic)
+* [Non Drawing Graphic](/Controls/NonDrawingGraphic.md)
 
 ---------
 

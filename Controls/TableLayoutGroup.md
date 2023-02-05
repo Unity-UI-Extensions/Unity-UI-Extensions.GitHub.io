@@ -78,9 +78,9 @@ Create an Empty GO on a Canvas and add the **Table Layout Group** component obje
 ## See also
 
 * Unity (built-in) Grid Layout
-* [Curved Layout](/Controls.md/CurvedLayout)
-* [Flow Layout Group](/Controls.md/FlowLayoutGroup)
-* [Radial Layout](/Controls.md/RadialLayout)
+* [Curved Layout](/Controls/CurvedLayout.md)
+* [Flow Layout Group](/Controls/FlowLayoutGroup.md)
+* [Radial Layout](/Controls/RadialLayout.md)
 
 ---------
 

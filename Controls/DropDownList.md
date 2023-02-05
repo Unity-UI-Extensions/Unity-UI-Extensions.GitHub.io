@@ -36,20 +36,26 @@ A more advanced Combobox control with additional support for images and other it
 
 ## Properties
 
-The properties of the Box Slider control are as follows:
+The properties of the Drop Down List control are as follows:
 
 Property | Description
 |-|-|
-*Disabled Text Color*|Color of the Autocomplete field when the control is disabled
+*Disabled Text Color*|Color of the Autocomplete field when the control is disabled.
 *Available Options*|Array of child options options for the dropdown/selection. Each child is configured within the array below:
--*Caption*|Text for the Child item
--*Image*|Image displayed next to child item
--*Is Disabled*|Is this child item disabled by default
--*Id*|Unique identity of the drop down item
-*Scroll Bar Width*|The width of the scrollbar when displayed
+-*Caption*|Text for the Child item.
+-*Image*|Image displayed next to child item.
+-*Is Disabled*|Is this child item disabled by default.
+-*Id*|Unique identity of the drop down item.
+*Is Active*|Can the autocomplete combo box be activated by the user (dropped down) or is it disabled?
+*Override Highlighted*|Should the normal highlight behavior of the control be ignored.
+*Scroll Bar Width*|The width of the scrollbar when displayed.
 *Items To Display*|Number of child items to display when opened. *Note default 0 shows NO items.
-*Select First Item On Start*|Should the first item be auto selected on start
+*Dropdown Offset*|Offset height for where the dropdown list should appear.
+*Display Panel Above*|Should the dropdown panel appear above the control instead of below?
+*Select First Item On Start*|Should the first item be auto selected on start?
+*Select Index Item on Start*|Which item should be selected on start. (*Select First Item on Start* will override this option)
 *On Selection Changed* (event) |The Event fired when the user selects an option or loses focus
+*On Control Disabled* (event) |The Event fired when the control is disabled through code.
 
 > When managing the control programmatically, make sure you use the following functions to manage the ComboBox contents. **Do NOT update the 'AvailableOptions' list directly**
 
@@ -66,7 +72,8 @@ Method | Arguments | Description
 *RemoveItem*|String|Removes an item from the drop down list and rebuilds the display
 *RemoveItem*|Sprite|Removes an item from the drop down list and rebuilds the display
 *RefreshItems*|Array of supported items (DropDownListItem, String or Sprite)|Clears the current list and rebuilds a new list with the provided items
-ResetItems|None|Clears all current options
+*SelectItemIndex*|int|Sets the currently selected item in the list
+*ResetItems*|N/A|Clears all current options
 
 ---------
 
@@ -87,8 +94,8 @@ Then simply add drop down elements to the Items property.  Additionally, Images 
 
 ## See also
 
-[ComboBox](/Controls.md/ComboBox)
-[AutoCompleteComboBox](/Controls.md/AutoCompleteComboBox)
+[ComboBox](/Controls/ComboBox.md)
+[AutoCompleteComboBox](/Controls/AutoCompleteComboBox.md)
 
 ---------
 

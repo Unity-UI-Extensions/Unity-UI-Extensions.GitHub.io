@@ -118,9 +118,9 @@ A simple walk-through setting up the Scroll Snap with a perspective view
 
 ## See also
 
-* [ContentScrollSnapHorizontal](/Controls.md/ContentScrollSnapHorizontal)
-* [VerticalScrollSnap](/Controls.md/VerticalScrollSnap)
-* [ScrollSnap](/Controls.md/ScrollSnap)
+* [ContentScrollSnapHorizontal](/Controls/ContentScrollSnapHorizontal.md)
+* [VerticalScrollSnap](/Controls/VerticalScrollSnap.md)
+* [ScrollSnap](/Controls/ScrollSnap.md)
 
 ---------
 

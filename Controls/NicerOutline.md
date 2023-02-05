@@ -47,7 +47,7 @@ tbc
 
 ## See also
 
-[BestFitOutline](/Controls.md/BestFitOutline)
+[BestFitOutline](/Controls/BestFitOutline.md)
 
 ---------
 

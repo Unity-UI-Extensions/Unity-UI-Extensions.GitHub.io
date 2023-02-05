@@ -127,8 +127,8 @@ Line Render also now has improved Sprite support, including sprite slicing.  The
 
 ## See also
 
-* [UILineTextureRenderer](/Controls.md/UILineTextureRenderer)
-* [UILineConnector](/Controls.md/UILineConnector)
+* [UILineTextureRenderer](/Controls/UILineTextureRenderer.md)
+* [UILineConnector](/Controls/UILineConnector.md)
 
 ---------
 

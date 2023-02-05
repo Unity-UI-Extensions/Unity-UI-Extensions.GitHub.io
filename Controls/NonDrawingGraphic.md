@@ -71,7 +71,7 @@ These will be added to the asset in the next update.
 
 ## See also
 
-* [Selectable Extension](/Controls.md/UISelectableExtension)
+* [Selectable Extension](/Controls/UISelectableExtension.md)
 (to add the extended click behaviour to this component)
 
 ---------

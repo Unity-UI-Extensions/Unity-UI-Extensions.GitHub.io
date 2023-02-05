@@ -82,8 +82,8 @@ N/A
 
 ## See also
 
-* [HoverToolTip](/Controls.md/HoverToolTip)
-* [BoundToolTip](/Controls.md/BoundToolTip)
+* [HoverToolTip](/Controls/HoverToolTip.md)
+* [BoundToolTip](/Controls/BoundToolTip.md)
 
 ---------
 

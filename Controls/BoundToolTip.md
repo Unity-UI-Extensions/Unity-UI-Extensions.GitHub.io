@@ -52,8 +52,8 @@ UI -> Extensions -> Bound Tooltip -> Tooltip Trigger
 
 ## See also
 
-[ToolTip](/Controls.md/ToolTip)
-[HoverToolTip](/Controls.md/HoverToolTip)
+[ToolTip](/Controls/ToolTip.md)
+[HoverToolTip](/Controls/HoverToolTip.md)
 
 ---------
 

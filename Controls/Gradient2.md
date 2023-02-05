@@ -70,7 +70,7 @@ Add Component -> UI -> Extensions -> Effects -> Gradient2
 
 ## See also
 
-* [Gradient](/Controls.md/Gradient)
+* [Gradient](/Controls/Gradient.md)
 
 ---------
 

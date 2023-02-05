@@ -50,7 +50,7 @@ Add the primitive control to your scene using:
 
 ## See also
 
-[DiamondGraph](/Controls.md/DiamondGraph)
+[DiamondGraph](/Controls/DiamondGraph.md)
 
 ---------
 

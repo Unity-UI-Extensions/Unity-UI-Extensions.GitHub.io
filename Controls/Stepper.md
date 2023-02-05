@@ -34,7 +34,7 @@ The Stepper Control creates an increment / decrement style control with + and - 
 
 It exposes a value property where you can also set a min and maximum number for that value when changed through the control.  Additionally you can also specify the "step" which denotes how much the control increments / decrements with each press, as well as an option to loop the value around from top to bottom, etc.
 
-Like the [Segmented Control](/Controls.md/SegmentedControl), you can also specify a Separator image attached to a GO to place between the buttons.
+Like the [Segmented Control](/Controls/SegmentedControl.md), you can also specify a Separator image attached to a GO to place between the buttons.
 
 > *NOTE* You can only have two child buttons attached to the Stepper, one each for the + and - actions.  Adding more will generate an error.
 
@@ -74,7 +74,7 @@ It is also available as a Game Component menu in "*UI / Extensions / Stepper*". 
 
 ## See also
 
-* [Segmented Control](/Controls.md/SegmentedControl)
+* [Segmented Control](/Controls/SegmentedControl.md)
 
 ---------
 

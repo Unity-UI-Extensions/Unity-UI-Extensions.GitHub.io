@@ -81,8 +81,8 @@ The CooldownButton control is available as a Game Component menu in "*UI / Exten
 ## See also
 
 * Unity Button (built-in)
-* [Non Drawing Graphic](/Controls.md/NonDrawingGraphic)
-* [Selectable Extension](/Controls.md/UISelectableExtension)
+* [Non Drawing Graphic](/Controls/NonDrawingGraphic.md)
+* [Selectable Extension](/Controls/UISelectableExtension.md)
 
 ---------
 

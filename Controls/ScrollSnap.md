@@ -57,9 +57,9 @@ Or alternatively, add one of the default layouts for the control using:
 
 ## See also
 
-* [ContentScrollSnapHorizontal](/Controls.md/ContentScrollSnapHorizontal)
-* [HorizontalScrollSnap](/Controls.md/HorizontalScrollSnap)
-* [VerticalScrollSnap](/Controls.md/VerticalScrollSnap)
+* [ContentScrollSnapHorizontal](/Controls/ContentScrollSnapHorizontal.md)
+* [HorizontalScrollSnap](/Controls/HorizontalScrollSnap.md)
+* [VerticalScrollSnap](/Controls/VerticalScrollSnap.md)
 
 ---------
 

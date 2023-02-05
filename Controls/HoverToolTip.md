@@ -47,8 +47,8 @@ GameObject -> UI -> Extensions -> HoverToolTip
 
 ## See also
 
-[ToolTip](/Controls.md/ToolTip)
-[BoundToolTip](/Controls.md/BoundToolTip)
+[ToolTip](/Controls/ToolTip.md)
+[BoundToolTip](/Controls/BoundToolTip.md)
 
 ---------
 

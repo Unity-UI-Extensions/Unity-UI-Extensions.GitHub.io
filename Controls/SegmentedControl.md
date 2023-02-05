@@ -34,7 +34,7 @@ The Segmented Control offers a button alignment capability along with specific h
 
 It allows you to set whether buttons can be turned on/off, or only one selected at a time, as well as setting the default select and the colour the button is highlighted with when clicked..
 
-Like the [Stepper Control](/Controls.md/Stepper), you can also specify a Separator image attached to a GO to place between the buttons.
+Like the [Stepper Control](/Controls/Stepper.md), you can also specify a Separator image attached to a GO to place between the buttons.
 
 ---------
 
@@ -70,7 +70,7 @@ It is also available as a Game Component menu in "*UI / Extensions / Segmented C
 
 ## See also
 
-* [Stepper Control](/Controls.md/Stepper)
+* [Stepper Control](/Controls/Stepper.md)
 
 ---------
 

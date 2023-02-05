@@ -73,7 +73,7 @@ Simply add the UI Highlightable component to a RectTransform using the Component
 
 ## See also
 
-* [UI Selectable](/Controls.md/UISelectableExtension)
+* [UI Selectable](/Controls/UISelectableExtension.md)
 
 ---------
 

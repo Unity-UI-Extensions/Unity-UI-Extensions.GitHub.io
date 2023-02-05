@@ -176,9 +176,9 @@ All that is left then is to intialise the ScrollView with your data and let it r
 
 ## See also
 
-* [HorizontalScrollSnap](/Controls.md/HorizontalScrollSnap)
-* [VerticalScrollSnap](/Controls.md/VerticalScrollSnap)
-* [ScrollSnap](/Controls.md/ScrollSnap)
+* [HorizontalScrollSnap](/Controls/HorizontalScrollSnap.md)
+* [VerticalScrollSnap](/Controls/VerticalScrollSnap.md)
+* [ScrollSnap](/Controls/ScrollSnap.md)
 
 ---------
 

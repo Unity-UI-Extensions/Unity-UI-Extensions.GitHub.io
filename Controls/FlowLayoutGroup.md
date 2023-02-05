@@ -71,9 +71,9 @@ Add Component -> Layout -> Extensions -> Flow Layout Group
 
 ## See also
 
-* [Curved Layout Group](/Controls.md/CurvedLayout)
-* [Radial Layout Group](/Controls.md/RadialLayout)
-* [Table Layout Group](/Controls.md/TableLayoutGroup)
+* [Curved Layout Group](/Controls/CurvedLayout.md)
+* [Radial Layout Group](/Controls/RadialLayout.md)
+* [Table Layout Group](/Controls/TableLayoutGroup.md)
 
 ---------
 

@@ -64,10 +64,10 @@ It is also available as a Game Component menu in "*UI / Extensions / UI ScrollRe
 
 ## See also
 
-* [Scroll Rect Infinite](/Controls.md/UI_InfiniteScroll)
-* [Scroll Rect Tweener](/Controls.md/ScrollRectTweener)
-* [Scroll Rect Linker](/Controls.md/ScrollRectLinker)
-* [Scroll Rect Conflict Manager](/Controls.md/ScrollConflictManager)
+* [Scroll Rect Infinite](/Controls/UI_InfiniteScroll.md)
+* [Scroll Rect Tweener](/Controls/ScrollRectTweener.md)
+* [Scroll Rect Linker](/Controls/ScrollRectLinker.md)
+* [Scroll Rect Conflict Manager](/Controls/ScrollConflictManager.md)
 
 ---------
 

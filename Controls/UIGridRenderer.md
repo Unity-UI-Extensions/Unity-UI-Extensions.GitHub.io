@@ -88,8 +88,8 @@ It is also available as a Game Component menu in "*UI / Extensions / Primitives 
 
 ## See also
 
-* [UILineRenderer](/Controls.md/UILineRenderer)
-* [UILineTextureRenderer](/Controls.md/UILineTextureRenderer)
+* [UILineRenderer](/Controls/UILineRenderer.md)
+* [UILineTextureRenderer](/Controls/UILineTextureRenderer.md)
 
 ---------
 

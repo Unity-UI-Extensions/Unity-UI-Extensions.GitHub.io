@@ -63,10 +63,10 @@ It is also available as a Game Component menu in "*UI / Extensions / Scroll Rect
 
 ## See also
 
-* [Scroll Rect Infinite](/Controls.md/UI_InfiniteScroll)
-* [Scroll Rect Occlusion](/Controls.md/UI_ScrollRectOcclusion)
-* [Scroll Rect Tweener](/Controls.md/ScrollRectTweener)
-* [Scroll Rect Conflict Manager](/Controls.md/ScrollConflictManager)
+* [Scroll Rect Infinite](/Controls/UI_InfiniteScroll.md)
+* [Scroll Rect Occlusion](/Controls/UI_ScrollRectOcclusion.md)
+* [Scroll Rect Tweener](/Controls/ScrollRectTweener.md)
+* [Scroll Rect Conflict Manager](/Controls/ScrollConflictManager.md)
 
 ---------
 

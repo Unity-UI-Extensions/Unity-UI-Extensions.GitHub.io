@@ -47,7 +47,7 @@ GameObject -> UI -> Extensions -> Diamond Graph
 
 ## See also
 
-[UIPolygon](/Controls.md/UIPolygon)
+[UIPolygon](/Controls/UIPolygon.md)
 
 ---------
 

@@ -36,7 +36,7 @@ This produces a Node connector style effect between the provided UI GameObjects.
 
 ![](Images/UILineConnectorSample.jpg)
 
-> Depends on the [UI Line Renderer](/Controls.md/UILineRenderer) component
+> Depends on the [UI Line Renderer](/Controls/UILineRenderer.md) component
 
 *Note*
 The Lines depend on the Pivot's of the Main Canvas, Line Renderer and the Selected GameObjects.  Adjust as required.
@@ -56,7 +56,7 @@ Property | Description
 
 ## Usage
 
-The UILineConnector is available as a Game Component menu in "*UI / Extensions / UI Line Connector*". This will also add the [UI Line Renderer](/Controls.md/UILineRenderer) component by default
+The UILineConnector is available as a Game Component menu in "*UI / Extensions / UI Line Connector*". This will also add the [UI Line Renderer](/Controls/UILineRenderer.md) component by default
 
 ---------
 
@@ -70,7 +70,7 @@ The UILineConnector is available as a Game Component menu in "*UI / Extensions /
 
 ## See also
 
-* [UILineRenderer](/Controls.md/UILineRenderer)
+* [UILineRenderer](/Controls/UILineRenderer.md)
 
 ---------
 

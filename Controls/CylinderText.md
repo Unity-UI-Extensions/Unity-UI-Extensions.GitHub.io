@@ -47,7 +47,7 @@ Add Component -> UI -> Effects -> Extensions -> Cylinder Text
 
 ## See also
 
-[CurvedText](/Controls.md/CurvedText)
+[CurvedText](/Controls/CurvedText.md)
 
 ---------
 

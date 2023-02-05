@@ -63,9 +63,9 @@ Add Component -> UI -> Effects -> Extensions -> Mono Spacing
 
 ## See also
 
-[Curved Text](/Controls.md/CurvedText)
-[Cylinder Text](/Controls.md/CylinderText)
-[Letter Spacing](/Controls.md/LetterSpacing)
+[Curved Text](/Controls/CurvedText.md)
+[Cylinder Text](/Controls/CylinderText.md)
+[Letter Spacing](/Controls/LetterSpacing.md)
 
 ---------
 

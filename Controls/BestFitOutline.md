@@ -47,7 +47,7 @@ tbc
 
 ## See also
 
-[NicerOutline](/Controls.md/NicerOutline)
+[NicerOutline](/Controls/NicerOutline.md)
 
 ---------
 

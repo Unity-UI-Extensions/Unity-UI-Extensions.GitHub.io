@@ -2,7 +2,98 @@
 
 This file contains the up to date release notes for each release of the UI Extensions project including release videos where required.
 
-----------------
+-----
+
+## Release 2.3 - Reanimation - 2022/02/07
+
+It has been a tough time for all since the last update, but things have been moving steadily along.  In the past few months there has been a concerted effort to revamp and update the project ready for Unity 2022, as well as migrating the source repository over to GitHub and refreshing all the things.
+We hope the new release is better for everyone and we have paid close attention to the editor menus and places to find all the controls for this release.
+
+To get up to speed with the Unity UI Extensions, check out the [Getting Started](https://unity-ui-extensions.github.io/GettingStarted.html) Page.
+
+> Ways to get in touch:
+>
+> - [Gitter Chat](https://gitter.im/Unity-UI-Extensions/Lobby) site for the UI Extensions project
+> - [GitHub Discussions](https://github.com/Unity-UI-Extensions/com.unity.uiextensions/discussions), if you have any questions, queries or suggestions
+>
+> Much easier that posting a question / issue on YouTube, Twitter or Facebook :D
+
+## Breaking changes
+
+For customers upgrading from earlier versions of Unity to Unity 2020, please be aware of the Breaking change related to Text Based components.  You will need to manually replace any UI using the older ```Text``` component and replace them with ```TextMeshPro``` versions. This is unavoidable due to Unity deprecating the Text component.
+
+> New users to 2022 are unaffected as all the Editor commands have been updated to use the newer TextMeshPro versions.
+
+For more details, see the [deprecation notice](https://github.com/Unity-UI-Extensions/com.unity.uiextensions/discussions/428) on GitHub.
+
+## Added
+
+- Added new FIFO based UI Line Render when dynamic line rendering is needed.
+- Added ResetSelectableHighlight component.
+- Added SetArc method to UICircle as requested.
+- Added new UIHorizontalScroller based on UIVerticalScroller.
+- Added OnHighlightChanged and OnPressChanged events for UI Button.
+- Added error handling around setting Unity UI Components for Vertical/Horizontal ScrollSnaps.
+- Added Editor Menu Option to create a Min/Max slider.
+- Added the ability to set a specific item for combobox controls on start and not just the first.
+- Added the ability to disable the combo boxes and make them read-only.
+
+## Changed
+
+- Refresh FancyScrollView with the latest fixes
+- All Text based components updated to use TextMeshPro from Unity 2022 **Breaking Change**
+
+- Clean-up and reset pivots on scene start.
+- Merged in feature/improved-ui-highlightable (pull request UILineRenderer - issues with specifying point locations at runtime #123).
+- Merged in fix/ragesliderfix (pull request HorizontalScrollSnap Mask Area doesn't work when content created dynamically #125).
+- Merged in fix/infinitescrollcontentsize (pull request Gradient initialization should be in Awake() #126).
+- Merged in feature/controlTouchUp (pull request UILineRenderer mesh not updating in Editor scene view #127).
+- Upgraded RangeSlider to work in both Horizontal and Vertical setups.
+- Merged in RangeSlider-upgrade. (pull request Newtonsoft.Json.dll conflict #131)
+- Updated UIVertical scroller to be 2022 compliant.
+- Updated Curly UI to wait until end of the frame to recalculate positions.
+- Updated Depth Texture sampler in UI Particles Shaders.
+- Updated Points to always be an array of 1 when set to nothing for the Line Renderer.
+- Updated Cooldown button to work with Keyboard input.
+- Removed unneeded size calculation which caused some issues with mixed content.
+- Resolved an issue whereby the last row in a flow layout group would not size correctly.
+- Updated all components using "LayoutGroup" to override their OnDisable.
+- Updated validation in the new MinMaxSlider.
+- Updated Editor create options to add the correct Event System Input manager.
+- Updated initialisation logic to not cause an endless loop in the TabNavigationHelper.
+- Updated "Action" use to "UnityAction" to avoid Unity issues for DropDowns.
+- Updated UIVerticalScroller for standards.
+- Updated ReorderableList/ReorderableListElement to prevent creating a fake object for non-transferable items.
+- Updated panel drawing for ComboBox controls and added DropdownOffset.
+- Updated build issue with ReorderableListElement.
+- Updated NonDrawingGraphic to require a CanvasRender, else it causes an error on run.
+
+## Deprecated
+
+- Marked ScrollPositionController as Obsolete, users should use the new Scoller.
+- BestFitOutline - Deprecated in Unity 2020 onwards. (still available for earlier versions)
+- NicerOutline - Deprecated in Unity 2020 onwards. (still available for earlier versions)
+- Marked TileSizeFitter as obsolete as Unity has made this unworkable.
+
+## Fixed
+
+- Resolved issues with DisplayAbove and using a 0 ItemsToDisplay for ComboBox controls.
+- Resolved startup issue that prevented the control from being used (Unity changed the start order in some instances), this was causing null reference issues with comboboxes.
+- Patch fix for UILineRenderer.
+- Resolves issue where the lower range value would become stuck when moving.
+- Updated Infinite scroll to work with content of different sizes.
+- Updated Dropdown list to NOT resize text Rect on draw.
+- Revised the Curly UI fix as it was preventing the graphic from being updated in the scene view.
+- Cleanup and ensuring the UIParticleSystem is disposed in onDestroy correctly.
+- Clean up range slider unused variables.
+
+* [UI Extensions Issue log](https://github.com/Unity-UI-Extensions/com.unity.uiextensions/issues)
+
+## Upgrade Notes
+
+We recommend using the UPM delivery method. If you are using the Unity asset, there should be no issues updating but if you have a problem, just deleted the old Unity-UI-Extensions folder and import the asset new.
+
+-----
 
 ## 2019.6 - 2.5 - Bug squash
 
@@ -56,6 +147,7 @@ None
 
 None
 
+-----
 
 ## Update 2019.5 - 2.3  - Accelerated Deployment
 
@@ -133,7 +225,7 @@ Due to the restructure of the package to meet Unity's new package guidelines, we
 
 For Unity 2019 users using the new UPM deployment, be sure to delete the existing folder in your assets folder before adding the new package to avoid conflict.
 
-----------------
+-----
 
 ## Update 2019.4 - 2.2  - Back from the future
 
@@ -188,7 +280,7 @@ Examples now have their own package, this simplifies their use and deployment. E
 
 No new issues in this release, but check the issues list for things we are currently working on:
 
-----------------
+-----
 
 ## Update 2019.1 - formally v2.1  - Going with the times
 
@@ -237,7 +329,7 @@ No new issues in this release, but check the issues list for things we are curre
 
 No significant concerns, should be able to update over the 2.1 package.  If upgrading prior to 2.1, we still recommend removing the UnityUIExtensions folder and then re-importing
 
-----------------
+-----
 
 ## Update 2.0 - The update so big they had to name it twice
 
@@ -308,7 +400,7 @@ Serialisation functionality has been removed due to several incompatibilities be
 
 With this being a major version update, it is recommended to remove the old UI Extensions folder before importing the new asset.
 
-----------------
+-----
 
 ## Update 1.2
 
@@ -348,7 +440,7 @@ The HSS picker especially had a lot of file changes in this update.
 >**Note** In Unity 5.5 the particle system was overhauled and several methods were marked for removal. However, the UI Particle System script currently still uses them
 > Either ignore these errors or remove the *_UIParticleSystem_* script in the "*Unity UI Extensions / Scripts / Effects*" folder
 
-----------------
+-----
 
 ## Update 1.1
 
@@ -384,13 +476,13 @@ Two scripts were moved and need their originals need deleting post upgrade.  Ple
 * Scripts\ImageExtended
 * Scripts\UIImageCrop
 
-----------------
+-----
 
 ## Update 1.0.6.1
 
 - Minor update to enhance soft alpha mask and add cylinder text plus a fix to letter spacing 
 
-----------------
+-----
 
 ## Update 1.0.6
 
@@ -401,18 +493,17 @@ Two scripts were moved and need their originals need deleting post upgrade.  Ple
 * New set of controls including some shader enhanced solutions
 * I've added a donate column to the lists.  If you are getting great use out of a control, help out the dev who created it. Optional of course.  Will update with links as I get them.
 
-----------------
+-----
 
 ## Update 1.0.5
 
 Few minor fixes and a couple of additional scripts.  Predominately created the new 5.3 branch to maintain the UI API changes from the 5.2.1 Patch releases.  5.3 package is 100% compatible with 5.2.1 Patch releases.
 
-----------------
+-----
 
 ## Update 1.0.4
 
 [![View Getting Started Video](http://img.youtube.com/vi/oF48Qpaq3ls/0.jpg)](http://www.youtube.com/watch?v=oF48Qpaq3ls "Update 1.0.0.4 for the Unity UI Extensions Project")
----
 
 =======================
 

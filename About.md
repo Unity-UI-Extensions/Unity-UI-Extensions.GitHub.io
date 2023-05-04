@@ -272,3 +272,18 @@ I will add more sample scenes for the UI examples in this repository and detail 
 ## [Previous Releases](https://unity-ui-extensions.github.io/Downloads)
 
 Please see the [full downloads list](https://unity-ui-extensions.github.io/Downloads) for all previous releases and their corresponding download links.
+
+-----
+
+## More Information
+
+For more information about the project, please see the following pages:
+
+- [Downloads](Downloads.md)
+- [Getting Started](GettingStarted.md)
+- [UPM Installation Instructions](UPMInstallation.md)
+- [Controls detailed list](Controls.md)
+- [Further Information](FurtherInfo.md)
+- [Contribution Guidelines](ContributionGuidelines.md)
+- [See who's contributing](Contributors.md)
+- [About](About.md)

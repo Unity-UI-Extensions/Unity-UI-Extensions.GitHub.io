@@ -32,6 +32,8 @@ You can either download / fork this project to access the scripts, or you can al
 
 ## [Download Latest - Version 2.3](https://unity-ui-extensions.github.io/Downloads)
 
+> Check out the [Getting Started](GettingStarted.md) guide to get the Unity UI Extensions project installed and start playing with the controls.
+
 We have expanded where you can download the UnityPackage asset and widened the options to contribute to the project.
 
 > I will still stress however, ***contribution is optional***. **The assets / code will always remain FREE**
@@ -81,6 +83,7 @@ To get up to speed with the Unity UI Extensions, check out the [Getting Started]
 >
 > - [Gitter Chat](https://gitter.im/Unity-UI-Extensions/Lobby) site for the UI Extensions project
 > - [GitHub Discussions](https://github.com/Unity-UI-Extensions/com.unity.uiextensions/discussions), if you have any questions, queries or suggestions
+> - [GitHub Projects view](https://github.com/orgs/Unity-UI-Extensions/projects/2), to see what is currently scheduled for the next release.
 >
 > Much easier that posting a question / issue on YouTube, Twitter or Facebook :D
 
@@ -272,3 +275,18 @@ I will add more sample scenes for the UI examples in this repository and detail 
 ## [Previous Releases](https://unity-ui-extensions.github.io/Downloads)
 
 Please see the [full downloads list](https://unity-ui-extensions.github.io/Downloads) for all previous releases and their corresponding download links.
+
+-----
+
+## More Information
+
+For more information about the project, please see the following pages:
+
+- [Downloads](Downloads.md)
+- [Getting Started](GettingStarted.md)
+- [UPM Installation Instructions](UPMInstallation.md)
+- [Controls detailed list](Controls.md)
+- [Further Information](FurtherInfo.md)
+- [Contribution Guidelines](ContributionGuidelines.md)
+- [See who's contributing](Contributors.md)
+- [About](About.md)

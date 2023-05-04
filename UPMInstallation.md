@@ -75,11 +75,11 @@ Then when a new release becomes available, simply use the Unity Package Manager 
 
 ------
 
-### [Development Source](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions.git)
+### [Development Source](https://github.com/Unity-UI-Extensions/com.unity.uiextensions.git)
 
 > https://github.com/Unity-UI-Extensions/com.unity.uiextensions.git
 
-To add the Unity UI Extensions direct from the Bitbucket source you simply need to register in the Unity Package Manager interface which is accessed via the editor menu (Editor -> Window -> Package Manager)
+To add the Unity UI Extensions direct from the [GitHub source](https://github.com/unity-UI-Extensions/com.unity.uiextensions) you simply need to register in the Unity Package Manager interface which is accessed via the editor menu (Editor -> Window -> Package Manager)
 
 ![](/SiteImages/UnityPackageManager.png)
 

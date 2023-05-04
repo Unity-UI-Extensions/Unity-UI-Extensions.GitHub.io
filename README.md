@@ -51,7 +51,14 @@ For direct access to the assets and view all previous releases, visit the [relea
 
 -----
 
-## [Installation Instructions](GettingStarted.md)
+## [Installation Instructions](UPMInstallation.md)
+
+New for 2020, we have added OpenUPM support and the package can be installed using the following [OpenUPM CLI](https://openupm.com/docs/) command:
+
+```cli
+`openupm add com.unity.uiextensions`
+```
+> For more details on using [OpenUPM CLI, check the docs here](https://github.com/openupm/openupm-cli#installation).
 
 As of Unity 2019, there are now two paths for getting access to the Unity UI Extensions project:
 

@@ -34,7 +34,7 @@ The Unity UI Extension project is published in a few places for access via UPM, 
 The simplest way to getting started using the core platform package in your project is via OpenUPM. Visit [OpenUPM](https://openupm.com/docs/) to learn more about it. Once you have the OpenUPM CLI set up use the following command to add the package to your project:
 
 ```cli
-`openupm add com.unity.uiextensions`
+  openupm add com.unity.uiextensions
 ```
 
 > For more details on using [OpenUPM CLI, check the docs here](https://github.com/openupm/openupm-cli#installation).
@@ -109,9 +109,9 @@ From the 2019.4 release, due to the restructuring required by Unity, the Example
 
 If there is a demand in the future, these will be added to a second UPM package so that you can pick and chose which examples to add to your project for reference.
 
-### Release 2019.4 (2.3) Examples (Current)
+### Release 2.3.2 Examples (Current)
 
-- [Unity UI Extensions Examples 2019.4 (V2.2)](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/downloads/UnityUIExtensions-2019-4-Examples.unitypackage)
+- [Unity UI Extensions Examples (V2.3)](https://github.com/Unity-UI-Extensions/com.unity.uiextensions/releases/download/2.3.0/UnityUIExtensions-2.3.0-Examples.unitypackage)
 
 > UPM users can also now import the Examples direct from the Unity Package Manager in the asset description.
 

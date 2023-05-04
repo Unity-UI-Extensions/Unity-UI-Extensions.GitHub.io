@@ -2,7 +2,7 @@
 
 Below is a list of all the `.UnityPackage` asset package downloads for the Unity UI Extensions project
 
-## Update 2019.6 - (v2.5)  - Bug Squash
+## Update 2.3 - (latest)  - Bug Squash
 
 We have expanded where you can download the UnityPackage asset and widened the options to contribute to the project. **Check the [Release notes](./ReleaseNotes/RELEASENOTES.md) for Upgrade information**
 
@@ -14,13 +14,18 @@ We have expanded where you can download the UnityPackage asset and widened the o
 
 ## Package archive on Bitbucket
 
-Below are a list of the `.UnityPackage`s from previous releases, hosted on our old site on BitBucket.
+Below are a list of the `.UnityPackage`s from previous releases.
 
-### Release 2019.6 (Current)
+### Release 2.3 - latest - Feb 2023
+
+* [Unity UI Extensions Asset 2.3 ](https://github.com/Unity-UI-Extensions/com.unity.uiextensions/releases/download/2.3.0/UnityUIExtensions-2.3.0.unitypackage)
+* [Unity UI Extensions Asset 2.3 examples ](https://github.com/Unity-UI-Extensions/com.unity.uiextensions/releases/download/2.3.0/UnityUIExtensions-2.3.0-Examples.unitypackage)
+
+### Release 2019.6
 
 * [Unity UI Extensions Asset 2019.6 ](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/downloads/UnityUIExtensions-2019-6.unitypackage)
 
-### Release 2019.6 Examples (Current)
+### Release 2019.6 Examples
 
 * [Unity UI Extensions Examples 2019.6 ](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/downloads/UnityUIExtensions-2019-6-Examples.unitypackage)
 

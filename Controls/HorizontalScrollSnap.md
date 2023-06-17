@@ -31,7 +31,7 @@ A paged scroll rect that can work in steps / pages, includes button support.  No
 A scroll snap style control which is focused on a horizontal layout, enabling a paged view of child elements.
 Pages can be moved by keys, swipes or via the use of buttons.
 
-![](Images/HSSInspector.jpg)
+![Horizontal ScrollSnap Inspector](Images/HSSInspector.jpg)
 
 Implements its own infinite scrolling method and additional events for when pages change.
 
@@ -57,7 +57,7 @@ Property | Description
 *Mask Area*|Maskable area for control, pages outside this area will be made inactive. Used in conjunction with the Mask Buffer.  Recommended to also add a RectMask2D to MaskArea GO.
 *Mask Buffer*|The amount of page buffer to surround the Mask Area and control which pages are active / inactive. Lower value equals more active pages.
 *Jump On Enable*|By default the container will lerp to the start when enabled in the scene, this option overrides this and forces it to simply jump without lerping
-*Restart On Enable*|By default the container will return to the original starting page when enabled, this option overrides this behaviour and stays on the current selection
+*Restart On Enable*|By default the container will stay on the current selection, this option overrides this behaviour and returns to the original starting page when enabled.
 *Use Parent Transform*|When using prefabs in the ChildObjects array, the control with use the prefab transform values instead of resetting to the parent.
 *Child Objects*|An array of prefabs to load the control with. Can EITHER add children in to the scene or via this array but NOT both.
 ***On Selection Change Start*** (event) |The Event fired when the user starts changing the page via swipe or mouse
@@ -69,6 +69,21 @@ Property | Description
 Property | Return Type | Description
 |-|-|-|
 CurrentPage|int|The current snapped page, or selected page as the user swipes
+
+---------
+
+## Methods
+
+Method | Arguments | Description
+|-|-|-|
+*DistributePages*|N/A|Forces a refresh of the currently available Scroll Snap Pages
+*Add Child*|Go (GameObject)|Add a new child to this Scroll Snap and recalculate its children
+*Add Child*|Go (GameObject), WorldPositionStays (bool)|Add a new child to this Scroll Snap and recalculate its children, and resets the world position of the new child.
+*Remove Child*|index (int), (out) ChildRemoved (GameObject)|Remove a new child to this Scroll Snap and recalculate its children, outputs the removed object to a variable.
+*Remove Child*|index (int), WorldPositionStays (bool), (out) ChildRemoved (GameObject)|Remove a new child to this Scroll Snap and recalculate its children, outputs the removed object to a variable. Resets the world position of the removed GameObject.
+*RemoveAllChildren*|(out) ChildrenRemoved (GameObject[])|Remove all children from this ScrollSnap, outputs a GameObject array of all removed children.
+*RemoveAllChildren*|WorldPositionStays (bool), (out) ChildrenRemoved (GameObject[])|Remove all children from this ScrollSnap, outputs a GameObject array of all removed children. Resets the world position for all removed children.
+*UpdateLayout*|N/A|Used for changing / updating between screen resolutions
 
 ---------
 

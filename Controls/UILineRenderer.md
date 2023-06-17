@@ -30,9 +30,15 @@ Graphic control for drawing lines in the UI System
 
 The UI Line Renderer allows you to draw distinct Line primitives between a collection of points on a Canvas.
 
-![](Images/UILineRendererInspector.jpg)
+![UI LineRenderer Inspector](Images/UILineRendererInspector.jpg)
 
 Settings can be set either in the inspector or via script programmatically.
+
+> Due to the way UI Rendering occurs, a UI LineRenderer component should ONLY be placed in their own child RectTransforms positioned at (0,0,0).  Having a UILineRenderer RectTransform at anything other than (0,0,0) will produce odd results as the offset from 0 is not handled.
+>
+> This includes any components that depend on the UILineRender, such as the UILineConnector.  These do not need to be included within objects they are drawing, as they handle rendering for the entire canvas.
+>
+> See the LineRenderer examples for clarity.
 
 ---------
 

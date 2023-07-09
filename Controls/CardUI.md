@@ -1,6 +1,6 @@
 # Card UI
 
-A range of controls to provide a Card based interface, this includes several capabilties and features to manipulate the cards based on requirements, including:
+A range of controls to provide a Card based interface, this includes several capabilities and features to manipulate the cards based on requirements, including:
 
 * 2D Expanding cards
 * 2D Popup, including falling cards
@@ -15,25 +15,26 @@ A range of controls to provide a Card based interface, this includes several cap
 
 > 1 [Overview](#overview)
 >
-> 2 [Properties](#properties)
+> 2 [Usage](#usage)
 >
-> 3 [Methods](#methods)
+> 3 [Video Demo](#video-demo)
 >
-> 4 [Usage](#usage)
+> 4 [See also](#see-also)
 >
-> 5 [Video Demo](#video-demo)
+> 5 [Credits and Donation](#credits-and-donation)
 >
-> 6 [See also](#see-also)
->
-> 7 [Credits and Donation](#credits-and-donation)
->
-> 8 [External links](#external-links)
+> 6 [External links](#external-links)
 
 ---------
 
 ## Overview
 
 The range of Card UI controls give you several options for creating card like UI elements for your project.
+
+* 2D Expanding Card - A clickable/expandable card layout.
+* 2D Popup - Physics enabled falling cards.
+* 2D Stacked cards - A depth orientated controller for displaying cards stacked on top of each other.
+* 3D Cards - Custom panel meshes with rounded corners for advanced effect.
 
 |2D Card Expanding|2D Popup Cards
 |---|---|
@@ -47,7 +48,7 @@ The range of Card UI controls give you several options for creating card like UI
 
 ## Usage
 
-For best demonstrations in the use and setup of the Card UI controls, checkout the scenes in the Unity UI Extensions Examples
+For fuller demonstration of the setup of the Card UI controls, checkout the CardUI scenes in the Unity UI Extensions Examples,
 
 ---------
 

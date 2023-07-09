@@ -4,6 +4,8 @@ A Text vertex manipulator for those users NOT using TextMeshPro (why ever not?)
 
 <!--![](Images/ Game Image.jpg)-->
 
+> Text Effects are not supported with TextMeshPro due to its architecture, try using the native TextMeshPro effects instead.
+
 ---------
 
 ## Contents

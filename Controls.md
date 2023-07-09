@@ -83,6 +83,8 @@ This page lists all the available controls within the UI Extensions project.  To
 
 =====================
 
+> Text Effects are not supported with TextMeshPro due to its architecture, try using the native TextMeshPro effects instead.
+
 |Effect|Description|Component Command|Notes|Donate|Credits|
 |-|-|-|-|-|-|
 |**[BestFitOutline](/Controls/BestFitOutline.md)** | An improved outline effect | UI / Effects / Extensions / Best Fit Outline ||| Melang|

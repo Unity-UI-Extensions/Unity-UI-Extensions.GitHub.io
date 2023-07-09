@@ -4,6 +4,8 @@ Allows finer control of text spacing
 
 <!--![](Images/ Game Image.jpg)-->
 
+> Text Effects are not supported with TextMeshPro due to its architecture, try using the native TextMeshPro effects instead.
+
 ---------
 
 ## Contents

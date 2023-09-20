@@ -34,6 +34,8 @@ The default Unity 3D Particle system doesn't generally work in the UI space.  It
 
 > *NOTE* The control does not yet support Trail Particles currently
 
+> **Update 2023** Personally, I would recommend [mob-sakai's ParticleEffectForUGUI](https://github.com/mob-sakai/ParticleEffectForUGUI) if this control is not meeting your expectations, as it has had further updates and also supports new features introduced in 2018.2.
+
 ---------
 
 ## Properties

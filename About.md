@@ -16,9 +16,9 @@ You can follow the UI Extensions team for updates and news on:
 
 > Ways to get in touch:
 >
-> - [Gitter Chat](https://gitter.im/Unity-UI-Extensions/Lobby) site for the UI Extensions project
 > - [GitHub Discussions](https://github.com/Unity-UI-Extensions/com.unity.uiextensions/discussions), if you have any questions, queries or suggestions
 > - [GitHub Projects view](https://github.com/orgs/Unity-UI-Extensions/projects/2), to see what is currently scheduled for the next release.
+> - [Gitter Chat](https://gitter.im/Unity-UI-Extensions/Lobby) site for the UI Extensions project
 
 -----
 
@@ -30,9 +30,9 @@ In this repository is a collection of extension scripts / effects and controls t
 
 You can either download / fork this project to access the scripts, or you can also download these pre-compiled Unity Assets, chock full of goodness for each release:
 
-## [Download Latest - Version 2.3](https://unity-ui-extensions.github.io/Downloads)
+## [Download Latest - Version 2.3.2](https://unity-ui-extensions.github.io/Downloads)
 
-We have expanded where you can download the UnityPackage asset and widened the options to contribute to the project.
+We have expanded where you can download the UnityPackage asset and widened the options to contribute to the project. (although we recommend using the [UPM](/UPMInstallation.md) Packages for active use!)
 
 > I will still stress however, ***contribution is optional***. **The assets / code will always remain FREE**
 

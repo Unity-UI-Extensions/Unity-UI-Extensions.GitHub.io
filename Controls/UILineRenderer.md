@@ -83,9 +83,10 @@ Property | Description
 
 Method | Arguments | Description
 |-|-|-|
-*GetPosition*|Index (int), SegmentIndex (int)|Get the Vector2 position of a line index
-*GetPositionBySegment*|Index (int), SegmentIndex (int)|Get the Vector2 position of a line within a specific segment
-*GetClosestPoint*|Starting Position (Vector2), End Position (Vector2), Desired Point (Vector2)|Get the closest point between two given Vector2s from a given Vector2 point
+*GetPosition*|Index (int), SegmentIndex (int)|Get the Vector2 position of a line index.|
+*GetPositionBySegment*|Index (int), SegmentIndex (int)|Get the Vector2 position of a line within a specific segment.|
+*GetClosestPoint*|Starting Position (Vector2), End Position (Vector2), Desired Point (Vector2)|Get the closest point between two given Vector2s from a given Vector2 point.|
+*CalculatePointOnCurve*|time (float), Start Point (Vector 2), Control Point 1 (Vector 2), Control Point 2 (Vector 2), End Point (Vector 2)|Returns a Vector 2 point on a curve based on the input (check in script for use)|
 
 ---------
 

@@ -1,8 +1,8 @@
 # Unity UI Extensions Asset downloads
 
-Below is a list of all the `.UnityPackage` asset package downloads for the Unity UI Extensions project
+Below is a list of all the `.UnityPackage` asset package downloads for the Unity UI Extensions project (although we recommend using the [UPM](/UPMInstallation.md) Packages for active use!)
 
-## Update 2.3 - (latest)  - Bug Squash
+## Release 2.3.2 - Rejuvenation (Latest) - 2023/11/26
 
 We have expanded where you can download the UnityPackage asset and widened the options to contribute to the project. **Check the [Release notes](./ReleaseNotes/RELEASENOTES.md) for Upgrade information**
 
@@ -16,30 +16,35 @@ We have expanded where you can download the UnityPackage asset and widened the o
 
 Below are a list of the `.UnityPackage`s from previous releases.
 
-### Release 2.3 - latest - Feb 2023
+### Release 2.3.2 - latest - Nov 2023
 
-* [Unity UI Extensions Asset 2.3 ](https://github.com/Unity-UI-Extensions/com.unity.uiextensions/releases/download/2.3.0/UnityUIExtensions-2.3.0.unitypackage)
-* [Unity UI Extensions Asset 2.3 examples ](https://github.com/Unity-UI-Extensions/com.unity.uiextensions/releases/download/2.3.0/UnityUIExtensions-2.3.0-Examples.unitypackage)
+* [Unity UI Extensions Asset 2.3.2](https://github.com/Unity-UI-Extensions/com.unity.uiextensions/releases/download/2.3.0/UnityUIExtensions-2.3.2.unitypackage)
+* [Unity UI Extensions Asset 2.3.2 examples](https://github.com/Unity-UI-Extensions/com.unity.uiextensions/releases/download/2.3.0/UnityUIExtensions-2.3.2-Examples.unitypackage)
+
+### Release 2.3
+
+* [Unity UI Extensions Asset 2.3](https://github.com/Unity-UI-Extensions/com.unity.uiextensions/releases/download/2.3.0/UnityUIExtensions-2.3.0.unitypackage)
+* [Unity UI Extensions Asset 2.3 examples](https://github.com/Unity-UI-Extensions/com.unity.uiextensions/releases/download/2.3.0/UnityUIExtensions-2.3.0-Examples.unitypackage)
 
 ### Release 2019.6
 
-* [Unity UI Extensions Asset 2019.6 ](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/downloads/UnityUIExtensions-2019-6.unitypackage)
+* [Unity UI Extensions Asset 2019.6](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/downloads/UnityUIExtensions-2019-6.unitypackage)
 
 ### Release 2019.6 Examples
 
-* [Unity UI Extensions Examples 2019.6 ](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/downloads/UnityUIExtensions-2019-6-Examples.unitypackage)
+* [Unity UI Extensions Examples 2019.6](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/downloads/UnityUIExtensions-2019-6-Examples.unitypackage)
 
 ### Release 2019.5
 
-* [Unity UI Extensions Asset 2019.5 ](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/downloads/UnityUIExtensions-2019-5.unitypackage)
+* [Unity UI Extensions Asset 2019.5](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/downloads/UnityUIExtensions-2019-5.unitypackage)
 
 ### Release 2019.5 Examples
 
-* [Unity UI Extensions Examples 2019.5 ](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/downloads/UnityUIExtensions-2019-5-Examples.unitypackage)
+* [Unity UI Extensions Examples 2019.5](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/downloads/UnityUIExtensions-2019-5-Examples.unitypackage)
 
 ### Release 2019.4 (2.2)
 
-* [Unity UI Extensions Asset 2019.4 (V2.2) ](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/downloads/UnityUIExtensions-2019-4.unitypackage)
+* [Unity UI Extensions Asset 2019.4 (V2.2)](https://bitbucket.org/UnityUIExtensions/unity-ui-extensions/downloads/UnityUIExtensions-2019-4.unitypackage)
 
 ### Release 2019.4 (2.2) Examples
 

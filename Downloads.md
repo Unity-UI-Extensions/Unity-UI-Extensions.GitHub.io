@@ -18,8 +18,8 @@ Below are a list of the `.UnityPackage`s from previous releases.
 
 ### Release 2.3.2 - latest - Nov 2023
 
-* [Unity UI Extensions Asset 2.3.2](https://github.com/Unity-UI-Extensions/com.unity.uiextensions/releases/download/2.3.0/UnityUIExtensions-2.3.2.unitypackage)
-* [Unity UI Extensions Asset 2.3.2 examples](https://github.com/Unity-UI-Extensions/com.unity.uiextensions/releases/download/2.3.0/UnityUIExtensions-2.3.2-Examples.unitypackage)
+* [Unity UI Extensions Asset 2.3.2](https://github.com/Unity-UI-Extensions/com.unity.uiextensions/releases/download/2.3.2/UnityUIExtensions-2.3.2.unitypackage)
+* [Unity UI Extensions Asset 2.3.2 examples](https://github.com/Unity-UI-Extensions/com.unity.uiextensions/releases/download/2.3.2/UnityUIExtensions-2.3.2-Examples.unitypackage)
 
 ### Release 2.3
 

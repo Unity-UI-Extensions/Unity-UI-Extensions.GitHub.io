@@ -12,17 +12,15 @@ A more rugged grid style layout group
 >
 > 2 [Properties](#properties)
 >
-> 3 [Methods](#methods)
+> 3 [Usage](#usage)
 >
-> 4 [Usage](#usage)
+> 4 [Video Demo](#video-demo)
 >
-> 5 [Video Demo](#video-demo)
+> 5 [See also](#see-also)
 >
-> 6 [See also](#see-also)
+> 6 [Credits and Donation](#credits-and-donation)
 >
-> 7 [Credits and Donation](#credits-and-donation)
->
-> 8 [External links](#external-links)
+> 7 [External links](#external-links)
 
 ---------
 

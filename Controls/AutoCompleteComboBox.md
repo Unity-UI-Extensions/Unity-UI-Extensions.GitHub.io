@@ -56,6 +56,7 @@ Property | Description
 *On Selection Text Changed* (event) |The Event fired when the the user is typing.
 *On Selection Validity Changed* (event) |The Event fired when the the text the user enters matches a selection.
 *On Selection Changed* (event) |The Event fired when the user selects an option or loses focus.
+*On Item Selected* (event) |The Event fires when an item is selected from the drop down, or the box closes (with a valid item).
 *On Control Disabled* (event) |The Event fired when the control is disabled through code.
 
 > When managing the control programmatically, make sure you use the following functions to manage the ComboBox contents. **Do NOT update the 'AvailableOptions' list directly**

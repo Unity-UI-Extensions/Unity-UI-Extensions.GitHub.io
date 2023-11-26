@@ -83,7 +83,7 @@ Method | Arguments | Description
 *Remove Child*|index (int), WorldPositionStays (bool), (out) ChildRemoved (GameObject)|Remove a new child to this Scroll Snap and recalculate its children, outputs the removed object to a variable. Resets the world position of the removed GameObject.
 *RemoveAllChildren*|(out) ChildrenRemoved (GameObject[])|Remove all children from this ScrollSnap, outputs a GameObject array of all removed children.
 *RemoveAllChildren*|WorldPositionStays (bool), (out) ChildrenRemoved (GameObject[])|Remove all children from this ScrollSnap, outputs a GameObject array of all removed children. Resets the world position for all removed children.
-*UpdateLayout*|N/A|Used for changing / updating between screen resolutions
+*UpdateLayout*|(optional) Bool|Used for changing / updating between screen resolutions, if the argument is true, the current page will be reset to the StartingScreen.
 
 ---------
 

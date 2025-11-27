@@ -2,12 +2,17 @@
 
 This is an extension project for the new Unity UI system which can be found at: [Unity UI Source](https://github.com/Unity-Technologies/uGUI)
 
-> [Check out the control demos on our Tumblr page](https://unityuiextensions.tumblr.com/)
+> [!NOTE]
+> WIth Unity backtracking on their decision to deprecate Unity UI, Unity 6 is now a viable option and work has begun on a U6 update.
+>
+> See the [Work off list](https://github.com/Unity-UI-Extensions/com.unity.uiextensions/issues/498) for more details.  Have suggestions for new improvements, get them logged now!
 
 [![openupm](https://img.shields.io/npm/v/com.unity.uiextensions?label=openupm&registry_uri=https://package.openupm.com)](https://openupm.com/packages/com.unity.uiextensions/)
 [![Publish main branch and increment version](https://github.com/Unity-UI-Extensions/com.unity.uiextensions/actions/workflows/main-publish.yml/badge.svg)](https://github.com/Unity-UI-Extensions/com.unity.uiextensions/actions/workflows/main-publish.yml)
 [![Publish development branch on Merge](https://github.com/Unity-UI-Extensions/com.unity.uiextensions/actions/workflows/development-publish.yml/badge.svg)](https://github.com/Unity-UI-Extensions/com.unity.uiextensions/actions/workflows/development-publish.yml)
 [![Build and test UPM packages for platforms, all branches except main](https://github.com/Unity-UI-Extensions/com.unity.uiextensions/actions/workflows/development-buildandtestupmrelease.yml/badge.svg)](https://github.com/Unity-UI-Extensions/com.unity.uiextensions/actions/workflows/development-buildandtestupmrelease.yml)
+
+> [Check out the control demos on our Tumblr page](https://unityuiextensions.tumblr.com/)
 
 ## [Intro](https://unity-ui-extensions.github.io/GettingStarted)
 

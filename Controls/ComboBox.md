@@ -50,15 +50,15 @@ Property | Description
 *Sort Items*|Should the items in the combo box be sorted
 *Select First Item On Start*|Should the first item be auto selected on start
 *Select Index Item on Start*|Which item should be selected on start (*Select First Item on Start* will override this option)
-*On Selection Changed* (event) |The Event fired when the user selects an option or loses focus
-*On Control Disabled* (event) |The Event fired when the control is disabled through code.
+***On Selection Changed*** (event) |The Event fired when the user selects an option or loses focus
+***On Control Disabled*** (event) |The Event fired when the control is disabled through code.
 
 ---------
 
 ## Methods
 
 Method | Arguments | Description
-|-|-|-|
+-|-|-
 *AddItem*|String|Adds a single item to the list
 *RemoveItem*|String|Removes a single item from the list
 *SelectItemIndex*|int|Sets the currently selected item in the list
@@ -71,7 +71,12 @@ Method | Arguments | Description
 ## Usage
 
 Add the combobox control to your scene using:
-GameObject -> UI -> Extensions -> ComboBox
+
+"*GameObject -> UI -> Extensions -> ComboBox -> ComboBox*"
+
+Alternatively, add the component to an existing GameObject using:
+
+"*Add Component -> UI -> Extensions -> ComboBox -> ComboBox*"
 
 Then simply add child elements to the Items property.  
 

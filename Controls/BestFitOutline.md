@@ -1,4 +1,7 @@
-# BestFitOutline
+# Best Fit Outline
+
+> [!IMPORTANT]
+> ⚠️ This control has been deprecated for Unity 6 and is no longer maintained. It remains documented for legacy reference.
 
 An improved outline effect
 
@@ -34,10 +37,30 @@ Provides a simple way to add an outline to your UI component, be it an image or 
 
 ---------
 
+## Properties
+
+The properties of the Best Fit Outline component are as follows:
+
+Property | Description
+|-|-|
+*Status*|Deprecated and removed in Unity 6; no configurable properties remain
+*Recommended Alternative*|Use TextMeshPro materials/shaders for outline effects in modern projects
+
+---------
+
+## Methods
+
+Method | Arguments | Description
+-|-|-
+*Deprecated*|N/A|Removed in Unity 6; no public methods are available
+
+---------
+
 ## Usage
 
 Add the effect to your object through the component menu using:
-Add Component -> UI -> Effects -> Extensions -> Best Fit Outline 
+
+"*Add Component -> UI -> Effects -> Extensions -> Best Fit Outline*" 
 
 ---------
 

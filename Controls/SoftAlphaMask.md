@@ -39,7 +39,7 @@ Where most Alpha Mask effects built into the Unity UI system work on hard transp
 The properties of the Selectable Scalar control are as follows:
 
 Property | Description
-|-|-|
+-|-
 *Mask Area*|The area that is to be used as the container.
 *Alpha Mask*|Texture to be used to do the soft alpha.
 *Cut Off*|At what point to apply the alpha min range 0-1.
@@ -48,6 +48,13 @@ Property | Description
 *Don't clip Mask Scaling Rect*|If a different Mask Scaling Rect is given, and this value is true, the area around the mask will not be clipped.
 
 ---------
+
+## Methods
+
+This component does not expose public methods beyond inherited behaviour.
+
+---------
+
 ## Usage
 
 Simply add the "Soft Mask Script" component to an existing UI object and apply a "Mask" texture.  Alter the "Cut Off" value to scale out the masking effect.

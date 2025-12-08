@@ -38,7 +38,7 @@ Pages can be moved by keys, swipes or via the use of buttons.
 The properties of the Horizontal Scroll Snap control are as follows:
 
 Property | Description
-|-|-|
+-|-
 *Next Button*|Optional button to move the ScrollSnap forward.
 *Prev Button*|Optional button to move the ScrollSnap backward.
 *Items Visible at once*|How many items should be visible at the same time.
@@ -55,7 +55,7 @@ Property | Description
 ## Methods
 
 Method | Arguments | Description
-|-|-|-|
+-|-|-
 *ChangePage*|Index (int)|Move the ScrollSNap to a specific page (0 indexed)
 *CurrentPage*|None|Returns the Current Page selected for the ScrollSnap
 *NextScreen*|None|Forces the control to move to the "Next" page
@@ -68,14 +68,15 @@ Method | Arguments | Description
 ## Usage
 
 Like with other Layout controls, simply add this to the parent RectTransform for a collection of child elements through the Add Component menu as follows:
-Add Component -> Layout -> Extensions -> ScrollSnap
+
+"*Add Component -> UI -> Extensions -> Scroll Snap*"
 
 Or alternatively, add one of the default layouts for the control using:
 
-* GameObject -> UI -> Extensions -> Fixed Item Scroll -> Snap Vertical Single Item
-* GameObject -> UI -> Extensions -> Fixed Item Scroll -> Snap Vertical Multiple Items
-* GameObject -> UI -> Extensions -> Fixed Item Scroll -> Snap Horizontal Single Item
-* GameObject -> UI -> Extensions -> Fixed Item Scroll -> Snap Horizontal Multiple Items
+* "*GameObject -> UI -> Extensions -> Fixed Item Scroll -> Snap Vertical Single Item*"
+* "*GameObject -> UI -> Extensions -> Fixed Item Scroll -> Snap Vertical Multiple Items*"
+* "*GameObject -> UI -> Extensions -> Fixed Item Scroll -> Snap Horizontal Single Item*"
+* "*GameObject -> UI -> Extensions -> Fixed Item Scroll -> Snap Horizontal Multiple Items*"
 
 ---------
 

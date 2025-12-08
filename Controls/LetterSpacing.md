@@ -1,4 +1,7 @@
-# LetterSpacing
+# Letter Spacing
+
+> [!IMPORTANT]
+> ⚠️ This control has been deprecated for Unity 6 and is no longer maintained. It remains documented for legacy reference.
 
 Allows finer control of text spacing
 
@@ -41,8 +44,16 @@ Allows finer control of text spacing
 The properties of the Letter Spacing component are as follows:
 
 Property | Description
-|-|-|
+-|-
 *Spacing*|The spacing distance between characters
+
+---------
+
+## Methods
+
+Method | Arguments | Description
+-|-|-
+*Deprecated*|N/A|Removed in Unity 6; no public methods are available
 
 ---------
 

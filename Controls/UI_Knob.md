@@ -46,7 +46,7 @@ A powerful Knob style control, complete with a multitude of options, such as:
 The properties of the Scroll Rect Infinite component are as follows:
 
 Property | Description
-|-|-|
+-|-
 *Direction*|Direction of rotation CW - clockwise, CCW - counterClockwise.
 *Max Value*|Max value of the knob, maximum RAW output value knob can reach, overrides snap step, IF set to 0 or higher than loops, max value will be set by loops.
 *Loops*|SHow many rotations knob can do, if higher than max value, the latter will limit max value.
@@ -55,7 +55,7 @@ Property | Description
 *Snap Steps Per Loop*|Number of positions to snap.
 *Parent Touch Mask*|Parent touch area to extend the touch radius.
 *Mask Background*|Default background color of the touch mask. Defaults as transparent.
-
+***On Value Changed*** (event) |Event that is called every frame while rotating knob, sends a float argument of knobValue
 
 ### Inherited from Selectable
 
@@ -68,15 +68,20 @@ Property | Description
 ## Methods
 
 Method | Arguments | Description
-|-|-|-|
+-|-|-
 *SetKnobValue*|Angle (between 0 & 1), Loop number|Rotates the Knob control to the selected value and loop
 
 ---------
 
 ## Usage
 
-To use, simply add to the scene through the Menu option shown here:
-GameObject -> UI -> Extensions -> UI_Knob
+To use, simply add to the scene through:
+
+"*GameObject -> UI -> Extensions -> Controls -> UI Knob*"
+
+Alternatively, add the component to an existing GameObject using:
+
+"*Add Component -> UI -> Extensions -> UI_Knob*"
 
 Then apply any images / backgrounds or highlights you need for effect.
 

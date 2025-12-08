@@ -32,8 +32,9 @@ The default Unity 3D Particle system doesn't generally work in the UI space.  It
 
 ![](Images/UIParticleSystemInspector.jpg)
 
-> *NOTE* The control does not yet support Trail Particles currently
-
+> [!NOTE]
+>The control does not yet support Trail Particles currently
+>
 > **Update 2023** Personally, I would recommend [mob-sakai's ParticleEffectForUGUI](https://github.com/mob-sakai/ParticleEffectForUGUI) if this control is not meeting your expectations, as it has had further updates and also supports new features introduced in 2018.2.
 
 ---------
@@ -44,7 +45,7 @@ The properties of the UI Particle System control are as follows:
 **Requires Particle System**
 
 Property | Description
-|-|-|
+-|-
 *Material*|Particle render material - *Note* several shaders have been provided in the Shaders folder, all called UI.. (also in UI Extensions / Particles / ... in the shader browser)
 *Color*|The color tint of the particles
 *Fixed Time*|Should the particles render in fixed or game time
@@ -52,14 +53,14 @@ Property | Description
 ### Inherited from MaskableGraphic
 
 * Raycast Target
-* On Cull State Changed* (event)
+* ***On Cull State Changed*** (event)
 
 ---------
 
 ## Methods
 
 Method | Arguments | Description
-|-|-|-|
+-|-|-
 *StartParticleEmission*|None|Starts the particle system if currently stopped
 *StopParticleEmission*|None|Stops the particle system and clears the particle cache. Destroys current particles in scene from the emitter
 *PauseParticleEmission*|None|Pauses the particle system emission, existing particles continue to travel
@@ -68,13 +69,18 @@ Method | Arguments | Description
 
 ## Usage
 
-Simply add the UI Particle System component to a UI object using the Game Component menu "*UI / Effects / Extensions / UIParticleSystem*". However, you will need to configure the particle system manually.
+Simply add the UI Particle System component to a UI object using:
+
+"*Add Component -> UI -> Effects -> Extensions -> UIParticleSystem*"
+
+However, you will need to configure the particle system manually.
 
 Alternatively, add a new Empty Game Object to a canvas, add the particle system and configure it how you like in the Scene view. Then add the "UIParticleSystem" component and scale your values to render correctly. If required, change the material to use one of the alternate shaders provided in the project in the "Shaders" folder or from "UI Extensions / Particles / ..." in the shader browser.
 
-> *Note* When you translate any 3D object to Canvas Space, it ALWAYS requires scaling up
-
-> *Note 2* The control does not yet support Trail Particles currently
+> [!NOTE]
+> When you translate any 3D object to Canvas Space, it ALWAYS requires scaling up
+>
+> The control does not yet support Trail Particles currently
 
 ---------
 

@@ -1,4 +1,7 @@
-# NicerOutline
+# Nicer Outline
+
+> [!IMPORTANT]
+> ⚠️ This control has been deprecated for Unity 6 and is no longer maintained. It remains documented for legacy reference.
 
 An improved outline effect
 
@@ -31,6 +34,25 @@ An improved outline effect
 ## Overview
 
 Provides a simple way to add an outline to your UI component, be it an image or Text component
+
+---------
+
+## Properties
+
+The properties of the Nicer Outline component are as follows:
+
+Property | Description
+-|-
+*Status*|Deprecated and removed in Unity 6; no configurable properties remain
+*Recommended Alternative*|Use TextMeshPro materials/shaders for outline effects in modern projects
+
+---------
+
+## Methods
+
+Method | Arguments | Description
+-|-|-
+*Deprecated*|N/A|Removed in Unity 6; no public methods are available
 
 ---------
 

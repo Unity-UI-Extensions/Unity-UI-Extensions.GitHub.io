@@ -48,21 +48,31 @@ It also has built in Lerping capability and can be used to:
 The properties of the Radial Slider control are as follows:
 
 Property | Description
-|-|-|
+-|-
 *Start Color*|The Gradient color for the beginning of the radius.
 *End Color*|The Gradient color for the end of the radius.
 *Lerp To Target*|Should the control jump to it's intended position or Lerp. *Note, Dragging is only supported when this is off
 *Lerp Curve*|Use a standard Lerp or a gradient curve using the Unity native Curve control.
-*On Value Changed* (event) |The Event fired when the value of the slider is changed, outputs an Integer value
-*On Value Changed* (event) |The Event fired when the value of the slider is changed, outputs an Text value
+***On Value Changed*** (event) |The Event fired when the value of the slider is changed, outputs an Integer value
+***On Text Value Changed*** (event) |The Event fired when the value of the slider is changed, outputs a Text value
+
+---------
+
+## Methods
+
+This component does not expose public methods beyond inherited behaviour.
 
 ---------
 
 ## Usage
 
-Simply add the default Radial Slider to the scene using "*UI / Extensions / Radial Slider*" in the Editor "*GameObject*" menu.
+Simply add the default Radial Slider to the scene using:
 
-It is also available as a Game Component menu in "*UI / Extensions / Radial Slider*".
+"*GameObject -> UI -> Extensions -> Sliders -> Radial Slider*"
+
+Alternatively, add the component to an existing GameObject using:
+
+"*Add Component -> UI -> Extensions -> Sliders -> Radial Slider*"
 
 ---------
 

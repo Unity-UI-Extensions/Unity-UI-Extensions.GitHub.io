@@ -46,7 +46,7 @@ This control differs to the built in Unity Grid layout, which can only arrange i
 The properties of the Box Slider control are as follows:
 
 Property | Description
-|-|-|
+-|-
 *Start Corner*|The corner to start adding children from
 *Column Widths*|An array of floats to denote the width of each column. Content sized to fit
 *Minimum Row Height*|The minimum height of child items in a row
@@ -61,9 +61,17 @@ Property | Description
 
 ---------
 
+## Methods
+
+This component does not expose public methods beyond inherited behaviour.
+
+---------
+
 ## Usage
 
-Create an Empty GO on a Canvas and add the **Table Layout Group** component object using "*UI / Extensions / Table Layout Group*" in the Editor Add Component menu.
+Create an Empty GO on a Canvas and add the **Table Layout Group** component using:
+
+"*Add Component -> Layout -> Extensions -> Table Layout Group*"
 
 ---------
 

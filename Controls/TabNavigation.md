@@ -43,16 +43,24 @@ The control has also been extended to allow for circular navigation, so tabs wil
 The properties of the Tab Navigation Helper control are as follows:
 
 Property | Description
-|-|-|
+-|-
 *Navigation Path*|The manual order for the Tab Navigation script
 *Navigation Mode*|Use Unity's automatic control order or override it with a manual order with *Navigation Path*
 *Circular Navigation*|Does the tab order from from start to finish, or loop round once the end is reached
 
 ---------
 
+## Methods
+
+This component does not expose public methods beyond inherited behaviour.
+
+---------
+
 ## Usage
 
-Simply add the default Tab Navigation Helper component to the EventSystem in the scene using "*Event / Extensions / Tab Navigation*" in the Game Object Component menu.
+Simply add the default Tab Navigation Helper component to the EventSystem in the scene using:
+
+"Add Component -> Event -> Extensions -> Tab Navigation Helper"
 
 > Do not add it to an existing control, either add it to the Event System added by Unity, or create an Empty GO and add it there (The Event System will be automatically added)
 

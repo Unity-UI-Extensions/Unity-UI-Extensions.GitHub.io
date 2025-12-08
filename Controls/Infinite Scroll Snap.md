@@ -1,6 +1,9 @@
-# Infinite Scrollsnap
+# Infinite Scroll Snap
 
-<!-- Description-->
+> [!IMPORTANT]
+> ⚠️ This control has been deprecated for Unity 6 and is no longer maintained. It remains documented for legacy reference.
+
+Infinite scrolling layout control for UI elements.
 
 <!--![](Images/ Game Image.jpg)-->
 
@@ -28,77 +31,51 @@
 
 ## Overview
 
-A <!-- Control--> .
-
-![](Images/<!-- Inspector Image-->.jpg)
+Infinite scrolling layout control for UI elements. This component has been replaced by improved infinite scrolling implementation in HorizontalScrollSnap and VerticalScrollSnap.
 
 ---------
 
 ## Properties
 
-The properties of the Vertical Scroll Snap control are as follows:
-
-Property | Description
-|-|-|
-*<!-- Property-->*|<!-- Property-->
-
-Additional properties available in code:
-
-Property | Return Type | Description
-|-|-|-|
-|<!-- Property-->|<!-- Type-->|<!-- Description-->|
+This component has been deprecated and replaced.
 
 ---------
 
 ## Methods
 
-Method | Arguments | Description
-|-|-|-|
-|<!-- Method-->|<!-- Type-->|<!-- Description-->|
+This component has been deprecated and replaced.
 
 ---------
 
 ## Usage
 
-Use as follows:
-
-* "Add Component -> Layout -> Extensions -> <!-- Control-->*"
-
-Or alternatively, add the default layout for the control using:
-
-* "*GameObject -> UI -> Extensions -> <!-- Control-->*"
-
-This will give you a <!-- Control--> setup with the script.
+This component has been deprecated for Unity 6. Use HorizontalScrollSnap or VerticalScrollSnap with infinite scrolling enabled instead.
 
 ---------
 
 ## Video Demo
 
-Video
-
-<!-- Video
-
-[![View Intro Video](http://img.youtube.com/vi/LnKy3_ymEXs/0.jpg)](http://www.youtube.com/watch?v=LnKy3_ymEXs "HSS/VSS walk-through video")
-
-/-->
+N/A - Component deprecated
 
 ---------
 
 ## See also
 
-* Also <!-- See Also/-->
+* [HorizontalScrollSnap](/Controls/HorizontalScrollSnap.md)
+* [VerticalScrollSnap](/Controls/VerticalScrollSnap.md)
 
 ---------
 
 ## Credits and Donation
 
-<!-- Credits/-->
+N/A
 
 ---------
 
 ## External links
 
-[Sourced from]()
+N/A
+
 
 
 This is a code I wrote to add snap functionality to UI_InfiniteScroll. I've only tested it in vertical, but it should work perfectly fine horizontally as well. Feel free to add this to your projects and really do anything with it.

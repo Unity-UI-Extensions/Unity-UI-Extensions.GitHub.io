@@ -32,6 +32,20 @@ A programmatic extension that enables you, through code to move a RectTransform 
 
 ---------
 
+## Properties
+
+This is a static extension method; there are no inspector properties.
+
+---------
+
+## Methods
+
+Method | Arguments | Description
+-|-|-
+*switchToRectTransform*|RectTransform source, RectTransform target|Moves `source` to match anchors/pivots/offsets of `target` in screen space.
+
+---------
+
 ## Usage
 
 Using this utility through code is very simply, just call:
@@ -41,6 +55,12 @@ sourceRectTransform.switchToRectTransform(targetRectTransform);
 ```
 
 And the Source (from) Rect Transform will be moved to mimic the Target (to) RectTransform position.
+
+---------
+
+## Video Demo
+
+N/A
 
 ---------
 

@@ -45,15 +45,34 @@ It is still quite basic at the moment and only loads/displays each screen UI can
 The properties of the Menu Manager are as follows:
 
 Property | Description
-|-|-|
+-|-
 *Menu Screens*|Collection of Menu prefabs for each menu in the game
 *Start Screen*|The initial menu screen the Menu Manager will load when the game is launched
+
+### Additional properties available on Menu base classes
+
+Property | Description
+-|-
+*Destroy When Closed*|Destroy the Game Object when menu is closed (reduces memory usage)
+*Disable Menus Underneath*|Disable menus that are under this one in the stack
+
+---------
+
+## Methods
+
+This component does not expose public methods beyond inherited behaviour.
 
 ---------
 
 ## Usage
 
-Simply add "Menu Manager" component to a GO using "*UI / / Extensions / Menu Manager" in the "*Component*" menu, or the "*Add Component*" button in the inspector.  This enables the manager itself
+Simply add "Menu Manager" component to a GameObject using:
+
+"*GameObject -> UI -> Extensions -> Menu Manager*"
+
+or through the Add Component menu:
+
+"*Add Component -> UI -> Extensions -> Menu System -> Menu Manager*"
 
 Next you will need to build your Menu UI Prefabs, including a Menu scripts based upon either of these two templates:
 
@@ -64,7 +83,7 @@ Simple Create a Canvas and design your UI with whatever UI components you need. 
 
 In the "Examples" Folder, there is a full working implementation to based your own design on.
 
-> *NOTE*
+> [!NOTE]
 > Currently, each "Menu" script *MUST* have the same name as the Menu prefab in order for the Menu manager to recognize it
 
 ---------

@@ -1,8 +1,6 @@
 # RescalePanel
 
-<!-- Description-->
-
-<!--![](Images/ Game Image.jpg)-->
+A control that rescales a parent panel by dragging a handle, adjusting the local scale while keeping the UI element size consistent.
 
 ---------
 
@@ -28,74 +26,70 @@
 
 ## Overview
 
-A <!-- Control--> .
-
-![](Images/<!-- Inspector Image-->.jpg)
+The RescalePanel control allows users to rescale a parent panel by dragging a handle. Unlike ResizePanel, this control modifies the parent's local scale rather than its size delta, and automatically adjusts the handle's size delta to maintain visual consistency during scaling.
 
 ---------
 
 ## Properties
 
-The properties of the Vertical Scroll Snap control are as follows:
+The properties of the RescalePanel control are as follows:
 
 Property | Description
-|-|-|
-*<!-- Property-->*|<!-- Property-->
-
-Additional properties available in code:
-
-Property | Return Type | Description
-|-|-|-|
-|<!-- Property-->|<!-- Type-->|<!-- Description-->|
+-|-
+*Min Size*|Minimum scale constraint for the panel (Vector2). Defines the minimum local scale values for X and Y axes
+*Max Size*|Maximum scale constraint for the panel (Vector2). Defines the maximum local scale values for X and Y axes
 
 ---------
 
 ## Methods
 
+The RescalePanel control implements Unity's IPointerDownHandler and IDragHandler interfaces but does not expose additional public methods.
+
 Method | Arguments | Description
-|-|-|-|
-|<!-- Method-->|<!-- Type-->|<!-- Description-->|
+-|-|-
+*OnPointerDown*|PointerEventData|Handles pointer down events to bring panel to front and record starting position
+*OnDrag*|PointerEventData|Handles drag events to rescale the parent panel by adjusting local scale and compensating handle size
 
 ---------
 
 ## Usage
 
-Use as follows:
+To use the RescalePanel control:
 
-* "Add Component -> Layout -> Extensions -> <!-- Control-->*"
+1. Add the component via "**Add Component -> UI -> Extensions -> RescalePanels -> RescalePanel**"
+2. Attach the component to a child GameObject of the panel you want to rescale
+3. The parent Transform will be automatically detected and become rescalable via local scale
+4. Configure min/max size constraints in the inspector to limit scaling range
 
-Or alternatively, add the default layout for the control using:
+Example code for setting scale constraints:
 
-* "*GameObject -> UI -> Extensions -> <!-- Control-->*"
-
-This will give you a <!-- Control--> setup with the script.
+```csharp
+var rescalePanel = rescaleHandle.GetComponent<RescalePanel>();
+rescalePanel.minSize = new Vector2(0.5f, 0.5f);  // Minimum 50% scale
+rescalePanel.maxSize = new Vector2(3.0f, 3.0f);  // Maximum 300% scale
+```
 
 ---------
 
 ## Video Demo
 
-Video
-
-<!-- Video
-
-[![View Intro Video](http://img.youtube.com/vi/LnKy3_ymEXs/0.jpg)](http://www.youtube.com/watch?v=LnKy3_ymEXs "HSS/VSS walk-through video")
-
-/-->
+*Video demonstration to be added*
 
 ---------
 
 ## See also
 
-* Also <!-- See Also/-->
+* [ResizePanel](ResizePanel.md) - Resizes a panel by changing sizeDelta
+* [RescaleDragPanel](RescaleDragPanel.md) - Combines rescaling with drag-to-move functionality
 
 ---------
 
 ## Credits and Donation
 
-<!-- Credits/-->
+Credits: .entity
 
 ---------
 
 ## External links
 
-[Sourced from]()
+[Sourced from](http://forum.unity3d.com/threads/rescale-panel.309226/)

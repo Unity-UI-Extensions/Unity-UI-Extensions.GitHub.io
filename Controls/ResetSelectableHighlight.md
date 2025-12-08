@@ -11,9 +11,19 @@ Now whenever the cursor leaves the component, it will force the UI component to 
 
 > 1 [Overview](#overview)
 >
-> 2 [Usage](#usage)
+> 2 [Properties](#properties)
 >
-> 3 [Credits and Donation](#credits-and-donation)
+> 3 [Methods](#methods)
+>
+> 4 [Usage](#usage)
+>
+> 5 [Video Demo](#video-demo)
+>
+> 6 [See also](#see-also)
+>
+> 7 [Credits and Donation](#credits-and-donation)
+>
+> 8 [External links](#external-links)
 
 ---------
 
@@ -29,11 +39,23 @@ Button on the left has the ResetSelectableHighlight component, while the button 
 
 ---------
 
+## Properties
+
+This control has no configurable properties in the inspector.
+
+---------
+
+## Methods
+
+This component does not expose public methods beyond inherited behaviour.
+
+---------
+
 ## Usage
 
 Use as follows:
 
-* "Add Component -> Extensions -> *ResetSelectableHighlight*"
+"Add Component -> UI -> Extensions -> ResetSelectableHighlight"
 
 This will add the ResetSelectableHighlight component to the selected GameObject.
 
@@ -41,6 +63,24 @@ This will add the ResetSelectableHighlight component to the selected GameObject.
 
 ---------
 
+## Video Demo
+
+N/A
+
+---------
+
+## See also
+
+N/A
+
+---------
+
 ## Credits and Donation
 
 SimonDarksideJ
+
+---------
+
+## External links
+
+N/A

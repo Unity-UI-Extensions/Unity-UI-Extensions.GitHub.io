@@ -39,7 +39,7 @@ Apply vertex colours in a gradient on any graphic UI object
 The properties of the Box Slider control are as follows:
 
 Property | Description
-|-|-|
+-|-
 *Gradient Mode*|Should the gradient work in Local or Global coordinate space
 *Gradient Dir*|The direction of the gradient: Horizontal / Vertical / Diagonal left to right / diagonally right to left
 *Override all color*|Should the control use or ignore the alpha of the original image for the effect
@@ -48,10 +48,17 @@ Property | Description
 
 ---------
 
+## Methods
+
+This component does not expose public methods beyond inherited behaviour.
+
+---------
+
 ## Usage
 
 To enable the Gradient component, simply add the component to a UI Graphic Object using:
-Add Component -> UI -> Extensions -> Effects -> Gradient
+
+"*Add Component -> UI -> Effects -> Extensions -> Gradient*"
 
 ---------
 

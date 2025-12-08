@@ -39,18 +39,24 @@ The Selectable Extension adds three events to any Selectable component for Press
 The properties of the Box Slider control are as follows:
 
 Property | Description
-|-|-|
-*On Button Press* (event) |The Event fired when the selectable is clicked
-*On Button Release* (event) |The Event fired when the selectable is released from a click
-*On Button Held* (event) |The Event fired when the selectable is being held (mouse / touch down)
+-|-
+***On Button Press*** (event) |The Event fired when the selectable is clicked
+***On Button Release*** (event) |The Event fired when the selectable is released from a click
+***On Button Held*** (event) |The Event fired when the selectable is being held (mouse / touch down)
+
+---------
+
+## Methods
+
+This component does not expose public methods beyond inherited behaviour.
 
 ---------
 
 ## Usage
 
-Simply add the default Selectable Extension to a Rect Transform using "*UI / Extensions / UI Selectable Extension*" in the "*Component*" menu.
+Simply add the default Selectable Extension to a Rect Transform using:
 
-It is also available as a Game Component menu in "*UI / Extensions / UI Selectable Extension*".
+"Add Component -> UI -> Extensions -> UI Selectable Extension"
 
 ---------
 

@@ -39,17 +39,25 @@ The Scroll Rect Linker script allows you to control another Scroll Rect's positi
 The properties of the Scroll Rect Linker control are as follows:
 
 Property | Description
-|-|-|
+-|-
 *Clamp*|Clamp the linked scroll values
 *Controlling Scroll Rect*|The parent Scroll Rect to retrieve scrolling changes from.
 
 ---------
 
+## Methods
+
+This component does not expose public methods beyond inherited behaviour.
+
+---------
+
 ## Usage
 
-Simply add the default Scroll Rect Linker component to a Scroll Rect using "*UI / Extensions / Scroll Rect Linker*" in the "*Component*" menu and then drag the parent Scroll Rect to the appropriate property.
+Simply add the default Scroll Rect Linker component to a Scroll Rect using:
 
-It is also available as a Game Component menu in "*UI / Extensions / Scroll Rect Linker*".
+"Add Component -> UI -> Extensions -> ScrollRectLinker"
+
+Then drag the parent Scroll Rect to the appropriate property.
 
 ---------
 

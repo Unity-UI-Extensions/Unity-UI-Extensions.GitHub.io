@@ -43,6 +43,18 @@ To run these Unit Tests In Unity 5.3, open the following editor window from the 
 
 ---------
 
+## Properties
+
+This is a static helper library and exposes no inspector properties.
+
+---------
+
+## Methods
+
+This component does not expose public methods beyond inherited behaviour.
+
+---------
+
 ## Usage
 
 Simply create a byte array in code for the data you want compressed and pas it to the Compress function of the Library, as follows:

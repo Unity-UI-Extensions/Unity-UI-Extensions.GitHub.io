@@ -37,8 +37,7 @@ Similar to the Horizontal and Vertical Layout components provided by Unity, this
 The properties of the Box Slider control are as follows:
 
 Property | Description
-|-|-|
-|||
+-|-
 *Curve Alignment*|Based on which anchor should the curve apply.
 *Curve Offset*|Vector 3 offset to apply to the curve.
 *Item Axis*|The axis along which to place the items, Normalized before use.
@@ -47,10 +46,17 @@ Property | Description
 
 ---------
 
+## Methods
+
+This component does not expose public methods beyond inherited behaviour.
+
+---------
+
 ## Usage
 
 Like with other Layout controls, simply add this to the parent RectTransform for a collection of child elements through the Add Component menu as follows:
-Add Component -> Layout -> Extensions -> Curved Layout.
+
+"*Add Component -> Layout -> Extensions -> Curved Layout*"
 
 > Make sure to configure the Item Size, Offset and Axis to apply a curve, else child items will just collate.
 

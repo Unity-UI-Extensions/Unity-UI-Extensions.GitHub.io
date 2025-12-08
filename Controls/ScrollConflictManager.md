@@ -40,7 +40,7 @@ This component solves this problem allowing free movement, locked to the initial
 The properties of the ScrollrectConflictManager control are as follows:
 
 Property | Description
-|-|-|
+-|-
 *Parent Scroll Rect*|The Rect Transform of the parent Scroll Rect
 
 ---------
@@ -48,16 +48,18 @@ Property | Description
 ## Methods
 
 Method | Arguments | Description
-|-|-|-|
+-|-|-
 *SetParentScrollRect*|ScrollRect|Resets the parent scroll rect for the manager and re-initializes the dependencies
 
 ---------
 
 ## Usage
 
-Simply add the default Scroll Rect Conflict Manager component to an existing Scroll Rect using "*UI / Extensions / Scrollrect Conflict Manager*" in the "*Component*" menu, then assign the parent Scroll Rect to the control.
+Simply add the default Scroll Rect Conflict Manager component to an existing Scroll Rect using:
 
-It is also available as a Game Component menu in "*UI / Extensions / Scrollrect Conflict Manager*".
+"Add Component -> UI -> Extensions -> Scrollrect Conflict Manager"
+
+Then assign the parent Scroll Rect to the control.
 
 ---------
 

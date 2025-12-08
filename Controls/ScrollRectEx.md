@@ -43,11 +43,17 @@ It's purpose is to solve the common issue when Scroll Rect's are nested which ca
 
 ---------
 
+## Methods
+
+This component does not expose public methods beyond inherited behaviour.
+
+---------
+
 ## Usage
 
-Simply replace the Scroll Rect script on a GameObject wit the Scroll Rect Ex version from "*UI / Extensions / Scroll Rect Ex*" in the "*Component*" menu.
+Simply replace the Scroll Rect script on a GameObject with the Scroll Rect Ex version using:
 
-It is also available as a Game Component menu in "*UI / Extensions / Scroll Rect Ex*".
+"Add Component -> UI -> Extensions -> ScrollRectEx"
 
 ---------
 

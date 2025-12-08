@@ -32,15 +32,58 @@ A tooltip implementation which uses a manager to control the tooltip appearance,
 
 ---------
 
+## Properties
+
+### Bound Tooltip Item Properties
+
+The properties of the Bound Tooltip Item control are as follows:
+
+Property | Description
+|-|-|
+*Tooltip Text*|The TextMeshPro text component that will display the tooltip content
+*Tool Tip Offset*|Vector3 offset from the trigger position where the tooltip will appear
+
+### Bound Tooltip Trigger Properties
+
+The properties of the Bound Tooltip Trigger control are as follows:
+
+Property | Description
+|-|-|
+*Text*|The tooltip text to display when this trigger is activated
+*Use Mouse Position*|When enabled, tooltip appears at mouse position instead of trigger position
+*Offset*|Vector3 offset from the trigger position (used when Use Mouse Position is false)
+
+---------
+
+## Methods
+
+### Bound Tooltip Item Methods
+
+Method | Arguments | Description
+-|-|-
+*ShowTooltip*|text (string), pos (Vector3)|Displays the tooltip with the specified text at the specified position plus offset
+*HideTooltip*|N/A|Hides the tooltip by deactivating the GameObject
+
+### Additional properties available in code
+
+Property | Return Type | Description
+|-|-|-|
+IsActive|bool|Returns whether the tooltip GameObject is currently active
+Instance|BoundTooltipItem|Static singleton instance of the BoundTooltipItem in the scene
+
+---------
+
 ## Usage
 
 Add the ToolTip control to your scene using:
-GameObject -> UI -> Extensions -> BoundToolTip -> ToolTip
 
-If no tooltip item exists in the scene, one will e created automatially for you.
+"GameObject -> UI -> Extensions -> Bound Tooltip -> Tooltip"
+
+If no tooltip item exists in the scene, one will be created automatically for you.
 
 An additional "Tool Tip Trigger" is also available to activate the tooltip, by adding the relevant component:
-UI -> Extensions -> Bound Tooltip -> Tooltip Trigger
+
+"Add Component -> UI -> Extensions -> Bound Tooltip -> Tooltip Trigger"
 
 ---------
 

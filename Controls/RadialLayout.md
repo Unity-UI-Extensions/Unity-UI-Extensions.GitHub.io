@@ -32,10 +32,30 @@ Similar to the Horizontal and Vertical Layout components provided by Unity, this
 
 ---------
 
+## Properties
+
+Property | Description
+-|-
+*Start Angle*|Angle where the first child is positioned.
+*Sweep Angle*|Total angle covered by all children.
+*Radius*|Distance from the center to each child.
+*Min Angle Between Items*|Optional minimum spacing enforced between children.
+*Clockwise*|Place children clockwise when enabled; counterclockwise when disabled.
+*Control Child Size*|Force children to size to the layout slot.
+
+---------
+
+## Methods
+
+This component does not expose public methods beyond inherited behaviour.
+
+---------
+
 ## Usage
 
 Like with other Layout controls, simply add this to the parent RectTransform for a collection of child elements through the Add Component menu as follows:
-Add Component -> Layout -> Extensions -> Radial Layout
+
+"*Add Component -> Layout -> Extensions -> Radial Layout*"
 
 ---------
 

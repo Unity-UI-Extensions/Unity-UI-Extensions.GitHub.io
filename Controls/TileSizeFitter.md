@@ -1,5 +1,8 @@
 # TileSizeFitter
 
+> [!IMPORTANT]
+> ⚠️ This control has been marked as obsolete for Unity 6 and is no longer maintained. It remains documented for legacy reference.
+
 A fitter layout that will shrink / expand content by tiles
 
 <!--![](Images/ Game Image.jpg)-->
@@ -39,9 +42,15 @@ The Tile Size Fitter will automatically rescale an image within a RectTransform 
 The properties of the TileSizeFitter control are as follows:
 
 Property | Description
-|-|-|
+-|-
 *Border*|The border spacing around the image
 *Tile Size*|The boundaries at which the selected image will resize
+
+---------
+
+## Methods
+
+This component does not expose public methods beyond inherited behaviour.
 
 ---------
 
@@ -49,7 +58,7 @@ Property | Description
 
 Simply add the "TileSizeFitter" component to an existing Image component in the scene using:
 
-* "*Layout / Extensions / Tile Size Fitter*" in the Editor "*Component*" menu.
+"*Add Component -> Layout -> Extensions -> Tile Size Fitter*"
 
 ---------
 

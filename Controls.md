@@ -23,7 +23,6 @@ This page lists all the available controls within the UI Extensions project.  To
  | | | UI / Extensions / Bound Tooltip / Tooltip Trigger ||| Martin Sharkbomb|
 |**[UI_Knob](/Controls/UI_Knob.md)** | A radial Knob style control | UI / Extensions / UI_Knob | UI / Extensions / UI_Knob |[tutorial video](https://www.youtube.com/watch?v=WP8ZBwyRqN8)|| Tomasz Schelenz|
 |**[TextPic](/Controls/TextPic.md)** | Enhanced Text control that supports adding images inside text | UI / Extensions / TextPic | UI / Extensions / TextPic ||| drobina, w34edrtfg, playemgames|
-|**[ImageExtended](/Controls/ImageExtended.md)** | Improved Image control with rotation support and use of filled type without an Image (useful for masks)  || UI / Extensions / Image Extended ||| Ges|
 |**[InputFocus](/Controls/InputFocus.md)** | Enhanced InputField control for forms, enables Enter to submit and other features  || UI / Extensions / InputFocus ||| Zelek|
 |**[Box Slider](/Controls/BoxSlider.md)** | A slider which supports both X and Y values within a box  || UI / Extensions / Box Slider |[Demo video](/Controls/Images/BoxSliderDemo.mp4)|| judah4|
 |**[MultiTouch ScrollRect](/Controls/MultiTouchScrollRect.md)** | Fixed version of the scroll rect to properly handle multiple touches  || UI / Extensions / MultiTouchScrollRect ||| PixelEnvision|
@@ -88,19 +87,47 @@ This page lists all the available controls within the UI Extensions project.  To
 |Effect|Description|Component Command|Notes|Donate|Credits|
 |-|-|-|-|-|-|
 |**[BestFitOutline](/Controls/BestFitOutline.md)** | An improved outline effect | UI / Effects / Extensions / Best Fit Outline ||| Melang|
-|**[CurvedText](/Controls/CurvedText.md)** | A Text vertex manipulator for those users NOT using TextMeshPro (why ever not?) | UI / Effects / Extensions / Curved Text ||| Breyer|
 |**[Gradient](/Controls/Gradient.md)**  | Apply vertex colours in a gradient on any UI object | UI / Effects / Extensions / Gradient ||| Breyer|
 |**[Gradient2](/Controls/Gradient2.md)**  | Apply vertex colours in a gradient on any UI object | UI / Effects / Extensions / Gradient2 ||| Breyer|
-|**[LetterSpacing](/Controls/LetterSpacing.md)** | Allows finer control of text spacing |  UI / Effects / Extensions / Letter Spacing ||| Deeperbeige|
-|**[NicerOutline](/Controls/NicerOutline.md)** | Another outline control | UI / Effects / Extensions / Nicer Outline ||| Melang|
 |**[RaycastMask](/Controls/RaycastMask.md)** | An example of an enhanced mask component able to work with the image data. Enables picking on image parts and not just the Rect Transform | UI / Effects / Extensions / Raycast Mask ||| senritsu|
 |**[UIFlippable](/Controls/UIFlippable.md)** | Image component effect to flip the graphic | UI / Effects / Extensions / UI Flippable ||| ChoMPHi|
 |**[UIImageCrop](/Controls/UIImageCrop.md)** | Shader based mask system which clips to specific ranges X&Y | UI / Effects / Extensions / UI Image Crop ||| 00christian00|
 |**[SoftAlphaMask](/Controls/SoftAlphaMask.md)** | Shader based mask able to clip images using an alpha mask | UI / Effects / Extensions / Soft Mask Script ||[Donate](https://www.assetstore.unity3d.com/en/#!/content/50339)| NemoKrad|
-|**[CylinderText](/Controls/CylinderText.md)** | An alternate curved text effect |  UI / Effects / Extensions / Cylinder Text ||| Breyer|
 |**[UIParticleSystem](/Controls/UIParticleSystem.md)** | Implementation of a particle system on a canvas |  UI / Effects / Extensions / UI Particle System |5.3+ only|| Glennpow|
-|**[MonoSpacing](/Controls/MonoSpacing.md)** | Allows finer control of text spacing |  UI / Effects / Extensions / Mono Spacing ||| Herbst|
 |**[CurlyUI](/Controls/CurlyUI.md)** | A UI Effect that will make your UI Curly |  UI / Effects / Extensions / CUI***  ||| Titinious|
+
+## Deprecated for Unity 6 / V3
+
+=======================
+
+The following components have been deprecated for Unity 6 (Version 3.0.0) and are no longer maintained. They remain documented for legacy reference only.
+
+### Why Deprecated?
+
+**Text Effects**: Unity deprecated the legacy Text component in favor of TextMeshPro. Text effects that relied on Text component vertex manipulation no longer function with TextMeshPro due to its different architecture. Users should utilize native TextMeshPro effects instead.
+
+**VR/Input Modules**: These components were removed as Unity's input system and VR frameworks have evolved significantly, making these implementations obsolete.
+
+**Other Components**: ImageExtended, Infinite Scroll Snap, Serialization, and UIButton were removed due to functionality being superseded by other components or Unity's built-in features.
+
+### Deprecated Components
+
+|Component|Reason|Alternative|Credits|
+|-|-|-|-|
+|**[CurvedText](/Controls/CurvedText.md)**|Text component deprecated by Unity|Use TextMeshPro native effects|Breyer|
+|**[CylinderText](/Controls/CylinderText.md)**|Text component deprecated by Unity|Use TextMeshPro native effects|Breyer|
+|**[LetterSpacing](/Controls/LetterSpacing.md)**|Text component deprecated by Unity|Use TextMeshPro character spacing|Deeperbeige|
+|**[MonoSpacing](/Controls/MonoSpacing.md)**|Text component deprecated by Unity|Use TextMeshPro character spacing|Herbst|
+|**[NicerOutline](/Controls/NicerOutline.md)**|Text component deprecated by Unity|Use TextMeshPro outline|Melang|
+|**[BestFitOutline](/Controls/BestFitOutline.md)**|Text component deprecated by Unity|Use TextMeshPro outline|Melang|
+|**[VRInputModule](/Controls/VRInputModule.md)**|Obsolete VR input system|Use Unity's XR Interaction Toolkit|N/A|
+|**[VRCursor](/Controls/VRCursor.md)**|Obsolete VR input system|Use Unity's XR Interaction Toolkit|N/A|
+|**[AimerInputModule](/Controls/AimerInputModule.md)**|Obsolete input system|Use Unity's new Input System|N/A|
+|**[GamePadInputModule](/Controls/GamePadInputModule.md)**|Obsolete input system|Use Unity's new Input System|N/A|
+|**[ImageExtended](/Controls/ImageExtended.md)**|Functionality superseded|Use standard Unity Image component|Ges|
+|**[Infinite Scroll Snap](/Controls/Infinite Scroll Snap.md)**|Replaced by improved implementation|Use HorizontalScrollSnap or VerticalScrollSnap with infinite scrolling enabled|N/A|
+|**[Serialization](/Controls/Serialization.md)**|No longer needed|Use Unity's JsonUtility or other serialization solutions|N/A|
+|**[UIButton](/Controls/UIButton.md)**|Duplicate functionality|Use Unity Button or CooldownButton|N/A|
 
 ## Additional Components
 

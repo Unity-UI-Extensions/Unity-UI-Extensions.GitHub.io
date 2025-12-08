@@ -1,8 +1,6 @@
 # UIImageCrop
 
-<!-- Description-->
-
-<!--![](Images/ Game Image.jpg)-->
+A shader-based effect that crops portions of a UI image along the X and Y axes without using masks, providing efficient partial image rendering.
 
 ---------
 
@@ -28,74 +26,105 @@
 
 ## Overview
 
-A <!-- Control--> .
-
-![](Images/<!-- Inspector Image-->.jpg)
+The UIImageCrop effect allows cropping portions of a UI image along X and Y axes without requiring mask components. It applies a custom shader (UI Extensions/UI Image Crop) to the MaskableGraphic component, enabling efficient partial image display through shader-based cropping rather than masking. The component automatically applies the shader material on Start() and in the editor via OnValidate().
 
 ---------
 
 ## Properties
 
-The properties of the Vertical Scroll Snap control are as follows:
+The properties of the UIImageCrop effect are as follows:
 
 Property | Description
-|-|-|
-*<!-- Property-->*|<!-- Property-->
-
-Additional properties available in code:
-
-Property | Return Type | Description
-|-|-|-|
-|<!-- Property-->|<!-- Type-->|<!-- Description-->|
+-|-
+*XCrop*|Normalized X-axis crop factor from 0 to 1 (default: 0). Crops the image horizontally
+*YCrop*|Normalized Y-axis crop factor from 0 to 1 (default: 0). Crops the image vertically
 
 ---------
 
 ## Methods
 
 Method | Arguments | Description
-|-|-|-|
-|<!-- Method-->|<!-- Type-->|<!-- Description-->|
+-|-|-
+*SetMaterial*|(none)|Initializes the shader material on the MaskableGraphic component. Automatically called on Start()
+*SetXCrop*|float xcrop|Sets the X crop factor (clamped 0-1) and updates the shader property
+*SetYCrop*|float ycrop|Sets the Y crop factor (clamped 0-1) and updates the shader property
 
 ---------
 
 ## Usage
 
-Use as follows:
+To use the UIImageCrop effect:
 
-* "Add Component -> Layout -> Extensions -> <!-- Control-->*"
+1. Add the component via "**Add Component -> UI -> Effects -> Extensions -> UIImageCrop**"
+2. The component requires a MaskableGraphic (Image, RawImage, Text, etc.) on the same GameObject
+3. The shader material is automatically applied when the component initializes
+4. Adjust XCrop and YCrop values in the inspector (0 = no crop, 1 = fully cropped)
+5. Use SetXCrop() and SetYCrop() methods for runtime control
 
-Or alternatively, add the default layout for the control using:
+Example code for runtime cropping:
 
-* "*GameObject -> UI -> Extensions -> <!-- Control-->*"
+```csharp
+using UnityEngine.UI.Extensions;
 
-This will give you a <!-- Control--> setup with the script.
+public class ImageCropExample : MonoBehaviour
+{
+    public UIImageCrop imageCrop;
+
+    void Start()
+    {
+        // Ensure material is initialized
+        imageCrop.SetMaterial();
+    }
+    
+    void CropHorizontally(float amount)
+    {
+        // Crop from 0 (no crop) to 1 (fully cropped)
+        imageCrop.SetXCrop(amount);
+    }
+    
+    void AnimateCrop()
+    {
+        // Animate cropping over time
+        StartCoroutine(AnimateCropCoroutine());
+    }
+    
+    IEnumerator AnimateCropCoroutine()
+    {
+        float t = 0;
+        while (t < 1)
+        {
+            imageCrop.SetXCrop(t);
+            imageCrop.SetYCrop(t);
+            t += Time.deltaTime;
+            yield return null;
+        }
+    }
+}
+```
+
+**Note**: This component must be attached to a GameObject with a MaskableGraphic component (Image, RawImage, Text, etc.). If no graphic is found, an error will be logged.
 
 ---------
 
 ## Video Demo
 
-Video
-
-<!-- Video
-
-[![View Intro Video](http://img.youtube.com/vi/LnKy3_ymEXs/0.jpg)](http://www.youtube.com/watch?v=LnKy3_ymEXs "HSS/VSS walk-through video")
-
-/-->
+*Video demonstration to be added*
 
 ---------
 
 ## See also
 
-* Also <!-- See Also/-->
+* [SoftMaskScript](../MISSING_DOCUMENTATION.md) - Alternative masking approach (not yet documented)
+* [UIFlippable](UIFlippable.md) - Flip images horizontally or vertically
 
 ---------
 
 ## Credits and Donation
 
-<!-- Credits/-->
+Credits: 00christian00
 
 ---------
 
 ## External links
 
-[Sourced from]()
+[Sourced from](http://forum.unity3d.com/threads/any-way-to-show-part-of-an-image-without-using-mask.360085/#post-2332030)

@@ -34,11 +34,32 @@ Advanced polygon control with support for multiple vertices which can be manipul
 
 ---------
 
+## Methods
+
+This component does not expose public methods beyond inherited behaviour.
+
+---------
+
 ## Usage
 
 Add the primitive control to your scene using:
 
-* GameObject -> UI -> Extensions -> UI Polygon
+"*GameObject -> UI -> Extensions -> Primitives -> UI Polygon*"
+
+## Properties
+
+Property | Description
+-|-
+*Vertices*|List of vertex positions defining the polygon.
+*Thickness*|Stroke thickness when rendering as an outline.
+*Fill*|Render as filled polygon when enabled.
+*Preserve Aspect*|Maintain aspect ratio when resizing.
+*Border*|Optional border size around the polygon.
+
+
+Alternatively, add the component using:
+
+"*Add Component -> UI -> Extensions -> Primitives -> UI Polygon*"
 
 ---------
 

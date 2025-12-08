@@ -44,7 +44,7 @@ As of Update 1.6, now also supports Scrollbars, *Note* Can only use the Vertical
 The properties of the Vertical Scroll Snap control are as follows:
 
 Property | Description
-|-|-|
+-|-
 *Starting Screen*|The child page that should be displayed on start. Bound to the limits of either the scene child objects or the "Child Objects" array.
 *Page Step*|The distance between pages based on the current width of the control.  Higher value equals more spacing.
 *Pagination*|The GameObject with a Toggle group that controls toggles active state. Recommended one toggle per-page.
@@ -60,11 +60,11 @@ Property | Description
 *Restart On Enable*|By default the container will stay on the current selection, this option overrides this behaviour and returns to the original starting page when enabled.
 *Use Parent Transform*|When using prefabs in the ChildObjects array, the control with use the prefab transform values instead of resetting to the parent.
 *Child Objects*|An array of prefabs to load the control with. Can EITHER add children in to the scene or via this array but NOT both.
-*On Selection Change Start* (event) |The Event fired when the user starts changing the page via swipe or mouse
-*On Selection Page Changed* (event) |The Event fired when the current page changes, either via swipe, mouse, Next/Prev Buttons
-*On Selection Change End* (event) |The Event fired when the page settles after being changed by swipe or mouse
+***On Selection Change Start*** (event)|The Event fired when the user starts changing the page via swipe or mouse
+***On Selection Page Changed*** (event)|The Event fired when the current page changes, either via swipe, mouse, Next/Prev Buttons
+***On Selection Change End*** (event)|The Event fired when the page settles after being changed by swipe or mouse
 
-Additional properties available in code:
+### Additional properties available in code
 
 Property | Return Type | Description
 |-|-|-|
@@ -75,7 +75,7 @@ CurrentPage|int|The current snapped page, or selected page as the user swipes
 ## Methods
 
 Method | Arguments | Description
-|-|-|-|
+-|-|-
 *DistributePages*|N/A|Forces a refresh of the currently available Scroll Snap Pages
 *Add Child*|Go (GameObject)|Add a new child to this Scroll Snap and recalculate its children
 *Add Child*|Go (GameObject), WorldPositionStays (bool)|Add a new child to this Scroll Snap and recalculate its children, and resets the world position of the new child.
@@ -91,11 +91,11 @@ Method | Arguments | Description
 
 Like with other Layout controls, simply add this to the parent RectTransform for a collection of child elements through the Add Component menu as follows:
 
-* "Add Component -> Layout -> Extensions -> VerticalScrollSnap*"
+"*Add Component -> Layout -> Extensions -> Vertical Scroll Snap*"
 
 Or alternatively, add the default layout for the control using:
 
-* "*GameObject -> UI -> Extensions -> Vertical Scroll Snap*"
+"*GameObject -> UI -> Extensions -> Layout -> Vertical Scroll Snap*"
 
 This will give you a standard Scroll Rect setup with the script and a single child example page.
 

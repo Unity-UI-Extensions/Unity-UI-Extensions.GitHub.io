@@ -50,7 +50,7 @@ Implementation of this control is almost entirely programmatic, with several exa
 The properties of the Scroll Position Controller are as follows:
 
 Property | Description
-|-|-|
+-|-
 *ViewPort*|Restricted bounds of the Scroll View Position controller
 *Direction of Recognize*|Direction of movement, Horizontal or Vertical
 *Movement Type*|Complexity of the underlying mesh, increases draw complexity for quality
@@ -68,11 +68,17 @@ Property | Description
 The properties of the ScrollView template (FancyScrollView class) are as follows:
 
 Property | Description
-|-|-|
+-|-
 *Cell Interval*|Apply the curve affect to the attached element
 *Cell Offset*|Lock curves to the native object ratios
 *Loop*|Complexity of the underlying mesh, increases draw complexity for quality
 *Cell Base*|Graphic element being altered with the curve
+
+---------
+
+## Methods
+
+This component does not expose public methods beyond inherited behaviour.
 
 ---------
 
@@ -86,76 +92,76 @@ As described earlier, you will need to create:
 
 For example
 
-```csharp
-    public class Example01CellDto
-    {
-        public string Message;
-    }
-```
+    ```csharp
+        public class Example01CellDto
+        {
+            public string Message;
+        }
+    ```
 
 * A Cell template script - to initialize your content and control what happens when the cell is moved (e.g. apply animation)
 
 For example
 
-```csharp
-    public class Example01ScrollViewCell : FancyScrollViewCell<Example01CellDto>
-    {
-        [SerializeField]
-        Animator animator;  //Example to attach an animator
-        [SerializeField]
-        Text message; // Example field to bind a cell text field value to
-
-        readonly int scrollTriggerHash = Animator.StringToHash("scroll"); //Animation in the animator to use as the system uses Hashes not text
-
-        //initialization to setup Cell Rect Transform
-        void Start()
+    ```csharp
+        public class Example01ScrollViewCell : FancyScrollViewCell<Example01CellDto>
         {
-            var rectTransform = transform as RectTransform;
-            rectTransform.anchorMax = Vector2.one;
-            rectTransform.anchorMin = Vector2.zero;
-            rectTransform.anchoredPosition3D = Vector3.zero;
-            UpdatePosition(0);
+            [SerializeField]
+            Animator animator;  //Example to attach an animator
+            [SerializeField]
+            Text message; // Example field to bind a cell text field value to
+    
+            readonly int scrollTriggerHash = Animator.StringToHash("scroll"); //Animation in the animator to use as the system uses Hashes not text
+    
+            //initialization to setup Cell Rect Transform
+            void Start()
+            {
+                var rectTransform = transform as RectTransform;
+                rectTransform.anchorMax = Vector2.one;
+                rectTransform.anchorMin = Vector2.zero;
+                rectTransform.anchoredPosition3D = Vector3.zero;
+                UpdatePosition(0);
+            }
+    
+            //UpdateContent method from the base FancyScrollViewCell class to apply changes on update
+            public override void UpdateContent(Example01CellDto itemData)
+            {
+                message.text = itemData.Message;
+            }
+    
+            //UpdatePosition method from the base FancyScrollViewCell class to react or alter what happens when the cell position moves
+            public override void UpdatePosition(float position)
+            {
+                animator.Play(scrollTriggerHash, -1, position);
+                animator.speed = 0;
+            }
         }
-
-        //UpdateContent method from the base FancyScrollViewCell class to apply changes on update
-        public override void UpdateContent(Example01CellDto itemData)
-        {
-            message.text = itemData.Message;
-        }
-
-        //UpdatePosition method from the base FancyScrollViewCell class to react or alter what happens when the cell position moves
-        public override void UpdatePosition(float position)
-        {
-            animator.Play(scrollTriggerHash, -1, position);
-            animator.speed = 0;
-        }
-    }
-```
+    ```
 
 * A ScrollView Implementation consuming your data template and binding the ScrollView to the Position controller
 
 For example
 
-```csharp
-    public class Example01ScrollView : FancyScrollView<Example01CellDto>
-    {
-        [SerializeField]
-        ScrollPositionController scrollPositionController;
-
-        new void Awake()
+    ```csharp
+        public class Example01ScrollView : FancyScrollView<Example01CellDto>
         {
-            base.Awake();
-            scrollPositionController.OnUpdatePosition.AddListener(UpdatePosition);
+            [SerializeField]
+            ScrollPositionController scrollPositionController;
+    
+            new void Awake()
+            {
+                base.Awake();
+                scrollPositionController.OnUpdatePosition.AddListener(UpdatePosition);
+            }
+    
+            public void UpdateData(List<Example01CellDto> data)
+            {
+                cellData = data;
+                scrollPositionController.SetDataCount(cellData.Count);
+                UpdateContents();
+            }
         }
-
-        public void UpdateData(List<Example01CellDto> data)
-        {
-            cellData = data;
-            scrollPositionController.SetDataCount(cellData.Count);
-            UpdateContents();
-        }
-    }
-```
+    ```
 
 All that is left then is to intialise the ScrollView with your data and let it run.
 

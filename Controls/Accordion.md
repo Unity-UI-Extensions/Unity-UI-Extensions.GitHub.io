@@ -32,6 +32,25 @@ A menu style control with pop-out sub elements like a hover bar.
 
 ---------
 
+## Properties
+
+The Accordion setup uses two components:
+
+Property | Description
+|-|-|
+*Transition*|Tween type used when expanding/collapsing elements.
+*Transition Duration*|Time (seconds) for expand/collapse.
+*Allow Multiple*|If true, multiple accordion elements can stay open simultaneously.
+*Toggle On*|If true, clicking an open element will close it.
+*Keep Active On Hide*|Leave element content active when collapsed (keeps layout space).
+***On Value Changed*** (event)|Event fired when the open element changes.
+
+## Methods
+
+This component does not expose public methods beyond inherited behaviour.
+
+---------
+
 ## Usage
 
 > Add the accordion control to your scene using:

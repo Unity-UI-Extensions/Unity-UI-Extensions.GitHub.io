@@ -6,7 +6,7 @@ A list scroll rect that snaps onto the items in its content, includes button & p
 
 ---------
 
-Contents
+## Contents
 
 > 1 [Overview](#overview)
 >
@@ -60,17 +60,17 @@ Property | Description
 *Snapping Velocity Threshold*|The velocity below which the scroll snap will start to snap.
 *Jump To Item*|When the Prev Button or Next Button are pressed, and Jump To Item is true, the scroll snap will jump to the next/previous item.
 *Lerp Time*|When the Prev Button or Next Button are pressed, and Jump To Item is false, the scroll snap will lerp to the next/preivous item in this amount of time (seconds).
-*Start Movement* (event)|The Event fired when the scroll rect starts to move, either via swipe, or Next/Prev Buttons.
-*Current Item Change* (event)|The Event fired when the current (closest) item changes, either via swipe, or Next/Prev Buttons.
-*Found Item To Snap To* (event)|The Event fired when the scroll snap decides what item it is going to snap to, either when the scroll rect's velocity falls below the Snapping Velocity Threshold, or when Next/Prev buttons are pushed.
-*Snapped To Item* (event)|The Event fired when the scroll snap settles after being changed by swipe, or Next/Prev Buttons.
+***Start Movement*** (event)|The Event fired when the scroll rect starts to move, either via swipe, or Next/Prev Buttons.
+***Current Item Change*** (event)|The Event fired when the current (closest) item changes, either via swipe, or Next/Prev Buttons.
+***Found Item To Snap To*** (event)|The Event fired when the scroll snap decides what item it is going to snap to, either when the scroll rect's velocity falls below the Snapping Velocity Threshold, or when Next/Prev buttons are pushed.
+***Snapped To Item*** (event)|The Event fired when the scroll snap settles after being changed by swipe, or Next/Prev Buttons.
 
 ---------
 
 ## Methods
 
 Method | Arguments | Description
-|-|-|-|
+-|-|-
 *SetNewItems*|newItems (List of Transform Items)|Replaces the content with a  new list of items. Content should have a layout control or the new items should be prefabs with positions/anchors already defined.
 
 ---------
@@ -78,17 +78,18 @@ Method | Arguments | Description
 ## Usage
 
 Like with other Layout controls, simply add this to the parent RectTransform for a collection of child elements through the Add Component menu as follows:
-"Add Component -> Layout -> Extensions -> ContentScrollSnapHorizontal*"
+
+"*Add Component -> UI -> Extensions -> ContentSnapScrollHorizontal*"
 
 Or alternatively, add the default layout for the control using:
 
-"*GameObject -> UI -> Extensions -> Horizontal Layout Group*"
+"*GameObject -> UI -> Extensions -> Layout -> Content Scroll Snap Horizontal*"
 
 This will give you a standard Scroll Rect setup with the script and a few example child items.
 
 ---------
 
-## Demo
+## Video Demo
 
 ![](Images/ContentScrollSnapHorizontalDemo.gif)
 
@@ -107,3 +108,7 @@ This will give you a standard Scroll Rect setup with the script and a few exampl
 Beka Westberg (Beks_Omega)
 
 ---------
+
+## External links
+
+N/A

@@ -39,7 +39,7 @@ A more advanced Combobox control with additional support for images and other it
 The properties of the Drop Down List control are as follows:
 
 Property | Description
-|-|-|
+-|-
 *Disabled Text Color*|Color of the Autocomplete field when the control is disabled.
 *Available Options*|Array of child options options for the dropdown/selection. Each child is configured within the array below:
 -*Caption*|Text for the Child item.
@@ -54,8 +54,8 @@ Property | Description
 *Display Panel Above*|Should the dropdown panel appear above the control instead of below?
 *Select First Item On Start*|Should the first item be auto selected on start?
 *Select Index Item on Start*|Which item should be selected on start. (*Select First Item on Start* will override this option)
-*On Selection Changed* (event) |The Event fired when the user selects an option or loses focus
-*On Control Disabled* (event) |The Event fired when the control is disabled through code.
+***On Selection Changed*** (event) |The Event fired when the user selects an option or loses focus
+***On Control Disabled*** (event) |The Event fired when the control is disabled through code.
 
 > When managing the control programmatically, make sure you use the following functions to manage the ComboBox contents. **Do NOT update the 'AvailableOptions' list directly**
 
@@ -64,7 +64,7 @@ Property | Description
 ## Methods
 
 Method | Arguments | Description
-|-|-|-|
+-|-|-
 *AddItem*|DropDownListItem|Adds a new item to the drop down list and rebuilds the display
 *AddItem*|String|Adds a new item to the drop down list and rebuilds the display
 *AddItem*|Sprite|Adds a new item to the drop down list and rebuilds the display
@@ -80,7 +80,12 @@ Method | Arguments | Description
 ## Usage
 
 Add the DropDownList control to your scene using:
-GameObject -> UI -> Extensions -> DropDownList
+
+"*GameObject -> UI -> Extensions -> ComboBox -> DropDownList*"
+
+Alternatively, add the component to an existing GameObject using:
+
+"*Add Component -> UI -> Extensions -> ComboBox -> Dropdown List*"
 
 Then simply add drop down elements to the Items property.  Additionally, Images and other items may be added to enhance the drop down items
 

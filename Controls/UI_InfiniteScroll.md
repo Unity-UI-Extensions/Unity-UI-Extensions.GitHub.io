@@ -42,7 +42,7 @@ It also allows you determine whether the control starts on awake or via code.
 The properties of the Scroll Rect Infinite component are as follows:
 
 Property | Description
-|-|-|
+-|-
 *Init By User*|Should this activate automatically or only on request.
 
 ---------
@@ -50,7 +50,7 @@ Property | Description
 ## Methods
 
 Method | Arguments | Description
-|-|-|-|
+-|-|-
 *SetNewItems*|newItems (List of Transform Items)|Appends a list of items to the Infinite Scroll child list
 
 ---------
@@ -59,7 +59,9 @@ Method | Arguments | Description
 
 > Requires a configured ScrollRect.  Which will be added by  default.
 
-Simply add the default Scroll Rect Infinite component to a Scroll Rect using "*UI / Extensions / UI Infinite Scroll*" in the "*Component*" menu.
+Simply add the default Scroll Rect Infinite component to a Scroll Rect using:
+
+"Add Component -> UI -> Extensions -> UI Infinite Scroll"
 
 ---------
 

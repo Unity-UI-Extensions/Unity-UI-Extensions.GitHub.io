@@ -53,11 +53,11 @@ Property | Description
 *Display Panel Above*|Should the dropdown panel appear above the control instead of below?
 *Select First Item On Start*|Should the first item be auto selected on start?
 *Select Index Item on Start*|Which item should be selected on start. (*Select First Item on Start* will override this option)
-*On Selection Text Changed* (event) |The Event fired when the the user is typing.
-*On Selection Validity Changed* (event) |The Event fired when the the text the user enters matches a selection.
-*On Selection Changed* (event) |The Event fired when the user selects an option or loses focus.
-*On Item Selected* (event) |The Event fires when an item is selected from the drop down, or the box closes (with a valid item).
-*On Control Disabled* (event) |The Event fired when the control is disabled through code.
+***On Selection Text Changed*** (event)|The Event fired when the user is typing.
+***On Selection Validity Changed*** (event)|The Event fired when the text the user enters matches a selection.
+***On Selection Changed*** (event)|The Event fired when the user selects an option or loses focus.
+***On Item Selected*** (event)|The Event fires when an item is selected from the drop down, or the box closes (with a valid item).
+***On Control Disabled*** (event)|The Event fired when the control is disabled through code.
 
 > When managing the control programmatically, make sure you use the following functions to manage the ComboBox contents. **Do NOT update the 'AvailableOptions' list directly**
 
@@ -66,7 +66,7 @@ Property | Description
 ## Methods
 
 Method | Arguments | Description
-|-|-|-|
+-|-|-
 *AddItem*|String|Adds a single item to the list
 *RemoveItem*|String|Removes a single item from the list
 *SelectItemIndex*|int|Sets the currently selected item in the list
@@ -79,7 +79,8 @@ Method | Arguments | Description
 ## Usage
 
 Add the AutoComplete ComboBox control to your scene using:
-GameObject -> UI -> Extensions -> AutoCompleteComboBox
+
+"*GameObject -> UI -> Extensions -> ComboBox -> AutoComplete ComboBox*"
 
 ---------
 

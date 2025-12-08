@@ -32,10 +32,23 @@ Simple script to attach to a text component to display the current DPI/PPI
 
 ---------
 
+## Properties
+
+This control has no configurable properties in the inspector.
+
+---------
+
+## Methods
+
+This component does not expose public methods beyond inherited behaviour.
+
+---------
+
 ## Usage
 
 Simply add this to a Text component through the Add Component menu as follows:
-Add Component -> UI -> Effects -> Extensions -> PPI Viewer
+
+"Add Component -> UI -> Extensions -> PPIViewer"
 
 ---------
 

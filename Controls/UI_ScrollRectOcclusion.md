@@ -41,16 +41,22 @@ It allows you determine whether it starts on awake or via code.
 The properties of the Scroll Rect Occlusion component are as follows:
 
 Property | Description
-|-|-|
+-|-
 *Init By User*|Should this occlude automatically or only on request.
+
+---------
+
+## Methods
+
+This component does not expose public methods beyond inherited behaviour.
 
 ---------
 
 ## Usage
 
-Simply add the default Scroll Rect Occlusion component to a Scroll Rect using "*UI / Extensions / UI ScrollRect Occlusion*" in the "*Component*" menu.
+Simply add the default Scroll Rect Occlusion component to a Scroll Rect using:
 
-It is also available as a Game Component menu in "*UI / Extensions / UI ScrollRect Occlusion*".
+"Add Component -> UI -> Extensions -> UI Scrollrect Occlusion"
 
 ---------
 

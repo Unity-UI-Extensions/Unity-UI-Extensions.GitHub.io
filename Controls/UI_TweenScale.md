@@ -45,7 +45,7 @@ A simplified control for adding programmatic scaling animation to any UI compone
 The properties of the UI TweenScale control are as follows:
 
 Property | Description
-|-|-|
+-|-
 *AnimCurve*|Animation curve for scale (if isUniform set to false, will apply only to X scale)
 *Speed*|Animation speed
 *IsLoop*|Animation will play infinitely (in order to make it work set your animation curve to loop)
@@ -58,7 +58,7 @@ Property | Description
 ## Methods
 
 Method | Arguments | Description
-|-|-|-|
+-|-|-
 *Play*|N/A|Start the animation
 *ResetTween*|N/A|Stop and reset the animation
 
@@ -68,7 +68,7 @@ Method | Arguments | Description
 
 Simply add the component to an existing RectTransform and configure the desired animation style.  Then call the "Play" method in code or via a Unity UI Event (such as a button OnClick method)
 
-* "*UI / Extensions / UI Tween Scale*" in the "*Component*" menu.
+"Add Component -> UI -> Extensions -> UI Tween Scale"
 
 ---------
 

@@ -44,7 +44,7 @@ As of Update 1.6, now also supports Scrollbars, *Note* Can only use the Horizont
 The properties of the Horizontal Scroll Snap control are as follows:
 
 Property | Description
-|-|-|
+-|-
 *Starting Screen*|The child page that should be displayed on start. Bound to the limits of either the scene child objects or the "Child Objects" array.
 *Page Step*|The distance between pages based on the current width of the control.  Higher value equals more spacing.
 *Pagination*|The GameObject with a Toggle group that controls toggles active state. Recommended one toggle per-page.
@@ -67,7 +67,7 @@ Property | Description
 ### Additional properties available in code
 
 Property | Return Type | Description
-|-|-|-|
+-|-|-
 CurrentPage|int|The current snapped page, or selected page as the user swipes
 
 ---------
@@ -75,7 +75,7 @@ CurrentPage|int|The current snapped page, or selected page as the user swipes
 ## Methods
 
 Method | Arguments | Description
-|-|-|-|
+-|-|-
 *DistributePages*|N/A|Forces a refresh of the currently available Scroll Snap Pages
 *Add Child*|Go (GameObject)|Add a new child to this Scroll Snap and recalculate its children
 *Add Child*|Go (GameObject), WorldPositionStays (bool)|Add a new child to this Scroll Snap and recalculate its children, and resets the world position of the new child.

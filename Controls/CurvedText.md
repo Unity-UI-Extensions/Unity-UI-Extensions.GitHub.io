@@ -1,4 +1,7 @@
-# CurvedText
+# Curved Text
+
+> [!IMPORTANT]
+> ⚠️ This control has been deprecated for Unity 6 and is no longer maintained. It remains documented for legacy reference.
 
 A Text vertex manipulator for those users NOT using TextMeshPro (why ever not?) 
 
@@ -34,9 +37,28 @@ Manipulation effect for text to give it a curved or rounded layout.
 
 ---------
 
+## Properties
+
+The properties of the Curved Text component are as follows:
+
+Property | Description
+-|-
+*Status*|Deprecated and removed in Unity 6; no configurable properties remain
+*Recommended Alternative*|Use TextMeshPro and shader/material-based curvature effects for curved text
+
+---------
+
+## Methods
+
+Method | Arguments | Description
+-|-|-
+*Deprecated*|N/A|Removed in Unity 6; no public methods are available
+
+---------
+
 ## Usage
 
-Simply add this to a Text conmponent through the Add Component menu as follows:
+Simply add this to a Text component through the Add Component menu as follows:
 Add Component -> UI -> Effects -> Extensions -> Curved Text
 
 ---------

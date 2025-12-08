@@ -43,20 +43,32 @@ Like the [Stepper Control](/Controls/Stepper.md), you can also specify a Separat
 The properties of the Segmented Control are as follows:
 
 Property | Description
-|-|-|
+-|-
 *Separator*|A graphic based UI GO, which will serve as the image that separates each button. *Note, you should disable the GO used for the separator or use a prefab to avoid dirtying the scene.
 *Allow Switching Off*|When set, buttons can be clicked but not unselected, only selecting a new option will clear the selection
-*Selected Segment Index*|Zero based index which choses the selected default. This defaults to -1 which denotes no option selected
-*On Value Changed* (event) |The Event fired when the selection within the control changes, passing the index of the selected button
+*Selected Segment Index*|Zero based index which chooses the selected default. This defaults to -1 which denotes no option selected
 *Selected Color*|The highlighted color of the button when an option is selected
+***On Value Changed*** (event)|The Event fired when the selection within the control changes, passing the index of the selected button
+
+---------
+
+## Methods
+
+This component does not expose public methods beyond inherited behaviour.
 
 ---------
 
 ## Usage
 
-Simply add the default Segmented Control to the scene using "*UI / Extensions / Segmented Control*" in the Editor "*GameObject*" menu.
+Simply add the default Segmented Control to the scene using:
 
-It is also available as a Game Component menu in "*UI / Extensions / Segmented Control*". However, you will need to manually Add buttons as children to the GO for the options.
+"*GameObject -> UI -> Extensions -> Controls -> Segmented Control*"
+
+It is also available as a Game Component menu:
+
+"*Add Component -> UI -> Extensions -> Segmented Control -> Segmented Control*"
+
+However, you will need to manually add buttons as children to the GameObject for the options.
 
 ---------
 

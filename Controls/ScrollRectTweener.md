@@ -39,13 +39,13 @@ The Scroll Rect Tweener is a simple programmatic component that allows you tween
 The properties of the Box Slider control are as follows:
 
 Property | Description
-|-|-|
+-|-
 *Move Speed*|The default speed that the control moves when Tweening
 *Disable Drag While Tweening*|Stops the user from being able to disrupt the tweening motion via touch or pointer
 
 The control is mainly used programmatically with the following functions
 Function | Arguments | Description
-|-|-|-|
+-|-|-
 *ScrollHorizontal*| float (X Value)|X Coordinate to tween to horizontally
 *ScrollHorizontal*| float (X Value), float (duration)|X Coordinate to tween to horizontally overriding the default Tween duration
 *ScrollVertical*| float (Y Value)|Y Coordinate to tween to vertically
@@ -58,11 +58,17 @@ Coordinates are quad based with 0,0 being the bottom left and 1,1 being the top 
 
 ---------
 
+## Methods
+
+This component does not expose public methods beyond inherited behaviour.
+
+---------
+
 ## Usage
 
-Simply add the default Scroll Rect Tweener component to a Scroll Rect using "*UI / Extensions / Scroll Rect Tweener*" in the "*Component*" menu.
+Simply add the default Scroll Rect Tweener component to a Scroll Rect using:
 
-It is also available as a Game Component menu in "*UI / Extensions / Scroll Rect Tweener*".
+"Add Component -> UI -> Extensions -> ScrollRectTweener"
 
 ---------
 

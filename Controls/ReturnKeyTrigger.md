@@ -33,11 +33,31 @@ It also allows you to hind to a Highlight effect on the field (e.g. a red highli
 
 ---------
 
+## Properties
+
+Property | Description
+-|-
+*Input Field*|InputField listened to for Return key.
+*Target Button*|Button invoked when Return is pressed.
+*Highlight Target*|Optional GameObject toggled to show validation state.
+*Trigger Only When Input Valid*|If enabled, only submits when InputField has text.
+***On Submit*** (event)|Event fired when Return key triggers submission.
+
+---------
+
+## Methods
+
+This component does not expose public methods beyond inherited behaviour.
+
+---------
+
 ## Usage
 
-Either add the "ReturnKeyTrigger" component to an existing UI InputField control, or create an Empty GameObject and add the "ReturnKeyTrigger" component which will automatically add an Input field using the path below:
+Either add the "ReturnKeyTrigger" component to an existing UI InputField control, or create an Empty GameObject and add the "ReturnKeyTrigger" component using:
 
-* *UI / Extensions / Return Key Trigger*
+"Add Component -> UI -> Extensions -> Return Key Trigger"
+
+This will automatically add an Input field if none is present.
 
 ---------
 

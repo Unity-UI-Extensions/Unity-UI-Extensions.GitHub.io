@@ -41,17 +41,31 @@ The Flippable effect allows you to flip a graphic either on the Horizontal axis,
 The properties of the UI Flippable component are as follows:
 
 Property | Description
-|-|-|
+-|-
 *Horizontal*|Flip the graphic horizontally
 *Vertical*|Flip the graphic vertically
 
 ---------
 
+## Methods
+
+This component does not expose public methods beyond inherited behaviour.
+
+---------
+
 ## Usage
 
-Available as a Game Component menu in "*UI / Effects / Extensions / Flippable*". Simple add to any Image or Graphic Component.
+Available as a Game Component menu:
 
-> *Note*
+"*Add Component -> UI -> Effects -> Extensions -> Flippable*"
+
+Or add to the scene using:
+
+"*GameObject -> UI -> Extensions -> Controls -> UI Flippable*"
+
+Simple add to any Image or Graphic Component.
+
+> [!NOTE]
 > Unity has changed it's behaviour about stacking multiple BaseMeshEffects, if the effect alters vertices then the component must be ordered at the top of the components.  
 > E.G. UIFlippable must be ordered above OutLine / NicerOutline etc.
 > The control will automatically do this when added to a GameObject, but if you reorder it you may get a NullReferenceException.  To fix, either reorder or touch any property.

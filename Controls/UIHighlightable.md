@@ -42,16 +42,22 @@ The control also supports a disabled state but has no control over child Rect Tr
 The properties of the UI Highlightable control are as follows:
 
 Property | Description
-|-|-|
+-|-
 *Interactable*|Does the control react to highlighted events?  Defaults to the Disabled color.
 *Click to Hold*|When clicked, does the control stay in the Pressed Color or return to the highlighted color (default, pressed color only use when clicked or held)
 *Normal Color*|The default color of the RectTransform when not being interacted with
 *Highlighted Color*|The color of the RectTransform when the mouse is over it or the control is in focus
 *Pressed Color*|The color of the RectTransform when clicked or held
 *Disabled Color*|The color of the RectTransform when it is non-interactable (see *Interactable*)
-*On Interactable Changed* (event) |The Event fired when the the control enters and leaves the Interactable State, passes the current state when fired.
+***On Interactable Changed*** (event) |The Event fired when the the control enters and leaves the Interactable State, passes the current state when fired.
 
 ### Implements the Image control on the RectTransform
+
+---------
+
+## Methods
+
+This component does not expose public methods beyond inherited behaviour.
 
 ---------
 
@@ -59,7 +65,9 @@ Property | Description
 
 > Can only be placed on a RectTransform that has a Graphic attached, e.g. an Image, RawImage or Text.
 
-Simply add the UI Highlightable component to a RectTransform using the Component menu, it can be found in "*UI / Extensions / UI Highlightable*".
+Simply add the UI Highlightable component to a RectTransform using the Component menu:
+
+"Add Component -> UI -> Extensions -> UI Highlightable Extension"
 
 ---------
 

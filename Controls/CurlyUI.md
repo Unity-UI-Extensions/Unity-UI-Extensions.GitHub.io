@@ -41,7 +41,7 @@ Once added to either an Image, Text or RawGraphic, you will be presented with so
 The properties of the Curly controls (CUI Image, Text, Graphic) are as follows:
 
 Property | Description
-|-|-|
+-|-
 *Is Curved*|Apply the curve affect to the attached element
 *Is Lock with Ratio*|Lock curves to the native object ratios
 *Resolution*|Complexity of the underlying mesh, increases draw complexity for quality
@@ -56,6 +56,12 @@ Property | Description
 
 ---------
 
+## Methods
+
+This component does not expose public methods beyond inherited behaviour.
+
+---------
+
 ## Usage
 
 Simply add any of the CUI Game Components to an Image/Text/Rawimage object using "*UI / Effects / Extensions / CUI**" in the "*Component*" menu, or the "*Add Component*" button in the inspector.
@@ -66,7 +72,7 @@ Simply add any of the CUI Game Components to an Image/Text/Rawimage object using
 
 Once added, you can then manipulate the curves for the RectTransform using the bezier handles added in the editor.
 
-> *Note* 
+> [!NOTE]
 > You should be able to manipulate / animate the bezier control points through code, however, this has not been tested as yet.
 
 ---------

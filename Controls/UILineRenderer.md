@@ -47,7 +47,7 @@ Settings can be set either in the inspector or via script programmatically.
 The properties of the Horizontal Scroll Snap control are as follows:
 
 Property | Description
-|-|-|
+-|-
 *Points*|Array of points to draw the line between (Min 2).
 *Line Thickness*|The thickness of the drawn line.
 *Use Margins*|Apply margin values to control, shrinking the drawable space within the Rect Transform.
@@ -62,7 +62,7 @@ Property | Description
 ### Inherited from Primitive Base
 
 Property | Description
-|-|-|
+-|-
 *ResolutionMode*|Method for improving the resolution of a line, By Segment (Resoluton applied independently between points) or for the entire line (resolution distributed across the entire line)
 *Resolution*|How many new points to automatically add between the Points list provided (note, will not draw if total points in a line exceeds 64k Vertices, Unity limit)
 *Use Native Size*|Set's the UV drawing and resolution of the Line to use the native image size automatically
@@ -82,7 +82,7 @@ Property | Description
 ## Methods
 
 Method | Arguments | Description
-|-|-|-|
+-|-|-
 *GetPosition*|Index (int), SegmentIndex (int)|Get the Vector2 position of a line index.|
 *GetPositionBySegment*|Index (int), SegmentIndex (int)|Get the Vector2 position of a line within a specific segment.|
 *GetClosestPoint*|Starting Position (Vector2), End Position (Vector2), Desired Point (Vector2)|Get the closest point between two given Vector2s from a given Vector2 point.|
@@ -92,11 +92,15 @@ Method | Arguments | Description
 
 ## Usage
 
-Simply add the default UI Line Renderer control to the scene using "*UI / Extensions / Primitives / UI Line Renderer*" in the Editor "*GameObject*" menu.
+Simply add the default UI Line Renderer control to the scene using:
+
+"*GameObject -> UI -> Extensions -> Primitives -> UI Line Renderer*"
+
+Alternatively, add the component using:
+
+"*Add Component -> UI -> Extensions -> Primitives -> UILineRenderer*"
 
 > Pivot point for all UI Lines should be 0,0.  Reset by new editor script.
-
-It is also available as a Game Component menu in "*UI / Extensions / Primitives / UI Line Renderer*".
 
 The control will automatically redraw it self by simply altering the points array through code or the editor as required.  An example script to update the point in code can be seen below:
 

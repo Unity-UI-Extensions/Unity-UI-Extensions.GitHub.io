@@ -43,16 +43,22 @@ It is also very useful when paired with the Selectable Extension to add Click, R
 The properties of the Non Drawing Graphic component are as follows:
 
 Property | Description
-|-|-|
+-|-
 *Raycast Target*|Should this GO block raycasts or not.  Changeable in code or editor.
+
+---------
+
+## Methods
+
+This component does not expose public methods beyond inherited behaviour.
 
 ---------
 
 ## Usage
 
-Simply add the default Non Drawing Graphic component to a RectTransform using "*UI / Extensions / Non Drawing Graphic*" in the Editor "*Component*" menu.
+Simply add the default Non Drawing Graphic component to a RectTransform using:
 
-It is also available as a Game Component menu in "*UI / Extensions / Non Drawing Graphic*". 
+"Add Component -> Layout -> Extensions -> NonDrawingGraphic" 
 
 There is also a "Clickable" version, which includes the additional components to make the NonDrawing Graphic support events when clicked.
 

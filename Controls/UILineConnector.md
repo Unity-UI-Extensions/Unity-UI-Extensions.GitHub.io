@@ -36,10 +36,11 @@ This produces a Node connector style effect between the provided UI GameObjects.
 
 ![](Images/UILineConnectorSample.jpg)
 
+> [!NOTE]
 > Depends on the [UI Line Renderer](/Controls/UILineRenderer.md) component
 
-*Note*
-The Lines depend on the Pivot's of the Main Canvas, Line Renderer and the Selected GameObjects.  Adjust as required.
+> [!NOTE]
+> The Lines depend on the Pivot's of the Main Canvas, Line Renderer and the Selected GameObjects.  Adjust as required.
 ---------
 
 ## Properties
@@ -47,16 +48,26 @@ The Lines depend on the Pivot's of the Main Canvas, Line Renderer and the Select
 The properties of the UILineConnector control are as follows:
 
 Property | Description
-|-|-|
+-|-
 *Transforms*|The List of GameObjects to connect lines between
 
 ### Requires Line Renderer Component
 
 ---------
 
+## Methods
+
+This component does not expose public methods beyond inherited behaviour.
+
+---------
+
 ## Usage
 
-The UILineConnector is available as a Game Component menu in "*UI / Extensions / UI Line Connector*". This will also add the [UI Line Renderer](/Controls/UILineRenderer.md) component by default
+The UILineConnector is available using:
+
+"Add Component -> UI -> Extensions -> UI Line Connector"
+
+This will also add the [UI Line Renderer](/Controls/UILineRenderer.md) component by default
 
 ---------
 

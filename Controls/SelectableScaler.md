@@ -39,21 +39,24 @@ A simple Tween enhancement that scales another RectTransform according to a pres
 The properties of the Selectable Scalar control are as follows:
 
 Property | Description
-|-|-|
+-|-
 *Anim Curve*|The curve that will be used to scale the Rect Transform in and out.
 *Speed*|The speed at which the animation will take effect.
 *Target*|The target for the animation.
 
 ---------
 
+## Methods
+
+This component does not expose public methods beyond inherited behaviour.
+
+---------
+
 ## Usage
 
 Like with other Layout controls, simply add this control to any control that has a *Selectable* component (e.g. Button, NonGraphicSelectable) through the Add Component menu as follows:
-"Add Component -> Extensions -> Selectable Scalar*"
 
-Or alternatively, add the component to the control using:
-
-"*Component -> UI -> Extensions -> Selectable Scalar*"
+"Add Component -> UI -> Extensions -> Selectable Scalar"
 
 ---------
 

@@ -64,7 +64,7 @@ Property | Description
 |-|-|
 *Sampler* (button) |The cursor's button component.
 *Sampler Outline* (outline) |The outline of the cursor to make it easier to see what's being sampled.
-*On Color Selected* (event) |Callback for when the cursor is clicked on a color. This should connect to the ColorPickerControl.CurrentColor at minimum.
+***On Color Selected*** (event) |Callback for when the cursor is clicked on a color. This should connect to the ColorPickerControl.CurrentColor at minimum.
 
 ### Color Sampler properties
 
@@ -73,7 +73,7 @@ The properties of the Box Slider control are as follows:
 
 Property | Description
 |-|-|
-*On Value Changed* (event) |The Event fired when the color within the picker is changed
+***On Value Changed*** (event) |The Event fired when the color within the picker is changed
 *HSV sliders on* (bool) |Shows / hides the HSV sliders in te UI prefab.
 *HSV Sliders* (GameObject array) |Contains references to the components that are part of the HSV sliders display.
 *RGB sliders on* (bool) | Shows / hides the RGB sliders in te UI prefab.
@@ -94,6 +94,12 @@ Property | Description
 *Create Button* (RectTransform)| Reference to the button.
 *Save Mode* (enum)| None, JSON, PlayerPrefs - the mode used for saving user-defined presets.
 *Player Prefs Key* (string)| The JSON file name or the player pref key, the auto-generated one includes the GUID of the gameobject so multiple can exist without conflict (unless you set your own string to be the same on all ColorPickerPresets).
+
+---------
+
+## Methods
+
+This component does not expose public methods beyond inherited behaviour.
 
 ---------
 

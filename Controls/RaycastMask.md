@@ -32,10 +32,27 @@ An example of an enhanced mask component able to work with the image data. Enabl
 
 ---------
 
+## Properties
+
+Property | Description
+-|-
+*Alpha Threshold*|Minimum alpha value required for a point to register as a hit.
+*Graphic*|Graphic source used for sampling pixels.
+*Raycast Target*|Toggle whether this graphic blocks raycasts.
+
+---------
+
+## Methods
+
+This component does not expose public methods beyond inherited behaviour.
+
+---------
+
 ## Usage
 
 Add the effect to your object through the component menu using:
-Add Component -> UI -> Effects -> Extensions -> Raycast Mask
+
+"*Add Component -> UI -> Extensions -> Raycast Mask*"
 
 ---------
 

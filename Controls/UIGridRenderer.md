@@ -35,7 +35,7 @@ This control extend the base UI Line Renderer control and inherits some of it's 
 
 The main configuration is the GridColumns and GridRows to determine how many cells there are.  
 
-> *Note*
+> [!NOTE]
 > The grid is only a renderer, it does not layout any child controls with in it.  Consider pairing up with a the GridLayout control if you want to align children as well.
 
 ---------
@@ -45,7 +45,7 @@ The main configuration is the GridColumns and GridRows to determine how many cel
 The properties of the Box Slider control are as follows:
 
 Property | Description
-|-|-|
+-|-
 *Points*|Array of points to draw the line between (Min 2).  *Read only for GridRenderer as it controls this*
 *Line Thickness*|The thickness of the drawn line.
 *Use Margins*|Apply margin values to control, shrinking the drawable space within the Rect Transform.
@@ -70,11 +70,21 @@ Property | Description
 
 ---------
 
+## Methods
+
+This component does not expose public methods beyond inherited behaviour.
+
+---------
+
 ## Usage
 
-Simply add the default UI Grid Renderer control to the scene using "*UI / Extensions / Primitives / UI Grid Renderer*" in the Editor "*GameObject*" menu.
+Simply add the default UI Grid Renderer control to the scene using:
 
-It is also available as a Game Component menu in "*UI / Extensions / Primitives / UI Grid Renderer*".
+"*GameObject -> UI -> Extensions -> Primitives -> UI Grid Renderer*"
+
+Alternatively, add the component using:
+
+"*Add Component -> UI -> Extensions -> Primitives -> UIGridRenderer*"
 
 ---------
 

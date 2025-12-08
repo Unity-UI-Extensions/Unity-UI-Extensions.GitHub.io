@@ -32,10 +32,34 @@ A tooltip implementation which allows the user to hover over a RectTransform to 
 
 ---------
 
+## Properties
+
+Property | Description
+-|-
+*Tooltip Position*|RectTransform used to position the tooltip; defaults to the hovered rect.
+*Hover Time*|Delay (seconds) before showing the tooltip.
+*Stay Hovered*|Keep showing the tooltip while the pointer remains over the target.
+*Hide Time*|Delay (seconds) before hiding after pointer exit.
+***On Show*** (event)|Invoked when the tooltip is shown.
+***On Hide*** (event)|Invoked when the tooltip is hidden.
+
+---------
+
+## Methods
+
+This component does not expose public methods beyond inherited behaviour.
+
+---------
+
 ## Usage
 
-Add the ToolTip control to your scene using:
-GameObject -> UI -> Extensions -> HoverToolTip
+Add the HoverToolTip control to your scene using:
+
+"Add Component -> UI -> Extensions -> HoverTooltip"
+
+Or alternatively, add it via the GameObject menu:
+
+"GameObject -> UI -> Extensions -> HoverToolTip"
 
 ---------
 

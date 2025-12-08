@@ -32,19 +32,31 @@ Enhanced InputField control for forms, enables Enter to submit and other feature
 
 ---------
 
-## Usage
+## Properties
 
-"Walk through how to use the control plus any tips for usage"
+This control has no configurable properties in the inspector.
 
 ---------
 
+## Methods
+
+Method | Arguments | Description
+-|-|-
+*buttonPressed*|N/A|Call this method from a button's onClick event to submit the input field
+
+---------
+
+## Usage
+
+Simply add the component to an existing InputField using:
+
+"*Add Component -> UI -> Extensions -> InputFocus*"
+
+Assign the component to an Input field, set the OnEndEdit function to the one in this script and the Click event for the submit button to the buttonPressed function.
+
 ## Video Demo
 
-Add the Input Focus control to your scene using:
-GameObject -> UI -> Extensions -> Input Focus
-
-Or simply add the component to an existing InputField using:
-Add Component -> UI -> Extensions -> Input Focus
+N/A
 
 ---------
 

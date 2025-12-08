@@ -37,7 +37,7 @@ A more rugged grid style layout group
 The properties of the Box Slider control are as follows:
 
 Property | Description
-|-|-|
+-|-
 *Handle Rect*|The Rect Transform of the child handle, position used to derive values for control
 *Min Value*|The minimum value for the sliders
 *Max Value*|The maximum value for the sliders
@@ -54,10 +54,17 @@ Property | Description
 
 ---------
 
+## Methods
+
+This component does not expose public methods beyond inherited behaviour.
+
+---------
+
 ## Usage
 
 Like with other Layout controls, simply add this to the parent RectTransform for a collection of child elements through the Add Component menu as follows:
-Add Component -> Layout -> Extensions -> Flow Layout Group
+
+"*Add Component -> Layout -> Extensions -> Flow Layout Group*"
 
 ---------
 

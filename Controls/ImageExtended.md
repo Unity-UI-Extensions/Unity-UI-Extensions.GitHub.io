@@ -1,4 +1,7 @@
-# ImageExtended
+# Image Extended
+
+> [!IMPORTANT]
+> ⚠️ This control has been deprecated for Unity 6 and is no longer maintained. It remains documented for legacy reference.
 
 Improved Image control with rotation support and use of filled type without an Image (useful for masks)
 
@@ -29,6 +32,23 @@ Improved Image control with rotation support and use of filled type without an I
 ## Overview
 
 Improved Image control with rotation support and use of filled type without an Image (useful for masks)
+
+---------
+
+## Properties
+
+Property | Description
+-|-
+*Rotate*|Applies rotation to the image vertices.
+*Use Sprite Mesh*|Use the sprite's mesh data instead of a simple quad when available.
+*Preserve Aspect*|Maintain aspect ratio when resizing.
+*Fill Center Without Sprite*|Allow filled mode even when no sprite is assigned (useful for masks).
+
+---------
+
+## Methods
+
+This component does not expose public methods beyond inherited behaviour.
 
 ---------
 

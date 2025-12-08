@@ -39,7 +39,7 @@ Provides a html interpreter to add inline images in Text.  HTML code is similar 
 The properties of the TextPic control are as follows:
 
 Property | Description
-|-|-|
+-|-
 *Image Offset*|Global Image offset
 *Image Scaling Factor*|Global scaling factor for all images (they default to match the font size)
 *Hyperlink Color*|Override the default color for Hyperlinks
@@ -57,6 +57,12 @@ Property | Description
 
 ---------
 
+## Methods
+
+This component does not expose public methods beyond inherited behaviour.
+
+---------
+
 ## Usage
 
 Add TextPic component instead of the standard Text control and decorate with Rich Text HTML, for example:
@@ -64,9 +70,15 @@ Add TextPic component instead of the standard Text control and decorate with Ric
 
 It can also place Images within blocks of Text by adding Icons to the Icon List with a Name, then instances of that name will be replaced with that Image (careful what name you use :D)
 
-Simply add a new TextPic to the scene using "*UI / Extensions / TextPic*" in the Editor "*GameObject*" menu.
+Simply add a new TextPic to the scene using:
 
-It is also available as a Game Component menu in "*UI / Extensions / TextPic*". You have to remove any existing Text components first, else Unity will warn you.
+"*GameObject -> UI -> Extensions -> Controls -> TextPic*"
+
+Alternatively, add the component to an existing GameObject using:
+
+"*Add Component -> UI -> Extensions -> TextPic*"
+
+Note: You have to remove any existing Text components first, else Unity will warn you.
 
 Additionally, if you want configure hyperlink highlighting colours, simply add a "*Selectable*" component to the same GameObject as the TextPic control and configure it.
 

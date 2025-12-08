@@ -1,6 +1,6 @@
-# VRInputModule
+# Scroller
 
-<!-- Description-->
+A component of the FancyScrollView system for advanced scrolling implementations.
 
 <!--![](Images/ Game Image.jpg)-->
 
@@ -28,74 +28,62 @@
 
 ## Overview
 
-A <!-- Control--> .
-
-![](Images/<!-- Inspector Image-->.jpg)
+The Scroller component is part of the FancyScrollView system and handles the scrolling behavior for advanced scrolling implementations. It provides smooth scrolling with inertia and customizable behavior.
 
 ---------
 
 ## Properties
 
-The properties of the Vertical Scroll Snap control are as follows:
+The properties of the Scroller control are as follows:
 
 Property | Description
-|-|-|
-*<!-- Property-->*|<!-- Property-->
-
-Additional properties available in code:
-
-Property | Return Type | Description
-|-|-|-|
-|<!-- Property-->|<!-- Type-->|<!-- Description-->|
+-|-
+*Viewport*|The RectTransform of the scrollable viewport
+*Direction Axis*|The axis of scrolling (Horizontal or Vertical)
+*Movement Type*|How the scroller behaves (Unrestricted, Elastic, Clamped)
+*Elasticity*|The elasticity factor when using elastic movement type
+*Scroll Sensitivity*|Sensitivity of the scrolling input
+*Inertia*|Whether to use inertia for smooth deceleration
+*Deceleration Rate*|Rate at which scrolling decelerates (only used when inertia is enabled)
+*Snap*|Whether to snap to nearest item when scrolling stops
+*Snap Duration*|Duration of the snap animation
+*Snap Easing*|Easing function used for snap animation
 
 ---------
 
 ## Methods
 
-Method | Arguments | Description
-|-|-|-|
-|<!-- Method-->|<!-- Type-->|<!-- Description-->|
+The Scroller provides programmatic control through code (no public methods exposed directly).
 
 ---------
 
 ## Usage
 
-Use as follows:
+The Scroller component is typically used as part of the FancyScrollView system and is not meant to be used standalone. See the FancyScrollView documentation for complete implementation details.
 
-* "Add Component -> Layout -> Extensions -> <!-- Control-->*"
-
-Or alternatively, add the default layout for the control using:
-
-* "*GameObject -> UI -> Extensions -> <!-- Control-->*"
-
-This will give you a <!-- Control--> setup with the script.
+For implementation examples, refer to the FancyScrollView samples in the Examples~ folder.
 
 ---------
 
 ## Video Demo
 
-Video
-
-<!-- Video
-
-[![View Intro Video](http://img.youtube.com/vi/LnKy3_ymEXs/0.jpg)](http://www.youtube.com/watch?v=LnKy3_ymEXs "HSS/VSS walk-through video")
-
-/-->
+See FancyScrollView documentation for demo videos.
 
 ---------
 
 ## See also
 
-* Also <!-- See Also/-->
+* [FancyScrollView](/Controls/FancyScrollView.md)
 
 ---------
 
 ## Credits and Donation
 
-<!-- Credits/-->
+setchi
 
 ---------
 
 ## External links
 
-[Sourced from]()
+[Sourced from](https://github.com/setchi/FancyScrollView)
+

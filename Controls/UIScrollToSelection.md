@@ -1,6 +1,6 @@
 # UIScrollToSelection
 
-<!-- Description-->
+Automatically scrolls a ScrollRect to the currently selected UI element
 
 <!--![](Images/ Game Image.jpg)-->
 
@@ -28,74 +28,60 @@
 
 ## Overview
 
-A <!-- Control--> .
-
-![](Images/<!-- Inspector Image-->.jpg)
+A ScrollRect enhancement that automatically scrolls to the currently selected UI element, useful for keyboard/gamepad navigation.
 
 ---------
 
 ## Properties
 
-The properties of the Vertical Scroll Snap control are as follows:
+The properties of the UIScrollToSelection control are as follows:
 
 Property | Description
-|-|-|
-*<!-- Property-->*|<!-- Property-->
-
-Additional properties available in code:
-
-Property | Return Type | Description
-|-|-|-|
-|<!-- Property-->|<!-- Type-->|<!-- Description-->|
+-|-
+*Viewport Rect Transform*|View (boundaries/mask) rect transform. Used to check if automatic scroll to selection is required
+*Target Scroll Rect*|Scroll rect used to reach selected element
+*Scroll Axes*|Allow automatic scrolling only on these axes
+*Used Scroll Method*|MOVE_TOWARDS: stiff movement, LERP: smoothed out movement
+*Scroll Speed*|Speed at which the scroll rect moves to the selected element
+*End Of List Jump Scroll Speed*|Scroll speed used when element to select is out of "JumpOffsetThreshold" range
+*Jump Offset Threshold*|If next element to scroll to is located over this screen percentage, use "EndOfListJumpScrollSpeed" to reach this element faster
+*Cancel Scroll Mouse Buttons*|Mouse buttons that cancel the automatic scrolling
+*Cancel Scroll Keys*|Keyboard keys that cancel the automatic scrolling
 
 ---------
 
 ## Methods
 
-Method | Arguments | Description
-|-|-|-|
-|<!-- Method-->|<!-- Type-->|<!-- Description-->|
+This component does not expose public methods beyond inherited behaviour.
 
 ---------
 
 ## Usage
 
-Use as follows:
+Simply add the component to a ScrollRect using:
 
-* "Add Component -> Layout -> Extensions -> <!-- Control-->*"
-
-Or alternatively, add the default layout for the control using:
-
-* "*GameObject -> UI -> Extensions -> <!-- Control-->*"
-
-This will give you a <!-- Control--> setup with the script.
+"Add Component -> UI -> Extensions -> UIScrollToSelection"
 
 ---------
 
 ## Video Demo
 
-Video
-
-<!-- Video
-
-[![View Intro Video](http://img.youtube.com/vi/LnKy3_ymEXs/0.jpg)](http://www.youtube.com/watch?v=LnKy3_ymEXs "HSS/VSS walk-through video")
-
-/-->
+N/A
 
 ---------
 
 ## See also
 
-* Also <!-- See Also/-->
+* [UIScrollToSelectionXY](/Controls/UIScrollToSelectionXY.md)
 
 ---------
 
 ## Credits and Donation
 
-<!-- Credits/-->
+zero3growlithe
 
 ---------
 
 ## External links
 
-[Sourced from]()
+[Sourced from](http://forum.unity3d.com/threads/scripts-useful-4-6-scripts-collection.264161/page-2#post-2011648)

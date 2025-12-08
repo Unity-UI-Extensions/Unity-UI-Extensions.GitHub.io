@@ -41,7 +41,7 @@ It also allows you determine whether the control starts on awake or via code.
 The properties of the Scroll Rect Infinite component are as follows:
 
 Property | Description
-|-|-|
+-|-
 *Init By User*|Should this activate automatically or only on request.
 *Pivot*|The anchor point to stop content at
 *Max Speed for Magnetic*|The maximum speed that allows you to activate the magnet to center on the pivot.
@@ -53,7 +53,7 @@ Property | Description
 ## Methods
 
 Method | Arguments | Description
-|-|-|-|
+-|-|-
 *SetNewItems*|newItems (List of Transform Items)|Appends a list of items to the Infinite Scroll child list
 *SetContentInPivot*|Index|Moves the content to set the selected child in the pivot zone
 
@@ -63,7 +63,9 @@ Method | Arguments | Description
 
 > Requires a configured ScrollRect.  Which will be added by  default.
 
-Simply add the default Scroll Rect Infinite component to a Scroll Rect using "*UI / Extensions / UI Magnetic Infinite Scroll*" in the "*Component*" menu.
+Simply add the default Scroll Rect Infinite component to a Scroll Rect using:
+
+"Add Component -> UI -> Extensions -> UI Magnetic Infinite Scroll"
 
 ---------
 

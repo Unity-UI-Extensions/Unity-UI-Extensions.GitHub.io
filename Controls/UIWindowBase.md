@@ -1,6 +1,6 @@
 # UIWindowBase
 
-<!-- Description-->
+A draggable window for RectTransforms with bounds checking to keep it within the canvas
 
 <!--![](Images/ Game Image.jpg)-->
 
@@ -28,74 +28,63 @@
 
 ## Overview
 
-A <!-- Control--> .
-
-![](Images/<!-- Inspector Image-->.jpg)
+A draggable window implementation for RectTransforms that includes bounds checking to ensure the window stays within the canvas area.
 
 ---------
 
 ## Properties
 
-The properties of the Vertical Scroll Snap control are as follows:
+The properties of the UI Window Base control are as follows:
 
 Property | Description
-|-|-|
-*<!-- Property-->*|<!-- Property-->
+-|-
+*Keep Window In Canvas*|Number of pixels of the window that must stay inside the canvas view
+*Root Transform*|The transform that is moved when dragging, can be left empty in which case its own transform is used
 
-Additional properties available in code:
+### Additional properties available in code
 
 Property | Return Type | Description
 |-|-|-|
-|<!-- Property-->|<!-- Type-->|<!-- Description-->|
+ResetCoords|bool (static)|Set to true to reset the window to its original position
 
 ---------
 
 ## Methods
 
-Method | Arguments | Description
-|-|-|-|
-|<!-- Method-->|<!-- Type-->|<!-- Description-->|
+This component does not expose public methods beyond inherited behaviour.
 
 ---------
 
 ## Usage
 
-Use as follows:
+Add the UI Window Base component to a RectTransform using:
 
-* "Add Component -> Layout -> Extensions -> <!-- Control-->*"
+"Add Component -> UI -> Extensions -> UI Window Base"
 
-Or alternatively, add the default layout for the control using:
+Or alternatively, add it via the GameObject menu:
 
-* "*GameObject -> UI -> Extensions -> <!-- Control-->*"
-
-This will give you a <!-- Control--> setup with the script.
+"GameObject -> UI -> Extensions -> Controls -> UI Window Base"
 
 ---------
 
 ## Video Demo
 
-Video
-
-<!-- Video
-
-[![View Intro Video](http://img.youtube.com/vi/LnKy3_ymEXs/0.jpg)](http://www.youtube.com/watch?v=LnKy3_ymEXs "HSS/VSS walk-through video")
-
-/-->
+N/A
 
 ---------
 
 ## See also
 
-* Also <!-- See Also/-->
+N/A
 
 ---------
 
 ## Credits and Donation
 
-<!-- Credits/-->
+GXMark, alexzzzz, CaoMengde777, TroyDavis
 
 ---------
 
 ## External links
 
-[Sourced from]()
+[Sourced from](http://forum.unity3d.com/threads/scripts-useful-4-6-scripts-collection.264161/page-2#post-1834806)

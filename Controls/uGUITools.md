@@ -34,6 +34,25 @@ A useful set of tools to manipulate RectTransforms to its Anchors, or Adjusts th
 
 ---------
 
+## Properties
+
+These are editor menu utilities and expose no inspector properties.
+
+---------
+
+## Methods
+
+Method | Arguments | Description
+-|-|-
+*Anchors to Corners*|Selected RectTransform|Moves anchors to the corners of the rect.
+*Corners to Anchors*|Selected RectTransform|Moves corners of the rect to the anchor positions.
+*Mirror Horizontally around Anchors*|Selected RectTransform|Flips anchors horizontally on the rect.
+*Mirror Horizontally around Parent Center*|Selected RectTransform|Flips anchors horizontally relative to parent center.
+*Mirror Vertically around Anchors*|Selected RectTransform|Flips anchors vertically on the rect.
+*Mirror Vertically around Parent Center*|Selected RectTransform|Flips anchors vertically relative to parent center.
+
+---------
+
 ## Usage
 
 Simply select a RectTransform in the Scene or Hierarchy views and use the menu options to affect the RectTransforms anchors:
@@ -44,6 +63,18 @@ Simply select a RectTransform in the Scene or Hierarchy views and use the menu o
 * Mirror Horizontally around Parent Center - Flips the Anchors horizontally based on the parent RectTransform
 * Mirror Vertically around Anchors - Flips the Anchors vertically on this RectTransform (reverses content)
 * Mirror Vertically around Parent Center - Flips the Anchors vertically based on the parent RectTransform
+
+---------
+
+## Video Demo
+
+N/A
+
+---------
+
+## See also
+
+N/A
 
 ---------
 

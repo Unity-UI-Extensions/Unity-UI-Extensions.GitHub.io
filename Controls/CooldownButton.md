@@ -58,15 +58,25 @@ Property | Description
 *Cooldown Time Remaining*|The amount of time (float) remaining on the cooldown
 *Cooldown Percent Remaining*|The percentage of cooldown remaining
 *Cooldown Percent Complete*|The percentage of cooldown completed
-*On Cooldown Start* (event) |The Event fires when the user clicks on the control and starts the cooldown
-*On Button Click during Cooldown* (event) |The Event fires when the user clicks on the control while it is cooling down
-*On Cooldown Finish* (event) |The Event fires when the cooldown time has finished
+***On Cooldown Start*** (event)|The Event fires when the user clicks on the control and starts the cooldown
+***On Button Click During Cooldown*** (event)|The Event fires when the user clicks on the control while it is cooling down
+***On Cooldown Finish*** (event)|The Event fires when the cooldown time has finished
+
+---------
+
+## Methods
+
+This component does not expose public methods beyond inherited behaviour.
 
 ---------
 
 ## Usage
 
-The CooldownButton control is available as a Game Component menu in "*UI / Extensions / Cooldown Button*".
+The CooldownButton control is available as a Game Component menu in:
+
+"*Add Component -> UI -> Extensions -> Cooldown Button*"
+
+Attach to any Selectable UI component (Button, Toggle, etc.) to add cooldown functionality.
 
 ---------
 

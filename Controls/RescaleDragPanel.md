@@ -1,8 +1,6 @@
 # RescaleDragPanel
 
-<!-- Description-->
-
-<!--![](Images/ Game Image.jpg)-->
+A control that enables dragging a rescaled panel to reposition it within a canvas, compensating for the panel's local scale during movement.
 
 ---------
 
@@ -28,74 +26,68 @@
 
 ## Overview
 
-A <!-- Control--> .
-
-![](Images/<!-- Inspector Image-->.jpg)
+The RescaleDragPanel control allows users to drag and reposition a panel that may have been rescaled. It automatically accounts for the parent's local scale when calculating drag offsets, ensuring accurate positioning. The panel is constrained to remain within the canvas boundaries during dragging.
 
 ---------
 
 ## Properties
 
-The properties of the Vertical Scroll Snap control are as follows:
-
-Property | Description
-|-|-|
-*<!-- Property-->*|<!-- Property-->
-
-Additional properties available in code:
-
-Property | Return Type | Description
-|-|-|-|
-|<!-- Property-->|<!-- Type-->|<!-- Description-->|
+The RescaleDragPanel control has no serialized properties exposed in the inspector. All functionality is handled internally through automatic canvas and parent detection.
 
 ---------
 
 ## Methods
 
+The RescaleDragPanel control implements Unity's IPointerDownHandler and IDragHandler interfaces but does not expose additional public methods.
+
 Method | Arguments | Description
-|-|-|-|
-|<!-- Method-->|<!-- Type-->|<!-- Description-->|
+-|-|-
+*OnPointerDown*|PointerEventData|Handles pointer down events to bring panel to front and calculate initial pointer offset
+*OnDrag*|PointerEventData|Handles drag events to reposition the panel, accounting for local scale and clamping to canvas bounds
+*ClampToWindow*|PointerEventData|Internal method that clamps the pointer position to canvas boundaries
 
 ---------
 
 ## Usage
 
-Use as follows:
+To use the RescaleDragPanel control:
 
-* "Add Component -> Layout -> Extensions -> <!-- Control-->*"
+1. Add the component via "**Add Component -> UI -> Extensions -> RescalePanels -> RescaleDragPanel**"
+2. Attach the component to a child GameObject of the panel you want to make draggable
+3. The parent RectTransform and parent Canvas will be automatically detected
+4. Drag the handle to move the panel; it will automatically stay within canvas bounds
+5. The control compensates for any local scale applied to the parent, ensuring accurate drag behavior
 
-Or alternatively, add the default layout for the control using:
+This control works best when combined with RescalePanel to provide both rescaling and repositioning functionality.
 
-* "*GameObject -> UI -> Extensions -> <!-- Control-->*"
+Example setup:
 
-This will give you a <!-- Control--> setup with the script.
+```csharp
+// Typically no code configuration needed - add component and it works automatically
+// The control self-configures in Awake() by detecting the parent Canvas and RectTransform
+```
 
 ---------
 
 ## Video Demo
 
-Video
-
-<!-- Video
-
-[![View Intro Video](http://img.youtube.com/vi/LnKy3_ymEXs/0.jpg)](http://www.youtube.com/watch?v=LnKy3_ymEXs "HSS/VSS walk-through video")
-
-/-->
+*Video demonstration to be added*
 
 ---------
 
 ## See also
 
-* Also <!-- See Also/-->
+* [ResizePanel](ResizePanel.md) - Resizes a panel by changing sizeDelta
+* [RescalePanel](RescalePanel.md) - Rescales a panel using local scale
 
 ---------
 
 ## Credits and Donation
 
-<!-- Credits/-->
+Credits: .entity
 
 ---------
 
 ## External links
 
-[Sourced from]()
+[Sourced from](http://forum.unity3d.com/threads/rescale-panel.309226/)

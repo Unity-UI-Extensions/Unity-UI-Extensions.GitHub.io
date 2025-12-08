@@ -34,7 +34,8 @@ The Pagination Manager enables automatic click navigation for the Pagination fea
 
 The control extends the base Unity ToggleGroup functionality by interlinking the Scroll Snap's functionality with the ToggleEvents automatically.
 
-> *Note* you still have to set up the child toggles manually and ensure that the number of toggles matches the number of Scroll Snap Children.  May extend in the future to automatically generate children from Prefabs.
+> [!NOTE]
+> You still have to set up the child toggles manually and ensure that the number of toggles matches the number of Scroll Snap Children.  May extend in the future to automatically generate children from Prefabs.
 
 ---------
 
@@ -43,7 +44,7 @@ The control extends the base Unity ToggleGroup functionality by interlinking the
 The properties of the Box Slider control are as follows:
 
 Property | Description
-|-|-|
+-|-
 *Scroll Snap*|The Horizontal or Vertical Scroll Snap control this Pagination is assocated with (overrides base Pagination capability)
 
 ### Inherited from ToggleGroup
@@ -52,11 +53,22 @@ Property | Description
 
 ---------
 
+## Methods
+
+This component does not expose public methods beyond inherited behaviour.
+
+---------
+
 ## Usage
 
-Simply add the "Pagination Manager" component from the Game Component menu in "*UI / Extensions / Pagination Manager*". However, you will need to manually assign the *Scroll Snap* reference.
+Simply add the "Pagination Manager" component using:
 
-> *Note* this replaces the inherent pagination feature of the Scroll Snap.
+"Add Component -> UI -> Extensions -> Pagination Manager"
+
+However, you will need to manually assign the *Scroll Snap* reference.
+
+> [!NOTE]
+> This replaces the inherent pagination feature of the Scroll Snap.
 ---------
 
 ## Video Demo

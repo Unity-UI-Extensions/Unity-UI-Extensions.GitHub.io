@@ -38,10 +38,17 @@ No additional properties, inherits from the original ScrollRect
 
 ---------
 
+## Methods
+
+This component does not expose public methods beyond inherited behaviour.
+
+---------
+
 ## Usage
 
 Simply replace the original ScrollRect with the new MultiTouchScrollRect:
-Add Component -> UI -> Extensions -> MultiTouchScrollRect
+
+"*Add Component -> UI -> Extensions -> MultiTouchScrollRect*"
 
 ---------
 

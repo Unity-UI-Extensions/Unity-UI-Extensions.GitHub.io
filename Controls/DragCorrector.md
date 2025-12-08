@@ -32,10 +32,27 @@ Utility to manage the EventSystem drag threshold for high DPI systems
 
 ---------
 
+## Properties
+
+Property | Description
+-|-
+*Reference DPI*|Baseline DPI used to scale the drag threshold.
+*Use Device DPI*|If enabled, scales threshold using the current device DPI; otherwise uses Reference DPI.
+*Multiplier*|Additional scaling factor applied to the computed drag threshold.
+
+---------
+
+## Methods
+
+This component does not expose public methods beyond inherited behaviour.
+
+---------
+
 ## Usage
 
-To enable the Aimer Input Module, simply add the component to the EventSystem using:
-Add Component -> UI -> Extensions -> Drag Corrector
+To enable the Drag Corrector, simply add the component to the EventSystem using:
+
+"Add Component -> UI -> Extensions -> DragCorrector"
 
 ---------
 

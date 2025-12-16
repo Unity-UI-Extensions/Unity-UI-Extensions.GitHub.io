@@ -46,7 +46,7 @@ Custom graphic for uGUI. Single-object/texture Grid image, excellent for tile-ba
 
 ![alt text](./Images/GridRawImage/inspector-preview.png)
 
-The Accordion setup uses two components:
+The properties of the Grid Raw Image control are as follows:
 
 Property | Description
 -|-
@@ -95,12 +95,12 @@ This component does not expose public methods beyond inherited behaviour.
 
 ## Credits and Donation
 
-ChoMPHi
+Dmitry (mitay-walle)
 
 ---------
 
 ## External links
 
-[Sourced from](http://forum.unity3d.com/threads/accordion-type-layout.271818/)
+[Sourced from](https://github.com/mitay-walle/com.mitay-walle.grid-raw-image)
 
 ---------

@@ -39,7 +39,7 @@ A specialised text field that allows a vocabulary to be added to guide or restri
 The properties of the AutoComplete Combobox control are as follows:
 
 Property | Description
-|-|-|
+-|-
 *Available Options*|Array of text based options for the dropdown/selection.
 *Is Active*|Can the autocomplete combo box be activated by the user (dropped down) or is it disabled?
 *Scroll Bar Width*|The width of the scrollbar when displayed.

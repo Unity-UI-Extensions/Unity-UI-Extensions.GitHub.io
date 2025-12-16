@@ -44,7 +44,7 @@ Like the Slider, it also includes an OnValueChanged event which updates as the h
 The properties of the Box Slider control are as follows:
 
 Property | Description
-|-|-|
+-|-
 *Handle Rect*|The Rect Transform of the child handle, position used to derive values for control
 *Min Value*|The minimum value for the sliders
 *Max Value*|The maximum value for the sliders

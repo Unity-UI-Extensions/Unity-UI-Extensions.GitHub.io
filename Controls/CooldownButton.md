@@ -49,7 +49,7 @@ Lastly, the control also has "extra" click detection allowing further feedback i
 The properties of the UILineConnector control are as follows:
 
 Property | Description
-|-|-|
+-|-
 *Cooldown Timeout*|The amount of time the cooldown takes effect. Defaults to seconds
 *Cooldown Speed*|The speed at which the cooldown expires.
 *Cooldown Active*|(Read only)Is the Cooldown active (can be stopped with the CancelCooldown method)

@@ -47,7 +47,7 @@ the scroll snap has finished snapping.
 The properties of the Horizontal Scroll Snap control are as follows:
 
 Property | Description
-|-|-|
+-|-
 *Ignore Inactive Items*|When enabled the scroll snap ignores inactive items, when disabled the scroll snap will snap to inactive items.
 *Start Info*|All information about where the scroll snap should start when it is enabled, and how it should get there.
 *Index Type*|A property of Start Info which describes whether the Index is associated with the child at that index, or the position at that index. A higher Index where the Index Type is Position Index means it will be further to the right.

@@ -40,7 +40,7 @@ Similar to the new built in Unity Dropdown control
 The properties of the Combo Box control are as follows:
 
 Property | Description
-|-|-|
+-|-
 *Available Options*|Array of text based options for the dropdown/selection
 *Is Active*|Can the autocomplete combo box be activated by the user (dropped down) or is it disabled?
 *Scroll Bar Width*|The width of the scrollbar when displayed

@@ -37,7 +37,7 @@ A menu style control with pop-out sub elements like a hover bar.
 The Accordion setup uses two components:
 
 Property | Description
-|-|-|
+-|-
 *Transition*|Tween type used when expanding/collapsing elements.
 *Transition Duration*|Time (seconds) for expand/collapse.
 *Allow Multiple*|If true, multiple accordion elements can stay open simultaneously.

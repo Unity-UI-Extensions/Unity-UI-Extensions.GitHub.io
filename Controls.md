@@ -31,6 +31,9 @@ This page lists all the available controls within the UI Extensions project.  To
 |**[Stepper](/Controls/Stepper.md)** | A stepper control, like those found in iOS. It's basically two buttons side by side, and can step its numeric value up and down  || UI / Extensions / Stepper ||| David Gileadi|
 |**[Range Slider](/Controls/RangeSlider.md)** | A slider control that can support range values with min/max  | UI / Extensions / Range Slider | UI / Extensions / Range Slider|[Demo video](/Controls/Images/RangeSliderDemo.mp4)|| Ben MacKinnon @Dover8|
 |**[MinMaxSlider](/Controls/MinMaxSlider.md)** | An alternative slider control that can support range values with min/max  | UI / Extensions / MinMax Slider | UI / Extensions / MinMax Slider||| brogan89|
+|**[Extensions Toggle](/Controls/ExtensionsToggle.md)** | Enhanced Toggle component with unique IDs and dual event system  || UI / Extensions / Extensions Toggle ||| Unity UI Extensions Contributors|
+|**[Extensions Toggle Group](/Controls/ExtensionsToggleGroup.md)** | Enhanced ToggleGroup managing ExtensionsToggle components  || UI / Extensions / Extensions Toggle Group ||| Unity UI Extensions Contributors|
+|**[Segment](/Controls/Segment.md)** | Individual segment component within SegmentedControl  || UI / Extensions / Segmented Control / Segment ||| David Gileadi|
 
 ## Primitives
 
@@ -41,6 +44,7 @@ This page lists all the available controls within the UI Extensions project.  To
 |**[UILineRenderer](/Controls/UILineRenderer.md)** | Graphic control for drawing lines in the UI System | UI / Extensions / Primitives / UI Line Renderer | UI / Extensions / Primitives / UI Line Renderer |[tutorial video](https://www.youtube.com/watch?v=OElcWAZGHi0)|| jack.sydorenko|
 |**[UILineTextureRenderer](/Controls/UILineTextureRenderer.md)** | Graphic control for drawing lines in the UI System | UI / Extensions / Primitives / UI Line Texture Renderer | UI / Extensions / Primitives / UI Line Texture Renderer |[tutorial video](https://www.youtube.com/watch?v=OElcWAZGHi0)|| jack.sydorenko, jonbro5556|
 |**[UILineRendererFIFO](/Controls/UILineRendererFIFO.md)** | High Performant version of the Graphic control for drawing lines in the UI System | UI / Extensions / Primitives / UILineRendererFIFO | UI / Extensions / Primitives / UILineRendererFIFO ||| Steve Westhoff|
+|**[UILineRendererList](/Controls/UILineRendererList.md)** | Advanced line renderer with Bezier curves, configurable joins, and line caps | UI / Extensions / Primitives / UI Line Renderer List | UI / Extensions / Primitives / UILineRendererList ||| jack.sydorenko, firagon|
 |**[UICircle](/Controls/UICircle.md)** | Graphic control for drawing circles in the UI System | UI / Extensions / Primitives / UI Circle | UI / Extensions / Primitives / UI Circle |[tutorial video](https://www.youtube.com/watch?v=2KOnEKAVua0)|| zge|
 |**[DiamondGraph](/Controls/DiamondGraph.md)** | Graphic control for drawing a diamond in the UI System | UI / Extensions / Primitives / DiamondGraph | UI / Extensions / Primitives / DiamondGraph |5.2+ only [tutorial video](https://www.youtube.com/watch?v=2KOnEKAVua0)|| koohddang|
 |**[UICornerCut](/Controls/UICornerCut.md)** | Graphic control for drawing a diamond in the UI System | UI/Extensions/Primitives/Cut Corners | UI/Extensions/Primitives/Cut Corners ||| Freezy|
@@ -93,6 +97,7 @@ This page lists all the available controls within the UI Extensions project.  To
 |**[UIFlippable](/Controls/UIFlippable.md)** | Image component effect to flip the graphic | UI / Effects / Extensions / UI Flippable ||| ChoMPHi|
 |**[UIImageCrop](/Controls/UIImageCrop.md)** | Shader based mask system which clips to specific ranges X&Y | UI / Effects / Extensions / UI Image Crop ||| 00christian00|
 |**[SoftAlphaMask](/Controls/SoftAlphaMask.md)** | Shader based mask able to clip images using an alpha mask | UI / Effects / Extensions / Soft Mask Script ||[Donate](https://www.assetstore.unity3d.com/en/#!/content/50339)| NemoKrad|
+|**[Shader Effects Suite](/Controls/ShaderEffects.md)** | Collection of shader-based effects (Additive, Soft Additive, Multiply, Linear Dodge, Screen, Shine) | UI / Effects / Extensions / UI*Effect | UI / Effects / Extensions / UI*Effect and Shining Effect || 00christian00, ömer faruk sayılır|
 |**[UIParticleSystem](/Controls/UIParticleSystem.md)** | Implementation of a particle system on a canvas |  UI / Effects / Extensions / UI Particle System |5.3+ only|| Glennpow|
 |**[CurlyUI](/Controls/CurlyUI.md)** | A UI Effect that will make your UI Curly |  UI / Effects / Extensions / CUI***  ||| Titinious|
 
@@ -119,7 +124,6 @@ The following components have been deprecated for Unity 6 (Version 3.0.0) and ar
 |**[LetterSpacing](/Controls/LetterSpacing.md)**|Text component deprecated by Unity|Use TextMeshPro character spacing|Deeperbeige|
 |**[MonoSpacing](/Controls/MonoSpacing.md)**|Text component deprecated by Unity|Use TextMeshPro character spacing|Herbst|
 |**[NicerOutline](/Controls/NicerOutline.md)**|Text component deprecated by Unity|Use TextMeshPro outline|Melang|
-|**[BestFitOutline](/Controls/BestFitOutline.md)**|Text component deprecated by Unity|Use TextMeshPro outline|Melang|
 |**[VRInputModule](/Controls/VRInputModule.md)**|Obsolete VR input system|Use Unity's XR Interaction Toolkit|N/A|
 |**[VRCursor](/Controls/VRCursor.md)**|Obsolete VR input system|Use Unity's XR Interaction Toolkit|N/A|
 |**[AimerInputModule](/Controls/AimerInputModule.md)**|Obsolete input system|Use Unity's new Input System|N/A|
@@ -135,6 +139,7 @@ The following components have been deprecated for Unity 6 (Version 3.0.0) and ar
 
 |Component | Description | Component Command | Notes | Donate | Credits
 |-|-|-|-|-|-|
+|**[InputFieldEnterSubmit](/Controls/InputFieldEnterSubmit.md)** | Automatically submits InputField when Enter key is pressed | UI / Extensions / Input Field Submit ||| Vicente Russo|
 |**[ReturnKeyTrigger](/Controls/ReturnKeyTrigger.md)** | Enables you to bind the return key within an InputField control to a button | UI / Extensions / ReturnKey Trigger ||| Melang|
 |**[TabNavigation](/Controls/TabNavigation.md)**  | An example Tab navigation script, updated to add manual navigation | UI / Extensions / Tab Navigation ||| Melang, omatase|
 |**[uGUITools](/Controls/uGUITools.md)** | | Menu / uGUI ||| Senshi|

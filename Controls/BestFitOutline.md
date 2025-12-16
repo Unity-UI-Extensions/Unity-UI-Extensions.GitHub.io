@@ -42,7 +42,7 @@ Provides a simple way to add an outline to your UI component, be it an image or 
 The properties of the Best Fit Outline component are as follows:
 
 Property | Description
-|-|-|
+-|-
 *Status*|Deprecated and removed in Unity 6; no configurable properties remain
 *Recommended Alternative*|Use TextMeshPro materials/shaders for outline effects in modern projects
 

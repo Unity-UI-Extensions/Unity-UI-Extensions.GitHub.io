@@ -39,7 +39,7 @@ A tooltip implementation which uses a manager to control the tooltip appearance,
 The properties of the Bound Tooltip Item control are as follows:
 
 Property | Description
-|-|-|
+-|-
 *Tooltip Text*|The TextMeshPro text component that will display the tooltip content
 *Tool Tip Offset*|Vector3 offset from the trigger position where the tooltip will appear
 
@@ -48,7 +48,7 @@ Property | Description
 The properties of the Bound Tooltip Trigger control are as follows:
 
 Property | Description
-|-|-|
+-|-
 *Text*|The tooltip text to display when this trigger is activated
 *Use Mouse Position*|When enabled, tooltip appears at mouse position instead of trigger position
 *Offset*|Vector3 offset from the trigger position (used when Use Mouse Position is false)

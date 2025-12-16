@@ -61,7 +61,7 @@ Manages saving/loading presets to a JSON file or player prefs.
 Example found on the *Picker 2.0* prefab.
 
 Property | Description
-|-|-|
+-|-
 *Sampler* (button) |The cursor's button component.
 *Sampler Outline* (outline) |The outline of the cursor to make it easier to see what's being sampled.
 ***On Color Selected*** (event) |Callback for when the cursor is clicked on a color. This should connect to the ColorPickerControl.CurrentColor at minimum.
@@ -72,7 +72,7 @@ Example found on the *Picker 2.0* prefab.
 The properties of the Box Slider control are as follows:
 
 Property | Description
-|-|-|
+-|-
 ***On Value Changed*** (event) |The Event fired when the color within the picker is changed
 *HSV sliders on* (bool) |Shows / hides the HSV sliders in te UI prefab.
 *HSV Sliders* (GameObject array) |Contains references to the components that are part of the HSV sliders display.
@@ -85,7 +85,7 @@ Property | Description
 Example found on the *Picker 2.0 / Presets* prefab.
 
 Property | Description
-|-|-|
+-|-
 *Picker* (ColorPickerControl)| Reference to the color picker control.
 *Preset Prefab* (GameObject)| UI component for displaying the preset(s).
 *Max Presets* (int)| The max number of presets allowed (to control the UI size).

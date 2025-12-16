@@ -55,7 +55,7 @@ The range of Card UI controls give you several options for creating card like UI
 The Card UI suite includes several prefabs and behaviours. Key shared inspector settings include:
 
 Property | Description
-|-|-|
+-|-
 *Card Prefab(s)*|Prefabs for the chosen card style (2D popup, 2D stacked, 3D superellipse, etc.).
 *Animation Duration*|Time (seconds) for expand/collapse or popup animations.
 *Spacing / Stack Offset*|Gap or depth offset between cards in a stack.

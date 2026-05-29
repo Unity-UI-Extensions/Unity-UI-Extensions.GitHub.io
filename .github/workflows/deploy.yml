@@ -19,19 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
-
-      # ── Python / PDF generation ──────────────────────────────────────────────
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-
-      - name: Install Python dependencies
-        run: pip install fpdf2 markdown
-
-      - name: Generate documentation PDFs
-        run: python generate_pdfs.py
+        uses: actions/checkout@v6
 
       # ── Ruby / Jekyll build ──────────────────────────────────────────────────
       - name: Set up Ruby
@@ -47,7 +35,7 @@ jobs:
 
       # ── Upload to GitHub Pages ───────────────────────────────────────────────
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: _site
 
@@ -60,4 +48,20 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
+
+  # publish:
+  #   needs: build
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     # ── Python / PDF generation ──────────────────────────────────────────────
+  #     - name: Set up Python
+  #       uses: actions/setup-python@v5
+  #       with:
+  #         python-version: '3.12'
+
+  #     - name: Install Python dependencies
+  #       run: pip install fpdf2 markdown
+
+  #     - name: Generate documentation PDFs
+  #       run: python generate_pdfs.py

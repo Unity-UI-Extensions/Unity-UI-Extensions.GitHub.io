@@ -1,3 +1,12 @@
+---
+layout: control-ugui
+title: "Reset Selectable Highlight"
+description: "Clears stuck hover/selected highlight states on Selectable components."
+category: "Utilities"
+permalink: /ugui/controls/reset-selectable-highlight/
+has_video: false
+tags: [utilities, selectable, highlight, reset, state]
+---
 # ResetSelectableHighlight
 
 Handy Selectable script to un-highlight a selectable component in Unity (e.g. a Button) when the user moves away from it, EVEN IF the user has holding a button on it.
@@ -33,7 +42,7 @@ An addon component that forces a Selectable Control (Button, InputField, etc) to
 
 > By default in the Unity UI, if a pointer is held down when the cursor leaves the control, it remains in a highlighted state.
 
-![Demo comparing the ResetSelectable against the default Unity UI Behaviour](Images/ResetSelectableHighlight-demo.gif)
+![Demo comparing the ResetSelectable against the default Unity UI Behaviour](/Controls/Images/ResetSelectableHighlight-demo.gif)
 
 Button on the left has the ResetSelectableHighlight component, while the button on the right is a default Unity UI Button, Mouse is held down when moving off the control.
 

@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pill Selector — Unity UI Extensions</title>
+<meta name="description" content="Row of pill-shaped radio buttons for exclusive single-option selection.">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Pill Selector | Unity UI Extensions</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Pill Selector" />
+<meta name="author" content="Unity UI Extensions Community" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Row of pill-shaped radio buttons for exclusive single-option selection." />
+<meta property="og:description" content="Row of pill-shaped radio buttons for exclusive single-option selection." />
+<link rel="canonical" href="https://unity-ui-extensions.github.io/uitoolkit/controls/pill-selector/" />
+<meta property="og:url" content="https://unity-ui-extensions.github.io/uitoolkit/controls/pill-selector/" />
+<meta property="og:site_name" content="Unity UI Extensions" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Pill Selector" />
+<meta name="twitter:site" content="@UnityUIExtensions" />
+<meta name="twitter:creator" content="@Unity UI Extensions Community" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Unity UI Extensions Community"},"description":"Row of pill-shaped radio buttons for exclusive single-option selection.","headline":"Pill Selector","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://unity-ui-extensions.github.io/assets/img/logo.svg"},"name":"Unity UI Extensions Community"},"url":"https://unity-ui-extensions.github.io/uitoolkit/controls/pill-selector/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/assets/css/neon.css">
+<link rel="icon" type="image/png" href="/assets/img/logo.png">
+
+</head>
+<body>
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a class="nav-brand" href="/">
+      <img src="/assets/img/logo.svg" alt="Unity UI Extensions" width="32" height="32">
+      <span>UI Extensions</span>
+    </a>
+
+    <button class="nav-mobile-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-links" role="list">
+      <li><a href="/" >Home</a></li>
+      <li>
+        <a href="/ugui/" >
+          <span class="badge-u">uGUI</span>
+        </a>
+      </li>
+      <li>
+        <a href="/uitoolkit/" class="active">
+          <span class="badge-t">UI Toolkit</span>
+        </a>
+      </li>
+      <li><a href="/changelog/" >Changelog</a></li>
+      <li>
+        <a href="https://github.com/Unity-UI-Extensions/com.unity.uiextensions" target="_blank" rel="noopener" class="nav-github">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+  <main id="main-content">
+    <div class="control-page-wrap uitk-context">
+  <aside class="sidebar uitk-context" role="complementary" aria-label="UIToolkit controls navigation">
+  <button class="sidebar-toggle" aria-label="Toggle controls list">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    Controls
+  </button>
+
+  <nav class="sidebar-nav" aria-label="UIToolkit controls list">
+    <div class="sidebar-section">
+      <h3 class="sidebar-heading"><a href="/uitoolkit/controls/">← All UIToolkit Controls</a></h3>
+    </div>
+
+    
+    
+
+    
+      
+      
+        <div class="sidebar-section">
+          <h4 class="sidebar-cat">Navigation</h4>
+          <ul class="sidebar-list" role="list">
+            
+              <li>
+                <a href="/uitoolkit/controls/scroll-snap/"
+                   class="sidebar-link">
+                  Scroll Snap
+                </a>
+              </li>
+            
+              <li>
+                <a href="/uitoolkit/controls/collapsible-section/"
+                   class="sidebar-link">
+                  Collapsible Section
+                </a>
+              </li>
+            
+              <li>
+                <a href="/uitoolkit/controls/quadrant-stepper/"
+                   class="sidebar-link">
+                  Quadrant Stepper
+                </a>
+              </li>
+            
+          </ul>
+        </div>
+      
+    
+      
+      
+        <div class="sidebar-section">
+          <h4 class="sidebar-cat">Forms</h4>
+          <ul class="sidebar-list" role="list">
+            
+              <li>
+                <a href="/uitoolkit/controls/pill-input-field/"
+                   class="sidebar-link">
+                  Pill Input Field
+                </a>
+              </li>
+            
+              <li>
+                <a href="/uitoolkit/controls/rounded-input-field/"
+                   class="sidebar-link">
+                  Rounded Input Field
+                </a>
+              </li>
+            
+              <li>
+                <a href="/uitoolkit/controls/pill-selector/"
+                   class="sidebar-link active">
+                  Pill Selector
+                </a>
+              </li>
+            
+              <li>
+                <a href="/uitoolkit/controls/toggle-button/"
+                   class="sidebar-link">
+                  Toggle Button
+                </a>
+              </li>
+            
+              <li>
+                <a href="/uitoolkit/controls/color-toggle-button/"
+                   class="sidebar-link">
+                  Color Toggle Button
+                </a>
+              </li>
+            
+              <li>
+                <a href="/uitoolkit/controls/color-toggle-group/"
+                   class="sidebar-link">
+                  Color Toggle Group
+                </a>
+              </li>
+            
+          </ul>
+        </div>
+      
+    
+      
+      
+    
+      
+      
+        <div class="sidebar-section">
+          <h4 class="sidebar-cat">Feedback</h4>
+          <ul class="sidebar-list" role="list">
+            
+              <li>
+                <a href="/uitoolkit/controls/step-progress-bar/"
+                   class="sidebar-link">
+                  Step Progress Bar
+                </a>
+              </li>
+            
+              <li>
+                <a href="/uitoolkit/controls/page-dot-indicator/"
+                   class="sidebar-link">
+                  Page Dot Indicator
+                </a>
+              </li>
+            
+              <li>
+                <a href="/uitoolkit/controls/loading-icon/"
+                   class="sidebar-link">
+                  Loading Icon
+                </a>
+              </li>
+            
+              <li>
+                <a href="/uitoolkit/controls/toast-swipe-dismiss/"
+                   class="sidebar-link">
+                  Toast Swipe Dismiss Manipulator
+                </a>
+              </li>
+            
+              <li>
+                <a href="/uitoolkit/controls/coming-soon-message/"
+                   class="sidebar-link">
+                  Coming Soon Message
+                </a>
+              </li>
+            
+          </ul>
+        </div>
+      
+    
+      
+      
+        <div class="sidebar-section">
+          <h4 class="sidebar-cat">Primitives</h4>
+          <ul class="sidebar-list" role="list">
+            
+              <li>
+                <a href="/uitoolkit/controls/pill-button/"
+                   class="sidebar-link">
+                  Pill Button
+                </a>
+              </li>
+            
+              <li>
+                <a href="/uitoolkit/controls/circular-image-button/"
+                   class="sidebar-link">
+                  Circular Image Button
+                </a>
+              </li>
+            
+              <li>
+                <a href="/uitoolkit/controls/icon-label-button/"
+                   class="sidebar-link">
+                  Icon Label Button
+                </a>
+              </li>
+            
+          </ul>
+        </div>
+      
+    
+      
+      
+        <div class="sidebar-section">
+          <h4 class="sidebar-cat">Utilities</h4>
+          <ul class="sidebar-list" role="list">
+            
+              <li>
+                <a href="/uitoolkit/controls/grayscale-image/"
+                   class="sidebar-link">
+                  Grayscale Image
+                </a>
+              </li>
+            
+          </ul>
+        </div>
+      
+    
+
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </nav>
+</aside>
+
+
+  <article class="control-page-content prose uitk-context" aria-label="Pill Selector">
+    <header class="control-page-hero">
+      <div class="control-page-hero-inner">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="/">Home</a>
+          <span aria-hidden="true">›</span>
+          <a href="/uitoolkit/">UI Toolkit</a>
+          <span aria-hidden="true">›</span>
+          <a href="/uitoolkit/controls/">Controls</a>
+          <span aria-hidden="true">›</span>
+          <span aria-current="page">Pill Selector</span>
+        </nav>
+
+        <h1>Pill Selector</h1>
+
+        
+          <p class="control-page-lead">Row of pill-shaped radio buttons for exclusive single-option selection.</p>
+        
+
+        <div class="control-page-meta">
+          
+            <span class="badge-t">Forms</span>
+          
+          
+          
+            <span class="tag">forms</span>
+          
+            <span class="tag">selector</span>
+          
+            <span class="tag">pill</span>
+          
+            <span class="tag">radio</span>
+          
+            <span class="tag">single-select</span>
+          
+        </div>
+      </div>
+    </header>
+
+    <div class="control-page-body">
+      <h2 id="summary">Summary</h2>
+
+<p><code class="language-plaintext highlighter-rouge">PillSelector</code> is a read-only pill-shaped field with a chevron icon that fires a <code class="language-plaintext highlighter-rouge">Clicked</code> event when tapped. It does not manage a picker internally; the consumer is responsible for displaying the selection UI and writing the chosen value back to the <code class="language-plaintext highlighter-rouge">Value</code> property.</p>
+
+<p>Typical use cases:</p>
+
+<ul>
+  <li>Inline date or time picker trigger row</li>
+  <li>Option selector row that opens a modal or bottom sheet</li>
+  <li>Any read-only labeled field that indicates a “tap to change” interaction</li>
+</ul>
+
+<h2 id="properties">Properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Options</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Label</code></td>
+      <td>Gets or sets the descriptive label shown above the selector value.</td>
+      <td><code class="language-plaintext highlighter-rouge">string</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Value</code></td>
+      <td>Gets or sets the currently displayed selected value text.</td>
+      <td><code class="language-plaintext highlighter-rouge">string</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="uss-classes">USS Classes</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Class</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">pillSelector</code></td>
+      <td>Root element.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">pillSelector__label</code></td>
+      <td>Label element shown above the value.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">pillSelector__container</code></td>
+      <td>Pill-shaped row containing the value label and chevron.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">pillSelector__clickableLabel</code></td>
+      <td>The text element inside the container that displays <code class="language-plaintext highlighter-rouge">Value</code>.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">pillSelector__icon</code></td>
+      <td>Chevron icon element. Fixed at 16 × 16 px.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="events">Events</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Arguments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Clicked</code></td>
+      <td>Fired when the user taps the selector row. The consumer should open a picker and update <code class="language-plaintext highlighter-rouge">Value</code> with the result.</td>
+      <td>none</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="public-methods">Public Methods</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Signature</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">SetFontSize(float size)</code></td>
+      <td>Sets the font size for the value label.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="using-the-control">Using the Control</h2>
+
+<h3 id="date-picker-trigger">Date Picker Trigger</h3>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">UnityEngine</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">UnityEngine.UIElements</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">UnityUIToolkit.Extensions</span><span class="p">;</span>
+
+<span class="k">public</span> <span class="k">class</span> <span class="nc">EventFormController</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
+<span class="p">{</span>
+    <span class="p">[</span><span class="n">SerializeField</span><span class="p">]</span> <span class="k">private</span> <span class="n">UIDocument</span> <span class="n">_document</span><span class="p">;</span>
+
+    <span class="k">private</span> <span class="n">PillSelector</span> <span class="n">_dateSelector</span><span class="p">;</span>
+    <span class="k">private</span> <span class="n">DateTime</span> <span class="n">_selectedDate</span> <span class="p">=</span> <span class="n">DateTime</span><span class="p">.</span><span class="n">Today</span><span class="p">;</span>
+
+    <span class="k">private</span> <span class="k">void</span> <span class="nf">OnEnable</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="kt">var</span> <span class="n">root</span> <span class="p">=</span> <span class="n">_document</span><span class="p">.</span><span class="n">rootVisualElement</span><span class="p">;</span>
+
+        <span class="n">_dateSelector</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">PillSelector</span><span class="p">();</span>
+        <span class="n">_dateSelector</span><span class="p">.</span><span class="n">Label</span> <span class="p">=</span> <span class="s">"Event Date"</span><span class="p">;</span>
+        <span class="n">_dateSelector</span><span class="p">.</span><span class="n">Value</span> <span class="p">=</span> <span class="n">_selectedDate</span><span class="p">.</span><span class="nf">ToString</span><span class="p">(</span><span class="s">"MMMM d, yyyy"</span><span class="p">);</span>
+
+        <span class="n">_dateSelector</span><span class="p">.</span><span class="n">Clicked</span> <span class="p">+=</span> <span class="n">OnDateSelectorTapped</span><span class="p">;</span>
+
+        <span class="n">root</span><span class="p">.</span><span class="n">Q</span><span class="p">&lt;</span><span class="n">VisualElement</span><span class="p">&gt;(</span><span class="s">"eventForm"</span><span class="p">).</span><span class="nf">Add</span><span class="p">(</span><span class="n">_dateSelector</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="k">private</span> <span class="k">void</span> <span class="nf">OnDateSelectorTapped</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="c1">// Open your date picker UI here.</span>
+        <span class="c1">// When the user confirms a date, call ApplyDate().</span>
+        <span class="n">Debug</span><span class="p">.</span><span class="nf">Log</span><span class="p">(</span><span class="s">"Open date picker"</span><span class="p">);</span>
+        <span class="nf">ApplyDate</span><span class="p">(</span><span class="n">DateTime</span><span class="p">.</span><span class="n">Today</span><span class="p">.</span><span class="nf">AddDays</span><span class="p">(</span><span class="m">7</span><span class="p">));</span> <span class="c1">// example result</span>
+    <span class="p">}</span>
+
+    <span class="k">private</span> <span class="k">void</span> <span class="nf">ApplyDate</span><span class="p">(</span><span class="n">DateTime</span> <span class="n">date</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">_selectedDate</span> <span class="p">=</span> <span class="n">date</span><span class="p">;</span>
+        <span class="n">_dateSelector</span><span class="p">.</span><span class="n">Value</span> <span class="p">=</span> <span class="n">date</span><span class="p">.</span><span class="nf">ToString</span><span class="p">(</span><span class="s">"MMMM d, yyyy"</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="country-selector-row">Country Selector Row</h3>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">_countrySelector</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">PillSelector</span><span class="p">();</span>
+<span class="n">_countrySelector</span><span class="p">.</span><span class="n">Label</span> <span class="p">=</span> <span class="s">"Country"</span><span class="p">;</span>
+<span class="n">_countrySelector</span><span class="p">.</span><span class="n">Value</span> <span class="p">=</span> <span class="s">"Select country"</span><span class="p">;</span>
+<span class="n">_countrySelector</span><span class="p">.</span><span class="nf">SetFontSize</span><span class="p">(</span><span class="m">15f</span><span class="p">);</span>
+
+<span class="n">_countrySelector</span><span class="p">.</span><span class="n">Clicked</span> <span class="p">+=</span> <span class="p">()</span> <span class="p">=&gt;</span>
+<span class="p">{</span>
+    <span class="c1">// Show modal country list</span>
+    <span class="c1">// On confirmation: _countrySelector.Value = chosenCountry;</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+    </div>
+
+    <footer class="control-page-footer">
+      
+      
+      
+      
+
+      
+        
+        
+        
+          
+          <a href="/uitoolkit/controls/pill-input-field/" class="ctrl-nav-prev">← Pill Input Field</a>
+        
+        
+          
+          <a href="/uitoolkit/controls/quadrant-stepper/" class="ctrl-nav-next">Quadrant Stepper →</a>
+        
+      
+    </footer>
+  </article>
+</div>
+
+  </main>
+  <footer class="footer" role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="/" class="footer-logo">
+        <img src="/assets/img/logo.svg" alt="Unity UI Extensions" width="28" height="28">
+        Unity UI Extensions
+      </a>
+      <p>Community-maintained UI controls for Unity's uGUI and UI Toolkit frameworks. Free forever, BSD 3-Clause licensed.</p>
+    </div>
+
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <div class="footer-col">
+        <h4>uGUI Package</h4>
+        <ul>
+          <li><a href="/ugui/">Overview</a></li>
+          <li><a href="/ugui/controls/">All Controls</a></li>
+          <li><a href="/ugui/install/">Installation</a></li>
+          <li><a href="/changelog/">Changelog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>UI Toolkit Package</h4>
+        <ul>
+          <li><a href="/uitoolkit/">Overview</a></li>
+          <li><a href="/uitoolkit/controls/">All Controls</a></li>
+          <li><a href="/uitoolkit/install/">Installation</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Community</h4>
+        <ul>
+          <li><a href="https://github.com/Unity-UI-Extensions/com.unity.uiextensions" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://www.openupm.com/packages/com.unity.uiextensions/" target="_blank" rel="noopener">OpenUPM</a></li>
+          <li><a href="https://discord.gg/SBuyXfh" target="_blank" rel="noopener">Discord</a></li>
+          <li><a href="https://github.com/Unity-UI-Extensions/com.unity.uiextensions/issues" target="_blank" rel="noopener">Report a Bug</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div class="footer-bottom">
+    <span>© 2026 Unity UI Extensions Community</span>
+    <span>BSD 3-Clause &amp; MIT Licensed</span>
+    <span>Not affiliated with Unity Technologies</span>
+  </div>
+</footer>
+
+  <script src="/assets/js/site.js"></script>
+</body>
+</html>

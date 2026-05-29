@@ -1,8 +1,17 @@
+---
+layout: control-ugui
+title: "Selectable Scaler"
+description: "Scales a Selectable component up/down on hover and press events."
+category: "Utilities"
+permalink: /ugui/controls/selectable-scaler/
+has_video: true
+tags: [utilities, selectable, scale, hover, press, animation]
+---
 # Selectable Scalar
 
 A simple tween scaler to affect Rect Transform scale on other controls.
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ---------
 
@@ -30,7 +39,7 @@ A simple tween scaler to affect Rect Transform scale on other controls.
 
 A simple Tween enhancement that scales another RectTransform according to a preset curve.
 
-![](Images/SelectableScalarInspector.jpg)
+![](/Controls/Images/SelectableScalarInspector.jpg)
 
 ---------
 
@@ -64,7 +73,7 @@ Like with other Layout controls, simply add this control to any control that has
 
 *Click to play*
 
-[![Selectable Scalar Demo](Images/SelectableScalarDemo.jpg)](Images/SelectableScalarDemo.mp4 "Selectable Scalar Demo")
+[![Selectable Scalar Demo](/Controls/Images/SelectableScalarDemo.jpg)](/Controls/Images/SelectableScalarDemo.mp4 "Selectable Scalar Demo")
 
 ---------
 

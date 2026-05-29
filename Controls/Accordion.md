@@ -1,8 +1,17 @@
+---
+layout: control-ugui
+title: "Accordion"
+description: "An Accordion style control with animated expandable/collapsible sections."
+category: "Layout"
+permalink: /ugui/controls/accordion/
+has_video: false
+tags: [layout, accordion, collapse, expand, panel]
+---
 # Accordion
 
 An Accordion style control with animated segments.
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ---------
 
@@ -70,21 +79,21 @@ To get started with your first accordion, simply follow these steps:
 - Add a **Vertical Layout Group** to your new **Accordion Element** and enabling **Control Child Size** width and height to **True**.  
 Ensure you only set **Child Force Expand** Width to **True** (*Expand Height should be False*):
 
-![Accordion Element setup](Images/Accordion-Layout.png)
+![Accordion Element setup](/Controls/Images/Accordion-Layout.png)
 
 - Design your Accordion element with a **Header** and **Content**, for example, two child **Text** objects as shown below:
 
-![Accordion Element Header](Images/Accordion-Element.png)
+![Accordion Element Header](/Controls/Images/Accordion-Element.png)
 
 - Add a **Layout Element** to your **Header** and set the **Min Height** to the same as the size used in the **Accordion Element**:
 
-![Accordion Header Content](Images/Accordion-Header.png)
+![Accordion Header Content](/Controls/Images/Accordion-Header.png)
 
 Feel free to duplicate and update your Accordion Elements to fill up your group.
 
 The Group can be set to Expand Instantly or use a Tween function to animate the entrance of each Accordion Element child text by setting the **Transition** on the group as shown below.
 
-![Accordion Group Transition](Images/Accordion-Settings.png)
+![Accordion Group Transition](/Controls/Images/Accordion-Settings.png)
 
 > Currently the control is only designed for Vertical Transition of vertically stacked items.  For additional layouts, please log an issue on the site with your requirements.
 

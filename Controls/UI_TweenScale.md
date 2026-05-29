@@ -1,8 +1,17 @@
+---
+layout: control-ugui
+title: "UI TweenScale"
+description: "Bounce/pulse scale tween on any UI element triggered by pointer events."
+category: "Effects"
+permalink: /ugui/controls/ui-tween-scale/
+has_video: false
+tags: [effects, tween, scale, bounce, animation]
+---
 # UI_TweenScale
 
 Dynamic scaling of text or image (including button) based on curves
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ---------
 
@@ -30,7 +39,7 @@ Dynamic scaling of text or image (including button) based on curves
 
 A simplified control for adding programmatic scaling animation to any UI component, including buttons.
 
-![](Images/UITweenScaleInspector.jpg)
+![](/Controls/Images/UITweenScaleInspector.jpg)
 
 > Notes
 >
@@ -74,7 +83,7 @@ Simply add the component to an existing RectTransform and configure the desired 
 
 ## Video Demo
 
-![](Images/UITweenScaleDemo.gif)
+![](/Controls/Images/UITweenScaleDemo.gif)
 
 ---------
 

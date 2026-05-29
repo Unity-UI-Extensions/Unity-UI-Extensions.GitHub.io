@@ -1,8 +1,17 @@
+---
+layout: control-ugui
+title: "Scroll Rect Ex"
+description: "Enhanced ScrollRect with momentum, deceleration tuning, and edge effects."
+category: "Layout"
+permalink: /ugui/controls/scroll-rect-ex/
+has_video: false
+tags: [layout, scroll, scrollrect, momentum, enhanced]
+---
 # Scroll Rect Ex
 
 Improved Scroll Rect control, enables support for Nested Scroll Rects
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ---------
 
@@ -31,7 +40,7 @@ Improved Scroll Rect control, enables support for Nested Scroll Rects
 The Scroll Rect Ex control is a replacement version of the standard Scroll Rect.
 It's purpose is to solve the common issue when Scroll Rect's are nested which can prevent drag events from properly propagating from a child to a parent Scroll Rect.
 
-![](Images/ScrollRectExInspector.jpg)
+![](/Controls/Images/ScrollRectExInspector.jpg)
 
 ---------
 
@@ -61,7 +70,7 @@ Simply replace the Scroll Rect script on a GameObject with the Scroll Rect Ex ve
 
 *Click to play*
 
-[![Scroll Rect Ex Demo](Images/ScrollRectExDemo.jpg)](https://youtu.be/1ZNIrdlV9QY?t=8m15s "Scroll Rect Ex Demo")
+[![Scroll Rect Ex Demo](/Controls/Images/ScrollRectExDemo.jpg)](https://youtu.be/1ZNIrdlV9QY?t=8m15s "Scroll Rect Ex Demo")
 
 ---------
 

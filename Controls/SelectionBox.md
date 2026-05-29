@@ -1,8 +1,17 @@
+---
+layout: control-ugui
+title: "Selection Box"
+description: "Drag to draw a rubber-band selection rectangle over multiple UI elements."
+category: "Input"
+permalink: /ugui/controls/selection-box/
+has_video: false
+tags: [input, selection, drag, marquee, multi-select]
+---
 # SelectionBox
 
 An RTS style selection box control
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ---------
 
@@ -30,7 +39,7 @@ An RTS style selection box control
 
 A selection box control to enable selecting 2D and 3D content within a Canvas / selectable area
 
-![Selection Box Inspector](Images/SelectionBoxInspector.jpg)
+![Selection Box Inspector](/Controls/Images/SelectionBoxInspector.jpg)
 
 ---------
 
@@ -70,7 +79,7 @@ Additionally, you can customize the graphic used for the "Selection Box" that is
 
 ## Video Demo
 
-![Selection Box Demo](Images/SelectionBoxDemo.gif)
+![Selection Box Demo](/Controls/Images/SelectionBoxDemo.gif)
 
 ---------
 

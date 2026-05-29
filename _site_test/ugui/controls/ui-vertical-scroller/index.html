@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UI Vertical Scroller — Unity UI Extensions</title>
+<meta name="description" content="Vertical scroller with centre-focus zooming — elements scale by distance.">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>UI Vertical Scroller | Unity UI Extensions</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="UI Vertical Scroller" />
+<meta name="author" content="Unity UI Extensions Community" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Vertical scroller with centre-focus zooming — elements scale by distance." />
+<meta property="og:description" content="Vertical scroller with centre-focus zooming — elements scale by distance." />
+<link rel="canonical" href="https://unity-ui-extensions.github.io/ugui/controls/ui-vertical-scroller/" />
+<meta property="og:url" content="https://unity-ui-extensions.github.io/ugui/controls/ui-vertical-scroller/" />
+<meta property="og:site_name" content="Unity UI Extensions" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="UI Vertical Scroller" />
+<meta name="twitter:site" content="@UnityUIExtensions" />
+<meta name="twitter:creator" content="@Unity UI Extensions Community" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Unity UI Extensions Community"},"description":"Vertical scroller with centre-focus zooming — elements scale by distance.","headline":"UI Vertical Scroller","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://unity-ui-extensions.github.io/assets/img/logo.svg"},"name":"Unity UI Extensions Community"},"url":"https://unity-ui-extensions.github.io/ugui/controls/ui-vertical-scroller/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/assets/css/neon.css">
+<link rel="icon" type="image/png" href="/assets/img/logo.png">
+
+</head>
+<body>
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a class="nav-brand" href="/">
+      <img src="/assets/img/logo.svg" alt="Unity UI Extensions" width="32" height="32">
+      <span>UI Extensions</span>
+    </a>
+
+    <button class="nav-mobile-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-links" role="list">
+      <li><a href="/" >Home</a></li>
+      <li>
+        <a href="/ugui/" class="active">
+          <span class="badge-u">uGUI</span>
+        </a>
+      </li>
+      <li>
+        <a href="/uitoolkit/" >
+          <span class="badge-t">UI Toolkit</span>
+        </a>
+      </li>
+      <li><a href="/changelog/" >Changelog</a></li>
+      <li>
+        <a href="https://github.com/Unity-UI-Extensions/com.unity.uiextensions" target="_blank" rel="noopener" class="nav-github">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+  <main id="main-content">
+    <div class="control-page-wrap">
+  <aside class="sidebar" role="complementary" aria-label="Controls navigation">
+  <button class="sidebar-toggle" aria-label="Toggle controls list">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    Controls
+  </button>
+
+  <nav class="sidebar-nav" aria-label="uGUI controls list">
+    <div class="sidebar-section">
+      <h3 class="sidebar-heading"><a href="/ugui/controls/">← All uGUI Controls</a></h3>
+    </div>
+
+    
+    
+
+    
+      
+      
+        <div class="sidebar-section">
+          <h4 class="sidebar-cat">Layout</h4>
+          <ul class="sidebar-list" role="list">
+            
+              <li>
+                <a href="/ugui/controls/accordion/"
+                   class="sidebar-link">
+                  Accordion
+                </a>
+              </li>
+            
+              <li>
+                <a href="/ugui/controls/card-ui/"
+                   class="sidebar-link">
+                  Card UI
+                </a>
+              </li>
+            
+              <li>
+                <a href="/ugui/controls/content-scroll-snap-horizontal/"
+                   class="sidebar-link">
+                  Content Scroll Snap Horizontal
+                </a>
+              </li>
+            
+              <li>
+                <a href="/ugui/controls/fancy-scroll-view/"
+                   class="sidebar-link">
+                  Fancy Scroll View
+                </a>
+              </li>
+            
+              <li>
+                <a href="/ugui/controls/flow-layout-group/"
+                   class="sidebar-link">
+                  Flow Layout Group
+                </a>
+              </li>
+            
+              <li>
+                <a href="/ugui/controls/horizontal-scroll-snap/"
+                   class="sidebar-link">
+                  Horizontal Scroll Snap
+                </a>
+              </li>
+            
+              <li>
+                <a href="/ugui/controls/reorderable-list/"
+                   class="sidebar-link">
+                  Reorderable List
+                </a>
+              </li>
+            
+              <li>
+                <a href="/ugui/controls/scroll-rect-ex/"
+                   class="sidebar-link">
+                  Scroll Rect Ex
+                </a>
+              </li>
+            
+              <li>
+                <a href="/ugui/controls/scroll-rect-linker/"
+                   class="sidebar-link">
+                  Scroll Rect Linker
+                </a>
+              </li>
+            
+              <li>
+                <a href="/ugui/controls/scroll-rect-tweener/"
+                   class="sidebar-link">
+                  Scroll Rect Tweener
+                </a>
+              </li>
+            
+              <li>
+                <a href="/ugui/controls/scroll-snap/"
+                   class="sidebar-link">
+                  Scroll Snap
+                </a>
+              </li>
+            
+              <li>
+                <a href="/ugui/controls/table-layout-group/"
+                   class="sidebar-link">
+                  Table Layout Group
+                </a>
+              </li>
+            
+              <li>
+                <a href="/ugui/controls/tile-size-fitter/"
+                   class="sidebar-link">
+                  Tile Size Fitter
+                </a>
+              </li>
+            
+              <li>
+                <a href="/ugui/controls/ui-vertical-scroller/"
+                   class="sidebar-link active">
+                  UI Vertical Scroller
+                </a>
+              </li>
+            
+              <li>
+                <a href="/ugui/controls/vertical-scroll-snap/"
+                   class="sidebar-link">
+                  Vertical Scroll Snap
+                </a>
+              </li>
+            
+          </ul>
+        </div>
+      
+    
+      
+      
+        <div class="sidebar-section">
+          <h4 class="sidebar-cat">Input</h4>
+          <ul class="sidebar-list" role="list">
+            
+              <li>
+                <a href="/ugui/controls/autocomplete-combobox/"
+                   class="sidebar-link">
+                  AutoComplete ComboBox
+                </a>
+              </li>
+            
+              <li>
+                <a href="/ugui/controls/box-slider/"
+                   class="sidebar-link">
+                  Box Slider
+                </a>
+              </li>
+            
+              <li>
+                <a href="/ugui/controls/color-picker/"
+                   class="sidebar-link">
+                  Color Picker
+                </a>
+              </li>
+            
+              <li>
+                <a href="/ugui/controls/combobox/"
+                   class="sidebar-link">
+                  ComboBox
+                </a>
+              </li>
+            
+              <li>
+                <a href="/ugui/controls/cooldown-button/"
+                   class="sidebar-link">
+                  Cooldown Button
+                </a>
+              </li>
+            
+              <li>
+                <a href="/ugui/controls/dropdown-list/"
+                   class="sidebar-link">
+                  DropDown List
+                </a>
+              </li>
+            
+              <li>
+                <a href="/ugui/controls/radial-slider/"
+                   class="sidebar-link">
+                  Radial Slider
+                </a>
+              </li>
+            
+              <li>
+                <a href="/ugui/controls/range-slider/"
+                   class="sidebar-link">
+                  Range Slider
+                </a>
+              </li>
+            
+              <li>
+                <a href="/ugui/controls/segment/"
+                   class="sidebar-link">
+                  Segment
+                </a>
+              </li>
+            
+              <li>
+                <a href="/ugui/controls/segmented-control/"
+                   class="sidebar-link">
+                  Segmented Control
+                </a>
+              </li>
+            
+              <li>
+                <a href="/ugui/controls/selection-box/"
+                   class="sidebar-link">
+                  Selection Box
+                </a>
+              </li>
+            
+              <li>
+                <a href="/ugui/controls/stepper/"
+                   class="sidebar-link">
+                  Stepper
+                </a>
+              </li>
+            
+              <li>
+                <a href="/ugui/controls/ui-knob/"
+                   class="sidebar-link">
+                  UI Knob
+                </a>
+              </li>
+            
+          </ul>
+        </div>
+      
+    
+      
+      
+        <div class="sidebar-section">
+          <h4 class="sidebar-cat">Primitives</h4>
+          <ul class="sidebar-list" role="list">
+            
+              <li>
+                <a href="/ugui/controls/diamond-graph/"
+                   class="sidebar-link">
+                  Diamond Graph
+                </a>
+              </li>
+            
+              <li>
+                <a href="/ugui/controls/grid-raw-image/"
+                   class="sidebar-link">
+                  Grid Raw Image
+                </a>
+              </li>
+            
+              <li>
+                <a href="/ugui/controls/ui-circle-segmented/"
+                   class="sidebar-link">
+                  UI Circle Segmented
+                </a>
+              </li>
+            
+              <li>
+                <a href="/ugui/controls/ui-graphic-sector/"
+                   class="sidebar-link">
+                  UI Graphic Sector
+                </a>
+              </li>
+            
+              <li>
+                <a href="/ugui/controls/ui-grid-renderer/"
+                   class="sidebar-link">
+                  UI Grid Renderer
+                </a>
+              </li>
+            
+              <li>
+                <a href="/ugui/controls/ui-line-connector/"
+                   class="sidebar-link">
+                  UI Line Connector
+                </a>
+              </li>
+            
+              <li>
+                <a href="/ugui/controls/ui-line-renderer/"
+                   class="sidebar-link">
+                  UI Line Renderer
+                </a>
+              </li>
+            
+              <li>
+                <a href="/ugui/controls/ui-polygon/"
+                   class="sidebar-link">
+                  UI Polygon
+                </a>
+              </li>
+            
+          </ul>
+        </div>
+      
+    
+      
+      
+        <div class="sidebar-section">
+          <h4 class="sidebar-cat">Effects</h4>
+          <ul class="sidebar-list" role="list">
+            
+              <li>
+                <a href="/ugui/controls/curly-ui/"
+                   class="sidebar-link">
+                  CurlyUI
+                </a>
+              </li>
+            
+              <li>
+                <a href="/ugui/controls/gradient/"
+                   class="sidebar-link">
+                  Gradient
+                </a>
+              </li>
+            
+              <li>
+                <a href="/ugui/controls/gradient2/"
+                   class="sidebar-link">
+                  Gradient 2
+                </a>
+              </li>
+            
+              <li>
+                <a href="/ugui/controls/letter-spacing/"
+                   class="sidebar-link">
+                  Letter Spacing
+                </a>
+              </li>
+            
+              <li>
+                <a href="/ugui/controls/mono-spacing/"
+                   class="sidebar-link">
+                  Mono Spacing
+                </a>
+              </li>
+            
+              <li>
+                <a href="/ugui/controls/soft-alpha-mask/"
+                   class="sidebar-link">
+                  Soft Alpha Mask
+                </a>
+              </li>
+            
+              <li>
+                <a href="/ugui/controls/textpic/"
+                   class="sidebar-link">
+                  TextPic
+                </a>
+              </li>
+            
+              <li>
+                <a href="/ugui/controls/ui-flippable/"
+                   class="sidebar-link">
+                  UI Flippable
+                </a>
+              </li>
+            
+              <li>
+                <a href="/ugui/controls/ui-particle-system/"
+                   class="sidebar-link">
+                  UI Particle System
+                </a>
+              </li>
+            
+              <li>
+                <a href="/ugui/controls/ui-tween-scale/"
+                   class="sidebar-link">
+                  UI TweenScale
+                </a>
+              </li>
+            
+          </ul>
+        </div>
+      
+    
+      
+      
+        <div class="sidebar-section">
+          <h4 class="sidebar-cat">Utilities</h4>
+          <ul class="sidebar-list" role="list">
+            
+              <li>
+                <a href="/ugui/controls/non-drawing-graphic/"
+                   class="sidebar-link">
+                  Non-Drawing Graphic
+                </a>
+              </li>
+            
+              <li>
+                <a href="/ugui/controls/pagination-manager/"
+                   class="sidebar-link">
+                  Pagination Manager
+                </a>
+              </li>
+            
+              <li>
+                <a href="/ugui/controls/radial-layout/"
+                   class="sidebar-link">
+                  Radial Layout
+                </a>
+              </li>
+            
+              <li>
+                <a href="/ugui/controls/rect-transform-editor/"
+                   class="sidebar-link">
+                  Rect Transform Editor
+                </a>
+              </li>
+            
+              <li>
+                <a href="/ugui/controls/reset-selectable-highlight/"
+                   class="sidebar-link">
+                  Reset Selectable Highlight
+                </a>
+              </li>
+            
+              <li>
+                <a href="/ugui/controls/scroll-conflict-manager/"
+                   class="sidebar-link">
+                  Scroll Conflict Manager
+                </a>
+              </li>
+            
+              <li>
+                <a href="/ugui/controls/selectable-scaler/"
+                   class="sidebar-link">
+                  Selectable Scaler
+                </a>
+              </li>
+            
+              <li>
+                <a href="/ugui/controls/tooltip/"
+                   class="sidebar-link">
+                  ToolTip
+                </a>
+              </li>
+            
+              <li>
+                <a href="/ugui/controls/ui-highlightable/"
+                   class="sidebar-link">
+                  UI Highlightable
+                </a>
+              </li>
+            
+              <li>
+                <a href="/ugui/controls/ui-scroll-to-selection/"
+                   class="sidebar-link">
+                  UI Scroll To Selection
+                </a>
+              </li>
+            
+              <li>
+                <a href="/ugui/controls/ui-scroll-to-selection-xy/"
+                   class="sidebar-link">
+                  UI Scroll To Selection XY
+                </a>
+              </li>
+            
+              <li>
+                <a href="/ugui/controls/ui-selectable-extension/"
+                   class="sidebar-link">
+                  UI Selectable Extension
+                </a>
+              </li>
+            
+              <li>
+                <a href="/ugui/controls/ui-infinite-scroll/"
+                   class="sidebar-link">
+                  UI Infinite Scroll
+                </a>
+              </li>
+            
+              <li>
+                <a href="/ugui/controls/ui-magnetic-infinite-scroll/"
+                   class="sidebar-link">
+                  UI Magnetic Infinite Scroll
+                </a>
+              </li>
+            
+              <li>
+                <a href="/ugui/controls/ui-scroll-rect-occlusion/"
+                   class="sidebar-link">
+                  UI Scroll Rect Occlusion
+                </a>
+              </li>
+            
+          </ul>
+        </div>
+      
+    
+      
+      
+    
+
+    
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <div class="sidebar-section">
+          <h4 class="sidebar-cat">Navigation</h4>
+          <ul class="sidebar-list" role="list">
+            
+              <li>
+                <a href="/ugui/controls/menu-system/"
+                   class="sidebar-link">
+                  Menu System
+                </a>
+              </li>
+            
+              <li>
+                <a href="/ugui/controls/tab-navigation/"
+                   class="sidebar-link">
+                  Tab Navigation
+                </a>
+              </li>
+            
+              <li>
+                <a href="/ugui/controls/ugui-tools/"
+                   class="sidebar-link">
+                  uGUI Tools
+                </a>
+              </li>
+            
+          </ul>
+        </div>
+      
+    
+  </nav>
+</aside>
+
+
+  <article class="control-page-content prose" aria-label="UI Vertical Scroller">
+    <header class="control-page-hero">
+      <div class="control-page-hero-inner">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="/">Home</a>
+          <span aria-hidden="true">›</span>
+          <a href="/ugui/">uGUI</a>
+          <span aria-hidden="true">›</span>
+          <a href="/ugui/controls/">Controls</a>
+          <span aria-hidden="true">›</span>
+          <span aria-current="page">UI Vertical Scroller</span>
+        </nav>
+
+        <h1>UI Vertical Scroller</h1>
+
+        
+          <p class="control-page-lead">Vertical scroller with centre-focus zooming — elements scale by distance.</p>
+        
+
+        <div class="control-page-meta">
+          
+            <span class="badge-u">Layout</span>
+          
+          
+          
+            <span class="tag">layout</span>
+          
+            <span class="tag">scroll</span>
+          
+            <span class="tag">vertical</span>
+          
+            <span class="tag">zoom</span>
+          
+            <span class="tag">scale</span>
+          
+        </div>
+      </div>
+    </header>
+
+    <div class="control-page-body">
+      <h1 id="uiverticalscroller">UIVerticalScroller</h1>
+
+<p>A vertical scrolling layout with automatic element scaling based on distance from center, focus detection, and optional navigation buttons.</p>
+
+<hr />
+
+<h2 id="contents">Contents</h2>
+
+<blockquote>
+  <p>1 <a href="#overview">Overview</a></p>
+
+  <p>2 <a href="#properties">Properties</a></p>
+
+  <p>3 <a href="#methods">Methods</a></p>
+
+  <p>4 <a href="#usage">Usage</a></p>
+
+  <p>5 <a href="#video-demo">Video Demo</a></p>
+
+  <p>6 <a href="#see-also">See also</a></p>
+
+  <p>7 <a href="#credits-and-donation">Credits and Donation</a></p>
+
+  <p>8 <a href="#external-links">External links</a></p>
+</blockquote>
+
+<hr />
+
+<h2 id="overview">Overview</h2>
+
+<p>The UIVerticalScroller creates a vertical scrolling list where elements scale based on their distance from a defined center point. Elements closer to the center appear larger (zoomed), while those farther away shrink according to configurable shrinkage factors and minimum scale constraints. The component automatically detects which element is currently focused (closest to center) and supports optional navigation buttons, click events, and focus-change events.</p>
+
+<hr />
+
+<h2 id="properties">Properties</h2>
+
+<p>The properties of the UIVerticalScroller control are as follows:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><em>Scroll Rect</em></td>
+      <td>Reference to the desired ScrollRect component (auto-detected if not set)</td>
+    </tr>
+    <tr>
+      <td><em>Array Of Elements</em></td>
+      <td>Array of GameObjects to populate inside the scroller. Auto-populated from children if not set</td>
+    </tr>
+    <tr>
+      <td><em>Center</em></td>
+      <td>RectTransform defining the center display area (position of zoomed content). Required</td>
+    </tr>
+    <tr>
+      <td><em>Element Size</em></td>
+      <td>RectTransform defining the size/spacing of elements. Defaults to Center if not set</td>
+    </tr>
+    <tr>
+      <td><em>Element Shrinkage</em></td>
+      <td>Vector2 controlling scale reduction: scale = 1 / (1 + distance * shrinkage). Default: (1/200, 1/200)</td>
+    </tr>
+    <tr>
+      <td><em>Min Scale</em></td>
+      <td>Vector2 defining minimum element scale (furthest from center). Default: (0.7, 0.7)</td>
+    </tr>
+    <tr>
+      <td><em>Starting Index</em></td>
+      <td>Index of the item to focus on start (-1 = no auto-focus). Default: -1</td>
+    </tr>
+    <tr>
+      <td><em>Stop Momentum On End</em></td>
+      <td>When enabled, stops scrolling past the last element from inertia. Default: true</td>
+    </tr>
+    <tr>
+      <td><em>Disable Unfocused</em></td>
+      <td>When enabled, sets unfocused items to non-interactable. Default: true</td>
+    </tr>
+    <tr>
+      <td><em>Scroll Up Button</em></td>
+      <td>Optional button GameObject to scroll up/previous (optional)</td>
+    </tr>
+    <tr>
+      <td><em>Scroll Down Button</em></td>
+      <td>Optional button GameObject to scroll down/next (optional)</td>
+    </tr>
+    <tr>
+      <td><strong><em>On Button Clicked</em></strong> (event)</td>
+      <td>Event fired when a specific item is clicked. Exposes the index number of the clicked item (optional)</td>
+    </tr>
+    <tr>
+      <td><strong><em>On Focus Changed</em></strong> (event)</td>
+      <td>Event fired when the focused item changes. Exposes the new focused item index (optional)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Additional properties available in code:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Return Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>FocusedElementIndex</td>
+      <td>int</td>
+      <td>Gets the index of the currently focused element</td>
+    </tr>
+    <tr>
+      <td>Center</td>
+      <td>RectTransform</td>
+      <td>Gets or sets the center viewport RectTransform</td>
+    </tr>
+    <tr>
+      <td>ElementSize</td>
+      <td>RectTransform</td>
+      <td>Gets or sets the element size RectTransform</td>
+    </tr>
+    <tr>
+      <td>ScrollRectComponent</td>
+      <td>ScrollRect</td>
+      <td>Gets or sets the ScrollRect component reference</td>
+    </tr>
+    <tr>
+      <td>ArrayOfElements</td>
+      <td>GameObject[]</td>
+      <td>Gets or sets the array of element GameObjects</td>
+    </tr>
+    <tr>
+      <td>Result</td>
+      <td>string</td>
+      <td>Gets the text content of the currently focused element (from TMP_Text component if present)</td>
+    </tr>
+    <tr>
+      <td>ScrollingPanel</td>
+      <td>RectTransform</td>
+      <td>Gets the scrollable area (content of the ScrollRect)</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="methods">Methods</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>Arguments</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><em>UpdateChildren</em></td>
+      <td>int startingIndex = -1, GameObject[] arrayOfElements = null</td>
+      <td>Recognizes and resizes children. If arrayOfElements is null, uses ScrollingPanel children. If startingIndex &gt; -1, snaps to that element</td>
+    </tr>
+    <tr>
+      <td><em>SnapToElement</em></td>
+      <td>int element</td>
+      <td>Instantly snaps the scroll position to focus on the specified element index</td>
+    </tr>
+    <tr>
+      <td><em>ScrollUp</em></td>
+      <td>(none)</td>
+      <td>Scrolls up by approximately element height / 1.2. Called by Scroll Up Button if assigned</td>
+    </tr>
+    <tr>
+      <td><em>ScrollDown</em></td>
+      <td>(none)</td>
+      <td>Scrolls down by approximately element height / 1.2. Called by Scroll Down Button if assigned</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="usage">Usage</h2>
+
+<p>To use the UIVerticalScroller control:</p>
+
+<ol>
+  <li>Add the component via “<strong>Add Component -&gt; Layout -&gt; Extensions -&gt; Vertical Scroller</strong>”</li>
+  <li>Ensure the GameObject has a ScrollRect component (required)</li>
+  <li>Assign the <strong>Center</strong> RectTransform (defines the zoom/focus area)</li>
+  <li>Optionally assign <strong>Element Size</strong> (defaults to Center if not set)</li>
+  <li>Populate <strong>Array Of Elements</strong> or let the component auto-detect children</li>
+  <li>Configure scaling behavior via <strong>Element Shrinkage</strong> and <strong>Min Scale</strong></li>
+  <li>Set <strong>Starting Index</strong> to auto-focus an element on start</li>
+  <li>Optionally assign <strong>Scroll Up Button</strong> and <strong>Scroll Down Button</strong> for navigation</li>
+  <li>Subscribe to <strong>On Button Clicked</strong> and <strong>On Focus Changed</strong> events</li>
+</ol>
+
+<p>Example code for programmatic control:</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">using</span> <span class="nn">UnityEngine.UI.Extensions</span><span class="p">;</span>
+
+<span class="k">public</span> <span class="k">class</span> <span class="nc">VerticalScrollerExample</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="n">UIVerticalScroller</span> <span class="n">scroller</span><span class="p">;</span>
+
+    <span class="k">void</span> <span class="nf">Start</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="c1">// Subscribe to events</span>
+        <span class="n">scroller</span><span class="p">.</span><span class="n">onButtonClicked</span><span class="p">.</span><span class="nf">AddListener</span><span class="p">(</span><span class="n">OnItemClicked</span><span class="p">);</span>
+        <span class="n">scroller</span><span class="p">.</span><span class="n">onFocusChanged</span><span class="p">.</span><span class="nf">AddListener</span><span class="p">(</span><span class="n">OnFocusChanged</span><span class="p">);</span>
+        
+        <span class="c1">// Dynamically update children</span>
+        <span class="n">GameObject</span><span class="p">[]</span> <span class="n">items</span> <span class="p">=</span> <span class="nf">GetScrollItems</span><span class="p">();</span>
+        <span class="n">scroller</span><span class="p">.</span><span class="nf">UpdateChildren</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="n">items</span><span class="p">);</span>  <span class="c1">// Start at index 0</span>
+    <span class="p">}</span>
+    
+    <span class="k">void</span> <span class="nf">OnItemClicked</span><span class="p">(</span><span class="kt">int</span> <span class="n">index</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">Debug</span><span class="p">.</span><span class="nf">Log</span><span class="p">(</span><span class="s">$"Item </span><span class="p">{</span><span class="n">index</span><span class="p">}</span><span class="s"> clicked"</span><span class="p">);</span>
+        <span class="c1">// Snap to clicked item</span>
+        <span class="n">scroller</span><span class="p">.</span><span class="nf">SnapToElement</span><span class="p">(</span><span class="n">index</span><span class="p">);</span>
+    <span class="p">}</span>
+    
+    <span class="k">void</span> <span class="nf">OnFocusChanged</span><span class="p">(</span><span class="kt">int</span> <span class="n">newIndex</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">Debug</span><span class="p">.</span><span class="nf">Log</span><span class="p">(</span><span class="s">$"Focus changed to item </span><span class="p">{</span><span class="n">newIndex</span><span class="p">}</span><span class="s">"</span><span class="p">);</span>
+        <span class="n">Debug</span><span class="p">.</span><span class="nf">Log</span><span class="p">(</span><span class="s">$"Focused item text: </span><span class="p">{</span><span class="n">scroller</span><span class="p">.</span><span class="n">Result</span><span class="p">}</span><span class="s">"</span><span class="p">);</span>
+    <span class="p">}</span>
+    
+    <span class="k">void</span> <span class="nf">NavigateToItem</span><span class="p">(</span><span class="kt">int</span> <span class="n">index</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">scroller</span><span class="p">.</span><span class="nf">SnapToElement</span><span class="p">(</span><span class="n">index</span><span class="p">);</span>
+    <span class="p">}</span>
+    
+    <span class="n">GameObject</span><span class="p">[]</span> <span class="nf">GetScrollItems</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="c1">// Return array of GameObjects to display</span>
+        <span class="k">return</span> <span class="n">scroller</span><span class="p">.</span><span class="n">ScrollingPanel</span><span class="p">.</span><span class="n">GetComponentsInChildren</span><span class="p">&lt;</span><span class="n">Transform</span><span class="p">&gt;()</span>
+            <span class="p">.</span><span class="nf">Select</span><span class="p">(</span><span class="n">t</span> <span class="p">=&gt;</span> <span class="n">t</span><span class="p">.</span><span class="n">gameObject</span><span class="p">)</span>
+            <span class="p">.</span><span class="nf">Where</span><span class="p">(</span><span class="n">g</span> <span class="p">=&gt;</span> <span class="n">g</span> <span class="p">!=</span> <span class="n">scroller</span><span class="p">.</span><span class="n">ScrollingPanel</span><span class="p">.</span><span class="n">gameObject</span><span class="p">)</span>
+            <span class="p">.</span><span class="nf">ToArray</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p>[!NOTE]</p>
+
+  <ul>
+    <li>The Center RectTransform is required; the component logs an error if not assigned</li>
+    <li>Elements are automatically resized to match Element Size dimensions</li>
+    <li>Each element should have a CanvasGroup for interactability control</li>
+    <li>Text content is extracted from TMP_Text components for the Result property</li>
+  </ul>
+</blockquote>
+
+<hr />
+
+<h2 id="video-demo">Video Demo</h2>
+
+<p><a href="https://www.youtube.com/channel/UCHp8LZ_0-iCvl-5pjHATsgw" title="Mrs. YakaYocha's Channel"><img src="http://img.youtube.com/vi/VIDEO_ID/0.jpg" alt="View Demo Video" /></a></p>
+
+<p>Sample scene: <code class="language-plaintext highlighter-rouge">UIVerticalScrollerDemo</code></p>
+
+<hr />
+
+<h2 id="see-also">See also</h2>
+
+<ul>
+  <li><a href="/ugui/controls/horizontal-scroll-snap/">HorizontalScrollSnap</a> - Horizontal scroll snap control</li>
+  <li><a href="/ugui/controls/vertical-scroll-snap/">VerticalScrollSnap</a> - Vertical scroll snap control</li>
+  <li><a href="ScrollSnapBase.md">ScrollSnapBase</a> - Base class for scroll snapping</li>
+</ul>
+
+<hr />
+
+<h2 id="credits-and-donation">Credits and Donation</h2>
+
+<p>Credits: Mrs. YakaYocha<br />
+Please donate: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=RJ8D9FRFQF9VS</p>
+
+<hr />
+
+<h2 id="external-links">External links</h2>
+
+<p><a href="https://www.youtube.com/channel/UCHp8LZ_0-iCvl-5pjHATsgw">Sourced from</a></p>
+
+    </div>
+
+    <footer class="control-page-footer">
+      
+      
+      
+      
+
+      
+        
+        
+        
+          
+          <a href="/ugui/controls/ui-tween-scale/" class="ctrl-nav-prev">← UI TweenScale</a>
+        
+        
+          
+          <a href="/ugui/controls/vertical-scroll-snap/" class="ctrl-nav-next">Vertical Scroll Snap →</a>
+        
+      
+    </footer>
+  </article>
+</div>
+
+  </main>
+  <footer class="footer" role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="/" class="footer-logo">
+        <img src="/assets/img/logo.svg" alt="Unity UI Extensions" width="28" height="28">
+        Unity UI Extensions
+      </a>
+      <p>Community-maintained UI controls for Unity's uGUI and UI Toolkit frameworks. Free forever, BSD 3-Clause licensed.</p>
+    </div>
+
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <div class="footer-col">
+        <h4>uGUI Package</h4>
+        <ul>
+          <li><a href="/ugui/">Overview</a></li>
+          <li><a href="/ugui/controls/">All Controls</a></li>
+          <li><a href="/ugui/install/">Installation</a></li>
+          <li><a href="/changelog/">Changelog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>UI Toolkit Package</h4>
+        <ul>
+          <li><a href="/uitoolkit/">Overview</a></li>
+          <li><a href="/uitoolkit/controls/">All Controls</a></li>
+          <li><a href="/uitoolkit/install/">Installation</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Community</h4>
+        <ul>
+          <li><a href="https://github.com/Unity-UI-Extensions/com.unity.uiextensions" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://www.openupm.com/packages/com.unity.uiextensions/" target="_blank" rel="noopener">OpenUPM</a></li>
+          <li><a href="https://discord.gg/SBuyXfh" target="_blank" rel="noopener">Discord</a></li>
+          <li><a href="https://github.com/Unity-UI-Extensions/com.unity.uiextensions/issues" target="_blank" rel="noopener">Report a Bug</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div class="footer-bottom">
+    <span>© 2026 Unity UI Extensions Community</span>
+    <span>BSD 3-Clause &amp; MIT Licensed</span>
+    <span>Not affiliated with Unity Technologies</span>
+  </div>
+</footer>
+
+  <script src="/assets/js/site.js"></script>
+</body>
+</html>

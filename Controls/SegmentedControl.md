@@ -1,8 +1,17 @@
+---
+layout: control-ugui
+title: "Segmented Control"
+description: "iOS-style segmented control for choosing one option from a small set."
+category: "Input"
+permalink: /ugui/controls/segmented-control/
+has_video: true
+tags: [input, segmented, toggle, select, ios]
+---
 # Segmented Control
 
 A segmented control, like those found on iOS. It's two or more buttons side by side, where only one of them is selectable at a time
 
-![Segmented Control Example](Images/SegmentedExample.png)
+![Segmented Control Example](/Controls/Images/SegmentedExample.png)
 
 ---------
 
@@ -30,7 +39,7 @@ A segmented control, like those found on iOS. It's two or more buttons side by s
 
 The Segmented Control offers a button alignment capability along with specific highlights that emulates the iOS version of a segmented button.  The control presented itself as a single image with multiple options, where only one can be selected.
 
-![](Images/SegmentedControlInspector.jpg)
+![](/Controls/Images/SegmentedControlInspector.jpg)
 
 It allows you to set whether buttons can be turned on/off, or only one selected at a time, as well as setting the default select and the colour the button is highlighted with when clicked..
 
@@ -76,7 +85,7 @@ However, you will need to manually add buttons as children to the GameObject for
 
 *Click to play*
 
-[![Segmented Control Demo](Images/SegmentedControlDemo.jpg)](Images/SegmentedControlDemo.mp4 "Segmented Control Demo")
+[![Segmented Control Demo](/Controls/Images/SegmentedControlDemo.jpg)](/Controls/Images/SegmentedControlDemo.mp4 "Segmented Control Demo")
 
 ---------
 

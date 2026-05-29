@@ -1,8 +1,17 @@
+---
+layout: control-ugui
+title: "Stepper"
+description: "+/- increment buttons for numeric input with configurable step size."
+category: "Input"
+permalink: /ugui/controls/stepper/
+has_video: true
+tags: [input, stepper, increment, decrement, numeric]
+---
 # Stepper
 
 A stepper control, like those found in iOS. It's basically two buttons side by side, and can step its numeric value up and down.
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ---------
 
@@ -30,7 +39,7 @@ A stepper control, like those found in iOS. It's basically two buttons side by s
 
 The Stepper Control creates an increment / decrement style control with + and - buttons which alter the controls value.
 
-![](Images/StepperInspector.jpg)
+![](/Controls/Images/StepperInspector.jpg)
 
 It exposes a value property where you can also set a min and maximum number for that value when changed through the control.  Additionally you can also specify the "step" which denotes how much the control increments / decrements with each press, as well as an option to loop the value around from top to bottom, etc.
 
@@ -81,7 +90,7 @@ However, you will need to manually add the two child selectable controls (e.g. A
 
 *Click to play*
 
-[![Stepper Demo](Images/StepperDemo.jpg)](Images/StepperDemo.mp4 "Stepper Demo")
+[![Stepper Demo](/Controls/Images/StepperDemo.jpg)](/Controls/Images/StepperDemo.mp4 "Stepper Demo")
 
 ---------
 

@@ -1,8 +1,17 @@
+---
+layout: control-ugui
+title: "Rect Transform Editor"
+description: "Editor-only helper that adds extra transform manipulation handles in the Scene view."
+category: "Utilities"
+permalink: /ugui/controls/rect-transform-editor/
+has_video: false
+tags: [utilities, editor, rect-transform, inspector, tools]
+---
 # RectTransformEditor
 
 RectTransform helper utility.
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ---------
 

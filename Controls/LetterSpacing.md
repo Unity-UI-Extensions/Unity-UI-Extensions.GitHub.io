@@ -1,3 +1,12 @@
+---
+layout: control-ugui
+title: "Letter Spacing"
+description: "Adds configurable character spacing (tracking) to uGUI Text components."
+category: "Effects"
+permalink: /ugui/controls/letter-spacing/
+has_video: true
+tags: [effects, text, letter-spacing, tracking, typography]
+---
 # Letter Spacing
 
 > [!IMPORTANT]
@@ -5,7 +14,7 @@
 
 Allows finer control of text spacing
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 > Text Effects are not supported with TextMeshPro due to its architecture, try using the native TextMeshPro effects instead.
 
@@ -35,7 +44,7 @@ Allows finer control of text spacing
 
 Allows finer control of text spacing
 
-![](Images/LetterSpacingInspector.jpg)
+![](/Controls/Images/LetterSpacingInspector.jpg)
 
 ---------
 
@@ -68,7 +77,7 @@ Add Component -> UI -> Effects -> Extensions -> Letter Spacing
 
 *Click to play*
 
-[![Letter Spacing Demo](Images/LetterSpacingDemo.jpg)](Images/LetterSpacingDemo.mp4 "Letter Spacing Demo")
+[![Letter Spacing Demo](/Controls/Images/LetterSpacingDemo.jpg)](/Controls/Images/LetterSpacingDemo.mp4 "Letter Spacing Demo")
 
 
 ---------

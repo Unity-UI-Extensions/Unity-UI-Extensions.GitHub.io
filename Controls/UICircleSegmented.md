@@ -1,8 +1,17 @@
+---
+layout: control-ugui
+title: "UI Circle Segmented"
+description: "Segmented ring/pie chart renderer with configurable slice count and gaps."
+category: "Primitives"
+permalink: /ugui/controls/ui-circle-segmented/
+has_video: false
+tags: [primitives, circle, pie, ring, segmented, chart]
+---
 # UI Circle Segmented
 
 Custom graphic for uGUI, circle split into segments.
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ---------
 

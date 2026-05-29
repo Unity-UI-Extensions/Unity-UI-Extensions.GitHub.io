@@ -1,8 +1,17 @@
+---
+layout: control-ugui
+title: "Box Slider"
+description: "2D drag-handle slider that outputs both X and Y values simultaneously."
+category: "Input"
+permalink: /ugui/controls/box-slider/
+has_video: true
+tags: [input, slider, 2d, xy, drag]
+---
 # Box Slider
 
 A slider which supports both X and Y values within a box
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ---------
 
@@ -31,7 +40,7 @@ A slider which supports both X and Y values within a box
 The Box Slider (like the Unity Slider controls), allows you to set a value using a handle within the RectTransform of the control.
 However, it supports both the X and Y axis within the area.
 
-![Box Slider Inspector](Images/BoxSliderInspector.jpg)
+![Box Slider Inspector](/Controls/Images/BoxSliderInspector.jpg)
 
 It allows you to set a minimum and maximum value for the axis as well as separate X and Y value selectors.
 
@@ -94,7 +103,7 @@ Note: When adding via the Add Component menu, you will need to manually set the 
 
 ### Click to play
 
-[![Box Slider Demo](Images/BoxSliderDemo.jpg)](Images/BoxSliderDemo.mp4 "Box Slider Demo")
+[![Box Slider Demo](/Controls/Images/BoxSliderDemo.jpg)](/Controls/Images/BoxSliderDemo.mp4 "Box Slider Demo")
 
 ---------
 

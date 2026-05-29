@@ -1,8 +1,17 @@
+---
+layout: control-ugui
+title: "UI Highlightable"
+description: "Adds programmatic hover-highlight colour transitions to any Graphic."
+category: "Utilities"
+permalink: /ugui/controls/ui-highlightable/
+has_video: true
+tags: [utilities, highlight, hover, colour, transition]
+---
 # UI Highlightable
 
 A custom component to enable RectTransform highlighting without the Unity UI Selectable control.  Useful if you want to extend your own controls.
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ---------
 
@@ -31,7 +40,7 @@ A custom component to enable RectTransform highlighting without the Unity UI Sel
 The UI selectable added highlighting behavior to a RectTransform without needing a Selectable component. The selectable control by default, has certain behaviors like click-sticking (where the control is clicked and remains in the highlighted state until something else is clicked) which may not be desirable.
 This control offers more control and some additional behaviour, such as "Click to hold" which leaves a RectTransform in the clicked state until it is clicked again (like a toggle)
 
-![](Images/UIHighlightableInspector.jpg)
+![](/Controls/Images/UIHighlightableInspector.jpg)
 
 The control also supports a disabled state but has no control over child Rect Transforms, so an event was added to allow you to perform additional actions when the the RectTransform is rendered inactive.
 
@@ -75,7 +84,7 @@ Simply add the UI Highlightable component to a RectTransform using the Component
 
 *Click to play*
 
-[![UIHighlighter Demo](Images/UIHighlighterDemo.jpg)](Images/UIHighlighterDemo.mp4 "UIHighlighter Demo")
+[![UIHighlighter Demo](/Controls/Images/UIHighlighterDemo.jpg)](/Controls/Images/UIHighlighterDemo.mp4 "UIHighlighter Demo")
 
 ---------
 

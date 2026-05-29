@@ -1,10 +1,19 @@
+---
+layout: control-ugui
+title: "Color Picker"
+description: "Full HSV colour picker with hex input, alpha slider, and preset swatches."
+category: "Input"
+permalink: /ugui/controls/color-picker/
+has_video: true
+tags: [input, color, colour, picker, hsv, hex]
+---
 # Color Picker
 
 A generated control using the new [Box Slider](BoxSlider.md) control and several sliders with helpers.
 
 Creates a Color Picker style control to generate color values within a Unity Project. Handles color sampling with a cursor as well as saving/loading presets.
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ---------
 
@@ -32,9 +41,9 @@ Creates a Color Picker style control to generate color values within a Unity Pro
 
 A generated Color Picker UI with prefab for use in Unity. Includes an optional Color Sampler to pick colors from the screen.
 
-![](Images/ColorPicker.jpg)
+![](/Controls/Images/ColorPicker.jpg)
 
-![](Images/ColorPickerInspector.jpg)
+![](/Controls/Images/ColorPickerInspector.jpg)
 
 ### Color Picker control
 
@@ -46,7 +55,7 @@ Like the other Unity UI controls, it includes an OnValueChanged event which outp
 
 Captures the screen when it is enabled, then provides a cursor with which the user can select colors from the screen. 
 
-![](Images/ColorPickerPresets.jpg)
+![](/Controls/Images/ColorPickerPresets.jpg)
 
 ### Color Picker Presets
 
@@ -142,7 +151,7 @@ The ColorPickerPresets and ColorSampler are all set up in the prefab without nee
 
 *Click to play*
 
-[![Box Slider Demo](Images/ColorPickerDemo.jpg)](Images/ColorPickerDemo.mp4 "Box Slider Demo")
+[![Box Slider Demo](/Controls/Images/ColorPickerDemo.jpg)](/Controls/Images/ColorPickerDemo.mp4 "Box Slider Demo")
 
 ---------
 

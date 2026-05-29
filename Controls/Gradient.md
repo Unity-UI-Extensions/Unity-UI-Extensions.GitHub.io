@@ -1,8 +1,17 @@
+---
+layout: control-ugui
+title: "Gradient"
+description: "Applies a two-colour vertex gradient to any uGUI graphic component."
+category: "Effects"
+permalink: /ugui/controls/gradient/
+has_video: true
+tags: [effects, gradient, colour, vertex, text]
+---
 # Gradient
 
 Apply vertex colours in a gradient on any UI object
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ---------
 
@@ -30,7 +39,7 @@ Apply vertex colours in a gradient on any UI object
 
 Apply vertex colours in a gradient on any graphic UI object
 
-![](Images/GradientInspector.jpg)
+![](/Controls/Images/GradientInspector.jpg)
 
 ---------
 
@@ -66,7 +75,7 @@ To enable the Gradient component, simply add the component to a UI Graphic Objec
 
 *Click to play*
 
-[![Gradient Demo](Images/GradientDemo.jpg)](Images/GradientDemo.mp4 "Gradient Demo")
+[![Gradient Demo](/Controls/Images/GradientDemo.jpg)](/Controls/Images/GradientDemo.mp4 "Gradient Demo")
 
 ---------
 

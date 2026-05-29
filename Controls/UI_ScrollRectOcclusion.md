@@ -1,8 +1,17 @@
+---
+layout: control-ugui
+title: "UI Scroll Rect Occlusion"
+description: "Disables off-screen children in a ScrollRect to reduce overdraw cost."
+category: "Utilities"
+permalink: /ugui/controls/ui-scroll-rect-occlusion/
+has_video: false
+tags: [utilities, scroll, occlusion, performance, visibility]
+---
 # UI_ScrollRectOcclusion
 
 Disables the objects outside of the scrollrect viewport. Useful for scrolls with lots of content
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ---------
 
@@ -30,7 +39,7 @@ Disables the objects outside of the scrollrect viewport. Useful for scrolls with
 
 The Scroll Rect occlusion script enables and disables Content child items that are outside the visible area of the Scroll Rect.
 
-![](Images/ScrollRectOcclusionInspector.jpg)
+![](/Controls/Images/ScrollRectOcclusionInspector.jpg)
 
 It allows you determine whether it starts on awake or via code.
 

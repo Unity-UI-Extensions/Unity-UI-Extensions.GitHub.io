@@ -1,8 +1,17 @@
+---
+layout: control-ugui
+title: "UI Grid Renderer"
+description: "Procedurally renders a grid of lines using Unity's UI mesh system."
+category: "Primitives"
+permalink: /ugui/controls/ui-grid-renderer/
+has_video: true
+tags: [primitives, grid, lines, mesh, renderer]
+---
 # UI Grid Renderer
 
 A primitive line drawing control that draws a Grid within a RectTransform space
 
-![UI Grid Renderer Example](Images/UIGridRendererSample.jpg)
+![UI Grid Renderer Example](/Controls/Images/UIGridRendererSample.jpg)
 
 ---------
 
@@ -31,7 +40,7 @@ A primitive line drawing control that draws a Grid within a RectTransform space
 The Grid Renderer control draws a box area with a defined Grid inside, allowing control of the columns and rows within.
 This control extend the base UI Line Renderer control and inherits some of it's features, not all of which are useful for a grid.
 
-![](Images/UIGridRendererInspector.jpg.jpg)
+![](/Controls/Images/UIGridRendererInspector.jpg.jpg)
 
 The main configuration is the GridColumns and GridRows to determine how many cells there are.  
 
@@ -92,7 +101,7 @@ Alternatively, add the component using:
 
 *Click to play*
 
-[![Box Slider Demo](Images/UIGridRendererDemo.jpg)](Images/UIGridRendererDemo.mp4 "Box Slider Demo")
+[![Box Slider Demo](/Controls/Images/UIGridRendererDemo.jpg)](/Controls/Images/UIGridRendererDemo.mp4 "Box Slider Demo")
 
 ---------
 

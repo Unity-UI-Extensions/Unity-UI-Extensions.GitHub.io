@@ -1,8 +1,17 @@
+---
+layout: control-ugui
+title: "UI Particle System"
+description: "Renders Unity Particle Systems within the uGUI canvas layer."
+category: "Effects"
+permalink: /ugui/controls/ui-particle-system/
+has_video: true
+tags: [effects, particles, vfx, canvas, render]
+---
 # UIParticleSystem
 
 A particle system control to render the native Unity 3D particle system in UI Space
 
-![UI Particle System Example](Images/UIParticleSystemExample.jpg)
+![UI Particle System Example](/Controls/Images/UIParticleSystemExample.jpg)
 
 ---------
 
@@ -30,7 +39,7 @@ A particle system control to render the native Unity 3D particle system in UI Sp
 
 The default Unity 3D Particle system doesn't generally work in the UI space.  It's possible to arrange the particle system between layers or fiddle around with WorldSpace canvases but the control isn't in your UI.  With this control, it takes the rendered output of a 3D Particle system and regenerates it in UI space (the actual rendering of the Particle system is disabled so that it doesn't cause a performance impact)
 
-![](Images/UIParticleSystemInspector.jpg)
+![](/Controls/Images/UIParticleSystemInspector.jpg)
 
 > [!NOTE]
 >The control does not yet support Trail Particles currently
@@ -88,7 +97,7 @@ Alternatively, add a new Empty Game Object to a canvas, add the particle system 
 
 *Click to play*
 
-[![UI Particle System Demo](Images/UIParticleSystemDemo.jpg)](Images/UIParticleSystemDemo.mp4 "UI Particle System Demo")
+[![UI Particle System Demo](/Controls/Images/UIParticleSystemDemo.jpg)](/Controls/Images/UIParticleSystemDemo.mp4 "UI Particle System Demo")
 
 ---------
 

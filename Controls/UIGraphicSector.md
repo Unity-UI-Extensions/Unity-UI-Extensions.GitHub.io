@@ -1,8 +1,17 @@
+---
+layout: control-ugui
+title: "UI Graphic Sector"
+description: "Renders a filled sector (wedge/pie-slice) graphic with configurable arc."
+category: "Primitives"
+permalink: /ugui/controls/ui-graphic-sector/
+has_video: false
+tags: [primitives, sector, arc, wedge, pie, graphic]
+---
 # UI Graphic Sector
 
 Unity3d uGUI Custom Graphic that draws an oval sector
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ---------
 

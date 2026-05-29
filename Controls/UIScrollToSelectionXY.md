@@ -1,8 +1,17 @@
+---
+layout: control-ugui
+title: "UI Scroll To Selection XY"
+description: "Auto-scrolls a 2D ScrollRect to keep the selected element in view on both axes."
+category: "Utilities"
+permalink: /ugui/controls/ui-scroll-to-selection-xy/
+has_video: false
+tags: [utilities, scroll, selection, xy, auto-scroll]
+---
 # UIScrollToSelectionXY
 
 Automatically scrolls a ScrollRect to the currently selected UI element with XY axis support
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ---------
 

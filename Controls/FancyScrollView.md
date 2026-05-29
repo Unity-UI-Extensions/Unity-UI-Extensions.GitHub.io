@@ -1,8 +1,17 @@
+---
+layout: control-ugui
+title: "Fancy Scroll View"
+description: "High-performance scroll view with virtual item pooling and custom layouts."
+category: "Layout"
+permalink: /ugui/controls/fancy-scroll-view/
+has_video: false
+tags: [layout, scroll, virtual, performance, pooling]
+---
 # Fancy Scroll View
 
 A very fancy Scroll view component, with an extensible event system
 
-![Fancy Scroll View Example](Images/FancyScrollViewExample.jpg)
+![Fancy Scroll View Example](/Controls/Images/FancyScrollViewExample.jpg)
 
 ---------
 
@@ -28,7 +37,7 @@ A very fancy Scroll view component, with an extensible event system
 
 Fancy Scroll View is a programmatic way to build a scroll view component with several extensible features.
 
-![](Images/FancyScrollViewInspector.jpg)
+![](/Controls/Images/FancyScrollViewInspector.jpg)
 
 The control is made up of several Key Components:
 

@@ -1,8 +1,17 @@
+---
+layout: control-ugui
+title: "Diamond Graph"
+description: "Radar/spider chart rendered as a configurable diamond polygon shape."
+category: "Primitives"
+permalink: /ugui/controls/diamond-graph/
+has_video: true
+tags: [primitives, chart, radar, spider, graph, polygon]
+---
 # DiamondGraph
 
 Graphic control for drawing a diamond in the UI System
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ---------
 

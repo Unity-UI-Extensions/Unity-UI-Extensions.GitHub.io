@@ -1,8 +1,17 @@
+---
+layout: control-ugui
+title: "Range Slider"
+description: "Dual-handle slider for selecting a minimum/maximum value range."
+category: "Input"
+permalink: /ugui/controls/range-slider/
+has_video: true
+tags: [input, slider, range, min, max, dual]
+---
 # Range Slider
 
 A UI Slider control with a min (low) and max (high) value
 
-![Range Slider Example](Images/RangeSliderExample.jpg)
+![Range Slider Example](/Controls/Images/RangeSliderExample.jpg)
 
 ---------
 
@@ -30,7 +39,7 @@ A UI Slider control with a min (low) and max (high) value
 
 A Ui control which allows you to have two slider values in a single control
 
-![](Images/RangeSliderInspector.jpg)
+![](/Controls/Images/RangeSliderInspector.jpg)
 
 ---------
 
@@ -72,7 +81,7 @@ Alternatively, add the component to an existing GameObject using:
 
 *Click to play*
 
-[![Range Slider Demo](Images/RangeSliderDemo.jpg)](Images/RangeSliderDemo.mp4 "Range Slider Demo")
+[![Range Slider Demo](/Controls/Images/RangeSliderDemo.jpg)](/Controls/Images/RangeSliderDemo.mp4 "Range Slider Demo")
 
 ---------
 

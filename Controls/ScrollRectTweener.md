@@ -1,8 +1,17 @@
+---
+layout: control-ugui
+title: "Scroll Rect Tweener"
+description: "Programmatically scrolls a ScrollRect to a target position with easing."
+category: "Layout"
+permalink: /ugui/controls/scroll-rect-tweener/
+has_video: false
+tags: [layout, scroll, tween, animate, scrollrect]
+---
 # Scroll Rect Tweener
 
 Tweening solution for ScrollRects, adds smoothing automatically
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ---------
 
@@ -30,7 +39,7 @@ Tweening solution for ScrollRects, adds smoothing automatically
 
 The Scroll Rect Tweener is a simple programmatic component that allows you tween from one position on a Scroll Rect to another with a selectable smoothing value
 
-![](Images/ScrollRectTweenerInspector.jpg)
+![](/Controls/Images/ScrollRectTweenerInspector.jpg)
 
 ---------
 
@@ -76,7 +85,7 @@ Simply add the default Scroll Rect Tweener component to a Scroll Rect using:
 
 *Click to play*
 
-[![Scroll Rect Tweener  Demo](Images/ScrollRectTweenerDemo.jpg)](https://youtu.be/1ZNIrdlV9QY?t=5m27s "Scroll Rect Tweener Demo video")
+[![Scroll Rect Tweener  Demo](/Controls/Images/ScrollRectTweenerDemo.jpg)](https://youtu.be/1ZNIrdlV9QY?t=5m27s "Scroll Rect Tweener Demo video")
 
 ---------
 

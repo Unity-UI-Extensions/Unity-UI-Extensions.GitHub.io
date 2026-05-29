@@ -1,8 +1,17 @@
+---
+layout: control-ugui
+title: "Scroll Conflict Manager"
+description: "Resolves scroll direction conflicts when nested ScrollRects overlap."
+category: "Utilities"
+permalink: /ugui/controls/scroll-conflict-manager/
+has_video: false
+tags: [utilities, scroll, conflict, nested, scrollrect]
+---
 # Scroll Conflict Manager
 
 Resolves dragging issues with nested Scroll Rect's
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ---------
 
@@ -31,7 +40,7 @@ Resolves dragging issues with nested Scroll Rect's
 The Scroll Conflict Manager solves the dragging issue with child Scroll Rect's. Natively, nested Scroll Rect's will only allow scrolling in the direction of a child Scroll Rect.
 This component solves this problem allowing free movement, locked to the initial direction of the drag.
 
-![](Images/ScrollRectConflictManagerInspector.jpg)
+![](/Controls/Images/ScrollRectConflictManagerInspector.jpg)
 
 ---------
 
@@ -67,7 +76,7 @@ Then assign the parent Scroll Rect to the control.
 
 *Click to play*
 
-[![Scroll Rect Conflict Manager Demo](Images/ScrollRectConflictManagerDemo.jpg)](https://youtu.be/1ZNIrdlV9QY?t=9m19s "Scroll Rect Conflict Manager Demo")
+[![Scroll Rect Conflict Manager Demo](/Controls/Images/ScrollRectConflictManagerDemo.jpg)](https://youtu.be/1ZNIrdlV9QY?t=9m19s "Scroll Rect Conflict Manager Demo")
 
 ---------
 

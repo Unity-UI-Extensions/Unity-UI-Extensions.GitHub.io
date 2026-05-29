@@ -1,8 +1,17 @@
+---
+layout: control-ugui
+title: "Tab Navigation"
+description: "Keyboard-navigable tab panel system with animated content switching."
+category: "Navigation"
+permalink: /ugui/controls/tab-navigation/
+has_video: true
+tags: [navigation, tabs, keyboard, panel, switch]
+---
 # Tab Navigation
 
 An example Tab navigation script, updated to add manual navigation
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ---------
 
@@ -30,7 +39,7 @@ An example Tab navigation script, updated to add manual navigation
 
 The Tab navigation helper is an extension to the Unity Event System to translate Tab's to default Up/Down navigation of the UI system
 
-![](Images/TabNavigationInspector.jpg)
+![](/Controls/Images/TabNavigationInspector.jpg)
 
 You can either use Unity's default UI Navigation or you can override it by setting your own tab order in the "Navigation Path" property.
 
@@ -70,7 +79,7 @@ Simply add the default Tab Navigation Helper component to the EventSystem in the
 
 *Click to play*
 
-[![Tab Navigation Demo](Images/TabNavigationDemo.jpg)](Images/TabNavigationDemo.mp4 "Tab Navigation Demo")
+[![Tab Navigation Demo](/Controls/Images/TabNavigationDemo.jpg)](/Controls/Images/TabNavigationDemo.mp4 "Tab Navigation Demo")
 
 ---------
 

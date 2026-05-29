@@ -1,8 +1,17 @@
+---
+layout: control-ugui
+title: "CurlyUI"
+description: "Warps any uGUI graphic with configurable horizontal and vertical curves."
+category: "Effects"
+permalink: /ugui/controls/curly-ui/
+has_video: true
+tags: [effects, curve, warp, mesh, distort]
+---
 # Curly UI
 
 A UI Effect that will make your UI Curly
 
-![Curly UI Example](Images/CurlyUIExample.jpg)
+![Curly UI Example](/Controls/Images/CurlyUIExample.jpg)
 
 ---------
 
@@ -30,7 +39,7 @@ A UI Effect that will make your UI Curly
 
 Curly UI is a set of effect extensions that can alter the RectTransform of your UI Images / Text or RawGraphic's
 
-![](Images/CurlyUIInspector.jpg)
+![](/Controls/Images/CurlyUIInspector.jpg)
 
 Once added to either an Image, Text or RawGraphic, you will be presented with some bezier handles to manipulate the curves of your UI component, these help define how you want to curve your UI.
 
@@ -81,7 +90,7 @@ Once added, you can then manipulate the curves for the RectTransform using the b
 
 *Click to play*
 
-[![Curly UI Demo](Images/CurlyUIDemo.jpg)](Images/CurlyUIDemo.mp4 "Curly UI Demo")
+[![Curly UI Demo](/Controls/Images/CurlyUIDemo.jpg)](/Controls/Images/CurlyUIDemo.mp4 "Curly UI Demo")
 
 ---------
 

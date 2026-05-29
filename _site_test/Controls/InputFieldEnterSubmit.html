@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Input Field Enter Submit — Unity UI Extensions</title>
+<meta name="description" content="Community-maintained UI extension controls for Unity's uGUI and UI Toolkit frameworks — 80+ battle-tested controls, free forever.">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Input Field Enter Submit | Unity UI Extensions</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Input Field Enter Submit" />
+<meta name="author" content="Unity UI Extensions Community" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Community-maintained UI extension controls for Unity’s uGUI and UI Toolkit frameworks — 80+ battle-tested controls, free forever." />
+<meta property="og:description" content="Community-maintained UI extension controls for Unity’s uGUI and UI Toolkit frameworks — 80+ battle-tested controls, free forever." />
+<link rel="canonical" href="https://unity-ui-extensions.github.io/Controls/InputFieldEnterSubmit.html" />
+<meta property="og:url" content="https://unity-ui-extensions.github.io/Controls/InputFieldEnterSubmit.html" />
+<meta property="og:site_name" content="Unity UI Extensions" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Input Field Enter Submit" />
+<meta name="twitter:site" content="@UnityUIExtensions" />
+<meta name="twitter:creator" content="@Unity UI Extensions Community" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Unity UI Extensions Community"},"description":"Community-maintained UI extension controls for Unity’s uGUI and UI Toolkit frameworks — 80+ battle-tested controls, free forever.","headline":"Input Field Enter Submit","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://unity-ui-extensions.github.io/assets/img/logo.svg"},"name":"Unity UI Extensions Community"},"url":"https://unity-ui-extensions.github.io/Controls/InputFieldEnterSubmit.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/assets/css/neon.css">
+<link rel="icon" type="image/png" href="/assets/img/logo.png">
+
+</head>
+<body>
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a class="nav-brand" href="/">
+      <img src="/assets/img/logo.svg" alt="Unity UI Extensions" width="32" height="32">
+      <span>UI Extensions</span>
+    </a>
+
+    <button class="nav-mobile-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-links" role="list">
+      <li><a href="/" >Home</a></li>
+      <li>
+        <a href="/ugui/" >
+          <span class="badge-u">uGUI</span>
+        </a>
+      </li>
+      <li>
+        <a href="/uitoolkit/" >
+          <span class="badge-t">UI Toolkit</span>
+        </a>
+      </li>
+      <li><a href="/changelog/" >Changelog</a></li>
+      <li>
+        <a href="https://github.com/Unity-UI-Extensions/com.unity.uiextensions" target="_blank" rel="noopener" class="nav-github">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+  <main id="main-content">
+    <h1 id="input-field-enter-submit">Input Field Enter Submit</h1>
+
+<p>A simple utility component that automatically submits an InputField when the Enter key is pressed.</p>
+
+<hr />
+
+<h2 id="contents">Contents</h2>
+
+<blockquote>
+  <p>1 <a href="#overview">Overview</a></p>
+
+  <p>2 <a href="#properties">Properties</a></p>
+
+  <p>3 <a href="#methods">Methods</a></p>
+
+  <p>4 <a href="#usage">Usage</a></p>
+
+  <p>5 <a href="#video-demo">Video Demo</a></p>
+
+  <p>6 <a href="#see-also">See also</a></p>
+
+  <p>7 <a href="#credits-and-donation">Credits and Donation</a></p>
+
+  <p>8 <a href="#external-links">External links</a></p>
+</blockquote>
+
+<hr />
+
+<h2 id="overview">Overview</h2>
+
+<p>InputFieldEnterSubmit is a lightweight utility component that extends the standard Unity InputField with automatic submission on Enter key press. When the Enter key is pressed (or Enter on the numeric keypad), the component:</p>
+
+<ol>
+  <li>Triggers the <code class="language-plaintext highlighter-rouge">EnterSubmit</code> event with the current input text</li>
+  <li>Optionally defocuses the input field (clears selection)</li>
+</ol>
+
+<p>This is useful for creating form-like interactions where pressing Enter should submit data (search boxes, chat input, command prompts, etc.).</p>
+
+<hr />
+
+<h2 id="properties">Properties</h2>
+
+<p>The properties of the Input Field Enter Submit control are as follows:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><em>Defocus Input</em></td>
+      <td>When true, the InputField loses focus after submission. When false, the field retains focus for further input.</td>
+    </tr>
+    <tr>
+      <td><strong><em>Enter Submit</em></strong> (event)</td>
+      <td>Event invoked when Enter is pressed, passes the current input text as a string parameter.</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="methods">Methods</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>Arguments</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><em>OnEndEdit</em></td>
+      <td>txt (string)</td>
+      <td>Internal method called by InputField’s onEndEdit event. Checks for Enter key press and invokes EnterSubmit event.</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="usage">Usage</h2>
+
+<p>Add the Input Field Enter Submit component to the same GameObject as an InputField:</p>
+
+<p>“Add Component -&gt; UI -&gt; Extensions -&gt; Input Field Submit”</p>
+
+<p>The component will automatically detect the InputField on the same GameObject.</p>
+
+<h3 id="basic-usage">Basic Usage</h3>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="n">InputFieldEnterSubmit</span> <span class="n">inputField</span><span class="p">;</span>
+
+<span class="k">void</span> <span class="nf">Start</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="c1">// Listen for Enter key submission</span>
+    <span class="n">inputField</span><span class="p">.</span><span class="n">EnterSubmit</span><span class="p">.</span><span class="nf">AddListener</span><span class="p">(</span><span class="n">OnInputSubmitted</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">void</span> <span class="nf">OnInputSubmitted</span><span class="p">(</span><span class="kt">string</span> <span class="n">input</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">Debug</span><span class="p">.</span><span class="nf">Log</span><span class="p">(</span><span class="s">"User submitted: "</span> <span class="p">+</span> <span class="n">input</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="search-box-example">Search Box Example</h3>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="n">InputFieldEnterSubmit</span> <span class="n">searchField</span><span class="p">;</span>
+<span class="k">public</span> <span class="n">Text</span> <span class="n">resultsText</span><span class="p">;</span>
+
+<span class="k">void</span> <span class="nf">Start</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="n">searchField</span><span class="p">.</span><span class="n">defocusInput</span> <span class="p">=</span> <span class="k">true</span><span class="p">;</span>  <span class="c1">// Clear focus after search</span>
+    <span class="n">searchField</span><span class="p">.</span><span class="n">EnterSubmit</span><span class="p">.</span><span class="nf">AddListener</span><span class="p">(</span><span class="n">OnSearch</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">void</span> <span class="nf">OnSearch</span><span class="p">(</span><span class="kt">string</span> <span class="n">query</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="c1">// Perform search with the query</span>
+    <span class="kt">var</span> <span class="n">results</span> <span class="p">=</span> <span class="nf">SearchDatabase</span><span class="p">(</span><span class="n">query</span><span class="p">);</span>
+    <span class="n">resultsText</span><span class="p">.</span><span class="n">text</span> <span class="p">=</span> <span class="s">"Found "</span> <span class="p">+</span> <span class="n">results</span><span class="p">.</span><span class="n">Count</span> <span class="p">+</span> <span class="s">" results"</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="chat-input-example">Chat Input Example</h3>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="n">InputFieldEnterSubmit</span> <span class="n">chatInput</span><span class="p">;</span>
+<span class="k">public</span> <span class="n">ScrollRect</span> <span class="n">messageScroll</span><span class="p">;</span>
+
+<span class="k">void</span> <span class="nf">Start</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="n">chatInput</span><span class="p">.</span><span class="n">defocusInput</span> <span class="p">=</span> <span class="k">false</span><span class="p">;</span>  <span class="c1">// Keep focus for rapid typing</span>
+    <span class="n">chatInput</span><span class="p">.</span><span class="n">EnterSubmit</span><span class="p">.</span><span class="nf">AddListener</span><span class="p">(</span><span class="n">OnMessageSent</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">void</span> <span class="nf">OnMessageSent</span><span class="p">(</span><span class="kt">string</span> <span class="n">message</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="c1">// Send the message</span>
+    <span class="nf">SendChatMessage</span><span class="p">(</span><span class="n">message</span><span class="p">);</span>
+    
+    <span class="c1">// Clear for next message</span>
+    <span class="n">chatInput</span><span class="p">.</span><span class="n">GetComponent</span><span class="p">&lt;</span><span class="n">InputField</span><span class="p">&gt;().</span><span class="n">text</span> <span class="p">=</span> <span class="s">""</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="command-prompt-example">Command Prompt Example</h3>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="n">InputFieldEnterSubmit</span> <span class="n">commandInput</span><span class="p">;</span>
+
+<span class="k">void</span> <span class="nf">Start</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="n">commandInput</span><span class="p">.</span><span class="n">EnterSubmit</span><span class="p">.</span><span class="nf">AddListener</span><span class="p">(</span><span class="n">OnCommandEntered</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">void</span> <span class="nf">OnCommandEntered</span><span class="p">(</span><span class="kt">string</span> <span class="n">command</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="c1">// Parse and execute command</span>
+    <span class="nf">ExecuteCommand</span><span class="p">(</span><span class="n">command</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">void</span> <span class="nf">ExecuteCommand</span><span class="p">(</span><span class="kt">string</span> <span class="n">command</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="kt">string</span><span class="p">[]</span> <span class="n">parts</span> <span class="p">=</span> <span class="n">command</span><span class="p">.</span><span class="nf">Split</span><span class="p">(</span><span class="sc">' '</span><span class="p">);</span>
+    <span class="kt">string</span> <span class="n">action</span> <span class="p">=</span> <span class="n">parts</span><span class="p">[</span><span class="m">0</span><span class="p">];</span>
+    
+    <span class="k">switch</span> <span class="p">(</span><span class="n">action</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="k">case</span> <span class="s">"help"</span><span class="p">:</span>
+            <span class="n">Debug</span><span class="p">.</span><span class="nf">Log</span><span class="p">(</span><span class="s">"Available commands: help, load, save, exit"</span><span class="p">);</span>
+            <span class="k">break</span><span class="p">;</span>
+        <span class="k">case</span> <span class="s">"load"</span><span class="p">:</span>
+            <span class="nf">LoadGame</span><span class="p">(</span><span class="n">parts</span><span class="p">.</span><span class="n">Length</span> <span class="p">&gt;</span> <span class="m">1</span> <span class="p">?</span> <span class="n">parts</span><span class="p">[</span><span class="m">1</span><span class="p">]</span> <span class="p">:</span> <span class="s">""</span><span class="p">);</span>
+            <span class="k">break</span><span class="p">;</span>
+        <span class="k">case</span> <span class="s">"save"</span><span class="p">:</span>
+            <span class="nf">SaveGame</span><span class="p">(</span><span class="n">parts</span><span class="p">.</span><span class="n">Length</span> <span class="p">&gt;</span> <span class="m">1</span> <span class="p">?</span> <span class="n">parts</span><span class="p">[</span><span class="m">1</span><span class="p">]</span> <span class="p">:</span> <span class="s">""</span><span class="p">);</span>
+            <span class="k">break</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="controlling-defocus-behavior">Controlling Defocus Behavior</h3>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="n">InputFieldEnterSubmit</span> <span class="n">inputField</span><span class="p">;</span>
+<span class="k">private</span> <span class="kt">bool</span> <span class="n">shouldFocusAfterSubmit</span><span class="p">;</span>
+
+<span class="k">void</span> <span class="nf">Start</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="n">inputField</span><span class="p">.</span><span class="n">EnterSubmit</span><span class="p">.</span><span class="nf">AddListener</span><span class="p">(</span><span class="n">OnSubmit</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">void</span> <span class="nf">OnSubmit</span><span class="p">(</span><span class="kt">string</span> <span class="n">text</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="nf">ProcessInput</span><span class="p">(</span><span class="n">text</span><span class="p">);</span>
+    
+    <span class="c1">// Optionally defocus based on some condition</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">shouldFocusAfterSubmit</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">inputField</span><span class="p">.</span><span class="n">defocusInput</span> <span class="p">=</span> <span class="k">false</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">else</span>
+    <span class="p">{</span>
+        <span class="n">inputField</span><span class="p">.</span><span class="n">defocusInput</span> <span class="p">=</span> <span class="k">true</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="using-with-multiple-inputfields">Using with Multiple InputFields</h3>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="n">InputFieldEnterSubmit</span><span class="p">[]</span> <span class="n">formFields</span><span class="p">;</span>
+
+<span class="k">void</span> <span class="nf">Start</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="k">foreach</span> <span class="p">(</span><span class="kt">var</span> <span class="n">field</span> <span class="k">in</span> <span class="n">formFields</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">field</span><span class="p">.</span><span class="n">EnterSubmit</span><span class="p">.</span><span class="nf">AddListener</span><span class="p">(</span><span class="n">OnFieldSubmitted</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">void</span> <span class="nf">OnFieldSubmitted</span><span class="p">(</span><span class="kt">string</span> <span class="k">value</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="c1">// Process submission - context comes from which field was submitted</span>
+    <span class="n">Debug</span><span class="p">.</span><span class="nf">Log</span><span class="p">(</span><span class="s">"Field submitted: "</span> <span class="p">+</span> <span class="k">value</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="video-demo">Video Demo</h2>
+
+<p>Coming soon…</p>
+
+<hr />
+
+<h2 id="see-also">See also</h2>
+
+<ul>
+  <li><a href="/Controls/InputFocus.md">InputFocus</a></li>
+  <li><a href="/Controls/ReturnKeyTrigger.md">ReturnKeyTrigger</a></li>
+  <li><a href="/Controls/Stepper.md">Stepper</a></li>
+</ul>
+
+<hr />
+
+<h2 id="credits-and-donation">Credits and Donation</h2>
+
+<p>Vicente Russo</p>
+
+<hr />
+
+<h2 id="external-links">External links</h2>
+
+<p><a href="https://bitbucket.org/SimonDarksideJ/unity-ui-extensions/issues/23/returnkeytriggersbutton">Sourced from</a>
+<a href="https://docs.unity3d.com/Manual/script-InputField.html">Unity InputField Documentation</a></p>
+
+  </main>
+  <footer class="footer" role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="/" class="footer-logo">
+        <img src="/assets/img/logo.svg" alt="Unity UI Extensions" width="28" height="28">
+        Unity UI Extensions
+      </a>
+      <p>Community-maintained UI controls for Unity's uGUI and UI Toolkit frameworks. Free forever, BSD 3-Clause licensed.</p>
+    </div>
+
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <div class="footer-col">
+        <h4>uGUI Package</h4>
+        <ul>
+          <li><a href="/ugui/">Overview</a></li>
+          <li><a href="/ugui/controls/">All Controls</a></li>
+          <li><a href="/ugui/install/">Installation</a></li>
+          <li><a href="/changelog/">Changelog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>UI Toolkit Package</h4>
+        <ul>
+          <li><a href="/uitoolkit/">Overview</a></li>
+          <li><a href="/uitoolkit/controls/">All Controls</a></li>
+          <li><a href="/uitoolkit/install/">Installation</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Community</h4>
+        <ul>
+          <li><a href="https://github.com/Unity-UI-Extensions/com.unity.uiextensions" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://www.openupm.com/packages/com.unity.uiextensions/" target="_blank" rel="noopener">OpenUPM</a></li>
+          <li><a href="https://discord.gg/SBuyXfh" target="_blank" rel="noopener">Discord</a></li>
+          <li><a href="https://github.com/Unity-UI-Extensions/com.unity.uiextensions/issues" target="_blank" rel="noopener">Report a Bug</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div class="footer-bottom">
+    <span>© 2026 Unity UI Extensions Community</span>
+    <span>BSD 3-Clause &amp; MIT Licensed</span>
+    <span>Not affiliated with Unity Technologies</span>
+  </div>
+</footer>
+
+  <script src="/assets/js/site.js"></script>
+</body>
+</html>

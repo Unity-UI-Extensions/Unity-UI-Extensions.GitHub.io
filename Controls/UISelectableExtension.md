@@ -1,8 +1,17 @@
+---
+layout: control-ugui
+title: "UI Selectable Extension"
+description: "Extends Selectable with extra state events and programmatic selection."
+category: "Utilities"
+permalink: /ugui/controls/ui-selectable-extension/
+has_video: false
+tags: [utilities, selectable, events, extension, state]
+---
 # UISelectableExtension
 
 Refactor of original UI Button control, can now add Press/Release and Hold events to any Selectable control
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ---------
 
@@ -30,7 +39,7 @@ Refactor of original UI Button control, can now add Press/Release and Hold event
 
 The Selectable Extension adds three events to any Selectable component for Press, Release and Hold.
 
-![](Images/SelectableExtensionInspector.jpg)
+![](/Controls/Images/SelectableExtensionInspector.jpg)
 
 ---------
 
@@ -64,7 +73,7 @@ Simply add the default Selectable Extension to a Rect Transform using:
 
 *Click to play*
 
-[![Non Drawing Graphic Demo](Images/NonDrawingGraphicDemo.jpg)](Images/NonDrawingGraphicDemo.mp4 "Non Drawing Graphic Demo")
+[![Non Drawing Graphic Demo](/Controls/Images/NonDrawingGraphicDemo.jpg)](/Controls/Images/NonDrawingGraphicDemo.mp4 "Non Drawing Graphic Demo")
 
 > Shows adding the Selectable Extension to a Non Drawing Graphic GameObject
 

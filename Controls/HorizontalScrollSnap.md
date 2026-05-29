@@ -1,8 +1,17 @@
+---
+layout: control-ugui
+title: "Horizontal Scroll Snap"
+description: "Paged horizontal scroll view that snaps to discrete content pages."
+category: "Layout"
+permalink: /ugui/controls/horizontal-scroll-snap/
+has_video: false
+tags: [layout, scroll, snap, horizontal, pages]
+---
 # Horizontal Scroll Snap
 
 A paged scroll rect that can work in steps / pages, includes button support.  Now also supports infinite scrolling.
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ---------
 
@@ -31,7 +40,7 @@ A paged scroll rect that can work in steps / pages, includes button support.  No
 A scroll snap style control which is focused on a horizontal layout, enabling a paged view of child elements.
 Pages can be moved by keys, swipes or via the use of buttons.
 
-![Horizontal ScrollSnap Inspector](Images/HSSInspector.jpg)
+![Horizontal ScrollSnap Inspector](/Controls/Images/HSSInspector.jpg)
 
 Implements its own infinite scrolling method and additional events for when pages change.
 
@@ -127,7 +136,7 @@ The main Vertical / Horizontal demo
 
 A simple walk-through setting up the Scroll Snap with a perspective view
 
-[![Scroll Snap Perspective View Demo](Images/ScrollSnapPerspectiveDemo.jpg)](Images/ScrollSnapPerspectiveDemo.mp4 "Scroll Snap Perspective View Demo")
+[![Scroll Snap Perspective View Demo](/Controls/Images/ScrollSnapPerspectiveDemo.jpg)](/Controls/Images/ScrollSnapPerspectiveDemo.mp4 "Scroll Snap Perspective View Demo")
 
 ---------
 

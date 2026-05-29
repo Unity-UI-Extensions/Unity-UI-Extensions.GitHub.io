@@ -1,3 +1,12 @@
+---
+layout: control-ugui
+title: "UI Vertical Scroller"
+description: "Vertical scroller with centre-focus zooming — elements scale by distance."
+category: "Layout"
+permalink: /ugui/controls/ui-vertical-scroller/
+has_video: false
+tags: [layout, scroll, vertical, zoom, scale]
+---
 # UIVerticalScroller
 
 A vertical scrolling layout with automatic element scaling based on distance from center, focus detection, and optional navigation buttons.

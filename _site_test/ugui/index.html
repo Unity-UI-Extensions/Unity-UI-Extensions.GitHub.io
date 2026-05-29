@@ -1,0 +1,1953 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>uGUI Controls — Unity UI Extensions — Unity UI Extensions</title>
+<meta name="description" content="70+ battle-tested uGUI controls for Unity's legacy UI system. Sliders, graphs, effects, layouts, and more.">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>uGUI Controls — Unity UI Extensions | Unity UI Extensions</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="uGUI Controls — Unity UI Extensions" />
+<meta name="author" content="Unity UI Extensions Community" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="70+ battle-tested uGUI controls for Unity’s legacy UI system. Sliders, graphs, effects, layouts, and more." />
+<meta property="og:description" content="70+ battle-tested uGUI controls for Unity’s legacy UI system. Sliders, graphs, effects, layouts, and more." />
+<link rel="canonical" href="https://unity-ui-extensions.github.io/ugui/" />
+<meta property="og:url" content="https://unity-ui-extensions.github.io/ugui/" />
+<meta property="og:site_name" content="Unity UI Extensions" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="uGUI Controls — Unity UI Extensions" />
+<meta name="twitter:site" content="@UnityUIExtensions" />
+<meta name="twitter:creator" content="@Unity UI Extensions Community" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Unity UI Extensions Community"},"description":"70+ battle-tested uGUI controls for Unity’s legacy UI system. Sliders, graphs, effects, layouts, and more.","headline":"uGUI Controls — Unity UI Extensions","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://unity-ui-extensions.github.io/assets/img/logo.svg"},"name":"Unity UI Extensions Community"},"url":"https://unity-ui-extensions.github.io/ugui/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/assets/css/neon.css">
+<link rel="icon" type="image/png" href="/assets/img/logo.png">
+
+</head>
+<body>
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a class="nav-brand" href="/">
+      <img src="/assets/img/logo.svg" alt="Unity UI Extensions" width="32" height="32">
+      <span>UI Extensions</span>
+    </a>
+
+    <button class="nav-mobile-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-links" role="list">
+      <li><a href="/" >Home</a></li>
+      <li>
+        <a href="/ugui/" class="active">
+          <span class="badge-u">uGUI</span>
+        </a>
+      </li>
+      <li>
+        <a href="/uitoolkit/" >
+          <span class="badge-t">UI Toolkit</span>
+        </a>
+      </li>
+      <li><a href="/changelog/" >Changelog</a></li>
+      <li>
+        <a href="https://github.com/Unity-UI-Extensions/com.unity.uiextensions" target="_blank" rel="noopener" class="nav-github">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+  <main id="main-content">
+    <section class="pkg-hero">
+  <div class="pkg-hero-inner">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span aria-hidden="true">›</span>
+      <span aria-current="page">uGUI</span>
+    </nav>
+    <div class="pkg-hero-badge"><span class="badge-u">uGUI Package</span></div>
+    <h1>Unity UI Extensions</h1>
+    <p class="pkg-hero-lead">70+ battle-tested controls for Unity's uGUI framework. The original community UI extension library — free, open source, and production-ready.</p>
+    <div class="pkg-hero-meta">
+      <code class="pkg-id">com.unity.uiextensions</code>
+      <span class="badge-ghost">BSD 3-Clause</span>
+      <span class="badge-ghost">Unity 2019.4+</span>
+    </div>
+    <div class="pkg-hero-actions">
+      <a href="#controls" class="btn btn-u">Browse Controls</a>
+      <a href="/ugui/install/" class="btn btn-ghost">Installation Guide</a>
+      <a href="https://github.com/Unity-UI-Extensions/com.unity.uiextensions" class="btn btn-ghost" target="_blank" rel="noopener">GitHub Repo</a>
+    </div>
+  </div>
+</section>
+
+<section class="section install-section" aria-labelledby="ugui-install-heading">
+  <div class="section-inner">
+    <h2 id="ugui-install-heading" class="section-title">Installation</h2>
+
+    <div class="install-tabs" data-tabs="">
+      <div class="tab-bar">
+        <button class="tab-btn active" data-tab="openupm">OpenUPM</button>
+        <button class="tab-btn" data-tab="giturl">Git URL</button>
+        <button class="tab-btn" data-tab="upm">Package Manager</button>
+      </div>
+
+      <div class="tab-panel active" data-panel="openupm">
+        <h3>Install via OpenUPM</h3>
+        <div class="install-panel">
+          <pre><code>openupm add com.unity.uiextensions</code></pre>
+          <button class="copy-btn" aria-label="Copy command">Copy</button>
+        </div>
+        <p>Or add the scoped registry manually in <code>Edit → Project Settings → Package Manager</code>:</p>
+        <div class="install-panel">
+          <pre><code>Name: package.openupm.com
+URL: https://package.openupm.com
+Scope: com.unity.uiextensions</code></pre>
+          <button class="copy-btn" aria-label="Copy registry settings">Copy</button>
+        </div>
+      </div>
+
+      <div class="tab-panel" data-panel="giturl">
+        <h3>Install via Git URL</h3>
+        <p>Open the Package Manager (<code>Window → Package Manager</code>), click <strong>+</strong> → <strong>Add package from git URL</strong> and paste:</p>
+        <div class="install-panel">
+          <pre><code>https://github.com/Unity-UI-Extensions/com.unity.uiextensions.git</code></pre>
+          <button class="copy-btn" aria-label="Copy git URL">Copy</button>
+        </div>
+        <p>Pin to a specific release by appending <code>#2.3.2</code> (or desired tag) to the URL.</p>
+      </div>
+
+      <div class="tab-panel" data-panel="upm">
+        <h3>Manual / Embedded Package</h3>
+        <ol>
+          <li>Download the latest <code>.zip</code> or <code>.unitypackage</code> from the <a href="https://github.com/Unity-UI-Extensions/com.unity.uiextensions/releases" target="_blank" rel="noopener">Releases page</a></li>
+          <li>Extract and place the folder in your project's <code>Packages/</code> directory</li>
+          <li>Unity will automatically detect and import the package</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="controls" class="section controls-section" aria-labelledby="controls-heading">
+  <div class="section-inner">
+    <h2 id="controls-heading" class="section-title">All Controls</h2>
+
+    <div class="controls-toolbar">
+      <div class="search-wrap">
+        <input id="control-search" type="search" placeholder="Search controls…" aria-label="Search controls" />
+      </div>
+
+      <div class="filter-bar" role="group" aria-label="Filter by category">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="layout">Layout</button>
+        <button class="filter-btn" data-filter="input">Input</button>
+        <button class="filter-btn" data-filter="primitives">Primitives</button>
+        <button class="filter-btn" data-filter="effects">Effects</button>
+        <button class="filter-btn" data-filter="utilities">Utilities</button>
+        <button class="filter-btn" data-filter="navigation">Navigation</button>
+      </div>
+    </div>
+
+    <div class="controls-grid" aria-live="polite">
+      
+        <a href="/ugui/controls/accordion/" class="control-card" data-category="layout" data-name="accordion" data-desc="expandable/collapsible panel sections with smooth animated transitions." data-tags="layout accordion collapse expand panel" aria-label="Accordion — Expandable/collapsible panel sections with smooth animated transitions.">
+
+          
+            <div class="control-card-img">
+              <img src="/Controls/Images/Accordion-Element.png" alt="Accordion preview" loading="lazy" />
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">Accordion</h3>
+              <span class="badge-ghost control-card-cat">Layout</span>
+            </div>
+            <p class="control-card-desc">Expandable/collapsible panel sections with smooth animated transitions.</p>
+            <div class="control-card-footer">
+              
+              
+                <span class="tag">layout</span>
+              
+                <span class="tag">accordion</span>
+              
+                <span class="tag">collapse</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/ugui/controls/card-ui/" class="control-card" data-category="layout" data-name="card ui" data-desc="2d and 3d card flip/stack animations for content presentation." data-tags="layout card flip 3d animation" aria-label="Card UI — 2D and 3D card flip/stack animations for content presentation.">
+
+          
+            <div class="control-card-img">
+              <img src="/Controls/Images/CardUIDemo.gif" alt="Card UI preview" loading="lazy" />
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">Card UI</h3>
+              <span class="badge-ghost control-card-cat">Layout</span>
+            </div>
+            <p class="control-card-desc">2D and 3D card flip/stack animations for content presentation.</p>
+            <div class="control-card-footer">
+              
+              
+                <span class="tag">layout</span>
+              
+                <span class="tag">card</span>
+              
+                <span class="tag">flip</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/ugui/controls/content-scroll-snap-horizontal/" class="control-card" data-category="layout" data-name="content scroll snap horizontal" data-desc="snap-to-page horizontal scroll container with automatic page detection." data-tags="layout scroll snap horizontal pagination" aria-label="Content Scroll Snap Horizontal — Snap-to-page horizontal scroll container with automatic page detection.">
+
+          
+            <div class="control-card-img">
+              <img src="/Controls/Images/ContentScrollSnapHorizontalDemo.gif" alt="Content Scroll Snap Horizontal preview" loading="lazy" />
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">Content Scroll Snap Horizontal</h3>
+              <span class="badge-ghost control-card-cat">Layout</span>
+            </div>
+            <p class="control-card-desc">Snap-to-page horizontal scroll container with automatic page detection.</p>
+            <div class="control-card-footer">
+              
+              
+                <span class="tag">layout</span>
+              
+                <span class="tag">scroll</span>
+              
+                <span class="tag">snap</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/ugui/controls/fancy-scroll-view/" class="control-card" data-category="layout" data-name="fancy scroll view" data-desc="high-performance scroll view with virtual item pooling and custom layouts." data-tags="layout scroll virtual performance pooling" aria-label="Fancy Scroll View — High-performance scroll view with virtual item pooling and custom layouts.">
+
+          
+            <div class="control-card-img">
+              <img src="/Controls/Images/FancyScrollViewExample.jpg" alt="Fancy Scroll View preview" loading="lazy" />
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">Fancy Scroll View</h3>
+              <span class="badge-ghost control-card-cat">Layout</span>
+            </div>
+            <p class="control-card-desc">High-performance scroll view with virtual item pooling and custom layouts.</p>
+            <div class="control-card-footer">
+              
+              
+                <span class="tag">layout</span>
+              
+                <span class="tag">scroll</span>
+              
+                <span class="tag">virtual</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/ugui/controls/flow-layout-group/" class="control-card" data-category="layout" data-name="flow layout group" data-desc="automatically wraps child elements into rows or columns like css flexbox." data-tags="layout flow wrap grid auto-layout" aria-label="Flow Layout Group — Automatically wraps child elements into rows or columns like CSS flexbox.">
+
+          
+            <div class="control-card-img">
+              <img src="/Controls/Images/TableLayoutGroupInspector.jpg" alt="Flow Layout Group preview" loading="lazy" />
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">Flow Layout Group</h3>
+              <span class="badge-ghost control-card-cat">Layout</span>
+            </div>
+            <p class="control-card-desc">Automatically wraps child elements into rows or columns like CSS flexbox.</p>
+            <div class="control-card-footer">
+              <span class="tag tag--video">Video</span>
+              
+                <span class="tag">layout</span>
+              
+                <span class="tag">flow</span>
+              
+                <span class="tag">wrap</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/ugui/controls/horizontal-scroll-snap/" class="control-card" data-category="layout" data-name="horizontal scroll snap" data-desc="paged horizontal scroll view that snaps to discrete content pages." data-tags="layout scroll snap horizontal pages" aria-label="Horizontal Scroll Snap — Paged horizontal scroll view that snaps to discrete content pages.">
+
+          
+            <div class="control-card-img">
+              <img src="/Controls/Images/HSSInspector.jpg" alt="Horizontal Scroll Snap preview" loading="lazy" />
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">Horizontal Scroll Snap</h3>
+              <span class="badge-ghost control-card-cat">Layout</span>
+            </div>
+            <p class="control-card-desc">Paged horizontal scroll view that snaps to discrete content pages.</p>
+            <div class="control-card-footer">
+              
+              
+                <span class="tag">layout</span>
+              
+                <span class="tag">scroll</span>
+              
+                <span class="tag">snap</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/ugui/controls/reorderable-list/" class="control-card" data-category="layout" data-name="reorderable list" data-desc="drag-and-drop list and grid layout with visual reordering feedback." data-tags="layout list drag drop reorder" aria-label="Reorderable List — Drag-and-drop list and grid layout with visual reordering feedback.">
+
+          
+            <div class="control-card-img">
+              <img src="/Controls/Images/ReorderableListInspector.jpg" alt="Reorderable List preview" loading="lazy" />
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">Reorderable List</h3>
+              <span class="badge-ghost control-card-cat">Layout</span>
+            </div>
+            <p class="control-card-desc">Drag-and-drop list and grid layout with visual reordering feedback.</p>
+            <div class="control-card-footer">
+              
+              
+                <span class="tag">layout</span>
+              
+                <span class="tag">list</span>
+              
+                <span class="tag">drag</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/ugui/controls/scroll-rect-ex/" class="control-card" data-category="layout" data-name="scroll rect ex" data-desc="enhanced scrollrect with momentum, deceleration tuning, and edge effects." data-tags="layout scroll scrollrect momentum enhanced" aria-label="Scroll Rect Ex — Enhanced ScrollRect with momentum, deceleration tuning, and edge effects.">
+
+          
+            <div class="control-card-img">
+              <img src="/Controls/Images/ScrollRectExInspector.jpg" alt="Scroll Rect Ex preview" loading="lazy" />
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">Scroll Rect Ex</h3>
+              <span class="badge-ghost control-card-cat">Layout</span>
+            </div>
+            <p class="control-card-desc">Enhanced ScrollRect with momentum, deceleration tuning, and edge effects.</p>
+            <div class="control-card-footer">
+              
+              
+                <span class="tag">layout</span>
+              
+                <span class="tag">scroll</span>
+              
+                <span class="tag">scrollrect</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/ugui/controls/scroll-rect-linker/" class="control-card" data-category="layout" data-name="scroll rect linker" data-desc="synchronises multiple scrollrect components so they scroll in tandem." data-tags="layout scroll sync linked scrollrect" aria-label="Scroll Rect Linker — Synchronises multiple ScrollRect components so they scroll in tandem.">
+
+          
+            <div class="control-card-img">
+              <img src="/Controls/Images/ScrollRectLinkerInspector.jpg" alt="Scroll Rect Linker preview" loading="lazy" />
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">Scroll Rect Linker</h3>
+              <span class="badge-ghost control-card-cat">Layout</span>
+            </div>
+            <p class="control-card-desc">Synchronises multiple ScrollRect components so they scroll in tandem.</p>
+            <div class="control-card-footer">
+              
+              
+                <span class="tag">layout</span>
+              
+                <span class="tag">scroll</span>
+              
+                <span class="tag">sync</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/ugui/controls/scroll-rect-tweener/" class="control-card" data-category="layout" data-name="scroll rect tweener" data-desc="programmatically scrolls a scrollrect to a target position with easing." data-tags="layout scroll tween animate scrollrect" aria-label="Scroll Rect Tweener — Programmatically scrolls a ScrollRect to a target position with easing.">
+
+          
+            <div class="control-card-img">
+              <img src="/Controls/Images/ScrollRectTweenerInspector.jpg" alt="Scroll Rect Tweener preview" loading="lazy" />
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">Scroll Rect Tweener</h3>
+              <span class="badge-ghost control-card-cat">Layout</span>
+            </div>
+            <p class="control-card-desc">Programmatically scrolls a ScrollRect to a target position with easing.</p>
+            <div class="control-card-footer">
+              
+              
+                <span class="tag">layout</span>
+              
+                <span class="tag">scroll</span>
+              
+                <span class="tag">tween</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/ugui/controls/scroll-snap/" class="control-card" data-category="layout" data-name="scroll snap" data-desc="perspective scroll snap with 3d carousel-style page transitions." data-tags="layout scroll snap perspective carousel 3d" aria-label="Scroll Snap — Perspective scroll snap with 3D carousel-style page transitions.">
+
+          
+            <div class="control-card-img">
+              <img src="/Controls/Images/ScrollSnapPerspectiveDemo.jpg" alt="Scroll Snap preview" loading="lazy" />
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">Scroll Snap</h3>
+              <span class="badge-ghost control-card-cat">Layout</span>
+            </div>
+            <p class="control-card-desc">Perspective scroll snap with 3D carousel-style page transitions.</p>
+            <div class="control-card-footer">
+              <span class="tag tag--video">Video</span>
+              
+                <span class="tag">layout</span>
+              
+                <span class="tag">scroll</span>
+              
+                <span class="tag">snap</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/ugui/controls/table-layout-group/" class="control-card" data-category="layout" data-name="table layout group" data-desc="css-style table layout that arranges ui elements into rows and columns." data-tags="layout table grid rows columns" aria-label="Table Layout Group — CSS-style table layout that arranges UI elements into rows and columns.">
+
+          
+            <div class="control-card-img">
+              <img src="/Controls/Images/TableLayoutGroupDemo.jpg" alt="Table Layout Group preview" loading="lazy" />
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">Table Layout Group</h3>
+              <span class="badge-ghost control-card-cat">Layout</span>
+            </div>
+            <p class="control-card-desc">CSS-style table layout that arranges UI elements into rows and columns.</p>
+            <div class="control-card-footer">
+              <span class="tag tag--video">Video</span>
+              
+                <span class="tag">layout</span>
+              
+                <span class="tag">table</span>
+              
+                <span class="tag">grid</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/ugui/controls/tile-size-fitter/" class="control-card" data-category="layout" data-name="tile size fitter" data-desc="constrains child tiles to a fixed aspect ratio within a grid layout." data-tags="layout tile aspect-ratio grid fitter" aria-label="Tile Size Fitter — Constrains child tiles to a fixed aspect ratio within a grid layout.">
+
+          
+            <div class="control-card-img">
+              <img src="/Controls/Images/TileSizeFitterInspector.jpg" alt="Tile Size Fitter preview" loading="lazy" />
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">Tile Size Fitter</h3>
+              <span class="badge-ghost control-card-cat">Layout</span>
+            </div>
+            <p class="control-card-desc">Constrains child tiles to a fixed aspect ratio within a grid layout.</p>
+            <div class="control-card-footer">
+              
+              
+                <span class="tag">layout</span>
+              
+                <span class="tag">tile</span>
+              
+                <span class="tag">aspect-ratio</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/ugui/controls/ui-vertical-scroller/" class="control-card" data-category="layout" data-name="ui vertical scroller" data-desc="vertical scroller with centre-focus zooming — elements scale by distance." data-tags="layout scroll vertical zoom scale" aria-label="UI Vertical Scroller — Vertical scroller with centre-focus zooming — elements scale by distance.">
+
+          
+            <div class="control-card-img control-card-img--placeholder" aria-hidden="true">
+              <span>UI</span>
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">UI Vertical Scroller</h3>
+              <span class="badge-ghost control-card-cat">Layout</span>
+            </div>
+            <p class="control-card-desc">Vertical scroller with centre-focus zooming — elements scale by distance.</p>
+            <div class="control-card-footer">
+              
+              
+                <span class="tag">layout</span>
+              
+                <span class="tag">scroll</span>
+              
+                <span class="tag">vertical</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/ugui/controls/vertical-scroll-snap/" class="control-card" data-category="layout" data-name="vertical scroll snap" data-desc="paged vertical scroll view that snaps to discrete content pages." data-tags="layout scroll snap vertical pages" aria-label="Vertical Scroll Snap — Paged vertical scroll view that snaps to discrete content pages.">
+
+          
+            <div class="control-card-img">
+              <img src="/Controls/Images/VSSInspector.jpg" alt="Vertical Scroll Snap preview" loading="lazy" />
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">Vertical Scroll Snap</h3>
+              <span class="badge-ghost control-card-cat">Layout</span>
+            </div>
+            <p class="control-card-desc">Paged vertical scroll view that snaps to discrete content pages.</p>
+            <div class="control-card-footer">
+              
+              
+                <span class="tag">layout</span>
+              
+                <span class="tag">scroll</span>
+              
+                <span class="tag">snap</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/ugui/controls/autocomplete-combobox/" class="control-card" data-category="input" data-name="autocomplete combobox" data-desc="combobox with live-filter autocomplete suggestions as the user types." data-tags="input combobox autocomplete dropdown search" aria-label="AutoComplete ComboBox — Combobox with live-filter autocomplete suggestions as the user types.">
+
+          
+            <div class="control-card-img">
+              <img src="/Controls/Images/AutoCompleteComboBoxInspector.jpg" alt="AutoComplete ComboBox preview" loading="lazy" />
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">AutoComplete ComboBox</h3>
+              <span class="badge-ghost control-card-cat">Input</span>
+            </div>
+            <p class="control-card-desc">Combobox with live-filter autocomplete suggestions as the user types.</p>
+            <div class="control-card-footer">
+              
+              
+                <span class="tag">input</span>
+              
+                <span class="tag">combobox</span>
+              
+                <span class="tag">autocomplete</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/ugui/controls/box-slider/" class="control-card" data-category="input" data-name="box slider" data-desc="2d drag-handle slider that outputs both x and y values simultaneously." data-tags="input slider 2d xy drag" aria-label="Box Slider — 2D drag-handle slider that outputs both X and Y values simultaneously.">
+
+          
+            <div class="control-card-img">
+              <img src="/Controls/Images/BoxSliderDemo.jpg" alt="Box Slider preview" loading="lazy" />
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">Box Slider</h3>
+              <span class="badge-ghost control-card-cat">Input</span>
+            </div>
+            <p class="control-card-desc">2D drag-handle slider that outputs both X and Y values simultaneously.</p>
+            <div class="control-card-footer">
+              <span class="tag tag--video">Video</span>
+              
+                <span class="tag">input</span>
+              
+                <span class="tag">slider</span>
+              
+                <span class="tag">2d</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/ugui/controls/color-picker/" class="control-card" data-category="input" data-name="color picker" data-desc="full hsv colour picker with hex input, alpha slider, and preset swatches." data-tags="input color colour picker hsv hex" aria-label="Color Picker — Full HSV colour picker with hex input, alpha slider, and preset swatches.">
+
+          
+            <div class="control-card-img">
+              <img src="/Controls/Images/ColorPickerDemo.jpg" alt="Color Picker preview" loading="lazy" />
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">Color Picker</h3>
+              <span class="badge-ghost control-card-cat">Input</span>
+            </div>
+            <p class="control-card-desc">Full HSV colour picker with hex input, alpha slider, and preset swatches.</p>
+            <div class="control-card-footer">
+              <span class="tag tag--video">Video</span>
+              
+                <span class="tag">input</span>
+              
+                <span class="tag">color</span>
+              
+                <span class="tag">colour</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/ugui/controls/combobox/" class="control-card" data-category="input" data-name="combobox" data-desc="editable dropdown with keyboard navigation and multi-select capability." data-tags="input combobox dropdown select" aria-label="ComboBox — Editable dropdown with keyboard navigation and multi-select capability.">
+
+          
+            <div class="control-card-img">
+              <img src="/Controls/Images/ComboBoxInspector.jpg" alt="ComboBox preview" loading="lazy" />
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">ComboBox</h3>
+              <span class="badge-ghost control-card-cat">Input</span>
+            </div>
+            <p class="control-card-desc">Editable dropdown with keyboard navigation and multi-select capability.</p>
+            <div class="control-card-footer">
+              
+              
+                <span class="tag">input</span>
+              
+                <span class="tag">combobox</span>
+              
+                <span class="tag">dropdown</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/ugui/controls/cooldown-button/" class="control-card" data-category="input" data-name="cooldown button" data-desc="button with an animated cooldown arc that prevents rapid re-clicking." data-tags="input button cooldown timer animation" aria-label="Cooldown Button — Button with an animated cooldown arc that prevents rapid re-clicking.">
+
+          
+            <div class="control-card-img">
+              <img src="/Controls/Images/CooldownDemo.jpg" alt="Cooldown Button preview" loading="lazy" />
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">Cooldown Button</h3>
+              <span class="badge-ghost control-card-cat">Input</span>
+            </div>
+            <p class="control-card-desc">Button with an animated cooldown arc that prevents rapid re-clicking.</p>
+            <div class="control-card-footer">
+              <span class="tag tag--video">Video</span>
+              
+                <span class="tag">input</span>
+              
+                <span class="tag">button</span>
+              
+                <span class="tag">cooldown</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/ugui/controls/dropdown-list/" class="control-card" data-category="input" data-name="dropdown list" data-desc="styleable dropdown list with animated open/close and custom item rendering." data-tags="input dropdown select list" aria-label="DropDown List — Styleable dropdown list with animated open/close and custom item rendering.">
+
+          
+            <div class="control-card-img">
+              <img src="/Controls/Images/DropDownListInspector.jpg" alt="DropDown List preview" loading="lazy" />
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">DropDown List</h3>
+              <span class="badge-ghost control-card-cat">Input</span>
+            </div>
+            <p class="control-card-desc">Styleable dropdown list with animated open/close and custom item rendering.</p>
+            <div class="control-card-footer">
+              
+              
+                <span class="tag">input</span>
+              
+                <span class="tag">dropdown</span>
+              
+                <span class="tag">select</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/ugui/controls/radial-slider/" class="control-card" data-category="input" data-name="radial slider" data-desc="circular arc slider with configurable start angle, range, and fill style." data-tags="input slider radial circular arc" aria-label="Radial Slider — Circular arc slider with configurable start angle, range, and fill style.">
+
+          
+            <div class="control-card-img">
+              <img src="/Controls/Images/RadialSliderDemo.jpg" alt="Radial Slider preview" loading="lazy" />
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">Radial Slider</h3>
+              <span class="badge-ghost control-card-cat">Input</span>
+            </div>
+            <p class="control-card-desc">Circular arc slider with configurable start angle, range, and fill style.</p>
+            <div class="control-card-footer">
+              <span class="tag tag--video">Video</span>
+              
+                <span class="tag">input</span>
+              
+                <span class="tag">slider</span>
+              
+                <span class="tag">radial</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/ugui/controls/range-slider/" class="control-card" data-category="input" data-name="range slider" data-desc="dual-handle slider for selecting a minimum/maximum value range." data-tags="input slider range min max dual" aria-label="Range Slider — Dual-handle slider for selecting a minimum/maximum value range.">
+
+          
+            <div class="control-card-img">
+              <img src="/Controls/Images/RangeSliderDemo.jpg" alt="Range Slider preview" loading="lazy" />
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">Range Slider</h3>
+              <span class="badge-ghost control-card-cat">Input</span>
+            </div>
+            <p class="control-card-desc">Dual-handle slider for selecting a minimum/maximum value range.</p>
+            <div class="control-card-footer">
+              <span class="tag tag--video">Video</span>
+              
+                <span class="tag">input</span>
+              
+                <span class="tag">slider</span>
+              
+                <span class="tag">range</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/ugui/controls/segment/" class="control-card" data-category="input" data-name="segment" data-desc="individual button segment used as a child within a segmentedcontrol." data-tags="input segment button selectable" aria-label="Segment — Individual button segment used as a child within a SegmentedControl.">
+
+          
+            <div class="control-card-img">
+              <img src="/Controls/Images/SegmentedExample.png" alt="Segment preview" loading="lazy" />
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">Segment</h3>
+              <span class="badge-ghost control-card-cat">Input</span>
+            </div>
+            <p class="control-card-desc">Individual button segment used as a child within a SegmentedControl.</p>
+            <div class="control-card-footer">
+              
+              
+                <span class="tag">input</span>
+              
+                <span class="tag">segment</span>
+              
+                <span class="tag">button</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/ugui/controls/segmented-control/" class="control-card" data-category="input" data-name="segmented control" data-desc="ios-style segmented control for choosing one option from a small set." data-tags="input segmented toggle select ios" aria-label="Segmented Control — iOS-style segmented control for choosing one option from a small set.">
+
+          
+            <div class="control-card-img">
+              <img src="/Controls/Images/SegmentedControlDemo.jpg" alt="Segmented Control preview" loading="lazy" />
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">Segmented Control</h3>
+              <span class="badge-ghost control-card-cat">Input</span>
+            </div>
+            <p class="control-card-desc">iOS-style segmented control for choosing one option from a small set.</p>
+            <div class="control-card-footer">
+              <span class="tag tag--video">Video</span>
+              
+                <span class="tag">input</span>
+              
+                <span class="tag">segmented</span>
+              
+                <span class="tag">toggle</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/ugui/controls/selection-box/" class="control-card" data-category="input" data-name="selection box" data-desc="drag to draw a rubber-band selection rectangle over multiple ui elements." data-tags="input selection drag marquee multi-select" aria-label="Selection Box — Drag to draw a rubber-band selection rectangle over multiple UI elements.">
+
+          
+            <div class="control-card-img">
+              <img src="/Controls/Images/SelectionBoxDemo.gif" alt="Selection Box preview" loading="lazy" />
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">Selection Box</h3>
+              <span class="badge-ghost control-card-cat">Input</span>
+            </div>
+            <p class="control-card-desc">Drag to draw a rubber-band selection rectangle over multiple UI elements.</p>
+            <div class="control-card-footer">
+              
+              
+                <span class="tag">input</span>
+              
+                <span class="tag">selection</span>
+              
+                <span class="tag">drag</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/ugui/controls/stepper/" class="control-card" data-category="input" data-name="stepper" data-desc="+/− increment buttons for numeric input with configurable step size." data-tags="input stepper increment decrement numeric" aria-label="Stepper — +/− increment buttons for numeric input with configurable step size.">
+
+          
+            <div class="control-card-img">
+              <img src="/Controls/Images/StepperDemo.jpg" alt="Stepper preview" loading="lazy" />
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">Stepper</h3>
+              <span class="badge-ghost control-card-cat">Input</span>
+            </div>
+            <p class="control-card-desc">+/− increment buttons for numeric input with configurable step size.</p>
+            <div class="control-card-footer">
+              <span class="tag tag--video">Video</span>
+              
+                <span class="tag">input</span>
+              
+                <span class="tag">stepper</span>
+              
+                <span class="tag">increment</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/ugui/controls/ui-knob/" class="control-card" data-category="input" data-name="ui knob" data-desc="rotary knob input with configurable min/max angle and loop support." data-tags="input knob rotary dial rotate" aria-label="UI Knob — Rotary knob input with configurable min/max angle and loop support.">
+
+          
+            <div class="control-card-img">
+              <img src="/Controls/Images/UIKnobInspector.jpg" alt="UI Knob preview" loading="lazy" />
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">UI Knob</h3>
+              <span class="badge-ghost control-card-cat">Input</span>
+            </div>
+            <p class="control-card-desc">Rotary knob input with configurable min/max angle and loop support.</p>
+            <div class="control-card-footer">
+              
+              
+                <span class="tag">input</span>
+              
+                <span class="tag">knob</span>
+              
+                <span class="tag">rotary</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/ugui/controls/diamond-graph/" class="control-card" data-category="primitives" data-name="diamond graph" data-desc="radar/spider chart rendered as a configurable diamond polygon shape." data-tags="primitives chart radar spider graph polygon" aria-label="Diamond Graph — Radar/spider chart rendered as a configurable diamond polygon shape.">
+
+          
+            <div class="control-card-img control-card-img--placeholder" aria-hidden="true">
+              <span>DI</span>
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">Diamond Graph</h3>
+              <span class="badge-ghost control-card-cat">Primitives</span>
+            </div>
+            <p class="control-card-desc">Radar/spider chart rendered as a configurable diamond polygon shape.</p>
+            <div class="control-card-footer">
+              <span class="tag tag--video">Video</span>
+              
+                <span class="tag">primitives</span>
+              
+                <span class="tag">chart</span>
+              
+                <span class="tag">radar</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/ugui/controls/grid-raw-image/" class="control-card" data-category="primitives" data-name="grid raw image" data-desc="rawimage that tiles a texture in a grid pattern with uv offset control." data-tags="primitives image grid tile texture" aria-label="Grid Raw Image — RawImage that tiles a texture in a grid pattern with UV offset control.">
+
+          
+            <div class="control-card-img control-card-img--placeholder" aria-hidden="true">
+              <span>GR</span>
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">Grid Raw Image</h3>
+              <span class="badge-ghost control-card-cat">Primitives</span>
+            </div>
+            <p class="control-card-desc">RawImage that tiles a texture in a grid pattern with UV offset control.</p>
+            <div class="control-card-footer">
+              
+              
+                <span class="tag">primitives</span>
+              
+                <span class="tag">image</span>
+              
+                <span class="tag">grid</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/ugui/controls/ui-circle-segmented/" class="control-card" data-category="primitives" data-name="ui circle segmented" data-desc="segmented ring/pie chart renderer with configurable slice count and gaps." data-tags="primitives circle pie ring segmented chart" aria-label="UI Circle Segmented — Segmented ring/pie chart renderer with configurable slice count and gaps.">
+
+          
+            <div class="control-card-img control-card-img--placeholder" aria-hidden="true">
+              <span>UI</span>
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">UI Circle Segmented</h3>
+              <span class="badge-ghost control-card-cat">Primitives</span>
+            </div>
+            <p class="control-card-desc">Segmented ring/pie chart renderer with configurable slice count and gaps.</p>
+            <div class="control-card-footer">
+              
+              
+                <span class="tag">primitives</span>
+              
+                <span class="tag">circle</span>
+              
+                <span class="tag">pie</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/ugui/controls/ui-graphic-sector/" class="control-card" data-category="primitives" data-name="ui graphic sector" data-desc="renders a filled sector (wedge/pie-slice) graphic with configurable arc." data-tags="primitives sector arc wedge pie graphic" aria-label="UI Graphic Sector — Renders a filled sector (wedge/pie-slice) graphic with configurable arc.">
+
+          
+            <div class="control-card-img control-card-img--placeholder" aria-hidden="true">
+              <span>UI</span>
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">UI Graphic Sector</h3>
+              <span class="badge-ghost control-card-cat">Primitives</span>
+            </div>
+            <p class="control-card-desc">Renders a filled sector (wedge/pie-slice) graphic with configurable arc.</p>
+            <div class="control-card-footer">
+              
+              
+                <span class="tag">primitives</span>
+              
+                <span class="tag">sector</span>
+              
+                <span class="tag">arc</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/ugui/controls/ui-grid-renderer/" class="control-card" data-category="primitives" data-name="ui grid renderer" data-desc="procedurally renders a grid of lines using unity's ui mesh system." data-tags="primitives grid lines mesh renderer" aria-label="UI Grid Renderer — Procedurally renders a grid of lines using Unity's UI mesh system.">
+
+          
+            <div class="control-card-img">
+              <img src="/Controls/Images/UIGridRendererDemo.jpg" alt="UI Grid Renderer preview" loading="lazy" />
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">UI Grid Renderer</h3>
+              <span class="badge-ghost control-card-cat">Primitives</span>
+            </div>
+            <p class="control-card-desc">Procedurally renders a grid of lines using Unity's UI mesh system.</p>
+            <div class="control-card-footer">
+              <span class="tag tag--video">Video</span>
+              
+                <span class="tag">primitives</span>
+              
+                <span class="tag">grid</span>
+              
+                <span class="tag">lines</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/ugui/controls/ui-line-connector/" class="control-card" data-category="primitives" data-name="ui line connector" data-desc="draws connecting lines between recttransform anchors with configurable width." data-tags="primitives line connector link bezier" aria-label="UI Line Connector — Draws connecting lines between RectTransform anchors with configurable width.">
+
+          
+            <div class="control-card-img">
+              <img src="/Controls/Images/UILineConnectorDemo.jpg" alt="UI Line Connector preview" loading="lazy" />
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">UI Line Connector</h3>
+              <span class="badge-ghost control-card-cat">Primitives</span>
+            </div>
+            <p class="control-card-desc">Draws connecting lines between RectTransform anchors with configurable width.</p>
+            <div class="control-card-footer">
+              <span class="tag tag--video">Video</span>
+              
+                <span class="tag">primitives</span>
+              
+                <span class="tag">line</span>
+              
+                <span class="tag">connector</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/ugui/controls/ui-line-renderer/" class="control-card" data-category="primitives" data-name="ui line renderer" data-desc="smooth multi-point ui line with configurable thickness, dash, and colour." data-tags="primitives line polyline chart draw" aria-label="UI Line Renderer — Smooth multi-point UI line with configurable thickness, dash, and colour.">
+
+          
+            <div class="control-card-img">
+              <img src="/Controls/Images/UILineRendererInspector.jpg" alt="UI Line Renderer preview" loading="lazy" />
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">UI Line Renderer</h3>
+              <span class="badge-ghost control-card-cat">Primitives</span>
+            </div>
+            <p class="control-card-desc">Smooth multi-point UI line with configurable thickness, dash, and colour.</p>
+            <div class="control-card-footer">
+              
+              
+                <span class="tag">primitives</span>
+              
+                <span class="tag">line</span>
+              
+                <span class="tag">polyline</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/ugui/controls/ui-polygon/" class="control-card" data-category="primitives" data-name="ui polygon" data-desc="renders any regular or irregular polygon as a filled ui graphic." data-tags="primitives polygon shape graphic mesh" aria-label="UI Polygon — Renders any regular or irregular polygon as a filled UI graphic.">
+
+          
+            <div class="control-card-img">
+              <img src="/Controls/Images/UIPolygonDemo.gif" alt="UI Polygon preview" loading="lazy" />
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">UI Polygon</h3>
+              <span class="badge-ghost control-card-cat">Primitives</span>
+            </div>
+            <p class="control-card-desc">Renders any regular or irregular polygon as a filled UI graphic.</p>
+            <div class="control-card-footer">
+              
+              
+                <span class="tag">primitives</span>
+              
+                <span class="tag">polygon</span>
+              
+                <span class="tag">shape</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/ugui/controls/curly-ui/" class="control-card" data-category="effects" data-name="curlyui" data-desc="warps any ugui graphic with configurable horizontal and vertical curves." data-tags="effects curve warp mesh distort" aria-label="CurlyUI — Warps any uGUI graphic with configurable horizontal and vertical curves.">
+
+          
+            <div class="control-card-img">
+              <img src="/Controls/Images/CurlyUIDemo.jpg" alt="CurlyUI preview" loading="lazy" />
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">CurlyUI</h3>
+              <span class="badge-ghost control-card-cat">Effects</span>
+            </div>
+            <p class="control-card-desc">Warps any uGUI graphic with configurable horizontal and vertical curves.</p>
+            <div class="control-card-footer">
+              <span class="tag tag--video">Video</span>
+              
+                <span class="tag">effects</span>
+              
+                <span class="tag">curve</span>
+              
+                <span class="tag">warp</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/ugui/controls/gradient/" class="control-card" data-category="effects" data-name="gradient" data-desc="applies a two-colour vertex gradient to any ugui graphic component." data-tags="effects gradient colour vertex text" aria-label="Gradient — Applies a two-colour vertex gradient to any uGUI graphic component.">
+
+          
+            <div class="control-card-img">
+              <img src="/Controls/Images/GradientDemo.jpg" alt="Gradient preview" loading="lazy" />
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">Gradient</h3>
+              <span class="badge-ghost control-card-cat">Effects</span>
+            </div>
+            <p class="control-card-desc">Applies a two-colour vertex gradient to any uGUI graphic component.</p>
+            <div class="control-card-footer">
+              <span class="tag tag--video">Video</span>
+              
+                <span class="tag">effects</span>
+              
+                <span class="tag">gradient</span>
+              
+                <span class="tag">colour</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/ugui/controls/gradient2/" class="control-card" data-category="effects" data-name="gradient 2" data-desc="four-corner gradient effect with independent colour control per vertex." data-tags="effects gradient four-corner vertex colour" aria-label="Gradient 2 — Four-corner gradient effect with independent colour control per vertex.">
+
+          
+            <div class="control-card-img">
+              <img src="/Controls/Images/Gradient2Demo.jpg" alt="Gradient 2 preview" loading="lazy" />
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">Gradient 2</h3>
+              <span class="badge-ghost control-card-cat">Effects</span>
+            </div>
+            <p class="control-card-desc">Four-corner gradient effect with independent colour control per vertex.</p>
+            <div class="control-card-footer">
+              
+              
+                <span class="tag">effects</span>
+              
+                <span class="tag">gradient</span>
+              
+                <span class="tag">four-corner</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/ugui/controls/letter-spacing/" class="control-card" data-category="effects" data-name="letter spacing" data-desc="adds configurable character spacing (tracking) to ugui text components." data-tags="effects text letter-spacing tracking typography" aria-label="Letter Spacing — Adds configurable character spacing (tracking) to uGUI Text components.">
+
+          
+            <div class="control-card-img">
+              <img src="/Controls/Images/LetterSpacingDemo.jpg" alt="Letter Spacing preview" loading="lazy" />
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">Letter Spacing</h3>
+              <span class="badge-ghost control-card-cat">Effects</span>
+            </div>
+            <p class="control-card-desc">Adds configurable character spacing (tracking) to uGUI Text components.</p>
+            <div class="control-card-footer">
+              <span class="tag tag--video">Video</span>
+              
+                <span class="tag">effects</span>
+              
+                <span class="tag">text</span>
+              
+                <span class="tag">letter-spacing</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/ugui/controls/mono-spacing/" class="control-card" data-category="effects" data-name="mono spacing" data-desc="forces monospace character widths on any ugui text component." data-tags="effects text monospace spacing typography" aria-label="Mono Spacing — Forces monospace character widths on any uGUI Text component.">
+
+          
+            <div class="control-card-img">
+              <img src="/Controls/Images/MonoSpacingDemo.jpg" alt="Mono Spacing preview" loading="lazy" />
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">Mono Spacing</h3>
+              <span class="badge-ghost control-card-cat">Effects</span>
+            </div>
+            <p class="control-card-desc">Forces monospace character widths on any uGUI Text component.</p>
+            <div class="control-card-footer">
+              <span class="tag tag--video">Video</span>
+              
+                <span class="tag">effects</span>
+              
+                <span class="tag">text</span>
+              
+                <span class="tag">monospace</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/ugui/controls/soft-alpha-mask/" class="control-card" data-category="effects" data-name="soft alpha mask" data-desc="uses a greyscale mask texture to softly clip ui content at the edges." data-tags="effects mask alpha clip soft" aria-label="Soft Alpha Mask — Uses a greyscale mask texture to softly clip UI content at the edges.">
+
+          
+            <div class="control-card-img">
+              <img src="/Controls/Images/SoftAlphaMaskDemo.gif" alt="Soft Alpha Mask preview" loading="lazy" />
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">Soft Alpha Mask</h3>
+              <span class="badge-ghost control-card-cat">Effects</span>
+            </div>
+            <p class="control-card-desc">Uses a greyscale mask texture to softly clip UI content at the edges.</p>
+            <div class="control-card-footer">
+              
+              
+                <span class="tag">effects</span>
+              
+                <span class="tag">mask</span>
+              
+                <span class="tag">alpha</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/ugui/controls/textpic/" class="control-card" data-category="effects" data-name="textpic" data-desc="embeds inline sprite images inside ugui text using custom tags." data-tags="effects text sprite inline emoji rich-text" aria-label="TextPic — Embeds inline sprite images inside uGUI Text using custom tags.">
+
+          
+            <div class="control-card-img">
+              <img src="/Controls/Images/TextPicDemo.jpg" alt="TextPic preview" loading="lazy" />
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">TextPic</h3>
+              <span class="badge-ghost control-card-cat">Effects</span>
+            </div>
+            <p class="control-card-desc">Embeds inline sprite images inside uGUI Text using custom tags.</p>
+            <div class="control-card-footer">
+              <span class="tag tag--video">Video</span>
+              
+                <span class="tag">effects</span>
+              
+                <span class="tag">text</span>
+              
+                <span class="tag">sprite</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/ugui/controls/ui-flippable/" class="control-card" data-category="effects" data-name="ui flippable" data-desc="mirrors any graphic component horizontally or vertically at runtime." data-tags="effects flip mirror graphic transform" aria-label="UI Flippable — Mirrors any graphic component horizontally or vertically at runtime.">
+
+          
+            <div class="control-card-img">
+              <img src="/Controls/Images/UIFlippableDemo.jpg" alt="UI Flippable preview" loading="lazy" />
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">UI Flippable</h3>
+              <span class="badge-ghost control-card-cat">Effects</span>
+            </div>
+            <p class="control-card-desc">Mirrors any graphic component horizontally or vertically at runtime.</p>
+            <div class="control-card-footer">
+              <span class="tag tag--video">Video</span>
+              
+                <span class="tag">effects</span>
+              
+                <span class="tag">flip</span>
+              
+                <span class="tag">mirror</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/ugui/controls/ui-particle-system/" class="control-card" data-category="effects" data-name="ui particle system" data-desc="renders unity particle systems within the ugui canvas layer." data-tags="effects particles vfx canvas render" aria-label="UI Particle System — Renders Unity Particle Systems within the uGUI canvas layer.">
+
+          
+            <div class="control-card-img">
+              <img src="/Controls/Images/UIParticleSystemDemo.jpg" alt="UI Particle System preview" loading="lazy" />
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">UI Particle System</h3>
+              <span class="badge-ghost control-card-cat">Effects</span>
+            </div>
+            <p class="control-card-desc">Renders Unity Particle Systems within the uGUI canvas layer.</p>
+            <div class="control-card-footer">
+              <span class="tag tag--video">Video</span>
+              
+                <span class="tag">effects</span>
+              
+                <span class="tag">particles</span>
+              
+                <span class="tag">vfx</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/ugui/controls/ui-tween-scale/" class="control-card" data-category="effects" data-name="ui tweenscale" data-desc="bounce/pulse scale tween on any ui element triggered by pointer events." data-tags="effects tween scale bounce animation" aria-label="UI TweenScale — Bounce/pulse scale tween on any UI element triggered by pointer events.">
+
+          
+            <div class="control-card-img">
+              <img src="/Controls/Images/UITweenScaleDemo.gif" alt="UI TweenScale preview" loading="lazy" />
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">UI TweenScale</h3>
+              <span class="badge-ghost control-card-cat">Effects</span>
+            </div>
+            <p class="control-card-desc">Bounce/pulse scale tween on any UI element triggered by pointer events.</p>
+            <div class="control-card-footer">
+              
+              
+                <span class="tag">effects</span>
+              
+                <span class="tag">tween</span>
+              
+                <span class="tag">scale</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/ugui/controls/non-drawing-graphic/" class="control-card" data-category="utilities" data-name="non-drawing graphic" data-desc="invisible raycast-blocking graphic — enables hit areas without any visual." data-tags="utilities raycast invisible hit-area clickable" aria-label="Non-Drawing Graphic — Invisible raycast-blocking graphic — enables hit areas without any visual.">
+
+          
+            <div class="control-card-img">
+              <img src="/Controls/Images/NonDrawingGraphicDemo.jpg" alt="Non-Drawing Graphic preview" loading="lazy" />
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">Non-Drawing Graphic</h3>
+              <span class="badge-ghost control-card-cat">Utilities</span>
+            </div>
+            <p class="control-card-desc">Invisible raycast-blocking graphic — enables hit areas without any visual.</p>
+            <div class="control-card-footer">
+              <span class="tag tag--video">Video</span>
+              
+                <span class="tag">utilities</span>
+              
+                <span class="tag">raycast</span>
+              
+                <span class="tag">invisible</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/ugui/controls/pagination-manager/" class="control-card" data-category="utilities" data-name="pagination manager" data-desc="connects a scrollsnap or contentscrollsnap to dot-style pagination indicators." data-tags="utilities pagination dots scrollsnap indicator" aria-label="Pagination Manager — Connects a ScrollSnap or ContentScrollSnap to dot-style pagination indicators.">
+
+          
+            <div class="control-card-img">
+              <img src="/Controls/Images/PaginationManagerDemo.jpg" alt="Pagination Manager preview" loading="lazy" />
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">Pagination Manager</h3>
+              <span class="badge-ghost control-card-cat">Utilities</span>
+            </div>
+            <p class="control-card-desc">Connects a ScrollSnap or ContentScrollSnap to dot-style pagination indicators.</p>
+            <div class="control-card-footer">
+              
+              
+                <span class="tag">utilities</span>
+              
+                <span class="tag">pagination</span>
+              
+                <span class="tag">dots</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/ugui/controls/radial-layout/" class="control-card" data-category="utilities" data-name="radial layout" data-desc="arranges child elements in a circle or arc at configurable radius and angle." data-tags="utilities layout radial circular arc" aria-label="Radial Layout — Arranges child elements in a circle or arc at configurable radius and angle.">
+
+          
+            <div class="control-card-img control-card-img--placeholder" aria-hidden="true">
+              <span>RA</span>
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">Radial Layout</h3>
+              <span class="badge-ghost control-card-cat">Utilities</span>
+            </div>
+            <p class="control-card-desc">Arranges child elements in a circle or arc at configurable radius and angle.</p>
+            <div class="control-card-footer">
+              <span class="tag tag--video">Video</span>
+              
+                <span class="tag">utilities</span>
+              
+                <span class="tag">layout</span>
+              
+                <span class="tag">radial</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/ugui/controls/rect-transform-editor/" class="control-card" data-category="utilities" data-name="rect transform editor" data-desc="editor-only helper that adds extra transform manipulation handles in the scene view." data-tags="utilities editor rect-transform inspector tools" aria-label="Rect Transform Editor — Editor-only helper that adds extra transform manipulation handles in the Scene view.">
+
+          
+            <div class="control-card-img">
+              <img src="/Controls/Images/RectTransformEditor-Inspector.jpg" alt="Rect Transform Editor preview" loading="lazy" />
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">Rect Transform Editor</h3>
+              <span class="badge-ghost control-card-cat">Utilities</span>
+            </div>
+            <p class="control-card-desc">Editor-only helper that adds extra transform manipulation handles in the Scene view.</p>
+            <div class="control-card-footer">
+              
+              
+                <span class="tag">utilities</span>
+              
+                <span class="tag">editor</span>
+              
+                <span class="tag">rect-transform</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/ugui/controls/reset-selectable-highlight/" class="control-card" data-category="utilities" data-name="reset selectable highlight" data-desc="clears stuck hover/selected highlight states on selectable components." data-tags="utilities selectable highlight reset state" aria-label="Reset Selectable Highlight — Clears stuck hover/selected highlight states on Selectable components.">
+
+          
+            <div class="control-card-img">
+              <img src="/Controls/Images/ResetSelectableHighlight-demo.gif" alt="Reset Selectable Highlight preview" loading="lazy" />
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">Reset Selectable Highlight</h3>
+              <span class="badge-ghost control-card-cat">Utilities</span>
+            </div>
+            <p class="control-card-desc">Clears stuck hover/selected highlight states on Selectable components.</p>
+            <div class="control-card-footer">
+              
+              
+                <span class="tag">utilities</span>
+              
+                <span class="tag">selectable</span>
+              
+                <span class="tag">highlight</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/ugui/controls/scroll-conflict-manager/" class="control-card" data-category="utilities" data-name="scroll conflict manager" data-desc="resolves scroll direction conflicts when nested scrollrects overlap." data-tags="utilities scroll conflict nested scrollrect" aria-label="Scroll Conflict Manager — Resolves scroll direction conflicts when nested ScrollRects overlap.">
+
+          
+            <div class="control-card-img">
+              <img src="/Controls/Images/ScrollRectConflictManagerInspector.jpg" alt="Scroll Conflict Manager preview" loading="lazy" />
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">Scroll Conflict Manager</h3>
+              <span class="badge-ghost control-card-cat">Utilities</span>
+            </div>
+            <p class="control-card-desc">Resolves scroll direction conflicts when nested ScrollRects overlap.</p>
+            <div class="control-card-footer">
+              
+              
+                <span class="tag">utilities</span>
+              
+                <span class="tag">scroll</span>
+              
+                <span class="tag">conflict</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/ugui/controls/selectable-scaler/" class="control-card" data-category="utilities" data-name="selectable scaler" data-desc="scales a selectable component up/down on hover and press events." data-tags="utilities selectable scale hover press animation" aria-label="Selectable Scaler — Scales a Selectable component up/down on hover and press events.">
+
+          
+            <div class="control-card-img">
+              <img src="/Controls/Images/SelectableScalarDemo.jpg" alt="Selectable Scaler preview" loading="lazy" />
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">Selectable Scaler</h3>
+              <span class="badge-ghost control-card-cat">Utilities</span>
+            </div>
+            <p class="control-card-desc">Scales a Selectable component up/down on hover and press events.</p>
+            <div class="control-card-footer">
+              <span class="tag tag--video">Video</span>
+              
+                <span class="tag">utilities</span>
+              
+                <span class="tag">selectable</span>
+              
+                <span class="tag">scale</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/ugui/controls/tooltip/" class="control-card" data-category="utilities" data-name="tooltip" data-desc="follows-cursor tooltip that displays rich text on pointer enter/exit." data-tags="utilities tooltip hover popup cursor" aria-label="ToolTip — Follows-cursor tooltip that displays rich text on pointer enter/exit.">
+
+          
+            <div class="control-card-img">
+              <img src="/Controls/Images/TooltipInspector.jpg" alt="ToolTip preview" loading="lazy" />
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">ToolTip</h3>
+              <span class="badge-ghost control-card-cat">Utilities</span>
+            </div>
+            <p class="control-card-desc">Follows-cursor tooltip that displays rich text on pointer enter/exit.</p>
+            <div class="control-card-footer">
+              
+              
+                <span class="tag">utilities</span>
+              
+                <span class="tag">tooltip</span>
+              
+                <span class="tag">hover</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/ugui/controls/ui-highlightable/" class="control-card" data-category="utilities" data-name="ui highlightable" data-desc="adds programmatic hover-highlight colour transitions to any graphic." data-tags="utilities highlight hover colour transition" aria-label="UI Highlightable — Adds programmatic hover-highlight colour transitions to any Graphic.">
+
+          
+            <div class="control-card-img">
+              <img src="/Controls/Images/UIHighlighterDemo.jpg" alt="UI Highlightable preview" loading="lazy" />
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">UI Highlightable</h3>
+              <span class="badge-ghost control-card-cat">Utilities</span>
+            </div>
+            <p class="control-card-desc">Adds programmatic hover-highlight colour transitions to any Graphic.</p>
+            <div class="control-card-footer">
+              <span class="tag tag--video">Video</span>
+              
+                <span class="tag">utilities</span>
+              
+                <span class="tag">highlight</span>
+              
+                <span class="tag">hover</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/ugui/controls/ui-scroll-to-selection/" class="control-card" data-category="utilities" data-name="ui scroll to selection" data-desc="automatically scrolls a scrollrect to keep the selected element in view." data-tags="utilities scroll selection focus auto-scroll" aria-label="UI Scroll To Selection — Automatically scrolls a ScrollRect to keep the selected element in view.">
+
+          
+            <div class="control-card-img">
+              <img src="/Controls/Images/UIScrollToSelectionInspector.jpg" alt="UI Scroll To Selection preview" loading="lazy" />
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">UI Scroll To Selection</h3>
+              <span class="badge-ghost control-card-cat">Utilities</span>
+            </div>
+            <p class="control-card-desc">Automatically scrolls a ScrollRect to keep the selected element in view.</p>
+            <div class="control-card-footer">
+              
+              
+                <span class="tag">utilities</span>
+              
+                <span class="tag">scroll</span>
+              
+                <span class="tag">selection</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/ugui/controls/ui-scroll-to-selection-xy/" class="control-card" data-category="utilities" data-name="ui scroll to selection xy" data-desc="auto-scrolls a 2d scrollrect to keep the selected element in view on both axes." data-tags="utilities scroll selection xy auto-scroll" aria-label="UI Scroll To Selection XY — Auto-scrolls a 2D ScrollRect to keep the selected element in view on both axes.">
+
+          
+            <div class="control-card-img">
+              <img src="/Controls/Images/UIScrollToSelectionXYInspector.jpg" alt="UI Scroll To Selection XY preview" loading="lazy" />
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">UI Scroll To Selection XY</h3>
+              <span class="badge-ghost control-card-cat">Utilities</span>
+            </div>
+            <p class="control-card-desc">Auto-scrolls a 2D ScrollRect to keep the selected element in view on both axes.</p>
+            <div class="control-card-footer">
+              
+              
+                <span class="tag">utilities</span>
+              
+                <span class="tag">scroll</span>
+              
+                <span class="tag">selection</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/ugui/controls/ui-selectable-extension/" class="control-card" data-category="utilities" data-name="ui selectable extension" data-desc="extends selectable with extra state events and programmatic selection." data-tags="utilities selectable events extension state" aria-label="UI Selectable Extension — Extends Selectable with extra state events and programmatic selection.">
+
+          
+            <div class="control-card-img">
+              <img src="/Controls/Images/SelectableExtensionInspector.jpg" alt="UI Selectable Extension preview" loading="lazy" />
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">UI Selectable Extension</h3>
+              <span class="badge-ghost control-card-cat">Utilities</span>
+            </div>
+            <p class="control-card-desc">Extends Selectable with extra state events and programmatic selection.</p>
+            <div class="control-card-footer">
+              
+              
+                <span class="tag">utilities</span>
+              
+                <span class="tag">selectable</span>
+              
+                <span class="tag">events</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/ugui/controls/ui-infinite-scroll/" class="control-card" data-category="utilities" data-name="ui infinite scroll" data-desc="loops scrollrect content indefinitely in horizontal or vertical mode." data-tags="utilities scroll infinite loop scrollrect" aria-label="UI Infinite Scroll — Loops ScrollRect content indefinitely in horizontal or vertical mode.">
+
+          
+            <div class="control-card-img">
+              <img src="/Controls/Images/InfiniteScrollInspector.jpg" alt="UI Infinite Scroll preview" loading="lazy" />
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">UI Infinite Scroll</h3>
+              <span class="badge-ghost control-card-cat">Utilities</span>
+            </div>
+            <p class="control-card-desc">Loops ScrollRect content indefinitely in horizontal or vertical mode.</p>
+            <div class="control-card-footer">
+              <span class="tag tag--video">Video</span>
+              
+                <span class="tag">utilities</span>
+              
+                <span class="tag">scroll</span>
+              
+                <span class="tag">infinite</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/ugui/controls/ui-magnetic-infinite-scroll/" class="control-card" data-category="utilities" data-name="ui magnetic infinite scroll" data-desc="infinite scroll with magnetic snap-to-item behaviour and deceleration." data-tags="utilities scroll infinite magnetic snap" aria-label="UI Magnetic Infinite Scroll — Infinite scroll with magnetic snap-to-item behaviour and deceleration.">
+
+          
+            <div class="control-card-img">
+              <img src="/Controls/Images/MagneticInfiniteScrollDemo.gif" alt="UI Magnetic Infinite Scroll preview" loading="lazy" />
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">UI Magnetic Infinite Scroll</h3>
+              <span class="badge-ghost control-card-cat">Utilities</span>
+            </div>
+            <p class="control-card-desc">Infinite scroll with magnetic snap-to-item behaviour and deceleration.</p>
+            <div class="control-card-footer">
+              
+              
+                <span class="tag">utilities</span>
+              
+                <span class="tag">scroll</span>
+              
+                <span class="tag">infinite</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/ugui/controls/ui-scroll-rect-occlusion/" class="control-card" data-category="utilities" data-name="ui scroll rect occlusion" data-desc="disables off-screen children in a scrollrect to reduce overdraw cost." data-tags="utilities scroll occlusion performance visibility" aria-label="UI Scroll Rect Occlusion — Disables off-screen children in a ScrollRect to reduce overdraw cost.">
+
+          
+            <div class="control-card-img">
+              <img src="/Controls/Images/ScrollRectOcclusionInspector.jpg" alt="UI Scroll Rect Occlusion preview" loading="lazy" />
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">UI Scroll Rect Occlusion</h3>
+              <span class="badge-ghost control-card-cat">Utilities</span>
+            </div>
+            <p class="control-card-desc">Disables off-screen children in a ScrollRect to reduce overdraw cost.</p>
+            <div class="control-card-footer">
+              
+              
+                <span class="tag">utilities</span>
+              
+                <span class="tag">scroll</span>
+              
+                <span class="tag">occlusion</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/ugui/controls/menu-system/" class="control-card" data-category="navigation" data-name="menu system" data-desc="hierarchical animated menu with slide, fade, and scale transition modes." data-tags="navigation menu hierarchy transition animated" aria-label="Menu System — Hierarchical animated menu with slide, fade, and scale transition modes.">
+
+          
+            <div class="control-card-img">
+              <img src="/Controls/Images/MenuDemo.jpg" alt="Menu System preview" loading="lazy" />
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">Menu System</h3>
+              <span class="badge-ghost control-card-cat">Navigation</span>
+            </div>
+            <p class="control-card-desc">Hierarchical animated menu with slide, fade, and scale transition modes.</p>
+            <div class="control-card-footer">
+              <span class="tag tag--video">Video</span>
+              
+                <span class="tag">navigation</span>
+              
+                <span class="tag">menu</span>
+              
+                <span class="tag">hierarchy</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/ugui/controls/tab-navigation/" class="control-card" data-category="navigation" data-name="tab navigation" data-desc="keyboard-navigable tab panel system with animated content switching." data-tags="navigation tabs keyboard panel switch" aria-label="Tab Navigation — Keyboard-navigable tab panel system with animated content switching.">
+
+          
+            <div class="control-card-img">
+              <img src="/Controls/Images/TabNavigationDemo.jpg" alt="Tab Navigation preview" loading="lazy" />
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">Tab Navigation</h3>
+              <span class="badge-ghost control-card-cat">Navigation</span>
+            </div>
+            <p class="control-card-desc">Keyboard-navigable tab panel system with animated content switching.</p>
+            <div class="control-card-footer">
+              <span class="tag tag--video">Video</span>
+              
+                <span class="tag">navigation</span>
+              
+                <span class="tag">tabs</span>
+              
+                <span class="tag">keyboard</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/ugui/controls/ugui-tools/" class="control-card" data-category="navigation" data-name="ugui tools" data-desc="editor menu shortcuts for common ugui operations — align, distribute, reset." data-tags="navigation editor tools utilities shortcuts" aria-label="uGUI Tools — Editor menu shortcuts for common uGUI operations — align, distribute, reset.">
+
+          
+            <div class="control-card-img">
+              <img src="/Controls/Images/uGUIToolsMenu.jpg" alt="uGUI Tools preview" loading="lazy" />
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">uGUI Tools</h3>
+              <span class="badge-ghost control-card-cat">Navigation</span>
+            </div>
+            <p class="control-card-desc">Editor menu shortcuts for common uGUI operations — align, distribute, reset.</p>
+            <div class="control-card-footer">
+              
+              
+                <span class="tag">navigation</span>
+              
+                <span class="tag">editor</span>
+              
+                <span class="tag">tools</span>
+              
+            </div>
+          </div>
+        </a>
+      
+    </div>
+
+    <p id="no-results" class="no-results" style="display:none" role="status">
+      No controls match your search. Try a different term or clear the filter.
+    </p>
+  </div>
+</section>
+
+  </main>
+  <footer class="footer" role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="/" class="footer-logo">
+        <img src="/assets/img/logo.svg" alt="Unity UI Extensions" width="28" height="28">
+        Unity UI Extensions
+      </a>
+      <p>Community-maintained UI controls for Unity's uGUI and UI Toolkit frameworks. Free forever, BSD 3-Clause licensed.</p>
+    </div>
+
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <div class="footer-col">
+        <h4>uGUI Package</h4>
+        <ul>
+          <li><a href="/ugui/">Overview</a></li>
+          <li><a href="/ugui/controls/">All Controls</a></li>
+          <li><a href="/ugui/install/">Installation</a></li>
+          <li><a href="/changelog/">Changelog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>UI Toolkit Package</h4>
+        <ul>
+          <li><a href="/uitoolkit/">Overview</a></li>
+          <li><a href="/uitoolkit/controls/">All Controls</a></li>
+          <li><a href="/uitoolkit/install/">Installation</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Community</h4>
+        <ul>
+          <li><a href="https://github.com/Unity-UI-Extensions/com.unity.uiextensions" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://www.openupm.com/packages/com.unity.uiextensions/" target="_blank" rel="noopener">OpenUPM</a></li>
+          <li><a href="https://discord.gg/SBuyXfh" target="_blank" rel="noopener">Discord</a></li>
+          <li><a href="https://github.com/Unity-UI-Extensions/com.unity.uiextensions/issues" target="_blank" rel="noopener">Report a Bug</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div class="footer-bottom">
+    <span>© 2026 Unity UI Extensions Community</span>
+    <span>BSD 3-Clause &amp; MIT Licensed</span>
+    <span>Not affiliated with Unity Technologies</span>
+  </div>
+</footer>
+
+  <script src="/assets/js/site.js"></script>
+</body>
+</html>

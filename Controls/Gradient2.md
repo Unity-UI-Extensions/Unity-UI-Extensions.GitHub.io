@@ -1,8 +1,17 @@
+---
+layout: control-ugui
+title: "Gradient 2"
+description: "Four-corner gradient effect with independent colour control per vertex."
+category: "Effects"
+permalink: /ugui/controls/gradient2/
+has_video: false
+tags: [effects, gradient, four-corner, vertex, colour]
+---
 # Gradient2
 
 Apply vertex colours in a gradient on any UI object
 
-![Gradient 2 Example](Images/Gradient2Example.jpg)
+![Gradient 2 Example](/Controls/Images/Gradient2Example.jpg)
 
 ---------
 
@@ -30,7 +39,7 @@ Apply vertex colours in a gradient on any UI object
 
 Apply vertex colours in a gradient on any graphic UI object
 
-![](Images/Gradient2Inspector.jpg)
+![](/Controls/Images/Gradient2Inspector.jpg)
 
 ---------
 
@@ -71,7 +80,7 @@ To enable the Gradient component, simply add the component to a UI Graphic Objec
 
 *Click to play*
 
-[![Gradient 2 Demo](Images/Gradient2Demo.jpg)](Images/Gradient2Demo.mp4 "Gradient 2 Demo")
+[![Gradient 2 Demo](/Controls/Images/Gradient2Demo.jpg)](/Controls/Images/Gradient2Demo.mp4 "Gradient 2 Demo")
 
 ---------
 

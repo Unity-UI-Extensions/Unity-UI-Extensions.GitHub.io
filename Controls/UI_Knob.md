@@ -1,8 +1,17 @@
+---
+layout: control-ugui
+title: "UI Knob"
+description: "Rotary knob input with configurable min/max angle and loop support."
+category: "Input"
+permalink: /ugui/controls/ui-knob/
+has_video: false
+tags: [input, knob, rotary, dial, rotate]
+---
 # UI_Knob
 
 A simple knob radial control which operates like any other Knob you might find on a stereo or dial.
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ---------
 
@@ -37,7 +46,7 @@ A powerful Knob style control, complete with a multitude of options, such as:
 * Controlled through mouse or touch
 * Supports multiple rotations to complete range (how many rotations make the max value)
 
-![UI Knob Inspector](Images/UIKnobInspector.jpg)
+![UI Knob Inspector](/Controls/Images/UIKnobInspector.jpg)
 
 ---------
 

@@ -1,8 +1,17 @@
+---
+layout: control-ugui
+title: "Grid Raw Image"
+description: "RawImage that tiles a texture in a grid pattern with UV offset control."
+category: "Primitives"
+permalink: /ugui/controls/grid-raw-image/
+has_video: false
+tags: [primitives, image, grid, tile, texture]
+---
 # UI Grid Raw Image
 
 Custom graphic for uGUI. Single-object/texture Grid image, excellent for tile-based (tetris-like) inventory
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ---------
 

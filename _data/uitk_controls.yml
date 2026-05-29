@@ -1,0 +1,175 @@
+# UIToolkit Controls — 18 controls
+# All controls have complete text/code documentation but no visual demos yet.
+# See MISSING_CONTENT.md for the full list of missing screenshots/GIFs.
+
+# ── Navigation ───────────────────────────────────────────────────────────────
+
+- name: Scroll Snap
+  slug: scroll-snap
+  permalink: /uitoolkit/controls/scroll-snap/
+  category: Navigation
+  description: Swipe/drag paged scroll container that snaps to discrete pages by index.
+  preview_image: ""
+  has_video: false
+  tags: [navigation, scroll, snap, pages, swipe]
+
+- name: Collapsible Section
+  slug: collapsible-section
+  permalink: /uitoolkit/controls/collapsible-section/
+  category: Navigation
+  description: Animated expand/collapse section with header toggle and content container.
+  preview_image: ""
+  has_video: false
+  tags: [navigation, collapse, expand, accordion, section]
+
+- name: Quadrant Stepper
+  slug: quadrant-stepper
+  permalink: /uitoolkit/controls/quadrant-stepper/
+  category: Navigation
+  description: Four-directional step selector displayed as an overlay compass widget.
+  preview_image: ""
+  has_video: false
+  tags: [navigation, stepper, direction, compass, selector]
+
+# ── Forms ─────────────────────────────────────────────────────────────────────
+
+- name: Pill Input Field
+  slug: pill-input-field
+  permalink: /uitoolkit/controls/pill-input-field/
+  category: Forms
+  description: Rounded pill-shaped input field with floating label and validation state.
+  preview_image: ""
+  has_video: false
+  tags: [forms, input, pill, label, text-field]
+
+- name: Rounded Input Field
+  slug: rounded-input-field
+  permalink: /uitoolkit/controls/rounded-input-field/
+  category: Forms
+  description: Card-style text input with rounded corners and focus/error colour states.
+  preview_image: ""
+  has_video: false
+  tags: [forms, input, rounded, text-field, focus]
+
+- name: Pill Selector
+  slug: pill-selector
+  permalink: /uitoolkit/controls/pill-selector/
+  category: Forms
+  description: Row of pill-shaped radio buttons for exclusive single-option selection.
+  preview_image: ""
+  has_video: false
+  tags: [forms, selector, pill, radio, single-select]
+
+- name: Toggle Button
+  slug: toggle-button
+  permalink: /uitoolkit/controls/toggle-button/
+  category: Forms
+  description: Flat toggle switch with animated indicator and on/off label support.
+  preview_image: ""
+  has_video: false
+  tags: [forms, toggle, switch, button, boolean]
+
+- name: Color Toggle Button
+  slug: color-toggle-button
+  permalink: /uitoolkit/controls/color-toggle-button/
+  category: Forms
+  description: Toggle button that tints itself with a configurable accent colour when active.
+  preview_image: ""
+  has_video: false
+  tags: [forms, toggle, color, tint, button]
+
+- name: Color Toggle Group
+  slug: color-toggle-group
+  permalink: /uitoolkit/controls/color-toggle-group/
+  category: Forms
+  description: Horizontally scrollable row of colour-tinted toggle buttons for multi-select.
+  preview_image: ""
+  has_video: false
+  tags: [forms, toggle, group, color, multi-select]
+
+# ── Feedback ─────────────────────────────────────────────────────────────────
+
+- name: Step Progress Bar
+  slug: step-progress-bar
+  permalink: /uitoolkit/controls/step-progress-bar/
+  category: Feedback
+  description: Segmented progress bar with labelled milestone steps and fill animation.
+  preview_image: ""
+  has_video: false
+  tags: [feedback, progress, steps, bar, milestone]
+
+- name: Page Dot Indicator
+  slug: page-dot-indicator
+  permalink: /uitoolkit/controls/page-dot-indicator/
+  category: Feedback
+  description: Animated pagination dots that reflect the current page of a scroll view.
+  preview_image: ""
+  has_video: false
+  tags: [feedback, pagination, dots, indicator, scroll]
+
+- name: Loading Icon
+  slug: loading-icon
+  permalink: /uitoolkit/controls/loading-icon/
+  category: Feedback
+  description: Animated spinner/loading indicator with configurable speed and colour.
+  preview_image: ""
+  has_video: false
+  tags: [feedback, loading, spinner, animation, indicator]
+
+- name: Toast Swipe Dismiss Manipulator
+  slug: toast-swipe-dismiss
+  permalink: /uitoolkit/controls/toast-swipe-dismiss/
+  category: Feedback
+  description: Gesture manipulator that allows swiping a toast/notification to dismiss it.
+  preview_image: ""
+  has_video: false
+  tags: [feedback, toast, swipe, dismiss, gesture]
+
+- name: Coming Soon Message
+  slug: coming-soon-message
+  permalink: /uitoolkit/controls/coming-soon-message/
+  category: Feedback
+  description: "Placeholder panel displaying a styled 'coming soon' message with icon."
+  preview_image: ""
+  has_video: false
+  tags: [feedback, placeholder, coming-soon, panel]
+
+# ── Primitives ───────────────────────────────────────────────────────────────
+
+- name: Pill Button
+  slug: pill-button
+  permalink: /uitoolkit/controls/pill-button/
+  category: Primitives
+  description: Primary CTA button in a rounded pill shape with press flash animation.
+  preview_image: ""
+  has_video: false
+  tags: [primitives, button, pill, cta, animation]
+
+- name: Circular Image Button
+  slug: circular-image-button
+  permalink: /uitoolkit/controls/circular-image-button/
+  category: Primitives
+  description: Circular avatar/icon button with mask, border, and selected-state styling.
+  preview_image: ""
+  has_video: false
+  tags: [primitives, button, circular, avatar, icon]
+
+- name: Icon Label Button
+  slug: icon-label-button
+  permalink: /uitoolkit/controls/icon-label-button/
+  category: Primitives
+  description: Horizontal row button combining a left-side icon with label and subtitle text.
+  preview_image: ""
+  has_video: false
+  tags: [primitives, button, icon, label, row]
+
+# ── Utilities ────────────────────────────────────────────────────────────────
+
+- name: Grayscale Image
+  slug: grayscale-image
+  permalink: /uitoolkit/controls/grayscale-image/
+  category: Utilities
+  description: Shader-based Image element that renders in greyscale with adjustable intensity.
+  preview_image: ""
+  has_video: false
+  tags: [utilities, image, grayscale, shader, effect]

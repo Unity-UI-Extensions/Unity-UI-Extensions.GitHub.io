@@ -1,8 +1,17 @@
+---
+layout: control-ugui
+title: "AutoComplete ComboBox"
+description: "Combobox with live-filter autocomplete suggestions as the user types."
+category: "Input"
+permalink: /ugui/controls/autocomplete-combobox/
+has_video: false
+tags: [input, combobox, autocomplete, dropdown, search]
+---
 # AutoComplete ComboBox
 
 A text combobox with autocomplete selection
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ---------
 
@@ -30,7 +39,7 @@ A text combobox with autocomplete selection
 
 A specialised text field that allows a vocabulary to be added to guide or restrict entry.
 
-![AutocompleteComboBox inspector](Images/AutoCompleteComboBoxInspector.jpg)
+![AutocompleteComboBox inspector](/Controls/Images/AutoCompleteComboBoxInspector.jpg)
 
 ---------
 

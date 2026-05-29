@@ -1,8 +1,17 @@
+---
+layout: control-ugui
+title: "UI Flippable"
+description: "Mirrors any graphic component horizontally or vertically at runtime."
+category: "Effects"
+permalink: /ugui/controls/ui-flippable/
+has_video: true
+tags: [effects, flip, mirror, graphic, transform]
+---
 # UIFlippable
 
 A Graphic altering tool which can flip a graphic either Horizontally / Vertically or both.
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ---------
 
@@ -30,7 +39,7 @@ A Graphic altering tool which can flip a graphic either Horizontally / Verticall
 
 The Flippable effect allows you to flip a graphic either on the Horizontal axis, vertical axis or both through this simple component..
 
-![](Images/UIFlippableInspector.jpg)
+![](/Controls/Images/UIFlippableInspector.jpg)
 
 *Note* when used with other graphical effects, this component must be ordered the highest, else Unity will report an error. (see usage)
 
@@ -76,7 +85,7 @@ Simple add to any Image or Graphic Component.
 
 *Click to play*
 
-[![UIFlippable Demo](Images/UIFlippableDemo.jpg)](Images/UIFlippableDemo.mp4 "UIFlippable Demo")
+[![UIFlippable Demo](/Controls/Images/UIFlippableDemo.jpg)](/Controls/Images/UIFlippableDemo.mp4 "UIFlippable Demo")
 
 ---------
 

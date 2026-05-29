@@ -1,8 +1,17 @@
+---
+layout: control-ugui
+title: "Cooldown Button"
+description: "Button with an animated cooldown arc that prevents rapid re-clicking."
+category: "Input"
+permalink: /ugui/controls/cooldown-button/
+has_video: true
+tags: [input, button, cooldown, timer, animation]
+---
 # CooldownButton
 
 A selectable extension to provide a "cooldown" capability, preventing the button from being usable until a specified amount of time has passed.
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ---------
 
@@ -30,7 +39,7 @@ A selectable extension to provide a "cooldown" capability, preventing the button
 
 In several games, a power-up or cooldown logic is required when clicking on a button, this control enables that behaviour in a single reusable script.
 
-![](Images/CooldownInspector.jpg)
+![](/Controls/Images/CooldownInspector.jpg)
 
 This can be attached to any control implementing "Selectable" behaviour, such as:
 
@@ -84,7 +93,7 @@ Attach to any Selectable UI component (Button, Toggle, etc.) to add cooldown fun
 
 *Click to play*
 
-[![UI Line Connector Demo](Images/CooldownDemo.jpg)](Images/CooldownDemo.mp4 "UI Line Connector Demo")
+[![UI Line Connector Demo](/Controls/Images/CooldownDemo.jpg)](/Controls/Images/CooldownDemo.mp4 "UI Line Connector Demo")
 
 ---------
 

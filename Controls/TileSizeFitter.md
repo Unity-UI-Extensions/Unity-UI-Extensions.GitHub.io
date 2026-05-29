@@ -1,3 +1,12 @@
+---
+layout: control-ugui
+title: "Tile Size Fitter"
+description: "Constrains child tiles to a fixed aspect ratio within a grid layout."
+category: "Layout"
+permalink: /ugui/controls/tile-size-fitter/
+has_video: false
+tags: [layout, tile, aspect-ratio, grid, fitter]
+---
 # TileSizeFitter
 
 > [!IMPORTANT]
@@ -5,7 +14,7 @@
 
 A fitter layout that will shrink / expand content by tiles
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ---------
 
@@ -33,7 +42,7 @@ A fitter layout that will shrink / expand content by tiles
 
 The Tile Size Fitter will automatically rescale an image within a RectTransform according to the defined Size and border settings.
 
-![](Images/TileSizeFitterInspector.jpg)
+![](/Controls/Images/TileSizeFitterInspector.jpg)
 
 ---------
 

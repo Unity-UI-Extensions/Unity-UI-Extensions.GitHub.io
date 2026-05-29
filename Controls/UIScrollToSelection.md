@@ -1,8 +1,17 @@
+---
+layout: control-ugui
+title: "UI Scroll To Selection"
+description: "Automatically scrolls a ScrollRect to keep the selected element in view."
+category: "Utilities"
+permalink: /ugui/controls/ui-scroll-to-selection/
+has_video: false
+tags: [utilities, scroll, selection, focus, auto-scroll]
+---
 # UIScrollToSelection
 
 Automatically scrolls a ScrollRect to the currently selected UI element
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ---------
 

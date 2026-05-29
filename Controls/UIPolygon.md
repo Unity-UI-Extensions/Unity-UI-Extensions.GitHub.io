@@ -1,8 +1,17 @@
+---
+layout: control-ugui
+title: "UI Polygon"
+description: "Renders any regular or irregular polygon as a filled UI graphic."
+category: "Primitives"
+permalink: /ugui/controls/ui-polygon/
+has_video: false
+tags: [primitives, polygon, shape, graphic, mesh]
+---
 # UIPolygon
 
 Graphic control for drawing custom polygons in the UI System
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ---------
 
@@ -30,7 +39,7 @@ Graphic control for drawing custom polygons in the UI System
 
 Advanced polygon control with support for multiple vertices which can be manipulated to control the look and feel of the primitive
 
-![UI Polygon Inspector](Images/UIPolygonInspector.jpg)
+![UI Polygon Inspector](/Controls/Images/UIPolygonInspector.jpg)
 
 ---------
 
@@ -65,7 +74,7 @@ Alternatively, add the component using:
 
 ## Video Demo
 
-![UI Polygon Inspector](Images/UIPolygonDemo.gif)
+![UI Polygon Inspector](/Controls/Images/UIPolygonDemo.gif)
 
 ---------
 

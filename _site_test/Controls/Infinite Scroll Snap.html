@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Infinite Scroll Snap — Unity UI Extensions</title>
+<meta name="description" content="Community-maintained UI extension controls for Unity's uGUI and UI Toolkit frameworks — 80+ battle-tested controls, free forever.">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Infinite Scroll Snap | Unity UI Extensions</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Infinite Scroll Snap" />
+<meta name="author" content="Unity UI Extensions Community" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Community-maintained UI extension controls for Unity’s uGUI and UI Toolkit frameworks — 80+ battle-tested controls, free forever." />
+<meta property="og:description" content="Community-maintained UI extension controls for Unity’s uGUI and UI Toolkit frameworks — 80+ battle-tested controls, free forever." />
+<link rel="canonical" href="https://unity-ui-extensions.github.io/Controls/Infinite%20Scroll%20Snap.html" />
+<meta property="og:url" content="https://unity-ui-extensions.github.io/Controls/Infinite%20Scroll%20Snap.html" />
+<meta property="og:site_name" content="Unity UI Extensions" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Infinite Scroll Snap" />
+<meta name="twitter:site" content="@UnityUIExtensions" />
+<meta name="twitter:creator" content="@Unity UI Extensions Community" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Unity UI Extensions Community"},"description":"Community-maintained UI extension controls for Unity’s uGUI and UI Toolkit frameworks — 80+ battle-tested controls, free forever.","headline":"Infinite Scroll Snap","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://unity-ui-extensions.github.io/assets/img/logo.svg"},"name":"Unity UI Extensions Community"},"url":"https://unity-ui-extensions.github.io/Controls/Infinite%20Scroll%20Snap.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/assets/css/neon.css">
+<link rel="icon" type="image/png" href="/assets/img/logo.png">
+
+</head>
+<body>
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a class="nav-brand" href="/">
+      <img src="/assets/img/logo.svg" alt="Unity UI Extensions" width="32" height="32">
+      <span>UI Extensions</span>
+    </a>
+
+    <button class="nav-mobile-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-links" role="list">
+      <li><a href="/" >Home</a></li>
+      <li>
+        <a href="/ugui/" >
+          <span class="badge-u">uGUI</span>
+        </a>
+      </li>
+      <li>
+        <a href="/uitoolkit/" >
+          <span class="badge-t">UI Toolkit</span>
+        </a>
+      </li>
+      <li><a href="/changelog/" >Changelog</a></li>
+      <li>
+        <a href="https://github.com/Unity-UI-Extensions/com.unity.uiextensions" target="_blank" rel="noopener" class="nav-github">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+  <main id="main-content">
+    <h1 id="infinite-scroll-snap">Infinite Scroll Snap</h1>
+
+<blockquote>
+  <p>[!IMPORTANT]
+⚠️ This control has been deprecated for Unity 6 and is no longer maintained. It remains documented for legacy reference.</p>
+</blockquote>
+
+<p>Infinite scrolling layout control for UI elements.</p>
+
+<!--![](Images/ Game Image.jpg)-->
+
+<hr />
+
+<h2 id="contents">Contents</h2>
+
+<blockquote>
+  <p>1 <a href="#overview">Overview</a></p>
+
+  <p>2 <a href="#properties">Properties</a></p>
+
+  <p>3 <a href="#methods">Methods</a></p>
+
+  <p>4 <a href="#usage">Usage</a></p>
+
+  <p>5 <a href="#video-demo">Video Demo</a></p>
+
+  <p>6 <a href="#see-also">See also</a></p>
+
+  <p>7 <a href="#credits-and-donation">Credits and Donation</a></p>
+
+  <p>8 <a href="#external-links">External links</a></p>
+</blockquote>
+
+<hr />
+
+<h2 id="overview">Overview</h2>
+
+<p>Infinite scrolling layout control for UI elements. This component has been replaced by improved infinite scrolling implementation in HorizontalScrollSnap and VerticalScrollSnap.</p>
+
+<hr />
+
+<h2 id="properties">Properties</h2>
+
+<p>This component has been deprecated and replaced.</p>
+
+<hr />
+
+<h2 id="methods">Methods</h2>
+
+<p>This component has been deprecated and replaced.</p>
+
+<hr />
+
+<h2 id="usage">Usage</h2>
+
+<p>This component has been deprecated for Unity 6. Use HorizontalScrollSnap or VerticalScrollSnap with infinite scrolling enabled instead.</p>
+
+<hr />
+
+<h2 id="video-demo">Video Demo</h2>
+
+<p>N/A - Component deprecated</p>
+
+<hr />
+
+<h2 id="see-also">See also</h2>
+
+<ul>
+  <li><a href="/Controls/HorizontalScrollSnap.md">HorizontalScrollSnap</a></li>
+  <li><a href="/Controls/VerticalScrollSnap.md">VerticalScrollSnap</a></li>
+</ul>
+
+<hr />
+
+<h2 id="credits-and-donation">Credits and Donation</h2>
+
+<p>N/A</p>
+
+<hr />
+
+<h2 id="external-links">External links</h2>
+
+<p>N/A</p>
+
+<p>This is a code I wrote to add snap functionality to UI_InfiniteScroll. I’ve only tested it in vertical, but it should work perfectly fine horizontally as well. Feel free to add this to your projects and really do anything with it.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#!c#
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.UI.Extensions;
+using UnityEngine.EventSystems;
+
+public class UI_InfiniteScrollSnap : MonoBehaviour, IBeginDragHandler, IEndDragHandler
+{
+    //this component is meant to be added to objects which have UI_InfiniteScroll components
+    //if true user will need to call Init() method manually (in case the contend of the scrollview is generated from code or requires special initialization)
+    [Tooltip("If false, will Init automatically, otherwise you need to call Init() method")]
+    public bool InitByUser = false;
+    public RectTransform _center; //the transform target of lerping. the list item closest to this recttransform is the 'center' of it
+
+    private UI_InfiniteScroll _UI_InfiniteScroll;
+    private ScrollRect _scrollRect;
+    private RectTransform _content;
+    private RectTransform _centerChild; //the closest child to the center
+    public RectTransform CenterChild //the center child needs to be initialized as to begin with
+    {
+        set { _centerChild = value; }
+    }
+    private bool _centerChildChanged; //if the closest child to the center has changed
+    private bool _beingDragged;
+    private bool _isLerping;
+
+    private int dragCheck;
+
+    void Awake()
+    {
+        if (!InitByUser)
+        {
+            Init();
+        }
+    }
+    public void Init()
+    {
+        if (_snapRecieverGameObject != null)
+        {
+            _snapReciever = _snapRecieverGameObject.GetComponent&lt;IRecievesSnap&gt;();
+        }
+        if (GetComponent&lt;UI_InfiniteScroll&gt;() != null)
+        {
+            _UI_InfiniteScroll = GetComponent&lt;UI_InfiniteScroll&gt;();
+            if (GetComponent&lt;ScrollRect&gt;() != null)
+            {
+                _scrollRect = GetComponent&lt;ScrollRect&gt;();
+                _content = _scrollRect.content;
+            }
+        }
+    }
+    public void Update()
+    {
+        if (_isLerping)
+        {
+            if (_centerChild.position.Equals(_center.position)) _isLerping = false;
+            else
+            {
+                _content.transform.position -= MyMath.Lerp(Vector3.zero, _centerChild.position - _center.position, .2f);
+            }
+
+        }
+        else if (_scrollRect.velocity.y &lt; 30f) //if the list is being scrolled slowly
+        {
+            foreach (RectTransform child in _content) //this for loop finds the closest child to the center
+            {
+                if ((child.position - _center.position).magnitude &lt; (_centerChild.position - _center.position).magnitude)
+                {
+                    _centerChild = child;
+                    _centerChildChanged = true;
+                }
+            }
+            if (_centerChildChanged)
+            {
+                _snapReciever.Recieve(_centerChild); //the menu which will recieve the message that this child is the new focus of the menu
+                _centerChildChanged = false;
+            }
+            if (!_isLerping &amp;&amp; !_beingDragged &amp;&amp; (_scrollRect.velocity).magnitude &lt; 20) //if the menu is moving really slowly, it should lerp to the center
+            {
+                _scrollRect.velocity = Vector3.zero;
+                _isLerping = true;
+            }
+        }
+    }
+
+    public void OnBeginDrag(PointerEventData eventData)
+    {
+        _beingDragged = true;
+        _isLerping = false;
+    }
+
+    public void OnEndDrag(PointerEventData eventData)
+    {
+        _beingDragged = false;
+    }
+}
+
+</code></pre></div></div>
+
+  </main>
+  <footer class="footer" role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="/" class="footer-logo">
+        <img src="/assets/img/logo.svg" alt="Unity UI Extensions" width="28" height="28">
+        Unity UI Extensions
+      </a>
+      <p>Community-maintained UI controls for Unity's uGUI and UI Toolkit frameworks. Free forever, BSD 3-Clause licensed.</p>
+    </div>
+
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <div class="footer-col">
+        <h4>uGUI Package</h4>
+        <ul>
+          <li><a href="/ugui/">Overview</a></li>
+          <li><a href="/ugui/controls/">All Controls</a></li>
+          <li><a href="/ugui/install/">Installation</a></li>
+          <li><a href="/changelog/">Changelog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>UI Toolkit Package</h4>
+        <ul>
+          <li><a href="/uitoolkit/">Overview</a></li>
+          <li><a href="/uitoolkit/controls/">All Controls</a></li>
+          <li><a href="/uitoolkit/install/">Installation</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Community</h4>
+        <ul>
+          <li><a href="https://github.com/Unity-UI-Extensions/com.unity.uiextensions" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://www.openupm.com/packages/com.unity.uiextensions/" target="_blank" rel="noopener">OpenUPM</a></li>
+          <li><a href="https://discord.gg/SBuyXfh" target="_blank" rel="noopener">Discord</a></li>
+          <li><a href="https://github.com/Unity-UI-Extensions/com.unity.uiextensions/issues" target="_blank" rel="noopener">Report a Bug</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div class="footer-bottom">
+    <span>© 2026 Unity UI Extensions Community</span>
+    <span>BSD 3-Clause &amp; MIT Licensed</span>
+    <span>Not affiliated with Unity Technologies</span>
+  </div>
+</footer>
+
+  <script src="/assets/js/site.js"></script>
+</body>
+</html>

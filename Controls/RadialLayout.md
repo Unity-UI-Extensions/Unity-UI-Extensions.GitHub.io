@@ -1,8 +1,17 @@
+---
+layout: control-ugui
+title: "Radial Layout"
+description: "Arranges child elements in a circle or arc at configurable radius and angle."
+category: "Utilities"
+permalink: /ugui/controls/radial-layout/
+has_video: true
+tags: [utilities, layout, radial, circular, arc]
+---
 # RadialLayout
 
 A radial layout system
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ---------
 

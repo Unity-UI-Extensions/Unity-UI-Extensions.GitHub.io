@@ -1,0 +1,590 @@
+# uGUI Controls — 64 controls with demo content
+# Excluded controls (36, no demo images/video) are listed in MISSING_CONTENT.md
+
+# ── Layout ──────────────────────────────────────────────────────────────────
+
+- name: Accordion
+  slug: accordion
+  permalink: /ugui/controls/accordion/
+  category: Layout
+  description: Expandable/collapsible panel sections with smooth animated transitions.
+  preview_image: /Controls/Images/Accordion-Element.png
+  has_video: false
+  tags: [layout, accordion, collapse, expand, panel]
+
+- name: Card UI
+  slug: card-ui
+  permalink: /ugui/controls/card-ui/
+  category: Layout
+  description: 2D and 3D card flip/stack animations for content presentation.
+  preview_image: /Controls/Images/CardUIDemo.gif
+  has_video: false
+  tags: [layout, card, flip, 3d, animation]
+
+- name: Content Scroll Snap Horizontal
+  slug: content-scroll-snap-horizontal
+  permalink: /ugui/controls/content-scroll-snap-horizontal/
+  category: Layout
+  description: Snap-to-page horizontal scroll container with automatic page detection.
+  preview_image: /Controls/Images/ContentScrollSnapHorizontalDemo.gif
+  has_video: false
+  tags: [layout, scroll, snap, horizontal, pagination]
+
+- name: Fancy Scroll View
+  slug: fancy-scroll-view
+  permalink: /ugui/controls/fancy-scroll-view/
+  category: Layout
+  description: High-performance scroll view with virtual item pooling and custom layouts.
+  preview_image: /Controls/Images/FancyScrollViewExample.jpg
+  has_video: false
+  tags: [layout, scroll, virtual, performance, pooling]
+
+- name: Flow Layout Group
+  slug: flow-layout-group
+  permalink: /ugui/controls/flow-layout-group/
+  category: Layout
+  description: Automatically wraps child elements into rows or columns like CSS flexbox.
+  preview_image: /Controls/Images/TableLayoutGroupInspector.jpg
+  has_video: true
+  tags: [layout, flow, wrap, grid, auto-layout]
+
+- name: Horizontal Scroll Snap
+  slug: horizontal-scroll-snap
+  permalink: /ugui/controls/horizontal-scroll-snap/
+  category: Layout
+  description: Paged horizontal scroll view that snaps to discrete content pages.
+  preview_image: /Controls/Images/HSSInspector.jpg
+  has_video: false
+  tags: [layout, scroll, snap, horizontal, pages]
+
+- name: Reorderable List
+  slug: reorderable-list
+  permalink: /ugui/controls/reorderable-list/
+  category: Layout
+  description: Drag-and-drop list and grid layout with visual reordering feedback.
+  preview_image: /Controls/Images/ReorderableListInspector.jpg
+  has_video: false
+  tags: [layout, list, drag, drop, reorder]
+
+- name: Scroll Rect Ex
+  slug: scroll-rect-ex
+  permalink: /ugui/controls/scroll-rect-ex/
+  category: Layout
+  description: Enhanced ScrollRect with momentum, deceleration tuning, and edge effects.
+  preview_image: /Controls/Images/ScrollRectExInspector.jpg
+  has_video: false
+  tags: [layout, scroll, scrollrect, momentum, enhanced]
+
+- name: Scroll Rect Linker
+  slug: scroll-rect-linker
+  permalink: /ugui/controls/scroll-rect-linker/
+  category: Layout
+  description: Synchronises multiple ScrollRect components so they scroll in tandem.
+  preview_image: /Controls/Images/ScrollRectLinkerInspector.jpg
+  has_video: false
+  tags: [layout, scroll, sync, linked, scrollrect]
+
+- name: Scroll Rect Tweener
+  slug: scroll-rect-tweener
+  permalink: /ugui/controls/scroll-rect-tweener/
+  category: Layout
+  description: Programmatically scrolls a ScrollRect to a target position with easing.
+  preview_image: /Controls/Images/ScrollRectTweenerInspector.jpg
+  has_video: false
+  tags: [layout, scroll, tween, animate, scrollrect]
+
+- name: Scroll Snap
+  slug: scroll-snap
+  permalink: /ugui/controls/scroll-snap/
+  category: Layout
+  description: Perspective scroll snap with 3D carousel-style page transitions.
+  preview_image: /Controls/Images/ScrollSnapPerspectiveDemo.jpg
+  has_video: true
+  tags: [layout, scroll, snap, perspective, carousel, 3d]
+
+- name: Table Layout Group
+  slug: table-layout-group
+  permalink: /ugui/controls/table-layout-group/
+  category: Layout
+  description: CSS-style table layout that arranges UI elements into rows and columns.
+  preview_image: /Controls/Images/TableLayoutGroupDemo.jpg
+  has_video: true
+  tags: [layout, table, grid, rows, columns]
+
+- name: Tile Size Fitter
+  slug: tile-size-fitter
+  permalink: /ugui/controls/tile-size-fitter/
+  category: Layout
+  description: Constrains child tiles to a fixed aspect ratio within a grid layout.
+  preview_image: /Controls/Images/TileSizeFitterInspector.jpg
+  has_video: false
+  tags: [layout, tile, aspect-ratio, grid, fitter]
+
+- name: UI Vertical Scroller
+  slug: ui-vertical-scroller
+  permalink: /ugui/controls/ui-vertical-scroller/
+  category: Layout
+  description: Vertical scroller with centre-focus zooming — elements scale by distance.
+  preview_image: ""
+  has_video: false
+  tags: [layout, scroll, vertical, zoom, scale]
+
+- name: Vertical Scroll Snap
+  slug: vertical-scroll-snap
+  permalink: /ugui/controls/vertical-scroll-snap/
+  category: Layout
+  description: Paged vertical scroll view that snaps to discrete content pages.
+  preview_image: /Controls/Images/VSSInspector.jpg
+  has_video: false
+  tags: [layout, scroll, snap, vertical, pages]
+
+# ── Input ────────────────────────────────────────────────────────────────────
+
+- name: AutoComplete ComboBox
+  slug: autocomplete-combobox
+  permalink: /ugui/controls/autocomplete-combobox/
+  category: Input
+  description: Combobox with live-filter autocomplete suggestions as the user types.
+  preview_image: /Controls/Images/AutoCompleteComboBoxInspector.jpg
+  has_video: false
+  tags: [input, combobox, autocomplete, dropdown, search]
+
+- name: Box Slider
+  slug: box-slider
+  permalink: /ugui/controls/box-slider/
+  category: Input
+  description: 2D drag-handle slider that outputs both X and Y values simultaneously.
+  preview_image: /Controls/Images/BoxSliderDemo.jpg
+  has_video: true
+  tags: [input, slider, 2d, xy, drag]
+
+- name: Color Picker
+  slug: color-picker
+  permalink: /ugui/controls/color-picker/
+  category: Input
+  description: Full HSV colour picker with hex input, alpha slider, and preset swatches.
+  preview_image: /Controls/Images/ColorPickerDemo.jpg
+  has_video: true
+  tags: [input, color, colour, picker, hsv, hex]
+
+- name: ComboBox
+  slug: combobox
+  permalink: /ugui/controls/combobox/
+  category: Input
+  description: Editable dropdown with keyboard navigation and multi-select capability.
+  preview_image: /Controls/Images/ComboBoxInspector.jpg
+  has_video: false
+  tags: [input, combobox, dropdown, select]
+
+- name: Cooldown Button
+  slug: cooldown-button
+  permalink: /ugui/controls/cooldown-button/
+  category: Input
+  description: Button with an animated cooldown arc that prevents rapid re-clicking.
+  preview_image: /Controls/Images/CooldownDemo.jpg
+  has_video: true
+  tags: [input, button, cooldown, timer, animation]
+
+- name: DropDown List
+  slug: dropdown-list
+  permalink: /ugui/controls/dropdown-list/
+  category: Input
+  description: Styleable dropdown list with animated open/close and custom item rendering.
+  preview_image: /Controls/Images/DropDownListInspector.jpg
+  has_video: false
+  tags: [input, dropdown, select, list]
+
+- name: Radial Slider
+  slug: radial-slider
+  permalink: /ugui/controls/radial-slider/
+  category: Input
+  description: Circular arc slider with configurable start angle, range, and fill style.
+  preview_image: /Controls/Images/RadialSliderDemo.jpg
+  has_video: true
+  tags: [input, slider, radial, circular, arc]
+
+- name: Range Slider
+  slug: range-slider
+  permalink: /ugui/controls/range-slider/
+  category: Input
+  description: Dual-handle slider for selecting a minimum/maximum value range.
+  preview_image: /Controls/Images/RangeSliderDemo.jpg
+  has_video: true
+  tags: [input, slider, range, min, max, dual]
+
+- name: Segment
+  slug: segment
+  permalink: /ugui/controls/segment/
+  category: Input
+  description: Individual button segment used as a child within a SegmentedControl.
+  preview_image: /Controls/Images/SegmentedExample.png
+  has_video: false
+  tags: [input, segment, button, selectable]
+
+- name: Segmented Control
+  slug: segmented-control
+  permalink: /ugui/controls/segmented-control/
+  category: Input
+  description: iOS-style segmented control for choosing one option from a small set.
+  preview_image: /Controls/Images/SegmentedControlDemo.jpg
+  has_video: true
+  tags: [input, segmented, toggle, select, ios]
+
+- name: Selection Box
+  slug: selection-box
+  permalink: /ugui/controls/selection-box/
+  category: Input
+  description: Drag to draw a rubber-band selection rectangle over multiple UI elements.
+  preview_image: /Controls/Images/SelectionBoxDemo.gif
+  has_video: false
+  tags: [input, selection, drag, marquee, multi-select]
+
+- name: Stepper
+  slug: stepper
+  permalink: /ugui/controls/stepper/
+  category: Input
+  description: +/− increment buttons for numeric input with configurable step size.
+  preview_image: /Controls/Images/StepperDemo.jpg
+  has_video: true
+  tags: [input, stepper, increment, decrement, numeric]
+
+- name: UI Knob
+  slug: ui-knob
+  permalink: /ugui/controls/ui-knob/
+  category: Input
+  description: Rotary knob input with configurable min/max angle and loop support.
+  preview_image: /Controls/Images/UIKnobInspector.jpg
+  has_video: false
+  tags: [input, knob, rotary, dial, rotate]
+
+# ── Primitives ───────────────────────────────────────────────────────────────
+
+- name: Diamond Graph
+  slug: diamond-graph
+  permalink: /ugui/controls/diamond-graph/
+  category: Primitives
+  description: Radar/spider chart rendered as a configurable diamond polygon shape.
+  preview_image: ""
+  has_video: true
+  tags: [primitives, chart, radar, spider, graph, polygon]
+
+- name: Grid Raw Image
+  slug: grid-raw-image
+  permalink: /ugui/controls/grid-raw-image/
+  category: Primitives
+  description: RawImage that tiles a texture in a grid pattern with UV offset control.
+  preview_image: ""
+  has_video: false
+  tags: [primitives, image, grid, tile, texture]
+
+- name: UI Circle Segmented
+  slug: ui-circle-segmented
+  permalink: /ugui/controls/ui-circle-segmented/
+  category: Primitives
+  description: Segmented ring/pie chart renderer with configurable slice count and gaps.
+  preview_image: ""
+  has_video: false
+  tags: [primitives, circle, pie, ring, segmented, chart]
+
+- name: UI Graphic Sector
+  slug: ui-graphic-sector
+  permalink: /ugui/controls/ui-graphic-sector/
+  category: Primitives
+  description: Renders a filled sector (wedge/pie-slice) graphic with configurable arc.
+  preview_image: ""
+  has_video: false
+  tags: [primitives, sector, arc, wedge, pie, graphic]
+
+- name: UI Grid Renderer
+  slug: ui-grid-renderer
+  permalink: /ugui/controls/ui-grid-renderer/
+  category: Primitives
+  description: Procedurally renders a grid of lines using Unity's UI mesh system.
+  preview_image: /Controls/Images/UIGridRendererDemo.jpg
+  has_video: true
+  tags: [primitives, grid, lines, mesh, renderer]
+
+- name: UI Line Connector
+  slug: ui-line-connector
+  permalink: /ugui/controls/ui-line-connector/
+  category: Primitives
+  description: Draws connecting lines between RectTransform anchors with configurable width.
+  preview_image: /Controls/Images/UILineConnectorDemo.jpg
+  has_video: true
+  tags: [primitives, line, connector, link, bezier]
+
+- name: UI Line Renderer
+  slug: ui-line-renderer
+  permalink: /ugui/controls/ui-line-renderer/
+  category: Primitives
+  description: Smooth multi-point UI line with configurable thickness, dash, and colour.
+  preview_image: /Controls/Images/UILineRendererInspector.jpg
+  has_video: false
+  tags: [primitives, line, polyline, chart, draw]
+
+- name: UI Polygon
+  slug: ui-polygon
+  permalink: /ugui/controls/ui-polygon/
+  category: Primitives
+  description: Renders any regular or irregular polygon as a filled UI graphic.
+  preview_image: /Controls/Images/UIPolygonDemo.gif
+  has_video: false
+  tags: [primitives, polygon, shape, graphic, mesh]
+
+# ── Effects ──────────────────────────────────────────────────────────────────
+
+- name: CurlyUI
+  slug: curly-ui
+  permalink: /ugui/controls/curly-ui/
+  category: Effects
+  description: Warps any uGUI graphic with configurable horizontal and vertical curves.
+  preview_image: /Controls/Images/CurlyUIDemo.jpg
+  has_video: true
+  tags: [effects, curve, warp, mesh, distort]
+
+- name: Gradient
+  slug: gradient
+  permalink: /ugui/controls/gradient/
+  category: Effects
+  description: Applies a two-colour vertex gradient to any uGUI graphic component.
+  preview_image: /Controls/Images/GradientDemo.jpg
+  has_video: true
+  tags: [effects, gradient, colour, vertex, text]
+
+- name: Gradient 2
+  slug: gradient2
+  permalink: /ugui/controls/gradient2/
+  category: Effects
+  description: Four-corner gradient effect with independent colour control per vertex.
+  preview_image: /Controls/Images/Gradient2Demo.jpg
+  has_video: false
+  tags: [effects, gradient, four-corner, vertex, colour]
+
+- name: Letter Spacing
+  slug: letter-spacing
+  permalink: /ugui/controls/letter-spacing/
+  category: Effects
+  description: Adds configurable character spacing (tracking) to uGUI Text components.
+  preview_image: /Controls/Images/LetterSpacingDemo.jpg
+  has_video: true
+  tags: [effects, text, letter-spacing, tracking, typography]
+
+- name: Mono Spacing
+  slug: mono-spacing
+  permalink: /ugui/controls/mono-spacing/
+  category: Effects
+  description: Forces monospace character widths on any uGUI Text component.
+  preview_image: /Controls/Images/MonoSpacingDemo.jpg
+  has_video: true
+  tags: [effects, text, monospace, spacing, typography]
+
+- name: Soft Alpha Mask
+  slug: soft-alpha-mask
+  permalink: /ugui/controls/soft-alpha-mask/
+  category: Effects
+  description: Uses a greyscale mask texture to softly clip UI content at the edges.
+  preview_image: /Controls/Images/SoftAlphaMaskDemo.gif
+  has_video: false
+  tags: [effects, mask, alpha, clip, soft]
+
+- name: TextPic
+  slug: textpic
+  permalink: /ugui/controls/textpic/
+  category: Effects
+  description: Embeds inline sprite images inside uGUI Text using custom tags.
+  preview_image: /Controls/Images/TextPicDemo.jpg
+  has_video: true
+  tags: [effects, text, sprite, inline, emoji, rich-text]
+
+- name: UI Flippable
+  slug: ui-flippable
+  permalink: /ugui/controls/ui-flippable/
+  category: Effects
+  description: Mirrors any graphic component horizontally or vertically at runtime.
+  preview_image: /Controls/Images/UIFlippableDemo.jpg
+  has_video: true
+  tags: [effects, flip, mirror, graphic, transform]
+
+- name: UI Particle System
+  slug: ui-particle-system
+  permalink: /ugui/controls/ui-particle-system/
+  category: Effects
+  description: Renders Unity Particle Systems within the uGUI canvas layer.
+  preview_image: /Controls/Images/UIParticleSystemDemo.jpg
+  has_video: true
+  tags: [effects, particles, vfx, canvas, render]
+
+- name: UI TweenScale
+  slug: ui-tween-scale
+  permalink: /ugui/controls/ui-tween-scale/
+  category: Effects
+  description: Bounce/pulse scale tween on any UI element triggered by pointer events.
+  preview_image: /Controls/Images/UITweenScaleDemo.gif
+  has_video: false
+  tags: [effects, tween, scale, bounce, animation]
+
+# ── Utilities ────────────────────────────────────────────────────────────────
+
+- name: Non-Drawing Graphic
+  slug: non-drawing-graphic
+  permalink: /ugui/controls/non-drawing-graphic/
+  category: Utilities
+  description: Invisible raycast-blocking graphic — enables hit areas without any visual.
+  preview_image: /Controls/Images/NonDrawingGraphicDemo.jpg
+  has_video: true
+  tags: [utilities, raycast, invisible, hit-area, clickable]
+
+- name: Pagination Manager
+  slug: pagination-manager
+  permalink: /ugui/controls/pagination-manager/
+  category: Utilities
+  description: Connects a ScrollSnap or ContentScrollSnap to dot-style pagination indicators.
+  preview_image: /Controls/Images/PaginationManagerDemo.jpg
+  has_video: false
+  tags: [utilities, pagination, dots, scrollsnap, indicator]
+
+- name: Radial Layout
+  slug: radial-layout
+  permalink: /ugui/controls/radial-layout/
+  category: Utilities
+  description: Arranges child elements in a circle or arc at configurable radius and angle.
+  preview_image: ""
+  has_video: true
+  tags: [utilities, layout, radial, circular, arc]
+
+- name: Rect Transform Editor
+  slug: rect-transform-editor
+  permalink: /ugui/controls/rect-transform-editor/
+  category: Utilities
+  description: Editor-only helper that adds extra transform manipulation handles in the Scene view.
+  preview_image: /Controls/Images/RectTransformEditor-Inspector.jpg
+  has_video: false
+  tags: [utilities, editor, rect-transform, inspector, tools]
+
+- name: Reset Selectable Highlight
+  slug: reset-selectable-highlight
+  permalink: /ugui/controls/reset-selectable-highlight/
+  category: Utilities
+  description: Clears stuck hover/selected highlight states on Selectable components.
+  preview_image: /Controls/Images/ResetSelectableHighlight-demo.gif
+  has_video: false
+  tags: [utilities, selectable, highlight, reset, state]
+
+- name: Scroll Conflict Manager
+  slug: scroll-conflict-manager
+  permalink: /ugui/controls/scroll-conflict-manager/
+  category: Utilities
+  description: Resolves scroll direction conflicts when nested ScrollRects overlap.
+  preview_image: /Controls/Images/ScrollRectConflictManagerInspector.jpg
+  has_video: false
+  tags: [utilities, scroll, conflict, nested, scrollrect]
+
+- name: Selectable Scaler
+  slug: selectable-scaler
+  permalink: /ugui/controls/selectable-scaler/
+  category: Utilities
+  description: Scales a Selectable component up/down on hover and press events.
+  preview_image: /Controls/Images/SelectableScalarDemo.jpg
+  has_video: true
+  tags: [utilities, selectable, scale, hover, press, animation]
+
+- name: ToolTip
+  slug: tooltip
+  permalink: /ugui/controls/tooltip/
+  category: Utilities
+  description: Follows-cursor tooltip that displays rich text on pointer enter/exit.
+  preview_image: /Controls/Images/TooltipInspector.jpg
+  has_video: false
+  tags: [utilities, tooltip, hover, popup, cursor]
+
+- name: UI Highlightable
+  slug: ui-highlightable
+  permalink: /ugui/controls/ui-highlightable/
+  category: Utilities
+  description: Adds programmatic hover-highlight colour transitions to any Graphic.
+  preview_image: /Controls/Images/UIHighlighterDemo.jpg
+  has_video: true
+  tags: [utilities, highlight, hover, colour, transition]
+
+- name: UI Scroll To Selection
+  slug: ui-scroll-to-selection
+  permalink: /ugui/controls/ui-scroll-to-selection/
+  category: Utilities
+  description: Automatically scrolls a ScrollRect to keep the selected element in view.
+  preview_image: /Controls/Images/UIScrollToSelectionInspector.jpg
+  has_video: false
+  tags: [utilities, scroll, selection, focus, auto-scroll]
+
+- name: UI Scroll To Selection XY
+  slug: ui-scroll-to-selection-xy
+  permalink: /ugui/controls/ui-scroll-to-selection-xy/
+  category: Utilities
+  description: Auto-scrolls a 2D ScrollRect to keep the selected element in view on both axes.
+  preview_image: /Controls/Images/UIScrollToSelectionXYInspector.jpg
+  has_video: false
+  tags: [utilities, scroll, selection, xy, auto-scroll]
+
+- name: UI Selectable Extension
+  slug: ui-selectable-extension
+  permalink: /ugui/controls/ui-selectable-extension/
+  category: Utilities
+  description: Extends Selectable with extra state events and programmatic selection.
+  preview_image: /Controls/Images/SelectableExtensionInspector.jpg
+  has_video: false
+  tags: [utilities, selectable, events, extension, state]
+
+- name: UI Infinite Scroll
+  slug: ui-infinite-scroll
+  permalink: /ugui/controls/ui-infinite-scroll/
+  category: Utilities
+  description: Loops ScrollRect content indefinitely in horizontal or vertical mode.
+  preview_image: /Controls/Images/InfiniteScrollInspector.jpg
+  has_video: true
+  tags: [utilities, scroll, infinite, loop, scrollrect]
+
+- name: UI Magnetic Infinite Scroll
+  slug: ui-magnetic-infinite-scroll
+  permalink: /ugui/controls/ui-magnetic-infinite-scroll/
+  category: Utilities
+  description: Infinite scroll with magnetic snap-to-item behaviour and deceleration.
+  preview_image: /Controls/Images/MagneticInfiniteScrollDemo.gif
+  has_video: false
+  tags: [utilities, scroll, infinite, magnetic, snap]
+
+- name: UI Scroll Rect Occlusion
+  slug: ui-scroll-rect-occlusion
+  permalink: /ugui/controls/ui-scroll-rect-occlusion/
+  category: Utilities
+  description: Disables off-screen children in a ScrollRect to reduce overdraw cost.
+  preview_image: /Controls/Images/ScrollRectOcclusionInspector.jpg
+  has_video: false
+  tags: [utilities, scroll, occlusion, performance, visibility]
+
+# ── Navigation ───────────────────────────────────────────────────────────────
+
+- name: Menu System
+  slug: menu-system
+  permalink: /ugui/controls/menu-system/
+  category: Navigation
+  description: Hierarchical animated menu with slide, fade, and scale transition modes.
+  preview_image: /Controls/Images/MenuDemo.jpg
+  has_video: true
+  tags: [navigation, menu, hierarchy, transition, animated]
+
+- name: Tab Navigation
+  slug: tab-navigation
+  permalink: /ugui/controls/tab-navigation/
+  category: Navigation
+  description: Keyboard-navigable tab panel system with animated content switching.
+  preview_image: /Controls/Images/TabNavigationDemo.jpg
+  has_video: true
+  tags: [navigation, tabs, keyboard, panel, switch]
+
+- name: uGUI Tools
+  slug: ugui-tools
+  permalink: /ugui/controls/ugui-tools/
+  category: Navigation
+  description: Editor menu shortcuts for common uGUI operations — align, distribute, reset.
+  preview_image: /Controls/Images/uGUIToolsMenu.jpg
+  has_video: false
+  tags: [navigation, editor, tools, utilities, shortcuts]

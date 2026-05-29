@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Install Unity UI Extensions (uGUI) — Unity UI Extensions — Unity UI Extensions</title>
+<meta name="description" content="Step-by-step installation guide for the Unity UI Extensions uGUI package. OpenUPM, Git URL, and manual installation methods.">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Install Unity UI Extensions (uGUI) — Unity UI Extensions | Unity UI Extensions</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Install Unity UI Extensions (uGUI) — Unity UI Extensions" />
+<meta name="author" content="Unity UI Extensions Community" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Step-by-step installation guide for the Unity UI Extensions uGUI package. OpenUPM, Git URL, and manual installation methods." />
+<meta property="og:description" content="Step-by-step installation guide for the Unity UI Extensions uGUI package. OpenUPM, Git URL, and manual installation methods." />
+<link rel="canonical" href="https://unity-ui-extensions.github.io/ugui/install/" />
+<meta property="og:url" content="https://unity-ui-extensions.github.io/ugui/install/" />
+<meta property="og:site_name" content="Unity UI Extensions" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Install Unity UI Extensions (uGUI) — Unity UI Extensions" />
+<meta name="twitter:site" content="@UnityUIExtensions" />
+<meta name="twitter:creator" content="@Unity UI Extensions Community" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Unity UI Extensions Community"},"description":"Step-by-step installation guide for the Unity UI Extensions uGUI package. OpenUPM, Git URL, and manual installation methods.","headline":"Install Unity UI Extensions (uGUI) — Unity UI Extensions","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://unity-ui-extensions.github.io/assets/img/logo.svg"},"name":"Unity UI Extensions Community"},"url":"https://unity-ui-extensions.github.io/ugui/install/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/assets/css/neon.css">
+<link rel="icon" type="image/png" href="/assets/img/logo.png">
+
+</head>
+<body>
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a class="nav-brand" href="/">
+      <img src="/assets/img/logo.svg" alt="Unity UI Extensions" width="32" height="32">
+      <span>UI Extensions</span>
+    </a>
+
+    <button class="nav-mobile-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-links" role="list">
+      <li><a href="/" >Home</a></li>
+      <li>
+        <a href="/ugui/" class="active">
+          <span class="badge-u">uGUI</span>
+        </a>
+      </li>
+      <li>
+        <a href="/uitoolkit/" >
+          <span class="badge-t">UI Toolkit</span>
+        </a>
+      </li>
+      <li><a href="/changelog/" >Changelog</a></li>
+      <li>
+        <a href="https://github.com/Unity-UI-Extensions/com.unity.uiextensions" target="_blank" rel="noopener" class="nav-github">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+  <main id="main-content">
+    <section class="pkg-hero">
+  <div class="pkg-hero-inner">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span aria-hidden="true">›</span>
+      <a href="/ugui/">uGUI</a>
+      <span aria-hidden="true">›</span>
+      <span aria-current="page">Installation</span>
+    </nav>
+    <div class="pkg-hero-badge"><span class="badge-u">uGUI Package</span></div>
+    <h1>Installing Unity UI Extensions</h1>
+    <p class="pkg-hero-lead">Three ways to add <code>com.unity.uiextensions</code> to your Unity project. OpenUPM is the recommended approach.</p>
+    <div class="pkg-hero-meta">
+      <code class="pkg-id">com.unity.uiextensions</code>
+      <span class="badge-ghost">BSD 3-Clause</span>
+      <span class="badge-ghost">Unity 2019.4+</span>
+    </div>
+  </div>
+</section>
+
+<section class="section install-detail-section" aria-labelledby="install-openupm">
+  <div class="section-inner">
+
+    <h2 id="install-openupm" class="section-title">Method 1 — OpenUPM (Recommended)</h2>
+    <p>OpenUPM is the fastest and most reliable installation method. It supports automatic dependency resolution and version management.</p>
+
+    <h3>Option A: OpenUPM CLI</h3>
+    <p>If you have the <a href="https://openupm.com/docs/getting-started.html" target="_blank" rel="noopener">OpenUPM CLI</a> installed, run:</p>
+    <div class="install-panel">
+      <pre><code>openupm add com.unity.uiextensions</code></pre>
+      <button class="copy-btn" aria-label="Copy command">Copy</button>
+    </div>
+
+    <h3>Option B: Scoped Registry (manual)</h3>
+    <p>Open <strong>Edit → Project Settings → Package Manager</strong> and add the following scoped registry:</p>
+    <div class="install-panel">
+      <pre><code>Name: package.openupm.com
+URL:  https://package.openupm.com
+Scope: com.unity.uiextensions</code></pre>
+      <button class="copy-btn" aria-label="Copy registry settings">Copy</button>
+    </div>
+    <p>Then open <strong>Window → Package Manager</strong>, switch the dropdown to <strong>My Registries</strong>, find <strong>Unity UI Extensions</strong>, and click <strong>Install</strong>.</p>
+
+  </div>
+</section>
+
+<section class="section install-detail-section" aria-labelledby="install-giturl">
+  <div class="section-inner">
+
+    <h2 id="install-giturl" class="section-title">Method 2 — Git URL</h2>
+    <p>Requires Git to be installed on your machine and accessible on the system path.</p>
+    <ol>
+      <li>Open <strong>Window → Package Manager</strong></li>
+      <li>Click <strong>+</strong> and select <strong>Add package from git URL…</strong></li>
+      <li>Paste the URL below and click <strong>Add</strong>:</li>
+    </ol>
+    <div class="install-panel">
+      <pre><code>https://github.com/Unity-UI-Extensions/com.unity.uiextensions.git</code></pre>
+      <button class="copy-btn" aria-label="Copy git URL">Copy</button>
+    </div>
+    <p>To pin to a specific release, append the tag to the URL:</p>
+    <div class="install-panel">
+      <pre><code>https://github.com/Unity-UI-Extensions/com.unity.uiextensions.git#2.3.2</code></pre>
+      <button class="copy-btn" aria-label="Copy versioned git URL">Copy</button>
+    </div>
+    <p>Check the <a href="https://github.com/Unity-UI-Extensions/com.unity.uiextensions/releases" target="_blank" rel="noopener">Releases page</a> for all available version tags.</p>
+
+  </div>
+</section>
+
+<section class="section install-detail-section" aria-labelledby="install-manual">
+  <div class="section-inner">
+
+    <h2 id="install-manual" class="section-title">Method 3 — Manual / Embedded Package</h2>
+    <p>Use this when you need full local control over the package source, or when you're working offline.</p>
+    <ol>
+      <li>Go to the <a href="https://github.com/Unity-UI-Extensions/com.unity.uiextensions/releases/latest" target="_blank" rel="noopener">latest release</a> and download the <code>.zip</code> or <code>.unitypackage</code></li>
+      <li>Extract the archive so you have a folder named <code>com.unity.uiextensions</code></li>
+      <li>Move that folder into your project's <code>Packages/</code> directory (alongside <code>manifest.json</code>)</li>
+      <li>Unity will detect and import the package automatically — no changes to <code>manifest.json</code> are required</li>
+    </ol>
+    <p>To later update the package, replace the folder contents with the newer version.</p>
+
+  </div>
+</section>
+
+<section class="section install-detail-section" aria-labelledby="install-verify">
+  <div class="section-inner">
+
+    <h2 id="install-verify" class="section-title">Verifying the Installation</h2>
+    <p>After installation you should see the package listed in <strong>Window → Package Manager</strong> under <em>In Project</em>. The package adds the following to your project:</p>
+    <ul>
+      <li><strong>Scripts</strong> — All control scripts are available via the <code>UnityEngine.UI.Extensions</code> namespace</li>
+      <li><strong>Prefabs</strong> — Ready-to-use prefabs are available under <code>Assets/UI Extensions/Prefabs/</code> (if sample content was imported)</li>
+      <li><strong>Samples</strong> — Optional sample scenes can be imported via the Package Manager's <em>Samples</em> tab</li>
+    </ul>
+    <p>Add any control component to a GameObject via <strong>Add Component → UI → Extensions → [Control Name]</strong>.</p>
+
+  </div>
+</section>
+
+<section class="section install-detail-section" aria-labelledby="install-requirements">
+  <div class="section-inner">
+
+    <h2 id="install-requirements" class="section-title">Requirements</h2>
+    <ul>
+      <li>Unity <strong>2019.4 LTS</strong> or later</li>
+      <li>Unity's built-in <strong>UI (uGUI)</strong> module — installed by default in all Unity projects</li>
+      <li>No additional dependencies required</li>
+    </ul>
+
+    <div class="callout callout--note">
+      <strong>Unity 6</strong> — All controls are supported. Some older controls that relied on legacy input may behave differently with the new Input System. Check individual control pages for notes.
+    </div>
+
+  </div>
+</section>
+
+<section class="cta-band" aria-labelledby="cta-browse">
+  <div class="cta-band-inner">
+    <h2 id="cta-browse">Ready to explore the controls?</h2>
+    <p>Browse all 70+ uGUI controls with descriptions, properties, and examples.</p>
+    <div class="cta-actions">
+      <a href="/ugui/" class="btn btn-u">Browse uGUI Controls</a>
+      <a href="https://github.com/Unity-UI-Extensions/com.unity.uiextensions/issues" class="btn btn-ghost" target="_blank" rel="noopener">Report an Issue</a>
+    </div>
+  </div>
+</section>
+
+  </main>
+  <footer class="footer" role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="/" class="footer-logo">
+        <img src="/assets/img/logo.svg" alt="Unity UI Extensions" width="28" height="28">
+        Unity UI Extensions
+      </a>
+      <p>Community-maintained UI controls for Unity's uGUI and UI Toolkit frameworks. Free forever, BSD 3-Clause licensed.</p>
+    </div>
+
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <div class="footer-col">
+        <h4>uGUI Package</h4>
+        <ul>
+          <li><a href="/ugui/">Overview</a></li>
+          <li><a href="/ugui/controls/">All Controls</a></li>
+          <li><a href="/ugui/install/">Installation</a></li>
+          <li><a href="/changelog/">Changelog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>UI Toolkit Package</h4>
+        <ul>
+          <li><a href="/uitoolkit/">Overview</a></li>
+          <li><a href="/uitoolkit/controls/">All Controls</a></li>
+          <li><a href="/uitoolkit/install/">Installation</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Community</h4>
+        <ul>
+          <li><a href="https://github.com/Unity-UI-Extensions/com.unity.uiextensions" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://www.openupm.com/packages/com.unity.uiextensions/" target="_blank" rel="noopener">OpenUPM</a></li>
+          <li><a href="https://discord.gg/SBuyXfh" target="_blank" rel="noopener">Discord</a></li>
+          <li><a href="https://github.com/Unity-UI-Extensions/com.unity.uiextensions/issues" target="_blank" rel="noopener">Report a Bug</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div class="footer-bottom">
+    <span>© 2026 Unity UI Extensions Community</span>
+    <span>BSD 3-Clause &amp; MIT Licensed</span>
+    <span>Not affiliated with Unity Technologies</span>
+  </div>
+</footer>
+
+  <script src="/assets/js/site.js"></script>
+</body>
+</html>

@@ -1,8 +1,17 @@
+---
+layout: control-ugui
+title: "UI Line Renderer"
+description: "Smooth multi-point UI line with configurable thickness, dash, and colour."
+category: "Primitives"
+permalink: /ugui/controls/ui-line-renderer/
+has_video: false
+tags: [primitives, line, polyline, chart, draw]
+---
 # UILineRenderer
 
 Graphic control for drawing lines in the UI System
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ---------
 
@@ -30,7 +39,7 @@ Graphic control for drawing lines in the UI System
 
 The UI Line Renderer allows you to draw distinct Line primitives between a collection of points on a Canvas.
 
-![UI LineRenderer Inspector](Images/UILineRendererInspector.jpg)
+![UI LineRenderer Inspector](/Controls/Images/UILineRendererInspector.jpg)
 
 Settings can be set either in the inspector or via script programmatically.
 

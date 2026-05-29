@@ -1,3 +1,12 @@
+---
+layout: control-ugui
+title: "Scroll Snap"
+description: "Perspective scroll snap with 3D carousel-style page transitions."
+category: "Layout"
+permalink: /ugui/controls/scroll-snap/
+has_video: true
+tags: [layout, scroll, snap, perspective, carousel, 3d]
+---
 # ScrollSnap
 
 An alternate scroll snap control supporting both Horizontal and Vertical layouts in one control

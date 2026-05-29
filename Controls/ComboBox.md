@@ -1,8 +1,17 @@
+---
+layout: control-ugui
+title: "ComboBox"
+description: "Editable dropdown with keyboard navigation and multi-select capability."
+category: "Input"
+permalink: /ugui/controls/combobox/
+has_video: false
+tags: [input, combobox, dropdown, select]
+---
 # ComboBox
 
 A fixed combobox implementation for text
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ## Contents
 
@@ -31,7 +40,7 @@ A fixed combobox implementation for text
 Standard combobox style control with support for multiple textual child items.
 Similar to the new built in Unity Dropdown control
 
-![ComboBox inspector](Images/ComboBoxInspector.jpg)
+![ComboBox inspector](/Controls/Images/ComboBoxInspector.jpg)
 
 ---------
 

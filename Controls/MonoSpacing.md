@@ -1,3 +1,12 @@
+---
+layout: control-ugui
+title: "Mono Spacing"
+description: "Forces monospace character widths on any uGUI Text component."
+category: "Effects"
+permalink: /ugui/controls/mono-spacing/
+has_video: true
+tags: [effects, text, monospace, spacing, typography]
+---
 # Mono Spacing
 
 > [!IMPORTANT]
@@ -5,7 +14,7 @@
 
 Allows finer control of text spacing
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 > Text Effects are not supported with TextMeshPro due to its architecture, try using the native TextMeshPro effects instead.
 
@@ -35,7 +44,7 @@ Allows finer control of text spacing
 
 Allows finer control of text spacing
 
-![](Images/MonoSpacingInspector.jpg)
+![](/Controls/Images/MonoSpacingInspector.jpg)
 
 ---------
 
@@ -70,7 +79,7 @@ Add Component -> UI -> Effects -> Extensions -> Mono Spacing
 
 *Click to play*
 
-[![Mono Spacing Demo](Images/MonoSpacingDemo.jpg)](Images/MonoSpacingDemo.mp4 "Mono Spacing Demo")
+[![Mono Spacing Demo](/Controls/Images/MonoSpacingDemo.jpg)](/Controls/Images/MonoSpacingDemo.mp4 "Mono Spacing Demo")
 
 ---------
 

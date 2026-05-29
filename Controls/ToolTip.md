@@ -1,8 +1,17 @@
+---
+layout: control-ugui
+title: "ToolTip"
+description: "Follows-cursor tooltip that displays rich text on pointer enter/exit."
+category: "Utilities"
+permalink: /ugui/controls/tooltip/
+has_video: false
+tags: [utilities, tooltip, hover, popup, cursor]
+---
 # ToolTip
 
 An basic Tooltip implementation
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ---------
 
@@ -30,7 +39,7 @@ An basic Tooltip implementation
 
 A tooltip implementation which allows the user to hover over a RectTransform to activate it.
 
-![](Images/TooltipInspector.jpg)
+![](/Controls/Images/TooltipInspector.jpg)
 
 ---------
 

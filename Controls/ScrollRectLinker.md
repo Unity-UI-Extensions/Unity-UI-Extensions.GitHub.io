@@ -1,8 +1,17 @@
+---
+layout: control-ugui
+title: "Scroll Rect Linker"
+description: "Synchronises multiple ScrollRect components so they scroll in tandem."
+category: "Layout"
+permalink: /ugui/controls/scroll-rect-linker/
+has_video: false
+tags: [layout, scroll, sync, linked, scrollrect]
+---
 # ScrollRectLinker
 
 ScrollRect Linker script, enable multiple Scroll Rects to move together
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ---------
 
@@ -30,7 +39,7 @@ ScrollRect Linker script, enable multiple Scroll Rects to move together
 
 The Scroll Rect Linker script allows you to control another Scroll Rect's position from another Scroll Rect.
 
-![](Images/ScrollRectLinkerInspector.jpg)
+![](/Controls/Images/ScrollRectLinkerInspector.jpg)
 
 ---------
 
@@ -65,7 +74,7 @@ Then drag the parent Scroll Rect to the appropriate property.
 
 *Click to play*
 
-[![Scroll Rect Linker](Images/ScrollRectLinkerDemo.jpg)](https://youtu.be/1ZNIrdlV9QY?t=3m33s "Scroll Rect Linker Demo video")
+[![Scroll Rect Linker](/Controls/Images/ScrollRectLinkerDemo.jpg)](https://youtu.be/1ZNIrdlV9QY?t=3m33s "Scroll Rect Linker Demo video")
 
 ---------
 

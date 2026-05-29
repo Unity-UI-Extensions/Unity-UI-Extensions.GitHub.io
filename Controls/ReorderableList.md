@@ -1,8 +1,17 @@
+---
+layout: control-ugui
+title: "Reorderable List"
+description: "Drag-and-drop list and grid layout with visual reordering feedback."
+category: "Layout"
+permalink: /ugui/controls/reorderable-list/
+has_video: false
+tags: [layout, list, drag, drop, reorder]
+---
 # Re-orderable List
 
 A collection of List Grid control which allow for drag / drop reordering of the child items.  Includes features to move / clone or freeze containers
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ---------
 
@@ -33,7 +42,7 @@ The Re-orderable list is a very powerful control which includes several "out of 
 * Vertical, Horizontal and Grid layouts
 * Vertical, Horizontal and Grid layouts using a ScrollRect
 
-![](Images/ReorderableListInspector.jpg)
+![](/Controls/Images/ReorderableListInspector.jpg)
 
 The control can be enabled in multiple flavors, featuring such capabilities as:
 

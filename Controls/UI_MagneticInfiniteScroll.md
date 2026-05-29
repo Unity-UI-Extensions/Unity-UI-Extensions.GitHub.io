@@ -1,8 +1,17 @@
+---
+layout: control-ugui
+title: "UI Magnetic Infinite Scroll"
+description: "Infinite scroll with magnetic snap-to-item behaviour and deceleration."
+category: "Utilities"
+permalink: /ugui/controls/ui-magnetic-infinite-scroll/
+has_video: false
+tags: [utilities, scroll, infinite, magnetic, snap]
+---
 # UI_MagneticInfiniteScroll
 
 An extension of the InfiniteScroll control that adds a hot spot region to anchor child elements when scrolling finishes.
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ---------
 
@@ -30,7 +39,7 @@ An extension of the InfiniteScroll control that adds a hot spot region to anchor
 
 The Magnetic Infinite Scroll Rect script causes content items for a Scroll Rect to loop indefinitely as the user scrolls.  When scrolling stops, content is anchored to a defined pivot point
 
-![](Images/MagneticInfiniteScrollInspector.jpg)
+![](/Controls/Images/MagneticInfiniteScrollInspector.jpg)
 
 It also allows you determine whether the control starts on awake or via code.
 
@@ -71,7 +80,7 @@ Simply add the default Scroll Rect Infinite component to a Scroll Rect using:
 
 ## Video Demo
 
-![](Images/MagneticInfiniteScrollDemo.gif)
+![](/Controls/Images/MagneticInfiniteScrollDemo.gif)
 
 ---------
 

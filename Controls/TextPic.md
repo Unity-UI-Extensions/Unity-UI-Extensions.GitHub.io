@@ -1,8 +1,17 @@
+---
+layout: control-ugui
+title: "TextPic"
+description: "Embeds inline sprite images inside uGUI Text using custom tags."
+category: "Effects"
+permalink: /ugui/controls/textpic/
+has_video: true
+tags: [effects, text, sprite, inline, emoji, rich-text]
+---
 # TextPic
 
 Inline images  and hyperlinks for text
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ---------
 
@@ -30,7 +39,7 @@ Inline images  and hyperlinks for text
 
 Provides a html interpreter to add inline images in Text.  HTML code is similar to that used for Unity's native Rich Text HTML
 
-![](Images/TextPicInspector.jpg)
+![](/Controls/Images/TextPicInspector.jpg)
 
 ---------
 
@@ -91,7 +100,7 @@ Additionally, if you want configure hyperlink highlighting colours, simply add a
 
 *Click to play*
 
-[![TextPicDemo](Images/TextPicDemo.jpg)](Images/TextPicDemo.mp4 "TextPicDemo Demo")
+[![TextPicDemo](/Controls/Images/TextPicDemo.jpg)](/Controls/Images/TextPicDemo.mp4 "TextPicDemo Demo")
 
 ---------
 

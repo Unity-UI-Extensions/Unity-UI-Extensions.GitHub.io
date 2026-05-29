@@ -1,0 +1,65 @@
+title: Unity UI Extensions
+description: Community-maintained UI extension controls for Unity's uGUI and UI Toolkit frameworks — 80+ battle-tested controls, free forever.
+url: "https://unity-ui-extensions.github.io"
+baseurl: ""
+repository: "Unity-UI-Extensions/Unity-UI-Extensions.GitHub.io"
+github_username: UnityUIExtensions
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+  - .git/
+  - .gitignore
+  - Copilot/
+  - OfferImages/
+  - ReleaseNotes/
+  - "*.sh"
+  - "*.py"
+  - README.md
+  - add_frontmatter.py
+  - create_uitk_pages.py
+
+# Keep Controls/ images accessible but don't process raw .md without front matter
+# Controls that have been migrated have front matter added and their own permalink
+
+# Site metadata
+author:
+  name: Unity UI Extensions Community
+  email: ""
+
+twitter:
+  username: UnityUIExtensions
+
+social:
+  name: Unity UI Extensions
+  links:
+    - https://github.com/Unity-UI-Extensions
+    - https://www.openupm.com/packages/com.unity.uiextensions/
+
+# SEO
+logo: "/assets/img/logo.svg"

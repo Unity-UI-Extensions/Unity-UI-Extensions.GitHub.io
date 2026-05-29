@@ -1,8 +1,17 @@
+---
+layout: control-ugui
+title: "Table Layout Group"
+description: "CSS-style table layout that arranges UI elements into rows and columns."
+category: "Layout"
+permalink: /ugui/controls/table-layout-group/
+has_video: true
+tags: [layout, table, grid, rows, columns]
+---
 # TableLayoutGroup
 
 A table layout system supporting customizable column and row sizes / layout
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ---------
 
@@ -31,9 +40,9 @@ A table layout system supporting customizable column and row sizes / layout
 The table layout group allows the layout of child items in to the style of a table.  You can specify how many columns should be supported as well as the size of columns and rows.
 Additionally, you can specify padding between the columns and rows.
 
-![](Images/TableLayoutGroup.jpg)
+![](/Controls/Images/TableLayoutGroup.jpg)
 
-![](Images/TableLayoutGroupInspector.jpg)
+![](/Controls/Images/TableLayoutGroupInspector.jpg)
 
 If you wish you can override the fixed row height to allow child elements to set their height.
 
@@ -79,7 +88,7 @@ Create an Empty GO on a Canvas and add the **Table Layout Group** component usin
 
 *Click to play*
 
-[![Table Layout Group Demo](Images/TableLayoutGroupDemo.jpg)](Images/TableLayoutGroupDemo.mp4 "Table Layout Group Demo")
+[![Table Layout Group Demo](/Controls/Images/TableLayoutGroupDemo.jpg)](/Controls/Images/TableLayoutGroupDemo.mp4 "Table Layout Group Demo")
 
 ---------
 

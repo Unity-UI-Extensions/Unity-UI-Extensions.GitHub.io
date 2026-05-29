@@ -1,3 +1,12 @@
+---
+layout: control-ugui
+title: "Card UI"
+description: "2D and 3D card flip/stack animations for content presentation."
+category: "Layout"
+permalink: /ugui/controls/card-ui/
+has_video: false
+tags: [layout, card, flip, 3d, animation]
+---
 # Card UI
 
 A range of controls to provide a Card based interface, this includes several capabilities and features to manipulate the cards based on requirements, including:
@@ -7,7 +16,7 @@ A range of controls to provide a Card based interface, this includes several cap
 * 2D card stacks
 * 3D Expanding cards and Superelipses
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ---------
 
@@ -42,11 +51,11 @@ The range of Card UI controls give you several options for creating card like UI
 
 |2D Card Expanding|2D Popup Cards
 |---|---|
-|![2D Card Expanding Inspector](Images/CardUI2DExpandingInspector.jpg)|![2D Popup Cards Inspector](Images/CardUI2DPopupInspector.jpg)
+|![2D Card Expanding Inspector](/Controls/Images/CardUI2DExpandingInspector.jpg)|![2D Popup Cards Inspector](/Controls/Images/CardUI2DPopupInspector.jpg)
 
 |2D Stacked Cards|3D Expanding Cards
 |---|---|
-|![2D Stacked Cards Inspector](Images/CardUI2DStackInspector.jpg)|![3D Expanding Cards Inspector](Images/CardUI3DExpandingInspector.jpg)
+|![2D Stacked Cards Inspector](/Controls/Images/CardUI2DStackInspector.jpg)|![3D Expanding Cards Inspector](/Controls/Images/CardUI3DExpandingInspector.jpg)
 
 ---------
 
@@ -79,7 +88,7 @@ For fuller demonstration of the setup of the Card UI controls, checkout the Card
 
 ## Video Demo
 
-![](Images/CardUIDemo.gif)
+![](/Controls/Images/CardUIDemo.gif)
 
 ---------
 

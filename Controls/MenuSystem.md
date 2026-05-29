@@ -1,8 +1,17 @@
+---
+layout: control-ugui
+title: "Menu System"
+description: "Hierarchical animated menu with slide, fade, and scale transition modes."
+category: "Navigation"
+permalink: /ugui/controls/menu-system/
+has_video: true
+tags: [navigation, menu, hierarchy, transition, animated]
+---
 # Unite Menu System
 
 The example Menu system demonstrated at Unite Europe 2017, refactored and updated as a generic reusable system.
 
-![Menu Example](Images/MenuExample.jpg)
+![Menu Example](/Controls/Images/MenuExample.jpg)
 
 ---------
 
@@ -33,7 +42,7 @@ At Unite 2017, a team demonstrated an easy to use approach to build an extendabl
 
 This has been updated / refactored in to a reusable feature with a little work based on a set of generic components, at it's Core is the "Menu Manager" which manages all menus and a set of implementation templates for building the Menu's in your game.
 
-![](Images/MenuInspector.jpg)
+![](/Controls/Images/MenuInspector.jpg)
 
 Once the manager has been added to your starting / master scene, it will control the flow between all "screens" in your project.
 It is still quite basic at the moment and only loads/displays each screen UI canvas, so there is room for improvement.
@@ -92,7 +101,7 @@ In the "Examples" Folder, there is a full working implementation to based your o
 
 *Click to play*
 
-[![menu System Demo](Images/MenuDemo.jpg)](Images/MenuDemo.mp4 "Menu System Demo")
+[![menu System Demo](/Controls/Images/MenuDemo.jpg)](/Controls/Images/MenuDemo.mp4 "Menu System Demo")
 
 ---------
 

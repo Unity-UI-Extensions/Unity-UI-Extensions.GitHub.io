@@ -1,8 +1,17 @@
+---
+layout: control-ugui
+title: "Non-Drawing Graphic"
+description: "Invisible raycast-blocking graphic — enables hit areas without any visual."
+category: "Utilities"
+permalink: /ugui/controls/non-drawing-graphic/
+has_video: true
+tags: [utilities, raycast, invisible, hit-area, clickable]
+---
 # Non-Drawing Graphic
 
 A graphic component with zero draw calls, useful (when paired with a click script or the Selectable Extension) for invisible buttons or hit test blockers.
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ---------
 
@@ -30,11 +39,11 @@ A graphic component with zero draw calls, useful (when paired with a click scrip
 
 The Non Drawing Graphic component allows you to add a graphic hit testable area with zero draw calls.  The Raycast hit test can also be enabled or disabled (instead of using a CanvasGroup)
 
-![](Images/NonDrawingGraphicInspector.jpg)
+![](/Controls/Images/NonDrawingGraphicInspector.jpg)
 
 It is also very useful when paired with the Selectable Extension to add Click, Release and Hold capabilities.
 
-![](Images/NonDrawingGraphicInspectorClickable.jpg)
+![](/Controls/Images/NonDrawingGraphicInspectorClickable.jpg)
 
 ---------
 
@@ -71,7 +80,7 @@ These will be added to the asset in the next update.
 
 *Click to play*
 
-[![Non Drawing Graphic Demo](Images/NonDrawingGraphicDemo.jpg)](Images/NonDrawingGraphicDemo.mp4 "Non Drawing Graphic Demo")
+[![Non Drawing Graphic Demo](/Controls/Images/NonDrawingGraphicDemo.jpg)](/Controls/Images/NonDrawingGraphicDemo.mp4 "Non Drawing Graphic Demo")
 
 ---------
 

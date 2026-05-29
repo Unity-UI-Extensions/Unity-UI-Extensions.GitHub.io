@@ -1,8 +1,17 @@
+---
+layout: control-ugui
+title: "Content Scroll Snap Horizontal"
+description: "Snap-to-page horizontal scroll container with automatic page detection."
+category: "Layout"
+permalink: /ugui/controls/content-scroll-snap-horizontal/
+has_video: false
+tags: [layout, scroll, snap, horizontal, pagination]
+---
 # Content ScrollSnap Horizontal
 
 A list scroll rect that snaps onto the items in its content, includes button & pagination support (optional).
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ---------
 
@@ -35,7 +44,7 @@ Pages can be moved by swipes or via the use of buttons.
 A scroll snap style control which is focused on a horizontal layout, enabling a paged view of child elements.
 Pages can be moved by keys, swipes or via the use of buttons.
 
-![](Images/ContentScrollSnapHorizontalInspector.jpg)
+![](/Controls/Images/ContentScrollSnapHorizontalInspector.jpg)
 
 Implements additional events for when the scroll snap starts moving, when the current item changes, when an item is found to snap to, and when
 the scroll snap has finished snapping.
@@ -91,7 +100,7 @@ This will give you a standard Scroll Rect setup with the script and a few exampl
 
 ## Video Demo
 
-![](Images/ContentScrollSnapHorizontalDemo.gif)
+![](/Controls/Images/ContentScrollSnapHorizontalDemo.gif)
 
 ---------
 

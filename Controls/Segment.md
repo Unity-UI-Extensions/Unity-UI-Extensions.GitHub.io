@@ -1,3 +1,12 @@
+---
+layout: control-ugui
+title: "Segment"
+description: "Individual button segment used as a child within a SegmentedControl."
+category: "Input"
+permalink: /ugui/controls/segment/
+has_video: false
+tags: [input, segment, button, selectable]
+---
 # Segment
 
 An individual segment component that acts as a button within a SegmentedControl group. Handles pointer events and selection state for segmented controls.

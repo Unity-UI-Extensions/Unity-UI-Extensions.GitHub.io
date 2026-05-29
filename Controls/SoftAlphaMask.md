@@ -1,8 +1,17 @@
+---
+layout: control-ugui
+title: "Soft Alpha Mask"
+description: "Uses a greyscale mask texture to softly clip UI content at the edges."
+category: "Effects"
+permalink: /ugui/controls/soft-alpha-mask/
+has_video: false
+tags: [effects, mask, alpha, clip, soft]
+---
 # SoftAlphaMask
 
 Shader based mask able to clip images using an alpha mask
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ---------
 
@@ -30,7 +39,7 @@ Shader based mask able to clip images using an alpha mask
 
 Where most Alpha Mask effects built into the Unity UI system work on hard transparencies, the Soft Alpha Mask is able to work with alpha mask gradients and includes animation features to enable a smooth transition.
 
-![Soft Alpha Mask Inspector](Images/SoftAplhaMaskInspector.jpg)
+![Soft Alpha Mask Inspector](/Controls/Images/SoftAplhaMaskInspector.jpg)
 
 ---------
 
@@ -65,7 +74,7 @@ There is also a Text version of the Soft Alpha Mask to work with Text Objects.
 
 ## Video Demo
 
-![Soft Alpha Mask Demo](Images/SoftAlphaMaskDemo.gif)
+![Soft Alpha Mask Demo](/Controls/Images/SoftAlphaMaskDemo.gif)
 
 ---------
 

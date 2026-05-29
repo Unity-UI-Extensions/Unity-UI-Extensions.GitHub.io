@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UIToolkit Controls — Unity UIToolkit Extensions — Unity UI Extensions</title>
+<meta name="description" content="18 modern UI controls and manipulators for Unity's UI Toolkit framework. Navigation, forms, feedback, and more.">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>UIToolkit Controls — Unity UIToolkit Extensions | Unity UI Extensions</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="UIToolkit Controls — Unity UIToolkit Extensions" />
+<meta name="author" content="Unity UI Extensions Community" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="18 modern UI controls and manipulators for Unity’s UI Toolkit framework. Navigation, forms, feedback, and more." />
+<meta property="og:description" content="18 modern UI controls and manipulators for Unity’s UI Toolkit framework. Navigation, forms, feedback, and more." />
+<link rel="canonical" href="https://unity-ui-extensions.github.io/uitoolkit/" />
+<meta property="og:url" content="https://unity-ui-extensions.github.io/uitoolkit/" />
+<meta property="og:site_name" content="Unity UI Extensions" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="UIToolkit Controls — Unity UIToolkit Extensions" />
+<meta name="twitter:site" content="@UnityUIExtensions" />
+<meta name="twitter:creator" content="@Unity UI Extensions Community" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Unity UI Extensions Community"},"description":"18 modern UI controls and manipulators for Unity’s UI Toolkit framework. Navigation, forms, feedback, and more.","headline":"UIToolkit Controls — Unity UIToolkit Extensions","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://unity-ui-extensions.github.io/assets/img/logo.svg"},"name":"Unity UI Extensions Community"},"url":"https://unity-ui-extensions.github.io/uitoolkit/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/assets/css/neon.css">
+<link rel="icon" type="image/png" href="/assets/img/logo.png">
+
+</head>
+<body>
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a class="nav-brand" href="/">
+      <img src="/assets/img/logo.svg" alt="Unity UI Extensions" width="32" height="32">
+      <span>UI Extensions</span>
+    </a>
+
+    <button class="nav-mobile-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-links" role="list">
+      <li><a href="/" >Home</a></li>
+      <li>
+        <a href="/ugui/" >
+          <span class="badge-u">uGUI</span>
+        </a>
+      </li>
+      <li>
+        <a href="/uitoolkit/" class="active">
+          <span class="badge-t">UI Toolkit</span>
+        </a>
+      </li>
+      <li><a href="/changelog/" >Changelog</a></li>
+      <li>
+        <a href="https://github.com/Unity-UI-Extensions/com.unity.uiextensions" target="_blank" rel="noopener" class="nav-github">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+  <main id="main-content">
+    <section class="pkg-hero uitk-context">
+  <div class="pkg-hero-inner">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span aria-hidden="true">›</span>
+      <span aria-current="page">UI Toolkit</span>
+    </nav>
+    <div class="pkg-hero-badge"><span class="badge-t">UI Toolkit Package</span></div>
+    <h1>UIToolkit Extensions</h1>
+    <p class="pkg-hero-lead">18 modern controls and manipulators for Unity's UI Toolkit framework. Built for runtime UI — ready for production.</p>
+    <div class="pkg-hero-meta">
+      <code class="pkg-id">com.unity.uitoolkitextensions</code>
+      <span class="badge-ghost">MIT Licence</span>
+      <span class="badge-ghost">Unity 2022.3+</span>
+    </div>
+    <div class="pkg-hero-actions">
+      <a href="#controls" class="btn btn-t">Browse Controls</a>
+      <a href="/uitoolkit/install/" class="btn btn-ghost">Installation Guide</a>
+      <a href="https://github.com/Unity-UI-Extensions/com.unity.uitoolkitextensions" class="btn btn-ghost" target="_blank" rel="noopener">GitHub Repo</a>
+    </div>
+  </div>
+</section>
+
+<section class="section install-section uitk-context" aria-labelledby="uitk-install-heading">
+  <div class="section-inner">
+    <h2 id="uitk-install-heading" class="section-title">Installation</h2>
+
+    <div class="install-tabs" data-tabs="">
+      <div class="tab-bar">
+        <button class="tab-btn active" data-tab="openupm">OpenUPM</button>
+        <button class="tab-btn" data-tab="giturl">Git URL</button>
+        <button class="tab-btn" data-tab="manual">Manual</button>
+      </div>
+
+      <div class="tab-panel active" data-panel="openupm">
+        <h3>Install via OpenUPM</h3>
+        <div class="install-panel">
+          <pre><code>openupm add com.unity.uitoolkitextensions</code></pre>
+          <button class="copy-btn" aria-label="Copy command">Copy</button>
+        </div>
+        <p>Or add the scoped registry manually in <code>Edit → Project Settings → Package Manager</code>:</p>
+        <div class="install-panel">
+          <pre><code>Name: package.openupm.com
+URL: https://package.openupm.com
+Scope: com.unity.uitoolkitextensions</code></pre>
+          <button class="copy-btn" aria-label="Copy registry settings">Copy</button>
+        </div>
+      </div>
+
+      <div class="tab-panel" data-panel="giturl">
+        <h3>Install via Git URL</h3>
+        <p>Open the Package Manager (<code>Window → Package Manager</code>), click <strong>+</strong> → <strong>Add package from git URL</strong> and paste:</p>
+        <div class="install-panel">
+          <pre><code>https://github.com/Unity-UI-Extensions/com.unity.uitoolkitextensions.git</code></pre>
+          <button class="copy-btn" aria-label="Copy git URL">Copy</button>
+        </div>
+      </div>
+
+      <div class="tab-panel" data-panel="manual">
+        <h3>Manual / Embedded Package</h3>
+        <ol>
+          <li>Download the latest release from the <a href="https://github.com/Unity-UI-Extensions/com.unity.uitoolkitextensions/releases" target="_blank" rel="noopener">Releases page</a></li>
+          <li>Extract and place the folder in your project's <code>Packages/</code> directory</li>
+          <li>Unity will automatically detect and import the package</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="controls" class="section controls-section uitk-context" aria-labelledby="uitk-controls-heading">
+  <div class="section-inner">
+    <h2 id="uitk-controls-heading" class="section-title">All Controls</h2>
+
+    <div class="controls-toolbar">
+      <div class="search-wrap">
+        <input id="control-search" type="search" placeholder="Search controls…" aria-label="Search controls" />
+      </div>
+
+      <div class="filter-bar" role="group" aria-label="Filter by category">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="navigation">Navigation</button>
+        <button class="filter-btn" data-filter="forms">Forms</button>
+        <button class="filter-btn" data-filter="feedback">Feedback</button>
+        <button class="filter-btn" data-filter="primitives">Primitives</button>
+        <button class="filter-btn" data-filter="utilities">Utilities</button>
+      </div>
+    </div>
+
+    <div class="controls-grid" aria-live="polite">
+      
+        <a href="/uitoolkit/controls/scroll-snap/" class="control-card uitk-context" data-category="navigation" data-name="scroll snap" data-desc="swipe/drag paged scroll container that snaps to discrete pages by index." data-tags="navigation scroll snap pages swipe" aria-label="Scroll Snap — Swipe/drag paged scroll container that snaps to discrete pages by index.">
+
+          
+            <div class="control-card-img control-card-img--placeholder control-card-img--uitk" aria-hidden="true">
+              <span>SC</span>
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">Scroll Snap</h3>
+              <span class="badge-t control-card-cat">Navigation</span>
+            </div>
+            <p class="control-card-desc">Swipe/drag paged scroll container that snaps to discrete pages by index.</p>
+            <div class="control-card-footer">
+              
+              
+                <span class="tag">navigation</span>
+              
+                <span class="tag">scroll</span>
+              
+                <span class="tag">snap</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/uitoolkit/controls/collapsible-section/" class="control-card uitk-context" data-category="navigation" data-name="collapsible section" data-desc="animated expand/collapse section with header toggle and content container." data-tags="navigation collapse expand accordion section" aria-label="Collapsible Section — Animated expand/collapse section with header toggle and content container.">
+
+          
+            <div class="control-card-img control-card-img--placeholder control-card-img--uitk" aria-hidden="true">
+              <span>CO</span>
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">Collapsible Section</h3>
+              <span class="badge-t control-card-cat">Navigation</span>
+            </div>
+            <p class="control-card-desc">Animated expand/collapse section with header toggle and content container.</p>
+            <div class="control-card-footer">
+              
+              
+                <span class="tag">navigation</span>
+              
+                <span class="tag">collapse</span>
+              
+                <span class="tag">expand</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/uitoolkit/controls/quadrant-stepper/" class="control-card uitk-context" data-category="navigation" data-name="quadrant stepper" data-desc="four-directional step selector displayed as an overlay compass widget." data-tags="navigation stepper direction compass selector" aria-label="Quadrant Stepper — Four-directional step selector displayed as an overlay compass widget.">
+
+          
+            <div class="control-card-img control-card-img--placeholder control-card-img--uitk" aria-hidden="true">
+              <span>QU</span>
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">Quadrant Stepper</h3>
+              <span class="badge-t control-card-cat">Navigation</span>
+            </div>
+            <p class="control-card-desc">Four-directional step selector displayed as an overlay compass widget.</p>
+            <div class="control-card-footer">
+              
+              
+                <span class="tag">navigation</span>
+              
+                <span class="tag">stepper</span>
+              
+                <span class="tag">direction</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/uitoolkit/controls/pill-input-field/" class="control-card uitk-context" data-category="forms" data-name="pill input field" data-desc="rounded pill-shaped input field with floating label and validation state." data-tags="forms input pill label text-field" aria-label="Pill Input Field — Rounded pill-shaped input field with floating label and validation state.">
+
+          
+            <div class="control-card-img control-card-img--placeholder control-card-img--uitk" aria-hidden="true">
+              <span>PI</span>
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">Pill Input Field</h3>
+              <span class="badge-t control-card-cat">Forms</span>
+            </div>
+            <p class="control-card-desc">Rounded pill-shaped input field with floating label and validation state.</p>
+            <div class="control-card-footer">
+              
+              
+                <span class="tag">forms</span>
+              
+                <span class="tag">input</span>
+              
+                <span class="tag">pill</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/uitoolkit/controls/rounded-input-field/" class="control-card uitk-context" data-category="forms" data-name="rounded input field" data-desc="card-style text input with rounded corners and focus/error colour states." data-tags="forms input rounded text-field focus" aria-label="Rounded Input Field — Card-style text input with rounded corners and focus/error colour states.">
+
+          
+            <div class="control-card-img control-card-img--placeholder control-card-img--uitk" aria-hidden="true">
+              <span>RO</span>
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">Rounded Input Field</h3>
+              <span class="badge-t control-card-cat">Forms</span>
+            </div>
+            <p class="control-card-desc">Card-style text input with rounded corners and focus/error colour states.</p>
+            <div class="control-card-footer">
+              
+              
+                <span class="tag">forms</span>
+              
+                <span class="tag">input</span>
+              
+                <span class="tag">rounded</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/uitoolkit/controls/pill-selector/" class="control-card uitk-context" data-category="forms" data-name="pill selector" data-desc="row of pill-shaped radio buttons for exclusive single-option selection." data-tags="forms selector pill radio single-select" aria-label="Pill Selector — Row of pill-shaped radio buttons for exclusive single-option selection.">
+
+          
+            <div class="control-card-img control-card-img--placeholder control-card-img--uitk" aria-hidden="true">
+              <span>PI</span>
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">Pill Selector</h3>
+              <span class="badge-t control-card-cat">Forms</span>
+            </div>
+            <p class="control-card-desc">Row of pill-shaped radio buttons for exclusive single-option selection.</p>
+            <div class="control-card-footer">
+              
+              
+                <span class="tag">forms</span>
+              
+                <span class="tag">selector</span>
+              
+                <span class="tag">pill</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/uitoolkit/controls/toggle-button/" class="control-card uitk-context" data-category="forms" data-name="toggle button" data-desc="flat toggle switch with animated indicator and on/off label support." data-tags="forms toggle switch button boolean" aria-label="Toggle Button — Flat toggle switch with animated indicator and on/off label support.">
+
+          
+            <div class="control-card-img control-card-img--placeholder control-card-img--uitk" aria-hidden="true">
+              <span>TO</span>
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">Toggle Button</h3>
+              <span class="badge-t control-card-cat">Forms</span>
+            </div>
+            <p class="control-card-desc">Flat toggle switch with animated indicator and on/off label support.</p>
+            <div class="control-card-footer">
+              
+              
+                <span class="tag">forms</span>
+              
+                <span class="tag">toggle</span>
+              
+                <span class="tag">switch</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/uitoolkit/controls/color-toggle-button/" class="control-card uitk-context" data-category="forms" data-name="color toggle button" data-desc="toggle button that tints itself with a configurable accent colour when active." data-tags="forms toggle color tint button" aria-label="Color Toggle Button — Toggle button that tints itself with a configurable accent colour when active.">
+
+          
+            <div class="control-card-img control-card-img--placeholder control-card-img--uitk" aria-hidden="true">
+              <span>CO</span>
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">Color Toggle Button</h3>
+              <span class="badge-t control-card-cat">Forms</span>
+            </div>
+            <p class="control-card-desc">Toggle button that tints itself with a configurable accent colour when active.</p>
+            <div class="control-card-footer">
+              
+              
+                <span class="tag">forms</span>
+              
+                <span class="tag">toggle</span>
+              
+                <span class="tag">color</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/uitoolkit/controls/color-toggle-group/" class="control-card uitk-context" data-category="forms" data-name="color toggle group" data-desc="horizontally scrollable row of colour-tinted toggle buttons for multi-select." data-tags="forms toggle group color multi-select" aria-label="Color Toggle Group — Horizontally scrollable row of colour-tinted toggle buttons for multi-select.">
+
+          
+            <div class="control-card-img control-card-img--placeholder control-card-img--uitk" aria-hidden="true">
+              <span>CO</span>
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">Color Toggle Group</h3>
+              <span class="badge-t control-card-cat">Forms</span>
+            </div>
+            <p class="control-card-desc">Horizontally scrollable row of colour-tinted toggle buttons for multi-select.</p>
+            <div class="control-card-footer">
+              
+              
+                <span class="tag">forms</span>
+              
+                <span class="tag">toggle</span>
+              
+                <span class="tag">group</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/uitoolkit/controls/step-progress-bar/" class="control-card uitk-context" data-category="feedback" data-name="step progress bar" data-desc="segmented progress bar with labelled milestone steps and fill animation." data-tags="feedback progress steps bar milestone" aria-label="Step Progress Bar — Segmented progress bar with labelled milestone steps and fill animation.">
+
+          
+            <div class="control-card-img control-card-img--placeholder control-card-img--uitk" aria-hidden="true">
+              <span>ST</span>
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">Step Progress Bar</h3>
+              <span class="badge-t control-card-cat">Feedback</span>
+            </div>
+            <p class="control-card-desc">Segmented progress bar with labelled milestone steps and fill animation.</p>
+            <div class="control-card-footer">
+              
+              
+                <span class="tag">feedback</span>
+              
+                <span class="tag">progress</span>
+              
+                <span class="tag">steps</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/uitoolkit/controls/page-dot-indicator/" class="control-card uitk-context" data-category="feedback" data-name="page dot indicator" data-desc="animated pagination dots that reflect the current page of a scroll view." data-tags="feedback pagination dots indicator scroll" aria-label="Page Dot Indicator — Animated pagination dots that reflect the current page of a scroll view.">
+
+          
+            <div class="control-card-img control-card-img--placeholder control-card-img--uitk" aria-hidden="true">
+              <span>PA</span>
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">Page Dot Indicator</h3>
+              <span class="badge-t control-card-cat">Feedback</span>
+            </div>
+            <p class="control-card-desc">Animated pagination dots that reflect the current page of a scroll view.</p>
+            <div class="control-card-footer">
+              
+              
+                <span class="tag">feedback</span>
+              
+                <span class="tag">pagination</span>
+              
+                <span class="tag">dots</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/uitoolkit/controls/loading-icon/" class="control-card uitk-context" data-category="feedback" data-name="loading icon" data-desc="animated spinner/loading indicator with configurable speed and colour." data-tags="feedback loading spinner animation indicator" aria-label="Loading Icon — Animated spinner/loading indicator with configurable speed and colour.">
+
+          
+            <div class="control-card-img control-card-img--placeholder control-card-img--uitk" aria-hidden="true">
+              <span>LO</span>
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">Loading Icon</h3>
+              <span class="badge-t control-card-cat">Feedback</span>
+            </div>
+            <p class="control-card-desc">Animated spinner/loading indicator with configurable speed and colour.</p>
+            <div class="control-card-footer">
+              
+              
+                <span class="tag">feedback</span>
+              
+                <span class="tag">loading</span>
+              
+                <span class="tag">spinner</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/uitoolkit/controls/toast-swipe-dismiss/" class="control-card uitk-context" data-category="feedback" data-name="toast swipe dismiss manipulator" data-desc="gesture manipulator that allows swiping a toast/notification to dismiss it." data-tags="feedback toast swipe dismiss gesture" aria-label="Toast Swipe Dismiss Manipulator — Gesture manipulator that allows swiping a toast/notification to dismiss it.">
+
+          
+            <div class="control-card-img control-card-img--placeholder control-card-img--uitk" aria-hidden="true">
+              <span>TO</span>
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">Toast Swipe Dismiss Manipulator</h3>
+              <span class="badge-t control-card-cat">Feedback</span>
+            </div>
+            <p class="control-card-desc">Gesture manipulator that allows swiping a toast/notification to dismiss it.</p>
+            <div class="control-card-footer">
+              
+              
+                <span class="tag">feedback</span>
+              
+                <span class="tag">toast</span>
+              
+                <span class="tag">swipe</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        &lt;a href="/uitoolkit/controls/coming-soon-message/"
+           class="control-card uitk-context"
+           data-category="feedback"
+           data-name="coming soon message"
+           data-desc="placeholder panel displaying a styled "coming soon" message with icon."
+           data-tags="feedback placeholder coming-soon panel"
+           aria-label="Coming Soon Message — Placeholder panel displaying a styled "coming soon" message with icon."&gt;
+
+          
+            <div class="control-card-img control-card-img--placeholder control-card-img--uitk" aria-hidden="true">
+              <span>CO</span>
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">Coming Soon Message</h3>
+              <span class="badge-t control-card-cat">Feedback</span>
+            </div>
+            <p class="control-card-desc">Placeholder panel displaying a styled "coming soon" message with icon.</p>
+            <div class="control-card-footer">
+              
+              
+                <span class="tag">feedback</span>
+              
+                <span class="tag">placeholder</span>
+              
+                <span class="tag">coming-soon</span>
+              
+            </div>
+          </div>
+        &lt;/a&gt;
+      
+        <a href="/uitoolkit/controls/pill-button/" class="control-card uitk-context" data-category="primitives" data-name="pill button" data-desc="primary cta button in a rounded pill shape with press flash animation." data-tags="primitives button pill cta animation" aria-label="Pill Button — Primary CTA button in a rounded pill shape with press flash animation.">
+
+          
+            <div class="control-card-img control-card-img--placeholder control-card-img--uitk" aria-hidden="true">
+              <span>PI</span>
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">Pill Button</h3>
+              <span class="badge-t control-card-cat">Primitives</span>
+            </div>
+            <p class="control-card-desc">Primary CTA button in a rounded pill shape with press flash animation.</p>
+            <div class="control-card-footer">
+              
+              
+                <span class="tag">primitives</span>
+              
+                <span class="tag">button</span>
+              
+                <span class="tag">pill</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/uitoolkit/controls/circular-image-button/" class="control-card uitk-context" data-category="primitives" data-name="circular image button" data-desc="circular avatar/icon button with mask, border, and selected-state styling." data-tags="primitives button circular avatar icon" aria-label="Circular Image Button — Circular avatar/icon button with mask, border, and selected-state styling.">
+
+          
+            <div class="control-card-img control-card-img--placeholder control-card-img--uitk" aria-hidden="true">
+              <span>CI</span>
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">Circular Image Button</h3>
+              <span class="badge-t control-card-cat">Primitives</span>
+            </div>
+            <p class="control-card-desc">Circular avatar/icon button with mask, border, and selected-state styling.</p>
+            <div class="control-card-footer">
+              
+              
+                <span class="tag">primitives</span>
+              
+                <span class="tag">button</span>
+              
+                <span class="tag">circular</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/uitoolkit/controls/icon-label-button/" class="control-card uitk-context" data-category="primitives" data-name="icon label button" data-desc="horizontal row button combining a left-side icon with label and subtitle text." data-tags="primitives button icon label row" aria-label="Icon Label Button — Horizontal row button combining a left-side icon with label and subtitle text.">
+
+          
+            <div class="control-card-img control-card-img--placeholder control-card-img--uitk" aria-hidden="true">
+              <span>IC</span>
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">Icon Label Button</h3>
+              <span class="badge-t control-card-cat">Primitives</span>
+            </div>
+            <p class="control-card-desc">Horizontal row button combining a left-side icon with label and subtitle text.</p>
+            <div class="control-card-footer">
+              
+              
+                <span class="tag">primitives</span>
+              
+                <span class="tag">button</span>
+              
+                <span class="tag">icon</span>
+              
+            </div>
+          </div>
+        </a>
+      
+        <a href="/uitoolkit/controls/grayscale-image/" class="control-card uitk-context" data-category="utilities" data-name="grayscale image" data-desc="shader-based image element that renders in greyscale with adjustable intensity." data-tags="utilities image grayscale shader effect" aria-label="Grayscale Image — Shader-based Image element that renders in greyscale with adjustable intensity.">
+
+          
+            <div class="control-card-img control-card-img--placeholder control-card-img--uitk" aria-hidden="true">
+              <span>GR</span>
+            </div>
+          
+
+          <div class="control-card-body">
+            <div class="control-card-head">
+              <h3 class="control-card-name">Grayscale Image</h3>
+              <span class="badge-t control-card-cat">Utilities</span>
+            </div>
+            <p class="control-card-desc">Shader-based Image element that renders in greyscale with adjustable intensity.</p>
+            <div class="control-card-footer">
+              
+              
+                <span class="tag">utilities</span>
+              
+                <span class="tag">image</span>
+              
+                <span class="tag">grayscale</span>
+              
+            </div>
+          </div>
+        </a>
+      
+    </div>
+
+    <p id="no-results" class="no-results" style="display:none" role="status">
+      No controls match your search. Try a different term or clear the filter.
+    </p>
+  </div>
+</section>
+
+  </main>
+  <footer class="footer" role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="/" class="footer-logo">
+        <img src="/assets/img/logo.svg" alt="Unity UI Extensions" width="28" height="28">
+        Unity UI Extensions
+      </a>
+      <p>Community-maintained UI controls for Unity's uGUI and UI Toolkit frameworks. Free forever, BSD 3-Clause licensed.</p>
+    </div>
+
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <div class="footer-col">
+        <h4>uGUI Package</h4>
+        <ul>
+          <li><a href="/ugui/">Overview</a></li>
+          <li><a href="/ugui/controls/">All Controls</a></li>
+          <li><a href="/ugui/install/">Installation</a></li>
+          <li><a href="/changelog/">Changelog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>UI Toolkit Package</h4>
+        <ul>
+          <li><a href="/uitoolkit/">Overview</a></li>
+          <li><a href="/uitoolkit/controls/">All Controls</a></li>
+          <li><a href="/uitoolkit/install/">Installation</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Community</h4>
+        <ul>
+          <li><a href="https://github.com/Unity-UI-Extensions/com.unity.uiextensions" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://www.openupm.com/packages/com.unity.uiextensions/" target="_blank" rel="noopener">OpenUPM</a></li>
+          <li><a href="https://discord.gg/SBuyXfh" target="_blank" rel="noopener">Discord</a></li>
+          <li><a href="https://github.com/Unity-UI-Extensions/com.unity.uiextensions/issues" target="_blank" rel="noopener">Report a Bug</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div class="footer-bottom">
+    <span>© 2026 Unity UI Extensions Community</span>
+    <span>BSD 3-Clause &amp; MIT Licensed</span>
+    <span>Not affiliated with Unity Technologies</span>
+  </div>
+</footer>
+
+  <script src="/assets/js/site.js"></script>
+</body>
+</html>

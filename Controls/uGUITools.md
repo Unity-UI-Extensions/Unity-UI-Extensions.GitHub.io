@@ -1,8 +1,17 @@
+---
+layout: control-ugui
+title: "uGUI Tools"
+description: "Editor menu shortcuts for common uGUI operations — align, distribute, reset."
+category: "Navigation"
+permalink: /ugui/controls/ugui-tools/
+has_video: false
+tags: [navigation, editor, tools, utilities, shortcuts]
+---
 # uGUITools
 
 A collection of functions to assist with managing anchors on RectTransforms
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ---------
 
@@ -30,7 +39,7 @@ A collection of functions to assist with managing anchors on RectTransforms
 
 A useful set of tools to manipulate RectTransforms to its Anchors, or Adjusts the Anchors to the selected RectTransform.
 
-![](Images/uGUIToolsMenu.jpg)
+![](/Controls/Images/uGUIToolsMenu.jpg)
 
 ---------
 

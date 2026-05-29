@@ -1,8 +1,17 @@
+---
+layout: control-ugui
+title: "Radial Slider"
+description: "Circular arc slider with configurable start angle, range, and fill style."
+category: "Input"
+permalink: /ugui/controls/radial-slider/
+has_video: true
+tags: [input, slider, radial, circular, arc]
+---
 # Radial Slider
 
 A radial slider which fills in a circular pattern
 
-![Radial Slider Example](Images/RadialSliderExample.jpg)
+![Radial Slider Example](/Controls/Images/RadialSliderExample.jpg)
 
 ---------
 
@@ -30,7 +39,7 @@ A radial slider which fills in a circular pattern
 
 The Radial Slider is a graphical fill control utilizing Unity's native Image fill capabilities.
 
-![](Images/RadialSliderInspector.jpg)
+![](/Controls/Images/RadialSliderInspector.jpg)
 
 It allows you to define a color range for the slider in a circular pattern beginning from the Left hand side (rotate the control for other starting points.)
 It also has built in Lerping capability and can be used to:
@@ -80,7 +89,7 @@ Alternatively, add the component to an existing GameObject using:
 
 *Click to play*
 
-[![Radial Slider Demo](Images/RadialSliderDemo.jpg)](Images/RadialSliderDemo.mp4 "Radial Slider Demo")
+[![Radial Slider Demo](/Controls/Images/RadialSliderDemo.jpg)](/Controls/Images/RadialSliderDemo.mp4 "Radial Slider Demo")
 
 ---------
 

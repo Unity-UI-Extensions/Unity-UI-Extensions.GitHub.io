@@ -1,8 +1,17 @@
+---
+layout: control-ugui
+title: "Flow Layout Group"
+description: "Automatically wraps child elements into rows or columns like CSS flexbox."
+category: "Layout"
+permalink: /ugui/controls/flow-layout-group/
+has_video: true
+tags: [layout, flow, wrap, grid, auto-layout]
+---
 # FlowLayoutGroup
 
 A more rugged grid style layout group
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ---------
 
@@ -28,7 +37,7 @@ A more rugged grid style layout group
 
 A more rugged grid style layout group
 
-![](Images/TableLayoutGroupInspector.jpg)
+![](/Controls/Images/TableLayoutGroupInspector.jpg)
 
 ---------
 

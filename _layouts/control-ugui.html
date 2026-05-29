@@ -1,0 +1,68 @@
+---
+layout: default
+---
+<div class="control-page-wrap">
+  {% include ugui-sidebar.html %}
+
+  <article class="control-page-content prose" aria-label="{{ page.title }}">
+    <header class="control-page-hero">
+      <div class="control-page-hero-inner">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="{{ '/' | relative_url }}">Home</a>
+          <span aria-hidden="true">›</span>
+          <a href="{{ '/ugui/' | relative_url }}">uGUI</a>
+          <span aria-hidden="true">›</span>
+          <a href="{{ '/ugui/controls/' | relative_url }}">Controls</a>
+          <span aria-hidden="true">›</span>
+          <span aria-current="page">{{ page.title }}</span>
+        </nav>
+
+        <h1>{{ page.title }}</h1>
+
+        {% if page.description %}
+          <p class="control-page-lead">{{ page.description }}</p>
+        {% endif %}
+
+        <div class="control-page-meta">
+          {% if page.category %}
+            <span class="badge-u">{{ page.category }}</span>
+          {% endif %}
+          {% if page.since %}
+            <span class="badge-ghost">Since {{ page.since }}</span>
+          {% endif %}
+          {% for tag in page.tags %}
+            <span class="tag">{{ tag }}</span>
+          {% endfor %}
+        </div>
+      </div>
+    </header>
+
+    <div class="control-page-body">
+      {{ content }}
+    </div>
+
+    <footer class="control-page-footer">
+      {% assign controls = site.data.ugui_controls %}
+      {% assign sorted = controls | sort: "name" %}
+      {% assign current_index = nil %}
+      {% for ctrl in sorted %}
+        {% if ctrl.permalink == page.url %}
+          {% assign current_index = forloop.index0 %}
+        {% endif %}
+      {% endfor %}
+
+      {% if current_index %}
+        {% assign prev_index = current_index | minus: 1 %}
+        {% assign next_index = current_index | plus: 1 %}
+        {% if prev_index >= 0 %}
+          {% assign prev_ctrl = sorted[prev_index] %}
+          <a href="{{ prev_ctrl.permalink | relative_url }}" class="ctrl-nav-prev">← {{ prev_ctrl.name }}</a>
+        {% endif %}
+        {% if next_index < sorted.size %}
+          {% assign next_ctrl = sorted[next_index] %}
+          <a href="{{ next_ctrl.permalink | relative_url }}" class="ctrl-nav-next">{{ next_ctrl.name }} →</a>
+        {% endif %}
+      {% endif %}
+    </footer>
+  </article>
+</div>

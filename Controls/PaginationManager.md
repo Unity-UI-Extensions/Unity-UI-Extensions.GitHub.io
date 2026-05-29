@@ -1,8 +1,17 @@
+---
+layout: control-ugui
+title: "Pagination Manager"
+description: "Connects a ScrollSnap or ContentScrollSnap to dot-style pagination indicators."
+category: "Utilities"
+permalink: /ugui/controls/pagination-manager/
+has_video: false
+tags: [utilities, pagination, dots, scrollsnap, indicator]
+---
 # Pagination Manager
 
 A management script to attach to the Horizontal or Vertical Scroll snaps to enable automatic click navigation.
 
-![Pagination Example](Images/PaginationManagerDemo.jpg)
+![Pagination Example](/Controls/Images/PaginationManagerDemo.jpg)
 
 ---------
 
@@ -30,7 +39,7 @@ A management script to attach to the Horizontal or Vertical Scroll snaps to enab
 
 The Pagination Manager enables automatic click navigation for the Pagination features of the Horizontal and Vertical Scroll Snap controls.
 
-![](Images/PaginationManagerInspector.jpg)
+![](/Controls/Images/PaginationManagerInspector.jpg)
 
 The control extends the base Unity ToggleGroup functionality by interlinking the Scroll Snap's functionality with the ToggleEvents automatically.
 

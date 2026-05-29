@@ -1,8 +1,17 @@
+---
+layout: control-ugui
+title: "DropDown List"
+description: "Styleable dropdown list with animated open/close and custom item rendering."
+category: "Input"
+permalink: /ugui/controls/dropdown-list/
+has_video: false
+tags: [input, dropdown, select, list]
+---
 # DropDownList
 
 A basic drop down list with text and image support
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ---------
 
@@ -30,7 +39,7 @@ A basic drop down list with text and image support
 
 A more advanced Combobox control with additional support for images and other items in the selection pane
 
-![Drop Down List Inspector](Images/DropDownListInspector.jpg)
+![Drop Down List Inspector](/Controls/Images/DropDownListInspector.jpg)
 
 ---------
 

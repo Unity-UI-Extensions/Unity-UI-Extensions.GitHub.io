@@ -1,9 +1,18 @@
+---
+layout: control-ugui
+title: "UI Infinite Scroll"
+description: "Loops ScrollRect content indefinitely in horizontal or vertical mode."
+category: "Utilities"
+permalink: /ugui/controls/ui-infinite-scroll/
+has_video: true
+tags: [utilities, scroll, infinite, loop, scrollrect]
+---
 # UI_InfiniteScroll
 
 Loops Scroll Rect content indefinitely
 Configures automatically - works in both vertical and horizontal (but not both at the same time) - drag and drop  - can be initialized by code
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ---------
 
@@ -31,7 +40,7 @@ Configures automatically - works in both vertical and horizontal (but not both a
 
 The Infinite Scroll Rect script causes content items for a Scroll Rect to loop indefinitely as the user scrolls.
 
-![](Images/InfiniteScrollInspector.jpg)
+![](/Controls/Images/InfiniteScrollInspector.jpg)
 
 It also allows you determine whether the control starts on awake or via code.
 

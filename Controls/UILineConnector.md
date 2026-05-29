@@ -1,8 +1,17 @@
+---
+layout: control-ugui
+title: "UI Line Connector"
+description: "Draws connecting lines between RectTransform anchors with configurable width."
+category: "Primitives"
+permalink: /ugui/controls/ui-line-connector/
+has_video: true
+tags: [primitives, line, connector, link, bezier]
+---
 # UILineConnector
 
 A Line Renderer helper used to draw a chain between multiple gameObjects, like a node connector
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ---------
 
@@ -30,11 +39,11 @@ A Line Renderer helper used to draw a chain between multiple gameObjects, like a
 
 The UI Line Connector, allows you Override the Line Renderer control to build a line connecting the selected GameObjects.
 
-![](Images/UILineConnectorInspector.jpg)
+![](/Controls/Images/UILineConnectorInspector.jpg)
 
 This produces a Node connector style effect between the provided UI GameObjects.
 
-![](Images/UILineConnectorSample.jpg)
+![](/Controls/Images/UILineConnectorSample.jpg)
 
 > [!NOTE]
 > Depends on the [UI Line Renderer](/Controls/UILineRenderer.md) component
@@ -75,7 +84,7 @@ This will also add the [UI Line Renderer](/Controls/UILineRenderer.md) component
 
 *Click to play*
 
-[![UI Line Connector Demo](Images/UILineConnectorDemo.jpg)](Images/UILineConnectorDemo.mp4 "UI Line Connector Demo")
+[![UI Line Connector Demo](/Controls/Images/UILineConnectorDemo.jpg)](/Controls/Images/UILineConnectorDemo.mp4 "UI Line Connector Demo")
 
 ---------
 

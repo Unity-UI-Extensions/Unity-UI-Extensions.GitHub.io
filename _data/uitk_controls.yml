@@ -33,6 +33,15 @@
 
 # ── Forms ─────────────────────────────────────────────────────────────────────
 
+- name: Dropdown
+  slug: dropdown
+  permalink: /uitoolkit/controls/dropdown/
+  category: Forms
+  description: Wheel-style dropdown picker that opens a touch-friendly modal list for single-value selection.
+  preview_image: ""
+  has_video: false
+  tags: [forms, dropdown, combobox, select, picker]
+
 - name: Pill Input Field
   slug: pill-input-field
   permalink: /uitoolkit/controls/pill-input-field/
@@ -164,6 +173,15 @@
   tags: [primitives, button, icon, label, row]
 
 # ── Utilities ────────────────────────────────────────────────────────────────
+
+- name: Image Crop Overlay
+  slug: image-crop-overlay
+  permalink: /uitoolkit/controls/image-crop-overlay/
+  category: Utilities
+  description: Full-screen modal image cropper with drag-to-pan, pinch-to-zoom, and configurable square export.
+  preview_image: ""
+  has_video: false
+  tags: [utilities, image, crop, editor, overlay]
 
 - name: Grayscale Image
   slug: grayscale-image

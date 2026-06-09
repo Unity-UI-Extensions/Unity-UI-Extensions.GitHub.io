@@ -1,5 +1,6 @@
-# uGUI Controls — 64 controls with demo content
-# Excluded controls (36, no demo images/video) are listed in MISSING_CONTENT.md
+# uGUI Controls — 100 controls (all have documentation pages)
+# 64 have demo media; 36 have documentation pages with demo media pending
+# (preview_image left blank → placeholder card). See MISSING_CONTENT.md.
 
 # ── Layout ──────────────────────────────────────────────────────────────────
 
@@ -588,3 +589,329 @@
   preview_image: /Controls/Images/uGUIToolsMenu.jpg
   has_video: false
   tags: [navigation, editor, tools, utilities, shortcuts]
+
+# ── Controls with complete documentation, demo media pending ─────────────────
+
+- name: Best Fit Outline
+  slug: best-fit-outline
+  permalink: /ugui/controls/best-fit-outline/
+  category: Effects
+  description: Outline effect that scales correctly with a Text component's best-fit sizing.
+  preview_image: ""
+  has_video: false
+  tags: [effects, outline, text, best-fit]
+
+- name: Bound ToolTip
+  slug: bound-tooltip
+  permalink: /ugui/controls/bound-tooltip/
+  category: Utilities
+  description: Tooltip driven by a central listener for displaying data-bound content on hover.
+  preview_image: ""
+  has_video: false
+  tags: [utilities, tooltip, hover, bound]
+
+- name: CLZF2 Compression
+  slug: clzf2-compression
+  permalink: /ugui/controls/clzf2-compression/
+  category: Utilities
+  description: LZF compression helper for compressing UI or save data at runtime.
+  preview_image: ""
+  has_video: false
+  tags: [utilities, compression, lzf, data]
+
+- name: Curved Layout
+  slug: curved-layout
+  permalink: /ugui/controls/curved-layout/
+  category: Layout
+  description: Arranges child elements along a configurable curve.
+  preview_image: ""
+  has_video: false
+  tags: [layout, curve, curved, arrange]
+
+- name: Curved Text
+  slug: curved-text
+  permalink: /ugui/controls/curved-text/
+  category: Effects
+  description: Bends legacy uGUI Text along a curve (for projects not using TextMeshPro).
+  preview_image: ""
+  has_video: false
+  tags: [effects, text, curve, bend]
+
+- name: Cylinder Text
+  slug: cylinder-text
+  permalink: /ugui/controls/cylinder-text/
+  category: Effects
+  description: Curved text effect that wraps text around a cylindrical surface.
+  preview_image: ""
+  has_video: false
+  tags: [effects, text, cylinder, curve]
+
+- name: Drag Corrector
+  slug: drag-corrector
+  permalink: /ugui/controls/drag-corrector/
+  category: Utilities
+  description: Manages the EventSystem drag threshold for high-DPI displays.
+  preview_image: ""
+  has_video: false
+  tags: [utilities, drag, dpi, eventsystem]
+
+- name: Extensions Toggle
+  slug: extensions-toggle
+  permalink: /ugui/controls/extensions-toggle/
+  category: Input
+  description: Enhanced Toggle with additional event types and toggle behaviours.
+  preview_image: ""
+  has_video: false
+  tags: [input, toggle, events, selectable]
+
+- name: Extensions Toggle Group
+  slug: extensions-toggle-group
+  permalink: /ugui/controls/extensions-toggle-group/
+  category: Input
+  description: Manages a group of Extensions Toggle components with single or multi selection.
+  preview_image: ""
+  has_video: false
+  tags: [input, toggle, group, selection]
+
+- name: GamePad Input Module
+  slug: gamepad-input-module
+  permalink: /ugui/controls/gamepad-input-module/
+  category: Utilities
+  description: Stripped-down input module for gamepad and keyboard UI navigation.
+  preview_image: ""
+  has_video: false
+  tags: [utilities, gamepad, input, navigation, keyboard]
+
+- name: Hover ToolTip
+  slug: hover-tooltip
+  permalink: /ugui/controls/hover-tooltip/
+  category: Utilities
+  description: Basic tooltip that appears on pointer hover.
+  preview_image: ""
+  has_video: false
+  tags: [utilities, tooltip, hover, popup]
+
+- name: Image Extended
+  slug: image-extended
+  permalink: /ugui/controls/image-extended/
+  category: Primitives
+  description: Improved Image control with rotation support and filled type without a sprite.
+  preview_image: ""
+  has_video: false
+  tags: [primitives, image, rotation, filled]
+
+- name: Infinite Scroll Snap
+  slug: infinite-scroll-snap
+  permalink: /ugui/controls/infinite-scroll-snap/
+  category: Layout
+  description: Endlessly looping scroll-snap layout for UI elements.
+  preview_image: ""
+  has_video: false
+  tags: [layout, scroll, snap, infinite, loop]
+
+- name: Input Field Enter Submit
+  slug: input-field-enter-submit
+  permalink: /ugui/controls/input-field-enter-submit/
+  category: Utilities
+  description: Automatically submits an InputField when the Enter key is pressed.
+  preview_image: ""
+  has_video: false
+  tags: [utilities, inputfield, enter, submit]
+
+- name: Input Focus
+  slug: input-focus
+  permalink: /ugui/controls/input-focus/
+  category: Utilities
+  description: Enhanced InputField for forms — Enter to submit plus focus management.
+  preview_image: ""
+  has_video: false
+  tags: [utilities, inputfield, focus, forms]
+
+- name: Min Max Slider
+  slug: min-max-slider
+  permalink: /ugui/controls/min-max-slider/
+  category: Input
+  description: Dual-handle slider for selecting a value range between minimum and maximum bounds.
+  preview_image: ""
+  has_video: false
+  tags: [input, slider, range, min, max]
+
+- name: MultiTouch Scroll Rect
+  slug: multitouch-scroll-rect
+  permalink: /ugui/controls/multitouch-scroll-rect/
+  category: Layout
+  description: ScrollRect fix that correctly handles multiple simultaneous touches.
+  preview_image: ""
+  has_video: false
+  tags: [layout, scroll, multitouch, scrollrect]
+
+- name: Nicer Outline
+  slug: nicer-outline
+  permalink: /ugui/controls/nicer-outline/
+  category: Effects
+  description: Improved outline effect with cleaner corners than the built-in Outline.
+  preview_image: ""
+  has_video: false
+  tags: [effects, outline, text, polish]
+
+- name: PPI Viewer
+  slug: ppi-viewer
+  permalink: /ugui/controls/ppi-viewer/
+  category: Utilities
+  description: Displays the current screen DPI/PPI on a Text component.
+  preview_image: ""
+  has_video: false
+  tags: [utilities, dpi, ppi, debug, text]
+
+- name: Raycast Mask
+  slug: raycast-mask
+  permalink: /ugui/controls/raycast-mask/
+  category: Utilities
+  description: Enhanced mask that uses image alpha for accurate raycast hit-testing.
+  preview_image: ""
+  has_video: false
+  tags: [utilities, raycast, mask, alpha, hit-area]
+
+- name: Rescale Drag Panel
+  slug: rescale-drag-panel
+  permalink: /ugui/controls/rescale-drag-panel/
+  category: Utilities
+  description: Drag a rescaled panel to reposition it within a canvas, compensating for scale.
+  preview_image: ""
+  has_video: false
+  tags: [utilities, drag, rescale, panel]
+
+- name: Rescale Panel
+  slug: rescale-panel
+  permalink: /ugui/controls/rescale-panel/
+  category: Utilities
+  description: Rescales a parent panel by dragging a handle while keeping it anchored.
+  preview_image: ""
+  has_video: false
+  tags: [utilities, rescale, panel, drag, handle]
+
+- name: Resize Panel
+  slug: resize-panel
+  permalink: /ugui/controls/resize-panel/
+  category: Utilities
+  description: Resize a parent panel by dragging a handle, maintaining aspect ratio.
+  preview_image: ""
+  has_video: false
+  tags: [utilities, resize, panel, drag, handle]
+
+- name: Return Key Trigger
+  slug: return-key-trigger
+  permalink: /ugui/controls/return-key-trigger/
+  category: Utilities
+  description: Binds the Return key within an InputField to a button or toggle action.
+  preview_image: ""
+  has_video: false
+  tags: [utilities, inputfield, return, key, trigger]
+
+- name: Scroller
+  slug: scroller
+  permalink: /ugui/controls/scroller/
+  category: Layout
+  description: Scroller component of the FancyScrollView system for advanced scrolling.
+  preview_image: ""
+  has_video: false
+  tags: [layout, scroll, fancyscrollview]
+
+- name: Serialization
+  slug: serialization
+  permalink: /ugui/controls/serialization/
+  category: Utilities
+  description: Serialization utilities for UI components.
+  preview_image: ""
+  has_video: false
+  tags: [utilities, serialization, save, data]
+
+- name: Shader Effects Suite
+  slug: shader-effects
+  permalink: /ugui/controls/shader-effects/
+  category: Effects
+  description: Collection of shader-based blending-mode effects for UI elements.
+  preview_image: ""
+  has_video: false
+  tags: [effects, shader, blend, suite]
+
+- name: UI Circle
+  slug: ui-circle
+  permalink: /ugui/controls/ui-circle/
+  category: Primitives
+  description: Customisable circle/arc primitive with progress indication and fill modes.
+  preview_image: ""
+  has_video: false
+  tags: [primitives, circle, arc, progress, shape]
+
+- name: UI Corner Cut
+  slug: ui-corner-cut
+  permalink: /ugui/controls/ui-corner-cut/
+  category: Primitives
+  description: Renders rectangles with selectively cut corners for non-square panels.
+  preview_image: ""
+  has_video: false
+  tags: [primitives, corner, cut, rectangle, shape]
+
+- name: UI Image Crop
+  slug: ui-image-crop
+  permalink: /ugui/controls/ui-image-crop/
+  category: Effects
+  description: Shader-based crop of a UI image along the X and Y axes without masks.
+  preview_image: ""
+  has_video: false
+  tags: [effects, image, crop, shader]
+
+- name: UI Line Renderer (FIFO)
+  slug: ui-line-renderer-fifo
+  permalink: /ugui/controls/ui-line-renderer-fifo/
+  category: Primitives
+  description: Performance line renderer using a first-in-first-out point queue.
+  preview_image: ""
+  has_video: false
+  tags: [primitives, line, fifo, performance, draw]
+
+- name: UI Line Renderer (List)
+  slug: ui-line-renderer-list
+  permalink: /ugui/controls/ui-line-renderer-list/
+  category: Primitives
+  description: Renders multiple connected line segments from a point list.
+  preview_image: ""
+  has_video: false
+  tags: [primitives, line, list, polyline, draw]
+
+- name: UI Line Texture Renderer
+  slug: ui-line-texture-renderer
+  permalink: /ugui/controls/ui-line-texture-renderer/
+  category: Primitives
+  description: Textured UI line renderer with UV mapping and automatic end caps.
+  preview_image: ""
+  has_video: false
+  tags: [primitives, line, texture, uv, draw]
+
+- name: UI Squircle
+  slug: ui-squircle
+  permalink: /ugui/controls/ui-squircle/
+  category: Primitives
+  description: Renders smooth superellipse (squircle) shapes with configurable curvature.
+  preview_image: ""
+  has_video: false
+  tags: [primitives, squircle, superellipse, shape, rounded]
+
+- name: UI Window Base
+  slug: ui-window-base
+  permalink: /ugui/controls/ui-window-base/
+  category: Layout
+  description: Draggable window for RectTransforms with bounds checking within the canvas.
+  preview_image: ""
+  has_video: false
+  tags: [layout, window, draggable, panel]
+
+- name: Switch To RectTransform
+  slug: switch-to-recttransform
+  permalink: /ugui/controls/switch-to-recttransform/
+  category: Utilities
+  description: RectTransform extension that moves one RectTransform onto another.
+  preview_image: ""
+  has_video: false
+  tags: [utilities, recttransform, extension, transform]

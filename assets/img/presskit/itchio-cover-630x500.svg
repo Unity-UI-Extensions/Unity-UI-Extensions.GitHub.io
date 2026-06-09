@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="630" height="500" viewBox="0 0 630 500" role="img" aria-label="Unity UI Extensions 3.0 cover">
+  <defs>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff0099"/>
+      <stop offset="100%" stop-color="#00ffee"/>
+    </linearGradient>
+    <radialGradient id="glowMag" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="rgba(255,0,153,0.22)"/>
+      <stop offset="100%" stop-color="rgba(255,0,153,0)"/>
+    </radialGradient>
+    <radialGradient id="glowCyan" cx="50%" cy="90%" r="55%">
+      <stop offset="0%" stop-color="rgba(0,255,238,0.16)"/>
+      <stop offset="100%" stop-color="rgba(0,255,238,0)"/>
+    </radialGradient>
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="rgba(255,0,153,0.025)"/>
+    </pattern>
+    <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="630" height="500" fill="#050508"/>
+  <rect width="630" height="500" fill="url(#glowMag)"/>
+  <rect width="630" height="500" fill="url(#glowCyan)"/>
+  <rect width="630" height="500" fill="url(#scan)"/>
+  <rect x="0.5" y="0.5" width="629" height="499" fill="none" stroke="rgba(255,0,153,0.18)"/>
+
+  <!-- Monogram -->
+  <g transform="translate(245,58)">
+    <rect x="0" y="0" width="140" height="140" rx="6" fill="#0a0a14" stroke="rgba(255,0,153,0.35)" stroke-width="1.5"/>
+    <g fill="url(#brandGrad)" filter="url(#softGlow)">
+      <rect x="40" y="36" width="17" height="50"/>
+      <rect x="83" y="36" width="17" height="50"/>
+      <rect x="40" y="86" width="60" height="17"/>
+    </g>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="315" y="248" text-anchor="middle" font-family="Orbitron, 'Space Grotesk', system-ui, sans-serif" font-size="34" font-weight="800" letter-spacing="4" fill="#ffffff">UNITY UI</text>
+  <text x="315" y="288" text-anchor="middle" font-family="Orbitron, 'Space Grotesk', system-ui, sans-serif" font-size="34" font-weight="800" letter-spacing="4" fill="url(#brandGrad)">EXTENSIONS</text>
+
+  <!-- Version chip -->
+  <g transform="translate(265,308)" font-family="'JetBrains Mono', ui-monospace, monospace">
+    <rect x="0" y="0" width="100" height="38" rx="2" fill="rgba(255,0,153,0.10)" stroke="url(#brandGrad)" stroke-width="1.2"/>
+    <text x="50" y="26" text-anchor="middle" font-size="20" font-weight="700" fill="#ffffff">v3.0</text>
+  </g>
+
+  <text x="315" y="388" text-anchor="middle" font-family="'Space Grotesk', system-ui, sans-serif" font-size="19" font-weight="600" fill="#dd88ff">Two packages. One ecosystem.</text>
+
+  <!-- Stat row -->
+  <g transform="translate(0,420)" font-family="'JetBrains Mono', ui-monospace, monospace" text-anchor="middle">
+    <text x="160" y="20" font-size="24" font-weight="700" fill="#ff0099" font-family="Orbitron, sans-serif">120</text>
+    <text x="160" y="42" font-size="12" fill="#ffffff" font-family="Inter, system-ui, sans-serif">controls</text>
+    <text x="315" y="20" font-size="24" font-weight="700" fill="#00ffee" font-family="Orbitron, sans-serif">29</text>
+    <text x="315" y="42" font-size="12" fill="#ffffff" font-family="Inter, system-ui, sans-serif">examples</text>
+    <text x="470" y="20" font-size="24" font-weight="700" fill="url(#brandGrad)" font-family="Orbitron, sans-serif">2015</text>
+    <text x="470" y="42" font-size="12" fill="#ffffff" font-family="Inter, system-ui, sans-serif">since</text>
+  </g>
+</svg>

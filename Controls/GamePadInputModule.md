@@ -1,11 +1,19 @@
-# GamePad Input Module
+---
+layout: control-ugui
+title: "GamePad Input Module"
+description: "Stripped-down input module for gamepad and keyboard UI navigation."
+category: "Utilities"
+permalink: /ugui/controls/gamepad-input-module/
+has_video: false
+tags: [utilities, gamepad, input, navigation, keyboard]
+---
 
 > [!IMPORTANT]
 > ⚠️ This control has been deprecated for Unity 6 and is no longer maintained. It remains documented for legacy reference.
 
 Stripped down SIM Input module for just gamepad/keyboard input
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ---------
 

@@ -1,8 +1,16 @@
-# DragCorrector
+---
+layout: control-ugui
+title: "Drag Corrector"
+description: "Manages the EventSystem drag threshold for high-DPI displays."
+category: "Utilities"
+permalink: /ugui/controls/drag-corrector/
+has_video: false
+tags: [utilities, drag, dpi, eventsystem]
+---
 
 Utility to manage the EventSystem drag threshold for high DPI systems
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ---------
 

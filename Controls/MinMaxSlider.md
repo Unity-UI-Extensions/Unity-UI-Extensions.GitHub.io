@@ -1,4 +1,12 @@
-# MinMaxSlider
+---
+layout: control-ugui
+title: "Min Max Slider"
+description: "Dual-handle slider for selecting a value range between minimum and maximum bounds."
+category: "Input"
+permalink: /ugui/controls/min-max-slider/
+has_video: false
+tags: [input, slider, range, min, max]
+---
 
 A dual-handle slider control for selecting a range of values between minimum and maximum bounds, with optional TextMeshPro display and event callbacks.
 

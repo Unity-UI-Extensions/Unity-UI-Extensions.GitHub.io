@@ -1,8 +1,16 @@
-# PPIViewer
+---
+layout: control-ugui
+title: "PPI Viewer"
+description: "Displays the current screen DPI/PPI on a Text component."
+category: "Utilities"
+permalink: /ugui/controls/ppi-viewer/
+has_video: false
+tags: [utilities, dpi, ppi, debug, text]
+---
 
 Simple script to attach to a text component to display the current DPI/PPI
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ---------
 

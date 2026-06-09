@@ -1,4 +1,12 @@
-# Input Field Enter Submit
+---
+layout: control-ugui
+title: "Input Field Enter Submit"
+description: "Automatically submits an InputField when the Enter key is pressed."
+category: "Utilities"
+permalink: /ugui/controls/input-field-enter-submit/
+has_video: false
+tags: [utilities, inputfield, enter, submit]
+---
 
 A simple utility component that automatically submits an InputField when the Enter key is pressed.
 

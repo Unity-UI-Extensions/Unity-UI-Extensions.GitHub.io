@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Unity UI Extensions 3.0 — Stop Rebuilding UI From Scratch">
+  <defs>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff0099"/>
+      <stop offset="100%" stop-color="#00ffee"/>
+    </linearGradient>
+    <linearGradient id="uguiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff66cc"/>
+      <stop offset="100%" stop-color="#880055"/>
+    </linearGradient>
+    <radialGradient id="glowMag" cx="18%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="rgba(255,0,153,0.22)"/>
+      <stop offset="100%" stop-color="rgba(255,0,153,0)"/>
+    </radialGradient>
+    <radialGradient id="glowCyan" cx="88%" cy="75%" r="55%">
+      <stop offset="0%" stop-color="rgba(0,255,238,0.18)"/>
+      <stop offset="100%" stop-color="rgba(0,255,238,0)"/>
+    </radialGradient>
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="4" fill="none"/>
+      <rect width="4" height="1" y="0" fill="rgba(255,0,153,0.025)"/>
+    </pattern>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="#050508"/>
+  <rect width="1200" height="630" fill="url(#glowMag)"/>
+  <rect width="1200" height="630" fill="url(#glowCyan)"/>
+  <rect width="1200" height="630" fill="url(#scan)"/>
+  <rect x="0.5" y="0.5" width="1199" height="629" fill="none" stroke="rgba(255,0,153,0.18)" stroke-width="1"/>
+
+  <!-- Logo lockup -->
+  <g transform="translate(72,64)">
+    <rect x="0" y="0" width="64" height="64" rx="6" fill="#0a0a14" stroke="rgba(255,0,153,0.35)" stroke-width="1"/>
+    <g fill="url(#brandGrad)">
+      <rect x="18" y="16" width="8" height="24"/>
+      <rect x="38" y="16" width="8" height="24"/>
+      <rect x="18" y="40" width="28" height="8"/>
+    </g>
+    <text x="82" y="28" font-family="Orbitron, 'Space Grotesk', system-ui, sans-serif" font-size="21" font-weight="700" letter-spacing="3" fill="#ffffff">UNITY UI EXTENSIONS</text>
+    <text x="82" y="52" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="14" letter-spacing="2" fill="#00ffcc">v3.0 // Two packages. One ecosystem.</text>
+  </g>
+
+  <!-- Headline -->
+  <g transform="translate(72,210)">
+    <text font-family="Orbitron, 'Space Grotesk', system-ui, sans-serif" font-weight="800" fill="#ffffff" letter-spacing="1">
+      <tspan x="0" y="0" font-size="66">STOP REBUILDING</tspan>
+      <tspan x="0" y="78" font-size="66">UI FROM <tspan fill="url(#brandGrad)">SCRATCH</tspan></tspan>
+    </text>
+    <text x="4" y="138" font-family="Inter, system-ui, sans-serif" font-size="23" fill="#dd88ff">120 battle-tested UI controls for Unity uGUI and UI Toolkit. Open source. Production-ready.</text>
+  </g>
+
+  <!-- Stat chips -->
+  <g transform="translate(72,438)" font-family="'JetBrains Mono', ui-monospace, monospace">
+    <g>
+      <rect x="0" y="0" width="232" height="58" rx="2" fill="rgba(255,0,153,0.08)" stroke="rgba(255,0,153,0.35)"/>
+      <text x="24" y="28" font-size="30" font-weight="700" fill="#ff0099" filter="url(#softGlow)">120</text>
+      <text x="95" y="35" font-family="Inter, system-ui, sans-serif" font-size="15" fill="#ffffff">controls</text>
+    </g>
+    <g transform="translate(256,0)">
+      <rect x="0" y="0" width="232" height="58" rx="2" fill="rgba(0,255,238,0.07)" stroke="rgba(0,255,238,0.35)"/>
+      <text x="24" y="28" font-size="30" font-weight="700" fill="#00ffee" filter="url(#softGlow)">29</text>
+      <text x="70" y="35" font-family="Inter, system-ui, sans-serif" font-size="15" fill="#ffffff">example scenes</text>
+    </g>
+    <g transform="translate(512,0)">
+      <rect x="0" y="0" width="246" height="58" rx="2" fill="rgba(255,0,153,0.08)" stroke="rgba(255,0,153,0.35)"/>
+      <text x="24" y="28" font-size="30" font-weight="700" fill="url(#brandGrad)">2015</text>
+      <text x="108" y="35" font-family="Inter, system-ui, sans-serif" font-size="15" fill="#ffffff">battle-tested since</text>
+    </g>
+  </g>
+
+  <!-- Decorative dual orbs (uGUI magenta / UITK cyan) -->
+  <g opacity="0.9">
+    <circle cx="1020" cy="250" r="96" fill="none" stroke="url(#uguiGrad)" stroke-width="2" opacity="0.55"/>
+    <circle cx="1090" cy="360" r="70" fill="none" stroke="#00ffee" stroke-width="2" opacity="0.5"/>
+    <text x="986" y="256" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="13" fill="#ff66cc" letter-spacing="1">uGUI</text>
+    <text x="1060" y="366" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="13" fill="#00ffee" letter-spacing="1">UITK</text>
+  </g>
+</svg>

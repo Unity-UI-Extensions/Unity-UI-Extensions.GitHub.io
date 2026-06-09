@@ -1,8 +1,16 @@
-# CurvedLayout
+---
+layout: control-ugui
+title: "Curved Layout"
+description: "Arranges child elements along a configurable curve."
+category: "Layout"
+permalink: /ugui/controls/curved-layout/
+has_video: false
+tags: [layout, curve, curved, arrange]
+---
 
 A curved layout system
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ---------
 

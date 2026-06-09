@@ -1,4 +1,12 @@
-# ResizePanel
+---
+layout: control-ugui
+title: "Resize Panel"
+description: "Resize a parent panel by dragging a handle, maintaining aspect ratio."
+category: "Utilities"
+permalink: /ugui/controls/resize-panel/
+has_video: false
+tags: [utilities, resize, panel, drag, handle]
+---
 
 A control that allows resizing of a parent panel by dragging a handle, maintaining aspect ratio and respecting min/max size constraints.
 

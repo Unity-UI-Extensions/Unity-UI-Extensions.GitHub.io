@@ -1,4 +1,12 @@
-# UIImageCrop
+---
+layout: control-ugui
+title: "UI Image Crop"
+description: "Shader-based crop of a UI image along the X and Y axes without masks."
+category: "Effects"
+permalink: /ugui/controls/ui-image-crop/
+has_video: false
+tags: [effects, image, crop, shader]
+---
 
 A shader-based effect that crops portions of a UI image along the X and Y axes without using masks, providing efficient partial image rendering.
 

@@ -1,11 +1,19 @@
-# Infinite Scroll Snap
+---
+layout: control-ugui
+title: "Infinite Scroll Snap"
+description: "Endlessly looping scroll-snap layout for UI elements."
+category: "Layout"
+permalink: /ugui/controls/infinite-scroll-snap/
+has_video: false
+tags: [layout, scroll, snap, infinite, loop]
+---
 
 > [!IMPORTANT]
 > ⚠️ This control has been deprecated for Unity 6 and is no longer maintained. It remains documented for legacy reference.
 
 Infinite scrolling layout control for UI elements.
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ---------
 

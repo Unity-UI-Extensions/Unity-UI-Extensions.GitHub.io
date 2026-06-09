@@ -581,7 +581,7 @@ Just ensure:
 
 ### [License](/License.md)
 
-All scripts conform to the BSD3 license and are free to use / distribute.  See the [LICENSE](/License.md) file for more information 
+All scripts conform to the BSD-3-Clause license and are free to use / distribute.  See the [LICENSE](/License.md) file for more information 
 
 ### [Like what you see?](/FurtherInfo.md)
 

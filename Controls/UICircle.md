@@ -1,4 +1,12 @@
-# UICircle
+---
+layout: control-ugui
+title: "UI Circle"
+description: "Customisable circle/arc primitive with progress indication and fill modes."
+category: "Primitives"
+permalink: /ugui/controls/ui-circle/
+has_video: false
+tags: [primitives, circle, arc, progress, shape]
+---
 
 A customizable circle/arc primitive with progress indication, fill modes, and extensive runtime control options.
 

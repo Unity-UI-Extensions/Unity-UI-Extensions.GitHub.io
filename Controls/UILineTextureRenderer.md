@@ -1,4 +1,12 @@
-# UILineTextureRenderer
+---
+layout: control-ugui
+title: "UI Line Texture Renderer"
+description: "Textured UI line renderer with UV mapping and automatic end caps."
+category: "Primitives"
+permalink: /ugui/controls/ui-line-texture-renderer/
+has_video: false
+tags: [primitives, line, texture, uv, draw]
+---
 
 A line renderer with UV texture mapping and automatic end caps, supporting both absolute and relative sizing modes.
 

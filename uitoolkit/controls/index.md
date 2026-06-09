@@ -1,7 +1,7 @@
 ---
 layout: default
 title: UIToolkit Controls — Unity UIToolkit Extensions
-description: All 18 UIToolkit controls for Unity UIToolkit Extensions.
+description: All 20 UIToolkit controls for Unity UIToolkit Extensions.
 permalink: /uitoolkit/controls/
 ---
 

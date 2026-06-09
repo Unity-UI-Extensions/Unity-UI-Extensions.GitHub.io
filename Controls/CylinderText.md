@@ -1,11 +1,19 @@
-# Cylinder Text
+---
+layout: control-ugui
+title: "Cylinder Text"
+description: "Curved text effect that wraps text around a cylindrical surface."
+category: "Effects"
+permalink: /ugui/controls/cylinder-text/
+has_video: false
+tags: [effects, text, cylinder, curve]
+---
 
 > [!IMPORTANT]
 > ⚠️ This control has been deprecated for Unity 6 and is no longer maintained. It remains documented for legacy reference.
 
 An alternate curved text effect
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 > Text Effects are not supported with TextMeshPro due to its architecture, try using the native TextMeshPro effects instead.
 

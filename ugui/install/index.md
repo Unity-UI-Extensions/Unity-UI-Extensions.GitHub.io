@@ -126,7 +126,7 @@ Scope: com.unity.uiextensions</code></pre>
 <section class="cta-band" aria-labelledby="cta-browse">
   <div class="cta-band-inner">
     <h2 id="cta-browse">Ready to explore the controls?</h2>
-    <p>Browse all 70+ uGUI controls with descriptions, properties, and examples.</p>
+    <p>Browse all 100 uGUI controls with descriptions, properties, and examples.</p>
     <div class="cta-actions">
       <a href="{{ '/ugui/' | relative_url }}" class="btn btn-u">Browse uGUI Controls</a>
       <a href="https://github.com/Unity-UI-Extensions/com.unity.uiextensions/issues" class="btn btn-ghost" target="_blank" rel="noopener">Report an Issue</a>

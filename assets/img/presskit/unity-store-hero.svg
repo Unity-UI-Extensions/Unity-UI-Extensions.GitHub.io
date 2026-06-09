@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1456" height="816" viewBox="0 0 1456 816" role="img" aria-label="Unity UI Extensions 3.0 — uGUI and UI Toolkit two-package ecosystem">
+  <defs>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff0099"/>
+      <stop offset="100%" stop-color="#00ffee"/>
+    </linearGradient>
+    <linearGradient id="uguiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff66cc"/>
+      <stop offset="100%" stop-color="#880055"/>
+    </linearGradient>
+    <linearGradient id="uitkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00ffee"/>
+      <stop offset="100%" stop-color="#0044aa"/>
+    </linearGradient>
+    <radialGradient id="glowMag" cx="25%" cy="55%" r="45%">
+      <stop offset="0%" stop-color="rgba(255,0,153,0.20)"/>
+      <stop offset="100%" stop-color="rgba(255,0,153,0)"/>
+    </radialGradient>
+    <radialGradient id="glowCyan" cx="75%" cy="55%" r="45%">
+      <stop offset="0%" stop-color="rgba(0,255,238,0.18)"/>
+      <stop offset="100%" stop-color="rgba(0,255,238,0)"/>
+    </radialGradient>
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="rgba(255,0,153,0.025)"/>
+    </pattern>
+    <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="8" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1456" height="816" fill="#050508"/>
+  <rect width="1456" height="816" fill="url(#glowMag)"/>
+  <rect width="1456" height="816" fill="url(#glowCyan)"/>
+  <rect width="1456" height="816" fill="url(#scan)"/>
+
+  <!-- Header lockup -->
+  <g transform="translate(64,56)">
+    <rect x="0" y="0" width="72" height="72" rx="6" fill="#0a0a14" stroke="rgba(255,0,153,0.35)" stroke-width="1.5"/>
+    <g fill="url(#brandGrad)" filter="url(#softGlow)">
+      <rect x="20" y="18" width="9" height="27"/>
+      <rect x="43" y="18" width="9" height="27"/>
+      <rect x="20" y="45" width="32" height="9"/>
+    </g>
+    <text x="92" y="32" font-family="Orbitron, 'Space Grotesk', system-ui, sans-serif" font-size="26" font-weight="800" letter-spacing="4" fill="#ffffff">UNITY UI EXTENSIONS</text>
+    <text x="94" y="60" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="16" letter-spacing="2" fill="#00ffcc">v3.0 // Two packages. One ecosystem.</text>
+  </g>
+
+  <!-- centre version medallion -->
+  <g transform="translate(728,408)">
+    <circle cx="0" cy="0" r="66" fill="#08080e" stroke="url(#brandGrad)" stroke-width="2" filter="url(#softGlow)"/>
+    <text x="0" y="-2" text-anchor="middle" font-family="Orbitron, sans-serif" font-size="40" font-weight="800" fill="url(#brandGrad)">3.0</text>
+    <text x="0" y="30" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12" letter-spacing="3" fill="#dd88ff">RELAUNCH</text>
+  </g>
+
+  <!-- LEFT PANEL: uGUI (magenta) -->
+  <g transform="translate(96,176)">
+    <rect x="0" y="0" width="560" height="500" rx="4" fill="rgba(255,0,153,0.06)" stroke="rgba(255,0,153,0.35)" stroke-width="1.5"/>
+    <rect x="0" y="0" width="560" height="6" fill="url(#uguiGrad)"/>
+    <text x="40" y="74" font-family="Orbitron, 'Space Grotesk', system-ui, sans-serif" font-size="40" font-weight="800" letter-spacing="2" fill="#ff0099" filter="url(#softGlow)">uGUI</text>
+    <text x="40" y="110" font-family="'Space Grotesk', system-ui, sans-serif" font-size="20" fill="#ffffff">Unity UI Extensions</text>
+    <text x="40" y="144" font-family="'JetBrains Mono', monospace" font-size="14" fill="#dd88ff">com.unity.uiextensions</text>
+
+    <g font-family="'JetBrains Mono', monospace" font-size="15" fill="#ffffff">
+      <text x="40" y="196">v3.0.0-pre.1</text>
+      <text x="40" y="228">Unity 6000.0+</text>
+      <text x="40" y="260">Licence: BSD-3-Clause</text>
+    </g>
+
+    <!-- big stats -->
+    <g transform="translate(40,300)">
+      <text x="0" y="40" font-family="Orbitron, sans-serif" font-size="54" font-weight="800" fill="#ff0099" filter="url(#softGlow)">100</text>
+      <text x="0" y="66" font-family="Inter, system-ui, sans-serif" font-size="15" fill="#dd88ff">controls</text>
+      <text x="230" y="40" font-family="Orbitron, sans-serif" font-size="54" font-weight="800" fill="#ff66cc" filter="url(#softGlow)">21</text>
+      <text x="230" y="66" font-family="Inter, system-ui, sans-serif" font-size="15" fill="#dd88ff">example scenes</text>
+    </g>
+
+    <text x="40" y="452" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#663388">Controls · Primitives · Layouts · Effects &amp; Utilities</text>
+  </g>
+
+  <!-- RIGHT PANEL: UI Toolkit (cyan) -->
+  <g transform="translate(800,176)">
+    <rect x="0" y="0" width="560" height="500" rx="4" fill="rgba(0,255,238,0.05)" stroke="rgba(0,255,238,0.35)" stroke-width="1.5"/>
+    <rect x="0" y="0" width="560" height="6" fill="url(#uitkGrad)"/>
+    <text x="40" y="74" font-family="Orbitron, 'Space Grotesk', system-ui, sans-serif" font-size="40" font-weight="800" letter-spacing="2" fill="#00ffee" filter="url(#softGlow)">UI TOOLKIT</text>
+    <text x="40" y="110" font-family="'Space Grotesk', system-ui, sans-serif" font-size="20" fill="#ffffff">Unity UI Toolkit Extensions</text>
+    <text x="40" y="144" font-family="'JetBrains Mono', monospace" font-size="14" fill="#00ffcc">com.unity.uitoolkitextensions</text>
+
+    <g font-family="'JetBrains Mono', monospace" font-size="15" fill="#ffffff">
+      <text x="40" y="196">v1.0.0-pre.1</text>
+      <text x="40" y="228">Unity 6000.0+</text>
+      <text x="40" y="260">Licence: MIT</text>
+    </g>
+
+    <g transform="translate(40,300)">
+      <text x="0" y="40" font-family="Orbitron, sans-serif" font-size="54" font-weight="800" fill="#00ffee" filter="url(#softGlow)">20</text>
+      <text x="0" y="66" font-family="Inter, system-ui, sans-serif" font-size="15" fill="#00ffcc">controls</text>
+      <text x="230" y="40" font-family="Orbitron, sans-serif" font-size="54" font-weight="800" fill="#33ddee" filter="url(#softGlow)">8</text>
+      <text x="230" y="66" font-family="Inter, system-ui, sans-serif" font-size="15" fill="#00ffcc">example scenes</text>
+    </g>
+
+    <text x="40" y="452" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#336677">USS / data-driven UI · fully themable</text>
+  </g>
+
+  <!-- footer strip -->
+  <text x="728" y="760" text-anchor="middle" font-family="'Space Grotesk', system-ui, sans-serif" font-size="22" font-weight="600" fill="#ffffff">120 UI controls · 29 examples · 100% free &amp; open source · battle-tested since 2015</text>
+</svg>

@@ -1,4 +1,12 @@
-# UICornerCut
+---
+layout: control-ugui
+title: "UI Corner Cut"
+description: "Renders rectangles with selectively cut corners for non-square panels."
+category: "Primitives"
+permalink: /ugui/controls/ui-corner-cut/
+has_video: false
+tags: [primitives, corner, cut, rectangle, shape]
+---
 
 A primitive that renders rectangles with selectively cut corners, creating non-square panels with beveled edges and optional color variations.
 

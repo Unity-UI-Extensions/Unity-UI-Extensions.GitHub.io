@@ -1,4 +1,12 @@
-# UILineRendererList
+---
+layout: control-ugui
+title: "UI Line Renderer (List)"
+description: "Renders multiple connected line segments from a point list."
+category: "Primitives"
+permalink: /ugui/controls/ui-line-renderer-list/
+has_video: false
+tags: [primitives, line, list, polyline, draw]
+---
 
 An advanced line renderer for drawing multiple connected line segments with features including bezier curves, join types (bevel/miter), and line caps.
 

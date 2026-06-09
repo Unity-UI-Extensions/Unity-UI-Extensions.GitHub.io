@@ -1,482 +1,365 @@
 #!/usr/bin/env python3
 """
-generate_pdfs.py — Build package documentation PDFs.
+generate_pdfs.py — Build documentation & press-kit PDFs via headless Chrome/Edge.
 
-Produces:
+This replaces the previous fpdf2-based routine (which could hang on large control
+sets). It renders on-brand HTML and prints it to PDF using a headless Chromium
+browser (Google Chrome, Chromium, or Microsoft Edge), so the output matches the
+website's "Neon Arcade" identity exactly and never blocks on content quirks.
+
+Outputs (assets/downloads/):
+  Unity-UI-Extensions-PressKit.pdf
   Unity-UI-Extensions-uGUI-Documentation.pdf
   Unity-UI-Extensions-UIToolkit-Documentation.pdf
 
 Usage:
-  python generate_pdfs.py
+  python generate_pdfs.py              # all PDFs
+  python generate_pdfs.py --presskit   # press kit only (fast)
 
-Requires: fpdf2, markdown  (pip install fpdf2 markdown)
+Requires: a Chromium-based browser on PATH or in a standard location.
+No Python PDF dependencies. (In CI, install Chrome e.g. browser-actions/setup-chrome.)
 """
 
 import os
 import re
+import sys
 import glob
+import shutil
+import tempfile
 import datetime
+import subprocess
 import html as html_lib
-import markdown
-from fpdf import FPDF
-from fpdf.enums import XPos, YPos
 
-# ── Paths ─────────────────────────────────────────────────────────────────────
-
+# ── Paths ───────────────────────────────────────────────────────────────────
 BASE         = os.path.dirname(os.path.abspath(__file__))
 CONTROLS_DIR = os.path.join(BASE, "Controls")
 UITK_DIR     = os.path.join(BASE, "uitoolkit", "controls")
-MISSING      = os.path.join(BASE, "MISSING_CONTENT.md")
 DOWNLOADS    = os.path.join(BASE, "assets", "downloads")
 os.makedirs(DOWNLOADS, exist_ok=True)
+DATE = datetime.date.today().strftime("%B %Y")
 
-VERSION_DATE = datetime.date.today().strftime("%B %Y")
+# ── Honest counts (the project's documented control totals) ──────────────────
+# uGUI: 64 controls with live demos + 36 documented (pending demo media) = 100
+# (see _data/ugui_controls.yml and MISSING_CONTENT.md). UI Toolkit: 20.
+UGUI_CONTROLS, UITK_CONTROLS, TOTAL_CONTROLS = 100, 20, 120
+UGUI_EXAMPLES, UITK_EXAMPLES, TOTAL_EXAMPLES = 21, 8, 29
 
-# ── Colours ───────────────────────────────────────────────────────────────────
+# ── Brand palette ────────────────────────────────────────────────────────────
+BG, BG2 = "#050508", "#08080e"
+MAG, CYAN = "#ff0099", "#00ffee"
+TEXT, T2, MUTED = "#ffffff", "#dd88ff", "#663388"
 
-UGUI_ACCENT  = (255, 0, 153)   # #ff0099
-UITK_ACCENT  = (0, 200, 160)   # #00c8a0
-TEXT_DARK    = (26, 26, 46)    # #1a1a2e
-TEXT_MUTED   = (120, 120, 120)
-BG_CODE      = (244, 244, 248)
-BG_TABLE_HDR = None            # set per PDF
-WHITE        = (255, 255, 255)
-RULE_GREY    = (220, 220, 220)
+FONTS = ("https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800"
+         "&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap")
 
-MARGIN = 18
-PAGE_W = 210 - MARGIN * 2   # usable mm on A4
+LOGO = ('<svg width="60" height="60" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">'
+        '<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">'
+        '<stop offset="0" stop-color="#ff0099"/><stop offset="1" stop-color="#00ffee"/>'
+        '</linearGradient></defs>'
+        '<rect x="2" y="2" width="60" height="60" rx="12" fill="#0a0a14" stroke="#ff009955"/>'
+        '<g fill="url(#g)"><rect x="16" y="14" width="9" height="28" rx="2"/>'
+        '<rect x="39" y="14" width="9" height="28" rx="2"/>'
+        '<rect x="16" y="35" width="32" height="9" rx="2"/></g></svg>')
 
-# ── Front-matter helpers ───────────────────────────────────────────────────────
-
-FM_RE     = re.compile(r"^---\s*\n.*?\n---\s*\n", re.DOTALL)
-LIQUID_RE = re.compile(r"\{[{%].*?[}%]\}", re.DOTALL)
-FENCE_RE  = re.compile(r"```[^\n]*\n(.*?)```", re.DOTALL)
-HEADER_RE = re.compile(r"^#{1,6}\s+(.+)$", re.MULTILINE)
-TABLE_RE  = re.compile(r"(\|[^\n]+\|\n)+", re.MULTILINE)
-
-
-def strip_front_matter(text):
-    return FM_RE.sub("", text, count=1).lstrip()
-
-
-def strip_liquid(text):
-    return LIQUID_RE.sub("", text)
-
+# ── Front-matter helpers ──────────────────────────────────────────────────────
+def read(path):
+    try:
+        with open(path, encoding="utf-8") as f:
+            return f.read()
+    except OSError:
+        return ""
 
 def fm_field(text, field):
-    m = re.search(rf'^{field}:\s*"?([^"\n]+)"?', text, re.MULTILINE)
+    m = re.search(rf'(?mi)^{field}:\s*"?([^"\n]+?)"?\s*$', text)
     return m.group(1).strip() if m else ""
 
+def esc(s):
+    return html_lib.escape(s or "")
 
-def read_file(path):
-    if not os.path.exists(path):
-        return ""
-    with open(path, encoding="utf-8") as f:
-        return f.read()
-
-
-# ── Markdown → structured blocks ──────────────────────────────────────────────
-# We parse Markdown into simple blocks the FPDF renderer can handle cleanly.
-
-def parse_blocks(md_text):
-    """Return list of (type, content) tuples from Markdown source."""
-    text = strip_liquid(md_text)
-    blocks = []
-    lines = text.split("\n")
-    i = 0
-    while i < len(lines):
-        line = lines[i]
-
-        # Fenced code block
-        if line.startswith("```"):
-            code_lines = []
-            i += 1
-            while i < len(lines) and not lines[i].startswith("```"):
-                code_lines.append(lines[i])
-                i += 1
-            blocks.append(("code", "\n".join(code_lines)))
-
-        # Heading
-        elif line.startswith("#"):
-            m = re.match(r"^(#{1,6})\s+(.+)$", line)
-            if m:
-                level = len(m.group(1))
-                blocks.append((f"h{level}", m.group(2).strip()))
-
-        # Table — collect while rows look like | ... |
-        elif "|" in line and line.strip().startswith("|"):
-            rows = []
-            while i < len(lines) and "|" in lines[i] and lines[i].strip().startswith("|"):
-                rows.append(lines[i])
-                i += 1
-            # filter separator rows (|---|---| etc.)
-            data = [r for r in rows if not re.match(r"^\s*\|[\s\-|:]+\|\s*$", r)]
-            parsed = []
-            for r in data:
-                cells = [c.strip() for c in r.strip("|").split("|")]
-                parsed.append(cells)
-            blocks.append(("table", parsed))
-            continue
-
-        # Blank line — paragraph break
-        elif line.strip() == "":
-            pass
-
-        # List item
-        elif re.match(r"^\s*[-*+]\s+", line):
-            items = []
-            while i < len(lines) and re.match(r"^\s*[-*+]\s+", lines[i]):
-                items.append(re.sub(r"^\s*[-*+]\s+", "", lines[i]))
-                i += 1
-            blocks.append(("ul", items))
-            continue
-
-        # Ordered list
-        elif re.match(r"^\s*\d+\.\s+", line):
-            items = []
-            while i < len(lines) and re.match(r"^\s*\d+\.\s+", lines[i]):
-                items.append(re.sub(r"^\s*\d+\.\s+", "", lines[i]))
-                i += 1
-            blocks.append(("ol", items))
-            continue
-
-        # Image — skip (PDFs are text reference; images need file paths)
-        elif re.match(r"^!\[", line):
-            pass  # omit broken local image refs
-
-        # Normal paragraph text
-        else:
-            para_lines = []
-            while i < len(lines) and lines[i].strip() and not lines[i].startswith("#") \
-                    and not lines[i].startswith("```") and "|" not in lines[i] \
-                    and not re.match(r"^\s*[-*+\d]", lines[i]):
-                para_lines.append(lines[i])
-                i += 1
-            text_block = " ".join(para_lines).strip()
-            if text_block:
-                blocks.append(("p", text_block))
-            continue
-
-        i += 1
-
-    return blocks
-
-
-_UNICODE_MAP = {
-    "\u2014": "--",   # em dash
-    "\u2013": "-",    # en dash
-    "\u2018": "'", "\u2019": "'",   # smart quotes
-    "\u201c": '"', "\u201d": '"',
-    "\u2022": "-",    # bullet
-    "\u2026": "...",  # ellipsis
-    "\u00b7": ".",    # middle dot
-    "\u2192": "->",   # arrow
-    "\u2190": "<-",
-    "\u00a0": " ",    # non-breaking space
-}
-
-
-def to_latin1(text: str) -> str:
-    """Replace common unicode chars with ASCII equivalents; drop the rest."""
-    for char, repl in _UNICODE_MAP.items():
-        text = text.replace(char, repl)
-    return text.encode("latin-1", errors="replace").decode("latin-1")
-
-
-def inline_clean(text):
-    """Strip inline Markdown formatting for plain text output."""
-    text = re.sub(r"\*\*(.+?)\*\*", r"\1", text)
-    text = re.sub(r"\*(.+?)\*", r"\1", text)
-    text = re.sub(r"`([^`]+)`", r"\1", text)
-    text = re.sub(r"\[([^\]]+)\]\([^\)]+\)", r"\1", text)
-    return to_latin1(text.strip())
-
-
-# ── PDF class ─────────────────────────────────────────────────────────────────
-
-class DocPDF(FPDF):
-    def __init__(self, title, accent, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        self.doc_title = title
-        self.accent = accent           # (R, G, B)
-        self.set_margins(MARGIN, 16, MARGIN)
-        self.set_auto_page_break(auto=True, margin=14)
-
-    # ── Header / Footer ───────────────────────────────────────────────────────
-
-    def header(self):
-        if self.page_no() == 1:
-            return
-        self.set_font("Helvetica", "I", 8)
-        self.set_text_color(*TEXT_MUTED)
-        self.cell(0, 6, to_latin1(self.doc_title), align="L",
-                  new_x=XPos.LMARGIN, new_y=YPos.NEXT)
-        self.set_draw_color(*RULE_GREY)
-        self.line(MARGIN, self.get_y(), 210 - MARGIN, self.get_y())
-        self.ln(2)
-
-    def footer(self):
-        self.set_y(-12)
-        self.set_font("Helvetica", "I", 8)
-        self.set_text_color(*TEXT_MUTED)
-        self.cell(0, 6, f"Page {self.page_no()}", align="C")
-
-    # ── Cover page ────────────────────────────────────────────────────────────
-
-    def cover(self, package_name, subtitle):
-        self.add_page()
-        self.ln(50)
-        # coloured banner
-        r, g, b = self.accent
-        self.set_fill_color(r, g, b)
-        self.set_text_color(*WHITE)
-        self.set_font("Helvetica", "B", 34)
-        self.cell(0, 20, "  U  ", align="C", fill=True,
-                  new_x=XPos.LMARGIN, new_y=YPos.NEXT)
-        self.ln(6)
-        self.set_text_color(*TEXT_DARK)
-        self.set_font("Helvetica", "B", 20)
-        self.cell(0, 10, to_latin1(package_name), align="C",
-                  new_x=XPos.LMARGIN, new_y=YPos.NEXT)
-        self.set_font("Helvetica", "", 12)
-        self.set_text_color(*TEXT_MUTED)
-        self.cell(0, 8, to_latin1(subtitle), align="C",
-                  new_x=XPos.LMARGIN, new_y=YPos.NEXT)
-        self.ln(20)
-        self.set_font("Helvetica", "I", 9)
-        self.cell(0, 6, to_latin1(f"Generated {VERSION_DATE}  -  BSD 3-Clause Licensed  -  Not affiliated with Unity Technologies"),
-                  align="C", new_x=XPos.LMARGIN, new_y=YPos.NEXT)
-
-    # ── Section heading ───────────────────────────────────────────────────────
-
-    def section_heading(self, text):
-        self.add_page()
-        self.ln(4)
-        r, g, b = self.accent
-        self.set_fill_color(r, g, b)
-        self.set_text_color(*WHITE)
-        self.set_font("Helvetica", "B", 16)
-        self.cell(0, 10, to_latin1(f"  {text}"), fill=True,
-                  new_x=XPos.LMARGIN, new_y=YPos.NEXT)
-        self.set_text_color(*TEXT_DARK)
-        self.ln(4)
-
-    # ── Control title ─────────────────────────────────────────────────────────
-
-    def control_title(self, name, category, description):
-        self.ln(4)
-        r, g, b = self.accent
-        self.set_draw_color(r, g, b)
-        self.set_line_width(0.8)
-        self.line(MARGIN, self.get_y(), MARGIN + 60, self.get_y())
-        self.set_line_width(0.2)
-        self.ln(2)
-        self.set_font("Helvetica", "B", 13)
-        self.set_text_color(*TEXT_DARK)
-        self.cell(0, 7, to_latin1(name), new_x=XPos.LMARGIN, new_y=YPos.NEXT)
-        self.set_font("Helvetica", "I", 9)
-        self.set_text_color(*TEXT_MUTED)
-        self.cell(0, 5, to_latin1(f"{category}  -  {description}"),
-                  new_x=XPos.LMARGIN, new_y=YPos.NEXT)
-        self.set_text_color(*TEXT_DARK)
-        self.ln(2)
-
-    # ── Render blocks ─────────────────────────────────────────────────────────
-
-    def render_blocks(self, blocks):
-        for btype, content in blocks:
-            if btype == "h2":
-                self.ln(3)
-                r, g, b = self.accent
-                self.set_text_color(r, g, b)
-                self.set_font("Helvetica", "B", 11)
-                self.multi_cell(0, 6, inline_clean(content),
-                                new_x=XPos.LMARGIN, new_y=YPos.NEXT)
-                self.set_text_color(*TEXT_DARK)
-            elif btype == "h3":
-                self.ln(2)
-                self.set_font("Helvetica", "B", 10)
-                self.multi_cell(0, 6, inline_clean(content),
-                                new_x=XPos.LMARGIN, new_y=YPos.NEXT)
-            elif btype in ("h4", "h5", "h6"):
-                self.ln(1)
-                self.set_font("Helvetica", "BI", 9.5)
-                self.multi_cell(0, 5, inline_clean(content),
-                                new_x=XPos.LMARGIN, new_y=YPos.NEXT)
-            elif btype == "p":
-                self.set_font("Helvetica", "", 10)
-                self.multi_cell(0, 5.5, inline_clean(content),
-                                new_x=XPos.LMARGIN, new_y=YPos.NEXT)
-                self.ln(1)
-            elif btype == "code":
-                self.set_fill_color(*BG_CODE)
-                self.set_font("Courier", "", 8)
-                lines = content.split("\n")
-                for ln in lines:
-                    ln = to_latin1(ln)
-                    while len(ln) > 95:
-                        self.cell(0, 4.5, ln[:95], fill=True,
-                                  new_x=XPos.LMARGIN, new_y=YPos.NEXT)
-                        ln = "  " + ln[95:]
-                    self.cell(0, 4.5, ln, fill=True,
-                              new_x=XPos.LMARGIN, new_y=YPos.NEXT)
-                self.set_fill_color(*WHITE)
-                self.ln(2)
-            elif btype == "ul":
-                self.set_font("Helvetica", "", 9.5)
-                for item in content:
-                    self.cell(6, 5.5, chr(149), new_x=XPos.RIGHT, new_y=YPos.TOP)
-                    self.multi_cell(0, 5.5, inline_clean(item),
-                                    new_x=XPos.LMARGIN, new_y=YPos.NEXT)
-                self.ln(1)
-            elif btype == "ol":
-                self.set_font("Helvetica", "", 9.5)
-                for n, item in enumerate(content, 1):
-                    self.cell(7, 5.5, f"{n}.", new_x=XPos.RIGHT, new_y=YPos.TOP)
-                    self.multi_cell(0, 5.5, inline_clean(item),
-                                    new_x=XPos.LMARGIN, new_y=YPos.NEXT)
-                self.ln(1)
-            elif btype == "table":
-                self._render_table(content)
-
-    def _render_table(self, rows):
-        if not rows:
-            return
-        r, g, b = self.accent
-        col_w = PAGE_W / max(len(rows[0]), 1)
-        col_w = min(col_w, 55)
-
-        for idx, row in enumerate(rows):
-            if idx == 0:
-                self.set_fill_color(r, g, b)
-                self.set_text_color(*WHITE)
-                self.set_font("Helvetica", "B", 8.5)
-            else:
-                fill = idx % 2 == 0
-                self.set_fill_color(245, 245, 250) if fill else self.set_fill_color(*WHITE)
-                self.set_text_color(*TEXT_DARK)
-                self.set_font("Helvetica", "", 8.5)
-            for cell in row:
-                self.cell(col_w, 5.5, inline_clean(str(cell))[:40],
-                          border=1, fill=(idx == 0 or idx % 2 == 0),
-                          new_x=XPos.RIGHT, new_y=YPos.TOP)
-            self.ln()
-
-        self.set_fill_color(*WHITE)
-        self.set_text_color(*TEXT_DARK)
-        self.ln(2)
-
-    # ── TOC page ──────────────────────────────────────────────────────────────
-
-    def toc_page(self, controls, package_label):
-        self.add_page()
-        self.set_font("Helvetica", "B", 14)
-        self.set_text_color(*TEXT_DARK)
-        self.cell(0, 9, to_latin1(f"{package_label} - {len(controls)} Controls"),
-                  new_x=XPos.LMARGIN, new_y=YPos.NEXT)
-        self.set_draw_color(*RULE_GREY)
-        self.line(MARGIN, self.get_y(), 210 - MARGIN, self.get_y())
-        self.ln(3)
-
-        cats = sorted({c["category"] for c in controls})
-        for cat in cats:
-            self.set_font("Helvetica", "B", 10)
-            r, g, b = self.accent
-            self.set_text_color(r, g, b)
-            self.cell(0, 7, cat, new_x=XPos.LMARGIN, new_y=YPos.NEXT)
-            self.set_text_color(*TEXT_DARK)
-            self.set_font("Helvetica", "", 9.5)
-            for c in controls:
-                if c["category"] != cat:
-                    continue
-                self.cell(6, 5.5, chr(149), new_x=XPos.RIGHT, new_y=YPos.TOP)
-                self.cell(0, 5.5, to_latin1(c["title"]),
-                          new_x=XPos.LMARGIN, new_y=YPos.NEXT)
-            self.ln(1)
-
-
-# ── Control loaders ───────────────────────────────────────────────────────────
-
-def get_ugui_controls():
-    controls = []
-    for path in sorted(glob.glob(os.path.join(CONTROLS_DIR, "*.md"))):
-        raw = read_file(path)
+def get_controls(glob_pattern):
+    """Return [{title, category, description}] from markdown files with front matter."""
+    items = []
+    for p in sorted(glob.glob(glob_pattern)):
+        raw = read(p)
         if not raw.startswith("---"):
             continue
-        controls.append({
-            "title":       fm_field(raw, "title") or os.path.basename(path),
-            "category":    fm_field(raw, "category") or "Other",
-            "description": fm_field(raw, "description") or "",
-            "body":        strip_front_matter(raw),
-        })
-    return controls
-
-
-def get_uitk_controls():
-    controls = []
-    for path in sorted(glob.glob(os.path.join(UITK_DIR, "*", "index.md"))):
-        raw = read_file(path)
-        if not raw.startswith("---"):
+        title = fm_field(raw, "title")
+        if not title:
             continue
-        controls.append({
-            "title":       fm_field(raw, "title") or "",
-            "category":    fm_field(raw, "category") or "Other",
+        items.append({
+            "title": title,
+            "category": fm_field(raw, "category") or "Other",
             "description": fm_field(raw, "description") or "",
-            "body":        strip_front_matter(raw),
         })
-    return controls
+    return items
 
+# ── HTML shell with print CSS (dark, on-brand, A4) ────────────────────────────
+_CSS = """
+@page { size: A4; margin: 0; }
+* { -webkit-print-color-adjust: exact; print-color-adjust: exact; box-sizing: border-box; }
+html, body { margin: 0; }
+body { background: __BG__; color: __TEXT__; font-family: 'Inter', system-ui, sans-serif;
+       font-size: 10.5pt; line-height: 1.5; padding: 14mm 15mm; }
+h1, h2, h3, h4 { font-family: 'Orbitron', 'Space Grotesk', system-ui, sans-serif; color: #fff; line-height: 1.2; }
+h1 { font-size: 30pt; letter-spacing: 1px; margin: 0 0 4pt; }
+h2 { font-size: 15pt; color: __ACCENT__; border-bottom: 1px solid __ACCENT__55; padding-bottom: 4pt; margin: 22pt 0 8pt; }
+h3 { font-size: 11.5pt; margin: 12pt 0 4pt; }
+p { margin: 4pt 0; }
+a { color: __ACCENT__; text-decoration: none; }
+code, .mono { font-family: 'JetBrains Mono', monospace; font-size: 9pt; color: __CYAN__; }
+.muted { color: __T2__; }
+.cover { min-height: 56vh; display: flex; flex-direction: column; justify-content: center; }
+.badge { display: inline-block; width: fit-content; font-family: 'JetBrains Mono', monospace; font-size: 8pt;
+         padding: 3pt 8pt; border: 1px solid __ACCENT__; color: __ACCENT__; border-radius: 3px; margin: 10pt 0; letter-spacing: 1px; }
+table { width: 100%; border-collapse: collapse; margin: 6pt 0; }
+th, td { text-align: left; vertical-align: top; padding: 5pt 8pt; border-bottom: 1px solid #ffffff14; font-size: 10pt; }
+th { width: 30%; color: __T2__; font-family: 'JetBrains Mono', monospace; font-weight: 600; white-space: nowrap; }
+.statrow { display: flex; gap: 10pt; margin: 12pt 0; }
+.stat { flex: 1; border: 1px solid __ACCENT__44; border-radius: 4px; padding: 9pt 11pt; background: __ACCENT__0d; }
+.stat b { font-family: 'Orbitron', sans-serif; font-size: 20pt; color: __ACCENT__; display: block; line-height: 1; }
+.stat span { font-size: 8.5pt; color: __T2__; }
+.cat { color: __ACCENT__; font-family: 'Orbitron', sans-serif; font-size: 11pt; margin: 16pt 0 5pt; }
+.ctrl { padding: 4pt 0; border-bottom: 1px solid #ffffff10; break-inside: avoid; }
+.ctrl b { color: #fff; }
+.ctrl .d { color: __T2__; font-size: 9.5pt; }
+pre { background: __BG2__; border: 1px solid __ACCENT__33; border-radius: 4px; padding: 8pt 10pt;
+      font-family: 'JetBrains Mono', monospace; font-size: 9pt; color: __CYAN__; white-space: pre-wrap; }
+ul { margin: 4pt 0; padding-left: 16pt; } li { margin: 2pt 0; }
+.foot { margin-top: 20pt; padding-top: 8pt; border-top: 1px solid #ffffff22; color: __MUTED__; font-size: 8.5pt; }
+.pagebreak { break-before: page; }
+.u { color: __MAG_LIT__; } .t { color: __CYAN__; }
+"""
 
-# ── PDF builders ──────────────────────────────────────────────────────────────
+def _css(accent):
+    return (_CSS.replace("__BG2__", BG2).replace("__BG__", BG).replace("__TEXT__", TEXT)
+            .replace("__ACCENT__", accent).replace("__CYAN__", CYAN)
+            .replace("__T2__", T2).replace("__MUTED__", MUTED).replace("__MAG_LIT__", MAG))
 
-def build_pdf(controls, package_name, subtitle, doc_title, accent, output_path):
-    pdf = DocPDF(doc_title, accent, "P", "mm", "A4")
-    pdf.set_author("Unity UI Extensions Community")
-    pdf.set_creator("generate_pdfs.py")
-    pdf.set_title(doc_title)
+def shell(title, accent, inner):
+    return f"""<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>{esc(title)}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="{FONTS}" rel="stylesheet"><style>{_css(accent)}</style></head><body>{inner}
+<div class="foot">Generated {DATE} &middot; unity-ui-extensions.github.io &middot; BSD-3-Clause (uGUI) &amp; MIT (UI Toolkit) &middot; Not affiliated with Unity Technologies</div>
+</body></html>"""
 
-    pdf.cover(package_name, subtitle)
-    pdf.toc_page(controls, package_name)
+# ── Press kit document ─────────────────────────────────────────────────────────
+def presskit_html():
+    inner = f"""
+<div class="cover">{LOGO}
+  <span class="badge">PRESS KIT &middot; VERSION 3.0</span>
+  <h1>Unity UI Extensions</h1>
+  <p class="muted" style="font-size:13pt;">Two packages. One ecosystem.</p>
+  <div class="statrow">
+    <div class="stat"><b>{TOTAL_CONTROLS}</b><span>UI controls</span></div>
+    <div class="stat"><b>{TOTAL_EXAMPLES}</b><span>example scenes</span></div>
+    <div class="stat"><b>2</b><span>packages</span></div>
+    <div class="stat"><b>2015</b><span>community since</span></div>
+  </div>
+</div>
 
+<h2 class="pagebreak">Factsheet</h2>
+<table>
+  <tr><th>Project</th><td>Unity UI Extensions</td></tr>
+  <tr><th>Release</th><td>Version 3.0 &mdash; a two-package ecosystem relaunch</td></tr>
+  <tr><th>Maintainer</th><td>Simon &ldquo;darkside&rdquo; Jackson (@SimonDarksideJ) &amp; a global community of contributors</td></tr>
+  <tr><th>Community since</th><td>2015</td></tr>
+  <tr><th>Packages</th><td>uGUI &mdash; <code>com.unity.uiextensions</code> (v3.0.0-pre.1, BSD-3-Clause)<br>UI Toolkit &mdash; <code>com.unity.uitoolkitextensions</code> (v1.0.0-pre.1, MIT)</td></tr>
+  <tr><th>Engine</th><td>Unity 6 (6000.0+); the established 2.x line remains for older Unity versions</td></tr>
+  <tr><th>Controls</th><td><b>{TOTAL_CONTROLS}</b> total &mdash; {UGUI_CONTROLS} uGUI &middot; {UITK_CONTROLS} UI Toolkit</td></tr>
+  <tr><th>Examples</th><td><b>{TOTAL_EXAMPLES}</b> playable example scenes ({UGUI_EXAMPLES} uGUI &middot; {UITK_EXAMPLES} UI Toolkit)</td></tr>
+  <tr><th>Price</th><td>Free &mdash; 100% open source, no lock-in</td></tr>
+  <tr><th>Distribution</th><td>Unity Package Manager (OpenUPM &amp; git URL) &middot; Itch.io &middot; Unity Asset Store (planned)</td></tr>
+  <tr><th>Website</th><td>unity-ui-extensions.github.io</td></tr>
+  <tr><th>Source</th><td>github.com/Unity-UI-Extensions</td></tr>
+  <tr><th>Community</th><td>Discord &middot; Gitter &middot; Unity Discussions</td></tr>
+  <tr><th>Support</th><td>patreon.com/simonDarksideJ</td></tr>
+  <tr><th>Press contact</th><td>uiextensions@zenithmoon.com &middot; maintainer via GitHub / Patreon</td></tr>
+</table>
+
+<h2>About</h2>
+<p><b>Stop rebuilding UI from scratch.</b> Unity UI Extensions is the flagship open-source UI control
+collection for Unity &mdash; {TOTAL_CONTROLS} battle-tested controls for both uGUI and UI Toolkit. The controls
+you would build anyway are already here, polished and edge-case handled.</p>
+<p>Community-driven since 2015, the project is 100% free and open source, distributed UPM-first via OpenUPM
+and git URL, and licensed under BSD-3-Clause (uGUI) and MIT (UI Toolkit). Maintained by Simon &ldquo;darkside&rdquo;
+Jackson and a global community of contributors.</p>
+
+<h2>The two-package ecosystem</h2>
+<h3 class="u">uGUI &mdash; Unity UI Extensions</h3>
+<p>The original and largest collection &mdash; {UGUI_CONTROLS} production-ready controls for Unity's uGUI system,
+refined over a decade of community use. This is the V3 release.</p>
+<ul>
+  <li>Package id <code>com.unity.uiextensions</code> &middot; v3.0.0-pre.1 &middot; Unity 6000.0+ &middot; BSD-3-Clause</li>
+  <li>{UGUI_CONTROLS} controls &middot; ~195 runtime scripts &middot; {UGUI_EXAMPLES} example scenes</li>
+  <li>Categories: Controls, Primitives, Layouts, Effects &amp; Utilities</li>
+</ul>
+<h3 class="t">UI Toolkit &mdash; Unity UI Toolkit Extensions</h3>
+<p>The modern companion &mdash; {UITK_CONTROLS} USS-themable, data-driven controls built from the ground up for
+Unity 6's UI Toolkit runtime.</p>
+<ul>
+  <li>Package id <code>com.unity.uitoolkitextensions</code> &middot; v1.0.0-pre.1 &middot; Unity 6000.0+ &middot; MIT</li>
+  <li>{UITK_CONTROLS} controls &middot; ~21 runtime scripts &middot; {UITK_EXAMPLES} example scenes</li>
+  <li>Built with USS &middot; fully themable &middot; data-driven UI</li>
+</ul>
+
+<h2>Key features</h2>
+<ul>
+  <li><b>Ship weeks faster</b> &mdash; the controls you would build anyway, polished and edge-case handled.</li>
+  <li><b>Production battle-tested</b> &mdash; a decade of community use, bug reports and fixes since 2015.</li>
+  <li><b>UPM-first distribution</b> &mdash; OpenUPM or git URL, clean dependency management.</li>
+  <li><b>Fully customisable</b> &mdash; Inspector-exposed for uGUI, USS-themable for UI Toolkit.</li>
+  <li><b>Examples included</b> &mdash; {TOTAL_EXAMPLES} playable example scenes across both packages.</li>
+  <li><b>Open contribution</b> &mdash; BSD-3 &amp; MIT, PRs welcome, every contributor credited.</li>
+</ul>
+
+<h2>Install</h2>
+<p class="muted">uGUI &mdash; via OpenUPM:</p>
+<pre>openupm add com.unity.uiextensions</pre>
+<p class="muted">uGUI &mdash; via git URL:</p>
+<pre>https://github.com/Unity-UI-Extensions/com.unity.uiextensions.git</pre>
+<p class="muted">UI Toolkit &mdash; via git URL:</p>
+<pre>https://github.com/Unity-UI-Extensions/com.unity.uitoolkitextensions.git</pre>
+
+<h2>Quote</h2>
+<p>&ldquo;Two packages, one ecosystem &mdash; that is the whole story of 3.0. For ten years the community has built
+the controls you would build anyway, polished them, and handled the edge cases so you do not have to. The controls
+you would build anyway are already here. Ship faster. Build better.&rdquo;<br>
+<b>&mdash; Simon &ldquo;darkside&rdquo; Jackson, project maintainer</b></p>
+
+<h2>Links &amp; contact</h2>
+<ul>
+  <li>Website &amp; docs: unity-ui-extensions.github.io</li>
+  <li>GitHub organisation: github.com/Unity-UI-Extensions</li>
+  <li>uGUI repo: github.com/Unity-UI-Extensions/com.unity.uiextensions</li>
+  <li>UI Toolkit repo: github.com/Unity-UI-Extensions/com.unity.uitoolkitextensions</li>
+  <li>Itch.io (uGUI): unityuiextensions.itch.io/uiextensions2-0</li>
+  <li>Support (Patreon): patreon.com/simonDarksideJ</li>
+  <li>Maintainer: Simon &ldquo;darkside&rdquo; Jackson (@SimonDarksideJ)</li>
+</ul>
+"""
+    return shell("Unity UI Extensions — Press Kit", MAG, inner)
+
+# ── Per-package control reference ──────────────────────────────────────────────
+def reference_html(controls, package_name, accent, subtitle, total_in_pack=None):
     cats = sorted({c["category"] for c in controls})
+    rows = []
     for cat in cats:
-        cat_controls = [c for c in controls if c["category"] == cat]
-        pdf.section_heading(cat)
-        for ctrl in cat_controls:
-            pdf.control_title(ctrl["title"], ctrl["category"], ctrl["description"])
-            blocks = parse_blocks(ctrl["body"])
-            pdf.render_blocks(blocks)
+        rows.append(f'<div class="cat">{esc(cat)}</div>')
+        for c in controls:
+            if c["category"] != cat:
+                continue
+            desc = f'<div class="d">{esc(c["description"])}</div>' if c["description"] else ""
+            rows.append(f'<div class="ctrl"><b>{esc(c["title"])}</b>{desc}</div>')
+    n = len(controls)
+    total = total_in_pack or n
+    span = f"of {total} controls" if total > n else "controls documented"
+    note = (f'<p class="muted">This package includes <b>{total}</b> controls in total. '
+            f'This reference lists the <b>{n}</b> with full text documentation; a further '
+            f'<b>{total - n}</b> have documentation with demo media pending (see the website).</p>'
+            ) if total > n else ""
+    heading = f"{n} of {total}" if total > n else f"{n}"
+    inner = f"""
+<div class="cover">{LOGO}
+  <span class="badge">CONTROL REFERENCE &middot; VERSION 3.0</span>
+  <h1>{esc(package_name)}</h1>
+  <p class="muted" style="font-size:12pt;">{esc(subtitle)}</p>
+  <div class="statrow"><div class="stat"><b>{n}</b><span>{span}</span></div></div>
+  {note}
+</div>
+<h2 class="pagebreak">Controls ({heading})</h2>
+{''.join(rows)}
+"""
+    return shell(f"{package_name} — Reference", accent, inner)
 
-    pdf.output(output_path)
-    size_kb = os.path.getsize(output_path) // 1024
-    print(f"  Written: {os.path.basename(output_path)}  ({size_kb} KB,  pages: {pdf.page_no()})")
+# ── Headless-browser rendering ─────────────────────────────────────────────────
+def find_browser():
+    # Explicit override (set by CI from the setup-chrome action output).
+    env = os.environ.get("CHROME_BIN") or os.environ.get("CHROME_PATH") or os.environ.get("BROWSER")
+    if env and os.path.exists(env):
+        return env
+    names = ["chrome", "google-chrome", "google-chrome-stable", "chromium",
+             "chromium-browser", "msedge", "microsoft-edge", "microsoft-edge-stable"]
+    for n in names:
+        p = shutil.which(n)
+        if p:
+            return p
+    pf  = os.environ.get("ProgramFiles", r"C:\Program Files")
+    pfx = os.environ.get("ProgramFiles(x86)", r"C:\Program Files (x86)")
+    la  = os.environ.get("LOCALAPPDATA", "")
+    candidates = [
+        os.path.join(pf,  "Google", "Chrome", "Application", "chrome.exe"),
+        os.path.join(pfx, "Google", "Chrome", "Application", "chrome.exe"),
+        os.path.join(la,  "Google", "Chrome", "Application", "chrome.exe"),
+        os.path.join(pfx, "Microsoft", "Edge", "Application", "msedge.exe"),
+        os.path.join(pf,  "Microsoft", "Edge", "Application", "msedge.exe"),
+        "/usr/bin/google-chrome", "/usr/bin/chromium", "/usr/bin/chromium-browser",
+        "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+        "/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge",
+    ]
+    for c in candidates:
+        if os.path.exists(c):
+            return c
+    return None
 
+def html_to_pdf(html_str, output_path, browser):
+    if os.path.exists(output_path):
+        os.remove(output_path)
+    with tempfile.TemporaryDirectory() as td:
+        htmlfile = os.path.join(td, "doc.html")
+        with open(htmlfile, "w", encoding="utf-8") as f:
+            f.write(html_str)
+        uri = "file:///" + htmlfile.replace("\\", "/")
+        profile = os.path.join(td, "profile")
+        base = [browser, "--disable-gpu", "--no-sandbox", "--no-pdf-header-footer",
+                f"--user-data-dir={profile}", "--run-all-compositor-stages-before-draw",
+                "--virtual-time-budget=10000", f"--print-to-pdf={output_path}"]
+        for headless in ("--headless=new", "--headless"):
+            try:
+                subprocess.run([browser, headless] + base[1:] + [uri],
+                               capture_output=True, text=True, timeout=120)
+            except subprocess.TimeoutExpired:
+                pass
+            if os.path.exists(output_path) and os.path.getsize(output_path) > 0:
+                return True
+        return False
 
-# ── Entry point ───────────────────────────────────────────────────────────────
+def emit(html_str, filename, browser):
+    out = os.path.join(DOWNLOADS, filename)
+    ok = html_to_pdf(html_str, out, browser)
+    if ok:
+        print(f"  OK   {filename}  ({os.path.getsize(out)//1024} KB)")
+    else:
+        print(f"  FAIL {filename}")
+    return ok
 
+# ── Entry point ────────────────────────────────────────────────────────────────
 if __name__ == "__main__":
-    print("Generating PDFs…")
+    only_presskit = ("--presskit" in sys.argv) or ("presskit" in sys.argv)
 
-    ugui = get_ugui_controls()
-    print(f"  uGUI controls found: {len(ugui)}")
-    build_pdf(
-        controls     = ugui,
-        package_name = "Unity UI Extensions",
-        subtitle     = f"uGUI Package — complete control reference  •  {len(ugui)} controls",
-        doc_title    = "Unity UI Extensions — uGUI Reference",
-        accent       = UGUI_ACCENT,
-        output_path  = os.path.join(DOWNLOADS, "Unity-UI-Extensions-uGUI-Documentation.pdf"),
-    )
+    browser = find_browser()
+    if not browser:
+        print("ERROR: No Chromium-based browser (Chrome / Chromium / Edge) found.")
+        print("Install one, or in CI add e.g. `browser-actions/setup-chrome`.")
+        sys.exit(1)
+    print(f"Using browser: {browser}")
+    print("Generating PDFs...")
 
-    uitk = get_uitk_controls()
-    print(f"  UIToolkit controls found: {len(uitk)}")
-    build_pdf(
-        controls     = uitk,
-        package_name = "Unity UI Extensions",
-        subtitle     = f"UI Toolkit Package — complete control reference  •  {len(uitk)} controls",
-        doc_title    = "Unity UI Extensions — UI Toolkit Reference",
-        accent       = UITK_ACCENT,
-        output_path  = os.path.join(DOWNLOADS, "Unity-UI-Extensions-UIToolkit-Documentation.pdf"),
-    )
+    # Press kit first — self-contained, always produced.
+    ok = emit(presskit_html(), "Unity-UI-Extensions-PressKit.pdf", browser)
+    if only_presskit:
+        print("Done (press kit only).")
+        sys.exit(0 if ok else 1)
+
+    ugui = get_controls(os.path.join(CONTROLS_DIR, "*.md"))
+    print(f"  uGUI controls parsed: {len(ugui)}")
+    emit(reference_html(ugui, "Unity UI Extensions",
+                        MAG, "uGUI package — control reference", total_in_pack=UGUI_CONTROLS),
+         "Unity-UI-Extensions-uGUI-Documentation.pdf", browser)
+
+    uitk = get_controls(os.path.join(UITK_DIR, "*", "index.md"))
+    print(f"  UI Toolkit controls parsed: {len(uitk)}")
+    emit(reference_html(uitk, "Unity UI Toolkit Extensions",
+                        CYAN, "UI Toolkit package — complete control reference"),
+         "Unity-UI-Extensions-UIToolkit-Documentation.pdf", browser)
 
     print("Done.")

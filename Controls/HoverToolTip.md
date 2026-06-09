@@ -1,8 +1,16 @@
-# HoverToolTip
+---
+layout: control-ugui
+title: "Hover ToolTip"
+description: "Basic tooltip that appears on pointer hover."
+category: "Utilities"
+permalink: /ugui/controls/hover-tooltip/
+has_video: false
+tags: [utilities, tooltip, hover, popup]
+---
 
 A basic Tooltip implementation
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ---------
 

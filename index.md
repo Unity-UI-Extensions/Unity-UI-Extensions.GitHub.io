@@ -1,7 +1,7 @@
 ---
 layout: home
 title: Unity UI Extensions — Community UI Controls for Unity
-description: 80+ battle-tested UI controls for Unity's uGUI and UI Toolkit frameworks. Free forever, open source, community maintained.
+description: 120 battle-tested UI controls for Unity's uGUI and UI Toolkit frameworks. Free forever, open source, community maintained.
 permalink: /
 ---
 
@@ -12,7 +12,7 @@ permalink: /
       Unity UI <span class="hl-u">Extensions</span>
     </h1>
     <p class="hero-sub">
-      80+ battle-tested UI controls for Unity's <strong>uGUI</strong> and <strong>UI Toolkit</strong> frameworks.
+      120 battle-tested UI controls for Unity's <strong>uGUI</strong> and <strong>UI Toolkit</strong> frameworks.
       Drop in. Build faster. Ship sooner.
     </p>
     <div class="hero-ctas">
@@ -25,11 +25,11 @@ permalink: /
 <section class="stats-band" aria-label="Project statistics">
   <div class="stats-band-inner">
     <div class="stat-item">
-      <span class="stat-number" data-count="70" data-suffix="+">0+</span>
+      <span class="stat-number" data-count="100">0</span>
       <span class="stat-label">uGUI Controls</span>
     </div>
     <div class="stat-item">
-      <span class="stat-number" data-count="18">0</span>
+      <span class="stat-number" data-count="20">0</span>
       <span class="stat-label">UIToolkit Controls</span>
     </div>
     <div class="stat-item">
@@ -56,10 +56,10 @@ permalink: /
           <span class="badge badge-u">uGUI</span>
           <h3 class="package-card-name">Unity UI Extensions</h3>
           <p class="package-id"><code>com.unity.uiextensions</code></p>
-          <p class="package-card-desc">The original and largest collection. 70+ production-ready controls built on Unity's legacy uGUI system — sliders, graphs, scrollers, effects, and more.</p>
+          <p class="package-card-desc">The original and largest collection. 100 production-ready controls built on Unity's legacy uGUI system — sliders, graphs, scrollers, effects, and more.</p>
         </div>
         <ul class="package-features">
-          <li>70+ controls across 6 categories</li>
+          <li>100 controls across 6 categories</li>
           <li>BSD 3-Clause licence — use in commercial projects</li>
           <li>OpenUPM, Git URL, and Unity Package Manager</li>
           <li>Works in Unity 2019.4+</li>
@@ -78,7 +78,7 @@ permalink: /
           <p class="package-card-desc">A modern, growing library of custom controls and manipulators for Unity's UI Toolkit — built for runtime UI, designed for productivity.</p>
         </div>
         <ul class="package-features">
-          <li>18 controls for navigation, forms, and feedback</li>
+          <li>20 controls for navigation, forms, and feedback</li>
           <li>MIT licence — maximum flexibility</li>
           <li>OpenUPM and Git URL installation</li>
           <li>Requires Unity 2022.3+</li>

@@ -1,4 +1,12 @@
-# Extensions Toggle
+---
+layout: control-ugui
+title: "Extensions Toggle"
+description: "Enhanced Toggle with additional event types and toggle behaviours."
+category: "Input"
+permalink: /ugui/controls/extensions-toggle/
+has_video: false
+tags: [input, toggle, events, selectable]
+---
 
 An enhanced Toggle component with additional features including multiple event types and toggle group support.
 

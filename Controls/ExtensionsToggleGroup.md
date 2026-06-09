@@ -1,4 +1,12 @@
-# Extensions Toggle Group
+---
+layout: control-ugui
+title: "Extensions Toggle Group"
+description: "Manages a group of Extensions Toggle components with single or multi selection."
+category: "Input"
+permalink: /ugui/controls/extensions-toggle-group/
+has_video: false
+tags: [input, toggle, group, selection]
+---
 
 An enhanced ToggleGroup component that manages a group of ExtensionsToggle components, ensuring only one toggle is active at a time.
 

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="Unity UI Extensions primary logo">
+  <defs>
+    <!-- Signature brand gradient: 135deg magenta -> cyan -->
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%" gradientTransform="rotate(-45 0.5 0.5)">
+      <stop offset="0%" stop-color="#ff0099"/>
+      <stop offset="100%" stop-color="#00ffee"/>
+    </linearGradient>
+    <!-- Soft outer glow halo around the tile -->
+    <radialGradient id="outerHalo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff0099" stop-opacity="0.45"/>
+      <stop offset="45%" stop-color="#bb0077" stop-opacity="0.22"/>
+      <stop offset="78%" stop-color="#00ffee" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#00ffee" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="innerGlow" cx="50%" cy="46%" r="60%">
+      <stop offset="0%" stop-color="#ff0099" stop-opacity="0.28"/>
+      <stop offset="55%" stop-color="#00ffee" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#00ffee" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="tileSheen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff0099" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#050508" stop-opacity="0"/>
+    </linearGradient>
+    <!-- Gaussian glow filter for the monogram edges -->
+    <filter id="monoGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Outer glow halo -->
+  <rect x="40" y="40" width="432" height="432" rx="96" fill="url(#outerHalo)"/>
+
+  <!-- App-icon tile -->
+  <rect x="96" y="96" width="320" height="320" rx="56" fill="#0a0a14"/>
+  <!-- Gradient hairline border -->
+  <rect x="96.75" y="96.75" width="318.5" height="318.5" rx="55.25" fill="none" stroke="url(#brandGrad)" stroke-width="2" opacity="0.6"/>
+  <!-- Top sheen -->
+  <rect x="96" y="96" width="320" height="320" rx="56" fill="url(#tileSheen)"/>
+  <!-- Inner glow -->
+  <rect x="96" y="96" width="320" height="320" rx="56" fill="url(#innerGlow)"/>
+
+  <!-- U monogram with soft glow -->
+  <g fill="url(#brandGrad)" filter="url(#monoGlow)">
+    <!-- Left bar -->
+    <rect x="160" y="152" width="48" height="148" rx="5"/>
+    <!-- Right bar -->
+    <rect x="304" y="152" width="48" height="148" rx="5"/>
+    <!-- Bottom crossbar -->
+    <rect x="160" y="288" width="192" height="48" rx="5"/>
+  </g>
+</svg>

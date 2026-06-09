@@ -1,4 +1,12 @@
-# Shader Effects Suite
+---
+layout: control-ugui
+title: "Shader Effects Suite"
+description: "Collection of shader-based blending-mode effects for UI elements."
+category: "Effects"
+permalink: /ugui/controls/shader-effects/
+has_video: false
+tags: [effects, shader, blend, suite]
+---
 
 A collection of shader-based effects that apply different blending modes to UI elements, including additive, multiply, screen, and shine effects.
 

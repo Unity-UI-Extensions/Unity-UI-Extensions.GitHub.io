@@ -1,8 +1,16 @@
-# BoundToolTip
+---
+layout: control-ugui
+title: "Bound ToolTip"
+description: "Tooltip driven by a central listener for displaying data-bound content on hover."
+category: "Utilities"
+permalink: /ugui/controls/bound-tooltip/
+has_video: false
+tags: [utilities, tooltip, hover, bound]
+---
 
 An alternate Tooltip implementation with central listener
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ---------
 

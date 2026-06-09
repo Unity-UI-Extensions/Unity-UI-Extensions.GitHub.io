@@ -1,7 +1,7 @@
 ---
 layout: default
 title: UIToolkit Controls — Unity UIToolkit Extensions
-description: 18 modern UI controls and manipulators for Unity's UI Toolkit framework. Navigation, forms, feedback, and more.
+description: 20 modern UI controls and manipulators for Unity's UI Toolkit framework. Navigation, forms, feedback, and more.
 permalink: /uitoolkit/
 ---
 
@@ -14,7 +14,7 @@ permalink: /uitoolkit/
     </nav>
     <div class="pkg-hero-badge"><span class="badge-t">UI Toolkit Package</span></div>
     <h1>UIToolkit Extensions</h1>
-    <p class="pkg-hero-lead">18 modern controls and manipulators for Unity's UI Toolkit framework. Built for runtime UI — ready for production.</p>
+    <p class="pkg-hero-lead">20 modern controls and manipulators for Unity's UI Toolkit framework. Built for runtime UI — ready for production.</p>
     <div class="pkg-hero-meta">
       <code class="pkg-id">com.unity.uitoolkitextensions</code>
       <span class="badge-ghost">MIT Licence</span>

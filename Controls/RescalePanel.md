@@ -1,4 +1,12 @@
-# RescalePanel
+---
+layout: control-ugui
+title: "Rescale Panel"
+description: "Rescales a parent panel by dragging a handle while keeping it anchored."
+category: "Utilities"
+permalink: /ugui/controls/rescale-panel/
+has_video: false
+tags: [utilities, rescale, panel, drag, handle]
+---
 
 A control that rescales a parent panel by dragging a handle, adjusting the local scale while keeping the UI element size consistent.
 

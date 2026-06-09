@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="500" viewBox="0 0 1024 500" role="img" aria-label="Unity UI Extensions 3.0 feature graphic">
+  <defs>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff0099"/>
+      <stop offset="100%" stop-color="#00ffee"/>
+    </linearGradient>
+    <linearGradient id="sweep" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff0099"/>
+      <stop offset="100%" stop-color="#00ffee"/>
+    </linearGradient>
+    <radialGradient id="glowMag" cx="15%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="rgba(255,0,153,0.20)"/>
+      <stop offset="100%" stop-color="rgba(255,0,153,0)"/>
+    </radialGradient>
+    <radialGradient id="glowCyan" cx="88%" cy="78%" r="55%">
+      <stop offset="0%" stop-color="rgba(0,255,238,0.18)"/>
+      <stop offset="100%" stop-color="rgba(0,255,238,0)"/>
+    </radialGradient>
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="rgba(255,0,153,0.025)"/>
+    </pattern>
+    <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1024" height="500" fill="#050508"/>
+  <rect width="1024" height="500" fill="url(#glowMag)"/>
+  <rect width="1024" height="500" fill="url(#glowCyan)"/>
+  <rect width="1024" height="500" fill="url(#scan)"/>
+  <rect x="0.5" y="0.5" width="1023" height="499" fill="none" stroke="rgba(255,0,153,0.18)"/>
+
+  <!-- Logo -->
+  <g transform="translate(80,72)">
+    <rect x="0" y="0" width="112" height="112" rx="6" fill="#0a0a14" stroke="rgba(255,0,153,0.35)" stroke-width="1.5"/>
+    <g fill="url(#brandGrad)" filter="url(#softGlow)">
+      <rect x="32" y="28" width="14" height="42"/>
+      <rect x="66" y="28" width="14" height="42"/>
+      <rect x="32" y="70" width="48" height="14"/>
+    </g>
+  </g>
+
+  <!-- Wordmark -->
+  <g transform="translate(224,108)">
+    <text x="0" y="0" font-family="Orbitron, 'Space Grotesk', system-ui, sans-serif" font-size="40" font-weight="800" letter-spacing="3" fill="#ffffff">UNITY UI EXTENSIONS</text>
+    <g transform="translate(2,18)" font-family="'JetBrains Mono', monospace">
+      <rect x="0" y="0" width="88" height="34" rx="2" fill="rgba(255,0,153,0.10)" stroke="url(#brandGrad)" stroke-width="1.2"/>
+      <text x="44" y="24" text-anchor="middle" font-size="18" font-weight="700" fill="#ffffff">v3.0</text>
+      <text x="104" y="24" font-family="'Space Grotesk', system-ui, sans-serif" font-size="18" font-weight="600" fill="#dd88ff">Two packages. <tspan fill="url(#brandGrad)">One ecosystem.</tspan></text>
+    </g>
+  </g>
+
+  <!-- divider -->
+  <rect x="80" y="288" width="864" height="2" fill="url(#sweep)" opacity="0.4"/>
+
+  <!-- Value line -->
+  <text x="80" y="262" font-family="'Space Grotesk', system-ui, sans-serif" font-size="24" font-weight="600" fill="#ffffff">Supercharge Your Unity UI. The controls you would build anyway are already here.</text>
+
+  <!-- Stat chips -->
+  <g transform="translate(80,330)" font-family="'JetBrains Mono', monospace">
+    <g>
+      <rect x="0" y="0" width="196" height="96" rx="2" fill="rgba(255,0,153,0.07)" stroke="rgba(255,0,153,0.35)"/>
+      <text x="22" y="54" font-family="Orbitron, sans-serif" font-size="42" font-weight="800" fill="#ff0099" filter="url(#softGlow)">120</text>
+      <text x="22" y="80" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#ffffff">UI controls</text>
+    </g>
+    <g transform="translate(220,0)">
+      <rect x="0" y="0" width="196" height="96" rx="2" fill="rgba(0,255,238,0.06)" stroke="rgba(0,255,238,0.35)"/>
+      <text x="22" y="54" font-family="Orbitron, sans-serif" font-size="42" font-weight="800" fill="#00ffee" filter="url(#softGlow)">29</text>
+      <text x="22" y="80" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#ffffff">example scenes</text>
+    </g>
+    <g transform="translate(440,0)">
+      <rect x="0" y="0" width="196" height="96" rx="2" fill="rgba(255,0,153,0.07)" stroke="rgba(255,0,153,0.35)"/>
+      <text x="22" y="54" font-family="Orbitron, sans-serif" font-size="42" font-weight="800" fill="url(#brandGrad)">2015</text>
+      <text x="22" y="80" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#ffffff">battle-tested since</text>
+    </g>
+    <g transform="translate(660,0)">
+      <rect x="0" y="0" width="196" height="96" rx="2" fill="rgba(0,255,238,0.05)" stroke="rgba(0,255,238,0.35)"/>
+      <text x="22" y="54" font-family="Orbitron, sans-serif" font-size="42" font-weight="800" fill="#00ffcc" filter="url(#softGlow)">100%</text>
+      <text x="22" y="80" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#ffffff">free &amp; open source</text>
+    </g>
+  </g>
+</svg>

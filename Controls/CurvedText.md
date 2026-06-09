@@ -1,11 +1,19 @@
-# Curved Text
+---
+layout: control-ugui
+title: "Curved Text"
+description: "Bends legacy uGUI Text along a curve (for projects not using TextMeshPro)."
+category: "Effects"
+permalink: /ugui/controls/curved-text/
+has_video: false
+tags: [effects, text, curve, bend]
+---
 
 > [!IMPORTANT]
 > ⚠️ This control has been deprecated for Unity 6 and is no longer maintained. It remains documented for legacy reference.
 
 A Text vertex manipulator for those users NOT using TextMeshPro (why ever not?) 
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 > Text Effects are not supported with TextMeshPro due to its architecture, try using the native TextMeshPro effects instead.
 

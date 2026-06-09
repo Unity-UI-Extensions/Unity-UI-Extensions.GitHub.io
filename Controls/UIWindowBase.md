@@ -1,8 +1,16 @@
-# UIWindowBase
+---
+layout: control-ugui
+title: "UI Window Base"
+description: "Draggable window for RectTransforms with bounds checking within the canvas."
+category: "Layout"
+permalink: /ugui/controls/ui-window-base/
+has_video: false
+tags: [layout, window, draggable, panel]
+---
 
 A draggable window for RectTransforms with bounds checking to keep it within the canvas
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ---------
 

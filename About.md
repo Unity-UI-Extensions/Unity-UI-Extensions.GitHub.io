@@ -171,7 +171,7 @@ For the full release history, follow the below link to the full release notes pa
 
 ## [Controls and extensions listed in this project](https://unity-ui-extensions.github.io/Controls)
 
-There are almost 70+ extension controls / effect and other utilities in the project which are listed on the following page:
+There are over 100 extension controls / effect and other utilities in the project which are listed on the following page:
 
 > ## [Check out the control demos on our Tumblr page](https://www.tumblr.com/blog/unityuiextensions)
 >
@@ -256,7 +256,7 @@ Just ensure:
 
 ## [License](https://raw.githubusercontent.com/Unity-UI-Extensions/com.unity.uiextensions/release/LICENSE.md)
 
-All scripts conform to the BSD3 license and are free to use / distribute.  See the [LICENSE](https://raw.githubusercontent.com/Unity-UI-Extensions/com.unity.uiextensions/release/LICENSE.md) file for more information =
+All scripts conform to the BSD-3-Clause license and are free to use / distribute.  See the [LICENSE](https://raw.githubusercontent.com/Unity-UI-Extensions/com.unity.uiextensions/release/LICENSE.md) file for more information =
 
 ## [Like what you see?](https://unity-ui-extensions.github.io/FurtherInfo)
 

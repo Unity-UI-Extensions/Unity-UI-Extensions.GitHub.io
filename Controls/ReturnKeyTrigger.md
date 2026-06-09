@@ -1,8 +1,16 @@
-# ReturnKeyTrigger
+---
+layout: control-ugui
+title: "Return Key Trigger"
+description: "Binds the Return key within an InputField to a button or toggle action."
+category: "Utilities"
+permalink: /ugui/controls/return-key-trigger/
+has_video: false
+tags: [utilities, inputfield, return, key, trigger]
+---
 
 Enables you to bind the return key within an InputField control to a button, also supports toggling the highlight of a control or field.
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ---------
 

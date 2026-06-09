@@ -1,4 +1,12 @@
-# UISquircle
+---
+layout: control-ugui
+title: "UI Squircle"
+description: "Renders smooth superellipse (squircle) shapes with configurable curvature."
+category: "Primitives"
+permalink: /ugui/controls/ui-squircle/
+has_video: false
+tags: [primitives, squircle, superellipse, shape, rounded]
+---
 
 A primitive that renders smooth superellipse shapes (squircles) with configurable curvature, offering an elegant alternative to sharp corners or simple rounded rectangles.
 

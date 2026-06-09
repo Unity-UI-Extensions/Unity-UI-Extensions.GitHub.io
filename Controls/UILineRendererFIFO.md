@@ -1,4 +1,12 @@
-# UILineRendererFIFO
+---
+layout: control-ugui
+title: "UI Line Renderer (FIFO)"
+description: "Performance line renderer using a first-in-first-out point queue."
+category: "Primitives"
+permalink: /ugui/controls/ui-line-renderer-fifo/
+has_video: false
+tags: [primitives, line, fifo, performance, draw]
+---
 
 A performance-optimized line renderer that uses a first-in-first-out (FIFO) queue for adding and removing points, ideal for drawing dynamic trails or graphs.
 

@@ -42,5 +42,10 @@ sysinfo.txt
 # Jekyll build output
 _site/
 
+# Python bytecode cache (from generate_pdfs.py)
+__pycache__/
+
 # Generated PDF documentation (built by CI via generate_pdfs.py)
 assets/downloads/*.pdf
+# ...except the press kit, which we commit so the /presskit/ download always works
+!assets/downloads/Unity-UI-Extensions-PressKit.pdf

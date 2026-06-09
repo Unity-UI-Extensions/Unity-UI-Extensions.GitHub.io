@@ -1,11 +1,19 @@
-# Serialization
+---
+layout: control-ugui
+title: "Serialization"
+description: "Serialization utilities for UI components."
+category: "Utilities"
+permalink: /ugui/controls/serialization/
+has_video: false
+tags: [utilities, serialization, save, data]
+---
 
 > [!IMPORTANT]
 > ⚠️ This control has been deprecated for Unity 6 and is no longer maintained. It remains documented for legacy reference.
 
 Serialization utilities for UI components.
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ---------
 

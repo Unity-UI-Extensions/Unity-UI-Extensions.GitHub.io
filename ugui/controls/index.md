@@ -1,7 +1,7 @@
 ---
 layout: default
 title: uGUI Controls — Unity UI Extensions
-description: All 70+ uGUI controls for Unity UI Extensions.
+description: All 100 uGUI controls for Unity UI Extensions.
 permalink: /ugui/controls/
 ---
 

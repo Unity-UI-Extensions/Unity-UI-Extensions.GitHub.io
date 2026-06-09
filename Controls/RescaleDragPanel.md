@@ -1,4 +1,12 @@
-# RescaleDragPanel
+---
+layout: control-ugui
+title: "Rescale Drag Panel"
+description: "Drag a rescaled panel to reposition it within a canvas, compensating for scale."
+category: "Utilities"
+permalink: /ugui/controls/rescale-drag-panel/
+has_video: false
+tags: [utilities, drag, rescale, panel]
+---
 
 A control that enables dragging a rescaled panel to reposition it within a canvas, compensating for the panel's local scale during movement.
 

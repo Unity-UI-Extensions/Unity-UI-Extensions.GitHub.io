@@ -1,14 +1,16 @@
 # Missing Demo Content — uGUI Controls
 
-Controls listed here have basic documentation but **no demo images or video links**.  
-They are **excluded from the controls listing page** until demo content is added.
+The controls listed here now have **complete documentation pages and are listed**
+on the site (shown with a placeholder card) — they are only **missing demo media**
+(screenshots / GIFs).
 
-To get a control re-listed: add at least one screenshot or GIF to `Controls/Images/`,  
-reference it in the control's `.md` file, then remove it from this list.
+To add demo media: drop at least one screenshot or GIF into `Controls/Images/`,
+reference it in the control's `.md` file, set `preview_image` for the control in
+`_data/ugui_controls.yml`, then remove it from this list.
 
 ---
 
-## Excluded uGUI Controls (36)
+## uGUI Controls Pending Demo Media (36)
 
 | Control | File | Notes |
 |---|---|---|
@@ -53,7 +55,7 @@ reference it in the control's `.md` file, then remove it from this list.
 
 ## UIToolkit Controls — Missing Visual Demos
 
-All 18 UIToolkit controls have **complete text documentation and code examples** but  
+All 20 UIToolkit controls have **complete text documentation and code examples** but  
 **no screenshots or animated demos** yet. They appear on the UIToolkit controls page  
 but are marked as lacking visual reference.
 

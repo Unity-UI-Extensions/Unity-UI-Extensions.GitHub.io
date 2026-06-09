@@ -1,8 +1,16 @@
-# MultiTouch Scroll Rect
+---
+layout: control-ugui
+title: "MultiTouch Scroll Rect"
+description: "ScrollRect fix that correctly handles multiple simultaneous touches."
+category: "Layout"
+permalink: /ugui/controls/multitouch-scroll-rect/
+has_video: false
+tags: [layout, scroll, multitouch, scrollrect]
+---
 
 Fixed version of the scroll rect to properly handle multiple touches
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ---------
 

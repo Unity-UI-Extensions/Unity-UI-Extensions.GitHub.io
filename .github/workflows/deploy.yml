@@ -21,6 +21,21 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
 
+      # ── Generate documentation & press-kit PDFs (headless Chrome) ────────────
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Set up Chrome
+        id: setup-chrome
+        uses: browser-actions/setup-chrome@v1
+
+      - name: Generate PDFs
+        run: python generate_pdfs.py
+        env:
+          CHROME_BIN: ${{ steps.setup-chrome.outputs.chrome-path }}
+
       - name: Setup Pages
         uses: actions/configure-pages@v6
 
@@ -43,19 +58,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
-
-  # publish:
-  #   needs: build
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     # ── Python / PDF generation ──────────────────────────────────────────────
-  #     - name: Set up Python
-  #       uses: actions/setup-python@v5
-  #       with:
-  #         python-version: '3.12'
-
-  #     - name: Install Python dependencies
-  #       run: pip install fpdf2 markdown
-
-  #     - name: Generate documentation PDFs
-  #       run: python generate_pdfs.py

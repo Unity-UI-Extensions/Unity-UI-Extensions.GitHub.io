@@ -1,8 +1,16 @@
-# InputFocus
+---
+layout: control-ugui
+title: "Input Focus"
+description: "Enhanced InputField for forms — Enter to submit plus focus management."
+category: "Utilities"
+permalink: /ugui/controls/input-focus/
+has_video: false
+tags: [utilities, inputfield, focus, forms]
+---
 
 Enhanced InputField control for forms, enables Enter to submit and other features
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ---------
 

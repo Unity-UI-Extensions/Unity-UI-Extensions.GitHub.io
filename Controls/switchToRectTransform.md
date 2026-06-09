@@ -1,8 +1,16 @@
-# SwitchToRectTransform
+---
+layout: control-ugui
+title: "Switch To RectTransform"
+description: "RectTransform extension that moves one RectTransform onto another."
+category: "Utilities"
+permalink: /ugui/controls/switch-to-recttransform/
+has_video: false
+tags: [utilities, recttransform, extension, transform]
+---
 
 RectTransform extension method to move one RectTransform to another
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ---------
 

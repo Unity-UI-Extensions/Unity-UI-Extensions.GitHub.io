@@ -1,11 +1,19 @@
-# Best Fit Outline
+---
+layout: control-ugui
+title: "Best Fit Outline"
+description: "Outline effect that scales correctly with a Text component's best-fit sizing."
+category: "Effects"
+permalink: /ugui/controls/best-fit-outline/
+has_video: false
+tags: [effects, outline, text, best-fit]
+---
 
 > [!IMPORTANT]
 > ⚠️ This control has been deprecated for Unity 6 and is no longer maintained. It remains documented for legacy reference.
 
 An improved outline effect
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 > Text Effects are not supported with TextMeshPro due to its architecture, try using the native TextMeshPro effects instead.
 

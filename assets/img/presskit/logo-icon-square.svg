@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-label="Unity UI Extensions icon">
+  <defs>
+    <!-- Signature brand gradient: 135deg magenta -> cyan -->
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%" gradientTransform="rotate(-45 0.5 0.5)">
+      <stop offset="0%" stop-color="#ff0099"/>
+      <stop offset="100%" stop-color="#00ffee"/>
+    </linearGradient>
+    <!-- Inner glow halo behind the monogram -->
+    <radialGradient id="innerGlow" cx="50%" cy="46%" r="60%">
+      <stop offset="0%" stop-color="#ff0099" stop-opacity="0.30"/>
+      <stop offset="55%" stop-color="#00ffee" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#00ffee" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="tileSheen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff0099" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#050508" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- App-icon tile: dark rounded square (sharp brand corners ~6px scaled) -->
+  <rect x="8" y="8" width="240" height="240" rx="40" fill="#0a0a14"/>
+  <!-- Gradient hairline border -->
+  <rect x="8.5" y="8.5" width="239" height="239" rx="39.5" fill="none" stroke="url(#brandGrad)" stroke-width="1.5" opacity="0.55"/>
+  <!-- Top sheen -->
+  <rect x="8" y="8" width="240" height="240" rx="40" fill="url(#tileSheen)"/>
+  <!-- Subtle inner glow -->
+  <rect x="8" y="8" width="240" height="240" rx="40" fill="url(#innerGlow)"/>
+
+  <!-- U monogram: two vertical bars + bottom crossbar, magenta->cyan gradient -->
+  <g fill="url(#brandGrad)">
+    <!-- Left bar -->
+    <rect x="66" y="58" width="36" height="112" rx="4"/>
+    <!-- Right bar -->
+    <rect x="154" y="58" width="36" height="112" rx="4"/>
+    <!-- Bottom crossbar joining the bars into a U -->
+    <rect x="66" y="162" width="124" height="36" rx="4"/>
+  </g>
+</svg>

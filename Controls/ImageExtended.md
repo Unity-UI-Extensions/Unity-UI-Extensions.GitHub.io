@@ -1,11 +1,19 @@
-# Image Extended
+---
+layout: control-ugui
+title: "Image Extended"
+description: "Improved Image control with rotation support and filled type without a sprite."
+category: "Primitives"
+permalink: /ugui/controls/image-extended/
+has_video: false
+tags: [primitives, image, rotation, filled]
+---
 
 > [!IMPORTANT]
 > ⚠️ This control has been deprecated for Unity 6 and is no longer maintained. It remains documented for legacy reference.
 
 Improved Image control with rotation support and use of filled type without an Image (useful for masks)
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ---------
 

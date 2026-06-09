@@ -1,8 +1,16 @@
-# CLFZ2 - LFZ Compression helper
+---
+layout: control-ugui
+title: "CLZF2 Compression"
+description: "LZF compression helper for compressing UI or save data at runtime."
+category: "Utilities"
+permalink: /ugui/controls/clzf2-compression/
+has_video: false
+tags: [utilities, compression, lzf, data]
+---
 
 LZF Compression library to compress data
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ---------
 

@@ -1,8 +1,16 @@
-# Scroller
+---
+layout: control-ugui
+title: "Scroller"
+description: "Scroller component of the FancyScrollView system for advanced scrolling."
+category: "Layout"
+permalink: /ugui/controls/scroller/
+has_video: false
+tags: [layout, scroll, fancyscrollview]
+---
 
 A component of the FancyScrollView system for advanced scrolling implementations.
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ---------
 

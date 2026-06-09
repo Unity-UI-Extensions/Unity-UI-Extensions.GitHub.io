@@ -1,8 +1,16 @@
-# RaycastMask
+---
+layout: control-ugui
+title: "Raycast Mask"
+description: "Enhanced mask that uses image alpha for accurate raycast hit-testing."
+category: "Utilities"
+permalink: /ugui/controls/raycast-mask/
+has_video: false
+tags: [utilities, raycast, mask, alpha, hit-area]
+---
 
 An example of an enhanced mask component able to work with the image data. Enables picking on image parts and not just the Rect Transform
 
-<!--![](Images/ Game Image.jpg)-->
+<!--![](/Controls/Images/ Game Image.jpg)-->
 
 ---------
 

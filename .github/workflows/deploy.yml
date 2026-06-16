@@ -21,28 +21,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
 
-      # ── Generate documentation & press-kit PDFs (headless Chrome) ────────────
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-
-      - name: Set up Chrome
-        id: setup-chrome
-        uses: browser-actions/setup-chrome@v1
-
-      - name: Generate PDFs
-        run: python generate_pdfs.py
-        env:
-          CHROME_BIN: ${{ steps.setup-chrome.outputs.chrome-path }}
-
       - name: Setup Pages
         uses: actions/configure-pages@v6
 
       - name: Build Jekyll Site
         uses: actions/jekyll-build-pages@v1
 
-      # ── Upload to GitHub Pages ───────────────────────────────────────────────
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v5
         with:
@@ -58,3 +42,22 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
+
+  publishpdf:
+    needs: build
+    runs-on: ubuntu-laest
+    steps:
+      # ── Generate documentation & press-kit PDFs (headless Chrome) ────────────
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Set up Chrome
+        id: setup-chrome
+        uses: browser-actions/setup-chrome@v1
+
+      - name: Generate PDFs
+        run: python generate_pdfs.py
+        env:
+          CHROME_BIN: ${{ steps.setup-chrome.outputs.chrome-path }}

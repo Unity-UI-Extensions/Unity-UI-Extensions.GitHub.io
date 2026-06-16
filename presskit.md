@@ -218,15 +218,36 @@ permalink: /presskit/
     </div>
     <p style="color:var(--text-2,#dd88ff);">Typefaces: <strong>Orbitron</strong> (display / wordmark) · <strong>Inter</strong> (body) · <strong>JetBrains Mono</strong> (code).</p>
 
-    <div class="pk-assets mt-3">
-      {% assign pk_logos = "logo-primary.svg,logo-icon-square.svg,logo-wordmark-horizontal.svg,logo-monochrome.svg,social-banner-og-1200x630.svg,unity-store-hero.svg,twitter-header-1500x500.svg,itchio-cover-630x500.svg,feature-graphic.svg" | split: "," %}
-      {% for asset in pk_logos %}
+    {% assign brand_master = "logo-primary.svg,logo-icon-square.svg,logo-wordmark-horizontal.svg,logo-monochrome.svg,social-banner-og-1200x630.svg,unity-store-hero.svg,twitter-header-1500x500.svg,itchio-cover-630x500.svg,feature-graphic.svg" | split: "," %}
+    {% assign brand_ugui = "logo-ugui-wordmark.svg,logo-ugui-icon.svg,unity-store-hero-ugui.svg,itchio-cover-ugui-630x500.svg,social-banner-ugui-1200x630.svg" | split: "," %}
+    {% assign brand_uitk = "logo-uitoolkit-wordmark.svg,logo-uitoolkit-icon.svg,unity-store-hero-uitoolkit.svg,itchio-cover-uitoolkit-630x500.svg,social-banner-uitoolkit-1200x630.svg" | split: "," %}
+
+    <h3 style="margin-top:1.75rem;">Master brand <span style="color:var(--text-2,#dd88ff); font-weight:400;">— represents both packages (magenta → cyan)</span></h3>
+    <div class="pk-assets mt-2">
+      {% for asset in brand_master %}
       <div class="pk-asset">
         <div class="pk-asset-prev"><img src="{{ '/assets/img/presskit/' | append: asset | relative_url }}" alt="{{ asset }}" loading="lazy"></div>
-        <div class="pk-asset-meta">
-          <span class="pk-asset-name">{{ asset }}</span>
-          <a class="pk-asset-dl" href="{{ '/assets/img/presskit/' | append: asset | relative_url }}" download>↓ SVG</a>
-        </div>
+        <div class="pk-asset-meta"><span class="pk-asset-name">{{ asset }}</span><a class="pk-asset-dl" href="{{ '/assets/img/presskit/' | append: asset | relative_url }}" download>↓ SVG</a></div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <h3 style="margin-top:1.75rem; color:#ff0099;">uGUI package <span style="color:var(--text-2,#dd88ff); font-weight:400;">— magenta</span></h3>
+    <div class="pk-assets mt-2">
+      {% for asset in brand_ugui %}
+      <div class="pk-asset">
+        <div class="pk-asset-prev"><img src="{{ '/assets/img/presskit/' | append: asset | relative_url }}" alt="{{ asset }}" loading="lazy"></div>
+        <div class="pk-asset-meta"><span class="pk-asset-name">{{ asset }}</span><a class="pk-asset-dl" href="{{ '/assets/img/presskit/' | append: asset | relative_url }}" download>↓ SVG</a></div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <h3 style="margin-top:1.75rem; color:#00ffee;">UI Toolkit package <span style="color:var(--text-2,#dd88ff); font-weight:400;">— cyan</span></h3>
+    <div class="pk-assets mt-2">
+      {% for asset in brand_uitk %}
+      <div class="pk-asset">
+        <div class="pk-asset-prev"><img src="{{ '/assets/img/presskit/' | append: asset | relative_url }}" alt="{{ asset }}" loading="lazy"></div>
+        <div class="pk-asset-meta"><span class="pk-asset-name">{{ asset }}</span><a class="pk-asset-dl" href="{{ '/assets/img/presskit/' | append: asset | relative_url }}" download>↓ SVG</a></div>
       </div>
       {% endfor %}
     </div>

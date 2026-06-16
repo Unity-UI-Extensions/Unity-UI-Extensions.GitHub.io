@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 630 500" width="630" height="500" role="img" aria-label="Unity UI Toolkit Extensions cover">
+  <defs>
+    <linearGradient id="pg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00ffee"/><stop offset="100%" stop-color="#0044aa"/>
+    </linearGradient>
+    <radialGradient id="ig" cx="50%" cy="46%" r="60%">
+      <stop offset="0%" stop-color="#00ffee" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#00ffee" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sheen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00ffee" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#050508" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="glowR" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="rgba(0,255,238,0.20)"/><stop offset="100%" stop-color="rgba(0,255,238,0)"/>
+    </radialGradient>
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="rgba(0,255,238,0.025)"/>
+    </pattern>
+    <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="630" height="500" fill="#050508"/>
+  <rect width="630" height="500" fill="url(#glowR)"/>
+  <rect width="630" height="500" fill="url(#scan)"/>
+  <rect x="0.5" y="0.5" width="629" height="499" fill="none" stroke="rgba(0,255,238,0.18)"/>
+
+  <g transform="translate(259,44)">
+    
+    <rect x="0" y="0" width="112" height="112" rx="22" fill="#0a0a14"/>
+    <rect x="0.75" y="0.75" width="110.5" height="110.5" rx="21.25" fill="none" stroke="url(#pg)" stroke-width="1.5" opacity="0.6"/>
+    <rect x="0" y="0" width="112" height="112" rx="22" fill="url(#sheen)"/>
+    <rect x="0" y="0" width="112" height="112" rx="22" fill="url(#ig)"/>
+    <g fill="url(#pg)">
+      <rect x="28" y="26" width="16" height="50" rx="1.92"/>
+      <rect x="68" y="26" width="16" height="50" rx="1.92"/>
+      <rect x="28" y="60" width="56" height="16" rx="1.92"/>
+    </g>
+  </g>
+
+  <text x="315" y="222" text-anchor="middle" font-family="Orbitron, 'Space Grotesk', system-ui, sans-serif" font-size="46" font-weight="800" letter-spacing="2" fill="#00ffee" filter="url(#softGlow)">UI TOOLKIT</text>
+  <text x="315" y="258" text-anchor="middle" font-family="'Space Grotesk', system-ui, sans-serif" font-size="22" font-weight="600" fill="#ffffff">Unity UI Toolkit Extensions</text>
+  <text x="315" y="286" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="13" fill="#00ffcc">com.unity.uitoolkitextensions</text>
+
+  <g text-anchor="middle">
+    <text x="170" y="356" font-family="Orbitron, 'Space Grotesk', system-ui, sans-serif" font-size="34" font-weight="800" fill="#00ffee" filter="url(#softGlow)">20</text>
+    <text x="170" y="380" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#ffffff">controls</text>
+    <text x="315" y="356" font-family="Orbitron, 'Space Grotesk', system-ui, sans-serif" font-size="34" font-weight="800" fill="#00ffee" filter="url(#softGlow)">8</text>
+    <text x="315" y="380" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#ffffff">examples</text>
+    <text x="460" y="356" font-family="Orbitron, 'Space Grotesk', system-ui, sans-serif" font-size="30" font-weight="800" fill="url(#pg)">MIT</text>
+    <text x="460" y="380" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#ffffff">licence</text>
+  </g>
+
+  <text x="315" y="456" text-anchor="middle" font-family="'Space Grotesk', system-ui, sans-serif" font-size="16" font-weight="600" fill="#00ffcc">Free · Open source · Unity 6000.0+</text>
+</svg>

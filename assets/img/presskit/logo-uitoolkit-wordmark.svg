@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 320" width="1280" height="320" role="img" aria-label="Unity UI Toolkit Extensions v1.0.0-pre.1">
+  <defs>
+    <linearGradient id="pg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00ffee"/><stop offset="100%" stop-color="#0044aa"/>
+    </linearGradient>
+    <radialGradient id="ig" cx="50%" cy="46%" r="60%">
+      <stop offset="0%" stop-color="#00ffee" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#00ffee" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sheen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00ffee" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#050508" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="glowR" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="rgba(0,255,238,0.20)"/><stop offset="100%" stop-color="rgba(0,255,238,0)"/>
+    </radialGradient>
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="rgba(0,255,238,0.025)"/>
+    </pattern>
+    <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  
+    <rect x="40" y="48" width="224" height="224" rx="40" fill="#0a0a14"/>
+    <rect x="40.75" y="48.75" width="222.5" height="222.5" rx="39.25" fill="none" stroke="url(#pg)" stroke-width="1.5" opacity="0.6"/>
+    <rect x="40" y="48" width="224" height="224" rx="40" fill="url(#sheen)"/>
+    <rect x="40" y="48" width="224" height="224" rx="40" fill="url(#ig)"/>
+  <g fill="url(#pg)">
+      <rect x="94" y="100" width="34" height="104" rx="4.08"/>
+      <rect x="176" y="100" width="34" height="104" rx="4.08"/>
+      <rect x="94" y="170" width="116" height="34" rx="4.08"/>
+    </g>
+  <text x="312" y="150" font-family="Orbitron, 'Space Grotesk', system-ui, sans-serif" font-size="64" font-weight="700" letter-spacing="6" fill="#ffffff">UNITY UI</text>
+  <text x="312" y="226" font-family="Orbitron, 'Space Grotesk', system-ui, sans-serif" font-size="64" font-weight="700" letter-spacing="6" fill="#ffffff">EXTENSIONS</text>
+  <rect x="924" y="130" width="316" height="70" rx="6" fill="url(#pg)"/>
+  <text x="1082" y="176" text-anchor="middle" font-family="Orbitron, 'Space Grotesk', system-ui, sans-serif" font-size="32" font-weight="800" letter-spacing="1" fill="#050508">UI Toolkit</text>
+</svg>

@@ -5,6 +5,7 @@ description: "Adds configurable character spacing (tracking) to uGUI Text compon
 category: "Effects"
 permalink: /ugui/controls/letter-spacing/
 has_video: true
+deprecated_unity6: true
 tags: [effects, text, letter-spacing, tracking, typography]
 ---
 # Letter Spacing

@@ -125,7 +125,7 @@ permalink: /presskit/
         </div>
         <ul class="footer-links" style="margin:.5rem 0 1rem;">
           <li>Version 3.0.0-pre.1 · Unity 6000.0+ · BSD-3-Clause</li>
-          <li>100 controls · ~195 runtime scripts · 21 example scenes</li>
+          <li>101 controls · ~195 runtime scripts · 21 example scenes</li>
           <li>Categories: Controls · Primitives · Layouts · Effects &amp; Utilities</li>
         </ul>
         <a href="{{ '/ugui/' | relative_url }}" class="btn btn-u btn-sm">Explore uGUI</a>

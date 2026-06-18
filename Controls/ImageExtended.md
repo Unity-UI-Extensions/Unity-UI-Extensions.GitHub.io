@@ -5,6 +5,7 @@ description: "Improved Image control with rotation support and filled type witho
 category: "Primitives"
 permalink: /ugui/controls/image-extended/
 has_video: false
+deprecated_unity6: true
 tags: [primitives, image, rotation, filled]
 ---
 

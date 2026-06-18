@@ -27,6 +27,9 @@ layout: default
           {% if page.category %}
             <span class="badge-u">{{ page.category }}</span>
           {% endif %}
+          {% if page.deprecated_unity6 %}
+            <span class="badge-ghost">Deprecated in Unity 6</span>
+          {% endif %}
           {% if page.since %}
             <span class="badge-ghost">Since {{ page.since }}</span>
           {% endif %}

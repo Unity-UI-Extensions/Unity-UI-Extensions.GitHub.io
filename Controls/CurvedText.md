@@ -5,6 +5,7 @@ description: "Bends legacy uGUI Text along a curve (for projects not using TextM
 category: "Effects"
 permalink: /ugui/controls/curved-text/
 has_video: false
+deprecated_unity6: true
 tags: [effects, text, curve, bend]
 ---
 

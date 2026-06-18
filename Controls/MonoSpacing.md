@@ -5,6 +5,7 @@ description: "Forces monospace character widths on any uGUI Text component."
 category: "Effects"
 permalink: /ugui/controls/mono-spacing/
 has_video: true
+deprecated_unity6: true
 tags: [effects, text, monospace, spacing, typography]
 ---
 # Mono Spacing

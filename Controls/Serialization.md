@@ -5,6 +5,7 @@ description: "Serialization utilities for UI components."
 category: "Utilities"
 permalink: /ugui/controls/serialization/
 has_video: false
+deprecated_unity6: true
 tags: [utilities, serialization, save, data]
 ---
 

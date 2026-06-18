@@ -56,10 +56,10 @@ permalink: /
           <span class="badge badge-u">uGUI</span>
           <h3 class="package-card-name">Unity UI Extensions</h3>
           <p class="package-id"><code>com.unity.uiextensions</code></p>
-          <p class="package-card-desc">The original and largest collection. 100 production-ready controls built on Unity's legacy uGUI system — sliders, graphs, scrollers, effects, and more.</p>
+          <p class="package-card-desc">The original and largest collection. 101 production-ready controls built on Unity's legacy uGUI system — sliders, graphs, scrollers, effects, and more.</p>
         </div>
         <ul class="package-features">
-          <li>100 controls across 6 categories</li>
+          <li>101 controls across 6 categories</li>
           <li>BSD 3-Clause licence — use in commercial projects</li>
           <li>OpenUPM, Git URL, and Unity Package Manager</li>
           <li>Works in Unity 2019.4+</li>

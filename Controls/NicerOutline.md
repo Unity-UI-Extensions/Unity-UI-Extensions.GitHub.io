@@ -5,6 +5,7 @@ description: "Improved outline effect with cleaner corners than the built-in Out
 category: "Effects"
 permalink: /ugui/controls/nicer-outline/
 has_video: false
+deprecated_unity6: true
 tags: [effects, outline, text, polish]
 ---
 

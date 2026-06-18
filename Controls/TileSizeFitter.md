@@ -5,6 +5,7 @@ description: "Constrains child tiles to a fixed aspect ratio within a grid layou
 category: "Layout"
 permalink: /ugui/controls/tile-size-fitter/
 has_video: false
+deprecated_unity6: true
 tags: [layout, tile, aspect-ratio, grid, fitter]
 ---
 # TileSizeFitter

@@ -39,9 +39,9 @@ os.makedirs(DOWNLOADS, exist_ok=True)
 DATE = datetime.date.today().strftime("%B %Y")
 
 # ── Honest counts (the project's documented control totals) ──────────────────
-# uGUI: 64 controls with live demos + 36 documented (pending demo media) = 100
+# uGUI: 64 controls with live demos + 37 documented (pending demo media) = 101
 # (see _data/ugui_controls.yml and MISSING_CONTENT.md). UI Toolkit: 20.
-UGUI_CONTROLS, UITK_CONTROLS, TOTAL_CONTROLS = 100, 20, 120
+UGUI_CONTROLS, UITK_CONTROLS, TOTAL_CONTROLS = 101, 20, 121
 UGUI_EXAMPLES, UITK_EXAMPLES, TOTAL_EXAMPLES = 21, 8, 29
 
 # ── Brand palette ────────────────────────────────────────────────────────────

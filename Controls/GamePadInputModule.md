@@ -5,6 +5,7 @@ description: "Stripped-down input module for gamepad and keyboard UI navigation.
 category: "Utilities"
 permalink: /ugui/controls/gamepad-input-module/
 has_video: false
+deprecated_unity6: true
 tags: [utilities, gamepad, input, navigation, keyboard]
 ---
 

@@ -64,6 +64,7 @@ This page lists all the available controls within the UI Extensions project.  To
 |**[FlowLayoutGroup](/Controls/FlowLayoutGroup.md)** | A more rugged grid style layout group  || Layout / Extensions / Flow Layout Group | [Example Video](https://www.youtube.com/watch?v=tMe_3tJTZvc) || Simie|
 |**[ScrollSnap](/Controls/ScrollSnap.md)** | An alternate scroll snap control supporting both Horizontal and Vertical layouts in one control | UI / Extensions / Fixed Item Scroll / Snap Horizontal Single Item|||| xesenix|
 |**[HorizontalScrollSnap](/Controls/HorizontalScrollSnap.md)** | A pages scroll rect that can work in steps / pages, includes button support | UI / Extensions / Horizontal Scroll Snap | Layout / Extensions / Horizontal Scroll Snap |[tutorial video](https://www.youtube.com/watch?v=KJlIlWHlfMo)|| BinaryX|
+|**[UIHorizontalScroller](/Controls/UIHorizontalScroller.md)** | Rolling horizontal scrolling selector with center-focus zooming | UI / Extensions / Horizontal Scroller | Layout / Extensions / Horizontal Scroller ||| Ahmad S. Al-Faqeeh, Mrs. YakaYocha|
 |**[VerticalScrollSnap](/Controls/VerticalScrollSnap.md)** | A pages scroll rect that can work in steps / pages, includes button support | UI / Extensions / Vertical Scroll Snap | Layout / Extensions / Vertical Scroll Snap |[tutorial video](https://www.youtube.com/watch?v=KJlIlWHlfMo)|| BinaryX, Simon Darkside Jackson|
 || UI / Extensions / Fixed Item Scroll / Snap Horizontal Multiple Item||||| xesenix|
 || UI / Extensions / Fixed Item Scroll / Snap Vertical Single Item||||| xesenix|

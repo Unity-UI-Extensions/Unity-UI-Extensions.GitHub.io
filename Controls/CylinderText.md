@@ -5,6 +5,7 @@ description: "Curved text effect that wraps text around a cylindrical surface."
 category: "Effects"
 permalink: /ugui/controls/cylinder-text/
 has_video: false
+deprecated_unity6: true
 tags: [effects, text, cylinder, curve]
 ---
 

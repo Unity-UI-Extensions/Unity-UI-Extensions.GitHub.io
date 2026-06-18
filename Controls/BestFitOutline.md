@@ -5,6 +5,7 @@ description: "Outline effect that scales correctly with a Text component's best-
 category: "Effects"
 permalink: /ugui/controls/best-fit-outline/
 has_video: false
+deprecated_unity6: true
 tags: [effects, outline, text, best-fit]
 ---
 

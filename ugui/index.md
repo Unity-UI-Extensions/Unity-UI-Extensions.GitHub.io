@@ -1,7 +1,7 @@
 ---
 layout: default
 title: uGUI Controls — Unity UI Extensions
-description: 100 battle-tested uGUI controls for Unity's legacy UI system. Sliders, graphs, effects, layouts, and more.
+description: 101 battle-tested uGUI controls for Unity's legacy UI system. Sliders, graphs, effects, layouts, and more.
 permalink: /ugui/
 ---
 
@@ -14,7 +14,7 @@ permalink: /ugui/
     </nav>
     <div class="pkg-hero-badge"><span class="badge-u">uGUI Package</span></div>
     <h1>Unity UI Extensions</h1>
-    <p class="pkg-hero-lead">100 battle-tested controls for Unity's uGUI framework. The original community UI extension library — free, open source, and production-ready.</p>
+    <p class="pkg-hero-lead">101 battle-tested controls for Unity's uGUI framework. The original community UI extension library — free, open source, and production-ready.</p>
     <div class="pkg-hero-meta">
       <code class="pkg-id">com.unity.uiextensions</code>
       <span class="badge-ghost">BSD 3-Clause</span>

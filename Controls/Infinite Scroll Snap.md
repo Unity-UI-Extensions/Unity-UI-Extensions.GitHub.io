@@ -5,6 +5,7 @@ description: "Endlessly looping scroll-snap layout for UI elements."
 category: "Layout"
 permalink: /ugui/controls/infinite-scroll-snap/
 has_video: false
+deprecated_unity6: true
 tags: [layout, scroll, snap, infinite, loop]
 ---
 

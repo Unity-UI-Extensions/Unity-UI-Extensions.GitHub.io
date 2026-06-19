@@ -10,7 +10,7 @@ reference it in the control's `.md` file, set `preview_image` for the control in
 
 ---
 
-## uGUI Controls Pending Demo Media (36)
+## uGUI Controls Pending Demo Media (37)
 
 | Control | File | Notes |
 |---|---|---|
@@ -41,6 +41,7 @@ reference it in the control's `.md` file, set `preview_image` for the control in
 | Scroller | `Controls/Scroller.md` | Scroll utility — needs screenshot |
 | Serialization | `Controls/Serialization.md` | Utility — needs usage code example or screenshot |
 | ShaderEffects | `Controls/ShaderEffects.md` | Effects — needs screenshot |
+| UIHorizontalScroller | `Controls/UIHorizontalScroller.md` | Layout — needs horizontal scrolling demo screenshot or GIF |
 | UICircle | `Controls/UICircle.md` | Primitive — needs shape screenshot |
 | UICornerCut | `Controls/UICornerCut.md` | Effect — needs before/after screenshot |
 | UIImageCrop | `Controls/UIImageCrop.md` | Image utility — needs crop demo screenshot |

@@ -26,6 +26,67 @@ permalink: /changelog/
 
     <div class="changelog-release">
       <div class="changelog-release-header">
+        <h3 class="changelog-version">v3.0.0 — Unity 6, reimagined</h3>
+        <time class="changelog-date" datetime="2026-06">June 2026</time>
+      </div>
+      <p>The V3 relaunch brings full Unity 6 support, a refreshed brand, and the start of a two-package ecosystem — the proven uGUI library you know, now joined by a modern UI Toolkit companion.</p>
+
+      <h4>Highlights</h4>
+      <ul>
+        <li>Full Unity 6 support — the whole library verified and updated for Unity 6, with legacy dependencies cleared out and the examples refreshed</li>
+        <li>Two-package ecosystem — the new <a href="https://github.com/Unity-UI-Extensions/com.unity.uitoolkitextensions" target="_blank" rel="noopener">UI Toolkit Extensions</a> package launches alongside under the shared 3.0 banner</li>
+      </ul>
+
+      <h4>Added</h4>
+      <ul>
+        <li>New control: <code>GridRawImage</code></li>
+        <li>New control: <code>UI_Knob2</code> (UI Knob 2)</li>
+        <li>New control: UI Segmented Circle / Segmented Control</li>
+        <li>New control: UI Graphic Selector</li>
+        <li><code>UILineConnector</code>: the pivot can now be used as the reference point when drawing lines (<a href="https://github.com/Unity-UI-Extensions/com.unity.uiextensions/pull/490" target="_blank" rel="noopener">#490</a>)</li>
+        <li><code>UILineConnector</code>: new "close line" option to finish a line off and fill any gaps at the end</li>
+        <li><code>BoxSlider</code>: added <code>SetXWithoutNotify</code> and <code>SetYWithoutNotify</code></li>
+      </ul>
+
+      <h4>Fixed</h4>
+      <ul>
+        <li><code>ReorderableList</code>: fixed a null-reference exception, and resolved element-stacking when moving elements slightly</li>
+        <li>Scroll Snap: resolved a race condition that could raise a NaN error when lerping; made rescaling and full-screen scroll snap more resilient</li>
+        <li>HSS/VSS: guarded against a divide-by-zero when the scroll snap has a single page; <code>GetCurrentPage</code> made more resilient</li>
+        <li>Infinite Scroll: resolved out-of-bounds issues</li>
+        <li><code>FlowLayoutGroup</code>: addressed layout issues and fixed the last line overflowing the rect bounds</li>
+        <li><code>UIParticleSystem</code>: new "CullingMode" option to resolve unscaled delta time (<a href="https://github.com/Unity-UI-Extensions/com.unity.uiextensions/issues/486" target="_blank" rel="noopener">#486</a> / <a href="https://github.com/Unity-UI-Extensions/com.unity.uiextensions/issues/487" target="_blank" rel="noopener">#487</a>)</li>
+        <li><code>Gradient2</code>: fixed radial triangle add order (<a href="https://github.com/Unity-UI-Extensions/com.unity.uiextensions/pull/384" target="_blank" rel="noopener">#384</a>)</li>
+        <li><code>ScrollRect</code>: force <code>content</code> setup (<a href="https://github.com/Unity-UI-Extensions/com.unity.uiextensions/pull/485" target="_blank" rel="noopener">#485</a>)</li>
+        <li><code>UILineConnector</code>: improved point-array calculation (<a href="https://github.com/Unity-UI-Extensions/com.unity.uiextensions/pull/495" target="_blank" rel="noopener">#495</a>); refresh on global scale change</li>
+      </ul>
+
+      <h4>Changed</h4>
+      <ul>
+        <li><code>Gradient2</code>: optimised <code>ModifyMesh</code></li>
+        <li>Layout groups now rebuild on disable/enable</li>
+        <li>General TMPro/Text compatibility housekeeping (<a href="https://github.com/Unity-UI-Extensions/com.unity.uiextensions/issues/477" target="_blank" rel="noopener">#477</a>)</li>
+        <li>Compile-flag support for Unity 6 (<a href="https://github.com/Unity-UI-Extensions/com.unity.uiextensions/pull/493" target="_blank" rel="noopener">#493</a>)</li>
+      </ul>
+
+      <h4>Contributors</h4>
+      <p>Huge thanks to
+        <a href="https://github.com/SimonDarksideJ" target="_blank" rel="noopener">@SimonDarksideJ</a>,
+        <a href="https://github.com/bluefallsky" target="_blank" rel="noopener">@bluefallsky</a>,
+        <a href="https://github.com/hugoymh" target="_blank" rel="noopener">@hugoymh</a>,
+        <a href="https://github.com/JavierMonton" target="_blank" rel="noopener">@JavierMonton</a>,
+        <a href="https://github.com/Dover8" target="_blank" rel="noopener">@Dover8</a>,
+        <a href="https://github.com/fgrg2801" target="_blank" rel="noopener">@fgrg2801</a> and
+        <a href="https://github.com/Moderbord" target="_blank" rel="noopener">@Moderbord</a>.</p>
+
+      <div class="changelog-links">
+        <a href="https://github.com/Unity-UI-Extensions/com.unity.uiextensions/releases/tag/v3.0.0" class="btn btn-ghost btn-sm" target="_blank" rel="noopener">View Release on GitHub</a>
+        <a href="https://github.com/Unity-UI-Extensions/com.unity.uiextensions/compare/2.3.2...v3.0.0" class="btn btn-ghost btn-sm" target="_blank" rel="noopener">Full Diff</a>
+      </div>
+    </div>
+
+    <div class="changelog-release">
+      <div class="changelog-release-header">
         <h3 class="changelog-version">v2.3.2 — Rejuvenation</h3>
         <time class="changelog-date" datetime="2023-11-26">26 November 2023</time>
       </div>

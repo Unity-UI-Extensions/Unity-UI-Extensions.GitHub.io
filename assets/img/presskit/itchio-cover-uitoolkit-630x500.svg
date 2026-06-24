@@ -44,9 +44,9 @@
   <text x="315" y="286" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="13" fill="#00ffcc">com.unity.uitoolkitextensions</text>
 
   <g text-anchor="middle">
-    <text x="170" y="356" font-family="Orbitron, 'Space Grotesk', system-ui, sans-serif" font-size="34" font-weight="800" fill="#00ffee" filter="url(#softGlow)">20</text>
+    <text x="170" y="356" font-family="Orbitron, 'Space Grotesk', system-ui, sans-serif" font-size="34" font-weight="800" fill="#00ffee" filter="url(#softGlow)">25</text>
     <text x="170" y="380" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#ffffff">controls</text>
-    <text x="315" y="356" font-family="Orbitron, 'Space Grotesk', system-ui, sans-serif" font-size="34" font-weight="800" fill="#00ffee" filter="url(#softGlow)">8</text>
+    <text x="315" y="356" font-family="Orbitron, 'Space Grotesk', system-ui, sans-serif" font-size="34" font-weight="800" fill="#00ffee" filter="url(#softGlow)">12</text>
     <text x="315" y="380" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#ffffff">examples</text>
     <text x="460" y="356" font-family="Orbitron, 'Space Grotesk', system-ui, sans-serif" font-size="30" font-weight="800" fill="url(#pg)">MIT</text>
     <text x="460" y="380" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#ffffff">licence</text>

@@ -104,21 +104,64 @@ CONTROLS = [
      "Horizontal row button combining a left-side icon with label and subtitle text.",
      ["primitives", "button", "icon", "label", "row"]),
 
+    ("dropdown",              "DropDownControl.md",               "Dropdown",
+     "Forms",
+     "Wheel-style dropdown picker that opens a touch-friendly modal list for single-value selection.",
+     ["forms", "dropdown", "combobox", "select", "picker"]),
+
+    ("social-link-container", "SocialLinkContainer.md",           "Social Link Container",
+     "Forms",
+     "Editable list of platform-labelled social link fields with add/remove and a platform picker.",
+     ["forms", "social", "links", "list", "editable"]),
+
+    # Navigation
+    ("dropdown-menu",         "DropDownMenuControl.md",           "Dropdown Menu",
+     "Navigation",
+     "Anchored overlay action menu with large tappable rows and backdrop-tap dismiss.",
+     ["navigation", "menu", "dropdown", "overlay", "actions"]),
+
+    ("screen-header",         "ScreenHeader.md",                  "Screen Header",
+     "Navigation",
+     "Configurable top app-bar with title, notch spacer, and up to four edge action buttons.",
+     ["navigation", "header", "appbar", "title", "actions"]),
+
+    # Layout
+    ("elastic-list-view",     "ElasticListView.md",               "Elastic List View",
+     "Layout",
+     "Vertical list with iOS-style elastic overscroll and an optional swipe-up load-more trigger.",
+     ["layout", "list", "scroll", "elastic", "load-more"]),
+
+    # Feedback
+    ("notification-badge",    "NotificationBadge.md",             "Notification Badge",
+     "Feedback",
+     "Small rounded unread-count badge that auto-hides at zero and clamps to \"99+\".",
+     ["feedback", "badge", "notification", "count", "indicator"]),
+
     # Utilities
     ("grayscale-image",       "GrayscaleImage.md",                "Grayscale Image",
      "Utilities",
      "Shader-based Image element that renders in greyscale with adjustable intensity.",
      ["utilities", "image", "grayscale", "shader", "effect"]),
+
+    ("image-crop-overlay",    "ImageCropOverlayControl.md",       "Image Crop Overlay",
+     "Utilities",
+     "Full-screen modal image cropper with drag-to-pan, pinch-to-zoom, and configurable square export.",
+     ["utilities", "image", "crop", "editor", "overlay"]),
 ]
+
+
+def _yq(s):
+    # Escape for a YAML double-quoted scalar.
+    return s.replace("\\", "\\\\").replace('"', '\\"')
 
 
 def make_front_matter(slug, name, category, description, tags):
     tags_str = "[" + ", ".join(tags) + "]"
     return f"""---
 layout: control-uitk
-title: "{name}"
-description: "{description}"
-category: "{category}"
+title: "{_yq(name)}"
+description: "{_yq(description)}"
+category: "{_yq(category)}"
 permalink: /uitoolkit/controls/{slug}/
 has_video: false
 tags: {tags_str}

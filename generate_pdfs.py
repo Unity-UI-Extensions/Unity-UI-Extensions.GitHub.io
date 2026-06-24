@@ -39,10 +39,10 @@ os.makedirs(DOWNLOADS, exist_ok=True)
 DATE = datetime.date.today().strftime("%B %Y")
 
 # ── Honest counts (the project's documented control totals) ──────────────────
-# uGUI: 64 controls with live demos + 37 documented (pending demo media) = 101
-# (see _data/ugui_controls.yml and MISSING_CONTENT.md). UI Toolkit: 20.
-UGUI_CONTROLS, UITK_CONTROLS, TOTAL_CONTROLS = 101, 20, 121
-UGUI_EXAMPLES, UITK_EXAMPLES, TOTAL_EXAMPLES = 21, 8, 29
+# uGUI: 58 controls with live demos + 43 documented (pending demo media) = 101
+# (see _data/ugui_controls.yml and MISSING_CONTENT.md). UI Toolkit: 25.
+UGUI_CONTROLS, UITK_CONTROLS, TOTAL_CONTROLS = 101, 25, 126
+UGUI_EXAMPLES, UITK_EXAMPLES, TOTAL_EXAMPLES = 22, 12, 34
 
 # ── Brand palette ────────────────────────────────────────────────────────────
 BG, BG2 = "#050508", "#08080e"
@@ -163,16 +163,16 @@ def presskit_html():
   <tr><th>Release</th><td>Version 3.0 &mdash; a two-package ecosystem relaunch</td></tr>
   <tr><th>Maintainer</th><td>Simon &ldquo;darkside&rdquo; Jackson (@SimonDarksideJ) &amp; a global community of contributors</td></tr>
   <tr><th>Community since</th><td>2015</td></tr>
-  <tr><th>Packages</th><td>uGUI &mdash; <code>com.unity.uiextensions</code> (v3.0.0-pre.1, BSD-3-Clause)<br>UI Toolkit &mdash; <code>com.unity.uitoolkitextensions</code> (v1.0.0-pre.1, MIT)</td></tr>
+  <tr><th>Packages</th><td>uGUI &mdash; <code>com.unity.uiextensions</code> (v3.0.0, BSD-3-Clause)<br>UI Toolkit &mdash; <code>com.unity.uitoolkitextensions</code> (v1.0.0, MIT)</td></tr>
   <tr><th>Engine</th><td>Unity 6 (6000.0+); the established 2.x line remains for older Unity versions</td></tr>
   <tr><th>Controls</th><td><b>{TOTAL_CONTROLS}</b> total &mdash; {UGUI_CONTROLS} uGUI &middot; {UITK_CONTROLS} UI Toolkit</td></tr>
   <tr><th>Examples</th><td><b>{TOTAL_EXAMPLES}</b> playable example scenes ({UGUI_EXAMPLES} uGUI &middot; {UITK_EXAMPLES} UI Toolkit)</td></tr>
   <tr><th>Price</th><td>Free &mdash; 100% open source, no lock-in</td></tr>
-  <tr><th>Distribution</th><td>Unity Package Manager (OpenUPM &amp; git URL) &middot; Itch.io &middot; Unity Asset Store (planned)</td></tr>
+  <tr><th>Distribution</th><td>Unity Package Manager (OpenUPM &amp; git URL) &middot; Itch.io &middot; Unity Asset Store (uGUI; UI Toolkit listing coming soon)</td></tr>
   <tr><th>Website</th><td>unity-ui-extensions.github.io</td></tr>
-  <tr><th>Source</th><td>github.com/Unity-UI-Extensions</td></tr>
-  <tr><th>Community</th><td>Discord &middot; Gitter &middot; Unity Discussions</td></tr>
-  <tr><th>Support</th><td>patreon.com/simonDarksideJ</td></tr>
+  <tr><th>Source</th><td>uGUI &mdash; github.com/Unity-UI-Extensions/com.unity.uiextensions<br>UI Toolkit &mdash; github.com/Unity-UI-Extensions/com.unity.uitoolkitextensions</td></tr>
+  <tr><th>Community</th><td>Gitter &middot; GitHub Discussions</td></tr>
+  <tr><th>Support</th><td>patreon.com/UnityUIExtensions</td></tr>
   <tr><th>Press contact</th><td>uiextensions@zenithmoon.com &middot; maintainer via GitHub / Patreon</td></tr>
 </table>
 
@@ -189,7 +189,7 @@ Jackson and a global community of contributors.</p>
 <p>The original and largest collection &mdash; {UGUI_CONTROLS} production-ready controls for Unity's uGUI system,
 refined over a decade of community use. This is the V3 release.</p>
 <ul>
-  <li>Package id <code>com.unity.uiextensions</code> &middot; v3.0.0-pre.1 &middot; Unity 6000.0+ &middot; BSD-3-Clause</li>
+  <li>Package id <code>com.unity.uiextensions</code> &middot; v3.0.0 &middot; Unity 6000.0+ &middot; BSD-3-Clause</li>
   <li>{UGUI_CONTROLS} controls &middot; ~195 runtime scripts &middot; {UGUI_EXAMPLES} example scenes</li>
   <li>Categories: Controls, Primitives, Layouts, Effects &amp; Utilities</li>
 </ul>
@@ -197,7 +197,7 @@ refined over a decade of community use. This is the V3 release.</p>
 <p>The modern companion &mdash; {UITK_CONTROLS} USS-themable, data-driven controls built from the ground up for
 Unity 6's UI Toolkit runtime.</p>
 <ul>
-  <li>Package id <code>com.unity.uitoolkitextensions</code> &middot; v1.0.0-pre.1 &middot; Unity 6000.0+ &middot; MIT</li>
+  <li>Package id <code>com.unity.uitoolkitextensions</code> &middot; v1.0.0 &middot; Unity 6000.0+ &middot; MIT</li>
   <li>{UITK_CONTROLS} controls &middot; ~21 runtime scripts &middot; {UITK_EXAMPLES} example scenes</li>
   <li>Built with USS &middot; fully themable &middot; data-driven UI</li>
 </ul>
@@ -233,7 +233,7 @@ you would build anyway are already here. Ship faster. Build better.&rdquo;<br>
   <li>uGUI repo: github.com/Unity-UI-Extensions/com.unity.uiextensions</li>
   <li>UI Toolkit repo: github.com/Unity-UI-Extensions/com.unity.uitoolkitextensions</li>
   <li>Itch.io (uGUI): unityuiextensions.itch.io/uiextensions2-0</li>
-  <li>Support (Patreon): patreon.com/simonDarksideJ</li>
+  <li>Support (Patreon): patreon.com/UnityUIExtensions</li>
   <li>Maintainer: Simon &ldquo;darkside&rdquo; Jackson (@SimonDarksideJ)</li>
 </ul>
 """

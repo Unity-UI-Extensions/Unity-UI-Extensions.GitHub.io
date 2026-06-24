@@ -20,7 +20,7 @@ permalink: /ugui/install/
     <div class="pkg-hero-meta">
       <code class="pkg-id">com.unity.uiextensions</code>
       <span class="badge-ghost">BSD 3-Clause</span>
-      <span class="badge-ghost">Unity 2019.4+</span>
+      <span class="badge-ghost">Unity 6000.0+</span>
     </div>
   </div>
 </section>
@@ -67,7 +67,7 @@ Scope: com.unity.uiextensions</code></pre>
     </div>
     <p>To pin to a specific release, append the tag to the URL:</p>
     <div class="install-panel">
-      <pre><code>https://github.com/Unity-UI-Extensions/com.unity.uiextensions.git#2.3.2</code></pre>
+      <pre><code>https://github.com/Unity-UI-Extensions/com.unity.uiextensions.git#3.0.0</code></pre>
       <button class="copy-btn" aria-label="Copy versioned git URL">Copy</button>
     </div>
     <p>Check the <a href="https://github.com/Unity-UI-Extensions/com.unity.uiextensions/releases" target="_blank" rel="noopener">Releases page</a> for all available version tags.</p>
@@ -111,7 +111,7 @@ Scope: com.unity.uiextensions</code></pre>
 
     <h2 id="install-requirements" class="section-title">Requirements</h2>
     <ul>
-      <li>Unity <strong>2019.4 LTS</strong> or later</li>
+      <li>Unity <strong>6000.0</strong> or later</li>
       <li>Unity's built-in <strong>UI (uGUI)</strong> module — installed by default in all Unity projects</li>
       <li>No additional dependencies required</li>
     </ul>

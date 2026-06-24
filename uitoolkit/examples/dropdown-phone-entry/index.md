@@ -1,0 +1,61 @@
+---
+layout: example-uitk
+title: "Dropdown Phone Entry"
+description: "A phone-number entry form that pairs a country-code dropdown picker with pill input fields."
+category: "Forms"
+permalink: /uitoolkit/examples/dropdown-phone-entry/
+tags: [forms, dropdown, phone, input]
+controls:
+  - name: "Dropdown"
+    permalink: /uitoolkit/controls/dropdown/
+  - name: "Pill Input Field"
+    permalink: /uitoolkit/controls/pill-input-field/
+  - name: "Pill Button"
+    permalink: /uitoolkit/controls/pill-button/
+---
+
+## Overview
+
+This example recreates a phone verification entry layout flow. Combining the `DropDownControl` for dial-code selection and `PillInputField` for phone-number input inside a single shared shell.
+
+## Controls Featured
+
+- [DropDownControl](/uitoolkit/controls/dropdown/) — wheel-style modal picker used for the dial code
+- [PillInputField](/uitoolkit/controls/pill-input-field/) — phone-number text entry field
+- [PillButton](/uitoolkit/controls/pill-button/) — send-code action button
+
+## Scene Setup
+
+This package now ships a ready-made sample scene in `Examples~/DropDownPhoneEntry/DropDownPhoneEntryDemo.unity`.
+
+If you want to recreate it manually instead:
+
+1. Create a new Unity scene.
+2. Add a GameObject with a `UIDocument`.
+3. Assign the sample panel settings from `Examples~/Shared/UIToolkitExtensionsExamplePanelSettings.asset`.
+4. Add the `DropDownPhoneEntryDemo` MonoBehaviour from `Examples~/DropDownPhoneEntry/` to the same GameObject.
+5. Press Play.
+
+## What to Expect
+
+The screen presents a single verification card with:
+
+- A dial-code trigger on the left that opens the `DropDownControl` picker.
+- A `PillInputField` on the right for entering a phone number.
+- A send button that stays disabled until the input contains at least 10 digits.
+- A status label that reflects picker state, validation state, and the final sample send action.
+
+## Key Code Pattern
+
+```csharp
+dialCodePicker = new DropDownControl
+{
+    Items = new[] { "+1", "+33", "+44", "+49" },
+};
+
+phoneNumberInput.OnValueChanged += value =>
+{
+    bool isValid = ExtractDigits(value).Length >= 10;
+    sendCodeButton.SetEnabled(isValid);
+};
+```

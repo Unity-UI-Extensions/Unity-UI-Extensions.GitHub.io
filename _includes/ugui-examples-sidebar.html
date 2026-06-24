@@ -1,0 +1,52 @@
+<aside class="sidebar" role="complementary" aria-label="uGUI examples navigation">
+  <button class="sidebar-toggle" aria-label="Toggle examples list">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    Examples
+  </button>
+
+  <nav class="sidebar-nav" aria-label="uGUI examples list">
+    <div class="sidebar-section">
+      <h3 class="sidebar-heading"><a href="{{ '/ugui/examples/' | relative_url }}">← All uGUI Examples</a></h3>
+    </div>
+
+    {% assign groups = site.data.ugui_examples | group_by: "category" %}
+    {% assign order = "Layout,Input,Navigation,Primitives,Effects,Utilities" | split: "," %}
+
+    {% for cat_name in order %}
+      {% assign group = groups | where: "name", cat_name | first %}
+      {% if group %}
+        <div class="sidebar-section">
+          <h4 class="sidebar-cat">{{ cat_name }}</h4>
+          <ul class="sidebar-list" role="list">
+            {% for ex in group.items %}
+              <li>
+                <a href="{{ ex.permalink | relative_url }}"
+                   class="sidebar-link{% if page.url == ex.permalink %} active{% endif %}">
+                  {{ ex.name }}
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endif %}
+    {% endfor %}
+
+    {% for group in groups %}
+      {% unless order contains group.name %}
+        <div class="sidebar-section">
+          <h4 class="sidebar-cat">{{ group.name }}</h4>
+          <ul class="sidebar-list" role="list">
+            {% for ex in group.items %}
+              <li>
+                <a href="{{ ex.permalink | relative_url }}"
+                   class="sidebar-link{% if page.url == ex.permalink %} active{% endif %}">
+                  {{ ex.name }}
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endunless %}
+    {% endfor %}
+  </nav>
+</aside>

@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="500" viewBox="0 0 1024 500" role="img" aria-label="Unity UI Extensions 3.0 feature graphic">
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="500" viewBox="0 0 1024 500" role="img" aria-label="Unity UI Extensions feature graphic">
   <defs>
     <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#ff0099"/>
@@ -45,9 +45,7 @@
   <g transform="translate(224,108)">
     <text x="0" y="0" font-family="Orbitron, 'Space Grotesk', system-ui, sans-serif" font-size="40" font-weight="800" letter-spacing="3" fill="#ffffff">UNITY UI EXTENSIONS</text>
     <g transform="translate(2,18)" font-family="'JetBrains Mono', monospace">
-      <rect x="0" y="0" width="88" height="34" rx="2" fill="rgba(255,0,153,0.10)" stroke="url(#brandGrad)" stroke-width="1.2"/>
-      <text x="44" y="24" text-anchor="middle" font-size="18" font-weight="700" fill="#ffffff">v3.0</text>
-      <text x="104" y="24" font-family="'Space Grotesk', system-ui, sans-serif" font-size="18" font-weight="600" fill="#dd88ff">Two packages. <tspan fill="url(#brandGrad)">One ecosystem.</tspan></text>
+      <text x="0" y="24" font-family="'Space Grotesk', system-ui, sans-serif" font-size="18" font-weight="600" fill="#dd88ff">Two packages. <tspan fill="url(#brandGrad)">One ecosystem.</tspan></text>
     </g>
   </g>
 
@@ -61,12 +59,12 @@
   <g transform="translate(80,330)" font-family="'JetBrains Mono', monospace">
     <g>
       <rect x="0" y="0" width="196" height="96" rx="2" fill="rgba(255,0,153,0.07)" stroke="rgba(255,0,153,0.35)"/>
-      <text x="22" y="54" font-family="Orbitron, sans-serif" font-size="42" font-weight="800" fill="#ff0099" filter="url(#softGlow)">120</text>
+      <text x="22" y="54" font-family="Orbitron, sans-serif" font-size="42" font-weight="800" fill="#ff0099" filter="url(#softGlow)">126</text>
       <text x="22" y="80" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#ffffff">UI controls</text>
     </g>
     <g transform="translate(220,0)">
       <rect x="0" y="0" width="196" height="96" rx="2" fill="rgba(0,255,238,0.06)" stroke="rgba(0,255,238,0.35)"/>
-      <text x="22" y="54" font-family="Orbitron, sans-serif" font-size="42" font-weight="800" fill="#00ffee" filter="url(#softGlow)">29</text>
+      <text x="22" y="54" font-family="Orbitron, sans-serif" font-size="42" font-weight="800" fill="#00ffee" filter="url(#softGlow)">34</text>
       <text x="22" y="80" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#ffffff">example scenes</text>
     </g>
     <g transform="translate(440,0)">

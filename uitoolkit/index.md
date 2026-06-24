@@ -1,7 +1,7 @@
 ---
 layout: default
 title: UIToolkit Controls — Unity UIToolkit Extensions
-description: 20 modern UI controls and manipulators for Unity's UI Toolkit framework. Navigation, forms, feedback, and more.
+description: 25 modern UI controls and manipulators for Unity's UI Toolkit framework. Navigation, forms, feedback, and more.
 permalink: /uitoolkit/
 ---
 
@@ -14,14 +14,15 @@ permalink: /uitoolkit/
     </nav>
     <div class="pkg-hero-badge"><span class="badge-t">UI Toolkit Package</span></div>
     <h1>UIToolkit Extensions</h1>
-    <p class="pkg-hero-lead">20 modern controls and manipulators for Unity's UI Toolkit framework. Built for runtime UI — ready for production.</p>
+    <p class="pkg-hero-lead">25 modern controls and manipulators for Unity's UI Toolkit framework. Built for runtime UI — ready for production.</p>
     <div class="pkg-hero-meta">
       <code class="pkg-id">com.unity.uitoolkitextensions</code>
       <span class="badge-ghost">MIT Licence</span>
-      <span class="badge-ghost">Unity 2022.3+</span>
+      <span class="badge-ghost">Unity 6000.0+</span>
     </div>
     <div class="pkg-hero-actions">
       <a href="#controls" class="btn btn-t">Browse Controls</a>
+      <a href="{{ '/uitoolkit/examples/' | relative_url }}" class="btn btn-ghost">Browse Examples</a>
       <a href="{{ '/uitoolkit/install/' | relative_url }}" class="btn btn-ghost">Installation Guide</a>
       <a href="https://github.com/Unity-UI-Extensions/com.unity.uitoolkitextensions" class="btn btn-ghost" target="_blank" rel="noopener">GitHub Repo</a>
       <a href="{{ '/assets/downloads/Unity-UI-Extensions-UIToolkit-Documentation.pdf' | relative_url }}" class="btn btn-ghost" download>Download PDF Docs</a>
@@ -89,6 +90,7 @@ Scope: com.unity.uitoolkitextensions</code></pre>
         <button class="filter-btn active" data-filter="all">All</button>
         <button class="filter-btn" data-filter="navigation">Navigation</button>
         <button class="filter-btn" data-filter="forms">Forms</button>
+        <button class="filter-btn" data-filter="layout">Layout</button>
         <button class="filter-btn" data-filter="feedback">Feedback</button>
         <button class="filter-btn" data-filter="primitives">Primitives</button>
         <button class="filter-btn" data-filter="utilities">Utilities</button>

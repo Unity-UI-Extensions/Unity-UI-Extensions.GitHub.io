@@ -148,7 +148,7 @@ permalink: /changelog/
         <time class="changelog-date">Coming Soon</time>
       </div>
       <p>Initial public release of the UIToolkit Extensions package. Full details will be published on launch.</p>
-      <p>20 controls across Navigation, Forms, Feedback, Primitives, and Utilities categories — built for Unity 2022.3+ runtime UI.</p>
+      <p>25 controls across Navigation, Forms, Layout, Feedback, Primitives, and Utilities categories — built for Unity 6000.0+ runtime UI.</p>
 
       <div class="changelog-links">
         <a href="https://github.com/Unity-UI-Extensions/com.unity.uitoolkitextensions/releases" class="btn btn-ghost btn-sm" target="_blank" rel="noopener">Releases on GitHub</a>

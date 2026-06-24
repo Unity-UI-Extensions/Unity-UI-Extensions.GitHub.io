@@ -45,7 +45,7 @@ jobs:
 
   publishpdf:
     needs: build
-    runs-on: ubuntu-laest
+    runs-on: ubuntu-latest
     steps:
       # ── Generate documentation & press-kit PDFs (headless Chrome) ────────────
       - name: Set up Python

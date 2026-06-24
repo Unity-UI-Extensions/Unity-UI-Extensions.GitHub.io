@@ -18,10 +18,11 @@ permalink: /ugui/
     <div class="pkg-hero-meta">
       <code class="pkg-id">com.unity.uiextensions</code>
       <span class="badge-ghost">BSD 3-Clause</span>
-      <span class="badge-ghost">Unity 2019.4+</span>
+      <span class="badge-ghost">Unity 6000.0+</span>
     </div>
     <div class="pkg-hero-actions">
       <a href="#controls" class="btn btn-u">Browse Controls</a>
+      <a href="{{ '/ugui/examples/' | relative_url }}" class="btn btn-ghost">Browse Examples</a>
       <a href="{{ '/ugui/install/' | relative_url }}" class="btn btn-ghost">Installation Guide</a>
       <a href="https://github.com/Unity-UI-Extensions/com.unity.uiextensions" class="btn btn-ghost" target="_blank" rel="noopener">GitHub Repo</a>
       <a href="{{ '/assets/downloads/Unity-UI-Extensions-uGUI-Documentation.pdf' | relative_url }}" class="btn btn-ghost" download>Download PDF Docs</a>
@@ -62,7 +63,7 @@ Scope: com.unity.uiextensions</code></pre>
           <pre><code>https://github.com/Unity-UI-Extensions/com.unity.uiextensions.git</code></pre>
           <button class="copy-btn" aria-label="Copy git URL">Copy</button>
         </div>
-        <p>Pin to a specific release by appending <code>#2.3.2</code> (or desired tag) to the URL.</p>
+        <p>Pin to a specific release by appending <code>#3.0.0</code> (or desired tag) to the URL.</p>
       </div>
 
       <div class="tab-panel" data-panel="upm">

@@ -1,4 +1,4 @@
-# UIToolkit Controls — 20 controls
+# UIToolkit Controls — 25 controls
 # All controls have complete text/code documentation but no visual demos yet.
 # See MISSING_CONTENT.md for the full list of missing screenshots/GIFs.
 
@@ -30,6 +30,24 @@
   preview_image: ""
   has_video: false
   tags: [navigation, stepper, direction, compass, selector]
+
+- name: Screen Header
+  slug: screen-header
+  permalink: /uitoolkit/controls/screen-header/
+  category: Navigation
+  description: Configurable top app-bar with title, notch spacer, and up to four edge action buttons.
+  preview_image: ""
+  has_video: false
+  tags: [navigation, header, appbar, title, actions]
+
+- name: Dropdown Menu
+  slug: dropdown-menu
+  permalink: /uitoolkit/controls/dropdown-menu/
+  category: Navigation
+  description: Anchored overlay action menu with large tappable rows and backdrop-tap dismiss.
+  preview_image: ""
+  has_video: false
+  tags: [navigation, menu, dropdown, overlay, actions]
 
 # ── Forms ─────────────────────────────────────────────────────────────────────
 
@@ -96,6 +114,26 @@
   has_video: false
   tags: [forms, toggle, group, color, multi-select]
 
+- name: Social Link Container
+  slug: social-link-container
+  permalink: /uitoolkit/controls/social-link-container/
+  category: Forms
+  description: Editable list of platform-labelled social link fields with add/remove and a platform picker.
+  preview_image: ""
+  has_video: false
+  tags: [forms, social, links, list, editable]
+
+# ── Layout ───────────────────────────────────────────────────────────────────
+
+- name: Elastic List View
+  slug: elastic-list-view
+  permalink: /uitoolkit/controls/elastic-list-view/
+  category: Layout
+  description: Vertical list with iOS-style elastic overscroll and an optional swipe-up load-more trigger.
+  preview_image: ""
+  has_video: false
+  tags: [layout, list, scroll, elastic, load-more]
+
 # ── Feedback ─────────────────────────────────────────────────────────────────
 
 - name: Step Progress Bar
@@ -142,6 +180,15 @@
   preview_image: ""
   has_video: false
   tags: [feedback, placeholder, coming-soon, panel]
+
+- name: Notification Badge
+  slug: notification-badge
+  permalink: /uitoolkit/controls/notification-badge/
+  category: Feedback
+  description: Small rounded unread-count badge that auto-hides at zero and clamps to "99+".
+  preview_image: ""
+  has_video: false
+  tags: [feedback, badge, notification, count, indicator]
 
 # ── Primitives ───────────────────────────────────────────────────────────────
 

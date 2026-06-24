@@ -1,11 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 320" width="1280" height="320" role="img" aria-label="Unity UI Extensions 3.0">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 320" width="1280" height="320" role="img" aria-label="Unity UI Extensions">
   <defs>
     <!-- Signature brand gradient: 135deg magenta -> cyan -->
     <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%" gradientTransform="rotate(-45 0.5 0.5)">
       <stop offset="0%" stop-color="#ff0099"/>
       <stop offset="100%" stop-color="#00ffee"/>
     </linearGradient>
-    <!-- Horizontal version of the gradient for the 3.0 chip -->
+    <!-- Horizontal version of the brand gradient -->
     <linearGradient id="chipGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#ff0099"/>
       <stop offset="100%" stop-color="#00ffee"/>
@@ -41,9 +41,4 @@
   <text x="312" y="150" font-family="Orbitron, 'Space Grotesk', system-ui, sans-serif" font-size="66" font-weight="700" letter-spacing="6" fill="#ffffff">UNITY UI</text>
   <text x="312" y="226" font-family="Orbitron, 'Space Grotesk', system-ui, sans-serif" font-size="66" font-weight="700" letter-spacing="6" fill="#ffffff">EXTENSIONS</text>
 
-  <!-- Version chip: magenta->cyan 3.0 -->
-  <g>
-    <rect x="1066" y="134" width="150" height="60" rx="4" fill="url(#chipGrad)"/>
-    <text x="1141" y="176" text-anchor="middle" font-family="'JetBrains Mono', Orbitron, monospace" font-size="36" font-weight="700" letter-spacing="2" fill="#050508">3.0</text>
-  </g>
 </svg>

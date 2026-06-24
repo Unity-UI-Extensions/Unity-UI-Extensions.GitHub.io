@@ -1,4 +1,4 @@
-# Missing Demo Content — uGUI Controls
+# Missing Demo Content — uGUI &amp; UI Toolkit Controls
 
 The controls listed here now have **complete documentation pages and are listed**
 on the site (shown with a placeholder card) — they are only **missing demo media**
@@ -10,7 +10,11 @@ reference it in the control's `.md` file, set `preview_image` for the control in
 
 ---
 
-## uGUI Controls Pending Demo Media (37)
+## uGUI Controls Pending Demo Media (43)
+
+> Count derived from `_data/ugui_controls.yml`: of 101 controls, **58** have a
+> `preview_image` and **43** are still blank (`preview_image: ""`). The 43 blank
+> entries are listed below.
 
 | Control | File | Notes |
 |---|---|---|
@@ -51,18 +55,31 @@ reference it in the control's `.md` file, set `preview_image` for the control in
 | UISquircle | `Controls/UISquircle.md` | Primitive — needs squircle shape screenshot |
 | UIWindowBase | `Controls/UIWindowBase.md` | Window — needs screenshot |
 | switchToRectTransform | `Controls/switchToRectTransform.md` | Utility — needs inspector/usage screenshot |
+| Diamond Graph | `Controls/DiamondGraph.md` | Primitive — needs radar/stat-graph screenshot |
+| Grid Raw Image | `Controls/GridRawImage.md` | Primitive — needs grid render screenshot |
+| Radial Layout | `Controls/RadialLayout.md` | Layout — needs radial arrangement screenshot |
+| UI Circle Segmented | `Controls/UICircleSegmented.md` | Primitive — needs segmented-circle screenshot |
+| UI Graphic Sector | `Controls/UIGraphicSector.md` | Primitive — needs sector/arc screenshot |
+| UI Vertical Scroller | `Controls/UIVerticalScroller.md` | Layout — needs vertical scrolling demo GIF |
 
 ---
 
 ## UIToolkit Controls — Missing Visual Demos
 
-All 20 UIToolkit controls have **complete text documentation and code examples** but  
+All 25 UIToolkit controls have **complete text documentation and code examples** but  
 **no screenshots or animated demos** yet. They appear on the UIToolkit controls page  
 but are marked as lacking visual reference.
 
 | Control | Priority | Notes |
 |---|---|---|
 | ScrollSnap | High | Core navigation control — needs swipe demo GIF |
+| ScreenHeader | High | Top app-bar with title + action buttons — needs screenshot |
+| ElasticListView | High | Elastic overscroll + load-more — needs on-device GIF |
+| Dropdown | High | Wheel-style value picker — needs modal-open GIF |
+| DropDownMenuControl | Medium | Anchored action menu — needs open/overlay GIF |
+| SocialLinkContainer | Medium | Editable social links list — needs add/remove GIF |
+| NotificationBadge | Medium | Unread-count badge — needs overlay screenshot |
+| ImageCropOverlay | Medium | Modal cropper — needs pan/zoom GIF |
 | CollapsibleSection | High | Visible expand/collapse — easy GIF to capture |
 | StepProgressBar | High | Visual fill progress — needs progress demo |
 | PillButton | High | Primary CTA — needs flash animation GIF |

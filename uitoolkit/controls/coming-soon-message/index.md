@@ -1,7 +1,7 @@
 ---
 layout: control-uitk
 title: "Coming Soon Message"
-description: "Placeholder panel displaying a styled 'coming soon' message with icon."
+description: "Placeholder panel displaying a styled \"coming soon\" message with icon."
 category: "Feedback"
 permalink: /uitoolkit/controls/coming-soon-message/
 has_video: false

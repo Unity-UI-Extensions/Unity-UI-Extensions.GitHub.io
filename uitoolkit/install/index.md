@@ -20,7 +20,7 @@ permalink: /uitoolkit/install/
     <div class="pkg-hero-meta">
       <code class="pkg-id">com.unity.uitoolkitextensions</code>
       <span class="badge-ghost">MIT Licence</span>
-      <span class="badge-ghost">Unity 2022.3+</span>
+      <span class="badge-ghost">Unity 6000.0+</span>
     </div>
   </div>
 </section>
@@ -131,7 +131,7 @@ root.Add(toggle);</code></pre>
 <section class="cta-band uitk-context" aria-labelledby="cta-browse">
   <div class="cta-band-inner">
     <h2 id="cta-browse">Ready to explore the controls?</h2>
-    <p>Browse all 20 UIToolkit controls with full API reference and code examples.</p>
+    <p>Browse all 25 UIToolkit controls with full API reference and code examples.</p>
     <div class="cta-actions">
       <a href="{{ '/uitoolkit/' | relative_url }}" class="btn btn-t">Browse UIToolkit Controls</a>
       <a href="https://github.com/Unity-UI-Extensions/com.unity.uitoolkitextensions/issues" class="btn btn-ghost" target="_blank" rel="noopener">Report an Issue</a>

@@ -27,6 +27,11 @@ permalink: /presskit/
   .pk-chiplist { display:flex; flex-wrap:wrap; gap:.4rem; }
   .pk-twocol { display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; }
   @media (max-width:720px){ .pk-twocol{ grid-template-columns:1fr; } .pk-factsheet th{ width:42%; } }
+
+  /* Two-package cards: keep the "Explore" buttons aligned to the bottom of each card,
+     regardless of differing description / stat-line heights. */
+  .packages-grid .package-card { display:flex; flex-direction:column; }
+  .packages-grid .package-card > .btn { margin-top:auto; }
 </style>
 
 <div class="pk-wrap">
@@ -51,8 +56,8 @@ permalink: /presskit/
 <!-- ─────────────────────────── STATS ─────────────────────────── -->
 <section class="stats-band" aria-label="Project statistics">
   <div class="stats-band-inner">
-    <div class="stat-item"><span class="stat-number" data-count="120">0</span><span class="stat-label">UI Controls</span></div>
-    <div class="stat-item"><span class="stat-number" data-count="29">0</span><span class="stat-label">Example Scenes</span></div>
+    <div class="stat-item"><span class="stat-number" data-count="126">0</span><span class="stat-label">UI Controls</span></div>
+    <div class="stat-item"><span class="stat-number" data-count="34">0</span><span class="stat-label">Example Scenes</span></div>
     <div class="stat-item"><span class="stat-number" data-count="2">0</span><span class="stat-label">Packages</span></div>
     <div class="stat-item"><span class="stat-number" data-count="2015">0</span><span class="stat-label">Since</span></div>
   </div>
@@ -71,16 +76,16 @@ permalink: /presskit/
         <tr><th>Release</th><td>Version <strong>3.0</strong> — a two-package ecosystem relaunch</td></tr>
         <tr><th>Maintainer</th><td>Simon “darkside” Jackson (<a href="https://github.com/SimonDarksideJ" target="_blank" rel="noopener">@SimonDarksideJ</a>) &amp; a global community of contributors</td></tr>
         <tr><th>Community since</th><td>2015</td></tr>
-        <tr><th>Packages</th><td>uGUI — <code>com.unity.uiextensions</code> (v3.0.0-pre.1, BSD-3-Clause)<br>UI Toolkit — <code>com.unity.uitoolkitextensions</code> (v1.0.0-pre.1, MIT)</td></tr>
+        <tr><th>Packages</th><td>uGUI — <code>com.unity.uiextensions</code> (v3.0.0, BSD-3-Clause)<br>UI Toolkit — <code>com.unity.uitoolkitextensions</code> (v1.0.0, MIT)</td></tr>
         <tr><th>Engine</th><td>Unity 6 (6000.0+) <span class="badge badge-ghost">2.x line remains for older Unity</span></td></tr>
-        <tr><th>Controls</th><td><strong>120</strong> total — 100 uGUI · 20 UI Toolkit</td></tr>
-        <tr><th>Examples</th><td><strong>29</strong> playable example scenes (21 uGUI · 8 UI Toolkit)</td></tr>
+        <tr><th>Controls</th><td><strong>126</strong> total — 101 uGUI · 25 UI Toolkit</td></tr>
+        <tr><th>Examples</th><td><strong>34</strong> playable example scenes (22 uGUI · 12 UI Toolkit)</td></tr>
         <tr><th>Price</th><td>Free — 100% open source, no lock-in</td></tr>
-        <tr><th>Distribution</th><td>Unity Package Manager (OpenUPM &amp; git URL) · Itch.io · Unity Asset Store (planned)</td></tr>
+        <tr><th>Distribution</th><td>Unity Package Manager (OpenUPM &amp; git URL) · Itch.io · <a href="https://assetstore.unity.com/packages/2d/gui/ui-extensions-175295" target="_blank" rel="noopener">Unity Asset Store</a> (uGUI; UI Toolkit listing coming soon)</td></tr>
         <tr><th>Website</th><td><a href="https://unity-ui-extensions.github.io">unity-ui-extensions.github.io</a></td></tr>
-        <tr><th>Source</th><td><a href="https://github.com/Unity-UI-Extensions" target="_blank" rel="noopener">github.com/Unity-UI-Extensions</a></td></tr>
-        <tr><th>Community</th><td><a href="https://discord.gg/SBuyXfh" target="_blank" rel="noopener">Discord</a> · <a href="https://app.gitter.im/#/room/#Unity-UI-Extensions_Lobby:gitter.im" target="_blank" rel="noopener">Gitter</a> · Unity Discussions</td></tr>
-        <tr><th>Support</th><td><a href="https://www.patreon.com/simonDarksideJ" target="_blank" rel="noopener">Patreon</a></td></tr>
+        <tr><th>Source</th><td>uGUI — <a href="https://github.com/Unity-UI-Extensions/com.unity.uiextensions" target="_blank" rel="noopener">com.unity.uiextensions</a><br>UI Toolkit — <a href="https://github.com/Unity-UI-Extensions/com.unity.uitoolkitextensions" target="_blank" rel="noopener">com.unity.uitoolkitextensions</a></td></tr>
+        <tr><th>Community</th><td><a href="https://app.gitter.im/#/room/#Unity-UI-Extensions_Lobby:gitter.im" target="_blank" rel="noopener">Gitter</a> · <a href="https://github.com/Unity-UI-Extensions/com.unity.uiextensions/discussions" target="_blank" rel="noopener">GitHub Discussions</a></td></tr>
+        <tr><th>Support</th><td><a href="https://github.com/sponsors/SimonDarksideJ" target="_blank" rel="noopener">GitHub Sponsors</a> · <a href="https://www.patreon.com/UnityUIExtensions" target="_blank" rel="noopener">Patreon</a> · <a href="https://ko-fi.com/uiextensions" target="_blank" rel="noopener">Ko-fi</a> · <a href="https://paypal.me/unityuiextensions" target="_blank" rel="noopener">PayPal.me</a> · <a href="https://unityuiextensions.itch.io/uiextensions2-0" target="_blank" rel="noopener">itch.io</a> · <a href="https://assetstore.unity.com/packages/2d/gui/ui-extensions-175295" target="_blank" rel="noopener">Unity Asset Store (uGUI)</a><!-- UI Toolkit Asset Store (live on publish): <a href="https://assetstore.unity.com/packages/tools/gui/ui-toolkit-extensions-387946" target="_blank" rel="noopener">Unity Asset Store (UI Toolkit)</a> --><br>Full details on the <a href="{{ '/donate/' | relative_url }}">Support page</a></td></tr>
         <tr><th>Press contact</th><td><a href="mailto:uiextensions@zenithmoon.com">uiextensions@zenithmoon.com</a> · maintainer via GitHub / Patreon</td></tr>
       </table>
     </div>
@@ -94,16 +99,16 @@ permalink: /presskit/
       <h2 class="section-title">Description</h2>
     </div>
 
-    <p style="font-size:1.15rem; line-height:1.6;"><strong>Stop rebuilding UI from scratch.</strong> Unity UI Extensions is the flagship open-source UI control collection for Unity — 120 battle-tested controls for both <strong>uGUI</strong> and <strong>UI Toolkit</strong>. The controls you would build anyway are already here, polished and edge-case handled.</p>
+    <p style="font-size:1.15rem; line-height:1.6;"><strong>Stop rebuilding UI from scratch.</strong> Unity UI Extensions is the flagship open-source UI control collection for Unity — 126 battle-tested controls for both <strong>uGUI</strong> and <strong>UI Toolkit</strong>. The controls you would build anyway are already here, polished and edge-case handled.</p>
 
     <h3>One-liner</h3>
-    <p>120 battle-tested, free, open-source UI controls for Unity uGUI and UI Toolkit. Two packages. One ecosystem.</p>
+    <p>126 battle-tested, free, open-source UI controls for Unity uGUI and UI Toolkit. Two packages. One ecosystem.</p>
 
     <h3>Short description</h3>
-    <p>Unity UI Extensions gives Unity developers 120 production-ready UI controls across two packages — accordions, colour pickers, scroll snapping, line renderers, radial layouts, pill buttons, step progress bars, toasts and dozens more. UPM-first, fully customisable, examples included. Community-driven since 2015, 100% free and open source.</p>
+    <p>Unity UI Extensions gives Unity developers 126 production-ready UI controls across two packages — accordions, colour pickers, scroll snapping, line renderers, radial layouts, pill buttons, step progress bars, toasts and dozens more. UPM-first, fully customisable, examples included. Community-driven since 2015, 100% free and open source.</p>
 
     <h3>Boilerplate</h3>
-    <p>Unity UI Extensions is the flagship open-source UI control collection for Unity. Community-driven since 2015, the project provides 90+ battle-tested, production-ready UI controls for both Unity uGUI and UI Toolkit. It is 100% free and open source, distributed UPM-first via OpenUPM and git URL, and licensed under BSD-3-Clause (uGUI) and MIT (UI Toolkit). The project is maintained by Simon “darkside” Jackson and a global community of contributors. <em>Not affiliated with Unity Technologies.</em></p>
+    <p>Unity UI Extensions is the flagship open-source UI control collection for Unity. Community-driven since 2015, the project provides 126 battle-tested, production-ready UI controls for both Unity uGUI and UI Toolkit. It is 100% free and open source, distributed UPM-first via OpenUPM and git URL, and licensed under BSD-3-Clause (uGUI) and MIT (UI Toolkit). The project is maintained by Simon “darkside” Jackson and a global community of contributors. <em>Not affiliated with Unity Technologies.</em></p>
   </div>
 </section>
 
@@ -121,11 +126,11 @@ permalink: /presskit/
           <span class="badge badge-u">uGUI</span>
           <h3 class="package-card-name">Unity UI Extensions</h3>
           <p class="package-id"><code>com.unity.uiextensions</code></p>
-          <p class="package-card-desc">The original and largest collection — 100 production-ready controls for Unity’s uGUI system, refined over a decade of community use. This is the V3 release.</p>
+          <p class="package-card-desc">The original and largest collection — 101 production-ready controls for Unity’s uGUI system, refined over a decade of community use. This is the V3 release.</p>
         </div>
         <ul class="footer-links" style="margin:.5rem 0 1rem;">
-          <li>Version 3.0.0-pre.1 · Unity 6000.0+ · BSD-3-Clause</li>
-          <li>101 controls · ~195 runtime scripts · 21 example scenes</li>
+          <li>Version 3.0.0 · Unity 6000.0+ · BSD-3-Clause</li>
+          <li>101 controls · ~195 runtime scripts · 22 example scenes</li>
           <li>Categories: Controls · Primitives · Layouts · Effects &amp; Utilities</li>
         </ul>
         <a href="{{ '/ugui/' | relative_url }}" class="btn btn-u btn-sm">Explore uGUI</a>
@@ -136,11 +141,11 @@ permalink: /presskit/
           <span class="badge badge-t">UI Toolkit</span>
           <h3 class="package-card-name">Unity UI Toolkit Extensions</h3>
           <p class="package-id"><code>com.unity.uitoolkitextensions</code></p>
-          <p class="package-card-desc">The modern companion — 20 USS-themable, data-driven controls built from the ground up for Unity 6’s UI Toolkit runtime.</p>
+          <p class="package-card-desc">The modern companion — 25 USS-themable, data-driven controls built from the ground up for Unity 6’s UI Toolkit runtime.</p>
         </div>
         <ul class="footer-links" style="margin:.5rem 0 1rem;">
-          <li>Version 1.0.0-pre.1 · Unity 6000.0+ · MIT</li>
-          <li>20 controls · ~21 runtime scripts · 8 example scenes</li>
+          <li>Version 1.0.0 · Unity 6000.0+ · MIT</li>
+          <li>25 controls · ~26 runtime scripts · 12 example scenes</li>
           <li>Built with USS · fully themable · data-driven UI</li>
         </ul>
         <a href="{{ '/uitoolkit/' | relative_url }}" class="btn btn-t btn-sm">Explore UI Toolkit</a>
@@ -161,7 +166,7 @@ permalink: /presskit/
       <div class="feature-item"><div class="feature-icon">🧪</div><h3 class="feature-title">Production battle-tested</h3><p class="feature-desc">A decade of community use, bug reports and fixes since 2015.</p></div>
       <div class="feature-item"><div class="feature-icon">📦</div><h3 class="feature-title">UPM-first</h3><p class="feature-desc">OpenUPM or git URL. Clean dependency management, no asset-import drama.</p></div>
       <div class="feature-item"><div class="feature-icon">🎨</div><h3 class="feature-title">Fully customisable</h3><p class="feature-desc">Inspector-exposed for uGUI, USS-themable for UI Toolkit.</p></div>
-      <div class="feature-item"><div class="feature-icon">📖</div><h3 class="feature-title">Examples included</h3><p class="feature-desc">29 playable example scenes across both packages.</p></div>
+      <div class="feature-item"><div class="feature-icon">📖</div><h3 class="feature-title">Examples included</h3><p class="feature-desc">34 playable example scenes across both packages.</p></div>
       <div class="feature-item"><div class="feature-icon">🤝</div><h3 class="feature-title">Open contribution</h3><p class="feature-desc">BSD-3 &amp; MIT. PRs welcome, every contributor credited.</p></div>
     </div>
   </div>
@@ -282,7 +287,7 @@ permalink: /presskit/
       “Two packages, one ecosystem — that is the whole story of 3.0. For ten years the community has built the controls you would build anyway, polished them, and handled the edge cases so you do not have to. The controls you would build anyway are already here. Ship faster. Build better.”
       <br><strong>— Simon “darkside” Jackson, project maintainer</strong>
     </blockquote>
-    <p style="color:var(--text-2,#dd88ff);">Shipped a game or app with UI Extensions? We’d love to feature your quote — get in touch via GitHub or Discord.</p>
+    <p style="color:var(--text-2,#dd88ff);">Shipped a game or app with UI Extensions? We’d love to feature your quote — get in touch via GitHub or Gitter.</p>
   </div>
 </section>
 
@@ -300,6 +305,10 @@ permalink: /presskit/
           <li><a href="https://github.com/Unity-UI-Extensions/com.unity.uitoolkitextensions" target="_blank" rel="noopener">UI Toolkit on GitHub</a></li>
           <li><a href="https://openupm.com/packages/com.unity.uiextensions/" target="_blank" rel="noopener">OpenUPM — uGUI</a></li>
           <li><a href="https://unityuiextensions.itch.io/uiextensions2-0" target="_blank" rel="noopener">Itch.io — uGUI</a></li>
+          <li><a href="https://assetstore.unity.com/packages/2d/gui/ui-extensions-175295" target="_blank" rel="noopener">Unity Asset Store — uGUI</a></li>
+          <!-- UI Toolkit Asset Store listing — live on publish; uncomment to reveal:
+          <li><a href="https://assetstore.unity.com/packages/tools/gui/ui-toolkit-extensions-387946" target="_blank" rel="noopener">Unity Asset Store — UI Toolkit</a></li>
+          -->
         </ul>
       </div>
       <div class="footer-col">
@@ -313,9 +322,13 @@ permalink: /presskit/
       <div class="footer-col">
         <p class="footer-col-title">Community &amp; support</p>
         <ul class="footer-links">
-          <li><a href="https://discord.gg/SBuyXfh" target="_blank" rel="noopener">Discord</a></li>
+          <li><a href="https://github.com/Unity-UI-Extensions/com.unity.uiextensions/discussions" target="_blank" rel="noopener">GitHub Discussions</a></li>
           <li><a href="https://app.gitter.im/#/room/#Unity-UI-Extensions_Lobby:gitter.im" target="_blank" rel="noopener">Gitter Chat</a></li>
-          <li><a href="https://www.patreon.com/simonDarksideJ" target="_blank" rel="noopener">Patreon</a></li>
+          <li><a href="{{ '/donate/' | relative_url }}">Support the project</a></li>
+          <li><a href="https://github.com/sponsors/SimonDarksideJ" target="_blank" rel="noopener">GitHub Sponsors</a></li>
+          <li><a href="https://www.patreon.com/UnityUIExtensions" target="_blank" rel="noopener">Patreon</a></li>
+          <li><a href="https://ko-fi.com/uiextensions" target="_blank" rel="noopener">Ko-fi</a></li>
+          <li><a href="https://paypal.me/unityuiextensions" target="_blank" rel="noopener">PayPal.me</a></li>
         </ul>
       </div>
     </div>
@@ -326,7 +339,7 @@ permalink: /presskit/
 <section class="cta-band">
   <div class="cta-band-inner">
     <h2 class="cta-title">Two packages. One ecosystem.</h2>
-    <p class="cta-sub">120 battle-tested controls. 29 example scenes. Free forever.</p>
+    <p class="cta-sub">126 battle-tested controls. 34 example scenes. Free forever.</p>
     <div class="cta-actions">
       <a href="{{ '/ugui/' | relative_url }}" class="btn btn-u">Explore uGUI</a>
       <a href="{{ '/uitoolkit/' | relative_url }}" class="btn btn-t">Explore UI Toolkit</a>

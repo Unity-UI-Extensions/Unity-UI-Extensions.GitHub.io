@@ -1,0 +1,73 @@
+---
+layout: default
+---
+<div class="control-page-wrap uitk-context">
+  {% include uitk-examples-sidebar.html %}
+
+  <article class="control-page-content prose uitk-context" aria-label="{{ page.title }}">
+    <header class="control-page-hero">
+      <div class="control-page-hero-inner">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="{{ '/' | relative_url }}">Home</a>
+          <span aria-hidden="true">›</span>
+          <a href="{{ '/uitoolkit/' | relative_url }}">UI Toolkit</a>
+          <span aria-hidden="true">›</span>
+          <a href="{{ '/uitoolkit/examples/' | relative_url }}">Examples</a>
+          <span aria-hidden="true">›</span>
+          <span aria-current="page">{{ page.title }}</span>
+        </nav>
+
+        <h1>{{ page.title }}</h1>
+
+        {% if page.description %}
+          <p class="control-page-lead">{{ page.description }}</p>
+        {% endif %}
+
+        <div class="control-page-meta">
+          {% if page.category %}
+            <span class="badge-t">{{ page.category }}</span>
+          {% endif %}
+          {% for tag in page.tags %}
+            <span class="tag">{{ tag }}</span>
+          {% endfor %}
+        </div>
+      </div>
+    </header>
+
+    {% if page.controls and page.controls.size > 0 %}
+      <div class="example-controls-band uitk-context" aria-label="Controls demonstrated">
+        <span class="example-controls-label">Controls demonstrated:</span>
+        {% for c in page.controls %}
+          <a href="{{ c.permalink | relative_url }}" class="example-control-chip">{{ c.name }}</a>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    <div class="control-page-body">
+      {{ content }}
+    </div>
+
+    <footer class="control-page-footer">
+      {% assign examples = site.data.uitk_examples | sort: "name" %}
+      {% assign current_index = nil %}
+      {% for ex in examples %}
+        {% if ex.permalink == page.url %}
+          {% assign current_index = forloop.index0 %}
+        {% endif %}
+      {% endfor %}
+
+      {% if current_index %}
+        {% assign prev_index = current_index | minus: 1 %}
+        {% assign next_index = current_index | plus: 1 %}
+        {% if prev_index >= 0 %}
+          {% assign prev_ex = examples[prev_index] %}
+          <a href="{{ prev_ex.permalink | relative_url }}" class="ctrl-nav-prev">← {{ prev_ex.name }}</a>
+        {% endif %}
+        {% if next_index < examples.size %}
+          {% assign next_ex = examples[next_index] %}
+          <a href="{{ next_ex.permalink | relative_url }}" class="ctrl-nav-next">{{ next_ex.name }} →</a>
+        {% endif %}
+      {% endif %}
+    </footer>
+  </article>
+</div>

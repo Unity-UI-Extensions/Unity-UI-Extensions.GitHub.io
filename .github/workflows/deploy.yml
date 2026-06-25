@@ -15,11 +15,15 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  # ── Site: build & deploy. Completely independent of PDF generation. ──────────
+  # The doc/press-kit PDFs are tracked in the repo (committed by the publishpdf
+  # job below), so the Jekyll build picks them up from the checkout like any other
+  # static asset. Nothing here waits on, or can be stalled by, PDF generation.
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Setup Pages
         uses: actions/configure-pages@v6
@@ -43,21 +47,88 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v5
 
-  publishpdf:
-    needs: build
+  # ── PDFs: one job per document, in parallel. Fully independent of the deploy ──
+  # above — a hang here can NEVER affect the site. Each leg is tightly timed and
+  # isolated (fail-fast: false), so a hung render fails just that one document,
+  # is caught in ~3 min, and the others still publish. Each uploads its PDF as an
+  # artifact for the publish step below. (python -u keeps output unbuffered so a
+  # hang's logs show where it stuck.)
+  pdf:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - target: presskit
+            file: Unity-UI-Extensions-PressKit.pdf
+          - target: ugui
+            file: Unity-UI-Extensions-uGUI-Documentation.pdf
+          - target: uitk
+            file: Unity-UI-Extensions-UIToolkit-Documentation.pdf
     runs-on: ubuntu-latest
+    timeout-minutes: 6        # backstop for the whole leg
     steps:
-      # ── Generate documentation & press-kit PDFs (headless Chrome) ────────────
+      - name: Checkout
+        uses: actions/checkout@v7
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
 
+      - name: Install Python dependencies
+        run: pip install pyyaml markdown
+
       - name: Set up Chrome
         id: setup-chrome
         uses: browser-actions/setup-chrome@v1
 
-      - name: Generate PDFs
-        run: python generate_pdfs.py
+      - name: Generate ${{ matrix.target }} PDF
+        timeout-minutes: 3    # hard cap per document — kills a hung render fast
+        run: python -u generate_pdfs.py ${{ matrix.target }}
         env:
           CHROME_BIN: ${{ steps.setup-chrome.outputs.chrome-path }}
+
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: pdf-${{ matrix.target }}
+          path: assets/downloads/${{ matrix.file }}
+          if-no-files-found: error
+
+  # ── Publish: upload whatever PDFs were produced to the `docs-pdfs` GitHub
+  # Release (overwriting). Runs even if some PDF legs failed (best-effort), and
+  # never touches git/main — the site links to the release asset URLs, so nothing
+  # is committed and the repo stays clean. No branch-protection concerns.
+  publish-pdfs:
+    needs: pdf
+    if: ${{ !cancelled() }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write         # required to create/update the release & its assets
+    steps:
+      - name: Download generated PDFs
+        uses: actions/download-artifact@v4
+        continue-on-error: true         # tolerate every PDF leg having failed
+        with:
+          pattern: pdf-*
+          path: pdfs
+          merge-multiple: true
+
+      - name: Upload PDFs to the docs-pdfs release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          shopt -s nullglob
+          files=(pdfs/*.pdf)
+          if [ ${#files[@]} -eq 0 ]; then
+            echo "No PDFs were produced — nothing to publish."
+            exit 0
+          fi
+          gh release view docs-pdfs >/dev/null 2>&1 || \
+            gh release create docs-pdfs \
+              --title "Documentation PDFs" \
+              --notes "Auto-generated documentation & press-kit PDFs, refreshed on each deploy." \
+              --latest=false
+          gh release upload docs-pdfs "${files[@]}" --clobber
+          echo "Published:"; printf '  %s\n' "${files[@]}"

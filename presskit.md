@@ -46,7 +46,7 @@ permalink: /presskit/
       <strong>Two packages. One ecosystem.</strong>
     </p>
     <div class="pk-actions">
-      <a href="{{ '/assets/downloads/Unity-UI-Extensions-PressKit.pdf' | relative_url }}" class="btn btn-u" download>↓ Download Press Kit (PDF)</a>
+      <a href="{{ site.pdf_downloads_base }}/Unity-UI-Extensions-PressKit.pdf" class="btn btn-u" download>↓ Download Press Kit (PDF)</a>
       <a href="{{ '/assets/downloads/Unity-UI-Extensions-Brand-Assets.zip' | relative_url }}" class="btn btn-t" download>↓ Brand Assets (.zip)</a>
       <a href="https://github.com/Unity-UI-Extensions" target="_blank" rel="noopener" class="btn btn-ghost">View on GitHub</a>
     </div>
@@ -268,10 +268,10 @@ permalink: /presskit/
       <h2 class="section-title">Downloads</h2>
     </div>
     <ul class="footer-links">
-      <li><a href="{{ '/assets/downloads/Unity-UI-Extensions-PressKit.pdf' | relative_url }}" download>📄 Press Kit (PDF)</a> — this page, print-ready</li>
+      <li><a href="{{ site.pdf_downloads_base }}/Unity-UI-Extensions-PressKit.pdf" download>📄 Press Kit (PDF)</a> — this page, print-ready</li>
       <li><a href="{{ '/assets/downloads/Unity-UI-Extensions-Brand-Assets.zip' | relative_url }}" download>🗜 Brand assets (.zip) — logos &amp; promo graphics</a></li>
-      <li><a href="{{ '/assets/downloads/Unity-UI-Extensions-uGUI-Documentation.pdf' | relative_url }}" download>📄 uGUI — control reference (PDF)</a> · <a href="{{ '/ugui/controls/' | relative_url }}">browse online</a></li>
-      <li><a href="{{ '/assets/downloads/Unity-UI-Extensions-UIToolkit-Documentation.pdf' | relative_url }}" download>📄 UI Toolkit — control reference (PDF)</a> · <a href="{{ '/uitoolkit/controls/' | relative_url }}">browse online</a></li>
+      <li><a href="{{ site.pdf_downloads_base }}/Unity-UI-Extensions-uGUI-Documentation.pdf" download>📄 uGUI — control reference (PDF)</a> · <a href="{{ '/ugui/controls/' | relative_url }}">browse online</a></li>
+      <li><a href="{{ site.pdf_downloads_base }}/Unity-UI-Extensions-UIToolkit-Documentation.pdf" download>📄 UI Toolkit — control reference (PDF)</a> · <a href="{{ '/uitoolkit/controls/' | relative_url }}">browse online</a></li>
     </ul>
     <p style="color:var(--text-2,#dd88ff); font-size:.85rem;">All PDFs are generated from the live docs by <code>generate_pdfs.py</code> (headless Chrome) and rebuilt on every site deploy.</p>
   </div>

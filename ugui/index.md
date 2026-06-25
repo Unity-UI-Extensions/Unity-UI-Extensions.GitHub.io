@@ -25,7 +25,7 @@ permalink: /ugui/
       <a href="{{ '/ugui/examples/' | relative_url }}" class="btn btn-ghost">Browse Examples</a>
       <a href="{{ '/ugui/install/' | relative_url }}" class="btn btn-ghost">Installation Guide</a>
       <a href="https://github.com/Unity-UI-Extensions/com.unity.uiextensions" class="btn btn-ghost" target="_blank" rel="noopener">GitHub Repo</a>
-      <a href="{{ '/assets/downloads/Unity-UI-Extensions-uGUI-Documentation.pdf' | relative_url }}" class="btn btn-ghost" download>Download PDF Docs</a>
+      <a href="{{ site.pdf_downloads_base }}/Unity-UI-Extensions-uGUI-Documentation.pdf" class="btn btn-ghost" download>Download PDF Docs</a>
     </div>
   </div>
 </section>

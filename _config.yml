@@ -5,6 +5,10 @@ baseurl: ""
 repository: "Unity-UI-Extensions/Unity-UI-Extensions.GitHub.io"
 github_username: UnityUIExtensions
 
+# Generated documentation/press-kit PDFs are published as GitHub Release assets
+# (tag: docs-pdfs) by the publish-pdfs CI job, not committed to the repo.
+pdf_downloads_base: "https://github.com/Unity-UI-Extensions/Unity-UI-Extensions.GitHub.io/releases/download/docs-pdfs"
+
 # Build settings
 markdown: kramdown
 highlighter: rouge

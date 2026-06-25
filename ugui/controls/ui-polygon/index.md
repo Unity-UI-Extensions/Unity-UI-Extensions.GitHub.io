@@ -1,0 +1,96 @@
+---
+layout: control-ugui
+title: "UI Polygon"
+description: "Renders any regular or irregular polygon as a filled UI graphic."
+category: "Primitives"
+permalink: /ugui/controls/ui-polygon/
+has_video: false
+tags: [primitives, polygon, shape, graphic, mesh]
+---
+# UIPolygon
+
+Graphic control for drawing custom polygons in the UI System
+
+<!--![](/ugui/images/ Game Image.jpg)-->
+
+---------
+
+## Contents
+
+> 1 [Overview](#overview)
+>
+> 2 [Properties](#properties)
+>
+> 3 [Methods](#methods)
+>
+> 4 [Usage](#usage)
+>
+> 5 [Video Demo](#video-demo)
+>
+> 6 [See also](#see-also)
+>
+> 7 [Credits and Donation](#credits-and-donation)
+>
+> 8 [External links](#external-links)
+
+---------
+
+## Overview
+
+Advanced polygon control with support for multiple vertices which can be manipulated to control the look and feel of the primitive
+
+![UI Polygon Inspector](/ugui/images/UIPolygonInspector.jpg)
+
+---------
+
+## Methods
+
+This component does not expose public methods beyond inherited behaviour.
+
+---------
+
+## Usage
+
+Add the primitive control to your scene using:
+
+"*GameObject -> UI -> Extensions -> Primitives -> UI Polygon*"
+
+## Properties
+
+Property | Description
+-|-
+*Vertices*|List of vertex positions defining the polygon.
+*Thickness*|Stroke thickness when rendering as an outline.
+*Fill*|Render as filled polygon when enabled.
+*Preserve Aspect*|Maintain aspect ratio when resizing.
+*Border*|Optional border size around the polygon.
+
+Alternatively, add the component using:
+
+"*Add Component -> UI -> Extensions -> Primitives -> UI Polygon*"
+
+---------
+
+## Video Demo
+
+<video class="demo-video" autoplay loop muted playsinline aria-label="UI Polygon demo">
+  <source src="/ugui/images/UIPolygonDemo.webm" type="video/webm">
+</video>
+
+---------
+
+## See also
+
+[DiamondGraph](/ugui/controls/diamond-graph/)
+
+---------
+
+## Credits and Donation
+
+CiaccoDavide
+
+---------
+
+## External links
+
+[Sourced from](http://ciaccodavi.de/unity/UIPolygon)

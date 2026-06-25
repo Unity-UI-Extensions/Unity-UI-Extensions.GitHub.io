@@ -799,6 +799,17 @@ tbody tr:hover td { background: var(--surface-2); }
   max-width: 100%;
 }
 
+/* Demo videos (converted from the old GIF/MP4 demos). Responsive, never overflow. */
+.demo-video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1.5rem 0;
+  border-radius: var(--r-lg);
+  border: 1px solid var(--border-n);
+  background: #000;
+}
+
 .prose hr {
   border: none;
   border-top: 1px solid var(--border-n);

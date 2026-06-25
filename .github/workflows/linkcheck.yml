@@ -1,0 +1,87 @@
+name: Link Check (report only)
+
+# Non-blocking health report for internal links, images, and demo-video <source>
+# files. This NEVER fails a build or blocks a deploy/merge: the job is
+# continue-on-error and every check is suffixed with "|| true". It exists purely
+# to surface link rot — read the step logs or download the `linkcheck-report`
+# artifact. To make it gating later, drop `continue-on-error` and the `|| true`s.
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  linkcheck:
+    name: Internal link & media health (warnings only)
+    runs-on: ubuntu-latest
+    continue-on-error: true        # report-only — a broken link never blocks merge/deploy
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+
+      - name: Install gems
+        run: |
+          # Gemfile.lock is committed from Windows; add the Linux platform so
+          # bundler can resolve here without rewriting the developer's lock.
+          bundle lock --add-platform x86_64-linux
+          bundle install --jobs 4
+
+      - name: Build site
+        run: bundle exec jekyll build
+
+      - name: Install HTMLProofer
+        run: gem install html-proofer
+
+      - name: Check internal links & images (report only)
+        # Driven via the Ruby API (not CLI flags) — html-proofer 5's CLI does not
+        # expose disable_external/ignore_missing_alt/etc., but the API options do.
+        run: |
+          echo "## HTMLProofer — internal links + images" | tee linkcheck-report.txt
+          ruby -e '
+            require "html-proofer"
+            HTMLProofer.check_directory("./_site", {
+              disable_external:   true,
+              ignore_missing_alt: true,
+              allow_missing_href: true,
+              enforce_https:      false,
+              checks:             ["Links", "Images"],
+            }).run
+          ' 2>&1 | tee -a linkcheck-report.txt || true
+
+      - name: Check demo-video <source> & /ugui assets exist (report only)
+        run: |
+          {
+            echo ""
+            echo "## Demo-video <source> + /ugui/images asset check"
+          } | tee -a linkcheck-report.txt
+          python3 - <<'PY' 2>&1 | tee -a linkcheck-report.txt || true
+          import os, re, glob, urllib.parse
+          root = "_site"; checked = bad = 0
+          pat = re.compile(r'(?:<source[^>]+src|(?:src|href)=)"(/[^"]+\.(?:webm|mp4|png|jpg|jpeg|gif|svg))"')
+          for f in glob.glob(os.path.join(root, "**", "*.html"), recursive=True):
+              html = open(f, encoding="utf-8", errors="ignore").read()
+              for u in pat.findall(html):
+                  checked += 1
+                  p = os.path.join(root, urllib.parse.unquote(u.lstrip("/")))
+                  if not os.path.exists(p):
+                      bad += 1
+                      print(f"BROKEN  {u}   (in {os.path.relpath(f, root)})")
+          print(f"checked {checked} media refs, {bad} broken")
+          PY
+
+      - name: Upload link-check report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: linkcheck-report
+          path: linkcheck-report.txt

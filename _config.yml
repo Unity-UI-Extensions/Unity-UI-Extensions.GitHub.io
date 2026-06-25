@@ -48,8 +48,8 @@ exclude:
   - add_frontmatter.py
   - create_uitk_pages.py
 
-# Keep Controls/ images accessible but don't process raw .md without front matter
-# Controls that have been migrated have front matter added and their own permalink
+# uGUI docs live under ugui/ (controls/<slug>/index.md) with media in ugui/images/,
+# mirroring the uitoolkit/ tree. Page URLs are set via each page's `permalink`.
 
 # Site metadata
 author:

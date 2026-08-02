@@ -112,12 +112,12 @@ Typical use cases:
 Alternatively, drag the control into a document from the UI Builder Library (*Project -> Custom Controls -> UnityUIToolkit.Extensions*) or declare it directly in UXML:
 
 ```xml
-<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:ext="UnityUIToolkit.Extensions">
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:ext="UnityUIToolkit.Extensions" editor-extension-mode="False">
     <ext:PillInputField label="Email Address" placeholder="you@example.com" keyboard-type="EmailAddress" />
 </ui:UXML>
 ```
 
-The shared extensions stylesheet is applied automatically when the control is created, so no manual stylesheet reference is required.
+The shared extensions stylesheet is applied automatically when the control is created in the Editor and in Play Mode, so no manual stylesheet reference is needed while authoring. The starter templates also reference the stylesheet explicitly, which covers player builds; for hand-written UXML or code-first UI in builds, add the stylesheet to your UXML or panel theme.
 
 ---------
 

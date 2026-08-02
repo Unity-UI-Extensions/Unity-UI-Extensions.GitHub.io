@@ -8,7 +8,35 @@ has_video: false
 tags: [forms, input, rounded, text-field, focus]
 ---
 
-## Summary
+<!--![](/uitoolkit/images/RoundedInputFieldDemo.jpg)-->
+
+---------
+
+## Contents
+
+> 1 [Overview](#overview)
+>
+> 2 [Properties](#properties)
+>
+> 3 [USS Classes](#uss-classes)
+>
+> 4 [Events](#events)
+>
+> 5 [Methods](#methods)
+>
+> 6 [Usage](#usage)
+>
+> 7 [Using the Control](#using-the-control)
+>
+> 8 [Video Demo](#video-demo)
+>
+> 9 [Credits and Donation](#credits-and-donation)
+>
+> 10 [External links](#external-links)
+
+---------
+
+## Overview
 
 `RoundedInputField` is a text input with rounded corners and a custom placeholder implementation. The placeholder is rendered as an absolutely-positioned `Label` that is shown or hidden based on whether the current `Value` is empty. This avoids the style limitations of the built-in Unity `TextField` placeholder.
 
@@ -17,6 +45,8 @@ Typical use cases:
 - Search bars and filter inputs
 - Notes or comment text areas
 - Inline editing fields within list rows
+
+---------
 
 ## Properties
 
@@ -28,6 +58,8 @@ Typical use cases:
 | `Multiline` | Gets or sets multiline input mode. | `bool` |
 | `MaxLength` | Gets or sets the maximum allowed character count. `-1` means no limit. | `int` |
 
+---------
+
 ## USS Classes
 
 | Class | Description |
@@ -37,13 +69,17 @@ Typical use cases:
 | `roundedInputField__input` | Internal input content area inside the `TextField`. |
 | `roundedInputField__placeholder` | Absolutely-positioned `Label` that renders the placeholder text. Toggled visible when `Value` is empty. |
 
+---------
+
 ## Events
 
 | Name | Description | Arguments |
 | --- | --- | --- |
 | `ValueChanged` | Fired when the text value changes. | `string newValue` |
 
-## Public Methods
+---------
+
+## Methods
 
 | Signature | Description |
 | --- | --- |
@@ -53,6 +89,32 @@ Typical use cases:
 | `SetPlaceholderColor(Color color)` | Sets the color of the placeholder label. |
 | `SetFontSize(float size)` | Sets the font size for both input text and placeholder. |
 | `Focus()` | Programmatically focuses the input. |
+
+---------
+
+## Usage
+
+> Add the control to your scene using:
+>
+> GameObject -> UI Toolkit -> Extensions -> Rounded Input Field
+>
+> This creates a UIDocument in the scene (plus a PanelSettings with the default runtime theme, if the project has none) and assigns an editable starter template with demo content, copied to *Assets/UI Toolkit Extensions*.
+>
+> A starter template can also be added to an existing document using:
+>
+> Assets -> Create -> UI Toolkit -> Extensions -> Rounded Input Field Starter
+
+Alternatively, drag the control into a document from the UI Builder Library (*Project -> Custom Controls -> UnityUIToolkit.Extensions*) or declare it directly in UXML:
+
+```xml
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:ext="UnityUIToolkit.Extensions">
+    <ext:RoundedInputField placeholder="Type something..." />
+</ui:UXML>
+```
+
+The shared extensions stylesheet is applied automatically when the control is created, so no manual stylesheet reference is required.
+
+---------
 
 ## Using the Control
 
@@ -105,3 +167,29 @@ _notesField.SetValueWithoutNotify(savedNotes);
 
 _notesField.ValueChanged += text => _isDirty = true;
 ```
+
+---------
+
+## Video Demo
+
+> Demo video coming soon.
+
+<!--
+<video class="demo-video" autoplay loop muted playsinline poster="/uitoolkit/images/RoundedInputFieldDemo.jpg" aria-label="Rounded Input Field demo">
+  <source src="/uitoolkit/images/RoundedInputFieldDemo.webm" type="video/webm">
+</video>
+-->
+
+---------
+
+## Credits and Donation
+
+SimonDarksideJ
+
+---------
+
+## External links
+
+[UI Toolkit Extensions repository](https://github.com/Unity-UI-Extensions/com.unity.uitoolkitextensions) | [OpenUPM package](https://openupm.com/packages/com.unity.uitoolkitextensions/)
+
+---------

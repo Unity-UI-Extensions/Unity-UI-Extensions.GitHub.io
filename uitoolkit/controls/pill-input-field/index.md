@@ -8,7 +8,35 @@ has_video: false
 tags: [forms, input, pill, label, text-field]
 ---
 
-## Summary
+<!--![](/uitoolkit/images/PillInputFieldDemo.jpg)-->
+
+---------
+
+## Contents
+
+> 1 [Overview](#overview)
+>
+> 2 [Properties](#properties)
+>
+> 3 [USS Classes](#uss-classes)
+>
+> 4 [Events](#events)
+>
+> 5 [Methods](#methods)
+>
+> 6 [Usage](#usage)
+>
+> 7 [Using the Control](#using-the-control)
+>
+> 8 [Video Demo](#video-demo)
+>
+> 9 [Credits and Donation](#credits-and-donation)
+>
+> 10 [External links](#external-links)
+
+---------
+
+## Overview
 
 `PillInputField` is a styled text input with a floating label and pill-shaped container. It handles mobile focus correctly by tracking pointer movement to distinguish taps from drags (8 px slop threshold) before opening the on-screen keyboard. Validation fires automatically on blur via `OnValidation`. The label is hidden when empty.
 
@@ -18,6 +46,8 @@ Typical use cases:
 - Profile editing screens
 - Any form that needs a labeled, styled input compatible with mobile keyboards
 
+---------
+
 ## Properties
 
 | Name | Description | Options |
@@ -25,6 +55,8 @@ Typical use cases:
 | `Label` | Gets or sets the label text shown above (or inside when empty) the input. | `string` |
 | `Value` | Gets or sets the current input text. Setting this fires `OnValueChanged`. | `string` |
 | `KeyboardType` | Gets or sets the touch keyboard type for mobile platforms. | `TouchScreenKeyboardType` |
+
+---------
 
 ## USS Classes
 
@@ -37,6 +69,8 @@ Typical use cases:
 | `pillInputField--passwordMode` | Modifier applied when password mode is active. |
 | `pillInputField--multiline` | Modifier applied when multiline mode is active. |
 
+---------
+
 ## Events
 
 | Name | Description | Arguments |
@@ -44,7 +78,9 @@ Typical use cases:
 | `OnValueChanged` | Fired whenever the input value changes. | `string newValue` |
 | `OnValidation` | Fired when the field loses focus (blur). Use this to show inline validation errors. | `string currentValue` |
 
-## Public Methods
+---------
+
+## Methods
 
 | Signature | Description |
 | --- | --- |
@@ -58,6 +94,32 @@ Typical use cases:
 | `SetTextColor(Color color)` | Sets the text color of the input. |
 | `SetFontSize(float size)` | Sets the font size of the input text. |
 | `Validate()` | Manually triggers `OnValidation` with the current value. |
+
+---------
+
+## Usage
+
+> Add the control to your scene using:
+>
+> GameObject -> UI Toolkit -> Extensions -> Pill Input Field
+>
+> This creates a UIDocument in the scene (plus a PanelSettings with the default runtime theme, if the project has none) and assigns an editable starter template with demo content, copied to *Assets/UI Toolkit Extensions*.
+>
+> A starter template can also be added to an existing document using:
+>
+> Assets -> Create -> UI Toolkit -> Extensions -> Pill Input Field Starter
+
+Alternatively, drag the control into a document from the UI Builder Library (*Project -> Custom Controls -> UnityUIToolkit.Extensions*) or declare it directly in UXML:
+
+```xml
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:ext="UnityUIToolkit.Extensions">
+    <ext:PillInputField label="Email Address" placeholder="you@example.com" keyboard-type="EmailAddress" />
+</ui:UXML>
+```
+
+The shared extensions stylesheet is applied automatically when the control is created, so no manual stylesheet reference is required.
+
+---------
 
 ## Using the Control
 
@@ -119,3 +181,29 @@ public class LoginController : MonoBehaviour
     }
 }
 ```
+
+---------
+
+## Video Demo
+
+> Demo video coming soon.
+
+<!--
+<video class="demo-video" autoplay loop muted playsinline poster="/uitoolkit/images/PillInputFieldDemo.jpg" aria-label="Pill Input Field demo">
+  <source src="/uitoolkit/images/PillInputFieldDemo.webm" type="video/webm">
+</video>
+-->
+
+---------
+
+## Credits and Donation
+
+SimonDarksideJ
+
+---------
+
+## External links
+
+[UI Toolkit Extensions repository](https://github.com/Unity-UI-Extensions/com.unity.uitoolkitextensions) | [OpenUPM package](https://openupm.com/packages/com.unity.uitoolkitextensions/)
+
+---------

@@ -8,7 +8,37 @@ has_video: false
 tags: [forms, toggle, color, tint, button]
 ---
 
-## Summary
+<!--![](/uitoolkit/images/ColorToggleButtonDemo.jpg)-->
+
+---------
+
+## Contents
+
+> 1 [Overview](#overview)
+>
+> 2 [Properties](#properties)
+>
+> 3 [USS Classes](#uss-classes)
+>
+> 4 [Events](#events)
+>
+> 5 [Constructors](#constructors)
+>
+> 6 [Methods](#methods)
+>
+> 7 [Usage](#usage)
+>
+> 8 [Using the Control](#using-the-control)
+>
+> 9 [Video Demo](#video-demo)
+>
+> 10 [Credits and Donation](#credits-and-donation)
+>
+> 11 [External links](#external-links)
+
+---------
+
+## Overview
 
 `ColorToggleButton` extends `ToggleButton` with per-instance tint colors, a ripple press animation, and a selection overlay. The background color is driven entirely by the tint values, making it straightforward to build color-coded toggle grids without USS variants.
 
@@ -18,6 +48,8 @@ Typical use cases:
 - Labeled color-coded category toggles
 - Any toggle grid where each item has a distinct brand or theme color
 
+---------
+
 ## Properties
 
 | Name | Description | Options |
@@ -25,6 +57,8 @@ Typical use cases:
 | `IsSelected` | Inherited from `ToggleButton`. Gets or sets the selected state. | `bool` |
 | `TintColor` | The background tint used when the button is in its default (unselected) state. | `Color` (read-only; use `SetTintColor` to change) |
 | `SelectedTintColor` | The background tint used when the button is selected. | `Color` (read-only; use `SetSelectedTintColor` to change) |
+
+---------
 
 ## USS Classes
 
@@ -39,11 +73,15 @@ Typical use cases:
 | `toggleButton__selectedOverlay` | Overlay element shown when selected. |
 | `toggleButton__selectedOverlay--visible` | Modifier that makes the selected overlay visible. |
 
+---------
+
 ## Events
 
 | Name | Description | Arguments |
 | --- | --- | --- |
 | `OnClicked` | Inherited from `ToggleButton`. Fired on every pointer-down regardless of current state. | none |
+
+---------
 
 ## Constructors
 
@@ -52,7 +90,9 @@ Typical use cases:
 | `ColorToggleButton(Color tintColor)` | Creates a button with the same tint color for both selected and unselected states. |
 | `ColorToggleButton(Color tintColor, Color selectedTintColor)` | Creates a button with distinct tints for each state. |
 
-## Public Methods
+---------
+
+## Methods
 
 | Signature | Description |
 | --- | --- |
@@ -61,6 +101,32 @@ Typical use cases:
 | `SetImage(Texture2D texture)` | Inherited. Sets the icon/image on the button. |
 | `ForceSelect()` | Inherited. Sets `IsSelected = true` without firing `OnClicked`. |
 | `ForceDeselect()` | Inherited. Sets `IsSelected = false` without firing `OnClicked`. |
+
+---------
+
+## Usage
+
+> Add the control to your scene using:
+>
+> GameObject -> UI Toolkit -> Extensions -> Color Toggle Button
+>
+> This creates a UIDocument in the scene (plus a PanelSettings with the default runtime theme, if the project has none) and assigns an editable starter template with demo content, copied to *Assets/UI Toolkit Extensions*.
+>
+> A starter template can also be added to an existing document using:
+>
+> Assets -> Create -> UI Toolkit -> Extensions -> Color Toggle Button Starter
+
+Alternatively, drag the control into a document from the UI Builder Library (*Project -> Custom Controls -> UnityUIToolkit.Extensions*) or declare it directly in UXML:
+
+```xml
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:ext="UnityUIToolkit.Extensions">
+    <ext:ColorToggleButton tint-color="#FF5A5A" selected-tint-color="#FF9090" />
+</ui:UXML>
+```
+
+The shared extensions stylesheet is applied automatically when the control is created, so no manual stylesheet reference is required.
+
+---------
 
 ## Using the Control
 
@@ -111,3 +177,29 @@ public class ColorPaletteController : MonoBehaviour
     }
 }
 ```
+
+---------
+
+## Video Demo
+
+> Demo video coming soon.
+
+<!--
+<video class="demo-video" autoplay loop muted playsinline poster="/uitoolkit/images/ColorToggleButtonDemo.jpg" aria-label="Color Toggle Button demo">
+  <source src="/uitoolkit/images/ColorToggleButtonDemo.webm" type="video/webm">
+</video>
+-->
+
+---------
+
+## Credits and Donation
+
+SimonDarksideJ
+
+---------
+
+## External links
+
+[UI Toolkit Extensions repository](https://github.com/Unity-UI-Extensions/com.unity.uitoolkitextensions) | [OpenUPM package](https://openupm.com/packages/com.unity.uitoolkitextensions/)
+
+---------

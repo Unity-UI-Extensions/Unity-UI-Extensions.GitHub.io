@@ -8,7 +8,37 @@ has_video: false
 tags: [forms, social, links, list, editable]
 ---
 
-## Summary
+<!--![](/uitoolkit/images/SocialLinkContainerDemo.jpg)-->
+
+---------
+
+## Contents
+
+> 1 [Overview](#overview)
+>
+> 2 [Nested Types](#nested-types)
+>
+> 3 [Properties](#properties)
+>
+> 4 [USS Classes](#uss-classes)
+>
+> 5 [Events](#events)
+>
+> 6 [Methods](#methods)
+>
+> 7 [Usage](#usage)
+>
+> 8 [Using the Control](#using-the-control)
+>
+> 9 [Video Demo](#video-demo)
+>
+> 10 [Credits and Donation](#credits-and-donation)
+>
+> 11 [External links](#external-links)
+
+---------
+
+## Overview
 
 `SocialLinkContainer` is an editable list of social links — one row per platform, each a labelled URL/handle field. In edit mode an **add** button inserts a new row whose platform is chosen from a [`DropDownControl`](DropDownControl.md) wheel picker; only platforms not already present are offered. Choosing a platform commits the row, and dismissing the picker without a choice discards it. Each committed row can carry a remove button.
 
@@ -19,12 +49,16 @@ Typical use cases:
 - A profile editor's "social links" section (Instagram, Twitter, YouTube…)
 - Any settings screen that collects a small, de-duplicated set of platform URLs
 
+---------
+
 ## Nested Types
 
 | Type | Description |
 | --- | --- |
 | `SocialPlatform` | Enum of supported platforms: `Instagram`, `Twitter`, `Facebook`, `LinkedIn`, `TikTok`, `YouTube`, `Patreon`. |
 | [`SocialLink`](#) | Serializable `{ string platform; string url; }` pair returned by `GetSocials()`. |
+
+---------
 
 ## Properties
 
@@ -37,6 +71,8 @@ Typical use cases:
 | `RemoveButtonText` | Text on each row's remove button. Defaults to `"X"`. (UXML: `remove-button-text`) | `string` |
 | `PlatformNameResolver` | Delegate mapping a `SocialPlatform` to its display name. Defaults to the enum name. | `Func<SocialPlatform,string>` |
 | `PlatformPlaceholderResolver` | Delegate mapping a `SocialPlatform` to its field placeholder. | `Func<SocialPlatform,string>` |
+
+---------
 
 ## USS Classes
 
@@ -51,6 +87,8 @@ Typical use cases:
 | `socialLinkContainer__containerChildRemoveButton` | A row's remove button (edit mode only). |
 | `socialLinkContainer__platformPicker` | The `DropDownControl` used to pick the platform for a new row. |
 
+---------
+
 ## Events
 
 | Name | Description | Arguments |
@@ -58,7 +96,9 @@ Typical use cases:
 | `OnSocialClicked` | Raised when a row's field is tapped. | `SocialPlatform`, `string` (current value) |
 | `OnRemoveSocialButtonClicked` | Raised after a row is removed. | `SocialPlatform`, `string` (value at removal) |
 
-## Public Methods
+---------
+
+## Methods
 
 | Signature | Description |
 | --- | --- |
@@ -66,6 +106,32 @@ Typical use cases:
 | `GetSocials()` | Returns the non-empty entered links as `List<SocialLink>`. |
 | `ClearSocials()` | Removes all rows (and any pending picker row). |
 | `SetBackgroundColor(Color color)` | Sets the container's background colour. |
+
+---------
+
+## Usage
+
+> Add the control to your scene using:
+>
+> GameObject -> UI Toolkit -> Extensions -> Social Link Container
+>
+> This creates a UIDocument in the scene (plus a PanelSettings with the default runtime theme, if the project has none) and assigns an editable starter template with demo content, copied to *Assets/UI Toolkit Extensions*.
+>
+> A starter template can also be added to an existing document using:
+>
+> Assets -> Create -> UI Toolkit -> Extensions -> Social Link Container Starter
+
+Alternatively, drag the control into a document from the UI Builder Library (*Project -> Custom Controls -> UnityUIToolkit.Extensions*) or declare it directly in UXML:
+
+```xml
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:ext="UnityUIToolkit.Extensions">
+    <ext:SocialLinkContainer label="Your Profiles" edit-mode="true" />
+</ui:UXML>
+```
+
+The shared extensions stylesheet is applied automatically when the control is created, so no manual stylesheet reference is required.
+
+---------
 
 ## Using the Control
 
@@ -105,3 +171,29 @@ public class ProfileSocialsController : MonoBehaviour
     }
 }
 ```
+
+---------
+
+## Video Demo
+
+> Demo video coming soon.
+
+<!--
+<video class="demo-video" autoplay loop muted playsinline poster="/uitoolkit/images/SocialLinkContainerDemo.jpg" aria-label="Social Link Container demo">
+  <source src="/uitoolkit/images/SocialLinkContainerDemo.webm" type="video/webm">
+</video>
+-->
+
+---------
+
+## Credits and Donation
+
+SimonDarksideJ
+
+---------
+
+## External links
+
+[UI Toolkit Extensions repository](https://github.com/Unity-UI-Extensions/com.unity.uitoolkitextensions) | [OpenUPM package](https://openupm.com/packages/com.unity.uitoolkitextensions/)
+
+---------

@@ -8,7 +8,35 @@ has_video: false
 tags: [navigation, header, appbar, title, actions]
 ---
 
-## Summary
+<!--![](/uitoolkit/images/ScreenHeaderDemo.jpg)-->
+
+---------
+
+## Contents
+
+> 1 [Overview](#overview)
+>
+> 2 [Properties](#properties)
+>
+> 3 [USS Classes](#uss-classes)
+>
+> 4 [Events](#events)
+>
+> 5 [Methods](#methods)
+>
+> 6 [Usage](#usage)
+>
+> 7 [Using the Control](#using-the-control)
+>
+> 8 [Video Demo](#video-demo)
+>
+> 9 [Credits and Donation](#credits-and-donation)
+>
+> 10 [External links](#external-links)
+
+---------
+
+## Overview
 
 `ScreenHeader` is a configurable top app-bar: an optional notch spacer (to clear a device safe-area), a centered title, and up to four edge buttons. The first three (`action1`, `action2`, `action3`) are simple click buttons; the fourth (`action4`) is a stateful on/off toggle that swaps between two icons.
 
@@ -21,6 +49,8 @@ Typical use cases:
 - A consistent top bar across screens (title + back + contextual actions)
 - A detail screen with a back button, a share button, and a favourite toggle
 - A list screen with a title and a search action
+
+---------
 
 ## Properties
 
@@ -38,6 +68,8 @@ Typical use cases:
 | `ShowAction4Toggle` | Whether the action-4 toggle is visible. | `bool` |
 | `IsAction4ToggleSelected` | (Read-only) Whether the action-4 toggle is currently on. | `bool` |
 
+---------
+
 ## USS Classes
 
 | Class | Description |
@@ -51,6 +83,8 @@ Typical use cases:
 | `screenHeader__action3Button` | Third action button. |
 | `screenHeader__action4Toggle` | Fourth slot — the stateful on/off toggle button. |
 
+---------
+
 ## Events
 
 | Name | Description | Arguments |
@@ -60,13 +94,41 @@ Typical use cases:
 | `Action3Clicked` | Raised when the third action button is tapped. | none |
 | `Action4Toggled` | Raised when the action-4 toggle changes state; the icon swaps automatically. | `bool` (new selected state) |
 
-## Public Methods
+---------
+
+## Methods
 
 | Signature | Description |
 | --- | --- |
 | `Configure(bool showAction1, bool showTitle, bool showAction2, bool showAction3, bool showAction4Toggle)` | Sets the visibility of the title and all four buttons in one call. |
 | `SetAction1ButtonVisible(bool)` / `SetAction2ButtonVisible(bool)` / `SetAction3ButtonVisible(bool)` / `SetAction4ToggleVisible(bool)` | Per-button visibility setters (equivalent to the matching `ShowActionN` property). |
 | `SetAction4ToggleSelected(bool)` | Forces the action-4 toggle on/off without raising `Action4Toggled`, and refreshes its icon. Use to restore persisted state. |
+
+---------
+
+## Usage
+
+> Add the control to your scene using:
+>
+> GameObject -> UI Toolkit -> Extensions -> Screen Header
+>
+> This creates a UIDocument in the scene (plus a PanelSettings with the default runtime theme, if the project has none) and assigns an editable starter template with demo content, copied to *Assets/UI Toolkit Extensions*.
+>
+> A starter template can also be added to an existing document using:
+>
+> Assets -> Create -> UI Toolkit -> Extensions -> Screen Header Starter
+
+Alternatively, drag the control into a document from the UI Builder Library (*Project -> Custom Controls -> UnityUIToolkit.Extensions*) or declare it directly in UXML:
+
+```xml
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:ext="UnityUIToolkit.Extensions">
+    <ext:ScreenHeader title="My Screen" show-action1="true" show-action2="false" show-action3="true" show-action4-toggle="true" />
+</ui:UXML>
+```
+
+The shared extensions stylesheet is applied automatically when the control is created, so no manual stylesheet reference is required.
+
+---------
 
 ## Using the Control
 
@@ -122,3 +184,29 @@ public class DetailScreenController : MonoBehaviour
     <ext:ScreenHeader title="Home" show-action1="false" show-action3="true" />
 </ui:UXML>
 ```
+
+---------
+
+## Video Demo
+
+> Demo video coming soon.
+
+<!--
+<video class="demo-video" autoplay loop muted playsinline poster="/uitoolkit/images/ScreenHeaderDemo.jpg" aria-label="Screen Header demo">
+  <source src="/uitoolkit/images/ScreenHeaderDemo.webm" type="video/webm">
+</video>
+-->
+
+---------
+
+## Credits and Donation
+
+SimonDarksideJ
+
+---------
+
+## External links
+
+[UI Toolkit Extensions repository](https://github.com/Unity-UI-Extensions/com.unity.uitoolkitextensions) | [OpenUPM package](https://openupm.com/packages/com.unity.uitoolkitextensions/)
+
+---------

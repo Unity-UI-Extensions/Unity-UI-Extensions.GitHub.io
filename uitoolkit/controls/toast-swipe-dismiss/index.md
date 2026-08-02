@@ -8,7 +8,35 @@ has_video: false
 tags: [feedback, toast, swipe, dismiss, gesture]
 ---
 
-## Summary
+<!--![](/uitoolkit/images/ToastSwipeDismissManipulatorDemo.jpg)-->
+
+---------
+
+## Contents
+
+> 1 [Overview](#overview)
+>
+> 2 [Behavior Constants](#behavior-constants)
+>
+> 3 [USS Classes](#uss-classes)
+>
+> 4 [Events / Callbacks](#events--callbacks)
+>
+> 5 [Methods](#methods)
+>
+> 6 [Usage](#usage)
+>
+> 7 [Using the Control](#using-the-control)
+>
+> 8 [Video Demo](#video-demo)
+>
+> 9 [Credits and Donation](#credits-and-donation)
+>
+> 10 [External links](#external-links)
+
+---------
+
+## Overview
 
 `ToastSwipeDismissManipulator` is a `PointerManipulator` that adds swipe-to-dismiss gesture recognition to any `VisualElement`. It supports both horizontal and vertical dismiss axes. The gesture axis is locked after 12 px of movement along the dominant direction. Dismiss triggers when travel exceeds 80 px or velocity exceeds 1 100 px/s. Incomplete swipes snap back in 140 ms; dismissed elements animate out in 180 ms.
 
@@ -19,6 +47,8 @@ Typical use cases:
 - Swipe-to-dismiss notification toasts
 - Dismissible alert or info banners
 - Swipeable items in a list or feed
+
+---------
 
 ## Behavior Constants
 
@@ -31,9 +61,13 @@ Typical use cases:
 | Snap-back duration | 140 ms | Animation duration for returning to the origin position. |
 | Dismiss duration | 180 ms | Animation duration for the final dismiss slide-out. |
 
+---------
+
 ## USS Classes
 
 This manipulator does not add USS classes. Visual feedback is applied by translating the `getOffsetTarget` element inline.
+
+---------
 
 ## Events / Callbacks
 
@@ -51,11 +85,23 @@ All behavior is communicated through constructor-provided delegates.
 | `Action onTapped` | Called when the pointer is released within tap slop (no significant movement). |
 | `Action onDismissed` | Called after the dismiss animation completes. Dispose of the toast element here. |
 
-## Public Methods
+---------
+
+## Methods
 
 | Signature | Description |
 | --- | --- |
 | `ResetState()` | Cancels any in-progress gesture and immediately restores the offset target to its origin position. Call this if the toast is hidden or replaced externally while a swipe is in progress. |
+
+---------
+
+## Usage
+
+> This control is created from code and has no UXML element or editor menu entry.
+
+Attach the manipulator to a toast element from code, e.g. `element.AddManipulator(new ToastSwipeDismissManipulator(...))`. As a manipulator it has no visuals of its own; style the host element as usual.
+
+---------
 
 ## Using the Control
 
@@ -117,3 +163,29 @@ public class ToastController : MonoBehaviour
     }
 }
 ```
+
+---------
+
+## Video Demo
+
+> Demo video coming soon.
+
+<!--
+<video class="demo-video" autoplay loop muted playsinline poster="/uitoolkit/images/ToastSwipeDismissManipulatorDemo.jpg" aria-label="Toast Swipe Dismiss Manipulator demo">
+  <source src="/uitoolkit/images/ToastSwipeDismissManipulatorDemo.webm" type="video/webm">
+</video>
+-->
+
+---------
+
+## Credits and Donation
+
+SimonDarksideJ
+
+---------
+
+## External links
+
+[UI Toolkit Extensions repository](https://github.com/Unity-UI-Extensions/com.unity.uitoolkitextensions) | [OpenUPM package](https://openupm.com/packages/com.unity.uitoolkitextensions/)
+
+---------

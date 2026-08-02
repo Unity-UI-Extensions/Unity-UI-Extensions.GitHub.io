@@ -8,7 +8,35 @@ has_video: false
 tags: [forms, toggle, group, color, multi-select]
 ---
 
-## Summary
+<!--![](/uitoolkit/images/ColorToggleGroupDemo.jpg)-->
+
+---------
+
+## Contents
+
+> 1 [Overview](#overview)
+>
+> 2 [Properties](#properties)
+>
+> 3 [USS Classes](#uss-classes)
+>
+> 4 [Events](#events)
+>
+> 5 [Methods](#methods)
+>
+> 6 [Usage](#usage)
+>
+> 7 [Using the Control](#using-the-control)
+>
+> 8 [Video Demo](#video-demo)
+>
+> 9 [Credits and Donation](#credits-and-donation)
+>
+> 10 [External links](#external-links)
+
+---------
+
+## Overview
 
 `ColorToggleGroup` manages a set of `ColorToggleButton` items as a single-selection group. It supports both tap-to-select and drag-to-select gestures, ensuring that only one color is selected at a time. Selection state is coordinated internally; consumers only need to respond to `OnColorSelected`.
 
@@ -18,6 +46,8 @@ Typical use cases:
 - Theme or accent color selectors
 - Tag or category color selectors
 
+---------
+
 ## Properties
 
 | Name | Description | Options |
@@ -26,6 +56,8 @@ Typical use cases:
 | `SelectedColor` | Gets the currently selected color. `null` if nothing is selected. | `Color?` (nullable) |
 | `Alignment` | Controls the flex direction of the buttons container. | `FlexDirection` |
 
+---------
+
 ## USS Classes
 
 | Class | Description |
@@ -33,18 +65,48 @@ Typical use cases:
 | `colorToggleGroup` | Root element. |
 | `colorToggleGroup__container` | Flex container that holds all `ColorToggleButton` children. |
 
+---------
+
 ## Events
 
 | Name | Description | Arguments |
 | --- | --- | --- |
 | `OnColorSelected` | Fired when the user selects a color by tap or drag. Not fired when selection changes programmatically via `SelectColor(color, propagateEvent: false)`. | `Color selectedColor` |
 
-## Public Methods
+---------
+
+## Methods
 
 | Signature | Description |
 | --- | --- |
 | `DeselectAll()` | Clears the current selection without firing `OnColorSelected`. |
 | `SelectColor(Color color, bool propagateEvent = true)` | Programmatically selects the button whose color matches. Pass `propagateEvent: false` to suppress `OnColorSelected`. |
+
+---------
+
+## Usage
+
+> Add the control to your scene using:
+>
+> GameObject -> UI Toolkit -> Extensions -> Color Toggle Group
+>
+> This creates a UIDocument in the scene (plus a PanelSettings with the default runtime theme, if the project has none) and assigns an editable starter template with demo content, copied to *Assets/UI Toolkit Extensions*.
+>
+> A starter template can also be added to an existing document using:
+>
+> Assets -> Create -> UI Toolkit -> Extensions -> Color Toggle Group Starter
+
+Alternatively, drag the control into a document from the UI Builder Library (*Project -> Custom Controls -> UnityUIToolkit.Extensions*) or declare it directly in UXML:
+
+```xml
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:ext="UnityUIToolkit.Extensions">
+    <ext:ColorToggleGroup alignment="Row" colors="#FF5A5A,#FFB13D,#4DD08C,#4D9FFF,#B36BFF" />
+</ui:UXML>
+```
+
+The shared extensions stylesheet is applied automatically when the control is created, so no manual stylesheet reference is required.
+
+---------
 
 ## Using the Control
 
@@ -98,3 +160,29 @@ public class ThemeSelectorController : MonoBehaviour
     }
 }
 ```
+
+---------
+
+## Video Demo
+
+> Demo video coming soon.
+
+<!--
+<video class="demo-video" autoplay loop muted playsinline poster="/uitoolkit/images/ColorToggleGroupDemo.jpg" aria-label="Color Toggle Group demo">
+  <source src="/uitoolkit/images/ColorToggleGroupDemo.webm" type="video/webm">
+</video>
+-->
+
+---------
+
+## Credits and Donation
+
+SimonDarksideJ
+
+---------
+
+## External links
+
+[UI Toolkit Extensions repository](https://github.com/Unity-UI-Extensions/com.unity.uitoolkitextensions) | [OpenUPM package](https://openupm.com/packages/com.unity.uitoolkitextensions/)
+
+---------

@@ -8,7 +8,35 @@ has_video: false
 tags: [primitives, button, circular, avatar, icon]
 ---
 
-## Summary
+<!--![](/uitoolkit/images/CircularImageButtonDemo.jpg)-->
+
+---------
+
+## Contents
+
+> 1 [Overview](#overview)
+>
+> 2 [Properties](#properties)
+>
+> 3 [USS Classes](#uss-classes)
+>
+> 4 [Events](#events)
+>
+> 5 [Methods](#methods)
+>
+> 6 [Usage](#usage)
+>
+> 7 [Using the Control](#using-the-control)
+>
+> 8 [Video Demo](#video-demo)
+>
+> 9 [Credits and Donation](#credits-and-donation)
+>
+> 10 [External links](#external-links)
+
+---------
+
+## Overview
 
 `CircularImageButton` is a circular button that displays an image or sprite at full bleed with a 50% border-radius. When no image is set it shows a centered overlay (typically an upload icon and label) to prompt the user to select a photo.
 
@@ -18,9 +46,13 @@ Typical use cases:
 - Circular media thumbnails in lists or grids
 - Any tap target that must hold a user-supplied image
 
+---------
+
 ## Properties
 
 This control has no data properties. Configure it through method calls and respond to the `Clicked` event.
+
+---------
 
 ## USS Classes
 
@@ -33,13 +65,17 @@ This control has no data properties. Configure it through method calls and respo
 | `circularImageButton__uploadLabel` | Text label inside the no-image overlay. |
 | `circularImageButton--hasImage` | Modifier applied to the root when an image is present. Hides the no-image overlay. |
 
+---------
+
 ## Events
 
 | Name | Description | Arguments |
 | --- | --- | --- |
 | `Clicked` | Fired when the button receives a pointer-up event inside its bounds. | none |
 
-## Public Methods
+---------
+
+## Methods
 
 | Signature | Description |
 | --- | --- |
@@ -48,6 +84,32 @@ This control has no data properties. Configure it through method calls and respo
 | `SetUploadLabel(string text)` | Updates the text shown inside the no-image overlay. |
 | `ClearImage()` | Removes the current image and restores the no-image overlay. |
 | `SetImageTint(Color color)` | Applies a tint color to the image element. |
+
+---------
+
+## Usage
+
+> Add the control to your scene using:
+>
+> GameObject -> UI Toolkit -> Extensions -> Circular Image Button
+>
+> This creates a UIDocument in the scene (plus a PanelSettings with the default runtime theme, if the project has none) and assigns an editable starter template with demo content, copied to *Assets/UI Toolkit Extensions*.
+>
+> A starter template can also be added to an existing document using:
+>
+> Assets -> Create -> UI Toolkit -> Extensions -> Circular Image Button Starter
+
+Alternatively, drag the control into a document from the UI Builder Library (*Project -> Custom Controls -> UnityUIToolkit.Extensions*) or declare it directly in UXML:
+
+```xml
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:ext="UnityUIToolkit.Extensions">
+    <ext:CircularImageButton upload-label="Upload Image" />
+</ui:UXML>
+```
+
+The shared extensions stylesheet is applied automatically when the control is created, so no manual stylesheet reference is required.
+
+---------
 
 ## Using the Control
 
@@ -106,3 +168,29 @@ _avatarButton.SetImageTint(new Color(1f, 1f, 1f, 0.4f));
 // Restore full color
 _avatarButton.SetImageTint(Color.white);
 ```
+
+---------
+
+## Video Demo
+
+> Demo video coming soon.
+
+<!--
+<video class="demo-video" autoplay loop muted playsinline poster="/uitoolkit/images/CircularImageButtonDemo.jpg" aria-label="Circular Image Button demo">
+  <source src="/uitoolkit/images/CircularImageButtonDemo.webm" type="video/webm">
+</video>
+-->
+
+---------
+
+## Credits and Donation
+
+SimonDarksideJ
+
+---------
+
+## External links
+
+[UI Toolkit Extensions repository](https://github.com/Unity-UI-Extensions/com.unity.uitoolkitextensions) | [OpenUPM package](https://openupm.com/packages/com.unity.uitoolkitextensions/)
+
+---------

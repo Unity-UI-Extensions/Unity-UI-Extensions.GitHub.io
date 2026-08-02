@@ -8,7 +8,35 @@ has_video: false
 tags: [layout, list, scroll, elastic, load-more]
 ---
 
-## Summary
+<!--![](/uitoolkit/images/ElasticListViewDemo.jpg)-->
+
+---------
+
+## Contents
+
+> 1 [Overview](#overview)
+>
+> 2 [Properties](#properties)
+>
+> 3 [USS Classes](#uss-classes)
+>
+> 4 [Events](#events)
+>
+> 5 [Methods](#methods)
+>
+> 6 [Usage](#usage)
+>
+> 7 [Using the Control](#using-the-control)
+>
+> 8 [Video Demo](#video-demo)
+>
+> 9 [Credits and Donation](#credits-and-donation)
+>
+> 10 [External links](#external-links)
+
+---------
+
+## Overview
 
 `ElasticListView` is a vertical list with iOS-style **elastic overscroll**, model-agnostic content, and an optional swipe-up **"load more"** trigger. It hosts its items in one of two viewports and switches between them automatically:
 
@@ -25,12 +53,16 @@ Typical use cases:
 - Infinite-scroll lists that fetch the next page on swipe-up
 - Any list that should bounce gently even when it fits on screen
 
+---------
+
 ## Properties
 
 | Name | Description | Options |
 | --- | --- | --- |
 | `ItemCount` | (Read-only) Number of items currently in the list (excludes the load-more footer). | `int` |
 | `EmptyStateText` | Message shown when the list is empty. Empty string shows nothing. (UXML: `empty-text`) | `string` |
+
+---------
 
 ## USS Classes
 
@@ -43,13 +75,17 @@ Typical use cases:
 | `elasticListView__loadMoreFooter` | Footer shown beneath the items while a load-more fetch is in flight. |
 | `elasticListView__loadMoreSpinner` | The `LoadingIcon` spinner inside the load-more footer. |
 
+---------
+
 ## Events
 
 | Name | Description | Arguments |
 | --- | --- | --- |
 | `LoadMoreRequested` | Raised when the user overscrolls past the bottom edge (swipe-up to load more). Fires once per gesture and re-arms on pointer release. Only active between `EnableLoadMore()` and `DisableLoadMore()`, and only while no fetch is in flight (i.e. not between `BeginLoadMore()` and `EndLoadMore()`). | none |
 
-## Public Methods
+---------
+
+## Methods
 
 | Signature | Description |
 | --- | --- |
@@ -65,6 +101,32 @@ Typical use cases:
 | `DisableLoadMore()` | Disables and removes the load-more footer/spinner. |
 | `BeginLoadMore()` | Call when you start fetching: shows the footer and plays the spinner. |
 | `EndLoadMore()` | Call when the fetch finishes: hides the footer and stops the spinner. The gesture re-arms automatically. |
+
+---------
+
+## Usage
+
+> Add the control to your scene using:
+>
+> GameObject -> UI Toolkit -> Extensions -> Elastic List View
+>
+> This creates a UIDocument in the scene (plus a PanelSettings with the default runtime theme, if the project has none) and assigns an editable starter template with demo content, copied to *Assets/UI Toolkit Extensions*.
+>
+> A starter template can also be added to an existing document using:
+>
+> Assets -> Create -> UI Toolkit -> Extensions -> Elastic List View Starter
+
+Alternatively, drag the control into a document from the UI Builder Library (*Project -> Custom Controls -> UnityUIToolkit.Extensions*) or declare it directly in UXML:
+
+```xml
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:ext="UnityUIToolkit.Extensions">
+    <ext:ElasticListView empty-text="No items yet - add some from code." />
+</ui:UXML>
+```
+
+The shared extensions stylesheet is applied automatically when the control is created, so no manual stylesheet reference is required.
+
+---------
 
 ## Using the Control
 
@@ -108,3 +170,29 @@ public class FeedController : MonoBehaviour
         new() { $"Item {page}.1", $"Item {page}.2", $"Item {page}.3" };
 }
 ```
+
+---------
+
+## Video Demo
+
+> Demo video coming soon.
+
+<!--
+<video class="demo-video" autoplay loop muted playsinline poster="/uitoolkit/images/ElasticListViewDemo.jpg" aria-label="Elastic List View demo">
+  <source src="/uitoolkit/images/ElasticListViewDemo.webm" type="video/webm">
+</video>
+-->
+
+---------
+
+## Credits and Donation
+
+SimonDarksideJ
+
+---------
+
+## External links
+
+[UI Toolkit Extensions repository](https://github.com/Unity-UI-Extensions/com.unity.uitoolkitextensions) | [OpenUPM package](https://openupm.com/packages/com.unity.uitoolkitextensions/)
+
+---------

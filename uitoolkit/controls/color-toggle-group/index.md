@@ -8,7 +8,7 @@ has_video: false
 tags: [forms, toggle, group, color, multi-select]
 ---
 
-<!--![](/uitoolkit/images/ColorToggleGroupDemo.jpg)-->
+![Color toggle group example](./color-toggle-group-example.png)
 
 ---------
 
@@ -165,13 +165,15 @@ public class ThemeSelectorController : MonoBehaviour
 
 ## Video Demo
 
-> Demo video coming soon.
-
-<!--
-<video class="demo-video" autoplay loop muted playsinline poster="/uitoolkit/images/ColorToggleGroupDemo.jpg" aria-label="Color Toggle Group demo">
-  <source src="/uitoolkit/images/ColorToggleGroupDemo.webm" type="video/webm">
+<video class="demo-video" autoplay loop muted playsinline poster="color-toggle-group-example.png" aria-label="Color Toggle Group demo">
+  <source src="collapsible-section-demo.webm" type="video/webm">
 </video>
--->
+
+### Example Scenes
+
+This control is demonstrated in the following package example:
+
+- [Profile Editor](/uitoolkit/examples/profile-editor/)
 
 ---------
 

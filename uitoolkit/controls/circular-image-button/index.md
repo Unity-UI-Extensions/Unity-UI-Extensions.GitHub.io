@@ -8,7 +8,7 @@ has_video: false
 tags: [primitives, button, circular, avatar, icon]
 ---
 
-<!--![](/uitoolkit/images/CircularImageButtonDemo.jpg)-->
+![Circular Image button example](./circular-image-button-example.png)
 
 ---------
 
@@ -28,7 +28,7 @@ tags: [primitives, button, circular, avatar, icon]
 >
 > 7 [Using the Control](#using-the-control)
 >
-> 8 [Video Demo](#video-demo)
+> 8 [Example Scenes](#example-scenes)
 >
 > 9 [Credits and Donation](#credits-and-donation)
 >
@@ -171,15 +171,12 @@ _avatarButton.SetImageTint(Color.white);
 
 ---------
 
-## Video Demo
+## Example Scenes
 
-> Demo video coming soon.
+This control is demonstrated in the following package examples:
 
-<!--
-<video class="demo-video" autoplay loop muted playsinline poster="/uitoolkit/images/CircularImageButtonDemo.jpg" aria-label="Circular Image Button demo">
-  <source src="/uitoolkit/images/CircularImageButtonDemo.webm" type="video/webm">
-</video>
--->
+- [Profile Editor](/uitoolkit/examples/profile-editor/)
+- [Image Crop Overlay](/uitoolkit/examples/image-crop-overlay/)
 
 ---------
 

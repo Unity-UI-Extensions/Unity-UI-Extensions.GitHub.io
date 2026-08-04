@@ -8,7 +8,7 @@ has_video: false
 tags: [navigation, collapse, expand, accordion, section]
 ---
 
-<!--![](/uitoolkit/images/CollapsibleSectionDemo.jpg)-->
+![Collapsable Section Example](./collapsible-section-example.png)
 
 ---------
 
@@ -170,13 +170,15 @@ _toggleButton.clicked += () => _detailsSection.Toggle();
 
 ## Video Demo
 
-> Demo video coming soon.
-
-<!--
-<video class="demo-video" autoplay loop muted playsinline poster="/uitoolkit/images/CollapsibleSectionDemo.jpg" aria-label="Collapsible Section demo">
-  <source src="/uitoolkit/images/CollapsibleSectionDemo.webm" type="video/webm">
+<video class="demo-video" autoplay loop muted playsinline poster="collapsible-section-example.png" aria-label="Collapsible Section demo">
+  <source src="collapsible-section-demo.webm" type="video/webm">
 </video>
--->
+
+### Example Scenes
+
+This control is demonstrated in the following package example:
+
+- [Content Explorer](/uitoolkit/examples/content-explorer/)
 
 ---------
 

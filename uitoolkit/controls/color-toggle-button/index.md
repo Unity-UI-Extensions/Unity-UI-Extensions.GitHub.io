@@ -8,7 +8,7 @@ has_video: false
 tags: [forms, toggle, color, tint, button]
 ---
 
-<!--![](/uitoolkit/images/ColorToggleButtonDemo.jpg)-->
+![Color toggle button example](./color-toggle-button-example.png)
 
 ---------
 
@@ -182,13 +182,15 @@ public class ColorPaletteController : MonoBehaviour
 
 ## Video Demo
 
-> Demo video coming soon.
-
-<!--
-<video class="demo-video" autoplay loop muted playsinline poster="/uitoolkit/images/ColorToggleButtonDemo.jpg" aria-label="Color Toggle Button demo">
-  <source src="/uitoolkit/images/ColorToggleButtonDemo.webm" type="video/webm">
+<video class="demo-video" autoplay loop muted playsinline poster="color-toggle-button-example.png" aria-label="Color Toggle Button demo">
+  <source src=collapsible-section-demo.webm" type="video/webm">
 </video>
--->
+
+### Example Scenes
+
+This control is demonstrated in the following package example:
+
+- [Profile Editor](/uitoolkit/examples/profile-editor/)
 
 ---------
 

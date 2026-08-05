@@ -8,7 +8,7 @@ has_video: false
 tags: [feedback, loading, spinner, animation, indicator]
 ---
 
-<!--![](/uitoolkit/images/LoadingIconDemo.jpg)-->
+![Loading Icon example](loading-icon-example.png)
 
 ---------
 
@@ -171,13 +171,15 @@ _spinner.PlayLoading(customSpeed: 0.4f);
 
 ## Video Demo
 
-> Demo video coming soon.
-
-<!--
-<video class="demo-video" autoplay loop muted playsinline poster="/uitoolkit/images/LoadingIconDemo.jpg" aria-label="Loading Icon demo">
-  <source src="/uitoolkit/images/LoadingIconDemo.webm" type="video/webm">
+<video class="demo-video" autoplay loop muted playsinline poster="loading-icon-example.png" aria-label="Loading Icon demo">
+  <source src=loading-icon-demo.webm" type="video/webm">
 </video>
--->
+
+### Example Scenes
+
+This control is demonstrated in the following package example:
+
+- [Content Explorer](/uitoolkit/examples/content-explorer/)
 
 ---------
 

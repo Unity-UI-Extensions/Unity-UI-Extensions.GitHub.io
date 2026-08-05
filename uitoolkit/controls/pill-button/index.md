@@ -8,7 +8,7 @@ has_video: false
 tags: [primitives, button, pill, cta, animation]
 ---
 
-<!--![](/uitoolkit/images/PillButtonDemo.jpg)-->
+![Pill Button example](pill-button-example.png)
 
 ---------
 
@@ -28,7 +28,7 @@ tags: [primitives, button, pill, cta, animation]
 >
 > 7 [Using the Control](#using-the-control)
 >
-> 8 [Video Demo](#video-demo)
+> 8 [Example Scenes](#example-scenes)
 >
 > 9 [Credits and Donation](#credits-and-donation)
 >
@@ -172,15 +172,20 @@ private void UpdateButtonState(bool isValid)
 
 ---------
 
-## Video Demo
+## Example Scenes
 
-> Demo video coming soon.
+This control is demonstrated in the following package examples:
 
-<!--
-<video class="demo-video" autoplay loop muted playsinline poster="/uitoolkit/images/PillButtonDemo.jpg" aria-label="Pill Button demo">
-  <source src="/uitoolkit/images/PillButtonDemo.webm" type="video/webm">
-</video>
--->
+- [Action Menu](/uitoolkit/examples/action-menu/)
+- [Content Explorer](/uitoolkit/examples/content-explorer/)
+- [Dropdown Phone Entry](/uitoolkit/examples/dropdown-phone-entry/)
+- [Image Crop Overlay](/uitoolkit/examples/image-crop-overlay/)
+- [Notification List](/uitoolkit/examples/notification-list/)
+- [Registration Form](/uitoolkit/examples/registration-form/)
+- [Scroll Snap & Dots](/uitoolkit/examples/scroll-snap-and-dots/)
+- [Social Links](/uitoolkit/examples/social-links/)
+- [Step Wizard](/uitoolkit/examples/step-wizard/)
+- [Toast Notifications](/uitoolkit/examples/toast-notifications/)
 
 ---------
 

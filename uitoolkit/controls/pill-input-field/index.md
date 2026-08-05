@@ -8,7 +8,7 @@ has_video: false
 tags: [forms, input, pill, label, text-field]
 ---
 
-<!--![](/uitoolkit/images/PillInputFieldDemo.jpg)-->
+![Pill Input Field example](pill-input-field-example.png)
 
 ---------
 
@@ -28,7 +28,7 @@ tags: [forms, input, pill, label, text-field]
 >
 > 7 [Using the Control](#using-the-control)
 >
-> 8 [Video Demo](#video-demo)
+> 8 [Example Scenes](#example-scenes)
 >
 > 9 [Credits and Donation](#credits-and-donation)
 >
@@ -184,15 +184,13 @@ public class LoginController : MonoBehaviour
 
 ---------
 
-## Video Demo
+## Example Scenes
 
-> Demo video coming soon.
+This control is demonstrated in the following package examples:
 
-<!--
-<video class="demo-video" autoplay loop muted playsinline poster="/uitoolkit/images/PillInputFieldDemo.jpg" aria-label="Pill Input Field demo">
-  <source src="/uitoolkit/images/PillInputFieldDemo.webm" type="video/webm">
-</video>
--->
+- [Registration Form](/uitoolkit/examples/registration-form/)
+- [Dropdown Phone Entry](/uitoolkit/examples/dropdown-phone-entry/)
+- [Content Explorer](/uitoolkit/examples/content-explorer/)
 
 ---------
 

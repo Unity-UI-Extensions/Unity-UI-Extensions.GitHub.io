@@ -8,7 +8,7 @@ has_video: false
 tags: [forms, social, links, list, editable]
 ---
 
-<!--![](/uitoolkit/images/SocialLinkContainerDemo.jpg)-->
+![Social Link Container example](social-link-container-example.png)
 
 ---------
 
@@ -176,13 +176,15 @@ public class ProfileSocialsController : MonoBehaviour
 
 ## Video Demo
 
-> Demo video coming soon.
-
-<!--
-<video class="demo-video" autoplay loop muted playsinline poster="/uitoolkit/images/SocialLinkContainerDemo.jpg" aria-label="Social Link Container demo">
-  <source src="/uitoolkit/images/SocialLinkContainerDemo.webm" type="video/webm">
+<video class="demo-video" autoplay loop muted playsinline poster="social-link-container-example.png" aria-label="Social Link Container demo">
+  <source src="social-link-container-demo.webm" type="video/webm">
 </video>
--->
+
+### Example Scenes
+
+This control is demonstrated in the following package example:
+
+- [Social Links](/uitoolkit/examples/social-links/)
 
 ---------
 

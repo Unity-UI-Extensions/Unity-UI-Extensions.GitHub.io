@@ -8,7 +8,7 @@ has_video: false
 tags: [feedback, toast, swipe, dismiss, gesture]
 ---
 
-<!--![](/uitoolkit/images/ToastSwipeDismissManipulatorDemo.jpg)-->
+![oast Swipe/Dismiss example](toast-swipe-dismiss-example.png)
 
 ---------
 
@@ -168,13 +168,16 @@ public class ToastController : MonoBehaviour
 
 ## Video Demo
 
-> Demo video coming soon.
-
-<!--
-<video class="demo-video" autoplay loop muted playsinline poster="/uitoolkit/images/ToastSwipeDismissManipulatorDemo.jpg" aria-label="Toast Swipe Dismiss Manipulator demo">
-  <source src="/uitoolkit/images/ToastSwipeDismissManipulatorDemo.webm" type="video/webm">
+<video class="demo-video" autoplay loop muted playsinline poster="toast-swipe-dismiss-example.png" aria-label="Toast Swipe Dismiss Manipulator demo">
+  <source src="toast-swipe-dismiss-demo.webm" type="video/webm">
 </video>
--->
+
+### Example Scenes
+
+This control is demonstrated in the following package examples:
+
+- [Toast Notifications](/uitoolkit/examples/toast-notifications/)
+- [Content Explorer](/uitoolkit/examples/content-explorer/)
 
 ---------
 

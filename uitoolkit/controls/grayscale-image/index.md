@@ -28,7 +28,7 @@ tags: [utilities, image, grayscale, shader, effect]
 >
 > 7 [Using the Control](#using-the-control)
 >
-> 8 [Video Demo](#video-demo)
+> 8 [Example Scenes](#example-scenes)
 >
 > 9 [Credits and Donation](#credits-and-donation)
 >
@@ -163,15 +163,11 @@ _badgeImage.GreyscaleEnabled = true;
 
 ---------
 
-## Video Demo
+## Example Scenes
 
-> Demo video coming soon.
+This control is demonstrated in the following package example:
 
-<!--
-<video class="demo-video" autoplay loop muted playsinline poster="/uitoolkit/images/GrayscaleImageDemo.jpg" aria-label="Grayscale Image demo">
-  <source src="/uitoolkit/images/GrayscaleImageDemo.webm" type="video/webm">
-</video>
--->
+- [Profile Editor](/uitoolkit/examples/profile-editor/)
 
 ---------
 

@@ -8,7 +8,7 @@ has_video: false
 tags: [utilities, image, crop, editor, overlay]
 ---
 
-<!--![](/uitoolkit/images/ImageCropOverlayControlDemo.jpg)-->
+![Image Crop overlay example](image-crop-overlay-example.png)
 
 ---------
 
@@ -26,7 +26,7 @@ tags: [utilities, image, crop, editor, overlay]
 >
 > 6 [Using the Control](#using-the-control)
 >
-> 7 [Video Demo](#video-demo)
+> 7 [Example Scenes](#example-scenes)
 >
 > 8 [Credits and Donation](#credits-and-donation)
 >
@@ -136,15 +136,11 @@ public class AvatarCropExample : MonoBehaviour
 
 ---------
 
-## Video Demo
+## Example Scenes
 
-> Demo video coming soon.
+This control is demonstrated in the following package example:
 
-<!--
-<video class="demo-video" autoplay loop muted playsinline poster="/uitoolkit/images/ImageCropOverlayControlDemo.jpg" aria-label="Image Crop Overlay demo">
-  <source src="/uitoolkit/images/ImageCropOverlayControlDemo.webm" type="video/webm">
-</video>
--->
+- [Image Crop Overlay](/uitoolkit/examples/image-crop-overlay/)
 
 ---------
 

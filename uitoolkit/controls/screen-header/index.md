@@ -8,7 +8,7 @@ has_video: false
 tags: [navigation, header, appbar, title, actions]
 ---
 
-<!--![](/uitoolkit/images/ScreenHeaderDemo.jpg)-->
+![Screen Header example](screen-header-example.png)
 
 ---------
 
@@ -28,7 +28,7 @@ tags: [navigation, header, appbar, title, actions]
 >
 > 7 [Using the Control](#using-the-control)
 >
-> 8 [Video Demo](#video-demo)
+> 8 [Example Scenes](#example-scenes)
 >
 > 9 [Credits and Donation](#credits-and-donation)
 >
@@ -187,15 +187,11 @@ public class DetailScreenController : MonoBehaviour
 
 ---------
 
-## Video Demo
+## Example Scenes
 
-> Demo video coming soon.
+This control is demonstrated in the following package example:
 
-<!--
-<video class="demo-video" autoplay loop muted playsinline poster="/uitoolkit/images/ScreenHeaderDemo.jpg" aria-label="Screen Header demo">
-  <source src="/uitoolkit/images/ScreenHeaderDemo.webm" type="video/webm">
-</video>
--->
+- [Screen Header](/uitoolkit/examples/screen-header/)
 
 ---------
 

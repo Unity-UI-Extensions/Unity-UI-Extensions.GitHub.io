@@ -8,7 +8,7 @@ has_video: false
 tags: [feedback, pagination, dots, indicator, scroll]
 ---
 
-<!--![](/uitoolkit/images/PageDotIndicatorDemo.jpg)-->
+![Page Dot Indicator example](page-dot-indicator-example.png)
 
 ---------
 
@@ -162,13 +162,15 @@ float progress = _dotIndicator.NormalizedProgress; // 0.0 – 1.0
 
 ## Video Demo
 
-> Demo video coming soon.
-
-<!--
-<video class="demo-video" autoplay loop muted playsinline poster="/uitoolkit/images/PageDotIndicatorDemo.jpg" aria-label="Page Dot Indicator demo">
-  <source src="/uitoolkit/images/PageDotIndicatorDemo.webm" type="video/webm">
+<video class="demo-video" autoplay loop muted playsinline poster="page-dot-indicator-example.png" aria-label="Page Dot Indicator demo">
+  <source src="page-dot-indicator-demo.webm" type="video/webm">
 </video>
--->
+
+### Example Scenes
+
+This control is demonstrated in the following package example:
+
+- [Scroll Snap & Dots](/uitoolkit/examples/scroll-snap-and-dots/)
 
 ---------
 

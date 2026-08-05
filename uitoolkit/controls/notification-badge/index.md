@@ -8,7 +8,7 @@ has_video: false
 tags: [feedback, badge, notification, count, indicator]
 ---
 
-<!--![](/uitoolkit/images/NotificationBadgeDemo.jpg)-->
+![Notification Badge example](notification-badge-example.png)
 
 ---------
 
@@ -26,7 +26,7 @@ tags: [feedback, badge, notification, count, indicator]
 >
 > 6 [Using the Control](#using-the-control)
 >
-> 7 [Video Demo](#video-demo)
+> 7 [Example Scenes](#example-scenes)
 >
 > 8 [Credits and Donation](#credits-and-donation)
 >
@@ -143,15 +143,11 @@ The badge clamps automatically: `_badge.Count = 250;` displays `"99+"`.
 
 ---------
 
-## Video Demo
+## Example Scenes
 
-> Demo video coming soon.
+This control is demonstrated in the following package example:
 
-<!--
-<video class="demo-video" autoplay loop muted playsinline poster="/uitoolkit/images/NotificationBadgeDemo.jpg" aria-label="Notification Badge demo">
-  <source src="/uitoolkit/images/NotificationBadgeDemo.webm" type="video/webm">
-</video>
--->
+- [Notification List](/uitoolkit/examples/notification-list/)
 
 ---------
 

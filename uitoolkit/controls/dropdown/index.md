@@ -8,7 +8,7 @@ has_video: false
 tags: [forms, dropdown, combobox, select, picker]
 ---
 
-<!--![](/uitoolkit/images/DropDownControlDemo.jpg)-->
+![Dropdown control example](dropdown-example.png)
 
 ---------
 
@@ -150,13 +150,15 @@ public class DialCodePickerExample : MonoBehaviour
 
 ## Video Demo
 
-> Demo video coming soon.
-
-<!--
-<video class="demo-video" autoplay loop muted playsinline poster="/uitoolkit/images/DropDownControlDemo.jpg" aria-label="Dropdown demo">
-  <source src="/uitoolkit/images/DropDownControlDemo.webm" type="video/webm">
+<video class="demo-video" autoplay loop muted playsinline poster="dropdown-example.png" aria-label="Dropdown demo">
+  <source src="dropdown-demo.webm" type="video/webm">
 </video>
--->
+
+### Example Scenes
+
+This control is demonstrated in the following package example:
+
+- [Dropdown Phone Entry](/uitoolkit/examples/dropdown-phone-entry/)
 
 ---------
 

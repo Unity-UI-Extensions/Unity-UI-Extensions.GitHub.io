@@ -8,7 +8,7 @@ has_video: false
 tags: [layout, list, scroll, elastic, load-more]
 ---
 
-<!--![](/uitoolkit/images/ElasticListViewDemo.jpg)-->
+![Elastic List example](elastic-list-view-example.png)
 
 ---------
 
@@ -175,13 +175,15 @@ public class FeedController : MonoBehaviour
 
 ## Video Demo
 
-> Demo video coming soon.
-
-<!--
-<video class="demo-video" autoplay loop muted playsinline poster="/uitoolkit/images/ElasticListViewDemo.jpg" aria-label="Elastic List View demo">
-  <source src="/uitoolkit/images/ElasticListViewDemo.webm" type="video/webm">
+<video class="demo-video" autoplay loop muted playsinline poster="elastic-list-view-example.png" aria-label="Elastic List View demo">
+  <source src=elastic-list-view-demo.webm" type="video/webm">
 </video>
--->
+
+### Example Scenes
+
+This control is demonstrated in the following package example:
+
+- [Notification List](/uitoolkit/examples/notification-list/)
 
 ---------
 

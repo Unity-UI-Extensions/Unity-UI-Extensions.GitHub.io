@@ -38,7 +38,7 @@ permalink: /donate/
       If it has saved you time, here is how you can help keep it alive and growing.
     </p>
     <div class="hero-ctas">
-      <a href="https://github.com/sponsors/SimonDarksideJ" target="_blank" rel="noopener" class="btn btn-u">&#10084;&#65039;&nbsp; Sponsor on GitHub</a>
+      <a href="#ways-to-give" class="btn btn-u">&#10084;&#65039;&nbsp; Sponsor the project</a>
       <a href="#contribute" class="btn btn-ghost">Other ways to help</a>
     </div>
   </div>
@@ -88,7 +88,7 @@ permalink: /donate/
 </section>
 
 <!-- ─────────────────────────── WAYS TO GIVE ─────────────────────────── -->
-<section class="section">
+<section class="section" id="ways-to-give">
   <div class="container">
     <div class="section-head">
       <h2 class="section-title">Ways to give</h2>
@@ -197,7 +197,7 @@ permalink: /donate/
     <h2 class="cta-title">Every bit helps. Thank you.</h2>
     <p class="cta-sub">Money, code, a bug report, or just a kind word in Gitter — it all keeps the project free and well.</p>
     <div class="cta-actions">
-      <a href="https://github.com/sponsors/SimonDarksideJ" target="_blank" rel="noopener" class="btn btn-u">Sponsor on GitHub</a>
+      <a href="#ways-to-give" class="btn btn-u">Sponsor the project</a>
       <a href="https://ko-fi.com/uiextensions" target="_blank" rel="noopener" class="btn btn-t">Buy a Coffee</a>
       <a href="https://github.com/Unity-UI-Extensions/com.unity.uiextensions" target="_blank" rel="noopener" class="btn btn-ghost">Contribute on GitHub</a>
     </div>

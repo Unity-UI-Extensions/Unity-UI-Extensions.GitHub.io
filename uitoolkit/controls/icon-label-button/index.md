@@ -8,7 +8,7 @@ has_video: false
 tags: [primitives, button, icon, label, row]
 ---
 
-<!--![](/uitoolkit/images/IconLabelButtonDemo.jpg)-->
+![Icon Label button example](icon-label-button-example.png)
 
 ---------
 
@@ -28,7 +28,7 @@ tags: [primitives, button, icon, label, row]
 >
 > 7 [Using the Control](#using-the-control)
 >
-> 8 [Video Demo](#video-demo)
+> 8 [Example Scenes](#example-scenes)
 >
 > 9 [Credits and Donation](#credits-and-donation)
 >
@@ -170,15 +170,11 @@ Override hover and pressed states in your project USS:
 
 ---------
 
-## Video Demo
+## Example Scenes
 
-> Demo video coming soon.
+This control is demonstrated in the following package example:
 
-<!--
-<video class="demo-video" autoplay loop muted playsinline poster="/uitoolkit/images/IconLabelButtonDemo.jpg" aria-label="Icon Label Button demo">
-  <source src="/uitoolkit/images/IconLabelButtonDemo.webm" type="video/webm">
-</video>
--->
+- [Content Explorer](/uitoolkit/examples/content-explorer/)
 
 ---------
 

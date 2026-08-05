@@ -8,7 +8,7 @@ has_video: false
 tags: [navigation, scroll, snap, pages, swipe]
 ---
 
-<!--![](/uitoolkit/images/ScrollSnapDemo.jpg)-->
+![Scroll Snap example](scroll-snap-example.png)
 
 ---------
 
@@ -301,13 +301,17 @@ Use `force: true` when a host flow has completed external validation and wants t
 
 ## Video Demo
 
-> Demo video coming soon.
-
-<!--
-<video class="demo-video" autoplay loop muted playsinline poster="/uitoolkit/images/ScrollSnapDemo.jpg" aria-label="Scroll Snap demo">
-  <source src="/uitoolkit/images/ScrollSnapDemo.webm" type="video/webm">
+<video class="demo-video" autoplay loop muted playsinline poster="scroll-snap-example.png" aria-label="Scroll Snap demo">
+  <source src="scroll-snap-demo.webm" type="video/webm">
 </video>
--->
+
+### Example Scenes
+
+This control is demonstrated in the following package examples:
+
+- [Scroll Snap & Dots](/uitoolkit/examples/scroll-snap-and-dots/)
+- [Scroll Snap (Split Views)](/uitoolkit/examples/scroll-snap-split/)
+- [Content Explorer](/uitoolkit/examples/content-explorer/)
 
 ---------
 

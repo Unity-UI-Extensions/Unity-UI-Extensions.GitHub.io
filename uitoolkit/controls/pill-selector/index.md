@@ -8,7 +8,7 @@ has_video: false
 tags: [forms, selector, pill, radio, single-select]
 ---
 
-<!--![](/uitoolkit/images/PillSelectorDemo.jpg)-->
+![Pil Selector example](pill-selector-example.png)
 
 ---------
 
@@ -28,7 +28,7 @@ tags: [forms, selector, pill, radio, single-select]
 >
 > 7 [Using the Control](#using-the-control)
 >
-> 8 [Video Demo](#video-demo)
+> 8 [Example Scenes](#example-scenes)
 >
 > 9 [Credits and Donation](#credits-and-donation)
 >
@@ -172,15 +172,11 @@ _countrySelector.Clicked += () =>
 
 ---------
 
-## Video Demo
+## Example Scenes
 
-> Demo video coming soon.
+This control is demonstrated in the following package example:
 
-<!--
-<video class="demo-video" autoplay loop muted playsinline poster="/uitoolkit/images/PillSelectorDemo.jpg" aria-label="Pill Selector demo">
-  <source src="/uitoolkit/images/PillSelectorDemo.webm" type="video/webm">
-</video>
--->
+- [Registration Form](/uitoolkit/examples/registration-form/)
 
 ---------
 

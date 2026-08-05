@@ -8,7 +8,7 @@ has_video: false
 tags: [forms, toggle, switch, button, boolean]
 ---
 
-<!--![](/uitoolkit/images/ToggleButtonDemo.jpg)-->
+![Toggle Button example](toggle-button-example.png)
 
 ---------
 
@@ -172,13 +172,16 @@ Rather than swapping the texture in code you can declare both icon states in USS
 
 ## Video Demo
 
-> Demo video coming soon.
-
-<!--
-<video class="demo-video" autoplay loop muted playsinline poster="/uitoolkit/images/ToggleButtonDemo.jpg" aria-label="Toggle Button demo">
-  <source src="/uitoolkit/images/ToggleButtonDemo.webm" type="video/webm">
+<video class="demo-video" autoplay loop muted playsinline poster="toggle-button-example.png" aria-label="Toggle Button demo">
+  <source src="toggle-button-demo.webm" type="video/webm">
 </video>
--->
+
+### Example Scenes
+
+This control is demonstrated in the following package example:
+
+- [Profile Editor](/uitoolkit/examples/profile-editor/)
+- [Screen Header](/uitoolkit/examples/screen-header/)
 
 ---------
 

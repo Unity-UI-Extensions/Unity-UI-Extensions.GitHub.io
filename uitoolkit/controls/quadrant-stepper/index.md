@@ -8,7 +8,7 @@ has_video: false
 tags: [navigation, stepper, direction, compass, selector]
 ---
 
-<!--![](/uitoolkit/images/QuadrantStepperDemo.jpg)-->
+![Quadrant Stepper example](quadrant-stepper-example.png)
 
 ---------
 
@@ -195,13 +195,16 @@ if (!found)
 
 ## Video Demo
 
-> Demo video coming soon.
-
-<!--
-<video class="demo-video" autoplay loop muted playsinline poster="/uitoolkit/images/QuadrantStepperDemo.jpg" aria-label="Quadrant Stepper demo">
-  <source src="/uitoolkit/images/QuadrantStepperDemo.webm" type="video/webm">
+<video class="demo-video" autoplay loop muted playsinline poster="quadrant-stepper-example.png" aria-label="Quadrant Stepper demo">
+  <source src="quadrant-stepper-demo.webm" type="video/webm">
 </video>
--->
+
+### Example Scenes
+
+This control is demonstrated in the following package examples:
+
+- [Step Wizard](/uitoolkit/examples/step-wizard/)
+- [Content Explorer](/uitoolkit/examples/content-explorer/)
 
 ---------
 

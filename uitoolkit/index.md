@@ -103,9 +103,9 @@ Scope: com.unity.uitoolkitextensions</code></pre>
            class="control-card uitk-context"
            data-category="{{ ctrl.category | downcase }}"
            data-name="{{ ctrl.name | downcase }}"
-           data-desc="{{ ctrl.description | downcase }}"
+           data-desc="{{ ctrl.description | downcase | escape }}"
            data-tags="{{ ctrl.tags | join: ' ' | downcase }}"
-           aria-label="{{ ctrl.name }} — {{ ctrl.description }}">
+           aria-label="{{ ctrl.name }} — {{ ctrl.description | escape }}">
 
           {% if ctrl.preview_image != "" %}
             <div class="control-card-img">

@@ -8,7 +8,7 @@ has_video: false
 tags: [feedback, placeholder, coming-soon, panel]
 ---
 
-<!--![](/uitoolkit/images/ComingSoonMessageDemo.jpg)-->
+![Coming Soon example](coming-soon-message-example.png)
 
 ---------
 
@@ -28,7 +28,7 @@ tags: [feedback, placeholder, coming-soon, panel]
 >
 > 7 [Using the Control](#using-the-control)
 >
-> 8 [Video Demo](#video-demo)
+> 8 [Example Scenes](#example-scenes)
 >
 > 9 [Credits and Donation](#credits-and-donation)
 >
@@ -162,15 +162,11 @@ else
 
 ---------
 
-## Video Demo
+## Example Scenes
 
-> Demo video coming soon.
+This control is demonstrated in the following package example:
 
-<!--
-<video class="demo-video" autoplay loop muted playsinline poster="/uitoolkit/images/ComingSoonMessageDemo.jpg" aria-label="Coming Soon Message demo">
-  <source src="/uitoolkit/images/ComingSoonMessageDemo.webm" type="video/webm">
-</video>
--->
+- [Scroll Snap & Dots](/uitoolkit/examples/scroll-snap-and-dots/)
 
 ---------
 

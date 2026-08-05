@@ -8,7 +8,7 @@ has_video: false
 tags: [feedback, progress, steps, bar, milestone]
 ---
 
-<!--![](/uitoolkit/images/StepProgressBarDemo.jpg)-->
+![Step Progress Bar example](step-progress-bar-example.png)
 
 ---------
 
@@ -163,13 +163,15 @@ private void RefreshBarColor()
 
 ## Video Demo
 
-> Demo video coming soon.
-
-<!--
-<video class="demo-video" autoplay loop muted playsinline poster="/uitoolkit/images/StepProgressBarDemo.jpg" aria-label="Step Progress Bar demo">
-  <source src="/uitoolkit/images/StepProgressBarDemo.webm" type="video/webm">
+<video class="demo-video" autoplay loop muted playsinline poster="step-progress-bar-example.png" aria-label="Step Progress Bar demo">
+  <source src="step-progress-bar-demo.webm" type="video/webm">
 </video>
--->
+
+### Example Scenes
+
+This control is demonstrated in the following package example:
+
+- [Step Wizard](/uitoolkit/examples/step-wizard/)
 
 ---------
 

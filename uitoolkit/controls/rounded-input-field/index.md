@@ -8,7 +8,7 @@ has_video: false
 tags: [forms, input, rounded, text-field, focus]
 ---
 
-<!--![](/uitoolkit/images/RoundedInputFieldDemo.jpg)-->
+![Rounded Input Field example](rounded-input-field-example.png)
 
 ---------
 
@@ -28,7 +28,7 @@ tags: [forms, input, rounded, text-field, focus]
 >
 > 7 [Using the Control](#using-the-control)
 >
-> 8 [Video Demo](#video-demo)
+> 8 [Example Scenes](#example-scenes)
 >
 > 9 [Credits and Donation](#credits-and-donation)
 >
@@ -170,15 +170,12 @@ _notesField.ValueChanged += text => _isDirty = true;
 
 ---------
 
-## Video Demo
+## Example Scenes
 
-> Demo video coming soon.
+This control is demonstrated in the following package examples:
 
-<!--
-<video class="demo-video" autoplay loop muted playsinline poster="/uitoolkit/images/RoundedInputFieldDemo.jpg" aria-label="Rounded Input Field demo">
-  <source src="/uitoolkit/images/RoundedInputFieldDemo.webm" type="video/webm">
-</video>
--->
+- [Registration Form](/uitoolkit/examples/registration-form/)
+- [Step Wizard](/uitoolkit/examples/step-wizard/)
 
 ---------
 

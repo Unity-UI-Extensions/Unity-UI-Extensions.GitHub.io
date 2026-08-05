@@ -8,7 +8,7 @@ has_video: false
 tags: [navigation, menu, dropdown, overlay, actions]
 ---
 
-<!--![](/uitoolkit/images/DropDownMenuControlDemo.jpg)-->
+![Dropdown menu example](dropdown-menu-example.png)
 
 ---------
 
@@ -99,9 +99,17 @@ Typical use cases:
 
 ## Usage
 
-> This control is created from code and has no UXML element or editor menu entry.
+> A starter can be added to your scene using:
+>
+> GameObject -> UI Toolkit -> Extensions -> Drop Down Menu
+>
+> This creates a UIDocument in the scene (plus a PanelSettings with the default runtime theme, if the project has none) and assigns an editable starter template — a single bordered item row with a "···" trigger — copied to *Assets/UI Toolkit Extensions*. Because this control has no UXML element, the menu entry also adds a `DropDownMenuStarterController` component that constructs the menu and wires the trigger with three demo options; replace it with your own controller in real use.
+>
+> The starter layout (without the demo controller) can also be added to an existing document using:
+>
+> Assets -> Create -> UI Toolkit -> Extensions -> Drop Down Menu Starter
 
-Construct a `DropDownMenuControl` from code and call `Open(anchor, options)`; the menu attaches itself to the panel root above all other content. The shared extensions stylesheet is applied automatically when the control is created.
+In your own code, construct a `DropDownMenuControl` and call `Open(anchor, options)`; the menu attaches itself to the panel root above all other content. The shared extensions stylesheet is applied automatically when the control is created.
 
 ---------
 
@@ -119,10 +127,14 @@ public class CardActionsController : MonoBehaviour
 {
     [SerializeField] private UIDocument _document;
 
-    private readonly DropDownMenuControl _menu = new DropDownMenuControl();
+    // Constructed in OnEnable — Unity does not allow VisualElements to be created
+    // from a MonoBehaviour constructor or field initializer.
+    private DropDownMenuControl _menu;
 
     private void OnEnable()
     {
+        _menu = new DropDownMenuControl();
+
         var moreButton = _document.rootVisualElement.Q<Button>("more-button");
 
         moreButton.clicked += () =>
@@ -144,13 +156,15 @@ public class CardActionsController : MonoBehaviour
 
 ## Video Demo
 
-> Demo video coming soon.
-
-<!--
-<video class="demo-video" autoplay loop muted playsinline poster="/uitoolkit/images/DropDownMenuControlDemo.jpg" aria-label="Dropdown Menu demo">
-  <source src="/uitoolkit/images/DropDownMenuControlDemo.webm" type="video/webm">
+<video class="demo-video" autoplay loop muted playsinline poster="dropdown-menu-example.png" aria-label="Dropdown Menu demo">
+  <source src="dropdown-menu-demo.webm" type="video/webm">
 </video>
--->
+
+### Example Scenes
+
+This control is demonstrated in the following package example:
+
+- [Action Menu](/uitoolkit/examples/action-menu/)
 
 ---------
 

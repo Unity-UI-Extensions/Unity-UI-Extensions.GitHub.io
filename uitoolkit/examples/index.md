@@ -1,7 +1,7 @@
 ---
 layout: default
 title: UIToolkit Examples — Unity UIToolkit Extensions
-description: Browse the 12 playable UI Toolkit example scenes and see which controls each one demonstrates.
+description: Browse the 13 playable UI Toolkit example scenes and see which controls each one demonstrates.
 permalink: /uitoolkit/examples/
 ---
 

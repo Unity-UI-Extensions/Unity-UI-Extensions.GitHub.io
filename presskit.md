@@ -145,7 +145,7 @@ permalink: /presskit/
         </div>
         <ul class="footer-links" style="margin:.5rem 0 1rem;">
           <li>Version 1.0.0 · Unity 6000.0+ · MIT</li>
-          <li>25 controls · ~26 runtime scripts · 12 example scenes</li>
+          <li>25 controls · ~26 runtime scripts · 13 example scenes</li>
           <li>Built with USS · fully themable · data-driven UI</li>
         </ul>
         <a href="{{ '/uitoolkit/' | relative_url }}" class="btn btn-t btn-sm">Explore UI Toolkit</a>

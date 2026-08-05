@@ -41,6 +41,7 @@ sysinfo.txt
 
 # Jekyll build output
 _site/
+_site_test/
 
 # Python bytecode cache (from generate_pdfs.py)
 __pycache__/

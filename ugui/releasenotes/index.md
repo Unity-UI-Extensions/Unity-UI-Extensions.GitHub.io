@@ -5,8 +5,6 @@ description: Release notes and version history for the Unity UI Extensions uGUI 
 permalink: /ugui/releasenotes/
 ---
 
-# Unity UI Extensions — uGUI Release Notes
-
 Release notes and version history for the **uGUI** package (`com.unity.uiextensions`). Building with UI Toolkit? See the [UI Toolkit package](/uitoolkit/).
 
 -----

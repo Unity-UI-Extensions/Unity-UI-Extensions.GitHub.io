@@ -8,7 +8,37 @@ has_video: false
 tags: [navigation, scroll, snap, pages, swipe]
 ---
 
-## Summary
+![Scroll Snap example](scroll-snap-example.png)
+
+---------
+
+## Contents
+
+> 1 [Overview](#overview)
+>
+> 2 [Properties](#properties)
+>
+> 3 [Events](#events)
+>
+> 4 [Usage](#usage)
+>
+> 5 [Using the Control in Manual Mode](#using-the-control-in-manual-mode)
+>
+> 6 [Using the Control in Swipe Mode](#using-the-control-in-swipe-mode)
+>
+> 7 [Restricted Movement and Event Behavior](#restricted-movement-and-event-behavior)
+>
+> 8 [Authorization Flow (Validation-Gated Navigation)](#authorization-flow-validation-gated-navigation)
+>
+> 9 [Video Demo](#video-demo)
+>
+> 10 [Credits and Donation](#credits-and-donation)
+>
+> 11 [External links](#external-links)
+
+---------
+
+## Overview
 
 `ScrollSnap` is a page-based UI Toolkit container that arranges children as pages and snaps to a page boundary after gesture or wheel input. It supports:
 
@@ -24,6 +54,8 @@ Typical use cases:
 - Onboarding or wizard flows
 - Carousel-like page navigation
 - Validation-gated step transitions (for example: required fields before moving forward)
+
+---------
 
 ## Properties
 
@@ -57,6 +89,8 @@ Typical use cases:
 | `--scrollsnap-page-padding-bottom` | Bottom page margin/padding from USS. | `0px` |
 | `--scrollsnap-validation-drag-limit` | Optional validation drag-limit value (fraction). Use values like `0.2`, `0.15`, `0.3`. | Not set unless provided |
 
+---------
+
 ## Events
 
 | Name | Description | Arguments |
@@ -67,6 +101,36 @@ Typical use cases:
 | `OnValidatePageTransition` | Optional async validator callback. Called when validation mode is enabled and direction flags allow movement. Return `true` to proceed, `false` to restrict and snap back. | `(int targetPage) => Task<bool>` |
 
 Note: `OnPageChangePrevented` is not a built-in `ScrollSnap` event name. It is a consumer-defined callback method name commonly subscribed to `OnPageChangeRestricted`, for example: `scrollSnap.OnPageChangeRestricted += OnPageChangePrevented;`.
+
+---------
+
+## Usage
+
+> Add the control to your scene using:
+>
+> GameObject -> UI Toolkit -> Extensions -> Scroll Snap
+>
+> This creates a UIDocument in the scene (plus a PanelSettings with the default runtime theme, if the project has none) and assigns an editable starter template with demo content, copied to *Assets/UI Toolkit Extensions*.
+>
+> A starter template can also be added to an existing document using:
+>
+> Assets -> Create -> UI Toolkit -> Extensions -> Scroll Snap Starter
+
+Alternatively, drag the control into a document from the UI Builder Library (*Project -> Custom Controls -> UnityUIToolkit.Extensions*) or declare it directly in UXML:
+
+```xml
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:ext="UnityUIToolkit.Extensions" editor-extension-mode="False">
+    <ext:ScrollSnap manual-movement-enabled="true" style="flex-grow: 1;">
+        <ui:VisualElement><ui:Label text="Page 1" /></ui:VisualElement>
+        <ui:VisualElement><ui:Label text="Page 2" /></ui:VisualElement>
+        <ui:VisualElement><ui:Label text="Page 3" /></ui:VisualElement>
+    </ext:ScrollSnap>
+</ui:UXML>
+```
+
+The shared extensions stylesheet is applied automatically when the control is created in the Editor and in Play Mode, so no manual stylesheet reference is needed while authoring. The starter templates also reference the stylesheet explicitly, which covers player builds; for hand-written UXML or code-first UI in builds, add the stylesheet to your UXML or panel theme.
+
+---------
 
 ## Using the Control in Manual Mode
 
@@ -95,6 +159,8 @@ Recommended when:
 - Navigation is fully controlled by external UI buttons
 - You need deterministic transitions with no user drag gestures
 - Validation/permissions are handled outside swipe interaction
+
+---------
 
 ## Using the Control in Swipe Mode
 
@@ -135,6 +201,8 @@ snap.OnValidatePageTransition = async targetPage =>
 };
 ```
 
+---------
+
 ## Restricted Movement and Event Behavior
 
 When `ValidatePageChange = true`, swipe transitions follow this flow:
@@ -153,6 +221,8 @@ When `ValidatePageChange = true`, swipe transitions follow this flow:
    - `true` => transition proceeds
     - `false` => restricted snap-back and `OnPageChangeRestricted` (after snap-back completes)
 6. On successful transition completion, `PageChanged(newPageIndex)` is fired.
+
+---------
 
 ## Authorization Flow (Validation-Gated Navigation)
 
@@ -226,3 +296,33 @@ snap.MoveNext(animate: true, force: true);
 | `MovePrevious(bool animate = true, bool force = false)` | Navigate to previous page |
 
 Use `force: true` when a host flow has completed external validation and wants to advance immediately regardless of current swipe-gate state.
+
+---------
+
+## Video Demo
+
+<video class="demo-video" autoplay loop muted playsinline poster="scroll-snap-example.png" aria-label="Scroll Snap demo">
+  <source src="scroll-snap-demo.webm" type="video/webm">
+</video>
+
+### Example Scenes
+
+This control is demonstrated in the following package examples:
+
+- [Scroll Snap & Dots](/uitoolkit/examples/scroll-snap-and-dots/)
+- [Scroll Snap (Split Views)](/uitoolkit/examples/scroll-snap-split/)
+- [Content Explorer](/uitoolkit/examples/content-explorer/)
+
+---------
+
+## Credits and Donation
+
+SimonDarksideJ
+
+---------
+
+## External links
+
+[UI Toolkit Extensions repository](https://github.com/Unity-UI-Extensions/com.unity.uitoolkitextensions) | [OpenUPM package](https://openupm.com/packages/com.unity.uitoolkitextensions/)
+
+---------

@@ -8,7 +8,33 @@ has_video: false
 tags: [utilities, image, crop, editor, overlay]
 ---
 
-## Summary
+![Image Crop overlay example](image-crop-overlay-example.png)
+
+---------
+
+## Contents
+
+> 1 [Overview](#overview)
+>
+> 2 [Nested Types](#nested-types)
+>
+> 3 [USS Classes](#uss-classes)
+>
+> 4 [Public API](#public-api)
+>
+> 5 [Usage](#usage)
+>
+> 6 [Using the Control](#using-the-control)
+>
+> 7 [Example Scenes](#example-scenes)
+>
+> 8 [Credits and Donation](#credits-and-donation)
+>
+> 9 [External links](#external-links)
+
+---------
+
+## Overview
 
 `ImageCropOverlayControl` is a full-screen modal cropper for square image exports. It displays the source image inside a movable and zoomable viewport, then exports the visible area to a new `Texture2D` when the user confirms.
 
@@ -18,11 +44,15 @@ Typical use cases:
 - Cover-image cropping with a fixed export size
 - Any UI Toolkit workflow that needs a self-contained move-and-scale image confirmation step
 
+---------
+
 ## Nested Types
 
 ### `Configuration`
 
 `Configuration` customizes the overlay title, button labels, export size, zoom limits, screen margins, viewport width ratio, and normalized corner radius used by the crop viewport mask.
+
+---------
 
 ## USS Classes
 
@@ -41,6 +71,8 @@ Typical use cases:
 | `imageCropOverlay__button--cancel` | Modifier for the cancel button. |
 | `imageCropOverlay__button--save` | Modifier for the save button. |
 
+---------
+
 ## Public API
 
 | Signature | Description |
@@ -48,6 +80,16 @@ Typical use cases:
 | `Show(VisualElement anchor, Texture2D sourceTexture, Configuration configuration, Action<Texture2D> onConfirmed, Action onCancelled = null)` | Creates and displays the overlay on the anchor's panel root. Returns the created overlay or `null` when it cannot be shown. |
 | `CreateUniformCornerRadiusPercent(float percent)` | Creates a clamped, uniform normalized corner-radius vector for the crop mask. |
 | `ResolveNormalizedCornerRadiusPercent(VisualElement sourceElement, Vector4 fallback)` | Converts the source element's resolved pixel radii into normalized percentages suitable for the crop mask. |
+
+---------
+
+## Usage
+
+> This control is created from code and has no UXML element or editor menu entry.
+
+Invoke the static `ImageCropOverlayControl.Show(anchor, sourceTexture, configuration, onConfirmed)` from code; the overlay attaches itself to the panel root. The shared extensions stylesheet is applied automatically when the control is created.
+
+---------
 
 ## Using the Control
 
@@ -91,3 +133,25 @@ public class AvatarCropExample : MonoBehaviour
     }
 }
 ```
+
+---------
+
+## Example Scenes
+
+This control is demonstrated in the following package example:
+
+- [Image Crop Overlay](/uitoolkit/examples/image-crop-overlay/)
+
+---------
+
+## Credits and Donation
+
+SimonDarksideJ
+
+---------
+
+## External links
+
+[UI Toolkit Extensions repository](https://github.com/Unity-UI-Extensions/com.unity.uitoolkitextensions) | [OpenUPM package](https://openupm.com/packages/com.unity.uitoolkitextensions/)
+
+---------

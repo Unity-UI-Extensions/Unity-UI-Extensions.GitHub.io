@@ -78,6 +78,15 @@ bundle exec jekyll build
 > [!NOTE]
 > Changes to `_config.yml` require restarting `jekyll serve` — live reload does not pick up configuration changes. The build also ignores `README.md`, the helper scripts (`*.py`, `*.sh`) and a few other files; see the `exclude` list in `_config.yml` for the full set.
 
+### Testing the donate toast locally
+
+The site shows a slide-in "consider donating" toast after a browser has visited on **5 distinct days** (tracked purely in that browser's `localStorage` — nothing is sent anywhere). Waiting five days to test is no fun, so two URL hashes exist:
+
+- <http://localhost:4000/#donate-toast> — force-show the toast immediately. Test mode neither reads nor writes the stored visit state and skips the GoatCounter events, so it cannot pollute real stats or your own visit count.
+- <http://localhost:4000/#donate-toast-reset> — wipe the stored nudge state in the current browser (visit-day count, snoozes, and the permanent opt-out set by clicking Donate), returning it to a first-time visitor.
+
+Normal behaviour outside test mode: the toast appears at most once per 14 days, "Maybe later" / close / <kbd>Esc</kbd> snoozes it for 90 days, and clicking the Donate button retires it permanently for that browser. The same hashes also work on the live site.
+
 -----
 
 ## Contributing

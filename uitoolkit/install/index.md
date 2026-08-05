@@ -94,7 +94,8 @@ Scope: com.unity.uitoolkitextensions</code></pre>
 
     <h2 id="install-verify" class="section-title">Verifying the Installation</h2>
     <p>After installation you should see the package listed in <strong>Window → Package Manager</strong> under <em>In Project</em>. All controls are available under the <code>UnityUIToolkit.Extensions</code> namespace.</p>
-    <p>Controls can be instantiated in C# or declared in UXML:</p>
+    <p>The quickest way to see a control running is the editor menu — for example <strong>GameObject → UI Toolkit → Extensions → Pill Button</strong>. This adds a UIDocument to the scene (creating PanelSettings with the default runtime theme if the project has none) and assigns an editable starter template with demo content, copied to <code>Assets/UI Toolkit Extensions</code>. Starter templates for existing documents are also available under <strong>Assets → Create → UI Toolkit → Extensions</strong>.</p>
+    <p>Controls can also be instantiated in C# or declared in UXML — the shared extensions stylesheet is applied automatically, so no manual stylesheet reference is needed:</p>
     <div class="install-panel">
       <pre><code>// C#
 using UnityUIToolkit.Extensions;

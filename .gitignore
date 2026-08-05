@@ -41,6 +41,7 @@ sysinfo.txt
 
 # Jekyll build output
 _site/
+_site_test/
 
 # Python bytecode cache (from generate_pdfs.py)
 __pycache__/
@@ -49,3 +50,5 @@ __pycache__/
 # as GitHub Release assets (tag: docs-pdfs) by CI — never committed to the repo.
 # The site links to the release URLs (see _config.yml: pdf_downloads_base).
 assets/downloads/*.pdf
+
+*.mp4

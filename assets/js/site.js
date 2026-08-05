@@ -215,6 +215,149 @@
   }
 
   /* ----------------------------------------------------------
+     Visitor counter (homepage)
+     Pulls rolling-month and all-time visit counts from the
+     GoatCounter public counter API. Counts are served formatted
+     (locale separators), so digits are extracted and re-formatted.
+     The element stays hidden if the API is unreachable or the
+     "visitor counts" setting is disabled on the dashboard.
+  ---------------------------------------------------------- */
+  function initVisitorCounter() {
+    var el = document.querySelector('.visitor-counter');
+    if (!el || !window.fetch) return;
+
+    var base = 'https://unity-ui-extensions.goatcounter.com/counter/TOTAL.json';
+
+    function getCount(url) {
+      return fetch(url).then(function (res) {
+        if (!res.ok) throw new Error('counter unavailable');
+        return res.json();
+      }).then(function (data) {
+        var digits = String(data.count).replace(/[^0-9]/g, '');
+        if (!digits) throw new Error('no count');
+        return parseInt(digits, 10);
+      });
+    }
+
+    Promise.all([
+      getCount(base + '?start=month'),
+      getCount(base)
+    ]).then(function (counts) {
+      el.querySelector('.vc-month').textContent = counts[0].toLocaleString('en');
+      el.querySelector('.vc-total').textContent = counts[1].toLocaleString('en');
+      el.hidden = false;
+    }).catch(function () { /* leave hidden — counter is decorative */ });
+  }
+
+  /* ----------------------------------------------------------
+     Donate nudge toast
+     Counts distinct visit DAYS in localStorage (nothing leaves
+     the browser — the site's no-cookies/no-personal-data stance
+     is unchanged). After 5 visit days a toast slides in inviting
+     a donation. Shown at most once per 14 days; "Maybe later"
+     or close snoozes 90 days; clicking Donate retires it.
+     Local testing (never counts or persists anything):
+       #donate-toast        — force-show the toast
+       #donate-toast-reset  — clear stored nudge state
+  ---------------------------------------------------------- */
+  function initDonateNudge() {
+    var KEY = 'uiext-donate-nudge';
+    var DAYS_NEEDED = 5;
+    var SHOW_DELAY = 2500;   // ms after load before sliding in
+    var SNOOZE_SHOWN = 14, SNOOZE_DISMISS = 90;  // days
+
+    var testMode = location.hash === '#donate-toast';
+
+    var state = {};
+    var store = function () {
+      try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) { /* ignore */ }
+    };
+    try {
+      if (location.hash === '#donate-toast-reset') {
+        localStorage.removeItem(KEY);
+        console.info('donate-nudge: stored state cleared');
+        return;
+      }
+      state = JSON.parse(localStorage.getItem(KEY)) || {};
+    } catch (e) {
+      if (!testMode) return;  // no storage (private mode) — skip silently
+    }
+    state.days = state.days || 0;
+
+    if (!testMode) {
+      if (state.off) return;
+
+      var today = new Date().toISOString().slice(0, 10);
+      if (state.last !== today) {
+        state.days += 1;
+        state.last = today;
+        store();
+      }
+
+      if (state.days < DAYS_NEEDED) return;
+      if (state.snoozeUntil && Date.now() < state.snoozeUntil) return;
+    }
+
+    var track = function (name) {
+      if (testMode) return;  // keep test runs out of the stats
+      if (window.goatcounter && goatcounter.count)
+        goatcounter.count({ event: true, path: 'donate-toast-' + name });
+    };
+
+    var toast = document.createElement('div');
+    toast.className = 'donate-toast';
+    toast.setAttribute('role', 'status');
+    toast.setAttribute('aria-live', 'polite');
+    toast.innerHTML =
+      '<button class="donate-toast-close" aria-label="Dismiss">✕</button>' +
+      '<p class="donate-toast-eyebrow">✦ Achievement unlocked — visit ' + Math.max(state.days, DAYS_NEEDED) + '</p>' +
+      '<p class="donate-toast-msg">Looks like you are enjoying UI Extensions.<br>Would you consider donating to support the project?</p>' +
+      '<div class="donate-toast-actions">' +
+      '  <a href="/donate/#ways-to-give" class="btn btn-u">❤️ Support the project</a>' +
+      '  <button class="donate-toast-later">Maybe later</button>' +
+      '</div>';
+
+    var hide = function (snoozeDays) {
+      if (!testMode && snoozeDays) {
+        state.snoozeUntil = Date.now() + snoozeDays * 864e5;
+        store();
+      }
+      toast.classList.remove('show');
+      setTimeout(function () { if (toast.parentNode) toast.parentNode.removeChild(toast); }, 500);
+      document.removeEventListener('keydown', onKey);
+    };
+
+    var onKey = function (e) { if (e.key === 'Escape') { track('dismissed'); hide(SNOOZE_DISMISS); } };
+
+    toast.querySelector('.donate-toast-close').addEventListener('click', function () {
+      track('dismissed');
+      hide(SNOOZE_DISMISS);
+    });
+    toast.querySelector('.donate-toast-later').addEventListener('click', function () {
+      track('later');
+      hide(SNOOZE_DISMISS);
+    });
+    toast.querySelector('a.btn').addEventListener('click', function () {
+      track('donate-click');
+      if (!testMode) { state.off = true; store(); }
+      // Navigation proceeds normally.
+    });
+
+    setTimeout(function () {
+      document.body.appendChild(toast);
+      track('shown');
+      if (!testMode) {
+        state.snoozeUntil = Date.now() + SNOOZE_SHOWN * 864e5;
+        store();
+      }
+      document.addEventListener('keydown', onKey);
+      requestAnimationFrame(function () {
+        requestAnimationFrame(function () { toast.classList.add('show'); });
+      });
+    }, SHOW_DELAY);
+  }
+
+  /* ----------------------------------------------------------
      Initialise all
   ---------------------------------------------------------- */
   document.addEventListener('DOMContentLoaded', function () {
@@ -225,6 +368,8 @@
     initScrollSpy();
     initMobileNav();
     initSidebarToggle();
+    initVisitorCounter();
+    initDonateNudge();
   });
 
 }());

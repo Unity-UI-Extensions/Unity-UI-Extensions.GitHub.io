@@ -453,7 +453,7 @@ refined over a decade of community use. This is the V3 release.</p>
 Unity 6's UI Toolkit runtime.</p>
 <ul>
   <li>Package id <code>com.unity.uitoolkitextensions</code> &middot; v1.0.0 &middot; Unity 6000.0+ &middot; MIT</li>
-  <li>25 controls &middot; ~21 runtime scripts &middot; 12 example scenes</li>
+  <li>25 controls &middot; ~21 runtime scripts &middot; 13 example scenes</li>
 </ul>
 
 <h2>Key features</h2>

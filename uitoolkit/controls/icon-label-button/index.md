@@ -8,7 +8,35 @@ has_video: false
 tags: [primitives, button, icon, label, row]
 ---
 
-## Summary
+![Icon Label button example](icon-label-button-example.png)
+
+---------
+
+## Contents
+
+> 1 [Overview](#overview)
+>
+> 2 [Properties](#properties)
+>
+> 3 [USS Classes](#uss-classes)
+>
+> 4 [Events](#events)
+>
+> 5 [Methods](#methods)
+>
+> 6 [Usage](#usage)
+>
+> 7 [Using the Control](#using-the-control)
+>
+> 8 [Example Scenes](#example-scenes)
+>
+> 9 [Credits and Donation](#credits-and-donation)
+>
+> 10 [External links](#external-links)
+
+---------
+
+## Overview
 
 `IconLabelButton` is a full-width row button that pairs a 24 × 24 px icon on the left with a text label. It provides hover and pressed state modifier classes for visual feedback without custom USS.
 
@@ -18,11 +46,15 @@ Typical use cases:
 - Action list rows (share, delete, report, etc.)
 - Settings list entries with a leading icon
 
+---------
+
 ## Properties
 
 | Name | Description | Options |
 | --- | --- | --- |
 | `Text` | Gets or sets the button label text. | `string` |
+
+---------
 
 ## USS Classes
 
@@ -35,15 +67,45 @@ Typical use cases:
 | `iconLabelButton--hover` | Modifier applied on pointer-enter. |
 | `iconLabelButton--pressed` | Modifier applied while pointer is held down. |
 
+---------
+
 ## Events
 
 | Name | Description | Arguments |
 | --- | --- | --- |
 | `Clicked` | Fired when the button is tapped or clicked. | none |
 
-## Public Methods
+---------
+
+## Methods
 
 No public methods beyond property access. Use the `Text` property and USS to configure the control.
+
+---------
+
+## Usage
+
+> Add the control to your scene using:
+>
+> GameObject -> UI Toolkit -> Extensions -> Icon Label Button
+>
+> This creates a UIDocument in the scene (plus a PanelSettings with the default runtime theme, if the project has none) and assigns an editable starter template with demo content, copied to *Assets/UI Toolkit Extensions*.
+>
+> A starter template can also be added to an existing document using:
+>
+> Assets -> Create -> UI Toolkit -> Extensions -> Icon Label Button Starter
+
+Alternatively, drag the control into a document from the UI Builder Library (*Project -> Custom Controls -> UnityUIToolkit.Extensions*) or declare it directly in UXML:
+
+```xml
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:ext="UnityUIToolkit.Extensions" editor-extension-mode="False">
+    <ext:IconLabelButton text="Click Me!" />
+</ui:UXML>
+```
+
+The shared extensions stylesheet is applied automatically when the control is created in the Editor and in Play Mode, so no manual stylesheet reference is needed while authoring. The starter templates also reference the stylesheet explicitly, which covers player builds; for hand-written UXML or code-first UI in builds, add the stylesheet to your UXML or panel theme.
+
+---------
 
 ## Using the Control
 
@@ -105,3 +167,25 @@ Override hover and pressed states in your project USS:
     background-color: rgba(255, 255, 255, 0.12);
 }
 ```
+
+---------
+
+## Example Scenes
+
+This control is demonstrated in the following package example:
+
+- [Content Explorer](/uitoolkit/examples/content-explorer/)
+
+---------
+
+## Credits and Donation
+
+SimonDarksideJ
+
+---------
+
+## External links
+
+[UI Toolkit Extensions repository](https://github.com/Unity-UI-Extensions/com.unity.uitoolkitextensions) | [OpenUPM package](https://openupm.com/packages/com.unity.uitoolkitextensions/)
+
+---------

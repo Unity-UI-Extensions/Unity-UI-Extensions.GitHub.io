@@ -19,6 +19,9 @@ permalink: /
       <a href="/ugui/" class="btn btn-u">Explore uGUI Controls</a>
       <a href="/uitoolkit/" class="btn btn-t">Explore UI Toolkit Controls</a>
     </div>
+    <p class="visitor-counter" hidden aria-live="polite">
+      You are visitor <span class="vc-num vc-month">0</span> this month — one of <span class="vc-num vc-total">0</span> all-time!
+    </p>
   </div>
 </section>
 

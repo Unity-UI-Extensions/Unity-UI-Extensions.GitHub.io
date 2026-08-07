@@ -172,7 +172,7 @@ _spinner.PlayLoading(customSpeed: 0.4f);
 ## Video Demo
 
 <video class="demo-video" autoplay loop muted playsinline poster="loading-icon-example.png" aria-label="Loading Icon demo">
-  <source src=loading-icon-demo.webm" type="video/webm">
+  <source src="loading-icon-demo.webm" type="video/webm">
 </video>
 
 ### Example Scenes

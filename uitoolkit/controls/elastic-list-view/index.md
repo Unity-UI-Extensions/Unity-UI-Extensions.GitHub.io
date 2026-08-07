@@ -176,7 +176,7 @@ public class FeedController : MonoBehaviour
 ## Video Demo
 
 <video class="demo-video" autoplay loop muted playsinline poster="elastic-list-view-example.png" aria-label="Elastic List View demo">
-  <source src=elastic-list-view-demo.webm" type="video/webm">
+  <source src="elastic-list-view-demo.webm" type="video/webm">
 </video>
 
 ### Example Scenes

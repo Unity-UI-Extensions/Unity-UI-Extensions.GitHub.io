@@ -183,7 +183,7 @@ public class ColorPaletteController : MonoBehaviour
 ## Video Demo
 
 <video class="demo-video" autoplay loop muted playsinline poster="color-toggle-button-example.png" aria-label="Color Toggle Button demo">
-  <source src=collapsible-section-demo.webm" type="video/webm">
+  <source src="color-toggle-button-demo.webm" type="video/webm">
 </video>
 
 ### Example Scenes
